@@ -1,0 +1,111 @@
+/* Default styles for large screens (desktops) */
+body {
+  background-color: #ffffff;
+  font-size: 14px;
+}
+/* This media query targets devices that have a screen width of 1024px or more. */
+/* @media (min-width: 1024px) {
+  body {
+    background-color: #ffffff;
+    font-size: 13px;
+  }
+} */
+/* For Larger Screens (1441px and above): */
+@media (min-width: 1441px) {
+  .downsection {
+    bottom: 10px; /* Keep the original 'bottom' value for larger screens */
+  }
+}
+/* Media query for laptop screens (1024px to 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .downsection {
+    bottom: 250px; /* Adjust 'bottom' property for laptop screens */
+  }
+}
+/* For Smaller Screens (below 1024px): */
+@media (max-width: 1023px) {
+  .downsection {
+    bottom: 275px; /* Adjust 'bottom' property for smaller screens */
+  }
+}
+/* For tablets (between 768px and 1024px) */
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: #ffffff;
+    font-size: 13px;
+  }
+/* .downsection {
+  bottom: 375px;
+} */
+}
+
+/* For mobile devices (between 480px and 767px) */
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: #ffffff;
+    font-size: 12px;
+  }
+  .navbar-brand {
+    margin: 0 auto; /* Automatically adjust margins to center */
+  }  
+  .navbar-brand{
+    width: 175px;
+    /* display: none; */
+  }
+   #scrollspy{
+    display: none !important;
+   }
+  .main-video{
+    margin-top: -75px;
+  }
+  .downsection{
+    display: none;
+  }
+  .btn-warning{
+    padding: 6px 5px;
+  }
+
+  /* .btn-float-discover{
+    right: -16px;
+  } */
+  .footer{
+    padding: 15px 0 0 10px;
+  }
+}
+
+/* For small mobile devices (below 480px) */
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: #ffffff;
+    font-size: 10px;
+  }
+  .navbar-brand {
+    margin: 0 auto; /* Automatically adjust margins to center */
+  }  
+  .navbar-brand{
+    width: 150px;
+    /* display: none; */
+  }
+  #dropdown-basic{
+    font-size: 12px;
+  }
+  .btn-close{
+    width: 30px;
+    height: 30px;
+  }
+  .navbar-nav .nav-link{
+    font-size: 1rem;
+  }
+  #scrollspy{
+    display: none !important;
+   }
+   .main-video{
+    margin-top: -75px;
+  }
+ /* .btn-float-discover{
+    right: -16px;
+  } */
+  .footer{
+    padding: 15px 0 0 10px;
+  }
+}

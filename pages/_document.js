@@ -1,9 +1,42 @@
 import { Html, Head, Main, NextScript } from "next/document";
-
+// import Script from "next/script";
+// import Script from "next/script";
+// import Head from 'next/head'
+// import App from 'next/app';
 export default function Document() {
   return (
-    <Html lang="en">
-      <Head />
+      <Html lang="en">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Permissions-Policy" content="interest-cohort=()"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta httpEquiv="content-language" content="english" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Cache-control" content="public"/>
+        <meta name="robots" content="index, follow"/>
+        <meta property="og:site_name" content="Ramagya School" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://rs-school.sgp1.digitaloceanspaces.com/images/favicon.webp" />
+        <meta property="article:publisher" content="https://www.facebook.com/RamagyaSchoolNoida/"/>
+        <meta property="article:modified_time" content="2024-10-22T06:59:47+00:00" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:label1" content="Est. reading time" />
+        <meta name="twitter:data1" content="5 minutes" />
+        <meta name="copyright" content="Ramagya School" />
+        <meta name="author" content="Ramagya School" />
+        <meta name="robots" content="index, follow" />
+        <meta name="rating" content="safe for kids" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="bingbot" content="index, follow" />
+        <meta name="allow-search" content="yes" />
+        <meta name="revisit-after" content="daily" />
+        <meta name="distribution" content="global" />
+        <meta name="expires" content="never" />
+        <meta property="og:locale" content="en_US" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/favicon.webp" />
+      <Head/>
+      {/* <Script src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/rs-main-assets/js/jquery.min.js"></Script>
+      <Script src="https://www.google.com/recaptcha/api.js"></Script>
+      <Script src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/rs-main-assets/js/edunxtform-noida.js"></Script> */}
       <body>
         <Main />
         <NextScript />
@@ -11,3 +44,5 @@ export default function Document() {
     </Html>
   );
 }
+
+
