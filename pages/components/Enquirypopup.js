@@ -12,7 +12,7 @@ function MyVerticallyCenteredModal(props) {
   return (
     <Modal
       {...props}
-      size="lg"
+      size="md"
       aria-labelledby="contained-modal-title-vcenter"
       centered>
       <div className='modal-content'>
@@ -24,7 +24,7 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Body className="grid-col">
           <Container>
             <Row>
-              <Col xs={8} md={8}>
+              <Col xs={12} md={12}>
                 <iframe src="https://forms.edunexttechnologies.com/forms/ramagyanoida/main-enquiry/" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
               </Col>
             </Row>

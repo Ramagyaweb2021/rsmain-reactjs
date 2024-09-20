@@ -1,6 +1,13 @@
 /* Font Import */
+/* Correct usage of @import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://example.com/another-font.css'); */
 
+/* Now the rest of the CSS follows */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+}
 /* -----------------------------------------------------Smooth Scrolling */
 html {
   scroll-behavior: smooth;
@@ -502,7 +509,7 @@ span.highlight-lg::after {
 .learn h1,
 .explore h1,
 .innovate h1 {
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 35px;
   font-weight: 600;
   line-height: 48.76px;
@@ -1653,7 +1660,7 @@ h4, title_3 trans{
 .rating-container {
   display: flex;
   align-items: center;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #fff; /* Text color - white */
 }
