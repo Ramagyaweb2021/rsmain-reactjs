@@ -29,15 +29,10 @@ const Explore = () => {
                      OUR APPROACH AND CURRICULUM
                   </span>
                 </h1>
-                <p> A child learns in many ways - questioning adults, collaborating with peers, and experiencing the world through his or her unique perspective.Ramagya School transforms these ways of learning into a methodology of relevance. This means that every child at our schools is equipped with a toolkit of concepts, skills and knowledge, which he or she can shape into endless possibilities and solutions. In a dynamic and shifting world, this kind of learning impacts individual growth as well as global consciousness.
+                <p> A child learns in many ways - questioning adults, collaborating with peers, and experiencing the world through his or her unique perspective. Ramagya School transforms these ways of learning into a methodology of relevance. This means that every child at our schools is equipped with a toolkit of concepts, skills and knowledge, which he or she can shape into endless possibilities and solutions. In a dynamic and shifting world, this kind of learning impacts individual growth as well as global consciousness.
                 </p>
-                <div className='row'>
-                <div className="col-sm-2">
-                      <div className="approach">
-                        <a href="#">Pre-Primary</a>
-                      </div>
-                    </div>
-                    <div className="col-sm-2">
+                <div className='row justify-content-center'>
+                    <div className="col-sm-3">
                      {/* <Image src="/images/primary.png" alt="Primary" width={260} height={150}/> */}
                        {/* <div className='explore-content wow animate__animated animate__fadeInLeft' style={{ animationDelay: '0.2s' }}>
                         <h5 className="colorbg-one">
@@ -51,17 +46,17 @@ const Explore = () => {
                         <a href="#">Primary</a>
                       </div>
                     </div>
-                    <div className="col-sm-2">
+                    <div className="col-sm-3">
                       <div className="approach">
                         <a href="#">Middle</a>
                       </div>
                     </div>
-                    <div className="col-sm-2">
+                    <div className="col-sm-3">
                       <div className="approach">
                         <a href="#">Secondary</a>
                       </div>
                     </div>
-                    <div className="col-sm-2">
+                    <div className="col-sm-3">
                       <div className="approach">
                         <a href="#">Senior Secondary</a>
                       </div>
@@ -70,7 +65,7 @@ const Explore = () => {
                   
 
                   {/* Learb more button */}
-                <div className="approach mt-20 wow animate__animated animate__fadeInLeft' style={{ animationDelay: '0.2s' }}">
+                <div className="approach mt-50 wow animate__animated animate__fadeInLeft' style={{ animationDelay: '0.2s' }}">
                   <a href="#">Learn More</a>
                 </div>
               </div>
