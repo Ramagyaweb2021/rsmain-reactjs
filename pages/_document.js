@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+// import Document, { Html, Head, Main, NextScript } from 'next/document';
 // import Script from "next/script";
 // import Script from "next/script";
 // import Head from 'next/head'
@@ -6,9 +7,9 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
       <Html lang="en">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta httpEquiv="Permissions-Policy" content="interest-cohort=()"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-language" content="english" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="Cache-control" content="public"/>
@@ -33,10 +34,11 @@ export default function Document() {
         <meta name="expires" content="never" />
         <meta property="og:locale" content="en_US" />
         <link rel="shortcut icon" type="image/x-icon" href="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/favicon.webp" />
-      <Head/>
-      {/* <Script src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/rs-main-assets/js/jquery.min.js"></Script>
-      <Script src="https://www.google.com/recaptcha/api.js"></Script>
-      <Script src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/rs-main-assets/js/edunxtform-noida.js"></Script> */}
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"></link>
+      <Head/> 
+       {/* <Script src="https://www.google.com/recaptcha/api.js"></Script> */}
       <body>
         <Main />
         <NextScript />
@@ -44,5 +46,4 @@ export default function Document() {
     </Html>
   );
 }
-
 

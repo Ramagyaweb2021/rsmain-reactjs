@@ -65,14 +65,7 @@ const Explore = () => {
                       <div className="approach">
                         <a href="#">Senior Secondary</a>
                       </div>
-                    </div>
-
-                    <div className="col-sm-2">
-                      <div className="approach">
-                        <a href="#">Senior Secondary</a>
-                      </div>
-                    </div>
-                    
+                    </div>  
                    </div>
                   
 

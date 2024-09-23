@@ -18,7 +18,7 @@ return (
               <p className="news-card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
-                <div class="d-flex justify-content-center">
+                <div className="d-flex justify-content-center">
                 <a href="#" className="btn btn-warning text-black">
                   Read More
                 </a>
@@ -36,7 +36,7 @@ return (
               <p className="news-card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
-                            <div class="d-flex justify-content-center">
+                            <div className="d-flex justify-content-center">
                 <a href="#" className="btn btn-warning text-black">
                   Read More
                 </a>
@@ -54,7 +54,7 @@ return (
               <p className="news-card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
-              <div class="d-flex justify-content-center">
+              <div className="d-flex justify-content-center">
                 <a href="#" className="btn btn-warning text-black">
                   Read More
                 </a>
@@ -64,8 +64,8 @@ return (
           </div>
         </div>
       </div>
-       <div class="d-flex justify-content-center">
-          <a href="#" class="btn custom-btn">View All</a>
+       <div className="d-flex justify-content-center">
+          <a href="#" className="btn custom-btn">View All</a>
         </div>
 
     </div>
@@ -90,8 +90,8 @@ return (
         </div>
       </div>
      
-       <div class="d-flex justify-content-center">
-        <a href="#" class="btn custom-btn">View All</a>
+       <div className="d-flex justify-content-center">
+        <a href="#" className="btn custom-btn">View All</a>
       </div>
 
     </div>

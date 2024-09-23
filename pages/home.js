@@ -3,10 +3,10 @@ import Head from 'next/head'
 import Header from '/pages/components/Header'
 import Slider from '/pages/components/Slider'
 import Scrollspy from '/pages/components/Scrollspy'
-// import Thedifferencewemake from './components/Thedifferencewemake'
-// import Bepartoframagya from './components/Bepartoframagya'
-// import NewsAndAchievements from './components/NewsAndAchievements'
-// import VideoAndDonwload from './components/VideoAndDonwload'
+import Thedifferencewemake from './components/Thedifferencewemake'
+import Bepartoframagya from './components/Bepartoframagya'
+import NewsAndAchievements from './components/NewsAndAchievements'
+import VideoAndDonwload from './components/VideoAndDonwload'
 import OurCampus from './components/OurCampus'
 import DownSection from './components/DownSection'
 import OfferPopup from './components/OfferPopup'; 
@@ -29,11 +29,11 @@ const Home = () => {
      <OfferPopup/>
      <DownSection/>
      <Scrollspy/>
-     {/* <Thedifferencewemake/> */}
-     {/* <Bepartoframagya/><br/><br/> */}
+     <Thedifferencewemake/>
+     <Bepartoframagya/>
      <SchoolUpdates/>
-     {/* <NewsAndAchievements/> */}
-     {/* <VideoAndDonwload/> */}
+     <NewsAndAchievements/>
+     <VideoAndDonwload/>
      {/* <OurCampus/> */}
      <Testimonials/>
      <Footer/>

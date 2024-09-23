@@ -1,39 +1,15 @@
-/* Font Import */
-/* Correct usage of @import */
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
-/* @import url('https://example.com/another-font.css'); */
-
-/* Now the rest of the CSS follows */
+/* @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); */
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f4f4f4;
-}
-/* -----------------------------------------------------Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  outline: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+  font-family: "Oswald", sans-serif;
   background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
   -webkit-tap-highlight-color: transparent;
   scrollbar-width: thin;
-  scrollbar-color: #fff #2f6575;
-  letter-spacing: 0.8px;
-}
-
-/* -----------------------------------------------------WebKit-based Scrollbars */
+  /* scrollbar-color: #fff #2f6575;
+  letter-spacing: 0.5px; */}
+    /* -----------------------------------------------------WebKit-based Scrollbars */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -48,6 +24,21 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #F9D93B;
 }
+/* -----------------------------------------------------Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory;  */
+}
+section {
+  scroll-snap-align: start; /* Sections will snap to the start of the viewport */
+  /* height: 100vh; */
+}
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Remove padding, margin from video container */
 .container-fluid {
   padding: 0;
@@ -57,7 +48,7 @@ body {
 /* Remove margin, padding from the row and column */
 .row, .col-lg-12 {
   padding: 0;
-  /* margin: 0; */
+  margin: 0;
 }
 img {
   max-width: 100%;
@@ -69,11 +60,11 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #2f6575;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -195,6 +186,19 @@ a:hover {
 .dropdown-menu-dark {
   background-color: #2f6575;
 }
+/* Initial state: hidden and positioned above */
+.menu-hidden {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Visible state: fully opaque and positioned */
+.menu-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* .dropend .dropdown-menu[data-bs-popper] {
   left: 15%;
@@ -232,16 +236,18 @@ a:hover {
 }
 
 .nav-link {
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
+  padding: 5px 30px;
 }
 
 .nav-link.active {
   color: #F7D00E;
-  font-weight: 600;
+  font-weight: 400;
+  border-bottom: 2px solid #F7D00E;
 }
 
 .dropdown-menu.show {
@@ -404,10 +410,11 @@ span.highlight-lg::after {
 
 .justify-content-center.fixed-top { 
   background-color: #2f6575 !important;
-  border-top: 1px solid #F7D00F;
-  box-shadow: 0 4px 8px #ffffff9c;
+  border-bottom: 1px solid #2f6575;
+  border-top: 1px solid #2f6575;
+  box-shadow: inset 1px -1px 8px #2f6575;
   transition: all 0.3s ease-in-out;
-  /* margin-top: 85px; */
+  margin-top: 85px;
   /* z-index: auto; */
 }
 
@@ -434,19 +441,19 @@ span.highlight-lg::after {
   background-size: cover;
   background-attachment: scroll;
   /* background-size: 100% 100%; */
-  padding: 100px 0 100px 0;
+  padding: 220px 0 220px 0;
 }
 
 .fp-tableExperiment {
   background-image: url(/images/explore-bg.png);
-  background-color: #ffffffb8;
+  background-color: #ffffffa6;
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   /* background-size: 100% 100%; */
-  padding: 100px 0 100px 0;
+  padding: 220px 0 220px 0;
 }
 
 .fp-tableInvovate {
@@ -456,7 +463,7 @@ span.highlight-lg::after {
   background-size: cover;
   background-attachment: scroll;
   /* background-size: 100% 100%; */
-  padding: 100px 0 100px 0;
+  padding: 220px 0 220px 0;
 }
 
 .fp-tableEvolve {
@@ -467,7 +474,7 @@ span.highlight-lg::after {
   background-size: cover;
   background-attachment: scroll;
   /* background-size: 100% 100%; */
-  padding: 100px 0 100px 0;
+  padding: 220px 0 220px 0;
 }
 
 .fp-tableLead {
@@ -479,7 +486,7 @@ span.highlight-lg::after {
   background-size: cover;
   background-attachment: scroll;
   /* background-size: 100% 100%; */
-  padding: 100px 0 100px 0;
+  padding: 220px 0 220px 0;
 }
 
 .fp-section {
@@ -513,12 +520,12 @@ span.highlight-lg::after {
 .explore h1,
 .innovate h1 {
   /* font-family: Montserrat; */
-  font-size: 35px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 700;
   line-height: 48.76px;
   text-align: center;
   color: #2f6575;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Oswald", sans-serif;
   position: relative;
   /* padding-bottom: 10px;
   margin-bottom: 10px; */
@@ -554,11 +561,11 @@ span.highlight-lg::after {
 .evolve h1>span.lineclass::before {
   content: '';
   position: absolute;
-  left: 5px;
-  top: -20px;
+  left: 18px;
+  top: -30px;
   width: 5px;
-  background: #F7D00F;
-  height: 35px;
+  background: #f7d00e;
+  height: 60px;
   animation: none;
 }
 
@@ -566,18 +573,19 @@ span.highlight-lg::after {
 .explore h1>span,
 .innovate h1>span,
 .evolve h1>span {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 29px;
+  font-weight: 400;
   line-height: 26.82px;
+  font-style: normal;
   text-align: center;
   text-transform: uppercase;
-  padding: 0px 0 0 15px;
+  padding: 0px 0 0 35px;
   margin-top: -8px;
   vertical-align: middle;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Oswald", sans-serif;
   position: relative;
   display: inline-block;
-  color: #2f6575BF;
+  color: rgb(123, 123, 123);
 }
 
 .explore-content {
@@ -619,11 +627,11 @@ span.highlight-lg::after {
 }
 .learn p,
 .explore p {
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-  padding: 3%;
-  font-family: 'Montserrat', sans-serif;
+  /* font-weight: 400; */
+  text-align: center;
+  font-size: 15px;
+  padding: 0 50px;
+  font-family: "Oswald", sans-serif;
 }
 
 .colorbg-one {
@@ -672,7 +680,7 @@ ul {
   position: relative;
   z-index: 1;
   width: 180px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   /* vertical-align: middle; */
 }
@@ -692,7 +700,7 @@ ul {
   position: relative;
   z-index: 1;
   width: 180px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   /* vertical-align: middle; */
   display: block;
@@ -724,7 +732,7 @@ ul {
   border: 2px solid; /* Set the border width */
   border-image: linear-gradient(45deg, #F7D00F, #2f6575) 1;
   /* border: 1px solid #F7D00F; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Oswald", sans-serif;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1156,7 +1164,7 @@ ul {
   line-height: 48.76px;
   text-align: center;
   color: #2f6575;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Oswald", sans-serif;
   position: relative;
   margin-top: 60px;
   padding-bottom: 20px;
@@ -1663,7 +1671,7 @@ h4, title_3 trans{
 .rating-container {
   display: flex;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   color: #fff; /* Text color - white */
 }
@@ -1773,7 +1781,7 @@ h4, title_3 trans{
  /*----------------------------------------------internal pages css ------------------*/
 .fixed-nav {
   position: fixed;
-  top: 0;
+  top: 85px;
   left: 0;
   width: 100%;
   z-index: 9999;

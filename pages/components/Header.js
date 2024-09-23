@@ -17,28 +17,28 @@ const Header = () => {
   useEffect(() => {
     const navbar = document.getElementById('navbar');
 
-    // if (navbar) { 
-    //   const sticky = navbar.offsetTop;
+    if (navbar) { 
+      const sticky = navbar.offsetTop;
 
-    //   const handleScroll = () => {
-    //     if (window.scrollY > sticky) {
-    //       navbar.classList.add('fixed-top');
-    //     } else {
-    //       navbar.classList.remove('fixed-top');
-    //     }
-    //   };
+      const handleScroll = () => {
+        if (window.scrollY > sticky) {
+          navbar.classList.add('fixed-top');
+        } else {
+          navbar.classList.remove('fixed-top');
+        }
+      };
 
-    //   window.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll);
 
-    //   return () => {
-    //     window.removeEventListener('scroll', handleScroll);
-    //   };
-    // }
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
   }, []);
 // const Header = () => {
   return (
     <>
-      <nav id="navbar" className="navbar navbar fixed-top-disable">
+      <nav id="navbar" className="navbar navbar">
         <div className="container-fluid">
           <Link className="navbar-brand" href="./">
             <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
