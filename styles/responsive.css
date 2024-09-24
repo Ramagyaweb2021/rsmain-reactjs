@@ -17,11 +17,11 @@ body {
   }
 }
 /* Media query for laptop screens (1024px to 1440px) */
-@media (min-width: 1024px) and (max-width: 1440px) {
+/* @media (min-width: 1024px) and (max-width: 1440px) {
   .downsection {
-    bottom: 250px; /* Adjust 'bottom' property for laptop screens */
+    bottom: 250px; 
   }
-}
+} */
 /* For Smaller Screens (below 1024px): */
 @media (max-width: 1023px) {
   .downsection {
