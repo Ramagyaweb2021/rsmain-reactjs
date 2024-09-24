@@ -5,7 +5,7 @@ import Link from 'next/link';
 const SchoolCard = () => {
   return (
     <div className="container my-5">
-      <h2 className="text-center wow animate__animated animate__bounce" style={{ animationDelay: '0.3s' }}>OUR CAMPUSES</h2>
+      <h1 className="main-heading text-center wow animate__animated animate__bounce" style={{ animationDelay: '0.3s' }}>OUR CAMPUSES</h1>
       <div className="row g-3 mt-3">
         {/* Noida */}
         <div className="col-lg-6 col-md-6 col-sm-12">

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
-const Invovate = () => {
+const Invovateold = () => {
   useEffect(() => {
     // Initialize WOW.js only on the client side
     const WOWJS = require('wowjs');
@@ -112,4 +112,4 @@ const Invovate = () => {
   )
 }
 
-export default Invovate
+export default Invovateold

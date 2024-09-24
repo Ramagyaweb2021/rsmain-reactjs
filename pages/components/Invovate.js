@@ -66,8 +66,8 @@ const VideoPlayerApp = () => {
               INNOVATE YOUR INTEREST WITH US
             </span>
           </h1>
-          <p>
-            A child learns in many ways - questioning adults, collaborating with peers, and experiencing the world through his or her unique perspective. Ramagya School transforms these ways of learning into a methodology of relevance.
+          <p>Cutting-edge programs designed to ignite creativity, critical thinking, and problem-solving skills in students. By exploring real-world issues through cultural and sensory perspectives, students develop effective, innovative solutions.
+          We are committed to nurturing the next generation of innovators, preparing them to lead and excel in a rapidly changing world!
           </p>
           <Row style={{backgroundColor:"#D5D7D7"}}>
             {/* Left side: list of items in grid layout */}
@@ -78,9 +78,9 @@ const VideoPlayerApp = () => {
                     <Card onClick={() => handleVideoClick(video.src)} style={{marginTop:"10px"}}>
                       <Card.Img variant="top" src={video.thumbnail} />
                       <div className='play-button-overlay-innovate'>
-                        <Image src="/images/play-button.png" className="play-button" alt="play-button" width={96} height={96}/>
+                        <Image src="/images/play-button-1.png" className="play-button" alt="play-button" width={96} height={96}/>
                         {/* <span className="play-button">&#9658;</span> */}
-                        <p className='mt-100 text-black'>{video.title}</p>
+                        <p className='mt-110 text-theme-color'>{video.title}</p>
                       </div>
                       {/* <span className="play-button">&#9658;</span> */}
                       {/* <Card.Body>

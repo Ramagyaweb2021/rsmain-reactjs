@@ -137,6 +137,9 @@ ol, ul {
 .mt-100 {
   margin-top: 100px;
 }
+.mt-110 {
+  margin-top: 110px;
+}
 a {
   color: #404040;
   text-decoration: none; /* Fixed invalid value */
@@ -268,7 +271,7 @@ a:hover {
 .dropdown-item:focus,
 .dropdown-item:hover {
   background-color: #ADC178;
-  color: #000;
+  color: #ffffff;
   /* font-weight: 500; */
 }
 
@@ -499,23 +502,24 @@ span.highlight-lg::after {
 
 .fp-tableExperiment {
   background-color: #fff;
-  padding: 200px 0 0 200px;
+  padding: 200px 0 200px 0;
 }
 
 .fp-tableInvovate {
   background-color: #ffffff;
-  padding: 200px 0 0 200px;
+  padding: 200px 0 200px 0;
 }
 
 .fp-tableEvolve {
   background-color: #fff;
-  padding: 200px 0 0 200px;
+  padding: 200px 0 200px 0;
 }
 
 .fp-tableLead {
   background-image: url(/images/explore-bg.png);
   background-color: #ffffffb8;
-  padding: 200px 0 0 200px;
+  background-blend-mode: overlay;
+  padding: 200px 0 200px 0;
 }
 
 .fp-section {
@@ -660,6 +664,10 @@ span.highlight-lg::after {
   margin-bottom: 40px;
   font-family: 'Raleway', sans-serif;
 }
+.text-theme-color{
+ color: #274C77 !important;
+ font-size: 13px;
+}
 
 .colorbg-one {
   color: #274C77;
@@ -754,6 +762,36 @@ ul {
 }
 
 .learn .approach a {
+  background: linear-gradient(to right, #ADC178, #FFFFFF);
+  color: #274C77;
+  /* border: 2px solid;
+  border-image: linear-gradient(45deg, #ADC178, #274C77) 1; */
+  /* border: 1px solid #ADC178; */
+  font-family: 'Raleway', sans-serif;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-transform: none;
+  display: inline-block;
+  padding: 15px 5px;
+  width: 250px;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.learn .approach a:hover {
+  background: linear-gradient(to right, #ADC178, #FFFFFF);
+  border: 1px dashed #ffffff;
+}
+
+.learn .approach-1 a {
   background: #274C77;
   color: #fff;
   /* border: 2px solid;
@@ -778,10 +816,11 @@ ul {
 
 }
 
-.learn .approach a:hover {
-  background: #ADC178;
+.learn .approach-1 a:hover {
+  background: #274C77;
   border: 1px dashed #ffffff;
 }
+
 
 #navbar {
   background-color: transparent;
@@ -828,7 +867,7 @@ ul {
 
 .service_box.type_seven .content {
   position: relative;
-  background: #ffffff;
+  background: #e9f5f842;
   /* padding: 0px 10px 0px; */
   overflow: hidden;
 }
@@ -873,6 +912,8 @@ ul {
 
 .service_box.type_seven .content p {
   margin: 0px;
+  text-align: left;
+  padding: 10px;
 }
 
 .service_box.type_seven .content .right {
@@ -903,7 +944,7 @@ ul {
 
 .service_box.type_two {
   border-radius: 20px;
-  background: #E9F5F8;
+  background: #e9f5f842;
   box-shadow: #274C77;
 }
 
@@ -1079,7 +1120,7 @@ ul {
   background-size: cover;
   background-attachment: scroll;
   /* background-size: 100% 100%; */
-  padding: 15px 0px 0px 20px;
+  padding: 15px 0px 0px 0px;
 }
 
 .service_box.type_four .content_box .steps {
@@ -1218,7 +1259,7 @@ ul {
 .fw-bold {
   color: #274C77;
   font-weight: 500 !important;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 39.01px;
   text-align: left;
 
@@ -1795,14 +1836,14 @@ h4, title_3 trans{
 }
 #innvovate-thumnail-area{
   background-image: url(/images/innovate-video-bg.png);
-  background-color: #ffffffb8;
+  background-color: #ffffff1c;
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   /* background-size: 100% 100%; */
-  padding: 6px 0 0 20px;
+  padding: 2px 0 0 5px;
 }
 .dropdown-menu-end{
   margin-left: auto;
@@ -1855,7 +1896,17 @@ h4, title_3 trans{
 .main-video{
   margin-top: -98px;
   /* z-index: 1; */
-}/* Add animation for sticky menu */
+}
+.the-difference-we-make {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.the-difference-we-make h1 {
+  text-align: center;
+}
+
+/* Add animation for sticky menu */
 /* WOW.js fadeInUp animation */
 #menu {
   transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;

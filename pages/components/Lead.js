@@ -30,7 +30,7 @@ const Evolve = () => {
                     MEET OUR ALUMINI
                   </span>
                 </h1>
-                <p> A child learns in many ways - questioning adults, collaborating with peers, and experiencing the world through his or her unique perspective.Ramagya School transforms these ways of learning into a methodology of relevance. </p>
+                <p>Our programs are designed to empower students to excel beyond the classroom and make a meaningful impact. The Ramagya Alumni Association plays a pivotal role in this by fostering a lifelong network of former students who share their achievements, provide mentorship, and support ongoing school initiatives. This dynamic community helps current students envision their future and draw inspiration from those who have paved the way. Our farewell ceremonies for Class XII students celebrate their journey with heartfelt citations, vibrant cultural programs, and memorable interactions, creating lasting bonds and cherished memories. These events ensure that students leave Ramagya equipped with confidence, skills, and connections to navigate their future endeavors. Whether through reminiscing with alumni, participating in farewell traditions, or engaging in ongoing alumni networks, Ramagya School is dedicated to nurturing leaders who are prepared to lead with purpose and make a significant impact in their chosen fields.</p>
                 <section className="service_post position-relative">
                   <div className="row">
                     <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
@@ -41,7 +41,7 @@ const Evolve = () => {
                                     Tanya Mehra
                                   </h2>
                                   <p>BITS Pilani</p>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
                               </div>
                         <div className="content_box trans">
@@ -54,7 +54,7 @@ const Evolve = () => {
                                     Tanya Mehra
                                   </h2>
                                   <p>BITS Pilani</p>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
                               </div> */}
                             </div>
@@ -67,7 +67,7 @@ const Evolve = () => {
                           <h4 className="title_3 trans">
                               Tanya Mehra
                             </h4>
-                            <p className="alumni-para-trans">
+                            <p className='text-white'>
                                 BITS Pilani
                               </p>
                                               
@@ -84,7 +84,7 @@ const Evolve = () => {
                                      Kunal Kumar
                                   </h2>
                                   <p>IIT Kanpur</p>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
                               </div>
                         <div className="content_box trans">
@@ -97,7 +97,7 @@ const Evolve = () => {
                                      Kunal Kumar
                                   </h2>
                                   <p>IIT Kanpur</p>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
                               </div> */}
                             </div>
@@ -110,7 +110,7 @@ const Evolve = () => {
                           <h4 className="title_3 trans">
                               Kunal Kumar
                             </h4>
-                            <p className="alumni-para-trans">
+                            <p className='text-white'>
                                 IIT Kanpur
                               </p>
                                               
@@ -127,7 +127,7 @@ const Evolve = () => {
                                     Shikhar Sharma
                                   </h2>
                                   <p>IIT Kanpur</p>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                 </div>
                               </div>
                         <div className="content_box trans">
@@ -144,7 +144,7 @@ const Evolve = () => {
                           <h4 className="title_3 trans">
                              Shikhar Sharma
                             </h4>
-                            <p className="alumni-para-trans">
+                            <p className='text-white'>
                                 IIT Kanpur
                               </p>
                                               

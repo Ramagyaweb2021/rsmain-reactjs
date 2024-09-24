@@ -26,11 +26,10 @@ const Explore = () => {
                    EXPLORE
                   <span className="lineclass" />
                   <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-                     OUR APPROACH AND CURRICULUM
+                    OUR APPROACH AND CURRICULUM
                   </span>
                 </h1>
-                <p> A child learns in many ways - questioning adults, collaborating with peers, and experiencing the world through his or her unique perspective. Ramagya School transforms these ways of learning into a methodology of relevance. This means that every child at our schools is equipped with a toolkit of concepts, skills and knowledge, which he or she can shape into endless possibilities and solutions. In a dynamic and shifting world, this kind of learning impacts individual growth as well as global consciousness.
-                </p>
+                <p>Ramagya embodies the commitment to foster curiosity and creativity in every student. Through a well-rounded academic process that integrates both scholastic and co-scholastic activities, students are encouraged to discover their potential in diverse areas. Ramagya School aims to create an environment ensuring holistic development, empowering students to grow intellectually, emotionally, and creatively. We ensure that every child embarks on a journey of self-discovery and skill-building that extends beyond the classroom.</p>
                 <div className='row justify-content-center'>
                     <div className="col-sm-3">
                      {/* <Image src="/images/primary.png" alt="Primary" width={260} height={150}/> */}
@@ -47,7 +46,7 @@ const Explore = () => {
                       </div>
                     </div>
                     <div className="col-sm-3">
-                      <div className="approach">
+                      <div className="approach-1">
                         <a href="#">Middle</a>
                       </div>
                     </div>
@@ -57,15 +56,15 @@ const Explore = () => {
                       </div>
                     </div>
                     <div className="col-sm-3">
-                      <div className="approach">
+                      <div className="approach-1">
                         <a href="#">Senior Secondary</a>
                       </div>
                     </div>  
                    </div>
-                  
 
+                   
                   {/* Learb more button */}
-                <div className="approach mt-50 wow animate__animated animate__fadeInLeft' style={{ animationDelay: '0.2s' }}">
+                <div className="approach mt-50">
                   <a href="#">Learn More</a>
                 </div>
               </div>

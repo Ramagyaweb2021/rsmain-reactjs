@@ -9,7 +9,7 @@ const OfferPopup = () => {
         // Show the popup after 5 seconds
         const timer = setTimeout(() => {
             setShow(true);
-        }, 1000);
+        }, 10000);
 
         // Clean up the timer if the component unmounts
         return () => clearTimeout(timer);
@@ -20,7 +20,7 @@ const OfferPopup = () => {
     return (
         <Modal show={show} onHide={handleClose} centered className="custom-modal" style={{backgroundColor:"transparent"}}>
             <Modal.Header closeButton style={{backgroundColor:"#EEF0F2"}}>
-                <Modal.Title style={{color:"#274C77", fontWeight:"600", fontSize:"35px"}}>RAMAGYA SCHOOLS SCHOLARSHIPS</Modal.Title>
+                <Modal.Title style={{color:"#274C77", fontWeight:"600", fontSize:"25px", textAlign:"center"}}>RAMAGYA SCHOOLS SCHOLARSHIPS</Modal.Title>
                 {/* <Image src="/images/close.png" alt="Close" width={64} height={64}  className="btn-close btn-close-yellow"/> */}
             </Modal.Header>
             <Modal.Body style={{backgroundColor:"#EEF0F2"}}>

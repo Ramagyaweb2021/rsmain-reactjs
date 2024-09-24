@@ -30,7 +30,8 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
   EVOLVE YOUR CAREER WITH US
 </span>
 </h1>
-<p> A child learns in many ways - questioning adults, collaborating with peers, and experiencing the world through his or her unique perspective.Ramagya School transforms these ways of learning into a methodology of relevance. </p>
+<p>Fostering future leaders through our comprehensive approach that helps students to Evolve. 
+Through these dynamic programs, Ramagya School is committed to evolving our students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p>
 <section className="service_post_11 position-relative">
 <div className="row">
     <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
@@ -41,9 +42,9 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
               <Image src="/images/career-path.png" alt="personaforge" width={50} height={50}/>
             </div>
               <h2 className="overlay-title">
-                  Career Path
+                  CAREER PATH
               </h2>
-            <p>This is the overlay content that appears on hover.</p>
+            {/* <p>This is the overlay content that appears on hover.</p> */}
           </div>
         </div>
         <div className="content_box trans">
@@ -53,7 +54,7 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
             </div>
             <div className="steps trans">1</div>
             <h4 className="title_24 trans">
-                Career Path
+                CAREER PATH
             </h4>
           </div>
           <div className="line_box">
@@ -71,9 +72,9 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
                     <Image src="/images/investiture-ceremony.png" alt="personaforge" width={50} height={50}/>
                   </div>
                     <h2 className="overlay-title">
-                       Investiture  Ceremony
+                       STUDENT DRIVEN SOCIETIES
                     </h2>
-                  <p>This is the overlay content that appears on hover.</p>
+                  {/* <p>This is the overlay content that appears on hover.</p> */}
                 </div>
               </div>
         <div className="content_box trans">
@@ -83,15 +84,15 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
               {/* <div className="image-container">
                 <div className="overlay">
                     <h2 className="overlay-title">
-                       Investiture  Ceremony
+                       STUDENT DRIVEN SOCIETIES
                     </h2>
-                  <p>This is the overlay content that appears on hover.</p>
+                  // <p>This is the overlay content that appears on hover.</p>
                 </div>
               </div> */}
             </div>
             <div className="steps trans">2</div>
             <h4 className="title_24 trans">
-                Investiture  Ceremony
+                STUDENT DRIVEN SOCIETIES
             </h4>
           </div>
           <div className="line_box">
@@ -112,14 +113,14 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
                     <h2 className="overlay-title">
                        Innovation
                     </h2>
-                  <p>This is the overlay content that appears on hover.</p>
+                  // <p>This is the overlay content that appears on hover.</p>
                 </div>
               </div> */}
             </div>
               <h2 className="overlay-title">
-                Innovation
+                MUN
               </h2>
-            <p>This is the overlay content that appears on hover.</p>
+            {/* <p>This is the overlay content that appears on hover.</p> */}
           </div>
         </div>
         <div className="content_box trans">
@@ -131,13 +132,13 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
                     <h2 className="overlay-title">
                        Innovation
                     </h2>
-                  <p>This is the overlay content that appears on hover.</p>
+                  // <p>This is the overlay content that appears on hover.</p>
                 </div>
               </div> */}
             </div>
             <div className="steps trans">3</div>
             <h4 className="title_24 trans">
-                Innovation
+              MUN
             </h4>
           </div>
           <div className="line_box">
@@ -156,16 +157,16 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
               {/* <div className="image-container">
                 <div className="overlay">
                     <h2 className="overlay-title">
-                       Empowered Minds
+                       EMPOWERED MINDS
                     </h2>
-                  <p>This is the overlay content that appears on hover.</p>
+                  // <p>This is the overlay content that appears on hover.</p>
                 </div>
               </div> */}
             </div>
               <h2 className="overlay-title">
-                Empowered Minds
+                EMPOWERED MINDS
               </h2>
-            <p>This is the overlay content that appears on hover.</p>
+            {/* <p>This is the overlay content that appears on hover.</p> */}
           </div>
         </div>
         <div className="content_box trans">
@@ -175,15 +176,15 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
               {/* <div className="image-container">
                 <div className="overlay">
                     <h2 className="overlay-title">
-                       Empowered Minds
+                       EMPOWERED MINDS
                     </h2>
-                  <p>This is the overlay content that appears on hover.</p>
+                  // <p>This is the overlay content that appears on hover.</p>
                 </div>
               </div> */}
             </div>
             <div className="steps trans">4</div>
             <h4 className="title_24 trans">
-              Empowered Minds
+              EMPOWERED MINDS
             </h4>
           </div>
           <div className="line_box">
@@ -202,16 +203,16 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
               {/* <div className="image-container">
                 <div className="overlay">
                     <h2 className="overlay-title">
-                       Empowered Minds
+                       EMPOWERED MINDS
                     </h2>
-                  <p>This is the overlay content that appears on hover.</p>
+                  // <p>This is the overlay content that appears on hover.</p>
                 </div>
               </div> */}
             </div>
               <h2 className="overlay-title">
-                CSR
+                CSR INITIATIVES
               </h2>
-            <p>This is the overlay content that appears on hover.</p>
+            {/* <p>This is the overlay content that appears on hover.</p> */}
           </div>
         </div>
         <div className="content_box trans">
@@ -223,13 +224,13 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
                     <h2 className="overlay-title">
                        CSR
                     </h2>
-                  <p>This is the overlay content that appears on hover.</p>
+                  // <p>This is the overlay content that appears on hover.</p>
                 </div>
               </div> */}
             </div>
             <div className="steps trans">5</div>
             <h4 className="title_24 trans">
-              CSR
+               CSR INITIATIVES
             </h4>
           </div>
           <div className="line_box">
@@ -250,14 +251,14 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
                     <h2 className="overlay-title">
                        Self Reflection
                     </h2>
-                  <p>This is the overlay content that appears on hover.</p>
+                  // <p>This is the overlay content that appears on hover.</p>
                 </div>
               </div> */}
             </div>
               <h2 className="overlay-title">
-                Self Reflection
+                STUDENT CABINET
               </h2>
-            <p>This is the overlay content that appears on hover.</p>
+            {/* <p>This is the overlay content that appears on hover.</p> */}
           </div>
         </div>
         <div className="content_box trans">
@@ -269,13 +270,13 @@ className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s
                     <h2 className="overlay-title">
                        Self Reflection
                     </h2>
-                  <p>This is the overlay content that appears on hover.</p>
+                  // <p>This is the overlay content that appears on hover.</p>
                 </div>
               </div> */}
             </div>
             <div className="steps trans">6</div>
             <h4 className="title_24 trans">
-              Self Reflection
+               STUDENT CABINET
             </h4>
           </div>
           <div className="line_box">
