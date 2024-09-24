@@ -43,8 +43,8 @@ export default function App() {
 
   return (
     <>
-     {/* Side floating buttion section */}
-     <div className="btn-float-discover animate__animated animate__fadeInRight" style={{ animationDelay: '3s' }}>
+     {/* Side floating buttion discover section */}
+     {/* <div className="btn-float-discover animate__animated animate__fadeInRight" style={{ animationDelay: '3s' }}>
           <Link
             href="https://qr1.be/ZJ68"
             target="_blank"
@@ -53,13 +53,13 @@ export default function App() {
           >
             <Image src="/images/discover-more.png" alt="Ramagya school discover button" width={40} height={204}/>
           </Link>
-       </div>
+       </div> */}
        {/* Enquiry buttion */}
-       <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
+       {/* <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
         <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral btn-flash-1' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>
           <Image src="/images/enquiry-widget.png" alt="Ramagya school enquire button" width={120} height={120} />
         </Button>
-      </div>
+      </div> */}
 
       {/* <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
         <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>

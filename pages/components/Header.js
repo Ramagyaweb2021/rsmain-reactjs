@@ -48,7 +48,7 @@ const Header = () => {
           </Button>{' '} */}
            <Dropdown className='dropdown-menu-end'>
             <Dropdown.Toggle variant="warning" id="dropdown-basic" className="btn-flash">
-              APPLY NOW
+            <Image src="/images/fi_check-circle.png" alt="Ramagya school noida logo" width={24} height={24}/> APPLY NOW
             </Dropdown.Toggle>
             <Dropdown.Menu className="dropdown-menu-end">
               <Dropdown.Item href="https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/" target="_blank">Noida</Dropdown.Item>
@@ -56,14 +56,13 @@ const Header = () => {
               <Dropdown.Item href="#">Greater Noida</Dropdown.Item>
               <Dropdown.Item href="#">Dadri</Dropdown.Item>
             </Dropdown.Menu>
-          </Dropdown>
+          </Dropdown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {/* Hamburger menu section */}
           <div className="hamburger" id="nav-icon1" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar">
             <strong className="hamiocn1" style={{ display: "inline-block" }} />
             <strong className="hamiocn2" style={{ display: "none" }} />
-            {/*  <img class="hamiocn1" src="/images/menu-icon-black.png"> 
-                    <img class="hamiocn2" src="/images/menu-icon-white.png">  */}
             <span />
             <span />
             <span />
@@ -73,7 +72,7 @@ const Header = () => {
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar" src="/images/sprites-imgs.png" alt="Ramagya school noida logo" width={80} height={40}/> */}
+            aria-controls="offcanvasDarkNavbar" src="/images/blue-menu-icon.png" alt="Ramagya school noida logo" width={80} height={40}/> */}
           {/* <button
             className="navbar-toggler"
             type="button"

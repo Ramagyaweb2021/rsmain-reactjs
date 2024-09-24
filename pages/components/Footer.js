@@ -197,7 +197,7 @@ const Footer = () => {
             </Form>
           </Col> */}
         </Row>
-        <Row>
+        {/* <Row>
          <Col md={12} className="text-center campuses-list" >
             <p className="footer-heading">our schools:</p>
             <a href="#noida" className="campus-link">NOIDA</a>
@@ -206,7 +206,7 @@ const Footer = () => {
             <a href="#dadri" className="campus-link">DADRI</a>
             <a href="#ramagya-roots" className="campus-link">RAMAGYA ROOTS</a>
           </Col>
-        </Row>
+        </Row> */}
         <Row className="footer-bottom">
           <Col md={12} className="text-center">
             <p>Copyright 2024. Sai Chhaya Educational And Welfare Society | Designed & Marketed by <a href="#">Ramagya Digital</a></p>
