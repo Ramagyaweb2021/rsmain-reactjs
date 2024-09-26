@@ -40,15 +40,15 @@ const Header = () => {
     <>
       <nav id="navbar" className="navbar navbar">
         <div className="container-fluid">
-          <Link className="navbar-brand" href="./">
+          <a className="navbar-brand" href="./">
             <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
-          </Link>
+          </a>
           {/* <Button variant="warning" size="lg" style={{float:"right"}}>
             APPLY NOW
           </Button>{' '} */}
            <Dropdown className='dropdown-menu-end'>
             <Dropdown.Toggle variant="warning" id="dropdown-basic" className="btn-flash">
-            <Image src="/images/fi_check-circle.png" alt="Ramagya school noida logo" width={24} height={24}/> APPLY NOW
+            <Image src="/images/fi_check-circle.png" alt="Ramagya school noida logo" width={20} height={20}/> APPLY NOW
             </Dropdown.Toggle>
             <Dropdown.Menu className="dropdown-menu-end">
               <Dropdown.Item href="https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/" target="_blank">Noida</Dropdown.Item>

@@ -9,7 +9,7 @@ const OfferPopup = () => {
         // Show the popup after 5 seconds
         const timer = setTimeout(() => {
             setShow(true);
-        }, 10000);
+        }, 1000);
 
         // Clean up the timer if the component unmounts
         return () => clearTimeout(timer);

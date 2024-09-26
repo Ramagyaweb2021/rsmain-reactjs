@@ -11,7 +11,7 @@ import OurCampus from './components/OurCampus'
 import DownSection from './components/DownSection'
 import OfferPopup from './components/OfferPopup'; 
 import Thedifferencewemakenew from './components/Thedifferencewemakenew'
-import Bepartoframagyanew from './components/Bepartoframagyanew'
+// import Bepartoframagyanew from './components/Bepartoframagyanew'
 import SchoolUpdates from './components/SchoolUpdates'
 import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
@@ -34,7 +34,7 @@ const Home = () => {
      <Thedifferencewemakenew/>
      {/* <Thedifferencewemake/> */}
      {/* <Bepartoframagya/> */}
-     <Bepartoframagyanew/>
+     {/* <Bepartoframagyanew/> */}
      <SchoolUpdates/>
      {/* <NewsAndAchievements/> */}
      {/* <VideoAndDonwload/> */}

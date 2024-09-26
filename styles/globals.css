@@ -12,8 +12,10 @@ body {
   /* font-weight: 300; */
   color: #676767;
   /* scrollbar-color: #fff #274C77;
-  letter-spacing: 0.5px; */}
-    /* -----------------------------------------------------WebKit-based Scrollbars */
+  letter-spacing: 0.5px; */
+}
+
+/* -----------------------------------------------------WebKit-based Scrollbars */
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -30,21 +32,26 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #ADC178;
 }
+
 /* -----------------------------------------------------Smooth Scrolling */
 html {
   scroll-behavior: smooth;
   /* scroll-snap-type: y mandatory;  */
 }
+
 section {
-  scroll-snap-align: start; /* Sections will snap to the start of the viewport */
+  scroll-snap-align: start;
+  /* Sections will snap to the start of the viewport */
   /* height: 100vh; */
 }
+
 * {
   outline: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Remove padding, margin from video container */
 .container-fluid {
   padding: 0;
@@ -52,10 +59,12 @@ section {
 }
 
 /* Remove margin, padding from the row and column */
-.row, .col-lg-12 {
+.row,
+.col-lg-12 {
   padding: 0;
   margin: 0;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -63,7 +72,12 @@ img {
   border-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   color: #274C77;
   font-family: "Oswald", sans-serif;
@@ -77,9 +91,12 @@ p {
   margin-bottom: 15px;
   transition: 0.5s ease-in-out;
 }
-ol, ul {
+
+ol,
+ul {
   padding-left: 0.2rem;
 }
+
 /* ----------------------------------------------------- Global Styles */
 .mt-5 {
   margin-top: 5px;
@@ -120,12 +137,15 @@ ol, ul {
 .mt-50 {
   margin-top: 50px;
 }
+
 .mt-60 {
   margin-top: 60px;
 }
+
 .mt-70 {
   margin-top: 70px;
 }
+
 .mt-80 {
   margin-top: 80px;
 }
@@ -137,17 +157,21 @@ ol, ul {
 .mt-100 {
   margin-top: 100px;
 }
+
 .mt-110 {
   margin-top: 110px;
 }
+
 a {
   color: #404040;
-  text-decoration: none; /* Fixed invalid value */
+  text-decoration: none;
+  /* Fixed invalid value */
 }
 
 a:hover {
   color: #f1c40f;
-  text-decoration: none; /* Example of valid value, optional */
+  text-decoration: none;
+  /* Example of valid value, optional */
 }
 
 .offcanvas-top {
@@ -160,8 +184,10 @@ a:hover {
 .offcanvas-body {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Corrected from 'left' */
-  justify-content: flex-start; /* Corrected from 'left' */
+  align-items: flex-start;
+  /* Corrected from 'left' */
+  justify-content: flex-start;
+  /* Corrected from 'left' */
 }
 
 .text-bg-dark {
@@ -195,6 +221,7 @@ a:hover {
 .dropdown-menu-dark {
   background-color: #274C77;
 }
+
 /* Initial state: hidden and positioned above */
 .menu-hidden {
   opacity: 0;
@@ -214,7 +241,8 @@ a:hover {
 } */
 
 .bg-dark {
-  background-color: transparent !important; /* More explicit */
+  background-color: transparent !important;
+  /* More explicit */
 }
 
 .navbar-toggler {
@@ -252,9 +280,10 @@ a:hover {
   display: inline-block; 
 } */
 
-.dropdown-item{
+.dropdown-item {
   font-weight: 600;
 }
+
 #dropdown-basic {
   /* border-radius: 1px; */
   background-color: #274C77;
@@ -264,8 +293,9 @@ a:hover {
   border: 1px solid #274C77;
   /* border-image: linear-gradient(45deg, #ADC178, #274C77) 1; */
 }
-#dropdown-basic:hover{
-  border:1px dashed transparent;
+
+#dropdown-basic:hover {
+  border: 1px dashed transparent;
 }
 
 .dropdown-item:focus,
@@ -283,13 +313,14 @@ a:hover {
 .modal-header {
   border-bottom: var(--bs-modal-header-border-width) solid #dee2e600;
 }
-.modal-title{
-  font-family:'Oswald', sans-serif;
+
+.modal-title {
+  font-family: 'Oswald', sans-serif;
 }
 
 .nav-link {
   font-size: 20px;
-  font-family:'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
@@ -306,6 +337,7 @@ a:hover {
 .dropdown-menu.show {
   z-index: 1111;
 }
+
 /* -----------------------------------------------------Social Media Buttons */
 .social {
   position: absolute;
@@ -314,6 +346,7 @@ a:hover {
   width: 100%;
   left: 0;
 }
+
 /* Social icons css */
 .social-icon {
   text-align: left;
@@ -323,7 +356,8 @@ a:hover {
   text-align: center;
 }
 
-.social-icon.meni_social23 ul li { /* Corrected class name */
+.social-icon.meni_social23 ul li {
+  /* Corrected class name */
   display: inline-block;
   position: relative;
 }
@@ -333,7 +367,8 @@ a:hover {
   list-style: none;
 }
 
-.social-icon.meni_social23 a { /* Corrected class name */
+.social-icon.meni_social23 a {
+  /* Corrected class name */
   padding-top: 5px;
   margin-right: 15px;
 }
@@ -350,7 +385,8 @@ a:hover {
   padding: 0 15px;
   color: #818181;
   font-size: 14px;
-  transition: 0.3s ease; /* Use numeric value for consistency */
+  transition: 0.3s ease;
+  /* Use numeric value for consistency */
 }
 
 .social-icon a.whatsapp:hover {
@@ -380,19 +416,22 @@ a:hover {
 .social-icon a.bold:hover {
   color: #f06a35;
 }
+
 /* Floating Buttons */
 .btn-float-discover {
   position: fixed;
   right: 0;
   bottom: 40%;
-  z-index: 1000; /* Increased z-index for better stacking context */
+  z-index: 1000;
+  /* Increased z-index for better stacking context */
 }
 
 .btn-float-enquire {
   position: fixed;
   right: 0;
   bottom: 15%;
-  z-index: 1000; /* Increased z-index for better stacking context */
+  z-index: 1000;
+  /* Increased z-index for better stacking context */
 }
 
 /* Enquiry Popup Form */
@@ -420,8 +459,10 @@ a:hover {
 }
 
 .input::placeholder {
-  color: #ccc; /* Adjusted for better contrast */
+  color: #ccc;
+  /* Adjusted for better contrast */
 }
+
 /* Highlight */
 span.highlight-lg {
   position: relative;
@@ -461,7 +502,7 @@ span.highlight-lg::after {
   /* margin-top: -7px !important; */
 }
 
-.justify-content-center.fixed-top { 
+.justify-content-center.fixed-top {
   background-color: #274C77 !important;
   border-bottom: 1px solid #274C77;
   border-top: 1px solid #274C77;
@@ -483,13 +524,14 @@ span.highlight-lg::after {
   table-layout: fixed;
   width: 100%;
 }
-.bg-light{
+
+.bg-light {
   background-color: #fff;
 }
 
 .fp-tableExplore {
   background-image: url(/images/explore-bg.png);
-  background-color:#ffffffa8;
+  background-color: #ffffffa8;
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
@@ -637,8 +679,10 @@ span.highlight-lg::after {
 }
 
 .explore-content:hover {
-  transform: scale(1.05); /* Slightly enlarge the element */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  transform: scale(1.05);
+  /* Slightly enlarge the element */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a shadow */
 }
 
 .explore-content h5 {
@@ -646,7 +690,8 @@ span.highlight-lg::after {
 }
 
 .explore-content:hover h5 {
-  background-color: transparent; /* Change background color on hover */
+  background-color: transparent;
+  /* Change background color on hover */
 }
 
 .explore-content p {
@@ -654,8 +699,10 @@ span.highlight-lg::after {
 }
 
 .explore-content:hover p {
-  color: #333; /* Change text color on hover */
+  color: #333;
+  /* Change text color on hover */
 }
+
 .learn p,
 .explore p {
   color: #676767;
@@ -664,15 +711,17 @@ span.highlight-lg::after {
   margin-bottom: 40px;
   font-family: 'Raleway', sans-serif;
 }
-.text-theme-color{
- color: #274C77 !important;
- font-size: 13px;
+
+.text-theme-color {
+  color: #274C77 !important;
+  font-size: 13px;
 }
 
 .colorbg-one {
   color: #274C77;
   margin-top: 20px;
 }
+
 /* .colorbg-one:hover{
   color: #ADC178;
 } */
@@ -906,7 +955,8 @@ ul {
   margin-bottom: 5px;
   padding: 3%;
 }
-.title_2 a:hover{
+
+.title_2 a:hover {
   color: #ADC178 !important;
 }
 
@@ -936,6 +986,7 @@ ul {
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
 }
+
 .service_box.type_two {
   border-radius: 20px;
   background: #fff;
@@ -991,32 +1042,43 @@ ul {
   color: #ffffff8a;
   z-index: 0;
 }
+
 /* -----------------------------------------------------Base hover styles */
-.steps, .title_24, .trans {
+.steps,
+.title_24,
+.trans {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .steps:hover {
-  transform: scale(1.2); /* Enlarge the number slightly */
-  background-color: #274C77; /* Change background color */
-  color: #fff; /* Change text color */
+  transform: scale(1.2);
+  /* Enlarge the number slightly */
+  background-color: #274C77;
+  /* Change background color */
+  color: #fff;
+  /* Change text color */
 }
 
 .title_24:hover {
-  color: #274C77; /* Change text color on hover */
-  transform: translateY(-5px); /* Move the title slightly upwards */
+  color: #274C77;
+  /* Change text color on hover */
+  transform: translateY(-5px);
+  /* Move the title slightly upwards */
 }
 
 .trans:hover {
-  color: #333; /* Change text color on hover */
-  transform: translateY(-3px); /* Slight upward movement for p tag */
+  color: #333;
+  /* Change text color on hover */
+  transform: translateY(-3px);
+  /* Slight upward movement for p tag */
 }
 
 /* Optional hover effect on the entire section */
-.steps:hover + .title_24,
-.steps:hover + .title_24 + .trans {
+.steps:hover+.title_24,
+.steps:hover+.title_24+.trans {
   transform: translateY(-5px);
-  color: #274C77; /* Consistent hover color */
+  color: #274C77;
+  /* Consistent hover color */
 }
 
 
@@ -1134,6 +1196,7 @@ ul {
   color: #ffffff30;
   z-index: 0
 }
+
 .image-container {
   position: static;
   width: 100%;
@@ -1246,7 +1309,8 @@ ul {
   border-radius: 30px;
   color: #274C77;
 }
-.nav-tabs .nav-link{
+
+.nav-tabs .nav-link {
   border: 1px solid #274C7717;
   border-radius: 30px;
   color: #274C77;
@@ -1364,7 +1428,8 @@ ul {
   font-size: 14px;
   color: #fff;
 }
-.news-card-text{
+
+.news-card-text {
   color: #000;
 }
 
@@ -1482,11 +1547,13 @@ ul {
 
 .btn-light:hover {
   background-color: transparent;
-  border:1px dashed #fff;
+  border: 1px dashed #fff;
 }
-.top{
+
+.top {
   margin-top: 10px;
 }
+
 /* -----------------------------------------------------CSS for school campus */
 /* .school-card {
   border: none;
@@ -1599,7 +1666,7 @@ ul {
 }
 
 .social-icons a:hover {
-  color: #f1c40f;
+  color: #ADC178;
 }
 
 .subscribe-form {
@@ -1636,13 +1703,15 @@ ul {
 .footer-bottom a:hover {
   color: #f1c40f;
 }
+
 /* .btn-warning{
   color: #274C77;
 } */
-.footer-social-media{
+.footer-social-media {
   font-size: 15px;
   margin-left: 5px;
 }
+
 /* CSS for Transition: */
 /* .delay-animation {
   animation-delay: 2s; 
@@ -1653,6 +1722,7 @@ ul {
   z-index: 1;
   left: calc(50% - 25px);
 }
+
 /* .down-angle {
   width: 30px;
   height: auto;
@@ -1662,7 +1732,7 @@ ul {
 .down-angle:hover {
   transform: translateY(5px);
 } */
- /* CSS for popup */
+/* CSS for popup */
 /* Ensure the modal is centered */
 .custom-modal .modal-dialog {
   display: flex;
@@ -1673,29 +1743,34 @@ ul {
 
 /* Apply width directly to modal content */
 .custom-modal .modal-content {
-  width: 800px; /* Adjust this value as needed */
+  width: 800px;
+  /* Adjust this value as needed */
 }
 
 /* Alternatively, you can set a max-width */
 .custom-modal .modal-dialog {
-  max-width: 800px; /* Adjust this value as needed */
+  max-width: 800px;
+  /* Adjust this value as needed */
 }
 
 /* Ensure proper display of modal */
 .custom-modal .modal-content {
   margin: 0 auto;
 }
+
 .custom-modal .modal-content {
-  width: 800px; /* Adjust the width as needed */
+  width: 800px;
+  /* Adjust the width as needed */
 }
 
-.btn-close{
+.btn-close {
   width: 35px;
   height: 35px;
-  background-color:#F7D00F;
+  background-color: #F7D00F;
   opacity: 1;
   border-radius: 100px;
 }
+
 /* .navbar-brand{
   background-color: #fff;
 } */
@@ -1704,6 +1779,7 @@ ul {
   0% {
     background-position: 0% 50%;
   }
+
   100% {
     background-position: 100% 50%;
   }
@@ -1713,12 +1789,15 @@ ul {
   background-color: #274C77;
   /* background: linear-gradient(270deg, #ADC178, #24a7cf); */
   background-size: 200% 200%;
-  border:1px solid #ffffff;
-  animation: flashLeftToRight 2s infinite ease-in-out; /* Adjust duration for smooth effect */
+  border: 1px solid #ffffff;
+  animation: flashLeftToRight 2s infinite ease-in-out;
+  /* Adjust duration for smooth effect */
   /* border-radius: 5px; */
 }
+
 .campuses-title {
-  color: #ffc107; /* Yellow color for the heading */
+  color: #ffc107;
+  /* Yellow color for the heading */
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -1726,11 +1805,13 @@ ul {
 .campuses-list {
   /* display: flex; */
   /* justify-content: center; */
-  gap: 50px; /* Space between links */
+  gap: 50px;
+  /* Space between links */
 }
 
 .campus-link {
-  color: #fff; /* White text for the links */
+  color: #fff;
+  /* White text for the links */
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
@@ -1738,33 +1819,41 @@ ul {
 }
 
 .campus-link:hover {
-  text-decoration: none; /* Underline on hover */
+  text-decoration: none;
+  /* Underline on hover */
 }
-h4, title_3 trans{
+
+h4,
+title_3 trans {
   color: #fff;
 }
+
 /* Rating css */
 .rating-container {
   display: flex;
   align-items: center;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
-  color: #fff; /* Text color - white */
+  color: #fff;
+  /* Text color - white */
 }
 
 .stars {
-  color: #ffcc33; /* Star color */
+  color: #ffcc33;
+  /* Star color */
   font-size: 18px;
   margin-right: 5px;
 }
 
 .rating-text {
-  color: #2D5060; /* Regular text color - white */
+  color: #2D5060;
+  /* Regular text color - white */
   margin: 0 5px;
 }
 
 .review-count {
-  color: #ffcc33; /* Green color for review count */
+  color: #ffcc33;
+  /* Green color for review count */
   font-weight: bold;
   text-decoration: none;
 }
@@ -1772,6 +1861,7 @@ h4, title_3 trans{
 .review-count:hover {
   text-decoration: underline;
 }
+
 .slider-container-testimonial {
   position: relative;
 }
@@ -1789,7 +1879,7 @@ h4, title_3 trans{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#274C7780;
+  background-color: #274C7780;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -1797,8 +1887,9 @@ h4, title_3 trans{
 }
 
 .play-button-overlay:hover {
-  background-color:#ADC178;
+  background-color: #ADC178;
 }
+
 .play-button-overlay-innovate {
   position: absolute;
   top: 40%;
@@ -1807,35 +1898,42 @@ h4, title_3 trans{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#274C7780;
+  background-color: #274C7780;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
+
 .play-button-overlay-innovate:hover {
-  background-color:#ADC178;
+  background-color: #ADC178;
 }
+
 .testimonial-content {
   background: #fff;
   box-shadow: 0 2px 2px rgb(0 0 0 / 4%);
   padding: 5px;
   border-radius: 5px;
 }
+
 .play-button {
   color: white;
   font-size: 24px;
 }
+
 .slick-dots li button:before {
   font-size: 15px !important;
   color: #ADC178 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
-   width: 95% !important;
+
+.nav-fill .nav-item .nav-link,
+.nav-justified .nav-item .nav-link {
+  width: 95% !important;
 }
-#innvovate-thumnail-area{
+
+#innvovate-thumnail-area {
   background-image: url(/images/innovate-video-bg.png);
   background-color: #ffffff1c;
   background-blend-mode: overlay;
@@ -1846,24 +1944,29 @@ h4, title_3 trans{
   /* background-size: 100% 100%; */
   padding: 2px 0 0 5px;
 }
-.dropdown-menu-end{
+
+.dropdown-menu-end {
   margin-left: auto;
 }
+
 /* .dropdown-menu-end {
   right: 0 !important;
   left: auto !important; 
   margin-left: 65%;
 } */
- /*----------------------------------------------internal pages css ------------------*/
+/*----------------------------------------------internal pages css ------------------*/
 .fixed-nav {
   position: fixed;
   top: 85px;
   left: 0;
   width: 100%;
   z-index: 9999;
-  background-color: #274C77; /* Set this to match your design */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: to add some shadow for emphasis */
+  background-color: #274C77;
+  /* Set this to match your design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: to add some shadow for emphasis */
 }
+
 .banner-sec {
   background-repeat: no-repeat;
   background-image: url(/images/who-we-are.png);
@@ -1875,8 +1978,9 @@ h4, title_3 trans{
   padding: 15px 60px;
   z-index: 1;
   color: #fff;
-  margin-top:-90px;
+  margin-top: -90px;
 }
+
 .banner-text {
   position: relative;
   padding-top: 180px;
@@ -1885,6 +1989,7 @@ h4, title_3 trans{
   text-align: center;
   z-index: 2;
 }
+
 .banner-text h1 {
   font-size: 60px;
   font-weight: 600;
@@ -1893,11 +1998,13 @@ h4, title_3 trans{
   line-height: 66px;
   color: #ffffff;
 }
+
 /* css for main video  */
-.main-video{
+.main-video {
   margin-top: -98px;
   /* z-index: 1; */
 }
+
 .the-difference-we-make {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -1911,7 +2018,8 @@ h4, title_3 trans{
 /* WOW.js fadeInUp animation */
 #menu {
   transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
-  transform: translateY(-100%) scale(0.95); /* Initially hidden and slightly scaled down */
+  transform: translateY(-100%) scale(0.95);
+  /* Initially hidden and slightly scaled down */
   opacity: 0;
   background-color: transparent;
   box-shadow: none;
@@ -1924,14 +2032,17 @@ h4, title_3 trans{
   left: 0;
   right: 0;
   z-index: 1030;
-  transform: translateY(0) scale(1); /* Scale up and bring to view */
+  transform: translateY(0) scale(1);
+  /* Scale up and bring to view */
   opacity: 1;
 }
 
 /* Scroll background color for sticky */
 #menu.scrollbg {
-  background-color: rgba(0, 0, 0, 0.8); /* Smooth background color transition */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Smooth background color transition */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
 }
 
 /* WOW.js fadeInUp effect (extra smoothness) */
@@ -1957,6 +2068,68 @@ h4, title_3 trans{
     opacity: 1;
   }
 }
+/* ****************************************************************** CSS for New Innovate Section ************************************************************************************************/
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ensures content stays aligned to the left */
+  height: 100%; /* Make each slide fill the full height of the container */
+  transition: transform 0.6s ease-in-out; /* Smooth transition for sliding */
+}
 
+.slide-content {
+  display: flex;
+  align-items: center;
+}
+
+.image-wrapper {
+  flex: 1;
+  min-height: 250px; /* Ensure the image wrapper is at least 135px */
+}
+
+.text-wrapper {
+  flex: 1;
+  padding-left: 20px; /* Adds space between image and text */
+  background-color: #274c77; 
+  font-size: 18px;
+  color: #fff;
+}
+
+.text-wrapper .card-text-slick-slider{
+  padding: 0;
+  text-align: left;
+  color: #fff;
+  font-size: 12px;
+}
+/* Add some padding to the slider container if needed */
+.slider-container {
+  padding: 20px 0;
+  height: 250px; /* Set the height of the entire slider container */
+  overflow: hidden; /* Hide overflow to prevent content from spilling out */
+  transition: transform 10s ease; /* Add smooth transition */
+}
+.row.slide-content {
+  display: flex; /* Make the slide content a flex container */
+  align-items: stretch; /* Stretch items to fill the container height */
+  height: 100%; /* Make row full height */
+}
+
+.image-wrapper,
+.text-wrapper {
+  /* display: flex;  */
+  align-items: center; /* Center content vertically */
+  height: 100%; /* Ensure both wrappers take full height */
+}
+@media (max-width: 1024px) {
+  .slide-content {
+    flex-direction: column;
+    text-align: center;    
+  }
+
+  .text-wrapper {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+}
 
 

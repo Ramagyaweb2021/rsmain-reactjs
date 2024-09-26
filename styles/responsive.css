@@ -10,6 +10,67 @@ body {
     font-size: 13px;
   }
 } */
+ /* For Max Screens (1440px): */
+@media (max-width: 1440px) {
+  .navbar-brand{
+    width: 215px;
+  }
+  .downsection{
+    bottom: 230px;
+  }
+  .nav-link{
+    font-size: 16px;
+    padding: 3px 15px;
+  }
+  .justify-content-center.fixed-top{
+    margin-top: 69px;
+  }
+  .main-heading {
+      font-size: 30px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+  }
+  .learn h1, .explore h1, .innovate h1{
+    font-size: 30px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  .learn h1>span, .explore h1>span, .innovate h1>span, .evolve h1>span{
+    font-size: 20px;
+    margin-top: -5px;
+    padding: 0px 0 0 10px;
+  }
+  .learn h1>span.lineclass::before, .explore h1>span.lineclass::before, .innovate h1>span.lineclass::before, .evolve h1>span.lineclass::before{
+    height: 40px;
+        top: -20px;
+  }
+  .learn .approach a{
+    padding: 8px 5px;
+    position: relative;
+    z-index: 1;
+    width: 170px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  .learn .approach-1 a{
+    padding: 8px 5px;
+    position: relative;
+    z-index: 1;
+    width: 170px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  .btn-warning{
+    padding: 5px 5px;
+  }
+  #dropdown-basic{
+    font-size: 14px;
+  }
+}
 /* For Larger Screens (1441px and above): */
 @media (min-width: 1441px) {
   .downsection {
