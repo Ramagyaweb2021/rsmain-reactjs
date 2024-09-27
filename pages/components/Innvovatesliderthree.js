@@ -69,19 +69,11 @@ function SingleRowSlider() {
         {/* Slide 2 */}
         <div className="slide">
           <div className="row slide-content">
-            <div className="col-md-6 col-sm-12 text-wrapper">
-              <div className="box">
-                <div className="flex">
-                  <h6 className="colr1">COLLOQUIUM</h6>
-                  <p>Applying skills in technology to solve real world problems</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-sm-12 image-wrapper">
+            <div className="col-md-12 col-sm-12 image-wrapper">
               <Image
-                src="/images/slider/3.jpg"
-                alt="Sample Image 3"
-                width={287}
+                src="/images/slider/2.jpg"
+                alt="Sample Image 2"
+                width={604}
                 height={200}
                 className="card-img-top"
               />
@@ -91,14 +83,22 @@ function SingleRowSlider() {
         {/* Slide 3 */}
         <div className="slide">
           <div className="row slide-content">
-            <div className="col-md-12 col-sm-12 image-wrapper">
+            <div className="col-md-6 col-sm-12 image-wrapper">
               <Image
-                src="/images/slider/2.jpg"
-                alt="Sample Image 2"
-                width={604}
+                src="/images/slider/3.jpg"
+                alt="Sample Image 3"
+                width={287}
                 height={200}
                 className="card-img-top"
               />
+            </div>
+            <div className="col-md-6 col-sm-12 text-wrapper">
+              <div className="box">
+                <div className="flex">
+                  <h6 className="colr1">COLLOQUIUM</h6>
+                  <p>Applying skills in technology to solve real world problems</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

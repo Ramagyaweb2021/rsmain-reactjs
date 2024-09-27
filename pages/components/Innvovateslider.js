@@ -1,25 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 
 function SingleRowSlider() {
+  const [rightToLeftIndex, setRightToLeftIndex] = useState(0);
+  const [leftToRightIndex, setLeftToRightIndex] = useState(0);
+
+  const handleRightToLeftAfterChange = (index) => {
+    setRightToLeftIndex(index);
+  };
+
+  const handleLeftToRightAfterChange = (index) => {
+    setLeftToRightIndex(index);
+  };
+
   const rightToLeftSettings = {
     className: "center",
     infinite: true,
-    slidesToShow: 4,
-    speed: 1000, // Transition speed
+    slidesToShow: 3,
+    speed: 1000,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     swipe: true,
     draggable: true,
-    dots: true, // Enable dots for navigation
+    dots: true,
+    dotsClass: "slick-dots custom-dots",
     cssEase: "ease-in-out",
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
         },
       },
       {
@@ -29,38 +41,40 @@ function SingleRowSlider() {
         },
       },
     ],
-    rtl: true, // Right to left for this slider
+    rtl: true,
+    afterChange: handleRightToLeftAfterChange, // Handle slide change
   };
 
-  const leftToRightSettings = {
-    className: "center",
-    infinite: true,
-    slidesToShow: 4,
-    speed: 1000, // Transition speed
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    swipe: true,
-    draggable: true,
-    dots: true, // Enable dots for navigation
-    cssEase: "ease-in-out",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-    rtl: false, // Left to right for this slider
-  };
-  
+  // const leftToRightSettings = {
+  //   className: "center",
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   speed: 1000,
+  //   arrows: false,
+  //   autoplay: false,
+  //   autoplaySpeed: 2000,
+  //   swipe: true,
+  //   draggable: true,
+  //   dots: true,
+  //   dotsClass: "slick-dots custom-dots",
+  //   cssEase: "ease-in-out",
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       },
+  //     },
+  //   ],
+  //   rtl: false,
+  //   afterChange: handleLeftToRightAfterChange, // Handle slide change
+  // };
 
   return (
     <div className="slider-container-fluid">
@@ -69,25 +83,52 @@ function SingleRowSlider() {
         {/* Slide 1 */}
         <div className="slide">
           <div className="row slide-content">
-            <div className="col-md-3 col-sm-12 image-wrapper">
+            <div className="col-md-6 col-sm-12 image-wrapper">
               <Image
                 src="/images/slider/1.jpg"
                 alt="Sample Image 1"
                 width={287}
-                height={299}
+                height={200}
                 className="card-img-top"
               />
             </div>
-            <div className="col-md-9 col-sm-12 text-wrapper">
-              <h5 className="card-title">Slide 1</h5>
+            <div className="col-md-6 col-sm-12 text-wrapper">
+            <div className="box">
+              <div className="flex">
+              <h6 className="colr1">COLLOQUIUM </h6>
+              <p>Applying skills in technology to solve real world problems</p>
+            </div>
+          </div>
+              {/* <h5 className="card-title">COLLOQUIUM</h5>
               <p className="card-text-slick-slider">
-                Lorem Ipsum has been the industry standard Lorem Ipsum has been the industry
-                standard Lorem Ipsum has been the industry standard Lorem Ipsum has been the dsffd.
-              </p>
+                Applying skills in technology to solve real world problems
+              </p> */}
             </div>
           </div>
         </div>
         {/* Slide 2 */}
+          <div className="slide">
+            <div className="row slide-content">
+            <div className="col-md-6 col-sm-12 text-wrapper">
+              <div className="box">
+                    <div className="flex">
+                    <h6 className="colr1">COLLOQUIUM </h6>
+                    <p>Applying skills in technology to solve real world problems</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-sm-12 image-wrapper">
+                <Image
+                  src="/images/slider/3.jpg"
+                  alt="Sample Image 3"
+                  width={287}
+                  height={200}
+                  className="card-img-top"
+                />
+              </div>
+            </div>
+          </div>
+        {/* Slide 3 */}
         <div className="slide">
           <div className="row slide-content">
             <div className="col-md-12 col-sm-12 image-wrapper">
@@ -95,190 +136,7 @@ function SingleRowSlider() {
                 src="/images/slider/2.jpg"
                 alt="Sample Image 2"
                 width={604}
-                height={299}
-                className="card-img-top"
-              />
-            </div>
-          </div>
-        </div>
-        {/* Slide 3 */}
-        <div className="slide">
-          <div className="row slide-content">
-            <div className="col-md-3 col-sm-12 image-wrapper">
-              <Image
-                src="/images/slider/3.jpg"
-                alt="Sample Image 3"
-                width={287}
-                height={299}
-                className="card-img-top"
-              />
-            </div>
-            <div className="col-md-9 col-sm-12 text-wrapper">
-              <h5 className="card-title">Slide 3</h5>
-              <p className="card-text-slick-slider">
-                Lorem Ipsum has been the industry standard Lorem Ipsum has been the industry
-                standard Lorem Ipsum has been the dsffd.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Slide 4 */}
-        <div className="slide">
-          <div className="row slide-content">
-            <div className="col-md-9 col-sm-12 image-wrapper">
-              <Image
-                src="/images/slider/4.jpg"
-                alt="Sample Image 4"
-                width={604}
-                height={299}
-                className="card-img-top"
-              />
-            </div>
-          </div>
-        </div>
-      </Slider>
-
-      {/* Slider second row section (Left to Right) */}
-      <Slider {...leftToRightSettings}>
-        {/* Slide 1 */}
-        <div className="slide">
-          <div className="row slide-content">
-            <div className="col-md-3 col-sm-12 image-wrapper">
-              <Image
-                src="/images/slider/1.jpg"
-                alt="Sample Image 1"
-                width={287}
-                height={299}
-                className="card-img-top"
-              />
-            </div>
-            <div className="col-md-9 col-sm-12 text-wrapper">
-              <h5 className="card-title">Slide 1</h5>
-              <p className="card-text-slick-slider">
-                Lorem Ipsum has been the industry standard Lorem Ipsum has been the industry
-                standard Lorem Ipsum has been the industry standard Lorem Ipsum has been the dsffd.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Slide 2 */}
-        <div className="slide">
-          <div className="row slide-content">
-            <div className="col-md-12 col-sm-12 image-wrapper">
-              <Image
-                src="/images/slider/2.jpg"
-                alt="Sample Image 2"
-                width={604}
-                height={299}
-                className="card-img-top"
-              />
-            </div>
-          </div>
-        </div>
-        {/* Slide 3 */}
-        <div className="slide">
-          <div className="row slide-content">
-            <div className="col-md-3 col-sm-12 image-wrapper">
-              <Image
-                src="/images/slider/3.jpg"
-                alt="Sample Image 3"
-                width={287}
-                height={299}
-                className="card-img-top"
-              />
-            </div>
-            <div className="col-md-9 col-sm-12 text-wrapper">
-              <h5 className="card-title">Slide 3</h5>
-              <p className="card-text-slick-slider">
-                Lorem Ipsum has been the industry standard Lorem Ipsum has been the industry
-                standard Lorem Ipsum has been the dsffd.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Slide 4 */}
-        <div className="slide">
-          <div className="row slide-content">
-            <div className="col-md-9 col-sm-12 image-wrapper">
-              <Image
-                src="/images/slider/4.jpg"
-                alt="Sample Image 4"
-                width={604}
-                height={299}
-                className="card-img-top"
-              />
-            </div>
-          </div>
-        </div>
-      </Slider>
-
-      {/* Slider third row section (Right to Left) */}
-      <Slider {...rightToLeftSettings}>
-        {/* Slide 1 */}
-        <div className="slide">
-          <div className="row slide-content">
-            <div className="col-md-3 col-sm-12 image-wrapper">
-              <Image
-                src="/images/slider/1.jpg"
-                alt="Sample Image 1"
-                width={287}
-                height={299}
-                className="card-img-top"
-              />
-            </div>
-            <div className="col-md-9 col-sm-12 text-wrapper">
-              <h5 className="card-title">Slide 1</h5>
-              <p className="card-text-slick-slider">
-                Lorem Ipsum has been the industry standard Lorem Ipsum has been the industry
-                standard Lorem Ipsum has been the industry standard Lorem Ipsum has been the dsffd.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Slide 2 */}
-        <div className="slide">
-          <div className="row slide-content">
-            <div className="col-md-12 col-sm-12 image-wrapper">
-              <Image
-                src="/images/slider/2.jpg"
-                alt="Sample Image 2"
-                width={604}
-                height={299}
-                className="card-img-top"
-              />
-            </div>
-          </div>
-        </div>
-        {/* Slide 3 */}
-        <div className="slide">
-          <div className="row slide-content">
-            <div className="col-md-3 col-sm-12 image-wrapper">
-              <Image
-                src="/images/slider/3.jpg"
-                alt="Sample Image 3"
-                width={287}
-                height={299}
-                className="card-img-top"
-              />
-            </div>
-            <div className="col-md-9 col-sm-12 text-wrapper">
-              <h5 className="card-title">Slide 3</h5>
-              <p className="card-text-slick-slider">
-                Lorem Ipsum has been the industry standard Lorem Ipsum has been the industry
-                standard Lorem Ipsum has been the dsffd.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Slide 4 */}
-        <div className="slide">
-          <div className="row slide-content">
-            <div className="col-md-9 col-sm-12 image-wrapper">
-              <Image
-                src="/images/slider/4.jpg"
-                alt="Sample Image 4"
-                width={604}
-                height={299}
+                height={200}
                 className="card-img-top"
               />
             </div>

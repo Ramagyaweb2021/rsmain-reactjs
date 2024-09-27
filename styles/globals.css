@@ -66,11 +66,18 @@ section {
 }
 
 img {
+  outline: 0 none;
+  border: 0 none;
+  max-width: 100%;
+}
+
+/* img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
   border-style: none;
-}
+  
+} */
 
 h1,
 h2,
@@ -83,14 +90,14 @@ h6 {
   font-family: "Oswald", sans-serif;
 }
 
-p {
+/* p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
   margin-bottom: 15px;
   transition: 0.5s ease-in-out;
-}
+} */
 
 ol,
 ul {
@@ -703,14 +710,14 @@ span.highlight-lg::after {
   /* Change text color on hover */
 }
 
-.learn p,
+/* .learn p,
 .explore p {
   color: #676767;
   text-align: center;
   padding: 0 100px;
   margin-bottom: 40px;
   font-family: 'Raleway', sans-serif;
-}
+} */
 
 .text-theme-color {
   color: #274C77 !important;
@@ -2073,7 +2080,7 @@ title_3 trans {
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Ensures content stays aligned to the left */
-  height: 100%; /* Make each slide fill the full height of the container */
+  height: 200px; /* Make each slide fill the full height of the container */
   transition: transform 0.6s ease-in-out; /* Smooth transition for sliding */
 }
 
@@ -2082,29 +2089,67 @@ title_3 trans {
   align-items: center;
 }
 
-.image-wrapper {
+/* .image-wrapper {
   flex: 1;
-  min-height: 250px; /* Ensure the image wrapper is at least 135px */
-}
+  height: 200px; /
+} */
 
-.text-wrapper {
+/* .text-wrapper {
   flex: 1;
-  padding-left: 20px; /* Adds space between image and text */
+  padding-left: 20px;
   background-color: #274c77; 
   font-size: 18px;
   color: #fff;
+  height: 200px;
+} */
+.text-wrapper .box{
+  background-color: #274c77;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: table;
+  padding: 0 20px;
 }
-
-.text-wrapper .card-text-slick-slider{
+.text-wrapper .box .flex {
+  display: table-cell;
+  vertical-align: middle;
+}
+.text-wrapper .box h6.colr1 {
+  color: #bcc53a;
+}
+.text-wrapper .box h6 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.image-wrapper,
+.text-wrapper {
+  /* display: flex;  */
+  align-items: center;
+  height: 200px;
+  /* height: 100%;  */
+}
+.text-wrapper .box p {
   padding: 0;
-  text-align: left;
+  margin: 0;
+  line-height: 22px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 15px;
+}
+/* .text-wrapper .card-text-slick-slider{
+  padding: 0;
+  text-align: center;
   color: #fff;
   font-size: 12px;
-}
+} */
 /* Add some padding to the slider container if needed */
 .slider-container {
   padding: 20px 0;
-  height: 250px; /* Set the height of the entire slider container */
+  height: 200px; /* Set the height of the entire slider container */
   overflow: hidden; /* Hide overflow to prevent content from spilling out */
   transition: transform 10s ease; /* Add smooth transition */
 }
@@ -2113,14 +2158,7 @@ title_3 trans {
   align-items: stretch; /* Stretch items to fill the container height */
   height: 100%; /* Make row full height */
 }
-
-.image-wrapper,
-.text-wrapper {
-  /* display: flex;  */
-  align-items: center; /* Center content vertically */
-  height: 100%; /* Ensure both wrappers take full height */
-}
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .slide-content {
     flex-direction: column;
     text-align: center;    
@@ -2130,6 +2168,140 @@ title_3 trans {
     padding-left: 0;
     margin-top: 10px;
   }
+} */
+.custom-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
+
+.custom-dots li {
+  margin: 0 5px;
+}
+
+.custom-dots li.slick-active button {
+  background: #000; /* Active dot color */
+}
+
+.custom-dots li button {
+  background: #ccc; /* Inactive dot color */
+}
+/* globals.css */
+
+/* Custom background for middle column */
+.bg-dark-section {
+  background-color: #022937;
+  color: #fff;
+  padding: 20px; /* Add some padding for spacing */
+}
+
+/* Slider controlling csss ******************************************/
+.explore .bluebox {
+  padding-left: 0px;
+}
+.explore .bluebox {
+  background: #01468c;
+  width: 100%;
+  height: 205px;
+  display: table;
+  position: relative;
+}
+.exp-our-mis {
+  position: absolute;
+  left: -45px;
+  top: 46px;
+  width: 150px;
+}
+.exp-our-mis {
+  position: absolute;
+  left: -70px;
+  top: 80px;
+  width: 205px;
+  height: 40px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  padding: 0px 0 0 0;
+}
+.exp-our-mis span {
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.explore ol.carousel-catg {
+  position: relative;
+  padding-left: 70px;
+  z-index: 1;
+  overflow: hidden;
+  padding-top: 10px;
+}
+.explore ol.carousel-catg {
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+.explore ol.carousel-catg::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 71px;
+  background: #fff;
+  width: 2px;
+  height: 100%;
+  border-radius: 0;
+  border: 0;
+  z-index: -1;
+}
+.explore ol.carousel-catg li {
+  color: #5eaeff;
+  font-size: 19px;
+  font-weight: 700;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  line-height: normal;
+}
+.explore ol.carousel-catg li::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #00aeef;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  position: absolute;
+  left: -5px;
+  top: 5px;
+}
+.explore ol.carousel-catg li::after {
+  border: 1px solid #00aeef;
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -10px;
+  top: 0px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+.explore ol.carousel-catg li.active {
+  font-weight: bold;
+  color: #007bff; /* Active text color */
+}
+
+.explore ol.carousel-catg li.active::before {
+  background-color: #007bff; /* Color for active bullet */
+}
+
+
+
 
 

@@ -2,7 +2,9 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 // import Image from 'next/image';
 import Link from 'next/link';
-import Innvovateslider from '../components/Innvovateslider';
+import Innvovatesliderone from '../components/Innvovatesliderone';
+import Innvovateslidertwo from '../components/Innvovateslidertwo';
+import Innvovatesliderthree from '../components/Innvovatesliderthree';
 
 const Innovate = () => {
   return (
@@ -21,7 +23,9 @@ const Innovate = () => {
           </p> */}
         </Container>
         <div className='container-fluid'>
-          <Innvovateslider/>
+          <Innvovatesliderone/>
+          <Innvovateslidertwo/>
+          <Innvovatesliderthree/>
           </div>
            {/* Learn more button */}
            <div className="approach mt-50">
