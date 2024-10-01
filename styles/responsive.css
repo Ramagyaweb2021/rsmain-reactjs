@@ -10,10 +10,20 @@ body {
     font-size: 13px;
   }
 } */
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1400px;
+    padding: 0px 15px;
+    margin: 0px auto;
+  }
+}
  /* For Max Screens (1440px): */
 @media (max-width: 1440px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    max-width: 1140px;
+  }
   .navbar-brand{
-    width: 215px;
+    width: 300px;
   }
   .downsection{
     bottom: 230px;
@@ -32,8 +42,8 @@ body {
   }
   .learn h1, .explore h1, .innovate h1{
     font-size: 30px;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    padding-bottom: 25px;
+    margin-bottom: 2cqb;
   }
   .learn h1>span, .explore h1>span, .innovate h1>span, .evolve h1>span{
     font-size: 20px;
@@ -48,7 +58,7 @@ body {
     padding: 8px 5px;
     position: relative;
     z-index: 1;
-    width: 170px;
+    width: 200px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     vertical-align: middle;
@@ -58,7 +68,7 @@ body {
     padding: 8px 5px;
     position: relative;
     z-index: 1;
-    width: 170px;
+    width: 200px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     vertical-align: middle;
@@ -76,6 +86,12 @@ body {
   .downsection {
     bottom: 10px; /* Keep the original 'bottom' value for larger screens */
   }
+  .p-3 {
+    padding: 2rem !important;
+    /* box-shadow: 0px 4px 20px 0px #00000014;
+    box-shadow: 0px -4px 20px 0px #00000014;
+    border-radius: 40px; */
+}
 }
 /* Media query for laptop screens (1024px to 1440px) */
 /* @media (min-width: 1024px) and (max-width: 1440px) {

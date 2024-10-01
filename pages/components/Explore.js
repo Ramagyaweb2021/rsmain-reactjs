@@ -30,43 +30,36 @@ const Explore = () => {
                   </span>
                 </h1>
                 <p>Ramagya embodies the commitment to foster curiosity and creativity in every student. Through a well-rounded academic process that integrates both scholastic and co-scholastic activities, students are encouraged to discover their potential in diverse areas. Ramagya School aims to create an environment ensuring holistic development, empowering students to grow intellectually, emotionally, and creatively. We ensure that every child embarks on a journey of self-discovery and skill-building that extends beyond the classroom.</p>
-                <div className='row justify-content-center'>
-                    <div className="col-sm-3">
-                     {/* <Image src="/images/primary.png" alt="Primary" width={260} height={150}/> */}
-                       {/* <div className='explore-content wow animate__animated animate__fadeInLeft' style={{ animationDelay: '0.2s' }}>
-                        <h5 className="colorbg-one">
-                          Primary
-                        </h5>
-                        <p className='learn-explore-paragraph'>
-                          Lorem Ipsum has been the industry...
-                        </p>
-                       </div> */}
-                       <div className="approach">
-                        <a href="#">Primary</a>
-                      </div>
+                <div className="row justify-content-center g-0">
+                  <div className="col-6 col-sm-6 col-md-3">
+                    <div className="approach">
+                      <a href="#">Primary</a>
                     </div>
-                    <div className="col-sm-3">
-                      <div className="approach-1">
-                        <a href="#">Middle</a>
-                      </div>
+                  </div>
+                  <div className="col-6 col-sm-6 col-md-3">
+                    <div className="approach-1">
+                      <a href="#">Middle</a>
                     </div>
-                    <div className="col-sm-3">
-                      <div className="approach">
-                        <a href="#">Secondary</a>
-                      </div>
+                  </div>
+                  <div className="col-6 col-sm-6 col-md-3">
+                    <div className="approach">
+                      <a href="#">Secondary</a>
                     </div>
-                    <div className="col-sm-3">
-                      <div className="approach-1">
-                        <a href="#">Senior Secondary</a>
-                      </div>
-                    </div>  
-                   </div>
-
-                   
-                  {/* Learb more button */}
-                <div className="approach mt-50">
-                  <a href="#">Learn More</a>
+                  </div>
+                  <div className="col-6 col-sm-6 col-md-3">
+                    <div className="approach-1">
+                      <a href="#">Senior Secondary</a>
+                    </div>
+                  </div>
                 </div>
+
+                  {/* Learb more button */}
+                  <div className="d-flex justify-content-center align-items-center mt-30">
+                    <div className="learn-more-button">
+                      <a href="#">Learn More</a>
+                    </div>
+                  </div>
+
               </div>
             </div>
           </div>

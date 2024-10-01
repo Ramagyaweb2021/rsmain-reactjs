@@ -2,9 +2,7 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 // import Image from 'next/image';
 import Link from 'next/link';
-import Innvovatesliderone from '../components/Innvovatesliderone';
-import Innvovateslidertwo from '../components/Innvovateslidertwo';
-import Innvovatesliderthree from '../components/Innvovatesliderthree';
+import Innvovateslider from '../components/Innvovateslider';
 
 const Innovate = () => {
   return (
@@ -18,21 +16,19 @@ const Innovate = () => {
               INNOVATE YOUR INTEREST WITH US
             </span>
           </h1>
-          {/* <p>Cutting-edge programs designed to ignite creativity, critical thinking, and problem-solving skills in students. By exploring real-world issues through cultural and sensory perspectives, students develop effective, innovative solutions.
+          <p>Cutting-edge programs designed to ignite creativity, critical thinking, and problem-solving skills in students. By exploring real-world issues through cultural and sensory perspectives, students develop effective, innovative solutions.
           We are committed to nurturing the next generation of innovators, preparing them to lead and excel in a rapidly changing world!
-          </p> */}
+          </p>
         </Container>
         <div className='container-fluid'>
-          <Innvovatesliderone/>
-          <Innvovateslidertwo/>
-          <Innvovatesliderthree/>
+           <Innvovateslider/>
           </div>
-           {/* Learn more button */}
-           <div className="approach mt-50">
-              <Link href="#">
-                View All
-              </Link>
-            </div>
+           {/* Learb more button */}
+           <div className="d-flex justify-content-center align-items-center mt-50">
+                    <div className="learn-more-button">
+                      <a href="#">Learn More</a>
+                    </div>
+                  </div>
       </div>
     </section>
     
