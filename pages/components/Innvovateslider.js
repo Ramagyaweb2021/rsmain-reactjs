@@ -139,7 +139,7 @@ function SingleRowSlider() {
         {/* Slide 1 */}
         <div className="slide">
           <div className="row slide-content">
-            <div className="col-md-6 col-sm-12 image-wrapper">
+            <div className="col-md-6 col-sm-12 col-6 image-wrapper">
               <Image
                 src="/images/slider/1.webp"
                 alt="Sample Image 1"
@@ -148,7 +148,7 @@ function SingleRowSlider() {
                 className="card-img-top"
               />
             </div>
-            <div className="col-md-6 col-sm-12 text-wrapper">
+            <div className="col-md-6 col-sm-12 col-6 text-wrapper">
               <div className="box">
                 <div className="flex">
                   <h6 className="colr1">COLLOQUIUM</h6>
@@ -161,7 +161,7 @@ function SingleRowSlider() {
         {/* Slide 2 */}
         <div className="slide">
           <div className="row slide-content">
-            <div className="col-md-6 col-sm-12 text-wrapper">
+            <div className="col-md-6 col-sm-12 col-6 text-wrapper">
               <div className="box">
                 <div className="flex">
                   <h6 className="colr1">COLLOQUIUM</h6>
@@ -169,7 +169,7 @@ function SingleRowSlider() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-sm-12 image-wrapper">
+            <div className="col-md-6 col-sm-12 col-6 image-wrapper">
               <Image
                 src="/images/slider/3.webp"
                 alt="Sample Image 3"
@@ -246,12 +246,12 @@ function SingleRowSlider() {
           </div>
 
           {/* Third Column (Image and Text Slider - Left to Right) */}
-          <div className="col-md-4 g-0">
+          <div className="col-12 col-md-4 mobile-gutter g-0 g-md-2">
             <Slider ref={sliderRef3} {...leftToRightSettings}>
               <div className="slide">
                 <div className="row slide-content">
-                  <div className="col-md-6 col-sm-12 image-wrapper">
-                    <Image
+                  <div className="col-md-6 col-sm-12 col-6 image-wrapper">
+                    <Image  
                       src="/images/slider/3.webp"
                       alt="Sample Image 3"
                       width={287}
@@ -259,7 +259,7 @@ function SingleRowSlider() {
                       className="card-img-top"
                     />
                   </div>
-                  <div className="col-md-6 col-sm-12 text-wrapper">
+                  <div className="col-md-6 col-sm-12 col-6 text-wrapper">
                     <div className="box">
                       <div className="flex">
                         <h6 className="colr1">COLLOQUIUM</h6>
@@ -271,7 +271,7 @@ function SingleRowSlider() {
               </div>
               <div className="slide">
                 <div className="row slide-content">
-                  <div className="col-md-6 col-sm-12 image-wrapper">
+                  <div className="col-md-6 col-sm-12 col-6 image-wrapper">
                     <Image
                       src="/images/slider/4.webp"
                       alt="Sample Image 4"
@@ -280,7 +280,7 @@ function SingleRowSlider() {
                       className="card-img-top"
                     />
                   </div>
-                  <div className="col-md-6 col-sm-12 text-wrapper">
+                  <div className="col-md-6 col-sm-12 col-6 text-wrapper">
                     <div className="box">
                       <div className="flex">
                         <h6 className="colr1">INNOVATION</h6>
@@ -302,7 +302,7 @@ function SingleRowSlider() {
           {/* Slide 1 */}
           <div className="slide">
             <div className="row slide-content">
-              <div className="col-md-6 col-sm-12 image-wrapper">
+              <div className="col-md-6 col-sm-12 col-6 image-wrapper">
                 <Image
                   src="/images/slider/1.webp"
                   alt="Sample Image 1"
@@ -311,7 +311,7 @@ function SingleRowSlider() {
                   className="card-img-top"
                 />
               </div>
-              <div className="col-md-6 col-sm-12 text-wrapper">
+              <div className="col-md-6 col-sm-12 col-6 text-wrapper">
                 <div className="box">
                   <div className="flex">
                     <h6 className="colr1">COLLOQUIUM</h6>
@@ -338,7 +338,7 @@ function SingleRowSlider() {
           {/* Slide 3 */}
           <div className="slide">
             <div className="row slide-content">
-              <div className="col-md-6 col-sm-12 image-wrapper">
+              <div className="col-md-6 col-sm-12 col-6 image-wrapper">
                 <Image
                   src="/images/slider/3.webp"
                   alt="Sample Image 3"
@@ -347,7 +347,7 @@ function SingleRowSlider() {
                   className="card-img-top"
                 />
               </div>
-              <div className="col-md-6 col-sm-12 text-wrapper">
+              <div className="col-md-6 col-sm-12 col-6 text-wrapper">
                 <div className="box">
                   <div className="flex">
                     <h6 className="colr1">COLLOQUIUM</h6>

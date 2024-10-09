@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
     // Adjust scroll speed for mouse wheel
     const adjustMouseScrollSpeed = (event) => {
       // Increase scroll speed multiplier (higher number = faster scroll)
-      const scrollSpeed = 6;
+      const scrollSpeed = 10;
       if (event.deltaY !== 0) {
         window.scrollBy({
           top: event.deltaY * scrollSpeed,

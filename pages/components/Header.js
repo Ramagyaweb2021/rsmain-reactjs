@@ -113,7 +113,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link className="dropdown-item" href="https://ramagyaschool.com/gnoida/" target='_blank'>
-                        Our vision and values  
+                        Our vision & values  
                       </Link>
                     </li>
                     <li>

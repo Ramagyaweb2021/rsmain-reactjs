@@ -27,7 +27,7 @@ const Testimonials = () => {
     speed: 500,
     slidesToShow: 5, // Number of slides visible at once by default
     slidesToScroll: 1,
-    autoplay: true, // Enable auto sliding
+    autoplay: false, // Enable auto sliding
     autoplaySpeed: 1000, // Auto slide every 1 second
     responsive: [
       {

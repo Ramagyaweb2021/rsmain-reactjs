@@ -15,8 +15,8 @@ export default function PageComponent() {
          <Image src="/images/scroll-down-icon.webp" className="animate__animated animate__fadeInDown animate__infinite animate__slow" alt="Ramagya school" width={30} height={30}/>
       </div>
 
-      <section id="Learnsecond" ref={scrollToSection}>
-        {/* Content for the Learnsecond section */}
+      <section id="schoolupdates" ref={scrollToSection}>
+        {/* Content for the schoolupdates section */}
       </section>
     </>
   );

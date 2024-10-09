@@ -16,7 +16,7 @@ const SchoolCard = () => {
       <div className="row g-3 mt-3">
         {/* Noida */}
         <div className="col-lg-3 col-md-3 col-sm-6 col-6">
-          <div className="card school-card h-100  wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.2s' }}>
+          <div className="card school-card h-100 wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.2s' }}>
             <Image src="/images/rs-noida-branch.webp" className="card-img-top img-fluid" alt="Ramagya School Noida" width={522} height={255} />
             <div className="card-body">
               <h5 className="card-title">Noida</h5>
