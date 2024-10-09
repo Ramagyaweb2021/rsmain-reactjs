@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Header from '/pages/components/Header';
 import Footer from '/pages/components/Footer';
 import 'animate.css';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });

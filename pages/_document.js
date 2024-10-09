@@ -12,7 +12,7 @@ export default function Document() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-language" content="english" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="Cache-control" content="public"/>
+        <meta httpEquiv="Cache-control" content="public"/>
         <meta name="robots" content="index, follow"/>
         <meta property="og:site_name" content="Ramagya School" />
         <meta property="og:type" content="website" />
@@ -35,7 +35,7 @@ export default function Document() {
         <meta property="og:locale" content="en_US" />
         <link rel="shortcut icon" type="image/x-icon" href="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/favicon.webp" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"></link>
         {/* <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link> */}
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
