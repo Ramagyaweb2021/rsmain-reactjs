@@ -56,7 +56,7 @@ const Overview = () => {
                   className="wow animate__animated animate__fadeInDown"
                   style={{ animationDelay: '0.2s' }}
                 >
-                  About Us
+                  About Us us
                 </h1>
               </div>
             </div>
