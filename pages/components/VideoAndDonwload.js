@@ -14,11 +14,11 @@ const VideoAndDonwload = () => {
         <Col md={12} className="p-0 position-relative">
           <div className="image-section">
             {/* Replace with your image source */}
-            <Image src='/images/section-devider-bg.png' alt="" width={1920} height={781} />
+            <Image src='/images/section-devider-bg.webp' alt="" width={1920} height={781} />
             {/* Play button overlay */}
             <div className="play-button">
               {/* <i className="bi bi-play-circle-fill"></i> */}
-                <Image src='/images/video-play.png' alt="" width={120} height={120} onClick={handleShow} />
+                <Image src='/images/video-play.webp' alt="" width={120} height={120} onClick={handleShow} />
                 {/* Popup Modal */}
                 <Modal show={show} onHide={handleClose} centered>
                   <Modal.Header closeButton>
@@ -71,7 +71,7 @@ const VideoAndDonwload = () => {
           className="d-flex flex-column justify-content-right align-items-start bg-warning text-dark p-5"
         >
           <Button variant="light" className="fw-bold">
-          <Image src='/images/download.png' alt="" width={32} height={32} onClick={handleShow} /> DOWNLOAD BROCHURE
+          <Image src='/images/download.webp' alt="" width={32} height={32} onClick={handleShow} /> DOWNLOAD BROCHURE
           </Button>
         </Col>
       </Row>

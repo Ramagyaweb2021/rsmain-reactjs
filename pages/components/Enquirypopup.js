@@ -51,19 +51,19 @@ export default function App() {
             className="btn btn-default btn-circle btn-lg btn-lateral"
             title="Discover Ramagya School"
           >
-            <Image src="/images/discover-more.png" alt="Ramagya school discover button" width={40} height={154}/>
+            <Image src="/images/discover-more.webp" alt="Ramagya school discover button" width={40} height={154}/>
           </Link>
        </div>
        {/* Enquiry buttion */}
        <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
         <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral btn-flash-1' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>
-          <Image src="/images/enquiry-widget.png" alt="Ramagya school enquire button" width={105} height={108} />
+          <Image src="/images/enquiry-widget.webp" alt="Ramagya school enquire button" width={105} height={108} />
         </Button>
       </div>
 
       {/* <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
         <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>
-          <Image src="/images/enquiry-widget.png" alt="Ramagya school enquire button" width={100} height={100} />
+          <Image src="/images/enquiry-widget.webp" alt="Ramagya school enquire button" width={100} height={100} />
         </Button>
       </div> */}
       <MyVerticallyCenteredModal

@@ -5,32 +5,32 @@ const MobileSectionComponent = () => {
     {
       title: 'BOOK REVIEWS',
       description: 'Sharpens critical thinking as students discuss themes, characters, and plots from the Book of the Month.',
-      imgSrc: '/images/experiments/book-review.png', // Replace with actual path
+      imgSrc: '/images/experiments/book-review.webp', // Replace with actual path
     },
     {
       title: 'CLUBS',
       description: 'Clubs foster creativity, collaboration and life skills, while sharpening improvisation, confidence, and communication.',
-      imgSrc: '/images/experiments/clubs.png', // Replace with actual path
+      imgSrc: '/images/experiments/clubs.webp', // Replace with actual path
     },
     {
       title: 'JODO GYAN',
       description: 'Enhancing number sense and problem-solving through hands-on, innovative learning methods, building a solid math foundation.',
-      imgSrc: '/images/experiments/jadu-gyan.png', // Replace with actual path
+      imgSrc: '/images/experiments/jadu-gyan.webp', // Replace with actual path
     },
     {
       title: 'CHARACTER ENHANCEMENT',
       description: 'Geeta Saar, TED Talks, and Circle Time foster emotional intelligence, leadership, and personal growth in students.',
-      imgSrc: '/images/experiments/character.png', // Replace with actual path
+      imgSrc: '/images/experiments/character.webp', // Replace with actual path
     },
     {
       title: 'VISUAL & PERFORMING ARTS',
       description: 'Cultivating creativity while boosting cognitive, emotional, and motor skill development in students.',
-      imgSrc: '/images/experiments/visual-arts.png', // Replace with actual path
+      imgSrc: '/images/experiments/visual-arts.webp', // Replace with actual path
     },
     {
       title: 'STEM',
       description: 'Hands-on experiments and STEAM projects boost critical thinking, while the Computer Lab enhances coding skills and technological fluency.',
-      imgSrc: '/images/experiments/jadu-gyan.png', // Replace with actual path
+      imgSrc: '/images/experiments/jadu-gyan.webp', // Replace with actual path
     },
   ];
 

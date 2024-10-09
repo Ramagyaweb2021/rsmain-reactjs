@@ -71,7 +71,7 @@ const Lead = () => {
                         <div className="card-1-body">
                           <div className="d-flex align-items-center">
                             <Image
-                              src="/images/lead-1.png"
+                              src="/images/lead-1.webp"
                               alt="Tanya Mehra"
                               className="img square-image me-3"
                               width={80}
@@ -98,7 +98,7 @@ const Lead = () => {
                         <div className="card-1-body">
                           <div className="d-flex align-items-center">
                             <Image
-                              src="/images/lead-2.png"
+                              src="/images/lead-2.webp"
                               alt="Kunal Kumar"
                               className="img square-image me-3"
                               width={80}
@@ -125,7 +125,7 @@ const Lead = () => {
                         <div className="card-1-body">
                           <div className="d-flex align-items-center">
                             <Image
-                              src="/images/lead-3.png"
+                              src="/images/lead-3.webp"
                               alt="Kavya Iyyer"
                               className="img square-image me-3"
                               width={80}

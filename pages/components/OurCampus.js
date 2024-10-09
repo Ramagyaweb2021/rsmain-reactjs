@@ -17,7 +17,7 @@ const SchoolCard = () => {
         {/* Noida */}
         <div className="col-lg-3 col-md-3 col-sm-6 col-6">
           <div className="card school-card h-100  wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.2s' }}>
-            <Image src="/images/rs-noida-branch.png" className="card-img-top img-fluid" alt="Ramagya School Noida" width={522} height={255} />
+            <Image src="/images/rs-noida-branch.webp" className="card-img-top img-fluid" alt="Ramagya School Noida" width={522} height={255} />
             <div className="card-body">
               <h5 className="card-title">Noida</h5>
               {/* <p className="card-text">
@@ -40,7 +40,7 @@ const SchoolCard = () => {
         {/* Noida Extension */}
         <div className="col-lg-3 col-md-3 col-sm-6 col-6">
           <div className="card school-card h-100 wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.3s' }}>
-            <Image src="/images/rs-noida-ext-branch.png" className="card-img-top img-fluid" alt="ramagya school noida extension" width={522} height={255} />
+            <Image src="/images/rs-noida-ext-branch.webp" className="card-img-top img-fluid" alt="ramagya school noida extension" width={522} height={255} />
             <div className="card-body">
               <h5 className="card-title">Noida Extension</h5>
             </div>
@@ -58,7 +58,7 @@ const SchoolCard = () => {
         {/* Greater Noida */}
         <div className="col-lg-3 col-md-3 col-sm-6 col-6">
           <div className="card school-card h-100 wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.4s' }}>
-            <Image src="/images/rs-gnoida-branch.png" className="card-img-top img-fluid" alt="ramagya school greater noida" width={550} height={285} />
+            <Image src="/images/rs-gnoida-branch.webp" className="card-img-top img-fluid" alt="ramagya school greater noida" width={550} height={285} />
             <div className="card-body">
               <h5 className="card-title">Greater Noida</h5>
             </div>
@@ -76,7 +76,7 @@ const SchoolCard = () => {
         {/* Dadri */}
         <div className="col-lg-3 col-md-3 col-sm-6 col-6">
           <div className="card school-card h-100 wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.5s' }}>
-            <Image src="/images/rs-dadri-branch.png" className="card-img-top img-fluid" alt="ramagya school noida dadri" width={550} height={336} />
+            <Image src="/images/rs-dadri-branch.webp" className="card-img-top img-fluid" alt="ramagya school noida dadri" width={550} height={336} />
             <div className="card-body">
               <h5 className="card-title">Dadri</h5>
             </div>

@@ -47,7 +47,7 @@ const Experiment = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/book-review.png" // Adjust the path as needed
+                          src="/images/experiments/book-review.webp" // Adjust the path as needed
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -64,7 +64,7 @@ const Experiment = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/clubs.png" // Adjust the path as needed
+                          src="/images/experiments/clubs.webp" // Adjust the path as needed
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -80,7 +80,7 @@ const Experiment = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/jadu-gyan.png" // Adjust the path as needed
+                          src="/images/experiments/jadu-gyan.webp" // Adjust the path as needed
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -97,7 +97,7 @@ const Experiment = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/character.png" // Adjust the path as needed
+                          src="/images/experiments/character.webp" // Adjust the path as needed
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -125,7 +125,7 @@ const Experiment = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/visual-arts.png" // Adjust the path as needed
+                          src="/images/experiments/visual-arts.webp" // Adjust the path as needed
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -142,7 +142,7 @@ const Experiment = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/jadu-gyan.png" // Adjust the path as needed
+                          src="/images/experiments/jadu-gyan.webp" // Adjust the path as needed
                           className="img feature-image"
                           width={310}
                           height={204}

@@ -141,7 +141,7 @@ function SingleRowSlider() {
           <div className="row slide-content">
             <div className="col-md-6 col-sm-12 image-wrapper">
               <Image
-                src="/images/slider/1.jpg"
+                src="/images/slider/1.webp"
                 alt="Sample Image 1"
                 width={287}
                 height={200}
@@ -171,7 +171,7 @@ function SingleRowSlider() {
             </div>
             <div className="col-md-6 col-sm-12 image-wrapper">
               <Image
-                src="/images/slider/3.jpg"
+                src="/images/slider/3.webp"
                 alt="Sample Image 3"
                 width={287}
                 height={200}
@@ -185,7 +185,7 @@ function SingleRowSlider() {
           <div className="row slide-content">
             <div className="col-md-12 col-sm-12 image-wrapper">
               <Image
-                src="/images/slider/2.jpg"
+                src="/images/slider/2.webp"
                 alt="Sample Image 2"
                 width={604}
                 height={200}
@@ -204,7 +204,7 @@ function SingleRowSlider() {
             <Slider ref={sliderRef2} {...leftToRightSettings}>
               <div>
                 <Image
-                  src="/images/slider/1.jpg"
+                  src="/images/slider/1.webp"
                   alt="Sample Image 1"
                   width={287}
                   height={200}
@@ -213,7 +213,7 @@ function SingleRowSlider() {
               </div>
               <div>
                 <Image
-                  src="/images/slider/2.jpg"
+                  src="/images/slider/2.webp"
                   alt="Sample Image 2"
                   width={287}
                   height={200}
@@ -252,7 +252,7 @@ function SingleRowSlider() {
                 <div className="row slide-content">
                   <div className="col-md-6 col-sm-12 image-wrapper">
                     <Image
-                      src="/images/slider/3.jpg"
+                      src="/images/slider/3.webp"
                       alt="Sample Image 3"
                       width={287}
                       height={200}
@@ -273,7 +273,7 @@ function SingleRowSlider() {
                 <div className="row slide-content">
                   <div className="col-md-6 col-sm-12 image-wrapper">
                     <Image
-                      src="/images/slider/4.jpg"
+                      src="/images/slider/4.webp"
                       alt="Sample Image 4"
                       width={287}
                       height={200}
@@ -304,7 +304,7 @@ function SingleRowSlider() {
             <div className="row slide-content">
               <div className="col-md-6 col-sm-12 image-wrapper">
                 <Image
-                  src="/images/slider/1.jpg"
+                  src="/images/slider/1.webp"
                   alt="Sample Image 1"
                   width={287}
                   height={200}
@@ -326,7 +326,7 @@ function SingleRowSlider() {
             <div className="row slide-content">
               <div className="col-md-12 col-sm-12 image-wrapper">
                 <Image
-                  src="/images/slider/2.jpg"
+                  src="/images/slider/2.webp"
                   alt="Sample Image 2"
                   width={604}
                   height={200}
@@ -340,7 +340,7 @@ function SingleRowSlider() {
             <div className="row slide-content">
               <div className="col-md-6 col-sm-12 image-wrapper">
                 <Image
-                  src="/images/slider/3.jpg"
+                  src="/images/slider/3.webp"
                   alt="Sample Image 3"
                   width={287}
                   height={200}

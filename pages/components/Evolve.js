@@ -47,7 +47,7 @@ const Evolve = () => {
                             <div className="image-container">
                               <div className="overlay">
                                 <div className="icon trans">
-                                  <Image src="/images/innovation.png" alt="STUDENT DRIVEN SOCIETY" width={80} height={80} />
+                                  <Image src="/images/innovation.webp" alt="STUDENT DRIVEN SOCIETY" width={80} height={80} />
                                 </div>
                                 <h2 className="overlay-title">
                                   STUDENT DRIVEN SOCIETY
@@ -58,7 +58,7 @@ const Evolve = () => {
                             <div className="content_box trans">
                               <div className="top">
                                 <div className="icon trans">
-                                  <Image src="/images/innovation.png" alt="STUDENT DRIVEN SOCIETY" width={80} height={80} />
+                                  <Image src="/images/innovation.webp" alt="STUDENT DRIVEN SOCIETY" width={80} height={80} />
                                 </div>
                                 <div className="steps trans">1</div>
                                 <h4 className="title_24 trans">
@@ -77,7 +77,7 @@ const Evolve = () => {
                             <div className="image-container">
                               <div className="overlay">
                                 <div className="icon trans">
-                                  <Image src="/images/CSR.png" alt="CSR INITIATIVE" width={80} height={80} />
+                                  <Image src="/images/CSR.webp" alt="CSR INITIATIVE" width={80} height={80} />
                                 </div>
                                 <h2 className="overlay-title">
                                   CSR INITIATIVE
@@ -88,7 +88,7 @@ const Evolve = () => {
                             <div className="content_box trans">
                               <div className="top">
                                 <div className="icon trans">
-                                  <Image src="/images/CSR.png" alt="CSR INITIATIVE" width={80} height={80} />
+                                  <Image src="/images/CSR.webp" alt="CSR INITIATIVE" width={80} height={80} />
                                 </div>
                                 <div className="steps trans">2</div>
                                 <h4 className="title_24 trans">
@@ -107,7 +107,7 @@ const Evolve = () => {
                             <div className="image-container">
                               <div className="overlay">
                                 <div className="icon trans">
-                                  <Image src="/images/self-reflection.png" alt="STUDENT CABINET" width={80} height={80} />
+                                  <Image src="/images/self-reflection.webp" alt="STUDENT CABINET" width={80} height={80} />
                                  </div>
                                 <h2 className="overlay-title">
                                   STUDENT CABINET
@@ -118,7 +118,7 @@ const Evolve = () => {
                             <div className="content_box trans">
                               <div className="top">
                                 <div className="icon trans">
-                                  <Image src="/images/self-reflection.png" alt="STUDENT CABINET" width={80} height={80} />
+                                  <Image src="/images/self-reflection.webp" alt="STUDENT CABINET" width={80} height={80} />
                                   </div>
                                 <div className="steps trans">3</div>
                                 <h4 className="title_24 trans">
@@ -137,7 +137,7 @@ const Evolve = () => {
                             <div className="image-container">
                               <div className="overlay">
                                 <div className="icon trans">
-                                  <Image src="/images/innovation.png" alt="MUN" width={80} height={80} />
+                                  <Image src="/images/innovation.webp" alt="MUN" width={80} height={80} />
                                  </div>
                                 <h2 className="overlay-title">
                                   MUN
@@ -148,7 +148,7 @@ const Evolve = () => {
                             <div className="content_box trans">
                               <div className="top">
                                 <div className="icon trans">
-                                  <Image src="/images/innovation.png" alt="MUN" width={80} height={80} />
+                                  <Image src="/images/innovation.webp" alt="MUN" width={80} height={80} />
                                 </div>
                                 <div className="steps trans">4</div>
                                 <h4 className="title_24 trans">
@@ -169,14 +169,14 @@ const Evolve = () => {
                         <div className="col-xl-12 col-lg-22 col-md-12 col-sm-12 g-0">
                              <div className="image-section">
                                 {/* Replace with your image source */}
-                                <Image src='/images/overlay-video.png' alt="" width={650} height={370} />
+                                <Image src='/images/overlay-video.webp' alt="" width={650} height={370} />
                                 {/* Play button overlay */}
                                 <div className="play-button">
                                   {/* <i className="bi bi-play-circle-fill"></i> */}
                                   <Link href="https://www.youtube.com/watch?v=8n75vK3X9BE" target="_blank">
-                                    <Image src='/images/video-play.png' alt="play button" width={80} height={80}/>
+                                    <Image src='/images/video-play.webp' alt="play button" width={80} height={80}/>
                                   </Link>
-                                    {/* <Image src='/images/video-play.png' alt="" width={80} height={80} onClick={handleShow} /> */}
+                                    {/* <Image src='/images/video-play.webp' alt="" width={80} height={80} onClick={handleShow} /> */}
                                     {/* Popup Modal */}
                                     {/* <Modal show={show} onHide={handleClose} centered>
                                       <Modal.Header closeButton>

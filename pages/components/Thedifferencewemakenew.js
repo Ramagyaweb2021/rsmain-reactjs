@@ -28,11 +28,11 @@ const Thedifferencewemakenew = () => {
       <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
           <div className="service_box type_two hover_1_get">
             {/* <a href="#" className="img_bx">
-              <Image src="/images/animation.png" alt="Primary" width={100} height={100}/>
+              <Image src="/images/animation.webp" alt="Primary" width={100} height={100}/>
             </a> */}
             <div className="content_box trans">
               {/* <div className="icon trans">
-                  <Image src="/images/animation.png" alt="Primary" width={100} height={100}/>
+                  <Image src="/images/animation.webp" alt="Primary" width={100} height={100}/>
               </div> */}
               {/* <div className="steps trans">1</div> */}
               <h4 className="title_24 trans">
@@ -48,11 +48,11 @@ const Thedifferencewemakenew = () => {
         <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
           <div className="service_box type_two hover_1_get">
             {/* <a href="#" className="img_bx">
-              <Image src="/images/animation.png" alt="Primary" width={100} height={100}/>
+              <Image src="/images/animation.webp" alt="Primary" width={100} height={100}/>
             </a> */}
             <div className="content_box trans">
               {/* <div className="icon trans">
-                  <Image src="/images/animation.png" alt="Primary" width={100} height={100}/>
+                  <Image src="/images/animation.webp" alt="Primary" width={100} height={100}/>
               </div> */}
               {/* <div className="steps trans">1</div> */}
               <h4 className="title_24 trans">
@@ -68,11 +68,11 @@ const Thedifferencewemakenew = () => {
         <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6">
           <div className="service_box type_two hover_1_get">
             {/* <a href="#" className="img_bx">
-              <Image src="/images/animation.png" alt="Primary" width={100} height={100}/>
+              <Image src="/images/animation.webp" alt="Primary" width={100} height={100}/>
             </a> */}
             <div className="content_box trans">
               {/* <div className="icon trans">
-                  <Image src="/images/animation.png" alt="Primary" width={100} height={100}/>
+                  <Image src="/images/animation.webp" alt="Primary" width={100} height={100}/>
               </div> */}
               {/* <div className="steps trans">1</div> */}
               <h4 className="title_24 trans">

@@ -49,7 +49,7 @@ const Header = () => {
           </Button>{' '} */}
            <Dropdown className='dropdown-menu-end'>
             <Dropdown.Toggle variant="warning" id="dropdown-basic" className="btn-flash">
-            <Image src="/images/fi_check-circle.png" alt="Ramagya school noida logo" width={20} height={20}/> APPLY NOW
+            <Image src="/images/fi_check-circle.webp" alt="Ramagya school noida logo" width={20} height={20}/> APPLY NOW
             </Dropdown.Toggle>
             <Dropdown.Menu className="dropdown-menu-end">
               <Dropdown.Item href="https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/" target="_blank">Noida</Dropdown.Item>
@@ -79,7 +79,7 @@ const Header = () => {
               <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
             </Link>
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-                <Image src="/images/close.png" alt="Close" width={64} height={64}  className="btn-close btn-close-yellow" data-bs-dismiss="offcanvas"/>
+                <Image src="/images/close.webp" alt="Close" width={64} height={64}  className="btn-close btn-close-yellow" data-bs-dismiss="offcanvas"/>
               {/* <button
                 type="button"
                 className="btn-close btn-close-white"

@@ -9,7 +9,7 @@ const Slider = () => {
             {/* <video style={{marginTop:"-98px", zIndex:"1"}} */}
               <video className='main-video'
                 width="100%"
-                poster="/images/main-banner.png"
+                poster="/images/main-banner.webp"
                 loop="loop"
                 muted={true} controls="controls"
                 autoPlay="autoPlay"

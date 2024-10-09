@@ -29,11 +29,11 @@ const Bepartoframagya = () => {
   };
 
   const data = [
-    { title: 'Student Teacher Ratio', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...', value: 'X:Y', img: '/images/slider-1.png' },
-    { title: 'Alumni Refers Our School', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...', value: 'X%', img: '/images/slider-2.png' },
-    { title: 'Happy Parents', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...', value: 'X no.', img: '/images/slider-3.png' },
-    { title: 'Co-curricular Activities', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...', value: 'X%', img: '/images/slider-1.png' },
-    { title: 'Alumni Refers Our School', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...', value: 'X%', img: '/images/slider-3.png' },
+    { title: 'Student Teacher Ratio', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...', value: 'X:Y', img: '/images/slider-1.webp' },
+    { title: 'Alumni Refers Our School', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...', value: 'X%', img: '/images/slider-2.webp' },
+    { title: 'Happy Parents', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...', value: 'X no.', img: '/images/slider-3.webp' },
+    { title: 'Co-curricular Activities', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...', value: 'X%', img: '/images/slider-1.webp' },
+    { title: 'Alumni Refers Our School', content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum...', value: 'X%', img: '/images/slider-3.webp' },
   ];
 // const Bepartoframagya = () => {
   return (

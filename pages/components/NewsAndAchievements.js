@@ -11,7 +11,7 @@ return (
       <div className="row">
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-            <Image src='/images/news-1.png' alt="" width={343} height={204} />
+            <Image src='/images/news-1.webp' alt="" width={343} height={204} />
             <div className="card-body">
               <small className="text-muted">Date, Place</small>
               <h5 className="card-title mt-2">News Heading</h5>
@@ -29,7 +29,7 @@ return (
         </div>
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-             <Image src='/images/news-2.png' alt="" width={343} height={204} />
+             <Image src='/images/news-2.webp' alt="" width={343} height={204} />
             <div className="card-body">
               <small className="text-muted">Date, Place</small>
               <h5 className="card-title mt-2">News Heading</h5>
@@ -47,7 +47,7 @@ return (
         </div>
         <div className="col-md-4 mb-4">
           <div className="card h-100">
-             <Image src='/images/news-2.png' alt="" width={343} height={204} />
+             <Image src='/images/news-2.webp' alt="" width={343} height={204} />
             <div className="card-body">
               <small className="text-muted">Date, Place</small>
               <h5 className="card-title mt-2">News Heading</h5>

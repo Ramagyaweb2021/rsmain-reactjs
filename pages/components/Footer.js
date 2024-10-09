@@ -142,7 +142,7 @@ const Footer = () => {
               <Form.Group controlId="formEmail">
                 <Form.Control type="email" placeholder="Enter your email" />
               </Form.Group>
-               <Image src="/images/submit.png" alt="Ramagya school noida logo" width={56} height={56}/>
+               <Image src="/images/submit.webp" alt="Ramagya school noida logo" width={56} height={56}/>
             </Form>
           </Col>
           <Col md={3}>
@@ -182,7 +182,7 @@ const Footer = () => {
               <Form.Group controlId="formEmail">
                 <Form.Control type="email" placeholder="Enter your email" />
               </Form.Group>
-               <Image src="/images/submit.png" alt="Ramagya school noida logo" width={56} height={56}/>
+               <Image src="/images/submit.webp" alt="Ramagya school noida logo" width={56} height={56}/>
             </Form> */}
           </Col>
           
@@ -193,7 +193,7 @@ const Footer = () => {
               <Form.Group controlId="formEmail">
                 <Form.Control type="email" placeholder="Enter your email" />
               </Form.Group>
-               <Image src="/images/submit.png" alt="Ramagya school noida logo" width={56} height={56}/>
+               <Image src="/images/submit.webp" alt="Ramagya school noida logo" width={56} height={56}/>
             </Form>
           </Col> */}
         </Row>

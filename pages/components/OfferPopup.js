@@ -21,7 +21,7 @@ const OfferPopup = () => {
         <Modal show={show} onHide={handleClose} centered className="custom-modal" style={{backgroundColor:"transparent"}}>
             <Modal.Header closeButton style={{backgroundColor:"#EEF0F2"}}>
                 <Modal.Title style={{color:"#274C77", fontWeight:"600", fontSize:"25px", textAlign:"center"}}>RAMAGYA SCHOOLS SCHOLARSHIPS</Modal.Title>
-                {/* <Image src="/images/close.png" alt="Close" width={64} height={64}  className="btn-close btn-close-yellow"/> */}
+                {/* <Image src="/images/close.webp" alt="Close" width={64} height={64}  className="btn-close btn-close-yellow"/> */}
             </Modal.Header>
             <Modal.Body style={{backgroundColor:"#EEF0F2"}}>
                <Link href='#'><Image src='https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/website-popup/rs-noida-website-scholarship-popup.webp' alt="" width={800} height={400} className="no-padding" /></Link>

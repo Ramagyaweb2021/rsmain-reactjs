@@ -45,7 +45,7 @@ const SchoolUpdates = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/ach.png" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/ach.webp" alt="Primary" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">RAMAGYA SCHOOL RANKED #3 IN NOIDA `&apos; TIMES SCHOOL SURVEY 2023</h2>
@@ -63,7 +63,7 @@ const SchoolUpdates = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.png" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Media Press</h2>
@@ -83,7 +83,7 @@ const SchoolUpdates = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.png" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">School Events</h2>
@@ -103,7 +103,7 @@ const SchoolUpdates = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.png" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Admission Update</h2>

@@ -12,7 +12,7 @@ export default function PageComponent() {
     <>
       {/* Down section with continuous bounce */}
       <div className="downsection" onClick={handleScroll}>
-         <Image src="/images/scroll-down-icon.png" className="animate__animated animate__fadeInDown animate__infinite animate__slow" alt="Ramagya school" width={30} height={30}/>
+         <Image src="/images/scroll-down-icon.webp" className="animate__animated animate__fadeInDown animate__infinite animate__slow" alt="Ramagya school" width={30} height={30}/>
       </div>
 
       <section id="Learnsecond" ref={scrollToSection}>

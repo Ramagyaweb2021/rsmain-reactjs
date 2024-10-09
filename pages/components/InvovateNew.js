@@ -12,33 +12,33 @@ const VideoPlayerApp = () => {
     { 
       title: 'Video 1', 
       src: 'https://www.youtube.com/embed/EJW8mgGx8dA',
-      thumbnail: 'https://img.youtube.com/vi/EJW8mgGx8dA/0.jpg' // YouTube thumbnail
+      thumbnail: 'https://img.youtube.com/vi/EJW8mgGx8dA/0.webp' // YouTube thumbnail
     },
     { 
       title: 'Video 2', 
       src: 'https://www.youtube.com/embed/GS5QKlc0a4Y',
-      thumbnail: 'https://img.youtube.com/vi/GS5QKlc0a4Y/0.jpg'
+      thumbnail: 'https://img.youtube.com/vi/GS5QKlc0a4Y/0.webp'
     },
     { 
       title: 'Video 3', 
       src: 'https://www.youtube.com/embed/KSBSoF2qYqc',
-      thumbnail: 'https://img.youtube.com/vi/KSBSoF2qYqc/0.jpg'
+      thumbnail: 'https://img.youtube.com/vi/KSBSoF2qYqc/0.webp'
     },
     { 
       title: 'Video 4', 
       src: 'https://www.youtube.com/embed/KSBSoF2qYqc',
-      thumbnail: 'https://img.youtube.com/vi/KSBSoF2qYqc/0.jpg'
+      thumbnail: 'https://img.youtube.com/vi/KSBSoF2qYqc/0.webp'
     },
     { 
       title: 'Video 5', 
       src: 'https://www.youtube.com/embed/KSBSoF2qYqc',
-      thumbnail: 'https://img.youtube.com/vi/KSBSoF2qYqc/0.jpg'
+      thumbnail: 'https://img.youtube.com/vi/KSBSoF2qYqc/0.webp'
     }
     ,
     { 
       title: 'Video 6', 
       src: 'https://www.youtube.com/embed/KSBSoF2qYqc',
-      thumbnail: 'https://img.youtube.com/vi/KSBSoF2qYqc/0.jpg'
+      thumbnail: 'https://img.youtube.com/vi/KSBSoF2qYqc/0.webp'
     }
   ];
 
@@ -94,7 +94,7 @@ const VideoPlayerApp = () => {
             </div>
           ) : (
             <div>
-              <Image src="/images/video-playing-area.png" alt="video-playing-area" width={1250} height={518}/>
+              <Image src="/images/video-playing-area.webp" alt="video-playing-area" width={1250} height={518}/>
             </div>
           )}
         </Col>

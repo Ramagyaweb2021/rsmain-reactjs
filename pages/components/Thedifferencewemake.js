@@ -48,7 +48,7 @@ const Thedifferencewemake = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.png" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Pioneer in Sports</h2>
@@ -68,7 +68,7 @@ const Thedifferencewemake = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.png" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Baal Saathee (Mental Health)</h2>
@@ -88,7 +88,7 @@ const Thedifferencewemake = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.png" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Mental Health Club</h2>
@@ -108,7 +108,7 @@ const Thedifferencewemake = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.png" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Life Skills</h2>

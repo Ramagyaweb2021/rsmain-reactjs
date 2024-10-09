@@ -168,7 +168,7 @@ const Testimonials = () => {
                 <Image src={item.img} alt={item.title} className="slider-image" width={310} height={265} />
                 <div className="play-button-overlay">
                   <a href={item.videoUrl} target='_blank' rel='noopener noreferrer'>
-                    <Image src="/images/video-play.png" className="play-button" alt="play-button" width={96} height={96}/>
+                    <Image src="/images/video-play.webp" className="play-button" alt="play-button" width={96} height={96}/>
                     {/* <span className="play-button">&#9658;</span> */}
                   </a>
                 </div>
