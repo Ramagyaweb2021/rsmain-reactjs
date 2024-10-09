@@ -40,15 +40,15 @@ const Header = () => {
     <>
       <nav id="navbar" className="navbar navbar">
         <div className="container-fluid">
-          <Link className="navbar-brand" href="./">
+          <a className="navbar-brand" href="./">
             <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
-          </Link>
+          </a>
           {/* <Button variant="warning" size="lg" style={{float:"right"}}>
             APPLY NOW
           </Button>{' '} */}
            <Dropdown className='dropdown-menu-end'>
             <Dropdown.Toggle variant="warning" id="dropdown-basic" className="btn-flash">
-              APPLY NOW
+            <Image src="/images/fi_check-circle.png" alt="Ramagya school noida logo" width={20} height={20}/> APPLY NOW
             </Dropdown.Toggle>
             <Dropdown.Menu className="dropdown-menu-end">
               <Dropdown.Item href="https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/" target="_blank">Noida</Dropdown.Item>
@@ -56,14 +56,13 @@ const Header = () => {
               <Dropdown.Item href="#">Greater Noida</Dropdown.Item>
               <Dropdown.Item href="#">Dadri</Dropdown.Item>
             </Dropdown.Menu>
-          </Dropdown>
+          </Dropdown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {/* Hamburger menu section */}
           <div className="hamburger" id="nav-icon1" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar">
             <strong className="hamiocn1" style={{ display: "inline-block" }} />
             <strong className="hamiocn2" style={{ display: "none" }} />
-            {/*  <img class="hamiocn1" src="/images/menu-icon-black.png"> 
-                    <img class="hamiocn2" src="/images/menu-icon-white.png">  */}
             <span />
             <span />
             <span />
@@ -73,7 +72,7 @@ const Header = () => {
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar" src="/images/sprites-imgs.png" alt="Ramagya school noida logo" width={80} height={40}/> */}
+            aria-controls="offcanvasDarkNavbar" src="/images/blue-menu-icon.png" alt="Ramagya school noida logo" width={80} height={40}/> */}
           {/* <button
             className="navbar-toggler"
             type="button"
@@ -396,28 +395,7 @@ const Header = () => {
         </div>
         
       </nav>
-        {/* Side floating buttion section */}
-        {/* <div className="btn-float-discover">
-          <Link
-            href="#"
-            target="_blank"
-            className="btn btn-default btn-circle btn-lg btn-lateral"
-            title="Discover Ramagya School"
-          >
-            <Image src="/images/discover-more.png" alt="Ramagya school discover button" width={40} height={204}/>
-          </Link>
-       </div> */}
-        {/* <div className="btn-float-enquire">
-          <button
-            type="button"
-            className="btn btn-default btn-circle btn-lg btn-lateral"
-            data-toggle="modal"
-            title="Enquier Now for admission"
-            data-target="#exampleModalCenter"
-          >
-            <Image src="/images/enquiry-widget.png" alt="Ramagya school enquire button" width={180} height={180}/>
-          </button>
-    </div> */}
+      
        <Enquirypopup/>
        <Typebot/>
     </>

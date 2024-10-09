@@ -29,29 +29,30 @@ const Explore = () => {
                     OUR APPROACH AND CURRICULUM
                   </span>
                 </h1>
-                <p>Ramagya embodies the commitment to foster curiosity and creativity in every student. Through a well-rounded academic process that integrates both scholastic and co-scholastic activities, students are encouraged to discover their potential in diverse areas. Ramagya School aims to create an environment ensuring holistic development, empowering students to grow intellectually, emotionally, and creatively. We ensure that every child embarks on a journey of self-discovery and skill-building that extends beyond the classroom.</p>
-                <div className="row justify-content-center g-0">
-                  <div className="col-6 col-sm-6 col-md-3">
-                    <div className="approach">
-                      <a href="#">Primary</a>
+                <p>Ramagya embodies the commitment to foster curiosity and creativity in every student. Through a well-rounded academic process that integrates both scholastic and co-scholastic activities, students are encouraged to discover their potential in diverse areas. Ramagya School aims to create an environment ensuring holistic development, empowering students to grow intellectually, emotionally, and creatively. We ensure that every child <br/> embarks on a journey of self-discovery and skill-building that extends beyond the classroom.</p>
+                <div className="row g-0 justify-content-center">
+                    <div className="col-6 col-sm-6 col-md-3 g-0">
+                      <div className="approach">
+                        <a href="#">Primary</a>
+                      </div>
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-3">
+                      <div className="approach-1" id='approach-mobile'>
+                        <a href="#">Middle</a>
+                      </div>
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-3">
+                      <div className="approach" id='approach-mobile'>
+                        <a href="#">Secondary</a>
+                      </div>
+                    </div>
+                    <div className="col-6 col-sm-6 col-md-3">
+                      <div className="approach-1" id='approach-1-mobile'>
+                        <a href="#">Senior Secondary</a>
+                      </div>
                     </div>
                   </div>
-                  <div className="col-6 col-sm-6 col-md-3">
-                    <div className="approach-1">
-                      <a href="#">Middle</a>
-                    </div>
-                  </div>
-                  <div className="col-6 col-sm-6 col-md-3">
-                    <div className="approach">
-                      <a href="#">Secondary</a>
-                    </div>
-                  </div>
-                  <div className="col-6 col-sm-6 col-md-3">
-                    <div className="approach-1">
-                      <a href="#">Senior Secondary</a>
-                    </div>
-                  </div>
-                </div>
+
 
                   {/* Learb more button */}
                   <div className="d-flex justify-content-center align-items-center mt-30">

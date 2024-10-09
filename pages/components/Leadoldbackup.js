@@ -2,38 +2,10 @@ import React, { useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import 'animate.css';
 import Image from 'next/image';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import Link from 'next/link';
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
-
-const Lead = () => {
-  const settings = {
-    dots: false,
-    infinite: true,  // Enable infinite sliding
-    speed: 500,  // Speed of transitions
-    slidesToShow: 3,  // Show 3 slides at once
-    slidesToScroll: 1,
-    autoplay: true,  // Enable autoplay
-    autoplaySpeed: 2000,  // 2-second interval for autoplay
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
+const Evolve = () => {
   useEffect(() => {
     // Initialize WOW.js only on the client side
     const WOWJS = require('wowjs');
@@ -42,11 +14,11 @@ const Lead = () => {
     });
     wow.init();
   }, []); // Empty dependency array ensures this runs once on mount
-
   return (
     <>
       <section className="learn section fp-section fp-table active fp-completely" id="lead">
         <div className="fp-tableLead">
+          {/* style={{ height:"676px"}} */}
           <div className="container">
             <div className="row">
               <div className="col-sm-12 position-r">
@@ -55,21 +27,17 @@ const Lead = () => {
                   <span className="lineclass" />
                   <span
                     className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-                    MEET OUR ALUMNI
+                    MEET OUR ALUMINI
                   </span>
                 </h1>
-                <p>
-                  Our programs are designed to empower students to excel beyond the classroom and make a meaningful impact. 
-                  The Ramagya Alumni Association plays a pivotal role in this by fostering a lifelong network of former students...
-                </p>
-              
-                <div className="container-fluid my-5">
-                  <Slider {...settings}>
-                    {/* Slide 1 */}
-                    <div className="col-md-4 mx-0">
+                <p>Our programs are designed to empower students to excel beyond the classroom and make a meaningful impact. The Ramagya Alumni Association plays a pivotal role in this by fostering a lifelong network of former students who sOur programs are designed to empower students to excel beyond the classroom and make a meaningful impact. The Ramagya Alumni Association plays a pivotal role in this by fostering a lifelong network of former students who share their achievements, provide mentorship, and support ongoing school initiatives. This dynamic community helps current students envision their future and draw inspiration from those who have paved the way. </p>
+                <div className="container my-5">
+                  <div className="row justify-content-center">
+                  <div className="col-md-4">
                       <div className="card text-center shadow-sm">
                         <div className="card-1-body">
                           <div className="d-flex align-items-center">
+                            {/* Image on the left */}
                             <Image
                               src="/images/lead-1.png"
                               alt="Tanya Mehra"
@@ -77,26 +45,31 @@ const Lead = () => {
                               width={80}
                               height={80}
                             />
+
+                            {/* Content on the right */}
                             <div className="text-left">
                               <h5 className="card-title-1-1 mb-1">Tanya Mehra</h5>
                               <p className="text-muted mb-2">BITS Pilani</p>
                               <hr className="my-2 w-75" />
                             </div>
                           </div>
-                          <div className="text-left">
-                            <p className="card-text text-muted" style={{ textAlign: "left" }}>
-                            Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took...
-                            </p>
-                          </div>
+                          <div className='text-left'>
+                                {/* <hr className="w-75" /> */}
+                                <p className="card-text text-muted" style={{ textAlign: "left" }}>
+                                  {/* <span className="open-quote">“</span> */}
+                                   Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took...
+                                  {/* <span className="close-quote">”</span> */}
+                                </p>
+                               
+                            </div>
                         </div>
                       </div>
                     </div>
-
-                    {/* Slide 2 */}
-                    <div className="col-md-4 mx-0">
+                    <div className="col-md-4">
                       <div className="card text-center shadow-sm">
                         <div className="card-1-body">
                           <div className="d-flex align-items-center">
+                            {/* Image on the left */}
                             <Image
                               src="/images/lead-2.png"
                               alt="Kunal Kumar"
@@ -104,26 +77,31 @@ const Lead = () => {
                               width={80}
                               height={80}
                             />
+
+                            {/* Content on the right */}
                             <div className="text-left">
                               <h5 className="card-title-1 mb-1">Kunal Kumar</h5>
                               <p className="text-muted mb-2">BITS Pilani</p>
                               <hr className="my-2 w-75" />
                             </div>
                           </div>
-                          <div className="text-left">
-                            <p className="card-text text-muted" style={{ textAlign: "left" }}>
-                            Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took...
-                            </p>
-                          </div>
+                          <div className='text-left'>
+                                {/* <hr className="w-75" /> */}
+                                <p className="card-text text-muted" style={{ textAlign: "left" }}>
+                                  {/* <span className="open-quote">“</span> */}
+                                   Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took...
+                                  {/* <span className="close-quote">”</span> */}
+                                </p>
+                               
+                            </div>
                         </div>
                       </div>
                     </div>
-
-                    {/* Slide 3 */}
-                    <div className="col-md-4 mx-0">
+                    <div className="col-md-4">
                       <div className="card text-center shadow-sm">
                         <div className="card-1-body">
                           <div className="d-flex align-items-center">
+                            {/* Image on the left */}
                             <Image
                               src="/images/lead-3.png"
                               alt="Kavya Iyyer"
@@ -131,27 +109,35 @@ const Lead = () => {
                               width={80}
                               height={80}
                             />
+
+                            {/* Content on the right */}
                             <div className="text-left">
                               <h5 className="card-title-1 mb-1">Kavya Iyyer</h5>
                               <p className="text-muted mb-2">BITS Pilani</p>
                               <hr className="my-2 w-75" />
                             </div>
                           </div>
-                          <div className="text-left">
-                            <p className="card-text text-muted" style={{ textAlign: "left" }}>
-                            Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took...
-                            </p>
-                          </div>
+                          <div className='text-left'>
+                                {/* <hr className="w-75" /> */}
+                                <p className="card-text text-muted" style={{ textAlign: "left" }}>
+                                  {/* <span className="open-quote">“</span> */}
+                                   Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took...
+                                  {/* <span className="close-quote">”</span> */}
+                                </p>
+                               
+                            </div>
                         </div>
                       </div>
                     </div>
-                  </Slider>
+                 
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>
 
-          {/* Learn more button */}
+          {/* Learb more button */}
           <div className="d-flex justify-content-center align-items-center mt-1">
             <div className="learn-more-button">
               <a href="#">Learn More</a>
@@ -160,7 +146,7 @@ const Lead = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Lead;
+export default Evolve

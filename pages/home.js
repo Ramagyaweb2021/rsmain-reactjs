@@ -2,11 +2,13 @@ import React from 'react'
 import Head from 'next/head'
 import Header from '/pages/components/Header'
 import Slider from '/pages/components/Slider'
+import OurCampus from './components/OurCampus'
 import Scrollspy from '/pages/components/Scrollspy'
+import Gallery from './components/Gallery'
 import Thedifferencewemake from './components/Thedifferencewemake'
+import Awards from './components/Awards'
 // import NewsAndAchievements from './components/NewsAndAchievements'
 // import VideoAndDonwload from './components/VideoAndDonwload'
-import OurCampus from './components/OurCampus'
 import DownSection from './components/DownSection'
 import OfferPopup from './components/OfferPopup';
 import SchoolUpdates from './components/SchoolUpdates'
@@ -31,7 +33,9 @@ const Home = () => {
       <OfferPopup />
       <DownSection />
       <Scrollspy />
+      <Gallery/>
       <Thedifferencewemake />
+      <Awards/>
       <SchoolUpdates />
       {/* <InvovateNew/>
       <Invovateold/>

@@ -197,7 +197,7 @@ function SingleRowSlider() {
       </Slider>
 
       {/* Slider second slider or row section (leftToRight) */}
-      <div className="container-fluid mt-15">
+      <div className="container-fluid mt-15" id="gutter-space">
         <div className="row">
           {/* First Column (Image Slider - leftToRight) */}
           <div className="col-md-4">
@@ -297,7 +297,7 @@ function SingleRowSlider() {
       </div>
 
        {/* Slider third slider or row section (Rtl) */}
-       <div className="container-fluid mt-20">
+       <div className="container-fluid mt-20" id="gutter-space">
         <Slider ref={sliderRef4} {...RtlSettings}>
           {/* Slide 1 */}
           <div className="slide">

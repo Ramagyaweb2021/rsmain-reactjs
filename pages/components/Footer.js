@@ -12,7 +12,7 @@ const Footer = () => {
       <container-fluid>
         <Row>
           <Col md={3}>
-            <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
+            <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={250} height={52}/>
             <p className="footer-heading">Address</p>
             <p>E - 7, Sector 50, Noida  
               {/* <Link href="https://www.google.com/maps/place/Ramagya+School/@28.5738003,77.2842893,12z/data=!4m19!1m12!4m11!1m3!2m2!1d77.3814496!2d28.572142!1m6!1m2!1s0x390ce5b126c4cde3:0x60630a1c40880482!2sE-7,+E+Block,+Sector+50,+Noida,+Uttar+Pradesh+201301!2m2!1d77.3666907!2d28.5738252!3m5!1s0x390ce5b126c4cde3:0x60630a1c40880482!8m2!3d28.5738252!4d77.3666907!16s%2Fg%2F11b8_z2lmw?entry=ttu&g_ep=EgoyMDI0MDkwOS4wIKXMDSoASAFQAw%3D%3D" className="link" target='_blank'>
@@ -161,15 +161,15 @@ const Footer = () => {
           </Col>
           <Col md={3}>
             <p className="footer-heading">admission</p>
-              <p><Link href="#">OVERVIEW</Link></p>
-              <p><Link href="#">WHY US</Link></p>
-              <p><Link href="#">FEE</Link></p>
-              <p><Link href="#">ADMISSION PROCESS</Link></p>
-              <p><Link href="#">APPLY NOW</Link></p>
+              <p><Link href="#">Overview</Link></p>
+              <p><Link href="#">Why Us</Link></p>
+              <p><Link href="#">Fee</Link></p>
+              <p><Link href="#">Admission Process</Link></p>
+              <p><Link href="#">Apply Now</Link></p>
               <p className="footer-heading">Other Links</p>
-              <p><Link href="#">CAREERS</Link></p>
+              <p><Link href="#">Careers</Link></p>
               <p><Link href="#">Contact Us</Link></p>
-              <p><Link href="#">BLOG</Link></p>
+              <p><Link href="#">Blog</Link></p>
               <p className="footer-heading">News Feed</p>
               <p><Link href="#">Achievements</Link></p>
               <p><Link href="#">Media Press</Link></p>

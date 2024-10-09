@@ -24,7 +24,7 @@ const Innovate = () => {
            <Innvovateslider/>
           </div>
            {/* Learb more button */}
-           <div className="d-flex justify-content-center align-items-center mt-50">
+           <div className="d-flex justify-content-center align-items-center mt-30">
                     <div className="learn-more-button">
                       <a href="#">Learn More</a>
                     </div>

@@ -55,7 +55,6 @@ img {
   outline: 0 none;
   border: 0 none;
   max-width: 100%;
-  object-fit: cover;
   /* height: auto; */
 }
 
@@ -1661,7 +1660,6 @@ ul {
   font-size: 16px;
   transition: background-color 0.3s, color 0.3s;
   font-weight: 500;
-  margin: 5px;
 }
 
 .btn-outline-warning:hover {
@@ -2108,7 +2106,6 @@ title_3 trans {
   color: var(--color-set-green);
   padding: 25px;
   border: 2px solid var(--color-set-yellow); */
-  margin: 5px;
 }
 
 #innvovate-thumnail-area {
@@ -2619,13 +2616,9 @@ title_3 trans {
 /* Lead css for homepage */
 .card-1-body {
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px;
   background-color: var(--color-set-white);
   border: 2px solid var(--color-set-yellow);
-  margin: 5px;
-}
-.card-1-body img{
-  height: auto !important;
 }
 
 /* .card .rounded-circle {
@@ -2711,5 +2704,9 @@ p.tabination-text{
 /* MobileSectionComponent.module.css */
 #experiment-mobile {
   display: none;
+}
+img {
+  object-fit: cover;
+  border-radius: 10px;
 }
 

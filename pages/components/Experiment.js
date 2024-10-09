@@ -37,7 +37,7 @@ const Experiment = () => {
                  <div className="service_post position-relative mt-50">
 
                  <div className="row g-4">
-                  <div className="col-md-6 d-flex align-items-stretch g-0">
+                  <div className="col-md-6 col-6 d-flex align-items-stretch g-0">
                     <div className="col-6 p-3">
                         <h5 className="feature-title">BOOK REVIEWS</h5>
                         <p className="feature-description">
@@ -48,9 +48,9 @@ const Experiment = () => {
                         <Image
                           alt="Book Reviews"
                           src="/images/experiments/book-review.png" // Adjust the path as needed
-                          className="img-fluid feature-image"
-                          width={285}
-                          height={180}
+                          className="img feature-image"
+                          width={310}
+                          height={204}
                           loading="lazy"
                           decoding="async"
                         />
@@ -65,9 +65,9 @@ const Experiment = () => {
                         <Image
                           alt="Book Reviews"
                           src="/images/experiments/clubs.png" // Adjust the path as needed
-                          className="img-fluid feature-image"
-                          width={285}
-                          height={180}
+                          className="img feature-image"
+                          width={310}
+                          height={204}
                           loading="lazy"
                           decoding="async"
                         />
@@ -75,15 +75,15 @@ const Experiment = () => {
 
                       
                     </div>
-                    <div className="col-md-6 d-flex align-items-stretch g-0">
+                    <div className="col-md-6 col-6 d-flex align-items-stretch g-0">
                     
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
                           src="/images/experiments/jadu-gyan.png" // Adjust the path as needed
-                          className="img-fluid feature-image"
-                          width={285}
-                          height={180}
+                          className="img feature-image"
+                          width={310}
+                          height={204}
                           loading="lazy"
                           decoding="async"
                         />
@@ -98,9 +98,9 @@ const Experiment = () => {
                         <Image
                           alt="Book Reviews"
                           src="/images/experiments/character.png" // Adjust the path as needed
-                          className="img-fluid feature-image"
-                          width={285}
-                          height={180}
+                          className="img feature-image"
+                          width={310}
+                          height={204}
                           loading="lazy"
                           decoding="async"
                         />
@@ -115,7 +115,7 @@ const Experiment = () => {
 
                       
                     </div>
-                    <div className="col-md-6 d-flex align-items-stretch g-0">
+                    <div className="col-md-6 col-6 d-flex align-items-stretch g-0">
                     <div className="col-6 p-3">
                         <h5 className="feature-title"> VISUAL & PERFORMING ARTS</h5>
                         <p className="feature-description">
@@ -126,9 +126,9 @@ const Experiment = () => {
                         <Image
                           alt="Book Reviews"
                           src="/images/experiments/visual-arts.png" // Adjust the path as needed
-                          className="img-fluid feature-image"
-                          width={285}
-                          height={180}
+                          className="img feature-image"
+                          width={310}
+                          height={204}
                           loading="lazy"
                           decoding="async"
                         />
@@ -143,9 +143,9 @@ const Experiment = () => {
                         <Image
                           alt="Book Reviews"
                           src="/images/experiments/jadu-gyan.png" // Adjust the path as needed
-                          className="img-fluid feature-image"
-                          width={285}
-                          height={180}
+                          className="img feature-image"
+                          width={310}
+                          height={204}
                           loading="lazy"
                           decoding="async"
                         />
