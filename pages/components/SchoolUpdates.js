@@ -48,7 +48,7 @@ const SchoolUpdates = () => {
                     <Image src="/images/ach.webp" alt="Primary" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
-                      <h2 className="fw-bold mb-3">RAMAGYA SCHOOL RANKED #3 IN NOIDA `&apos; TIMES SCHOOL SURVEY 2023</h2>
+                      <h2 className="fw-bold mb-3">RAMAGYA SCHOOL RANKED #3 IN NOIDA `&apos; TIMES SCHOOL SURVEY 2024</h2>
                       <p className='tabination-text'>
                         We&#39;re thrilled to announce that Ramagya School Noida, Sector 50, known for its unwavering commitment to holistic education, has been Ranked #3 in the &lsquo;Noida Leaders&lsquo; category by the Times School Survey 2023.
                       </p>
