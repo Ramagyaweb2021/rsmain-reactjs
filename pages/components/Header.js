@@ -12,7 +12,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 // import { faBlog } from '@fortawesome/free-solid-svg-icons';
 import Enquirypopup from './Enquirypopup';
 import Typebot from '../components/Typebot';
-import Socialmediaheader from '../components/Socialmediaheader';
+// import Socialmediaheader from '../components/Socialmediaheader';
 // import Myform from './Myform';
 const Header = () => {
   useEffect(() => {
@@ -295,7 +295,7 @@ const Header = () => {
                 {/* End of dropdown meun */}
               </ul>
               
-              <Socialmediaheader/>
+              {/* <Socialmediaheader/> */}
            
             </div>
         </div>

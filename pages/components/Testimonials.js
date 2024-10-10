@@ -25,7 +25,7 @@ const Testimonials = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5, // Number of slides visible at once by default
+    slidesToShow: 6, // Number of slides visible at once by default
     slidesToScroll: 1,
     autoplay: false, // Enable auto sliding
     autoplaySpeed: 1000, // Auto slide every 1 second
@@ -33,7 +33,7 @@ const Testimonials = () => {
       {
         breakpoint: 1441, // Devices with a width of less than 1441px
         settings: {
-          slidesToShow: 4, // Show 4 slides
+          slidesToShow: 6, // Show 4 slides
         }
       },
       {

@@ -9,9 +9,9 @@ body {
   .container-sm,
   .container-xl,
   .container-xxl {
-      max-width: 1250px;
-      padding: 0 15px;
-      margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
   .learn h1,
   .explore h1,
@@ -19,9 +19,9 @@ body {
       padding-bottom: 25px;
       margin-bottom: 25px;
   }
-  .downsection {
+  /* .downsection {
       bottom: 10px;
-  }
+  } */
   .p-3 {
       padding: 2rem !important;
   }
@@ -38,9 +38,9 @@ body {
   .navbar-brand img {
       width: 300px;
   }
-  .downsection {
-      bottom: 260px;
-  }
+  /* .downsection {
+      bottom: 150px;
+  } */
   .nav-link {
       font-size: 16px;
       padding: 3px 15px;
@@ -49,6 +49,54 @@ body {
       font-size: 30px;
       padding-bottom: 5px;
       margin-bottom: 5px;
+  }
+  .fp-tableExplore {
+    background-image: url(/images/explore-bg.webp);
+    background-color: #ffffff63;
+    background-blend-mode: overlay;
+    padding: 100px 0 100px 0;
+  }
+  .fp-tableExperiment {
+    background-color: #fff;
+    padding: 100px 0 100px 0;
+  }
+  .fp-tableInvovate {
+    background-color: #fff;
+    padding: 100px 0 100px 0;
+  }
+  .fp-tableEvolve {
+    background-color: #fff;
+    padding: 100px 0 100px 0;
+  }
+  .fp-tableLead {
+    background-image: url(/images/explore-bg.webp);
+    background-color: #ffffff63;
+    background-blend-mode: overlay;
+    padding: 100px 0 100px 0;
+  }
+  .fp-tableGallery {
+    background-color: #fff;
+    padding: 100px 0 100px 0;
+  }
+  .fp-tableDifference {
+    padding: 100px 0 100px 0;
+    background-image: url(/images/explore-bg.webp);
+    background-color: #ffffff63;
+    background-blend-mode: overlay;
+  }
+  .fp-tableAwards {
+    background-color: #fff;
+    padding: 100px 0 100px 0;
+  }
+  .fp-tableSchoolupdates {
+    padding: 100px 0 100px 0;
+    background-image: url(/images/explore-bg.webp);
+    background-color: #ffffff63;
+    background-blend-mode: overlay;
+  }
+  .fp-tableTestimonials {
+    background-color: #fff;
+    padding: 100px 0 100px 0;
   }
   .learn h1,
   .explore h1,
@@ -76,7 +124,7 @@ body {
       padding: 8px 5px;
       position: relative;
       z-index: 1;
-      width: 200px;
+      width: 100px;
       font-family: var(--font-family-text);
       text-transform: capitalize;
       vertical-align: middle;
@@ -86,7 +134,7 @@ body {
       padding: 8px 5px;
       position: relative;
       z-index: 1;
-      width: 200px;
+      width: 100px;
       font-family: var(--font-family-text);
       text-transform: capitalize;
       vertical-align: middle;
@@ -184,9 +232,9 @@ body {
       background-color: #fff;
       font-size: 14px;
   }
-  .downsection {
-      bottom: 275px;
-  }
+  /* .downsection {
+      bottom: 50px;
+  } */
 }
 @media only screen and (max-width: 767px) {
   body {

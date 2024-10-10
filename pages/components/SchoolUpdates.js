@@ -98,7 +98,7 @@ const SchoolUpdates = () => {
             </div>
             </section>
             </Tab>
-            <Tab eventKey="awards" title="Admission Update">
+            <Tab eventKey="awards" title="Workshop/Activity">
             <section className="custom-section">
             <div className="container">
               <div className="row align-items-center">
@@ -106,7 +106,7 @@ const SchoolUpdates = () => {
                     <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
-                      <h2 className="fw-bold mb-3">Admission Update</h2>
+                      <h2 className="fw-bold mb-3">Workshop/Activity</h2>
                       <p className='tabination-text'>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
