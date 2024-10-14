@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
 
     // Adjust scroll speed for keyboard (arrow keys, page up/down)
     const adjustKeyboardScrollSpeed = (event) => {
-      const scrollSpeed = 1300; // Increase this number for faster keyboard scrolling
+      const scrollSpeed = 1000; // Increase this number for faster keyboard scrolling
       switch (event.key) {
         case 'ArrowDown':
           window.scrollBy({

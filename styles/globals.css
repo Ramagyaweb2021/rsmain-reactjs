@@ -391,7 +391,7 @@ span.highlight-lg::after {
   width: 100%;
 }
 .bg-light {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 .fp-tableExplore {
   background-image: url(/images/explore-bg.webp);
@@ -1338,7 +1338,8 @@ ul {
   margin-left: 5px;
 }
 .downsection {
-  position: fixed;
+  position: absolute;
+  top: 90%;
   bottom: 20px; /* Adjust the value to control the distance from the bottom */
   left: 50%;
   transform: translateX(-50%);
@@ -1855,6 +1856,7 @@ title_3 trans {
 .feature-image {
   object-fit: cover;
   border-radius: 0;
+  width: 100%;
 }
 .row.g-4 {
   gap: 0.1rem;

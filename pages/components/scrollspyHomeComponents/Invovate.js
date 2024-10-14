@@ -2,7 +2,7 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 // import Image from 'next/image';
 import Link from 'next/link';
-import Innvovateslider from '../components/Innvovateslider';
+import Innvovateslider from '../scrollspyHomeComponents/Innvovateslider';
 
 const Innovate = () => {
   return (

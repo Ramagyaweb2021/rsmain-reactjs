@@ -1,5 +1,4 @@
 import React from 'react'
-import DownSection from './DownSection'
 const Slider = () => {
   return (
     <>
@@ -17,7 +16,6 @@ const Slider = () => {
                 preload="preload">
                 <source src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/videos/rs-main-latest.mp4" type="video/mp4"/>
               </video>
-              <DownSection/>
         </div>
       </div>
     </div>

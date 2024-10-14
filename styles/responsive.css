@@ -9,7 +9,7 @@ body {
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1140px;
+    max-width: 1400px;
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -50,7 +50,7 @@ body {
       padding-bottom: 5px;
       margin-bottom: 5px;
   }
-  .fp-tableExplore {
+  /* .fp-tableExplore {
     background-image: url(/images/explore-bg.webp);
     background-color: #ffffff63;
     background-blend-mode: overlay;
@@ -97,7 +97,7 @@ body {
   .fp-tableTestimonials {
     background-color: #fff;
     padding: 100px 0 100px 0;
-  }
+  } */
   .learn h1,
   .explore h1,
   .innovate h1 {
@@ -124,7 +124,7 @@ body {
       padding: 8px 5px;
       position: relative;
       z-index: 1;
-      width: 100px;
+      width: 200px;
       font-family: var(--font-family-text);
       text-transform: capitalize;
       vertical-align: middle;
@@ -134,7 +134,7 @@ body {
       padding: 8px 5px;
       position: relative;
       z-index: 1;
-      width: 100px;
+      width: 200px;
       font-family: var(--font-family-text);
       text-transform: capitalize;
       vertical-align: middle;
@@ -162,7 +162,8 @@ body {
   .feature-image {
       object-fit: cover;
       border-radius: 0;
-      height: auto;
+      height: 135px;
+      /* height: auto; */
   }
   .feature-title {
       font-size: 14px;
@@ -209,7 +210,7 @@ body {
       padding: 0 9px;
       margin-bottom: 40px;
       font-family: var(--font-family-text);
-      font-size: 14px;
+      font-size: 13px;
   }
   .image-container-testimonial img{
     height: auto;
@@ -231,6 +232,9 @@ body {
   body {
       background-color: #fff;
       font-size: 14px;
+  }
+  .learn p, .explore p{
+    font-size: 12px;
   }
   /* .downsection {
       bottom: 50px;
