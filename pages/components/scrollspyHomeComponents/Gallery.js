@@ -19,10 +19,10 @@ const Gallery = () => {
     { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
     { src: '/images/poineer-in-sports.webp', title: 'Science Lab Experiments', category: 'Science Lab', type: 'image' },
     { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
-    { src: '/images/ach.webp', title: 'Achievement Day', category: 'School Events', type: 'image' },
-    { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
-    { src: '/images/poineer-in-sports.webp', title: 'Science Lab Experiments', category: 'Science Lab', type: 'image' },
-    { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
+    // { src: '/images/ach.webp', title: 'Achievement Day', category: 'School Events', type: 'image' },
+    // { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
+    // { src: '/images/poineer-in-sports.webp', title: 'Science Lab Experiments', category: 'Science Lab', type: 'image' },
+    // { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
     { src: 'https://www.youtube.com/embed/_cuUK64hQ7o', title: 'Sports Event', category: 'Sports', type: 'video' },
     { src: 'https://www.youtube.com/embed/_cuUK64hQ7o', title: 'Lab Experiments in Action', category: 'Science Lab', type: 'video' },
     { src: 'https://www.youtube.com/embed/_cuUK64hQ7o', title: 'Sports Day Highlights', category: 'Sports', type: 'video' },
@@ -65,7 +65,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className="learn section" id="gallery">
+    <section className="learn section fp-section fp-table fp-completely" id="gallery">
       <div className="fp-tableGallery">
         <div className="container">
           <div className="row">
@@ -77,11 +77,11 @@ const Gallery = () => {
                   OUR CAPTURED MEMORY
                 </span>
               </h1>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+              {/* <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p> */}
             </div>
           </div>
         </div>
-        <div className="container-fluid my-2">
+        <div className="container my-2">
           {/* Gallery and Video Toggle Buttons */}
           <div className="d-flex justify-content-center mb-4">
             <button className={`btn mx-2 ${activeGallery === 'Images' ? 'btn-warning-gallery' : 'btn-outline-warning'}`} 
@@ -111,7 +111,7 @@ const Gallery = () => {
                 More
               </button>
               <ul className="dropdown-menu" aria-labelledby="moreDropdown">
-                <li><a className="dropdown-item" href="#">Additional Category</a></li>
+                <li><a className="dropdown-item" href="#">View More</a></li>
               </ul>
             </div>
           </div>

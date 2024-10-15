@@ -6,9 +6,12 @@ const Menu = () => {
   const [activeSection, setActiveSection] = useState('');
   const [isSticky, setIsSticky] = useState(false);
   const [menuAnimation, setMenuAnimation] = useState('');
+  const [scrollLocked, setScrollLocked] = useState(false); // State to manage scroll lock
 
   useEffect(() => {
     const handleScroll = () => {
+      if (scrollLocked) return; // Prevent scroll while locked
+
       const isScrolled = window.scrollY > 0;
       if (isScrolled && !isSticky) {
         setIsSticky(true);
@@ -19,23 +22,21 @@ const Menu = () => {
       }
 
       const sections = document.querySelectorAll('section[id]');
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
-      let foundActiveSection = false;
+      const scrollPosition = window.scrollY + window.innerHeight * 0.2; // Adjusted to focus closer to top of section
+      let currentSection = '';
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-          const sectionId = section.getAttribute('id');
-          setActiveSection(sectionId);
-          window.history.replaceState(null, '', `#${sectionId}`); // Update the URL without reloading
-          foundActiveSection = true;
+          currentSection = section.getAttribute('id');
         }
       });
 
-      if (!foundActiveSection && window.scrollY < sections[0].offsetTop) {
-        setActiveSection('');
+      if (currentSection && currentSection !== activeSection) {
+        setActiveSection(currentSection);
+        window.history.replaceState(null, '', `#${currentSection}`); // Update the URL without reloading
       }
     };
 
@@ -44,19 +45,29 @@ const Menu = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [isSticky]);
+  }, [activeSection, isSticky, scrollLocked]);
 
-  // Update the handleNavClick function to change the URL hash
   const handleNavClick = (event, targetId) => {
     event.preventDefault();
-    window.location.hash = targetId; // Change the URL hash
-
     const targetSection = document.getElementById(targetId);
+    
     if (targetSection) {
+      // Update the URL immediately
+      window.history.replaceState(null, '', `#${targetId}`);
+
+      const targetOffset = targetSection.offsetTop - (window.innerHeight / 2 - targetSection.offsetHeight / 2);
+      
+      // Lock scrolling
+      setScrollLocked(true);
       window.scrollTo({
-        top: targetSection.offsetTop - (window.innerHeight / 2 - targetSection.offsetHeight / 2),
+        top: targetOffset,
         behavior: 'smooth',
       });
+
+      // Unlock scrolling after a delay (time for the scroll animation to finish)
+      setTimeout(() => {
+        setScrollLocked(false);
+      }, 1000); // Adjust this timeout to match the duration of your smooth scroll
     }
   };
 

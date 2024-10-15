@@ -30,11 +30,11 @@ const Experiment = () => {
                     WORKSHOPS, PROGRAMS AND EXPERIENCES
                   </span>
                 </h1>
-                <p>
+                {/* <p>
                   Encouraging students to explore, innovate, and apply knowledge across various disciplines through experiential learning. The sessions under this stimulate critical thinking, enhance vocational and life skills, encourage learning collaboration and creativity while pursuing their passions and nurture artistic talent, enhance cognitive, emotional, and motor skills. We encourage hands-on experiments that bring theory to life, and learning integrates real-world problem-solving through innovative, multidisciplinary projects. Together, these programs ensure students engage in comprehensive, holistic development!
-                </p>
+                </p> */}
 
-                 <div className="service_post position-relative mt-50">
+                 <div className="service_post position-relative mt-10">
 
                  <div className="row g-4">
                   <div className="col-md-6 col-6 d-flex align-items-stretch g-0">
@@ -97,7 +97,7 @@ const Experiment = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/character.webp" // Adjust the path as needed
+                          src="/images/experiments/character.webp" 
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -125,7 +125,7 @@ const Experiment = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/visual-arts.webp" // Adjust the path as needed
+                          src="/images/experiments/visual-arts.webp" 
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -142,7 +142,7 @@ const Experiment = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/jadu-gyan.webp" // Adjust the path as needed
+                          src="/images/experiments/jadu-gyan.webp" 
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -160,7 +160,7 @@ const Experiment = () => {
               </div>
 
                 {/* Learb more button */}
-                <div className="d-flex justify-content-center align-items-center mt-50">
+                <div className="d-flex justify-content-center align-items-center mt-30">
                     <div className="learn-more-button">
                       <a href="#">Learn More</a>
                     </div>

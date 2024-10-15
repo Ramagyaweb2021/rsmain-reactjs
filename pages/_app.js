@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/globals.css'; 
-import '../styles/responsive.css'; 
+import '../styles/globals.css';
+import '../styles/responsive.css';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -11,64 +11,70 @@ function MyApp({ Component, pageProps }) {
       require('jquery/dist/jquery.min.js');
     }
 
-    // Adjust scroll speed for mouse wheel
+    // Adjust scroll speed for mouse wheel and touchpad
     const adjustMouseScrollSpeed = (event) => {
-      // Increase scroll speed multiplier (higher number = faster scroll)
-      const scrollSpeed = 10;
-      if (event.deltaY !== 0) {
+      const isTouchpad = Math.abs(event.deltaY) < 50; // Detect touchpad based on deltaY value
+      const scrollSpeed = isTouchpad ? 1.5 : 10; // Lower scroll speed for touchpad, higher for mouse
+
+      if (!window.scrollLocked) {
         window.scrollBy({
           top: event.deltaY * scrollSpeed,
-          behavior: 'smooth', // Use 'smooth' for smoother scrolling
+          behavior: 'smooth',
         });
-        event.preventDefault(); // Prevent default scroll behavior
+        // Prevent default behavior only for mouse scrolling, not for touchpad
+        if (!isTouchpad) {
+          event.preventDefault();
+        }
       }
     };
 
     // Adjust scroll speed for keyboard (arrow keys, page up/down)
     const adjustKeyboardScrollSpeed = (event) => {
-      const scrollSpeed = 1000; // Increase this number for faster keyboard scrolling
-      switch (event.key) {
-        case 'ArrowDown':
-          window.scrollBy({
-            top: scrollSpeed,
-            behavior: 'smooth', // You can use 'smooth' for smooth scrolling
-          });
-          event.preventDefault();
-          break;
-        case 'ArrowUp':
-          window.scrollBy({
-            top: -scrollSpeed,
-            behavior: 'smooth',
-          });
-          event.preventDefault();
-          break;
-        case 'PageDown':
-          window.scrollBy({
-            top: window.innerHeight * 0.9, // Scroll down almost a full page height
-            behavior: 'smooth',
-          });
-          event.preventDefault();
-          break;
-        case 'PageUp':
-          window.scrollBy({
-            top: -window.innerHeight * 0.9, // Scroll up almost a full page height
-            behavior: 'smooth',
-          });
-          event.preventDefault();
-          break;
-        default:
-          break;
+      if (!window.scrollLocked) {
+        const scrollSpeed = 1000;
+        switch (event.key) {
+          case 'ArrowDown':
+            window.scrollBy({
+              top: scrollSpeed,
+              behavior: 'smooth',
+            });
+            event.preventDefault();
+            break;
+          case 'ArrowUp':
+            window.scrollBy({
+              top: -scrollSpeed,
+              behavior: 'smooth',
+            });
+            event.preventDefault();
+            break;
+          case 'PageDown':
+            window.scrollBy({
+              top: window.innerHeight * 0.9,
+              behavior: 'smooth',
+            });
+            event.preventDefault();
+            break;
+          case 'PageUp':
+            window.scrollBy({
+              top: -window.innerHeight * 0.9,
+              behavior: 'smooth',
+            });
+            event.preventDefault();
+            break;
+          default:
+            break;
+        }
       }
     };
 
     // Disable middle-click scrolling functionality
     const disableMiddleClickScroll = (event) => {
-      if (event.button === 1) { // Check for middle mouse button click
-        event.preventDefault();  // Prevent the default scroll behavior
+      if (event.button === 1) {
+        event.preventDefault();
       }
     };
 
-    // Attach event listeners for mouse wheel and keyboard
+    // Attach event listeners for mouse wheel, touchpad, and keyboard
     window.addEventListener('wheel', adjustMouseScrollSpeed, { passive: false });
     window.addEventListener('keydown', adjustKeyboardScrollSpeed);
     window.addEventListener('mousedown', disableMiddleClickScroll);

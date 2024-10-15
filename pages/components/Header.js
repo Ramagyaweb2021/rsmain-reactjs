@@ -75,9 +75,9 @@ const Header = () => {
             aria-labelledby="offcanvasDarkNavbarLabel"
           >
             <div className="offcanvas-header">
-            <Link className="navbar-brand" href="./">
+            {/* <Link className="navbar-brand" href="./">
               <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
-            </Link>
+            </Link> */}
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
                 <Image src="/images/close.webp" alt="Close" width={64} height={64}  className="btn-close btn-close-yellow" data-bs-dismiss="offcanvas"/>
               {/* <button

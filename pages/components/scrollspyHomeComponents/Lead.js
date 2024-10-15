@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import DownArrowGallery from '../DownArrowGallery';
 
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
@@ -42,6 +43,14 @@ const Lead = () => {
     });
     wow.init();
   }, []); // Empty dependency array ensures this runs once on mount
+
+  // Define the handleScroll function to scroll to the next section
+  const handleScroll = () => {
+    const nextSection = document.getElementById('nextSection'); // Replace with the ID of the section you want to scroll to
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -157,7 +166,22 @@ const Lead = () => {
               <a href="#">Learn More</a>
             </div>
           </div>
+          <div className="downsection-lead" onClick={handleScroll}>
+            <Image
+              src="/images/down-section-gallery.png"
+              className="animate__animated animate__fadeInDown animate__infinite animate__slow"
+              alt="Ramagya school"
+              width={100}
+              height={100}
+            />
+          </div>
+
         </div>
+      </section>
+
+      {/* Dummy section to scroll to */}
+      <section id="nextSection" className="next-section">
+        {/* <h2>Next Section</h2> */}
       </section>
     </>
   );

@@ -20,7 +20,7 @@ const Awards = () => {
   }, []); // Empty dependency array ensures this runs once on mount
   return (
     <>
-    <section className='learn bg-tropical-mist-awards' id="awards">
+    <section className='learn section fp-section fp-table fp-completely bg-tropical-mist-awards' id="awards">
       <div className='fp-tableAwards'>
         <Container className='bg-tropical-mist-awards p-0'>
         <div className="row">

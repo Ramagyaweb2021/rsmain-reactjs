@@ -26,8 +26,9 @@ const DownArrow = () => {
       </div>
 
       {/* Target section for scrolling */}
-      <section id="our-campuses" ref={scrollToSection}>
+      <section className='learn section fp-section fp-table' id="our-campuses" ref={scrollToSection}>
       {/* <section id="our-campuses" ref={scrollToSection} style={{ minHeight: '100vh', paddingTop: '50px' }}> */}
+      <div className="fp-tableOurCampuses">
       <div className="container learn my-5">
        <h1 className="main-heading"> OUR CAMPUSES
           <span className="lineclass" />
@@ -115,6 +116,7 @@ const DownArrow = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
       </section>
     </>

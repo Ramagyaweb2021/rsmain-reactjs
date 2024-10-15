@@ -22,7 +22,7 @@ const SchoolUpdates = () => {
   }, []); // Empty dependency array ensures this runs once on mount
   return (
     <>
-      <section className='learn bg-tropical-mist' id="schoolupdates">
+      <section className='learn section fp-section fp-table fp-completely bg-tropical-mist' id="schoolupdates">
       <div className='fp-tableSchoolupdates'>
       <Container className='bg-tropical-mist p-0'>
       <div className="row">

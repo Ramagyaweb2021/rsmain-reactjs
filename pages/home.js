@@ -5,7 +5,7 @@ import HomeSlider from '/pages/components/HomeSlider'
 import ScrollspySections from '/pages/components/ScrollspySections'
 import OfferPopup from './components/OfferPopup'
 import Footer from './components/Footer'
-import DownArrow from './components/DownArrow'
+import DownArrow from './components/DownArrowSchoolBranch'
 const Home = () => {
   return (
     <>
