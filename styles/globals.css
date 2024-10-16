@@ -2117,5 +2117,5 @@ p.tabination-text {
 }
 .slick-prev:before, .slick-next:before{
   color: var(--color-set-green) !important;
-  font-size: 30px !important;
+  font-size: 0 !important;
 }
