@@ -171,8 +171,8 @@ const Lead = () => {
               src="/images/down-section-gallery.png"
               className="animate__animated animate__fadeInDown animate__infinite animate__slow"
               alt="Ramagya school"
-              width={100}
-              height={100}
+              width={80}
+              height={80}
             />
           </div>
 

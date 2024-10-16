@@ -5,37 +5,38 @@ import 'animate.css';
 const Menu = () => {
   const [activeSection, setActiveSection] = useState('');
   const [isSticky, setIsSticky] = useState(false);
-  const [menuAnimation, setMenuAnimation] = useState(''); // State for animation classes
+  const [menuAnimation, setMenuAnimation] = useState('');
+  const [scrollLocked, setScrollLocked] = useState(false); // State to manage scroll lock
 
   useEffect(() => {
     const handleScroll = () => {
-      // Sticky menu logic (activate sticky as soon as the page scrolls)
+      if (scrollLocked) return; // Prevent scroll while locked
+
       const isScrolled = window.scrollY > 0;
       if (isScrolled && !isSticky) {
         setIsSticky(true);
-        setMenuAnimation('animate__fadeInDown'); // Add animation when it becomes sticky
+        setMenuAnimation('animate__fadeInDown');
       } else if (!isScrolled && isSticky) {
         setIsSticky(false);
-        setMenuAnimation(''); // Remove animation when not sticky
+        setMenuAnimation('');
       }
 
-      // Section activation logic
       const sections = document.querySelectorAll('section[id]');
-      let foundActiveSection = false;
+      const scrollPosition = window.scrollY + window.innerHeight * 0.2; // Adjusted to focus closer to top of section
+      let currentSection = '';
 
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
-        if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight) {
-          setActiveSection(section.getAttribute('id'));
-          foundActiveSection = true;
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          currentSection = section.getAttribute('id');
         }
       });
 
-      // Disable active state if scrolled above the first section
-      if (!foundActiveSection && window.scrollY < sections[0].offsetTop) {
-        setActiveSection('');
+      if (currentSection && currentSection !== activeSection) {
+        setActiveSection(currentSection);
+        window.history.replaceState(null, '', `#${currentSection}`); // Update the URL without reloading
       }
     };
 
@@ -44,22 +45,32 @@ const Menu = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [isSticky]); // Added isSticky as a dependency
+  }, [activeSection, isSticky, scrollLocked]);
 
-  // Handle click and prevent URL hash change with smooth scrolling
   const handleNavClick = (event, targetId) => {
     event.preventDefault();
     const targetSection = document.getElementById(targetId);
+    
     if (targetSection) {
-      // Smooth scroll to the target section
+      // Update the URL immediately
+      window.history.replaceState(null, '', `#${targetId}`);
+
+      const targetOffset = targetSection.offsetTop - (window.innerHeight / 2 - targetSection.offsetHeight / 2);
+      
+      // Lock scrolling
+      setScrollLocked(true);
       window.scrollTo({
-        top: targetSection.offsetTop - 50, // Adjust scroll offset for sticky menu
+        top: targetOffset,
         behavior: 'smooth',
       });
+
+      // Unlock scrolling after a delay (time for the scroll animation to finish)
+      setTimeout(() => {
+        setScrollLocked(false);
+      }, 1000); // Adjust this timeout to match the duration of your smooth scroll
     }
   };
 
-  // Determine which menu items to show based on the active section
   const shouldShowMainMenu = !['gallery', 'difference', 'awards', 'schoolupdates', 'testimonials'].includes(activeSection);
 
   return (
@@ -111,8 +122,7 @@ const Menu = () => {
                     Lead
                   </Nav.Link>
                 </>
-              ) : ( 
-                // More section menu  
+              ) : (
                 <>
                   <Nav.Link
                     href="#gallery"
@@ -121,7 +131,6 @@ const Menu = () => {
                   >
                     Gallery
                   </Nav.Link>
-
                   <Nav.Link
                     href="#difference"
                     onClick={(e) => handleNavClick(e, 'difference')}
@@ -129,7 +138,6 @@ const Menu = () => {
                   >
                     THE DIFFERENCE WE MAKE
                   </Nav.Link>
-
                   <Nav.Link
                     href="#awards"
                     onClick={(e) => handleNavClick(e, 'awards')}
@@ -137,7 +145,6 @@ const Menu = () => {
                   >
                     AWARDS
                   </Nav.Link>
-
                   <Nav.Link
                     href="#schoolupdates"
                     onClick={(e) => handleNavClick(e, 'schoolupdates')}
@@ -145,7 +152,6 @@ const Menu = () => {
                   >
                     SCHOOL UPDATES
                   </Nav.Link>
-
                   <Nav.Link
                     href="#testimonials"
                     onClick={(e) => handleNavClick(e, 'testimonials')}
@@ -153,9 +159,6 @@ const Menu = () => {
                   >
                     TESTIMONIALS
                   </Nav.Link>
-
-
-
                 </>
               )}
             </Nav>

@@ -45,6 +45,7 @@ img {
   border: 0 none;
   max-width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 h1,
 h2,
@@ -1029,17 +1030,17 @@ ul {
 }
 .slider-item .number {
   background-color: #ffdf8b33;
-  color: var(--color-set-yellow);
+  color: var(--color-set-green);
   font-size: 1rem;
   font-weight: 700;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   width: 30px;
 }
 .slider-item img {
   width: 100%;
   height: auto;
-  border-radius: 1px;
+  border-radius: 5px;
 }
 .slider-item h3 {
   font-size: 1rem;
@@ -1406,7 +1407,8 @@ title_3 trans {
 .image-container-testimonial {
   position: relative;
   display: inline-block;
-  min-width: 90%;
+  width: 100%;
+  /* min-width: 90%; */
 }
 .play-button-overlay {
   position: absolute;
@@ -1423,7 +1425,8 @@ title_3 trans {
   cursor: pointer;
 }
 .play-button-overlay:hover {
-  background-color: var(--color-set-yellow);
+  background-color: transparent;
+  /* background-color: var(--color-set-yellow); */
 }
 .play-button-overlay-innovate {
   position: absolute;
@@ -1443,7 +1446,7 @@ title_3 trans {
   background-color: var(--color-set-yellow);
 }
 .testimonial-content {
-  background: #fff;
+  background: transparent;
   box-shadow: 0 2px 2px rgb(0 0 0 / 4%);
   padding: 5px;
   border-radius: 5px;
@@ -1454,7 +1457,7 @@ title_3 trans {
 }
 .slick-dots li button:before {
   font-size: 15px !important;
-  color: var(--color-set-yellow) !important;
+  color: var(--color-set-green) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -2050,3 +2053,69 @@ p.tabination-text {
     height: 100%;
     padding: 50px 0 50px;
   }
+  /* Make slick slides use display flex */
+.row-school-updates{
+  display: flex !important;
+}
+#testimonial-slider .slick-center {
+  border: 3px solid var(--color-set-yellow); /* Add a border to the active slide */
+  padding: 2px; /* Optional: to adjust for the border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: to add shadow effect */
+  transition: all 0.3s ease; /* Optional: smooth transition for the active slide */
+  border-radius: 10px;
+  background-color:#f2fcff;
+}
+#testimonial-slider .image-container-testimonial{
+ border-radius: 10px;
+}
+#testimonial-slider .slick-slide {
+  opacity: 0.3; /* Reduce opacity for inactive slides */
+  transition: opacity 0.3s ease; /* Smooth opacity change */
+}
+
+#testimonial-slider .slick-center {
+  opacity: 1; /* Make the active slide fully visible */
+}
+/* Custom styles for the slider items */
+.slider-item {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+  opacity: 1; /* Make non-active slides slightly transparent */
+  transform: scale(0.9); /* Scale down non-center slides */
+}
+
+.slider-item-active {
+  opacity: 1; /* Fully opaque for the active slide */
+  transform: scale(1); /* Normal size for the center slide */
+}
+/* Custom styles for the slider items */
+.slider-container .slick-slide {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+  opacity: 0.9; /* Make non-active slides slightly transparent */
+  transform: scale(0.8); /* Scale down non-center slides */
+}
+
+.slider-container .slick-center {
+  opacity: 1; /* Make the active slide fully visible */
+  transform: scale(1); /* Scale up the center slide */
+}
+
+.custom-next-arrow, .custom-prev-arrow {
+  width: 30px; /* Width of the arrow */
+  height: 30px; /* Height of the arrow */
+  background: url('/images/submit-1.webp') no-repeat center; /* Add your arrow icon */
+  background-size: contain; /* Ensure the image is scaled properly */
+  cursor: pointer; /* Pointer cursor on hover */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.custom-prev-arrow {
+  left: 10px; /* Adjust left positioning */
+}
+
+.custom-next-arrow {
+  right: 10px; /* Adjust right positioning */
+}
+.slick-prev:before, .slick-next:before{
+  color: var(--color-set-green) !important;
+  font-size: 30px !important;
+}

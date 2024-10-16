@@ -1,12 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { Nav, Container, Row, Col } from 'react-bootstrap';
 import 'animate.css';
+import dynamic from 'next/dynamic';
+
+// Dynamically import WOW.js to avoid server-side issues
+const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const Menu = () => {
   const [activeSection, setActiveSection] = useState('');
   const [isSticky, setIsSticky] = useState(false);
   const [menuAnimation, setMenuAnimation] = useState('');
   const [scrollLocked, setScrollLocked] = useState(false); // State to manage scroll lock
+
+  useEffect(() => {
+    // Initialize WOW.js only on the client side
+    const WOWJS = require('wowjs');
+    const wow = new WOWJS.WOW({
+      live: false,
+    });
+    wow.init();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -89,35 +102,35 @@ const Menu = () => {
                   <Nav.Link
                     href="#explore"
                     onClick={(e) => handleNavClick(e, 'explore')}
-                    className={`mx-3 ${activeSection === 'explore' ? 'active' : ''}`}
+                    className={`mx-3 ${activeSection === 'explore' ? 'active wow animate__animated animate__fadeIn' : ''}`}
                   >
                     Explore
                   </Nav.Link>
                   <Nav.Link
                     href="#experiment"
                     onClick={(e) => handleNavClick(e, 'experiment')}
-                    className={`mx-3 ${activeSection === 'experiment' ? 'active' : ''}`}
+                    className={`mx-3 ${activeSection === 'experiment' ? 'active wow animate__animated animate__fadeIn' : ''}`}
                   >
                     Experiment
                   </Nav.Link>
                   <Nav.Link
                     href="#innovate"
                     onClick={(e) => handleNavClick(e, 'innovate')}
-                    className={`mx-3 ${activeSection === 'innovate' ? 'active' : ''}`}
+                    className={`mx-3 ${activeSection === 'innovate' ? 'active wow animate__animated animate__fadeIn' : ''}`}
                   >
                     Innovate
                   </Nav.Link>
                   <Nav.Link
                     href="#evolve"
                     onClick={(e) => handleNavClick(e, 'evolve')}
-                    className={`mx-3 ${activeSection === 'evolve' ? 'active' : ''}`}
+                    className={`mx-3 ${activeSection === 'evolve' ? 'active wow animate__animated animate__fadeIn' : ''}`}
                   >
                     Evolve
                   </Nav.Link>
                   <Nav.Link
                     href="#lead"
                     onClick={(e) => handleNavClick(e, 'lead')}
-                    className={`mx-3 ${activeSection === 'lead' ? 'active' : ''}`}
+                    className={`mx-3 ${activeSection === 'lead' ? 'active wow animate__animated animate__fadeIn' : ''}`}
                   >
                     Lead
                   </Nav.Link>
@@ -127,35 +140,35 @@ const Menu = () => {
                   <Nav.Link
                     href="#gallery"
                     onClick={(e) => handleNavClick(e, 'gallery')}
-                    className={`mx-1 ${activeSection === 'gallery' ? 'active' : ''}`}
+                    className={`mx-1 ${activeSection === 'gallery' ? 'active wow animate__animated animate__backInLeft' : ''}`}
                   >
                     Gallery
                   </Nav.Link>
                   <Nav.Link
                     href="#difference"
                     onClick={(e) => handleNavClick(e, 'difference')}
-                    className={`mx-1 ${activeSection === 'difference' ? 'active' : ''}`}
+                    className={`mx-1 ${activeSection === 'difference' ? 'active wow animate__animated animate__backInLeft' : ''}`}
                   >
                     THE DIFFERENCE WE MAKE
                   </Nav.Link>
                   <Nav.Link
                     href="#awards"
                     onClick={(e) => handleNavClick(e, 'awards')}
-                    className={`mx-1 ${activeSection === 'awards' ? 'active' : ''}`}
+                    className={`mx-1 ${activeSection === 'awards' ? 'active wow animate__animated animate__backInLeft' : ''}`}
                   >
                     AWARDS
                   </Nav.Link>
                   <Nav.Link
                     href="#schoolupdates"
                     onClick={(e) => handleNavClick(e, 'schoolupdates')}
-                    className={`mx-1 ${activeSection === 'schoolupdates' ? 'active' : ''}`}
+                    className={`mx-1 ${activeSection === 'schoolupdates' ? 'active wow animate__animated animate__backInLeft' : ''}`}
                   >
                     SCHOOL UPDATES
                   </Nav.Link>
                   <Nav.Link
                     href="#testimonials"
                     onClick={(e) => handleNavClick(e, 'testimonials')}
-                    className={`mx-1 ${activeSection === 'testimonials' ? 'active' : ''}`}
+                    className={`mx-1 ${activeSection === 'testimonials' ? 'active wow animate__animated animate__backInLeft' : ''}`}
                   >
                     TESTIMONIALS
                   </Nav.Link>
