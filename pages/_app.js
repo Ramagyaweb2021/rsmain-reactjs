@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
     // Adjust scroll speed for keyboard (arrow keys, page up/down)
     const adjustKeyboardScrollSpeed = (event) => {
       if (!window.scrollLocked) {
-        const scrollSpeed = 1000; // Amount to scroll per key press
+        const scrollSpeed = 800; // Amount to scroll per key press
         switch (event.key) {
           case 'ArrowDown':
             window.scrollBy({
@@ -52,10 +52,19 @@ function MyApp({ Component, pageProps }) {
       }
     };
 
-    // Adjust scroll speed for mouse wheel scrolling
+    // Adjust scroll speed for mouse wheel or touchpad scrolling
     const adjustMouseScrollSpeed = (event) => {
       if (!window.scrollLocked) {
-        const scrollSpeed = 10; // Multiplier for scroll speed
+        let scrollSpeed;
+        // Check if it's a traditional mouse wheel or touchpad
+        if (event.deltaMode === 0) {
+          // DeltaMode 0: Pixel scroll (usually touchpads)
+          scrollSpeed = 10; // Adjust as needed for touchpads
+        } else {
+          // DeltaMode 1: Line scroll (usually mouse wheels)
+          scrollSpeed = 10; // Multiplier for mouse wheels
+        }
+        
         event.preventDefault();
         const deltaY = event.deltaY * scrollSpeed; // Adjust mouse scroll speed
         window.scrollBy({
