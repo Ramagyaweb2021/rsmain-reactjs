@@ -68,7 +68,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   .fp-tableExperiment {
     background-color: #fff;
@@ -76,7 +76,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   .fp-tableInvovate {
     background-color: #fff;
@@ -84,7 +84,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   .fp-tableEvolve {
     background-color: #fff;
@@ -92,7 +92,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   .fp-tableLead {
     background-image: url(/images/explore-bg.webp);
@@ -104,7 +104,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   .fp-tableGallery {
     background-color: #fff;
@@ -112,7 +112,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   .fp-tableDifference {
    background-image: url(/images/explore-bg.webp);
@@ -124,7 +124,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   .fp-tableAwards {
     background-color: #fff;
@@ -132,7 +132,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   .fp-tableSchoolupdates {
    background-image: url(/images/explore-bg.webp);
@@ -144,7 +144,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   .fp-tableTestimonials {
     background-color: #fff;
@@ -152,7 +152,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    /* padding: 100px 0 100px; */
   }
   .learn h1,
   .explore h1,
