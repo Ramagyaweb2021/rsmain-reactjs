@@ -1,25 +1,94 @@
-import React, { useEffect } from 'react';
-import dynamic from 'next/dynamic';
-import 'animate.css';
-import Image from 'next/image';
+import React from 'react';
+import Fullpage from '@fullpage/react-fullpage';
+import 'fullpage.js/dist/fullpage.css';
+import Image from 'next/image'
+// import ScrollspyMenu from './scrollspyHomeComponents/ScrollspyMenu';
+//import Header from './Header'; // Import Header
+//import HomeSlider from '/pages/components/HomeSlider'; 
+//import Footer from './Footer'; // Import Footer
 
-// Dynamically import WOW.js to avoid server-side issues
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
-
-const Experiment = () => {
-  useEffect(() => {
-    // Initialize WOW.js only on the client side
-    const WOWJS = require('wowjs');
-    const wow = new WOWJS.WOW({
-      live: false
-    });
-    wow.init();
-  }, []); // Empty dependency array ensures this runs once on mount
-
+const FullPageComponent = () => {
   return (
     <>
-      <section className="learn section fp-section fp-table fp-completely" id="experiment">
-        <div className="fp-tableExperiment">
+      {/* Header Component */}
+      {/* <Header /> */}
+      {/* <HomeSlider/> */}
+      {/* FullPage.js wrapper for full-page scrolling sections */}
+      <Fullpage
+        licenseKey={'YOUR_LICENSE_KEY'} // Add your FullPage.js license key
+        scrollingSpeed={1000} // Scroll speed between sections
+        navigation={true} // Enables the navigation dots
+        anchors={['slider', 'explore', 'experiment', 'innovate', 'evolve', 'lead']} // Names for the sections (matching your Menu)
+        render={({ state, fullpageApi }) => {
+          return (
+            <div id="fullpage-wrapper">
+               {/* Section 1 - Explore */}
+               <div className="learn section fp-section fp-table active fp-completely" id="slider">
+               <video className='main-video'
+                width="100%"
+                // height={500}
+                poster="/images/main-banner.webp"
+                loop="loop"
+                muted={true} controls="controls"
+                autoPlay="autoPlay"
+                playsInline="playsInline"
+                preload="preload">
+                <source src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/videos/rs-main-latest.mp4" type="video/mp4"/>
+              </video>
+               </div>
+              {/* Section 1 - Explore */}
+              <div className="learn section fp-section fp-table active fp-completely" id="explore">
+              <div className="fp-tableExplore">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12 position-r">
+                <h1>
+                  EXPLORE
+                  <span className="lineclass" />
+                  <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                    OUR APPROACH AND CURRICULUM
+                  </span>
+                </h1>
+                <p>
+                  Ramagya embodies the commitment to foster curiosity and creativity in every student. Through a well-rounded academic process that integrates both scholastic and co-scholastic activities, students are encouraged to discover their potential in diverse areas. Ramagya School aims to create an environment ensuring holistic development, empowering students to grow intellectually, emotionally, and creatively. We ensure that every child embarks on a journey of self-discovery and skill-building that extends beyond the classroom.
+                </p>
+                <div className="row g-0 justify-content-center">
+                  <div className="col-6 col-sm-6 col-md-3 g-0">
+                    <div className="approach">
+                      <a href="#">Primary</a>
+                    </div>
+                  </div>
+                  <div className="col-6 col-sm-6 col-md-3">
+                    <div className="approach-1" id="approach-mobile">
+                      <a href="#">Middle</a>
+                    </div>
+                  </div>
+                  <div className="col-6 col-sm-6 col-md-3">
+                    <div className="approach" id="approach-mobile">
+                      <a href="#">Secondary</a>
+                    </div>
+                  </div>
+                  <div className="col-6 col-sm-6 col-md-3">
+                    <div className="approach-1" id="approach-1-mobile">
+                      <a href="#">Senior Secondary</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="d-flex justify-content-center align-items-center mt-30">
+                  <div className="learn-more-button">
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+              </div>
+
+              {/* Section 2 - Experiment */}
+              <div className="learn section fp-section fp-table fp-completely" id="experiment">
+              <div className="fp-tableExperiment">
           <div className="container px-0">
             <div className="row no-gutters">
               <div className="col-sm-12 position-r">
@@ -169,9 +238,31 @@ const Experiment = () => {
             </div>
           </div>
         </div>
-      </section>
+              </div>
+
+              {/* Section 3 - Innovate */}
+              <div className="section" id="innovate">
+                <h1>Innovate</h1>
+              </div>
+
+              {/* Section 4 - Evolve */}
+              <div className="section" id="evolve">
+                <h1>Evolve</h1>
+              </div>
+
+              {/* Section 5 - Lead */}
+              <div className="section" id="lead">
+                <h1>Lead</h1>
+              </div>
+            </div>
+          );
+        }}
+      />
+
+      {/* Footer Component */}
+      {/* <Footer /> */}
     </>
   );
 };
 
-export default Experiment;
+export default FullPageComponent;

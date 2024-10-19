@@ -1,24 +1,10 @@
-import React, { useEffect } from 'react';
-import dynamic from 'next/dynamic';
-import 'animate.css';
+import React from 'react'
 import Image from 'next/image';
-
-// Dynamically import WOW.js to avoid server-side issues
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
-
-const Experiment = () => {
-  useEffect(() => {
-    // Initialize WOW.js only on the client side
-    const WOWJS = require('wowjs');
-    const wow = new WOWJS.WOW({
-      live: false
-    });
-    wow.init();
-  }, []); // Empty dependency array ensures this runs once on mount
-
+// import Link from 'next/link';
+const HomeExperimentSection = () => {
   return (
     <>
-      <section className="learn section fp-section fp-table fp-completely" id="experiment">
+       <section className="learn section fp-section fp-table fp-completely" id="section3">
         <div className="fp-tableExperiment">
           <div className="container px-0">
             <div className="row no-gutters">
@@ -171,7 +157,7 @@ const Experiment = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Experiment;
+export default HomeExperimentSection

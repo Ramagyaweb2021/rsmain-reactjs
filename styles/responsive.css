@@ -23,7 +23,7 @@ body {
       bottom: 10px;
   } */
   .p-3 {
-      padding: 2rem !important;
+      padding: 1.2rem !important;
   }
 }
 @media (max-width: 1440px) {
@@ -50,6 +50,7 @@ body {
       padding-bottom: 5px;
       margin-bottom: 5px;
   }
+  /***********************************************************************Start Section height and padding setting .custom-section *********************************************/
   /* .fp-tableOurCampuses {
     background-color: #fff;
     display: table-cell;
@@ -58,12 +59,11 @@ body {
     height: 100%;
     padding: 220px 0 220px;
   } */
-  .fp-tableExplore {
+  /* .fp-tableExplore {
     background-image: url(/images/explore-bg.webp);
     background-color: #ffffff63;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
     display: table-cell;
     vertical-align: middle;
     width: 100%;
@@ -99,7 +99,6 @@ body {
     background-color: #ffffff63;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
     display: table-cell;
     vertical-align: middle;
     width: 100%;
@@ -119,7 +118,6 @@ body {
     background-color: #ffffff63;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
     display: table-cell;
     vertical-align: middle;
     width: 100%;
@@ -139,7 +137,6 @@ body {
     background-color: #ffffff63;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
     display: table-cell;
     vertical-align: middle;
     width: 100%;
@@ -148,12 +145,12 @@ body {
   }
   .fp-tableTestimonials {
     background-color: #fff;
-    /* display: table-cell; */
     vertical-align: middle;
     width: 100%;
     height: 100%;
     padding: 220px 0 220px;
-  }
+  } */
+  /***********************************************************************End Section height and padding setting .custom-section *********************************************/
   .learn h1,
   .explore h1,
   .innovate h1 {
