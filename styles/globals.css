@@ -24,6 +24,9 @@ body {
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch; 
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 body, * {
   outline: 0;
@@ -376,20 +379,16 @@ span.highlight-lg::after {
   transition: all 0.3s ease-in-out;
   margin-top: 85px;
 }
-.fixed-top {
-  background-color: #fff !important;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  animation: smoothScroll 1s forwards;
-  z-index: 15;
-}
+
 .fp-section.fp-table,
 .fp-slide.fp-table {
   display: table;
   table-layout: fixed;
   width: 100%;
+  vertical-align: middle; 
+  width: 100%; 
+  height: 100%; 
+  padding: 0 0 0; 
 }
 .bg-light {
   background-color: #fff !important;
@@ -655,13 +654,62 @@ ul {
   border: 1px dashed var(--color-set-white);
   border: 1px dashed #fff;
 }
-#navbar {
-  background-color: #fff0;
+/* #navbar {
+  background-color: #fff;
   z-index: 1111;
+} */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1111;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+#navbar.fixed-top {
+  background-color: #343a40; /* Sticky state background color */
+}
+
+.fixed-top {
+  background-color: #fff !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: smoothScroll 1s forwards;
+  /* z-index: 15; */
 }
 #navbar.scrolled {
   background-color: rgb(0 0 0 / 0.8);
 }
+#menu {
+  transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+  transform: translateY(-100%) scale(0.95);
+  opacity: 1;
+  /* opacity: 0; */
+  /* background-color: #fff; */
+  box-shadow: none;
+}
+#menu.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+#menu.scrollbg {
+  background-color: rgb(0 0 0 / 0.8);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.2);
+}
+/* .shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white; 
+  z-index: 1030;
+} */
+
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   color: var(--color-set-yellow);
@@ -1227,7 +1275,7 @@ ul {
 }
 .footer {
   background-color: #e7eaeb30;
-  padding: 100px 0 0 100px;
+  padding: 200px 0 0 200px;
   color: #404040;
 }
 .footer-logo {
@@ -1272,7 +1320,7 @@ ul {
 .footer-bottom {
   margin-top: 35px;
   border-top: 1px solid #e9f5f8;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   color: rgb(255 255 255 / 0.7);
 }
 .footer-bottom a {
@@ -1527,27 +1575,7 @@ title_3 trans {
 .the-difference-we-make h1 {
   text-align: center;
 }
-#menu {
-  transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
-  transform: translateY(-100%) scale(0.95);
-  opacity: 1;
-  /* opacity: 0; */
-  background-color: #fff0;
-  box-shadow: none;
-}
-#menu.fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  transform: translateY(0) scale(1);
-  opacity: 1;
-}
-#menu.scrollbg {
-  background-color: rgb(0 0 0 / 0.8);
-  box-shadow: 0 10px 20px rgb(0 0 0 / 0.2);
-}
+
 .wow.fadeInUp {
   visibility: hidden;
 }
@@ -1659,15 +1687,16 @@ title_3 trans {
 .exp-our-mis {
   position: absolute;
   left: -45px;
-  top: 46px;
+  top: 0;
+  /* top: 46px; */
   width: 150px;
 }
 .exp-our-mis {
   position: absolute;
-  left: -70px;
+  left: -45px;
   top: 55px;
-  width: 205px;
-  height: 40px;
+  /* width: 205px; */
+  /* height: 40px; */
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -1911,14 +1940,14 @@ p.tabination-text {
   border-color: var(--color-set-yellow);
 }
 /***********************************************************************Start Section height and padding setting .custom-section *********************************************/
-/* .fp-tableOurCampuses{
+.fp-tableSlider {
   background-color: #fff;
   display: table-cell;
   vertical-align: middle;
   width: 100%;
   height: 100%;
-  padding: 200px 0 200px;
-} */
+  /* padding: 200px 0 200px; */
+}
   /* #our-campuses {
     display: flex;
     justify-content: center; 
@@ -1927,6 +1956,14 @@ p.tabination-text {
     text-align: center;
     padding-top: 1.5em;
   } */
+.fp-tableOurCampuses{
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 200px 0 200px;
+}
   /* #explore{
     display: flex;
     justify-content: center; 
@@ -2140,51 +2177,33 @@ p.tabination-text {
 }
 
 /***************************** Scrollspy home section css for fullpage component *************************/
-/* .section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  color: #333;
-  transition: background-color 0.3s ease;
-  min-height: 600px;
-} */
-
-/* Section Specific Heights (Optional) */
-/* .section:nth-child(1) {
-  background-color: var(--color-set-white); 
-  color: #fff;
-  height: 100vh; 
+.fullpage{
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-.fp-watermark {
-  display: none !important;
-} */
-
-/* html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-x: hidden; 
-} */
-
-.fullpage-container {
-  scroll-snap-type: y mandatory; /* Enable scroll snapping */
-  overflow-y: scroll; /* Allow vertical scrolling */
+/* .fullpage-container {
+  scroll-snap-type: y mandatory; 
+  overflow-y: scroll; 
   height: 100vh;
-}
-
+  padding-top: 60px;
+  scroll-behavior: smooth;
+} */
 .section {
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: start; /* Snap to the start of each section */
+  scroll-snap-align: start;
   /* font-size: 3rem; */
+  /* min-height: 600px; */
+  overflow: hidden;
+  flex-direction: column;
+  /* padding: 50px 0;  */
 }
-
-#section1 {
-  background-color: var(--color-set-white);
-}
+/* .section .footer{
+  height: auto;
+} */
 .sticky-nav {
   position: fixed;
   width: 100%;
@@ -2192,12 +2211,14 @@ p.tabination-text {
   background-color: #002c39;
   padding: 10px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* position: sticky; */
+  /* top: 88px; */
 }
 
 .nav-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 button {
@@ -2228,21 +2249,13 @@ button:hover {
   background-color: transparent;
    color: #ffdf8b;
 }
-
-.section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 video.main-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* To prevent content from being hidden behind the sticky nav */
-.fullpage-container {
-  padding-top: 60px;
-}
+
+
+
+

@@ -133,7 +133,7 @@ function SingleRowSlider() {
   };
   
   return (
-<section className="learn section fp-section fp-table fp-completely" id="section4">
+<section className="learn section fp-section fp-table fp-completely" id="innovate">
   <div className="fp-tableInnovate">
     <div className="container">
     <h1>INVOVATE<span className="lineclass" />
@@ -141,9 +141,9 @@ function SingleRowSlider() {
         INNOVATE YOUR INTEREST WITH US
       </span>
     </h1>
-    <p>Cutting-edge programs designed to ignite creativity, critical thinking, and problem-solving skills in students. By exploring real-world issues through cultural and sensory perspectives, students develop effective, innovative solutions.
+    {/* <p>Cutting-edge programs designed to ignite creativity, critical thinking, and problem-solving skills in students. By exploring real-world issues through cultural and sensory perspectives, students develop effective, innovative solutions.
     We are committed to nurturing the next generation of innovators, preparing them to lead and excel in a rapidly changing world!
-    </p>
+    </p> */}
     </div>
   <div className="container-fluid">
       {/* Slider first row section (Right to Left) */}
@@ -239,7 +239,7 @@ function SingleRowSlider() {
           <div className="col-md-4 explore">
             <div className="offset_l_r_10 bluebox" id="list-item">
               <div className="exp-our-mis">
-                <span>Our Mission In Action</span>
+                <span>Action</span>
               </div>
               <ol className="carousel-catg">
                 {["Discovering talents & skills", "Culture of creativity", "Ethical, happy, purposeful citizens"].map(

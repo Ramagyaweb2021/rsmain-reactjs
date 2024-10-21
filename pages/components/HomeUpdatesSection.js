@@ -91,7 +91,7 @@ const HomeUpdatesSection = () => {
     // Add more slides as needed
   ];
   return (
-    <section className='learn section fp-section fp-table fp-completely bg-tropical-mist' id="section11">
+    <section className='learn section fp-section fp-table fp-completely bg-tropical-mist' id="school-updates">
         <div className='fp-tableSchoolupdates'>
           <Container className='bg-tropical-mist p-0'>
             <div className="row">

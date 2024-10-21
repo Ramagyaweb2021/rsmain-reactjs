@@ -5,7 +5,7 @@ import Link from 'next/link';
 const HomeEvolveSection = () => {
   return (
     <>
-     <section className="learn section fp-section fp-table fp-completely" id="section5">
+     <section className="learn section fp-section fp-table fp-completely" id="evolve">
         <div className="fp-tableEvolve">
           {/* style={{ height:"676px"}} */}
           <div className="container">
@@ -19,8 +19,8 @@ const HomeEvolveSection = () => {
                     EVOLVE YOUR CAREER WITH US
                   </span>
                 </h1>
-                <p>Fostering future leaders through our comprehensive approach that helps students to Evolve.
-                  Through these dynamic programs, Ramagya School is committed to evolving our students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p>
+                {/* <p>Fostering future leaders through our comprehensive approach that helps students to Evolve.
+                  Through these dynamic programs, Ramagya School is committed to evolving our students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p> */}
                 <section className="service_post_111 position-relative">
                   <div className="row">
                     <div className='col-md-6 service_post_11 position-relative'>

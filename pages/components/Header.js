@@ -17,29 +17,30 @@ import Typebot from '../components/Typebot';
 const Header = () => {
   useEffect(() => {
     const navbar = document.getElementById('navbar');
-
-    if (navbar) { 
-      const sticky = navbar.offsetTop;
-
+  
+    if (navbar) {
+      const scrollThreshold = 100; // Adjust the scroll threshold if needed
+  
       const handleScroll = () => {
-        if (window.scrollY > sticky) {
+        if (window.scrollY > scrollThreshold) {
           navbar.classList.add('fixed-top');
         } else {
           navbar.classList.remove('fixed-top');
         }
       };
-
+  
       window.addEventListener('scroll', handleScroll);
-
+  
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }
   }, []);
+  
 // const Header = () => {
   return (
     <>
-      <nav id="navbar" className="navbar navbar">
+      <nav id="navbar" className="navbar navbar fixed-top-disable">
         <div className="container-fluid">
           <a className="navbar-brand" href="./">
             <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>

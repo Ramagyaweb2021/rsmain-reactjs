@@ -65,7 +65,7 @@ const HomeGallerySection = () => {
   };
   return (
     <>
-       <section className="learn section fp-section fp-table fp-completely" id="section8">
+       <section className="learn section fp-section fp-table fp-completely" id="gallery">
       <div className="fp-tableGallery">
         <div className="container">
           <div className="row">

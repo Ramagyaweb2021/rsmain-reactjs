@@ -23,7 +23,7 @@ const HomeDifferenceSection = () => {
   }, []); // Empty dependency array ensures this runs once on mount
   return (
     <>
-    <section className='learn section fp-section fp-table fp-completely bg-tropical-mist' id="section9">
+    <section className='learn section fp-section fp-table fp-completely bg-tropical-mist' id="difference">
     <div className='fp-tableDifference'>
       <Container className='bg-tropical-mist p-0'>
       <div className="row">

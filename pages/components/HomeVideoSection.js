@@ -3,7 +3,8 @@ import React from 'react'
 const HomeVideoSection = () => {
   return (
     <>
-      <section id="section1" className="section">
+      <section id="slider" className="section">
+        <div className="fp-tableSlider">
           <video
             className="main-video"
             width="100%"
@@ -20,6 +21,7 @@ const HomeVideoSection = () => {
               type="video/mp4"
             />
           </video>
+        </div>
         </section>
     </>
   )

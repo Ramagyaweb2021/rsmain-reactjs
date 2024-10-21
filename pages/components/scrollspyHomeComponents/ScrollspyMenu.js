@@ -1,16 +1,16 @@
+// components/scrollspyHomeComponents/ScrollspyMenu.js
 import React, { useEffect, useState } from 'react';
 import { Nav, Container, Row, Col } from 'react-bootstrap';
 import 'animate.css';
 
-const Menu = () => {
-  const [activeSection, setActiveSection] = useState('');
+const Menu = ({ activeSection, scrollToSection }) => {
   const [isSticky, setIsSticky] = useState(false);
   const [menuAnimation, setMenuAnimation] = useState('');
-  const [scrollLocked, setScrollLocked] = useState(false); // State to manage scroll lock
+  const [scrollLocked, setScrollLocked] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (scrollLocked) return; // Prevent scroll while locked
+      if (scrollLocked) return;
 
       const isScrolled = window.scrollY > 0;
       if (isScrolled && !isSticky) {
@@ -20,58 +20,18 @@ const Menu = () => {
         setIsSticky(false);
         setMenuAnimation('');
       }
-
-      const sections = document.querySelectorAll('section[id]');
-      const scrollPosition = window.scrollY + window.innerHeight * 0.2; // Adjusted to focus closer to top of section
-      let currentSection = '';
-
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-          currentSection = section.getAttribute('id');
-        }
-      });
-
-      if (currentSection && currentSection !== activeSection) {
-        setActiveSection(currentSection);
-        window.history.replaceState(null, '', `#${currentSection}`); // Update the URL without reloading
-      }
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [activeSection, isSticky, scrollLocked]);
+  }, [isSticky, scrollLocked]);
 
   const handleNavClick = (event, targetId) => {
     event.preventDefault();
-    const targetSection = document.getElementById(targetId);
-    
-    if (targetSection) {
-      // Update the URL immediately
-      window.history.replaceState(null, '', `#${targetId}`);
-
-      const targetOffset = targetSection.offsetTop - (window.innerHeight / 2 - targetSection.offsetHeight / 2);
-      
-      // Lock scrolling
-      setScrollLocked(true);
-      window.scrollTo({
-        top: targetOffset,
-        behavior: 'smooth',
-      });
-
-      // Unlock scrolling after a delay (time for the scroll animation to finish)
-      setTimeout(() => {
-        setScrollLocked(false);
-      }, 1000); // Adjust this timeout to match the duration of your smooth scroll
-    }
+    scrollToSection(targetId);
   };
-
-  const shouldShowMainMenu = !['gallery', 'difference', 'awards', 'schoolupdates', 'testimonials'].includes(activeSection);
 
   return (
     <section className='explore-menu d-flex justify-content-center col-12' id='scrollspy'>
@@ -84,83 +44,94 @@ const Menu = () => {
             style={{ animationDelay: '0.5s' }}
           >
             <Nav className="bg-darks p-1">
-              {shouldShowMainMenu ? (
-                <>
-                  <Nav.Link
-                    href="#explore"
-                    onClick={(e) => handleNavClick(e, 'explore')}
-                    className={`mx-3 ${activeSection === 'explore' ? 'active' : ''}`}
-                  >
-                    Explore
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#experiment"
-                    onClick={(e) => handleNavClick(e, 'experiment')}
-                    className={`mx-3 ${activeSection === 'experiment' ? 'active' : ''}`}
-                  >
-                    Experiment
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#innovate"
-                    onClick={(e) => handleNavClick(e, 'innovate')}
-                    className={`mx-3 ${activeSection === 'innovate' ? 'active' : ''}`}
-                  >
-                    Innovate
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#evolve"
-                    onClick={(e) => handleNavClick(e, 'evolve')}
-                    className={`mx-3 ${activeSection === 'evolve' ? 'active' : ''}`}
-                  >
-                    Evolve
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#lead"
-                    onClick={(e) => handleNavClick(e, 'lead')}
-                    className={`mx-3 ${activeSection === 'lead' ? 'active' : ''}`}
-                  >
-                    Lead
-                  </Nav.Link>
-                </>
-              ) : (
-                <>
-                  <Nav.Link
-                    href="#gallery"
-                    onClick={(e) => handleNavClick(e, 'gallery')}
-                    className={`mx-1 ${activeSection === 'gallery' ? 'active' : ''}`}
-                  >
-                    Gallery
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#difference"
-                    onClick={(e) => handleNavClick(e, 'difference')}
-                    className={`mx-1 ${activeSection === 'difference' ? 'active' : ''}`}
-                  >
-                    THE DIFFERENCE WE MAKE
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#awards"
-                    onClick={(e) => handleNavClick(e, 'awards')}
-                    className={`mx-1 ${activeSection === 'awards' ? 'active' : ''}`}
-                  >
-                    AWARDS
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#schoolupdates"
-                    onClick={(e) => handleNavClick(e, 'schoolupdates')}
-                    className={`mx-1 ${activeSection === 'schoolupdates' ? 'active' : ''}`}
-                  >
-                    SCHOOL UPDATES
-                  </Nav.Link>
-                  <Nav.Link
-                    href="#testimonials"
-                    onClick={(e) => handleNavClick(e, 'testimonials')}
-                    className={`mx-1 ${activeSection === 'testimonials' ? 'active' : ''}`}
-                  >
-                    TESTIMONIALS
-                  </Nav.Link>
-                </>
-              )}
+              <>
+                {/* Menu Links */}
+                <Nav.Link
+                  href="#explore"
+                  onClick={(e) => handleNavClick(e, 'explore')}
+                  className={`mx-2 ${activeSection === 'explore' ? 'active' : ''}`}
+                >
+                  EXPLORE
+                </Nav.Link>
+                <Nav.Link
+                  href="#experiment"
+                  onClick={(e) => handleNavClick(e, 'experiment')}
+                  className={`mx-2 ${activeSection === 'experiment' ? 'active' : ''}`}
+                >
+                  EXPERIMENT
+                </Nav.Link>
+                <Nav.Link
+                  href="#innovate"
+                  onClick={(e) => handleNavClick(e, 'innovate')}
+                  className={`mx-2 ${activeSection === 'innovate' ? 'active' : ''}`}
+                >
+                  INNOVATE
+                </Nav.Link>
+                <Nav.Link
+                  href="#evolve"
+                  onClick={(e) => handleNavClick(e, 'evolve')}
+                  className={`mx-2 ${activeSection === 'evolve' ? 'active' : ''}`}
+                >
+                  EVOLVE
+                </Nav.Link>
+                <Nav.Link
+                  href="#lead"
+                  onClick={(e) => handleNavClick(e, 'lead')}
+                  className={`mx-2 ${activeSection === 'lead' ? 'active' : ''}`}
+                >
+                  LEAD
+                </Nav.Link>
+                {/* Additional Links */}
+                {/* <Nav.Link
+                  href="#gallery"
+                  onClick={(e) => handleNavClick(e, 'gallery')}
+                  className={`mx-2 ${activeSection === 'gallery' ? 'active' : ''}`}
+                >
+                  GALLERY
+                </Nav.Link>
+                <Nav.Link
+                  href="#difference"
+                  onClick={(e) => handleNavClick(e, 'difference')}
+                  className={`mx-2 ${activeSection === 'difference' ? 'active' : ''}`}
+                >
+                  DIFFERENCE
+                </Nav.Link>
+                <Nav.Link
+                  href="#awards"
+                  onClick={(e) => handleNavClick(e, 'awards')}
+                  className={`mx-2 ${activeSection === 'awards' ? 'active' : ''}`}
+                >
+                  AWARDS
+                </Nav.Link>
+                <Nav.Link
+                  href="#school-updates"
+                  onClick={(e) => handleNavClick(e, 'school-updates')}
+                  className={`mx-2 ${activeSection === 'school-updates' ? 'active' : ''}`}
+                >
+                  SCHOOL UPDATES
+                </Nav.Link>
+                <Nav.Link
+                  href="#testimonials"
+                  onClick={(e) => handleNavClick(e, 'testimonials')}
+                  className={`mx-2 ${activeSection === 'testimonials' ? 'active' : ''}`}
+                >
+                  TESTIMONIALS
+                </Nav.Link>
+                <Nav.Link
+                  href="#social-feeds"
+                  onClick={(e) => handleNavClick(e, 'social-feeds')}
+                  className={`mx-2 ${activeSection === 'social-feeds' ? 'active' : ''}`}
+                >
+                  SOCIAL FEEDS
+                </Nav.Link>
+                <Nav.Link
+                  href="#footer"
+                  onClick={(e) => handleNavClick(e, 'footer')}
+                  className={`mx-2 ${activeSection === 'footer' ? 'active' : ''}`}
+                >
+                  FOOTER
+                </Nav.Link> */}
+              </>
             </Nav>
           </Col>
         </Row>

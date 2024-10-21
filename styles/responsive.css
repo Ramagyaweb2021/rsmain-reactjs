@@ -51,24 +51,34 @@ body {
       margin-bottom: 5px;
   }
   /***********************************************************************Start Section height and padding setting .custom-section *********************************************/
-  /* .fp-tableOurCampuses {
+  .fp-tableSlider {
     background-color: #fff;
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
-  } */
-  /* .fp-tableExplore {
-    background-image: url(/images/explore-bg.webp);
-    background-color: #ffffff63;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
+    /* padding: 50px 0 50px; */
+  }
+  .fp-tableOurCampuses {
+    background-color: #fff;
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
+    /* padding: 50px 0 50px; */
+  }
+  .fp-tableExplore {
+    background-image: url(/images/explore-bg.webp);
+    background-color: #ffffff63;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+     background-position: center;
+    background-size: cover;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    /* padding: 0 0 0; */
   }
   .fp-tableExperiment {
     background-color: #fff;
@@ -76,15 +86,15 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
+    /* padding: 0 0 0; */
   }
-  .fp-tableInvovate {
+  .fp-tableInnovate {
     background-color: #fff;
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
+    /* padding: 0 0 0; */
   }
   .fp-tableEvolve {
     background-color: #fff;
@@ -92,18 +102,20 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
+    /* padding: 0 0 0; */
   }
   .fp-tableLead {
     background-image: url(/images/explore-bg.webp);
     background-color: #ffffff63;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
+     background-position: center;
+    background-size: cover;
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
+    /* padding: 0 0 0; */
   }
   .fp-tableGallery {
     background-color: #fff;
@@ -111,18 +123,20 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
+    /* padding: 0 0 0; */
   }
   .fp-tableDifference {
    background-image: url(/images/explore-bg.webp);
     background-color: #ffffff63;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
+     background-position: center;
+    background-size: cover;
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
+    /* padding: 0 0 0; */
   }
   .fp-tableAwards {
     background-color: #fff;
@@ -130,26 +144,28 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
+    /* padding: 0 0 0; */
   }
   .fp-tableSchoolupdates {
    background-image: url(/images/explore-bg.webp);
     background-color: #ffffff63;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
+     background-position: center;
+    background-size: cover;
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
+    /* padding: 0 0 0; */
   }
   .fp-tableTestimonials {
     background-color: #fff;
     vertical-align: middle;
     width: 100%;
     height: 100%;
-    padding: 220px 0 220px;
-  } */
+    /* padding: 0 0 0; */
+  }
   /***********************************************************************End Section height and padding setting .custom-section *********************************************/
   .learn h1,
   .explore h1,
@@ -253,7 +269,8 @@ body {
       height: 135px;
   }
   .exp-our-mis {
-      top: 57px;
+      top: 0;
+      /* top: 57px; */
   }
   .explore ol.carousel-catg li {
       font-size: 15px;
@@ -277,9 +294,9 @@ body {
   .image-container-testimonial img{
     height: auto;
   }
-  .footer {
+  /* .footer {
       padding: 45px 0 0 30px;
-  }
+  } */
   .footer p {
       font-size: 14px;
   }
@@ -289,8 +306,11 @@ body {
   .dropdown-item {
       font-size: 14px;
   }
+  .image-resize img{
+    height: auto !important;
+ }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1199px) {
   body {
       background-color: #fff;
       font-size: 14px;
@@ -298,6 +318,34 @@ body {
   .learn p, .explore p{
     font-size: 12px;
   }
+  .explore ol.carousel-catg li {
+    font-size: 13px;
+  }
+  .image-wrapper,
+  .text-wrapper {
+    height: 115px;
+      /* height: 155px; */
+  }
+  .slick-slide img {
+      height: 115px;
+      /* height: 155px; */
+  }
+  .explore .bluebox {
+      height: 115px;
+  }
+  .exp-our-mis span{
+      font-size: 13px;
+  }
+  #gutter-space {
+    margin-top: -75px;
+    /* margin-top: -25px; */
+}
+.service_box.type_four{
+    height: 140px;
+}
+.image-section img{
+    height: 300px;
+}
   /* .downsection {
       bottom: 50px;
   } */

@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeSocialSection = () => {
   return (
-    <section id="section13" className="section">
+    <section id="social-feeds" className="section">
           <h1>SOCIAL FEEDS</h1>
         </section>
   )

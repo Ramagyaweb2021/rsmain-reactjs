@@ -41,7 +41,7 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
       <Head/> 
        {/* <Script src="https://www.google.com/recaptcha/api.js"></Script> */}
-      <body className="bg-scroll">
+      <body>
         <Main />
         <NextScript />
       </body>

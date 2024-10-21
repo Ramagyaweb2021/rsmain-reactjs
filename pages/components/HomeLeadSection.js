@@ -51,7 +51,7 @@ const HomeLeadSection = () => {
   };
   return (
     <>
-        <section className="learn section fp-section fp-table active fp-completely" id="section6">
+        <section className="learn section fp-section fp-table active fp-completely" id="lead">
         <div className="fp-tableLead">
           <div className="container"> 
             <div className="row">
@@ -64,10 +64,10 @@ const HomeLeadSection = () => {
                     MEET OUR ALUMNI
                   </span>
                 </h1>
-                <p>
+                {/* <p>
                   Our programs are designed to empower students to excel beyond the classroom and make a meaningful impact. 
                   The Ramagya Alumni Association plays a pivotal role in this by fostering a lifelong network of former students...
-                </p>
+                </p> */}
               
                 <div className="container-fluid my-5">
                   <Slider {...settings}>
@@ -152,26 +152,29 @@ const HomeLeadSection = () => {
                       </div>
                     </div>
                   </Slider>
+                  <br/>
+                   <div className="downsection" onClick={handleScroll}>
+                      <Image
+                        src="/images/down-section-gallery.png"
+                        className="animate__animated animate__fadeInDown animate__infinite animate__slow"
+                        alt="Ramagya school"
+                        width={80}
+                        height={80}
+                      />
+                    </div>
                 </div>
               </div>
             </div>
+            
           </div>
 
           {/* Learn more button */}
-          <div className="d-flex justify-content-center align-items-center mt-1">
+          {/* <div className="d-flex justify-content-center align-items-center mt-1">
             <div className="learn-more-button">
               <a href="#">Learn More</a>
             </div>
-          </div>
-          <div className="downsection-lead" onClick={handleScroll}>
-            <Image
-              src="/images/down-section-gallery.png"
-              className="animate__animated animate__fadeInDown animate__infinite animate__slow"
-              alt="Ramagya school"
-              width={80}
-              height={80}
-            />
-          </div>
+          </div> */}
+          
 
         </div>
       </section>

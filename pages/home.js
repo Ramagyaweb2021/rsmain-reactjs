@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import Head from 'next/head';
+// components/FullPage.js
+import { useEffect, useState } from 'react';
 import Header from '/pages/components/Header';
+import ScrollspyMenu from './components/scrollspyHomeComponents/ScrollspyMenu';
 import HomeVideoSection from './components/HomeVideoSection';
 import HomeSchoolBranchSection from './components/HomeSchoolBranchSection';
 import HomeExploreSection from './components/HomeExploreSection';
@@ -8,168 +9,120 @@ import HomeExperimentSection from './components/HomeExperimentSection';
 import HomeInnovateSection from './components/HomeInnovateSection';
 import HomeEvolveSection from './components/HomeEvolveSection';
 import HomeLeadSection from './components/HomeLeadSection';
-import HomeGallerySection from './components/HomeGallerySection'; 
-import HomeDifferenceSection from './components/HomeDifferenceSection'; 
-import HomeAwardsSection from './components/HomeAwardsSection'; 
-import HomeUpdatesSection from './components/HomeUpdatesSection'; 
-import HomeTestimonialSection from './components/HomeTestimonialSection'; 
-import HomeSocialSection from './components/HomeSocialSection'; 
+import HomeGallerySection from './components/HomeGallerySection';
+import HomeDifferenceSection from './components/HomeDifferenceSection';
+import HomeAwardsSection from './components/HomeAwardsSection';
+import HomeUpdatesSection from './components/HomeUpdatesSection';
+import HomeTestimonialSection from './components/HomeTestimonialSection';
+import HomeSocialSection from './components/HomeSocialSection';
 import HomeSectionFooter from './components/HomeSectionFooter';
+import Head from 'next/head';
 
-const Home = () => {
+const FullPage = () => {
   const [activeSection, setActiveSection] = useState('section1');
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const sections = ['slider', 'branch', 'explore', 'experiment', 'innovate', 'lead', 'gallery', 'difference', 'awards', 'school-updates', 'testimonials', 'social-feeds', 'footer' ];
 
-  const scrollToSection = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    setActiveSection(id); // Set the clicked section as active
+  const scrollToSection = (section) => {
+    const sectionElement = document.getElementById(section);
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(section);
+    }
   };
 
   useEffect(() => {
-    // Use IntersectionObserver to detect which section is currently in view
-    const sections = document.querySelectorAll('.section');
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.7 } // Adjust this value to suit your needs
-    );
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('.section');
+      let currentSection = '';
 
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop <= window.innerHeight / 2 && sectionTop >= -window.innerHeight / 2) {
+          currentSection = section.id;
+        }
+      });
+
+      if (currentSection) {
+        setActiveSection(currentSection);
+      }
+    };
+
+    const handleWheel = (e) => {
+      e.preventDefault();
+      if (e.deltaY > 0) {
+        window.scrollTo({
+          top: window.innerHeight + window.scrollY,
+          behavior: 'smooth',
+        });
+      } else {
+        window.scrollTo({
+          top: window.scrollY - window.innerHeight,
+          behavior: 'smooth',
+        });
+      }
+    };
+
+    const handleKeyDown = (e) => {
+      const currentIndex = sections.indexOf(activeSection);
+      if (e.key === 'ArrowDown' && currentIndex < sections.length - 1) {
+        e.preventDefault();
+        scrollToSection(sections[currentIndex + 1]);
+      } else if (e.key === 'ArrowUp' && currentIndex > 0) {
+        e.preventDefault();
+        scrollToSection(sections[currentIndex - 1]);
+      }
+    };
+
+    window.addEventListener('wheel', handleWheel);
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('keydown', handleKeyDown);
 
     return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section);
-      });
+      window.removeEventListener('wheel', handleWheel);
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, 
+  [activeSection, sections]);
 
   return (
-    <>
-      <Head>
+    <div className="fullpage" style={{marginTop:"-50px"}}>
+       <Head>
         <title>Top Schools in Noida | Delhi NCR | Ramagya School</title>
         <meta
           name="description"
-          content="Ramagya School is among the best CBSE schools in Noida, Noida Extension, Greater Noida, and Dadri. We are one of the top 10 schools in Noida, Noida Extension, Greater Noida, and Dadri. Ramagya School is voted by the TOI survey as one of the top 5 Senior Secondary schools in Delhi-NCR."
-        />
-        <meta
-          name="keywords"
-          content="Best School in Noida, Schools in Noida, Noida Extension, Greater Noida and Dadri, CBSE Schools in Noida, Noida Extension, Greater Noida and Dadri, Top Schools in Noida, Noida Extension, Greater Noida and Dadri, top 10 schools in Noida, Noida Extension, Greater Noida and Dadri"
+          content="Ramagya School is among the best CBSE schools in Noida, Noida Extension, Greater Noida, and Dadri."
         />
         <link rel="canonical" href="https://ramagyaschool.com/" />
       </Head>
       <Header />
-      
-      {/* Sticky Navigation Menu */}
-      <nav className="sticky-nav">
-        <div className="nav-buttons">
-          {/* Add buttons for new sections */}
-          <button
-            className={activeSection === 'section1' ? 'active' : ''}
-            onClick={() => scrollToSection('section1')}
-          >
-            SLIDER
-          </button>
-          <button
-            className={activeSection === 'section7' ? 'active' : ''}
-            onClick={() => scrollToSection('section7')}
-          >
-            BRANCH
-          </button>
-          <button
-            className={activeSection === 'section2' ? 'active' : ''}
-            onClick={() => scrollToSection('section2')}
-          >
-            EXPLORE
-          </button>
-          <button
-            className={activeSection === 'section3' ? 'active' : ''}
-            onClick={() => scrollToSection('section3')}
-          >
-            EXPERIMENT
-          </button>
-          <button
-            className={activeSection === 'section4' ? 'active' : ''}
-            onClick={() => scrollToSection('section4')}
-          >
-            INNOVATE
-          </button>
-          <button
-            className={activeSection === 'section5' ? 'active' : ''}
-            onClick={() => scrollToSection('section5')}
-          >
-            EVOLVE
-          </button>
-          <button
-            className={activeSection === 'section6' ? 'active' : ''}
-            onClick={() => scrollToSection('section6')}
-          >
-            LEAD
-          </button>
-          {/* Add new buttons */}
-          <button
-            className={activeSection === 'section8' ? 'active' : ''}
-            onClick={() => scrollToSection('section8')}
-          >
-            GALLERY
-          </button>
-          <button
-            className={activeSection === 'section9' ? 'active' : ''}
-            onClick={() => scrollToSection('section9')}
-          >
-            THE DIFFERENCE WE MAKE
-          </button>
-          <button
-            className={activeSection === 'section10' ? 'active' : ''}
-            onClick={() => scrollToSection('section10')}
-          >
-            AWARDS
-          </button>
-          <button
-            className={activeSection === 'section11' ? 'active' : ''}
-            onClick={() => scrollToSection('section11')}
-          >
-            SCHOOL UPDATES
-          </button>
-          <button
-            className={activeSection === 'section12' ? 'active' : ''}
-            onClick={() => scrollToSection('section12')}
-          >
-            TESTIMONIALS
-          </button>
-          <button
-            className={activeSection === 'section13' ? 'active' : ''}
-            onClick={() => scrollToSection('section13')}
-          >
-            SOCIAL
-          </button>
-        </div>
-      </nav>
-
-      {/* Fullpage Sections */}
-      <div className="fullpage-container">
-        <HomeVideoSection />
-        <HomeSchoolBranchSection />
-        <HomeExploreSection />
-        <HomeExperimentSection />
-        <HomeInnovateSection />
-        <HomeEvolveSection />
-        <HomeLeadSection />
-        <HomeGallerySection />
-        <HomeDifferenceSection />
-        <HomeAwardsSection />
-        <HomeUpdatesSection />
-        <HomeTestimonialSection />
-        <HomeSocialSection />
-        <HomeSectionFooter />
-      </div>
-    </>
+      <ScrollspyMenu activeSection={activeSection} scrollToSection={scrollToSection} />
+          <HomeVideoSection />
+          <HomeSchoolBranchSection />
+          <HomeExploreSection />
+          <HomeExperimentSection />
+          <HomeInnovateSection />
+          <HomeEvolveSection />
+          <HomeLeadSection />
+          <HomeGallerySection />
+          <HomeDifferenceSection />
+          <HomeAwardsSection />
+          <HomeUpdatesSection />
+          <HomeTestimonialSection />
+          <HomeSocialSection />
+          <HomeSectionFooter />
+          {/* <section id="slider" className="section" style={{ backgroundColor: '#ff6347' }}>
+          <h1>slider</h1>
+          </section>
+          <section id="branch" className="section" style={{ backgroundColor: '#4682b4' }}>
+          <h1>branch</h1>
+          </section>
+          <section id="explore" className="section" style={{ backgroundColor: '#3cb371' }}>
+          <h1>explore</h1>
+          </section> */}
+    </div>
   );
 };
 
-export default Home;
+export default FullPage;

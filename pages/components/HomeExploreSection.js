@@ -16,7 +16,7 @@ const HomeExploreSection = () => {
   }, []); // Empty dependency array ensures this runs once on mount
   return (
     <>
-       <section className="learn section fp-section fp-table fp-completely" id="section2">
+       <section className="learn section fp-section fp-table fp-completely" id="explore">
         <div className="fp-tableExplore">
           <div className="container">
             <div className="row">

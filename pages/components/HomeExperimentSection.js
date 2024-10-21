@@ -4,7 +4,7 @@ import Image from 'next/image';
 const HomeExperimentSection = () => {
   return (
     <>
-       <section className="learn section fp-section fp-table fp-completely" id="section3">
+       <section className="learn section fp-section fp-table fp-completely" id="experiment">
         <div className="fp-tableExperiment">
           <div className="container px-0">
             <div className="row no-gutters">
@@ -16,9 +16,9 @@ const HomeExperimentSection = () => {
                     WORKSHOPS, PROGRAMS AND EXPERIENCES
                   </span>
                 </h1>
-                <p>
+                {/* <p>
                   Encouraging students to explore, innovate, and apply knowledge across various disciplines through experiential learning. The sessions under this stimulate critical thinking, enhance vocational and life skills, encourage learning collaboration and creativity while pursuing their passions and nurture artistic talent, enhance cognitive, emotional, and motor skills. We encourage hands-on experiments that bring theory to life, and learning integrates real-world problem-solving through innovative, multidisciplinary projects. Together, these programs ensure students engage in comprehensive, holistic development!
-                </p>
+                </p> */}
 
                 <div className="service_post position-relative mt-10">
 
