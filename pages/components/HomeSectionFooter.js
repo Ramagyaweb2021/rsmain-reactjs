@@ -7,7 +7,7 @@ const HomeSectionFooter = () => {
   return (
     <>
        {/* Footer Section */}
-       <section id="footer" className="section footer">
+     
           <div className='container-fluid'>
            <div className='row'>
             <div className="col-md-3 col-sm-6 col-xs-12">
@@ -76,7 +76,7 @@ const HomeSectionFooter = () => {
               </col-md-12>
         </row>
            </div>
-        </section>
+      
     </>
   )
 }

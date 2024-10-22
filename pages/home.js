@@ -1,8 +1,9 @@
-// components/FullPage.js
 import { useEffect, useState } from 'react';
 import Header from '/pages/components/Header';
+import OfferPopup from './components/OfferPopup'
 import ScrollspyMenu from './components/scrollspyHomeComponents/ScrollspyMenu';
 import HomeVideoSection from './components/HomeVideoSection';
+import DownArrow from './components/DownArrowSchoolBranch'
 import HomeSchoolBranchSection from './components/HomeSchoolBranchSection';
 import HomeExploreSection from './components/HomeExploreSection';
 import HomeExperimentSection from './components/HomeExperimentSection';
@@ -14,15 +15,16 @@ import HomeDifferenceSection from './components/HomeDifferenceSection';
 import HomeAwardsSection from './components/HomeAwardsSection';
 import HomeUpdatesSection from './components/HomeUpdatesSection';
 import HomeTestimonialSection from './components/HomeTestimonialSection';
-import HomeSocialSection from './components/HomeSocialSection';
 import HomeSectionFooter from './components/HomeSectionFooter';
 import Head from 'next/head';
 
 const FullPage = () => {
-  const [activeSection, setActiveSection] = useState('section1');
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const sections = ['slider', 'branch', 'explore', 'experiment', 'innovate', 'lead', 'gallery', 'difference', 'awards', 'school-updates', 'testimonials', 'social-feeds', 'footer' ];
+  const [activeSection, setActiveSection] = useState('slider');
 
+  // Section IDs array
+  const sections = ['slider', 'branch', 'explore', 'experiment', 'innovate', 'evolve', 'lead', 'gallery', 'difference', 'awards', 'school-updates', 'testimonials', 'footer'];
+
+  // Smooth scroll to section function
   const scrollToSection = (section) => {
     const sectionElement = document.getElementById(section);
     if (sectionElement) {
@@ -33,10 +35,10 @@ const FullPage = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll('.section');
+      const sectionElements = document.querySelectorAll('.section');
       let currentSection = '';
 
-      sections.forEach((section) => {
+      sectionElements.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top;
         if (sectionTop <= window.innerHeight / 2 && sectionTop >= -window.innerHeight / 2) {
           currentSection = section.id;
@@ -74,7 +76,7 @@ const FullPage = () => {
       }
     };
 
-    window.addEventListener('wheel', handleWheel);
+    window.addEventListener('wheel', handleWheel, { passive: false });
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('keydown', handleKeyDown);
 
@@ -83,12 +85,11 @@ const FullPage = () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, 
-  [activeSection, sections]);
+  }, [activeSection, sections]); // Depend only on `activeSection`
 
   return (
-    <div className="fullpage" style={{marginTop:"-50px"}}>
-       <Head>
+    <div className="fullpage">
+      <Head>
         <title>Top Schools in Noida | Delhi NCR | Ramagya School</title>
         <meta
           name="description"
@@ -97,30 +98,25 @@ const FullPage = () => {
         <link rel="canonical" href="https://ramagyaschool.com/" />
       </Head>
       <Header />
+      <OfferPopup/>
+      <DownArrow/>
       <ScrollspyMenu activeSection={activeSection} scrollToSection={scrollToSection} />
-          <HomeVideoSection />
-          <HomeSchoolBranchSection />
-          <HomeExploreSection />
-          <HomeExperimentSection />
-          <HomeInnovateSection />
-          <HomeEvolveSection />
-          <HomeLeadSection />
-          <HomeGallerySection />
-          <HomeDifferenceSection />
-          <HomeAwardsSection />
-          <HomeUpdatesSection />
-          <HomeTestimonialSection />
-          <HomeSocialSection />
-          <HomeSectionFooter />
-          {/* <section id="slider" className="section" style={{ backgroundColor: '#ff6347' }}>
-          <h1>slider</h1>
-          </section>
-          <section id="branch" className="section" style={{ backgroundColor: '#4682b4' }}>
-          <h1>branch</h1>
-          </section>
-          <section id="explore" className="section" style={{ backgroundColor: '#3cb371' }}>
-          <h1>explore</h1>
-          </section> */}
+      <div className="sections">
+        <section className="section" id="slider"><HomeVideoSection/></section>
+        <section className="section" id="branch"><HomeSchoolBranchSection/></section>
+        <section className="learn section fp-section fp-table" id="explore"><HomeExploreSection/></section>
+        <section className="learn section fp-section fp-table" id="experiment"><HomeExperimentSection/></section>
+        <section className="learn section fp-section fp-table" id="innovate"><HomeInnovateSection/></section>
+        <section className="learn section fp-section fp-table" id="evolve"><HomeEvolveSection/></section>
+        <section className="learn section fp-section fp-table" id="lead"><HomeLeadSection/></section>
+        {/* Sections after lead  */}
+        <section className='learn section fp-section fp-table bg-tropical-mist' id="difference"><HomeDifferenceSection/></section>
+        <section className="learn section fp-section fp-table" id="gallery"><HomeGallerySection/></section>
+        <section className='learn section fp-section fp-table bg-tropical-mist-awards' id='awards'><HomeAwardsSection/></section>
+        <section className='learn section fp-section fp-table bg-tropical-mist' id="school-updates"><HomeUpdatesSection/></section>
+        <section className="section" id="testimonials"><HomeTestimonialSection/></section>
+        <section className="section footer" id="footer"><HomeSectionFooter/></section>
+      </div>
     </div>
   );
 };

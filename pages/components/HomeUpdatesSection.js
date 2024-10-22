@@ -24,7 +24,7 @@ const HomeUpdatesSection = () => {
 
   // Slick slider settings with autoplay
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -91,7 +91,7 @@ const HomeUpdatesSection = () => {
     // Add more slides as needed
   ];
   return (
-    <section className='learn section fp-section fp-table fp-completely bg-tropical-mist' id="school-updates">
+    
         <div className='fp-tableSchoolupdates'>
           <Container className='bg-tropical-mist p-0'>
             <div className="row">
@@ -111,10 +111,10 @@ const HomeUpdatesSection = () => {
                       <Slider {...settings}>
                         {schoolAchievementsSlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
-                            <div className="col-md-5 image-resize">
+                            <div className="col-md-6 image-resize">
                               <Image src={slide.imgSrc} alt="Primary" width={430} height={306} />
                             </div>
-                            <div className="col-md-7">
+                            <div className="col-md-6">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="#" className="btn custom-btn">View More</a>
@@ -133,10 +133,10 @@ const HomeUpdatesSection = () => {
                       <Slider {...settings}>
                         {mediaPressSlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
-                            <div className="col-md-5 image-resize">
+                            <div className="col-md-6 image-resize">
                               <Image src={slide.imgSrc} alt="Media Press" width={430} height={306} />
                             </div>
-                            <div className="col-md-7">
+                            <div className="col-md-6">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="#" className="btn custom-btn">View More</a>
@@ -155,10 +155,10 @@ const HomeUpdatesSection = () => {
                       <Slider {...settings}>
                         {schoolEventsSlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
-                            <div className="col-md-5 image-resize">
+                            <div className="col-md-6 image-resize">
                               <Image src={slide.imgSrc} alt="School Events" width={430} height={306} />
                             </div>
-                            <div className="col-md-7">
+                            <div className="col-md-67">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="#" className="btn custom-btn">View More</a>
@@ -177,10 +177,10 @@ const HomeUpdatesSection = () => {
                       <Slider {...settings}>
                         {workshopActivitySlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
-                            <div className="col-md-5 image-resize">
+                            <div className="col-md-6 image-resize">
                               <Image src={slide.imgSrc} alt="Workshop/Activity" width={430} height={306} />
                             </div>
-                            <div className="col-md-7">
+                            <div className="col-md-6">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="#" className="btn custom-btn">View More</a>
@@ -197,7 +197,7 @@ const HomeUpdatesSection = () => {
             </div>
           </Container>
         </div>
-      </section>
+    
   )
 }
 

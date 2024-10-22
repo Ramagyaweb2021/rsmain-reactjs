@@ -51,7 +51,7 @@ const HomeLeadSection = () => {
   };
   return (
     <>
-        <section className="learn section fp-section fp-table active fp-completely" id="lead">
+       
         <div className="fp-tableLead">
           <div className="container"> 
             <div className="row">
@@ -64,10 +64,10 @@ const HomeLeadSection = () => {
                     MEET OUR ALUMNI
                   </span>
                 </h1>
-                {/* <p>
+                <p>
                   Our programs are designed to empower students to excel beyond the classroom and make a meaningful impact. 
                   The Ramagya Alumni Association plays a pivotal role in this by fostering a lifelong network of former students...
-                </p> */}
+                </p>
               
                 <div className="container-fluid my-5">
                   <Slider {...settings}>
@@ -177,7 +177,7 @@ const HomeLeadSection = () => {
           
 
         </div>
-      </section>
+   
     </>
   )
 }

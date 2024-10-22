@@ -4,7 +4,7 @@ import Link from 'next/link';
 const HomeSchoolBranchSection = () => {
   return (
     <>
-       <section id="branch" className="section">
+     
        <div className="fp-tableOurCampuses">
         <div className="container learn my-1">
        <h1 className="main-heading"> OUR CAMPUSES
@@ -94,7 +94,7 @@ const HomeSchoolBranchSection = () => {
       </div>
     </div>
         </div>
-        </section>
+       
     </>
   )
 }

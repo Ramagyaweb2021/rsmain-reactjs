@@ -3,7 +3,6 @@ import React from 'react'
 const HomeVideoSection = () => {
   return (
     <>
-      <section id="slider" className="section">
         <div className="fp-tableSlider">
           <video
             className="main-video"
@@ -22,7 +21,7 @@ const HomeVideoSection = () => {
             />
           </video>
         </div>
-        </section>
+       
     </>
   )
 }
