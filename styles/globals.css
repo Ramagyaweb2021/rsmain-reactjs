@@ -12,6 +12,36 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
+  font-family: var(--font-family-text);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  background-color: #fff;
+  color: var(--color-set-grey);
+  -webkit-tap-highlight-color: transparent;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer */
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/* Hide scrollbar in WebKit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+/* html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 body {
   font-family: var(--font-family-text);
@@ -33,14 +63,14 @@ html {
   -webkit-overflow-scrolling: touch; 
   scroll-behavior: smooth;
   overscroll-behavior: none;
-  /* scroll-snap-type: y mandatory;  */
+  scroll-snap-type: y mandatory;
 }
 body, * {
   outline: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 .container-fluid {
   padding: 0;
   margin: 0;
@@ -334,7 +364,7 @@ a:hover {
 .btn-float-enquire {
   position: fixed;
   right: 0;
-  bottom: 15%;
+  bottom: 25%;
   z-index: 1000;
 }
 .modal-content {
@@ -1104,7 +1134,7 @@ ul {
   font-weight: 700;
   padding: 0;
   margin-bottom: 5px;
-  width: 30px;
+  /* width: 30px; */
 }
 .slider-item img {
   width: 100%;
@@ -1967,178 +1997,8 @@ p.tabination-text {
   /* color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg); */
   border-color: var(--color-set-yellow);
-}
-/***********************************************************************Start Section height and padding setting .custom-section *********************************************/
-.fp-tableSlider {
-  background-color: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  /* padding: 200px 0 200px; */
-}
-  /* #our-campuses {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100vh;           
-    text-align: center;
-    padding-top: 1.5em;
-  } */
-.fp-tableOurCampuses{
-  background-color: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 250px 0 200px;
-}
-  /* #explore{
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    height: 100vh;           
-    text-align: center;
-    padding-top: 12.5em;
-  } */
-   .fp-tableExplore {
-    background-image: url(/images/explore-bg.webp);
-    background-color: #ffffff63;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 350px 0 200px;
-  }
-  /* #experiment{
-    min-height: 100vh;
-    padding-top: 12.5em;
-  } */
-  
-  .fp-tableExperiment {
-    background-color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 200px 0 200px;
-  }
-  /* #innovate{
-    min-height: 100vh;
-    padding-top: 1.5em;
-  } */
-  .fp-tableInnovate{
-    background-color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 200px 0 200px;
-  }
-   /* #evolve{
-    min-height: 100vh;
-    padding-top: 1.5em;
-   } */
-  .fp-tableEvolve {
-    background-color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 200px 0 200px;
-  }
-   /* #lead{
-    min-height: 100vh;
-    padding-top: 1.5em;
-   } */
-   .fp-tableLead {
-    background-image: url(/images/explore-bg.webp);
-    background-color: #ffffff63;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 200px 0 200px;
-  }
-   /* #gallery{
-    min-height: 100vh;
-    padding-top: 12.5em;
-   } */
-   .fp-tableGallery {
-    background-color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 200px 0 200px;
-  }
-   /* #difference{
-    min-height: 100vh;
-    padding-top: 12.5em;
-   } */
-   .fp-tableDifference {
-    background-image: url(/images/explore-bg.webp);
-    background-color: #ffffff63;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 200px 0 200px;
-  }
-   /* #awards{
-    min-height: 100vh;
-    padding-top: 12.5em;
-   } */
-   .fp-tableAwards {
-    background-color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 200px 0 200px;
-  }
-   /* #schoolupdates{
-    min-height: 100vh;
-    padding-top: 12.5em;
-   } */
-   .fp-tableSchoolupdates {
-    background-image: url(/images/explore-bg.webp);
-    background-color: #ffffff63;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 200px 0 200px;
-  }
-   /* #testimonials{
-    min-height: 100vh;
-    padding-top: 12.5em;
-   } */
-   .fp-tableTestimonials {
-    background-color: #fff;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 200px 0 200px;
-  }
-  /***********************************************************************End Section height and padding setting .custom-section *********************************************/
-  /* Make slick slides use display flex */
+} 
+/* Make slick slides use display flex */
 .row-school-updates{
   display: flex !important;
 }
@@ -2204,73 +2064,22 @@ p.tabination-text {
   color: var(--color-set-green) !important;
   font-size: 0 !important;
 }
-
-/***************************** Scrollspy home section css for fullpage component *************************/
-.fullpage{
-  /* position: absolute;
-  top: 0;
-  width: 100%; */
-  height: 100vh; /* 100% of viewport height */
-  width: 100vw;  /* 100% of viewport width */
-  /* display: flex; */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center;     /* Centers content vertically */
-  /* background-color: lightgray; */
-  position: relative;
-}
-.section {
-  height: 100vh; /* 100% of the viewport height */
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any padding */
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* scroll-snap-align: start; */
-  scroll-snap-align: center;
-  /* font-size: 3rem; */
-  /* min-height: 600px; */
-  overflow: hidden;
-  animation: fadeIn 1s ease-out;
-  transition: transform 1s ease;
-  /* flex-direction: column; */
-  /* padding: 50px 0;  */
-  /* padding-top: 50px; 
-  padding-bottom: 50px; 
-  height: calc(100vh - 100px);  */
-}
-.section.scrolling {
-  transform: translateY(100%);
-}
-/* .fp-section.fp-table,
-.fp-slide.fp-table {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  vertical-align: middle; 
-  width: 100%; 
-  height: 100%; 
-  padding: 0 0 0; 
-} */
-
-.sticky-nav {
+/* .sticky-nav {
   position: fixed;
   width: 100%;
   z-index: 1000;
   background-color: #002c39;
   padding: 10px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* position: sticky; */
-  /* top: 88px; */
-}
+} */
 
-.nav-buttons {
+/* .nav-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
-}
+} */
 
-button {
+/* button {
   padding: 1px 15px;
   font-size: 16px;
   font-weight: 600;
@@ -2297,12 +2106,19 @@ button.active {
 button:hover {
   background-color: transparent;
    color: #ffdf8b;
-}
+} */
 video.main-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.image-container-testimonial img{
+   height: auto !important;
+}
+.image-section img{
+  height: auto;
+}
+
 
 
 

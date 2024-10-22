@@ -3,7 +3,7 @@ import Header from '/pages/components/Header';
 import OfferPopup from './components/OfferPopup'
 import ScrollspyMenu from './components/scrollspyHomeComponents/ScrollspyMenu';
 import HomeVideoSection from './components/HomeVideoSection';
-import DownArrow from './components/DownArrowSchoolBranch'
+// import DownArrow from './components/DownArrowSchoolBranch'
 import HomeSchoolBranchSection from './components/HomeSchoolBranchSection';
 import HomeExploreSection from './components/HomeExploreSection';
 import HomeExperimentSection from './components/HomeExperimentSection';
@@ -99,7 +99,7 @@ const FullPage = () => {
       </Head>
       <Header />
       <OfferPopup/>
-      <DownArrow/>
+      {/* <DownArrow/> */}
       <ScrollspyMenu activeSection={activeSection} scrollToSection={scrollToSection} />
       <div className="sections">
         <section className="section" id="slider"><HomeVideoSection/></section>

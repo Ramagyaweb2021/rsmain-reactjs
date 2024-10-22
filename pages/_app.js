@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import '../styles/globals.css'; // or wherever your global CSS is located
+import '../styles/scrollspy.css'; // or wherever your scrollspy CSS is located
 import '../styles/responsive.css'; // or wherever your global CSS is located
 //import '../styles/styleinternalpages.css'; // or wherever your internal pages CSS is located
 //import '../styles/_custom.scss'; // or wherever your custom SCSS is located

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import DownArrowGallery from '../DownArrowGallery';
+// import DownArrowGallery from '../DownArrowGallery';
 
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });

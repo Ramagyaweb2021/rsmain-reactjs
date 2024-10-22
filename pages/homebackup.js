@@ -5,7 +5,7 @@ import Header from '/pages/components/Header'
 import ScrollspySections from '/pages/components/ScrollspySections'
 import OfferPopup from './components/OfferPopup'
 import Footer from './components/Footer'
-import DownArrow from './components/DownArrowSchoolBranch'
+// import DownArrow from './components/DownArrowSchoolBranch'
 // import FullPageComponent from './components/FullPageComponent'
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
       </Head>
       <Header />
       {/* <HomeSlider /> */}
-      <DownArrow/>
+      {/* <DownArrow/> */}
       <ScrollspySections/>
       <OfferPopup/>
       {/* <FullPageComponent/> */}

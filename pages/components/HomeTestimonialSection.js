@@ -44,7 +44,7 @@ const HomeTestimonialSection = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "250px",
+    centerPadding: "200px",
     slidesToShow: 3,
     speed: 500,
     autoplay: true,
@@ -56,13 +56,13 @@ const HomeTestimonialSection = () => {
         settings: {
           slidesToShow: 3,
           centerMode: true,
-          centerPadding: '250px',
+          centerPadding: '50px',
         }
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           centerMode: true,
           centerPadding: '40px',
         }

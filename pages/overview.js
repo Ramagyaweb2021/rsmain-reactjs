@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { Nav, Container, Row, Col } from 'react-bootstrap';
 import Head from 'next/head';
 import Header from '/pages/components/Header';
+import ScrollspyMenu from './components/scrollspyHomeComponents/ScrollspyMenu';
 import Footer from '/pages/components/Footer';
 import 'animate.css';
 import Image from 'next/image';
@@ -63,8 +64,8 @@ const Overview = () => {
           </div>
         </div>
       </section>
-
-      <section className="explore-menu d-flex justify-content-center col-12">
+     <ScrollspyMenu/>
+      {/* <section className="explore-menu d-flex justify-content-center col-12">
         <Container>
           <Row>
             <Col xs={12} id="menu" className={`d-flex justify-content-center col-12 ${isNavFixed ? 'fixed-nav' : ''}`}>
@@ -88,7 +89,7 @@ const Overview = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
 
       <p>fdfdsfdsfdsfdsfdfdsfdsfsd</p>
       <p>fdfdsfdsfdsfdsfdfdsfdsfsd</p>
