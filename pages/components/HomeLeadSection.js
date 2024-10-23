@@ -153,7 +153,7 @@ const HomeLeadSection = () => {
                     </div>
                   </Slider>
                   <br/>
-                   <div className="downsection" onClick={handleScroll}>
+                   {/* <div className="downsection" onClick={handleScroll}>
                       <Image
                         src="/images/down-section-gallery.png"
                         className="animate__animated animate__fadeInDown animate__infinite animate__slow"
@@ -161,7 +161,7 @@ const HomeLeadSection = () => {
                         width={80}
                         height={80}
                       />
-                    </div>
+                    </div> */}
                 </div>
               </div>
             </div>

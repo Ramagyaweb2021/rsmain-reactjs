@@ -5,7 +5,7 @@ const HomeSchoolBranchSection = () => {
   return (
     <>
      
-       <div className="fp-tableOurCampuses">
+       <div className="fp-tableCell">
         <div className="container learn my-1">
        <h1 className="main-heading"> OUR CAMPUSES
           <span className="lineclass" />

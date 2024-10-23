@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { Nav, Container, Row, Col } from 'react-bootstrap';
 import Head from 'next/head';
 import Header from '/pages/components/Header';
-import ScrollspyMenu from './components/scrollspyHomeComponents/ScrollspyMenu';
+import ScrollspyMenu from './components/ScrollspyMenu';
 import Footer from '/pages/components/Footer';
 import 'animate.css';
 import Image from 'next/image';

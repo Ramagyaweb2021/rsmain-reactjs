@@ -13,7 +13,7 @@ const HomeVideoSection = () => {
   };
   return (
     <>
-        <div className="fp-tableSlider">
+        <div className="fp-tableCell" style={{height:"100vh"}}>
           <video
             className="main-video"
             width="100%"
@@ -31,7 +31,7 @@ const HomeVideoSection = () => {
             />
           </video>
         </div>
-        <div className="downsection" onClick={handleScroll}>
+        {/* <div className="downsection" onClick={handleScroll}>
           <Image
             src="/images/scroll-down-icon.webp"
             className="animate__animated animate__fadeInDown animate__infinite animate__slow"
@@ -39,7 +39,7 @@ const HomeVideoSection = () => {
             width={30}
             height={30}
           />
-      </div>
+      </div> */}
        
     </>
   )

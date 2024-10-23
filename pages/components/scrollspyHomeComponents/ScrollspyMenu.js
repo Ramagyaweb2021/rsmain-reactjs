@@ -6,11 +6,11 @@ const Menu = () => {
   const [activeSection, setActiveSection] = useState('');
   const [isSticky, setIsSticky] = useState(false);
   const [menuAnimation, setMenuAnimation] = useState('');
-  const [scrollLocked, setScrollLocked] = useState(false);
+  const [scrollLocked, setScrollLocked] = useState(false); // State to manage scroll lock
 
   useEffect(() => {
     const handleScroll = () => {
-      if (scrollLocked) return;
+      if (scrollLocked) return; // Prevent scroll while locked
 
       const isScrolled = window.scrollY > 0;
       if (isScrolled && !isSticky) {
@@ -22,7 +22,7 @@ const Menu = () => {
       }
 
       const sections = document.querySelectorAll('section[id]');
-      const scrollPosition = window.scrollY + window.innerHeight * 0.2;
+      const scrollPosition = window.scrollY + window.innerHeight * 0.2; // Adjusted to focus closer to top of section
       let currentSection = '';
 
       sections.forEach((section) => {
@@ -36,7 +36,7 @@ const Menu = () => {
 
       if (currentSection && currentSection !== activeSection) {
         setActiveSection(currentSection);
-        window.history.replaceState(null, '', `#${currentSection}`);
+        window.history.replaceState(null, '', `#${currentSection}`); // Update the URL without reloading
       }
     };
 
@@ -52,25 +52,26 @@ const Menu = () => {
     const targetSection = document.getElementById(targetId);
     
     if (targetSection) {
+      // Update the URL immediately
       window.history.replaceState(null, '', `#${targetId}`);
 
       const targetOffset = targetSection.offsetTop - (window.innerHeight / 2 - targetSection.offsetHeight / 2);
       
+      // Lock scrolling
       setScrollLocked(true);
       window.scrollTo({
         top: targetOffset,
         behavior: 'smooth',
       });
 
+      // Unlock scrolling after a delay (time for the scroll animation to finish)
       setTimeout(() => {
         setScrollLocked(false);
-      }, 1000);
+      }, 1000); // Adjust this timeout to match the duration of your smooth scroll
     }
   };
 
-  // Show additional menu for Gallery, DIFFERENCE, AWARDS, SCHOOL UPDATES, TESTIMONIALS when activeSection is one of them
-  const shouldShowMainMenu = !['gallery', 'difference', 'awards', 'school-updates', 'testimonials'].includes(activeSection);
-  const shouldShowAdditionalMenu = ['gallery', 'difference', 'awards', 'school-updates', 'testimonials'].includes(activeSection);
+  const shouldShowMainMenu = !['gallery', 'difference', 'awards', 'schoolupdates', 'testimonials'].includes(activeSection);
 
   return (
     <section className='explore-menu d-flex justify-content-center col-12' id='scrollspy'>
@@ -88,56 +89,54 @@ const Menu = () => {
                   <Nav.Link
                     href="#explore"
                     onClick={(e) => handleNavClick(e, 'explore')}
-                    className={`mx-1 ${activeSection === 'explore' ? 'active' : ''}`}
+                    className={`mx-3 ${activeSection === 'explore' ? 'active' : ''}`}
                   >
                     Explore
                   </Nav.Link>
                   <Nav.Link
                     href="#experiment"
                     onClick={(e) => handleNavClick(e, 'experiment')}
-                    className={`mx-1 ${activeSection === 'experiment' ? 'active' : ''}`}
+                    className={`mx-3 ${activeSection === 'experiment' ? 'active' : ''}`}
                   >
                     Experiment
                   </Nav.Link>
                   <Nav.Link
                     href="#innovate"
                     onClick={(e) => handleNavClick(e, 'innovate')}
-                    className={`mx-1 ${activeSection === 'innovate' ? 'active' : ''}`}
+                    className={`mx-3 ${activeSection === 'innovate' ? 'active' : ''}`}
                   >
                     Innovate
                   </Nav.Link>
                   <Nav.Link
                     href="#evolve"
                     onClick={(e) => handleNavClick(e, 'evolve')}
-                    className={`mx-1 ${activeSection === 'evolve' ? 'active' : ''}`}
+                    className={`mx-3 ${activeSection === 'evolve' ? 'active' : ''}`}
                   >
                     Evolve
                   </Nav.Link>
                   <Nav.Link
                     href="#lead"
                     onClick={(e) => handleNavClick(e, 'lead')}
-                    className={`mx-1 ${activeSection === 'lead' ? 'active' : ''}`}
+                    className={`mx-3 ${activeSection === 'lead' ? 'active' : ''}`}
                   >
                     Lead
                   </Nav.Link>
                 </>
-              ) : null}
-
-              {shouldShowAdditionalMenu && (
+              ) : (
                 <>
-                  <Nav.Link
-                    href="#difference"
-                    onClick={(e) => handleNavClick(e, 'difference')}
-                    className={`mx-1 ${activeSection === 'difference' ? 'active' : ''}`}
-                  >
-                    THE DIFFERENCE WE MAKE
-                  </Nav.Link>
                   <Nav.Link
                     href="#gallery"
                     onClick={(e) => handleNavClick(e, 'gallery')}
                     className={`mx-1 ${activeSection === 'gallery' ? 'active' : ''}`}
                   >
                     Gallery
+                  </Nav.Link>
+                  <Nav.Link
+                    href="#difference"
+                    onClick={(e) => handleNavClick(e, 'difference')}
+                    className={`mx-1 ${activeSection === 'difference' ? 'active' : ''}`}
+                  >
+                    THE DIFFERENCE WE MAKE
                   </Nav.Link>
                   <Nav.Link
                     href="#awards"
@@ -147,9 +146,9 @@ const Menu = () => {
                     AWARDS
                   </Nav.Link>
                   <Nav.Link
-                    href="#school-updates"
-                    onClick={(e) => handleNavClick(e, 'school-updates')}
-                    className={`mx-1 ${activeSection === 'school-updates' ? 'active' : ''}`}
+                    href="#schoolupdates"
+                    onClick={(e) => handleNavClick(e, 'schoolupdates')}
+                    className={`mx-1 ${activeSection === 'schoolupdates' ? 'active' : ''}`}
                   >
                     SCHOOL UPDATES
                   </Nav.Link>

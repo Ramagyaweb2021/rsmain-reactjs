@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import ScrollspyMenu from './scrollspyHomeComponents/ScrollspyMenu';
+import ScrollspyMenu from './ScrollspyMenu';
 import Explore from './scrollspyHomeComponents/Explore';
 import Experiment from './scrollspyHomeComponents/Experiment';
 import ExperimentForMobile from './scrollspyHomeComponents/ExperimentForMobile';

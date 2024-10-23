@@ -1,171 +1,319 @@
-.fullpage{
-  /* position: absolute;
+.fp-warning, .fp-watermark a {
+  display: none !important;
+}
+/* Styling the callbacks log */
+/* #callbacksLog {
+  width: 50vw;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  color: white;
+  z-index: 999;
+  display: none;
+}
+
+#callbacksLog p {
+  font-size: calc(0.5em + 0.6vw);
+  background: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  padding: 0.6em;
+}
+
+#callbacksLog h4 {
+  font-size: calc(0.7em + 0.6vw);
+  margin: 0 0 0.3em 0;
+  font-weight: bold;
+  text-decoration: underline;
+} */
+/* /styles/ScrollspyMenu.css */
+.scrollspyMenu {
+  display: flex;
+  position: fixed;
   top: 0;
-  width: 100%; */
-  height: 100vh; /* 100% of viewport height */
-  width: 100vw;  /* 100% of viewport width */
-  /* display: flex; */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center;     /* Centers content vertically */
-  /* background-color: lightgray; */
+  /* margin-top: 25px; */
+  width: 100%;
+  /* left: 50%; */
+  background-color: var(--color-set-yellow);
+  padding: 1.3rem;
+  border-radius: 5px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Centers the menu horizontally */
+  align-items: center; /* Centers the menu vertically */
+}
+.scrollspyMenu.sticky {
+  position: sticky; /* Makes the menu sticky */
+  top: 0; /* Sticks to the top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visual effect */
+}
+.scrollspyMenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.scrollspyMenu li {
+  margin: 0.5rem 15px;
+  display: inline-block;
+}
+
+.scrollspyMenu a {
+  text-decoration: none;
+  color: var(--color-set-green);
+  text-transform: uppercase;
+  font-family: var(--font-family-heading);
+  font-size: 15px;
+  padding: 1px 10px;
+}
+
+.scrollspyMenu .active a {
+  color: #bc220b;
+  /* color: var(--color-set-yellow); */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--font-family-heading);
+  font-size: 16px;
+  padding: 3px 15px;
+}
+
+/* ***************************************************************Fullpage.js css */
+.section {
+  /* color: #fff; */
+  text-align: center;
+  /* padding-right: 10%; */
+}
+
+/* Overwriting styles for the navigation dots */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white;
+}
+
+/* Background colors for sections */
+.fp-section:nth-child(1) {
+  background-color: #fff;
+}
+
+.fp-section:nth-child(2) {
+  background-color: #fff;
+}
+
+.fp-section:nth-child(3) {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffffad;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.fp-section:nth-child(4) {
+  background-color: #fff;
+}
+.fp-section:nth-child(5) {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffffad;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+/* Overwriting navigation arrows for slides */
+.fp-prev {
+  margin-left: 3%;
+}
+
+.fp-next {
+  margin-right: 3%;
+}
+
+/* .fullpage {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
+.fullpage-wrapper {
+  height: 100%;
+  position: relative;
+  touch-action: none;
+}
 .section {
-  height: 100vh; /* 100% of the viewport height */
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any padding */
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* scroll-snap-align: start; */
-  scroll-snap-align: center;
-  /* font-size: 3rem; */
-  /* min-height: 600px; */
+  scroll-snap-align: start;
+  min-height: 600px !important;
   overflow: hidden;
   animation: fadeIn 1s ease-out;
   transition: transform 1s ease;
-  /* flex-direction: column; */
-  /* padding: 50px 0;  */
-  /* padding-top: 50px; 
-  padding-bottom: 50px; 
-  height: calc(100vh - 100px);  */
-}
-.section.scrolling {
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-align:start;
+} */
+
+/* .section.scrolling {
   transform: translateY(100%);
-}
-/* .fp-section.fp-table,
-.fp-slide.fp-table {
+} */
+
+/* .fp-section.fp-table, .fp-slide.fp-table {
   display: table;
   table-layout: fixed;
   width: 100%;
-  vertical-align: middle; 
-  width: 100%; 
-  height: 100%; 
-  padding: 0 0 0; 
+}
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
 } */
-.fp-tableSlider {
+/* .learn {
+  background-image: url(../images/learn-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 50px 0 60px;
+} */
+/* .fp-tableSlider {
   background-color: #fff;
   display: table-cell;
   vertical-align: middle;
   width: 100%;
   height: 100%;
-  /* padding: 200px 0 200px; */
+  padding: 200px 0 200px;
 }
-.fp-tableOurCampuses{
+
+.fp-tableOurCampuses {
   background-color: #fff;
   display: table-cell;
   vertical-align: middle;
   width: 100%;
   height: 100%;
   padding: 250px 0 200px;
-  }
-   .fp-tableExplore {
-    background-image: url(/images/explore-bg.webp);
-    background-color: #ffffffad;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 350px 0 200px;
-  }
-  .fp-tableExperiment {
-    background-color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 200px 0 200px;
-  }
-  .fp-tableInnovate{
-    background-color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 300px 0 200px;
-  }
-  .fp-tableEvolve {
-    background-color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 300px 0 200px;
-  }
-   .fp-tableLead {
-    background-image: url(/images/explore-bg.webp);
-    background-color: #ffffffad;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 300px 0 200px;
-  }
-   .fp-tableGallery {
-    background-color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 300px 0 200px;
-  }
-   .fp-tableDifference {
-    background-image: url(/images/explore-bg.webp);
-    background-color: #ffffffad;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 300px 0 200px;
-  }
-   .fp-tableAwards {
-    background-color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 300px 0 200px;
-  }
-   .fp-tableSchoolupdates {
-    background-image: url(/images/explore-bg.webp);
-    background-color: #ffffffad;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 300px 0 200px;
-  }
-   .fp-tableTestimonials {
-    background-color: #fff;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 250px 0 200px;
-  }
-  .fp-tableFooter{
-    background-color: #fff;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    padding: 300px 0 200px;
-  }
+}
+
+.fp-tableExplore {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffffad;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 350px 0 200px;
+}
+
+.fp-tableExperiment {
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 200px 0 200px;
+}
+
+.fp-tableInnovate {
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 300px 0 200px;
+}
+
+.fp-tableEvolve {
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 300px 0 200px;
+}
+
+.fp-tableLead {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffffad;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 300px 0 200px;
+}
+
+.fp-tableGallery {
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 300px 0 200px;
+}
+
+.fp-tableDifference {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffffad;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 300px 0 200px;
+}
+
+.fp-tableAwards {
+  background-color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 300px 0 200px;
+}
+
+.fp-tableSchoolupdates {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffffad;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 300px 0 200px;
+}
+
+.fp-tableTestimonials {
+  background-color: #fff;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 250px 0 200px;
+}
+
+.fp-tableFooter {
+  background-color: #fff;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  padding: 300px 0 200px;
+} */
+
 /* For screens larger than 1441px */
 @media (min-width: 1441px) {
   /* Styles for large screens */
@@ -190,3 +338,4 @@
 @media (max-width: 414px) {
   /* Styles for small phones */
 }
+

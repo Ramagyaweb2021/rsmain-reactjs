@@ -17,7 +17,7 @@ const HomeExploreSection = () => {
   return (
     <>
       
-        <div className="fp-tableExplore">
+        <div className="fp-tableCell">
           <div className="container">
             <div className="row">
               <div className="col-sm-12 position-r">

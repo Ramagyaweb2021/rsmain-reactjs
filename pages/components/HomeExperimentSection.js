@@ -134,7 +134,7 @@ function SingleRowSlider() {
   
   return (
 
-  <div className="fp-tableExperiment">
+  <div className="fp-tableCell">
     <div className="container">
     <h1>EXPERIMENT<span className="lineclass" />
       <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
