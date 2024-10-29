@@ -116,7 +116,7 @@ const HomeTestimonialSection = () => {
     },
   ];
   return (
-    <div className="section">
+    <div className="footer-se">
       <div className='fp-tableTestimonials'>
         <div className="container py-1"> 
           <div className="row align-items-center">

@@ -40,8 +40,8 @@
   align-items: center;
 }
 .scrollspyMenu.sticky {
-  position: sticky; /* Makes the menu sticky */
-  margin-top: 80px;
+  position: sticky; 
+  /* margin-top: 88px; */
   /* background-color: red; */
   /* top: 0;  */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visual effect */
@@ -152,6 +152,18 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
+}
+.fp-section:nth-child(12) {
+  background-color: #fff;
+}
+.fp-section:nth-child(13) {
+  background-color: #fff;
+  /* background-image: url(/images/explore-bg.webp);
+  background-color: #ffffffc2;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover; */
 }
 /* Overwriting navigation arrows for slides */
 #fp-nav.fp-right{
@@ -354,4 +366,14 @@
   height: 100%;
   padding: 300px 0 200px;
 } */
+
+/* Home.module.css */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030; /* Adjust based on your layout */
+}
+/* Sticky Navbar Styles */
 

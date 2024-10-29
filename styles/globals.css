@@ -31,6 +31,7 @@ body, * {
   padding: 0;
   box-sizing: border-box;
   outline: 0;
+  /* margin-top: 0; */
 }
 
 /* Hide scrollbar in WebKit browsers */
@@ -708,36 +709,32 @@ ul {
   background-color: #fff;
   z-index: 1111;
 } */
-#navbar {
-  position: fixed;
+/* #navbar {
   top: 0;
   width: 100%;
   z-index: 1111;
-  background: transparent;
   transition: background-color 0.3s ease;
-}
-#navbar.fixed-top {
-  background-color: #343a40; /* Sticky state background color */
-}
+} */
+/* #navbar.fixed-top {
+  background-color: #343a40; 
+} */
 
-.fixed-top {
+/* .fixed-top {
   background-color: #fff !important;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   animation: smoothScroll 1s forwards;
-  /* z-index: 15; */
-}
-#navbar.scrolled {
+} */
+/* #navbar.scrolled {
   background-color: rgb(0 0 0 / 0.8);
-}
-#menu {
+} */
+/* #menu {
   transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
   transform: translateY(-100%) scale(0.95);
-  /* opacity: 1; */
   opacity: 0;
-  /* background-color: #fff; */
+  background-color: #fff;
   box-shadow: none;
   display: none;
 }
@@ -753,7 +750,7 @@ ul {
 #menu.scrollbg {
   background-color: rgb(0 0 0 / 0.8);
   box-shadow: 0 10px 20px rgb(0 0 0 / 0.2);
-}
+} */
 /* .shadow {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: white; 
@@ -1135,7 +1132,7 @@ ul {
   font-weight: 700;
   padding: 0;
   margin-bottom: 5px;
-  /* width: 30px; */
+  width: 30px;
 }
 .slider-item img {
   width: 100%;

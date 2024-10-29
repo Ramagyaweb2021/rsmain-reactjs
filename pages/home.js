@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+// import Image from 'next/image'
+// import Link from 'next/link'
+// import Button from 'react-bootstrap/Button';
+// import Dropdown from 'react-bootstrap/Dropdown';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -38,7 +42,18 @@ const ScrollspyMenu = ({ sections, activeSection }) => {
 };
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState('slider');
+  const [activeSection, setActiveSection] = useState("slider");
+  
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Adjust scroll position as needed
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     const WOWJS = require('wowjs');
@@ -58,8 +73,9 @@ export default function Home() {
     }
   };
 
-  const showMainMenu = ['explore', 'experiment', 'innovate', 'evolve', 'lead'].includes(activeSection);
-  const showAdditionalMenu = ['difference', 'gallery', 'awards', 'school-updates', 'testimonials'].includes(activeSection);
+  // Show ScrollspyMenu only after the "slider" section
+  const showMainMenu = ["branch", "explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
+  const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials"].includes(activeSection);
 
   return (
     <div className={styles.container}>
@@ -73,16 +89,12 @@ export default function Home() {
       <Header />
       <OfferPopup />
 
-      {showMainMenu && !showAdditionalMenu && (
+      {(showMainMenu || showAdditionalMenu) && (
         <ScrollspyMenu
-          sections={["explore", "experiment", "innovate", "evolve", "lead"]}
-          activeSection={activeSection}
-        />
-      )}
-
-      {showAdditionalMenu && (
-        <ScrollspyMenu
-          sections={["difference", "gallery", "awards", "school-updates", "testimonials"]}
+          sections={showMainMenu 
+            ? ["", "explore", "experiment", "innovate", "evolve", "lead"] 
+            : ["difference", "gallery", "awards", "school-updates", "testimonials"]
+          }
           activeSection={activeSection}
         />
       )}
@@ -90,27 +102,22 @@ export default function Home() {
       <ReactFullpage
         debug={false}
         anchors={[
-          "slider",
-          "branch",
-          "explore",
-          "experiment", 
-          "innovate",
-          "evolve",
-          "lead",
-          "difference",
-          "gallery",
-          "awards",
-          "school-updates",
-          "testimonials",
-          "footer"
+          "slider", "branch", "explore", "experiment", "innovate",
+          "evolve", "lead", "difference", "gallery", "awards", 
+          "school-updates", "testimonials", "footer"
         ]}
         navigation={true}
+        licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
+        responsiveWidth={1000}
         onLeave={onLeave}
         afterLoad={afterLoad}
         scrollingSpeed={700}
         render={() => (
           <ReactFullpage.Wrapper>
-            <div className="section">
+            {/* <div className="section" id="header">
+            <Header />
+            </div> */}
+             <div className="section">
               <HomeVideoSection />
             </div>
             <div className="section">
@@ -146,7 +153,7 @@ export default function Home() {
             <div className="learn section fp-section fp-table">
               <HomeTestimonialSection />
             </div>
-            <div className="footer section fp-section fp-table" style={{ backgroundColor: "rgba(0,0,0,.1)" }}>
+            <div className="footer section fp-section fp-table" style={{ backgroundColor: "#fff" }}>
               <HomeSectionFooter />
             </div>
           </ReactFullpage.Wrapper>

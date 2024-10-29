@@ -15,32 +15,32 @@ import Typebot from '../components/Typebot';
 // import Socialmediaheader from '../components/Socialmediaheader';
 // import Myform from './Myform';
 const Header = () => {
-  useEffect(() => {
-    const navbar = document.getElementById('navbar');
+  // useEffect(() => {
+  //   const navbar = document.getElementById('navbar');
   
-    if (navbar) {
-      const scrollThreshold = 100; // Adjust the scroll threshold if needed
+  //   if (navbar) {
+  //     const scrollThreshold = 100; 
   
-      const handleScroll = () => {
-        if (window.scrollY > scrollThreshold) {
-          navbar.classList.add('fixed-top');
-        } else {
-          navbar.classList.remove('fixed-top');
-        }
-      };
+  //     const handleScroll = () => {
+  //       if (window.scrollY > scrollThreshold) {
+  //         navbar.classList.add('fixed-top');
+  //       } else {
+  //         navbar.classList.remove('fixed-top');
+  //       }
+  //     };
   
-      window.addEventListener('scroll', handleScroll);
+  //     window.addEventListener('scroll', handleScroll);
   
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }
-  }, []);
+  //     return () => {
+  //       window.removeEventListener('scroll', handleScroll);
+  //     };
+  //   }
+  // }, []);
   
 // const Header = () => {
   return (
     <>
-      <nav id="navbar" className="navbar navbar fixed-top-disable">
+      <nav id="navbar" className="navbar navbar fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="./">
             <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>

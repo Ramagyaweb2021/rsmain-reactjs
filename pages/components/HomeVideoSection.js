@@ -13,7 +13,7 @@ const HomeVideoSection = () => {
   };
   return (
     <>
-        <div className="fp-tableCell">
+        <div className="fp-tableCell1">
           <video
             className="main-video"
             width="100%"
@@ -39,6 +39,11 @@ const HomeVideoSection = () => {
             width={30}
             height={30}
           />
+        </div>
+
+        {/* Target section to scroll to */}
+      <div ref={scrollToSection} className="branch">
+       
       </div>
        
     </>
