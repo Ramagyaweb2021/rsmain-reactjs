@@ -22,9 +22,10 @@ import 'animate.css';
 
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
+// ScrollspyMenu component integrated directly into Home.js
 const ScrollspyMenu = ({ sections, activeSection }) => {
   return (
-    <nav className={styles.scrollspyMenu + " sticky"}>
+    <nav className="scrollspyMenu sticky">
       <ul>
         {sections.map((section, index) => (
           <li key={index} className={activeSection === section ? 'active' : ''}>
