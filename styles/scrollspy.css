@@ -30,20 +30,20 @@
   display: flex;
   position: fixed;
   top: 0;
-  /* margin-top: 25px; */
   width: 100%;
-  /* left: 50%; */
-  background-color: var(--color-set-yellow);
-  padding: 1.3rem;
-  border-radius: 5px;
+  background-color: var(--color-set-green);
+  padding: 0.1rem;
+  border-radius: 0;
   z-index: 1000;
   display: flex;
-  justify-content: center; /* Centers the menu horizontally */
-  align-items: center; /* Centers the menu vertically */
+  justify-content: center; 
+  align-items: center;
 }
 .scrollspyMenu.sticky {
   position: sticky; /* Makes the menu sticky */
-  top: 0; /* Sticks to the top */
+  margin-top: 80px;
+  /* background-color: red; */
+  /* top: 0;  */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visual effect */
 }
 .scrollspyMenu ul {
@@ -58,7 +58,8 @@
 
 .scrollspyMenu a {
   text-decoration: none;
-  color: var(--color-set-green);
+  color: var(--color-set-white);
+  font-weight: 600;
   text-transform: uppercase;
   font-family: var(--font-family-heading);
   font-size: 15px;
@@ -66,21 +67,21 @@
 }
 
 .scrollspyMenu .active a {
-  color: #bc220b;
+  color: var(--color-set-yellow);
   /* color: var(--color-set-yellow); */
   font-weight: 600;
   text-transform: uppercase;
   font-family: var(--font-family-heading);
-  font-size: 16px;
-  padding: 3px 15px;
+  font-size: 15px;
+  padding: 1px 10px;
 }
 
 /* ***************************************************************Fullpage.js css */
-.section {
-  /* color: #fff; */
+/* .section {
+  color: #fff;
   text-align: center;
-  /* padding-right: 10%; */
-}
+  padding-right: 10%;
+} */
 
 /* Overwriting styles for the navigation dots */
 #fp-nav ul li a span,
@@ -99,7 +100,7 @@
 
 .fp-section:nth-child(3) {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffad;
+  background-color: #ffffffc2;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -107,18 +108,58 @@
 }
 
 .fp-section:nth-child(4) {
-  background-color: #fff;
+   background-color: #fff;
+   /* margin-top: 100px; */
 }
+
 .fp-section:nth-child(5) {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffad;
+  background-color: #ffffffc2;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
 }
-
+.fp-section:nth-child(6) {
+  background-color: #fff;
+}
+.fp-section:nth-child(7) {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffffc2;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+.fp-section:nth-child(8) {
+  background-color: #fff;
+}
+.fp-section:nth-child(9) {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffffc2;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+.fp-section:nth-child(10) {
+  background-color: #fff;
+}
+.fp-section:nth-child(11) {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffffc2;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
 /* Overwriting navigation arrows for slides */
+#fp-nav.fp-right{
+  right: 0;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+  background-color: var(--color-set-yellow) !important;
+}
 .fp-prev {
   margin-left: 3%;
 }
@@ -199,7 +240,7 @@
 
 .fp-tableExplore {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffad;
+  background-color: #ffffffc2;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: center;
@@ -240,7 +281,7 @@
 
 .fp-tableLead {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffad;
+  background-color: #ffffffc2;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: center;
@@ -263,7 +304,7 @@
 
 .fp-tableDifference {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffad;
+  background-color: #ffffffc2;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: center;
@@ -286,7 +327,7 @@
 
 .fp-tableSchoolupdates {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffad;
+  background-color: #ffffffc2;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: center;
@@ -313,29 +354,4 @@
   height: 100%;
   padding: 300px 0 200px;
 } */
-
-/* For screens larger than 1441px */
-@media (min-width: 1441px) {
-  /* Styles for large screens */
-}
-
-/* For screens between 1200px and 1440px */
-@media (min-width: 1200px) and (max-width: 1440px) {
-  /* Styles for medium-large screens */
-}
-
-/* For screens between 768px and 1199px */
-@media (min-width: 768px) and (max-width: 1199px) {
-  /* Styles for tablets and smaller desktops */
-}
-
-/* For screens between 415px and 767px */
-@media (min-width: 415px) and (max-width: 767px) {
-  /* Styles for mobile devices */
-}
-
-/* For screens smaller than 414px (i.e., small phones) */
-@media (max-width: 414px) {
-  /* Styles for small phones */
-}
 

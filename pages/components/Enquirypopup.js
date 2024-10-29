@@ -44,7 +44,7 @@ export default function App() {
   return (
     <>
      {/* Side floating buttion discover section */}
-     <div className="btn-float-discover animate__animated animate__fadeInRight" style={{ animationDelay: '3s' }}>
+     {/* <div className="btn-float-discover animate__animated animate__fadeInRight" style={{ animationDelay: '3s' }}>
           <Link
             href="https://qr1.be/ZJ68"
             target="_blank"
@@ -53,7 +53,7 @@ export default function App() {
           >
             <Image src="/images/discover-more.webp" alt="Ramagya school discover button" width={40} height={154}/>
           </Link>
-       </div>
+       </div> */}
        {/* Enquiry buttion */}
        <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
         <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral btn-flash-1' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>

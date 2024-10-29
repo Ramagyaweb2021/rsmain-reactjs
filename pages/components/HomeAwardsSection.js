@@ -28,7 +28,7 @@ const HomeAwardsSection = () => {
           <h1 className="main-heading"> AWARDS
             <span className="lineclass" />
             <span
-              className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+              className="sub-heading">
                 Recognizing Excellence and Achievements
             </span>
           </h1>
@@ -37,7 +37,7 @@ const HomeAwardsSection = () => {
           <div className="d-flex flex-wrap justify-content-between">
           <div className='row'>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/1.webp" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/times-school-survery-2024.webp" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
             <div className='col-lg-3 col-6 image-resize'>
               <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/2.webp" width={300} height={300} alt="Achievement" className="mb-3" />

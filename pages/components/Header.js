@@ -302,7 +302,7 @@ const Header = () => {
         </div>
       </nav>
       
-       {/* <Enquirypopup/> */}
+       <Enquirypopup/>
        <Typebot/>
     </>
   )

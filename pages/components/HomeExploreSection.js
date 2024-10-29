@@ -24,12 +24,14 @@ const HomeExploreSection = () => {
                 <h1>
                   EXPLORE
                   <span className="lineclass" />
-                  <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                  <span className="sub-heading">
+                  {/* <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}> */}
                     OUR APPROACH AND CURRICULUM
                   </span>
                 </h1>
                 <p>
-                  Ramagya embodies the commitment to foster curiosity and creativity in every student. Through a well-rounded academic process that integrates both scholastic and co-scholastic activities, students are encouraged to discover their potential in diverse areas. Ramagya School aims to create an environment ensuring holistic development, empowering students to grow intellectually, emotionally, and creatively. We ensure that every child embarks on a journey of self-discovery and skill-building that extends beyond the classroom.
+                  Ramagya embodies the commitment to foster curiosity and creativity in every student. Through a well-rounded academic process that integrates both scholastic and co-scholastic activities, students are encouraged to discover their potential in diverse areas. Ramagya School aims to create an environment ensuring holistic development, empowering students to grow intellectually, emotionally, and creatively.
+                  We ensure that every child embarks on a journey of self-discovery and skill-building that extends beyond the classroom.
                 </p>
                 <div className="row g-0 justify-content-center">
                   <div className="col-6 col-sm-6 col-md-3 g-0">

@@ -261,7 +261,7 @@ a:hover {
   font-size: 15px;
   font-weight: 600;
   color: #fff;
-  border: 1px solid var(--color-set-green);
+  border: 1px dashed var(--color-set-white);
 }
 #dropdown-basic:hover {
   border: 1px dashed #fff0;
@@ -447,12 +447,12 @@ span.highlight-lg::after {
   position: relative;
   overflow: hidden;
 } */
-.fp-section {
+/* .fp-section {
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
+} */
 
 .position-r {
   position: relative;
@@ -523,10 +523,10 @@ span.highlight-lg::after {
 .explore p {
   color: #676767;
   text-align: center;
-  padding: 0 50px;
+  padding: 0 100px;
   margin-bottom: 40px;
   font-family: var(--font-family-text);
-  font-size: 15px;
+  font-size: 13px;
 }
 .explore-content {
   background-color: #e9f5f8;
@@ -1039,7 +1039,7 @@ ul {
   color: var(--color-set-green);
   font-weight: 500;
   font-size: 16px;
-  padding: 22px 0;
+  padding: 2px 0;
 }
 .alumni-para-trans {
   text-align: center !important;
@@ -1053,7 +1053,8 @@ ul {
 }
 .custom-section {
   background-color: #eaf3f81a;
-  padding: 30px;
+  padding: 0 0 5px 30px;
+  /* padding: 30px; */
   border-radius: 10px;
 }
 .custom-btn {
@@ -1653,14 +1654,14 @@ title_3 trans {
       opacity: 1;
   }
 }
-.slide {
+.slide1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   height: 200px;
   transition: transform 0.6s ease-in-out;
 }
-.slide-content {
+.slide1-content {
   display: flex;
   align-items: center;
 }
@@ -1671,7 +1672,8 @@ title_3 trans {
   width: 100%;
   height: 100%;
   display: table;
-  padding: 0 20px;
+  padding: 1px 10px;
+  /* padding: 0 20px; */
 }
 .text-wrapper .box .flex {
   display: table-cell;
@@ -1800,13 +1802,13 @@ title_3 trans {
 }
 .explore ol.carousel-catg li {
   color: var(--color-set-white);
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   list-style-type: none;
   cursor: pointer;
   position: relative;
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   line-height: normal;
 }
 .explore ol.carousel-catg li::before {
@@ -2118,4 +2120,15 @@ video.main-video {
 .image-section img{
   height: auto;
 }
+
+/* .slide1 {
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  overflow: hidden;
+} */
+ /* Experiment carousel css */
+
+
+
 

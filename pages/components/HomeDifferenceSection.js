@@ -31,8 +31,8 @@ const HomeDifferenceSection = () => {
         <h1 className="main-heading">THE DIFFERENCE  WE MAKE
           <span className="lineclass" />
           <span
-            className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-              Impacting Lives, Creating Change
+            className="sub-heading">
+              Don’t Just Educate; Transform Holistically!
           </span>
         </h1>
           {/* <h1 className="main-heading">
@@ -49,14 +49,12 @@ const HomeDifferenceSection = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/difference-we-make/poinner-in-sports.png" alt="difference-we-make" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Pioneer in Sports</h2>
                       <p className='tabination-text'>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      We pride ourselves on being a pioneer in sports education, offering students a rich array of athletic opportunities that foster teamwork, discipline, and physical fitness. Our state-of-the-art sports facilities are equipped to cater to a variety of interests and skill levels, ensuring that every student can find their passion.
                       </p>
                       <a href="#" className="btn custom-btn">Learn More</a>
                   </div>
@@ -69,14 +67,12 @@ const HomeDifferenceSection = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/difference-we-make/baalsaathi.png" alt="baalsaathi" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Baal Saathee (Mental Health)</h2>
                       <p className='tabination-text'>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      The Baal Saathee initiative is a cornerstone of our commitment to nurturing the socio-emotional health of our students. By integrating cognitive, emotional, and social strategies, we create a supportive environment that fosters overall well-being. 
                       </p>
                       <a href="#" className="btn custom-btn">Learn More</a>
                   </div>
@@ -89,14 +85,12 @@ const HomeDifferenceSection = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/difference-we-make/mental-health-club.png" alt="mental-health-club" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Mental Health Club</h2>
                       <p className='tabination-text'>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      Our Mental Health Club is dedicated to promoting mental well-being and providing students with practical tools to manage stress and build resilience. Key aspects of the club include Workshops and Activities, Peer Support and Collaboration with Professionals.
                       </p>
                       <a href="#" className="btn custom-btn">Learn More</a>
                   </div>
@@ -109,14 +103,12 @@ const HomeDifferenceSection = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/poineer-in-sports.webp" alt="Primary" width={430} height={306}/>
+                    <Image src="/images/difference-we-make/life-skills.png" alt="life-skills" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Life Skills</h2>
                       <p className='tabination-text'>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      At Ramagya School, we recognize that life skills are essential for personal and professional success. Our comprehensive life skills program is designed to empower students with practical skills that will serve them throughout their lives.
                       </p>
                       <a href="#" className="btn custom-btn">Learn More</a>
                   </div>

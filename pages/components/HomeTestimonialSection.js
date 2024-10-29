@@ -44,7 +44,7 @@ const HomeTestimonialSection = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "200px",
+    centerPadding: "10px",
     slidesToShow: 4,
     speed: 500,
     autoplay: true,
@@ -136,7 +136,7 @@ const HomeTestimonialSection = () => {
             </div>
           </div>
         </div>
-        <div className="container-fluid" id='testimonial-slider-disable'>
+        <div className="container" id='testimonial-slider-disable'>
           <Slider {...settings}>
             {data.map((item, index) => (
               <div key={index} className="slider-item">

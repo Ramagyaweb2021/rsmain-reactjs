@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
+import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import ReactFullpage from "@fullpage/react-fullpage";
-import styles from "../styles/Home.module.css"; 
+import styles from "../styles/Home.module.css";
 import Header from "/pages/components/Header";
-import ScrollspyMenu from './components/ScrollspyMenu';
 import HomeVideoSection from './components/HomeVideoSection';
 import HomeSchoolBranchSection from './components/HomeSchoolBranchSection';
 import HomeExploreSection from "./components/HomeExploreSection";
+import HomeExperimentSection from "./components/HomeExperimentSection";
 import HomeInnovateSection from "./components/HomeInnovateSection";
 import HomeEvolveSection from "./components/HomeEvolveSection";
 import HomeLeadSection from "./components/HomeLeadSection";
@@ -14,9 +16,34 @@ import HomeDifferenceSection from "./components/HomeDifferenceSection";
 import HomeUpdatesSection from "./components/HomeUpdatesSection";
 import HomeAwardsSection from "./components/HomeAwardsSection";
 import HomeTestimonialSection from "./components/HomeTestimonialSection";
+import HomeSectionFooter from "./components/HomeSectionFooter";
+import OfferPopup from "./components/OfferPopup";
+import 'animate.css';
+
+const WOW = dynamic(() => import('wowjs'), { ssr: false });
+
+const ScrollspyMenu = ({ sections, activeSection }) => {
+  return (
+    <nav className={styles.scrollspyMenu + " sticky"}>
+      <ul>
+        {sections.map((section, index) => (
+          <li key={index} className={activeSection === section ? 'active' : ''}>
+            <a href={`#${section}`}>{section.charAt(0).toUpperCase() + section.slice(1)}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('slider');
+
+  useEffect(() => {
+    const WOWJS = require('wowjs');
+    const wow = new WOWJS.WOW({ live: false });
+    wow.init();
+  }, []);
 
   const onLeave = (origin, destination, direction) => {
     setActiveSection(destination.anchor);
@@ -24,26 +51,59 @@ export default function Home() {
 
   const afterLoad = (origin, destination, direction) => {
     setActiveSection(destination.anchor);
+    const currentSection = destination.item;
+    if (currentSection) {
+      currentSection.classList.add('animate__animated', 'animate__none');
+    }
   };
+
+  const showMainMenu = ['explore', 'experiment', 'innovate', 'evolve', 'lead'].includes(activeSection);
+  const showAdditionalMenu = ['difference', 'gallery', 'awards', 'school-updates', 'testimonials'].includes(activeSection);
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Top Schools in Noida | Delhi NCR | Ramagya School</title>
+        <meta name="description" content="Ramagya School is among best CBSE schools in Noida, Noida Extension, Greater Noida and Dadri." />
+        <meta name="keywords" content="Best School in Noida, Schools in Noida, Noida Extension, Greater Noida and Dadri, CBSE Schools in Noida, Noida Extension, Greater Noida and Dadri" />
+        <link rel="canonical" href="https://ramagyaschool.com/" />
+      </Head>
+
       <Header />
-      
-      <ScrollspyMenu 
-        sections={["slider", "branch", "explore", "experiment", "innovate", "evolve", "lead", "difference", "gallery", "awards", "school-updates", "testimonials"]}
-        activeSection={activeSection}
-      />
-      
-      <div id="callbacksLog"></div>
-      
+      <OfferPopup />
+
+      {showMainMenu && !showAdditionalMenu && (
+        <ScrollspyMenu
+          sections={["explore", "experiment", "innovate", "evolve", "lead"]}
+          activeSection={activeSection}
+        />
+      )}
+
+      {showAdditionalMenu && (
+        <ScrollspyMenu
+          sections={["difference", "gallery", "awards", "school-updates", "testimonials"]}
+          activeSection={activeSection}
+        />
+      )}
+
       <ReactFullpage
         debug={false}
-        anchors={["slider", "branch", "explore", "experiment", "innovate", "evolve", "lead", "difference", "gallery", "awards", "school-updates", "testimonials"]}
+        anchors={[
+          "slider",
+          "branch",
+          "explore",
+          "experiment", 
+          "innovate",
+          "evolve",
+          "lead",
+          "difference",
+          "gallery",
+          "awards",
+          "school-updates",
+          "testimonials",
+          "footer"
+        ]}
         navigation={true}
-        licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
-        loopTop={false}   // Prevent looping back to top
-        loopBottom={false} // Prevent looping back to first section when reaching last
         onLeave={onLeave}
         afterLoad={afterLoad}
         scrollingSpeed={700}
@@ -59,31 +119,34 @@ export default function Home() {
               <HomeExploreSection />
             </div>
             <div className="learn section fp-section fp-table">
-              <h4 style={{color:"#000"}}>Experiment section</h4>
+              <HomeExperimentSection />
             </div>
             <div className="learn section fp-section fp-table">
-              <HomeInnovateSection/>
+              <HomeInnovateSection />
             </div>
             <div className="learn section fp-section fp-table">
-              <HomeEvolveSection/>
+              <HomeEvolveSection />
             </div>
             <div className="learn section fp-section fp-table">
-             <HomeLeadSection/>
+              <HomeLeadSection />
             </div>
             <div className="learn section fp-section fp-table">
-              <HomeDifferenceSection/>
+              <HomeDifferenceSection />
             </div>
             <div className="learn section fp-section fp-table">
-              <HomeGallerySection/>
+              <HomeGallerySection />
             </div>
             <div className="learn section fp-section fp-table">
-             <HomeAwardsSection/>
+              <HomeAwardsSection />
             </div>
             <div className="learn section fp-section fp-table">
-             <HomeUpdatesSection/>
+              <HomeUpdatesSection />
             </div>
             <div className="learn section fp-section fp-table">
-             <HomeTestimonialSection/>
+              <HomeTestimonialSection />
+            </div>
+            <div className="footer section fp-section fp-table" style={{ backgroundColor: "rgba(0,0,0,.1)" }}>
+              <HomeSectionFooter />
             </div>
           </ReactFullpage.Wrapper>
         )}

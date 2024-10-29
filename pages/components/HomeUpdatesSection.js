@@ -24,7 +24,7 @@ const HomeUpdatesSection = () => {
 
   // Slick slider settings with autoplay
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -98,23 +98,45 @@ const HomeUpdatesSection = () => {
               <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <h1 className="main-heading"> SCHOOL UPDATES
                   <span className="lineclass" />
-                  <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                  <span className="sub-heading">
                     STAY INFORMED
                   </span>
                 </h1>
-                <Tabs defaultActiveKey="home" id="fill-tab-example" className="mb-3" fill>
+                <Tabs
+                  defaultActiveKey="home"
+                  id="fill-tab-example"
+                  className="mb-3"
+                  fill
+                >
+                {/* <Tabs defaultActiveKey="home" id="fill-tab-example" className="mb-3" fill> */}
                   
                   {/* School Achievements Slider */}
                   <Tab eventKey="home" title="School Achievements">
+                  {/* <section className="custom-section">
+                    <div className="container">
+                      <div className="row align-items-center">
+                          <div className="col-md-5 image-resize">
+                            <Image src="/images/difference-we-make/poinner-in-sports.png" alt="difference-we-make" width={430} height={306}/>
+                          </div>
+                          <div className="col-md-7">
+                              <h2 className="fw-bold mb-3">Pioneer in Sports</h2>
+                              <p className='tabination-text'>
+                              We pride ourselves on being a pioneer in sports education, offering students a rich array of athletic opportunities that foster teamwork, discipline, and physical fitness. Our state-of-the-art sports facilities are equipped to cater to a variety of interests and skill levels, ensuring that every student can find their passion.
+                              </p>
+                              <a href="#" className="btn custom-btn">Learn More</a>
+                          </div>
+                      </div>
+                    </div>
+                    </section> */}
                   <div className="container">
                     <section className="custom-section">
                       <Slider {...settings}>
                         {schoolAchievementsSlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
-                            <div className="col-md-6 image-resize">
-                              <Image src={slide.imgSrc} alt="Primary" width={430} height={306} />
+                            <div className="col-md-5 image-resize">
+                              <Image src={slide.imgSrc} alt="School Achievements" width={430} height={306} />
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-7">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="#" className="btn custom-btn">View More</a>
@@ -133,10 +155,10 @@ const HomeUpdatesSection = () => {
                       <Slider {...settings}>
                         {mediaPressSlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
-                            <div className="col-md-6 image-resize">
+                            <div className="col-md-5 image-resize">
                               <Image src={slide.imgSrc} alt="Media Press" width={430} height={306} />
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-7">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="#" className="btn custom-btn">View More</a>
@@ -155,10 +177,10 @@ const HomeUpdatesSection = () => {
                       <Slider {...settings}>
                         {schoolEventsSlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
-                            <div className="col-md-6 image-resize">
+                            <div className="col-md-5 image-resize">
                               <Image src={slide.imgSrc} alt="School Events" width={430} height={306} />
                             </div>
-                            <div className="col-md-67">
+                            <div className="col-md-7">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="#" className="btn custom-btn">View More</a>
@@ -177,10 +199,10 @@ const HomeUpdatesSection = () => {
                       <Slider {...settings}>
                         {workshopActivitySlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
-                            <div className="col-md-6 image-resize">
+                            <div className="col-md-5 image-resize">
                               <Image src={slide.imgSrc} alt="Workshop/Activity" width={430} height={306} />
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-7">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="#" className="btn custom-btn">View More</a>

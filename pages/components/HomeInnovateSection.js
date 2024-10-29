@@ -12,13 +12,13 @@ const HomeInnovateSection = () => {
                 <h1 className="">
                   INNOVATE
                   <span className="lineclass" />
-                  <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                  <span className="sub-heading">
                    INNOVATE YOUR INTEREST WITH US!
                   </span>
                 </h1>
                 <p>
-                    Cutting-edge programs designed to ignite creativity, critical thinking, and problem-solving skills in students. By exploring real-world issues through cultural and sensory perspectives, students develop effective, innovative solutions.
-                    We are committed to nurturing the next generation of innovators, preparing them to lead and excel in a rapidly changing world!
+                Cutting-edge programs designed to ignite creativity, critical thinking, and problem-solving skills in students. By exploring real-world issues through cultural and sensory perspectives, students develop effective, innovative solutions.
+                We are committed to nurturing the next generation of innovators, preparing them to lead and excel in a rapidly changing world!
                 </p>
 
                 <div className="service_post position-relative mt-10">
@@ -26,9 +26,9 @@ const HomeInnovateSection = () => {
                   <div className="row g-4">
                     <div className="col-md-6 col-6 d-flex align-items-stretch g-0">
                       <div className="col-6 p-3">
-                        <h5 className="feature-title">BOOK REVIEWS</h5>
+                        <h5 className="feature-title">MINDBOX</h5>
                         <p className="feature-description">
-                          Sharpens critical thinking as studentsdiscuss themes, characters, and plots from the Book of the Month
+                        Fosters creativity and problem-solving skills by engaging students in hands-on projects that address real-world challenges.
                         </p>
                       </div>
                       <div className="col-6 p-0">
@@ -43,15 +43,15 @@ const HomeInnovateSection = () => {
                         />
                       </div>
                       <div className="col-6 p-3">
-                        <h5 className="feature-title">CLUBS</h5>
+                        <h5 className="feature-title">ROBOTICS & DESIGN LAB</h5>
                         <p className="feature-description">
-                          Clubs foster creativity, collaboration and life skills, while sharpens improvisation, confidence and communication.
+                          Equips students with practical skills in robotics and design, enhancing their readiness for future careers through hands-on projects and expert guidance.
                         </p>
                       </div>
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/clubs.webp" // Adjust the path as needed
+                          src="/images/slider/innovate/robotics-design.png" // Adjust the path as needed
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -67,7 +67,7 @@ const HomeInnovateSection = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/jadu-gyan.webp" // Adjust the path as needed
+                          src="/images/slider/innovate/steam.png" // Adjust the path as needed
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -76,15 +76,15 @@ const HomeInnovateSection = () => {
                         />
                       </div>
                       <div className="col-6 p-3">
-                        <h5 className="feature-title">JODO GYAN</h5>
+                        <h5 className="feature-title">STEAM</h5>
                         <p className="feature-description">
-                          Enhancing number sense and problem-solving through hands-on, innovative learning methods, building a solid math foundation.
+                          Cultivates entrepreneurial skills and innovative thinking, preparing students to transform ideas into reality for future industries.
                         </p>
                       </div>
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/character.webp"
+                          src="/images/slider/innovate/design-thinking.png"
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -93,9 +93,9 @@ const HomeInnovateSection = () => {
                         />
                       </div>
                       <div className="col-6 p-3">
-                        <h5 className="feature-title"> CHARACTER ENHANCEMENT</h5>
+                        <h5 className="feature-title">DESIGN THINKING</h5>
                         <p className="feature-description">
-                          Geeta Saar, TED Talks, and Circle Time foster emotional intelligence, leadership, and personal growth in students.
+                        Empowers students to creatively tackle real-world problems, fostering innovative solutions through diverse cultural and sensory insights.
                         </p>
                       </div>
 

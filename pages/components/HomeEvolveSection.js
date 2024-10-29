@@ -15,7 +15,7 @@ const HomeEvolveSection = () => {
                   EVOLVE
                   <span className="lineclass" />
                   <span
-                    className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                    className="sub-heading">
                     EVOLVE YOUR CAREER WITH US
                   </span>
                 </h1>
@@ -35,7 +35,7 @@ const HomeEvolveSection = () => {
                                 <h2 className="overlay-title">
                                   STUDENT DRIVEN SOCIETY
                                 </h2>
-                                {/* <p>This is the overlay content that appears on hover.</p> */}
+                                <p>This is the overlay content that appears on hover.</p>
                               </div>
                             </div>
                             <div className="content_box trans">

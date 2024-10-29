@@ -1,0 +1,81 @@
+/* styles/_custom.scss */
+a {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  text-decoration: auto;
+}
+.offcanvas-top {
+  height: 100vh !important;
+  width: 100vw;
+  max-width: none; /* Override max-width */
+  border-radius: 0;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  // align-items: left;
+  justify-content: left;
+}
+.text-bg-dark{
+  // background-color: #198754 !important;
+  background-image: url("https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/rs-new-web/bg-images/header-background.webp");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+.navbar-nav .nav-link{
+  font-weight: 500;
+  color: #fff;
+}
+.nav-link:focus, .nav-link:hover{
+  color:#F9D93B;
+}
+.dropdown-menu-dark{
+  background-color: #2D5060;
+}
+.dropend .dropdown-menu[data-bs-popper]{
+  left: 15%;
+}
+// .bg-dark {
+//   background-color: #ffffff00 !important;
+// }
+.navbar-toggler{
+  border: var(--bs-border-width) solid rgb(255 255 255 / 0%);
+}
+#dropdown-basic{
+  border-radius: 1px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2D5060;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color: #F9D93B;
+  color:#000;
+  font-weight: 500;
+}
+.btn-warning{
+  --bs-btn-bg: #F7D00E;
+  --bs-btn-border-color: #F7D00E;
+}
+.modal-header{
+  border-bottom: var(--bs-modal-header-border-width) solid #dee2e600;
+}
+.nav-link{
+  color: #fff;
+}
+.nav-link.active {
+  color: #F7D00E; /* Change to your preferred color */
+  font-weight: bold;
+}
+.dropdown-menu.show{
+  z-index: 1111;
+}
+

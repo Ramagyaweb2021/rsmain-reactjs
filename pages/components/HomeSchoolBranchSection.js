@@ -1,7 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
+import dynamic from 'next/dynamic'; // Import dynamic from Next.js
+import 'animate.css'; // Import animate.css for animations
+// Dynamically import WOW.js for animations// Dynamically import WOW.js to avoid server-side issues
+const WOW = dynamic(() => import('wowjs'), { ssr: false });
 const HomeSchoolBranchSection = () => {
+  useEffect(() => {
+    // Initialize WOW.js on the client side
+    const WOWJS = require('wowjs');
+    const wow = new WOWJS.WOW({
+      live: false // Disable live for better performance
+    });
+    wow.init();
+  }, []);
+  
   return (
     <>
      
@@ -9,7 +23,7 @@ const HomeSchoolBranchSection = () => {
         <div className="container learn my-1">
        <h1 className="main-heading"> OUR CAMPUSES
           <span className="lineclass" />
-          <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+          <span className="sub-heading">
               Explore Our Vibrant Campuses Across Diverse Locations
           </span>
         </h1>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Header from '/pages/components/Header';
 import OfferPopup from './components/OfferPopup'
-// import ScrollspyMenu from './components/scrollspyHomeComponents/ScrollspyMenu';
+import ScrollspyMenu from './components/scrollspyHomeComponents/ScrollspyMenu';
 import HomeVideoSection from './components/HomeVideoSection';
 // import DownArrow from './components/DownArrowSchoolBranch'
 import HomeSchoolBranchSection from './components/HomeSchoolBranchSection';
@@ -22,6 +22,7 @@ const FullPage = () => {
   const [activeSection, setActiveSection] = useState('slider');
 
   // Section IDs array
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const sections = ['slider', 'branch', 'explore', 'experiment', 'innovate', 'evolve', 'lead', 'gallery', 'difference', 'awards', 'school-updates', 'testimonials', 'footer'];
 
   // Smooth scroll to section function
@@ -98,14 +99,13 @@ const FullPage = () => {
         <link rel="canonical" href="https://ramagyaschool.com/" />
       </Head>
       <Header />
-      {/* <OfferPopup/> */}
+      <OfferPopup/>
       {/* <DownArrow/> */}
-      {/* <ScrollspyMenu activeSection={activeSection} scrollToSection={scrollToSection} /> */}
-       <main id="main" class="fullpage-wrapper">
-        <section className="video-sec section fp-section fp-table" id="slider"><HomeVideoSection/></section>
-        <section className="ourschool-sec-home section fp-section fp-table" id="branch"><HomeSchoolBranchSection/></section>
+      <ScrollspyMenu activeSection={activeSection} scrollToSection={scrollToSection} />
+        <section className="section" id="slider"><HomeVideoSection/></section>
+        <section className="section" id="branch"><HomeSchoolBranchSection/></section>
         <section className="learn section fp-section fp-table" id="explore"><HomeExploreSection/></section>
-        <section className="experiment section fp-section fp-table" id="experiment"><HomeExperimentSection/></section>
+        <section className="learn section fp-section fp-table" id="experiment"><HomeExperimentSection/></section>
         <section className="learn section fp-section fp-table" id="innovate"><HomeInnovateSection/></section>
         <section className="learn section fp-section fp-table" id="evolve"><HomeEvolveSection/></section>
         <section className="learn section fp-section fp-table" id="lead"><HomeLeadSection/></section>
@@ -115,7 +115,6 @@ const FullPage = () => {
         <section className='learn section fp-section fp-table bg-tropical-mist' id="school-updates"><HomeUpdatesSection/></section>
         <section className="section" id="testimonials"><HomeTestimonialSection/></section>
         <section className="section footer" id="footer"><HomeSectionFooter/></section>
-
       {/* <div className="sections">
         <section className="section" id="slider"><HomeVideoSection/></section>
         <section className="section" id="branch"><HomeSchoolBranchSection/></section>
@@ -131,9 +130,7 @@ const FullPage = () => {
         <section className="section" id="testimonials"><HomeTestimonialSection/></section>
         <section className="section footer" id="footer"><HomeSectionFooter/></section>
       </div> */}
-      </main>
     </div>
-    
   );
 };
 

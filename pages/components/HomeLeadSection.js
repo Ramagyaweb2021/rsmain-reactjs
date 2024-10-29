@@ -60,13 +60,12 @@ const HomeLeadSection = () => {
                   LEAD
                   <span className="lineclass" />
                   <span
-                    className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                    className="sub-heading">
                     MEET OUR ALUMNI
                   </span>
                 </h1>
                 <p>
-                  Our programs are designed to empower students to excel beyond the classroom and make a meaningful impact. 
-                  The Ramagya Alumni Association plays a pivotal role in this by fostering a lifelong network of former students...
+                In a world that is ever-evolving, leadership takes many forms and can emerge from the most unexpected places. At Ramagya School, we believe in nurturing the leaders of tomorrow-individuals who are not only academically accomplished but also possess the skills, values, and vision to make a difference in their communities and beyond. Our commitment to fostering leadership is reflected in our vibrant alumni network, the remarkable achievements of our students, and the diverse career avenues we provide.
                 </p>
               
                 <div className="container-fluid my-5">
