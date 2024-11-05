@@ -17,7 +17,7 @@ const HomeExperimentSection = () => {
 
       <div className='container-fluid'>
       { /********************************************************************* First row slider section */}
-        <div className="row slide-content g-1">
+        <div className="row slide-1 content g-1">
           <div className="col-md-12">
             <div
               id="carouselExampleControls"
@@ -30,7 +30,7 @@ const HomeExperimentSection = () => {
                 {/* Carousel active item row-1 for first category */}
                 <div className={`carousel-item ${activeCategory === 'category1' ? 'active' : ''}`} id='category1'>
                 {/* <div className="carousel-item active" id='category1'> */}
-                  <div className="row slide-content g-1">
+                  <div className="row slide-1 content g-1">
                     <div className="col-2 image-wrapper">
                       <Image
                         src="/images/slider/experiment/jadu-gyan.png"
@@ -79,7 +79,7 @@ const HomeExperimentSection = () => {
                 {/* Carousel  item row-2 for second category */}
                 <div className={`carousel-item ${activeCategory === 'category2' ? 'active' : ''}`} id='category2'>
                 {/* <div className="carousel-item" d='category2'> */}
-                  <div className="row slide-content g-1">
+                  <div className="row slide-1 content g-1">
                     <div className="col-2 image-wrapper">
                       <Image
                         src="/images/slider/experiment/dance.png"
@@ -128,7 +128,7 @@ const HomeExperimentSection = () => {
                   {/* Carousel  item row-3 for third category */}
                   <div className={`carousel-item ${activeCategory === 'category3' ? 'active' : ''}`} id='category3'>
                   {/* <div className="carousel-item" d='category3'> */}
-                  <div className="row slide-content g-1">
+                  <div className="row slide-1 content g-1">
                     <div className="col-2 image-wrapper">
                       <Image
                         src="/images/slider/experiment/book-review.png"
@@ -181,7 +181,7 @@ const HomeExperimentSection = () => {
           </div>
         </div>
         { /********************************************************************* Second row slider section */}
-        <div className="row slide-content g-1">
+        <div className="row slide-1 content g-1">
           <div className="col-md-4">
             <div
               id="carouselExampleControls1"
@@ -194,7 +194,7 @@ const HomeExperimentSection = () => {
                 {/* Carousel active item row-1 for first category */}
                 <div className={`carousel-item ${activeCategory === 'category1' ? 'active' : ''}`} id='category1'>
                 {/* <div className="carousel-item active" id='category1'> */}
-                  <div className="row slide-content g-1">
+                  <div className="row slide-1 content g-1">
                     <div className="col-12 image-wrapper">
                       <Image
                         src="/images/slider/experiment/big-slider-2.png"
@@ -218,7 +218,7 @@ const HomeExperimentSection = () => {
                 {/* Carousel  item row-2 for second category */}
                 <div className={`carousel-item ${activeCategory === 'category2' ? 'active' : ''}`} id='category2'>
                 {/* <div className="carousel-item" id='category2'> */}
-                <div className="row slide-content g-1">
+                <div className="row slide-1 content g-1">
                     <div className="col-12 image-wrapper">
                       <Image
                         src="/images/slider/experiment/big-slider-5.png"
@@ -242,7 +242,7 @@ const HomeExperimentSection = () => {
                   {/* Carousel  item row-3 for third category */}
                   <div className={`carousel-item ${activeCategory === 'category3' ? 'active' : ''}`} id='category3'>
                   {/* <div className="carousel-item" id='category3'> */}
-                  <div className="row slide-content g-1">
+                  <div className="row slide-1 content g-1">
                     <div className="col-12 image-wrapper">
                       <Image
                         src="/images/slider/experiment/big-slider-8.png"
@@ -301,7 +301,7 @@ const HomeExperimentSection = () => {
           <div className="col-md-4 mx-auto-disable">
             <div
               id="carouselExampleControls2"
-              className="carousel slide-2"
+              className="carousel slide-1 2"
               data-bs-ride="carousel"
               data-bs-interval="false" // Disable autoplay
             >
@@ -310,7 +310,7 @@ const HomeExperimentSection = () => {
                 {/* Carousel active item row-1 for first category */}
                 <div className={`carousel-item ${activeCategory === 'category1' ? 'active' : ''}`} id='category1'>
                 {/* <div className="carousel-item active" id='category1'> */}
-                  <div className="row slide-content g-1">
+                  <div className="row slide-1 content g-1">
                     <div className="col-6 image-wrapper">
                       <Image
                         src="/images/slider/experiment/science-lab.png"
@@ -334,7 +334,7 @@ const HomeExperimentSection = () => {
                 {/* Carousel  item row-2 for second category */}
                 <div className={`carousel-item ${activeCategory === 'category2' ? 'active' : ''}`} id='category2'>
                 {/* <div className="carousel-item" id='category2'> */}
-                <div className="row slide-content g-1">
+                <div className="row slide-1 content g-1">
                     <div className="col-6 image-wrapper">
                       <Image
                         src="/images/slider/experiment/film-making.png"
@@ -358,7 +358,7 @@ const HomeExperimentSection = () => {
                 {/* Carousel  item row-3 for third category */}
                 <div className={`carousel-item ${activeCategory === 'category3' ? 'active' : ''}`} id='category3'>
                 {/* <div className="carousel-item" id='category3'> */}
-                  <div className="row slide-content g-1">
+                  <div className="row slide-1 content g-1">
                     <div className="col-6 image-wrapper">
                       <Image
                         src="/images/slider/experiment/character-enhancement.png"
@@ -387,11 +387,11 @@ const HomeExperimentSection = () => {
 
         </div>
         { /*********************************************************************Third Row slider Section */}
-        <div className="row slide-content g-1">
+        <div className="row slide-1 content g-1">
           <div className="col-md-12">
             <div
               id="carouselExampleControls3"
-              className="carousel slide-3"
+              className="carousel slide-1 3"
               data-bs-ride="carousel"
               data-bs-interval="false" // Disable autoplay
             >
@@ -400,7 +400,7 @@ const HomeExperimentSection = () => {
                 {/* Carousel active item row-1 for first category */}
                 <div className={`carousel-item ${activeCategory === 'category1' ? 'active' : ''}`} id='category1'>
                 {/* <div className="carousel-item active" id='category1'> */}
-                  <div className="row slide-content g-1">
+                  <div className="row slide-1 content g-1">
                     <div className="col-2 image-wrapper">
                       <Image
                         src="/images/slider/experiment/computer-lab.png"
@@ -449,7 +449,7 @@ const HomeExperimentSection = () => {
                 {/* Carousel  item row-2 for second category */}
                 <div className={`carousel-item ${activeCategory === 'category2' ? 'active' : ''}`} id='category2'>
                 {/* <div className="carousel-item" id='category2'> */}
-                  <div className="row slide-content g-1">
+                  <div className="row slide-1 content g-1">
                     <div className="col-2 image-wrapper">
                       <Image
                         src="/images/slider/experiment/photography.png"
@@ -499,7 +499,7 @@ const HomeExperimentSection = () => {
                   {/* Carousel  item row-3 for third category */}
                   <div className={`carousel-item ${activeCategory === 'category3' ? 'active' : ''}`} id='category3'>
                   {/* <div className="carousel-item" id='category3'> */}
-                  <div className="row slide-content g-1">
+                  <div className="row slide-1 content g-1">
                     <div className="col-2 image-wrapper">
                       <Image
                         src="/images/slider/experiment/debate.png"

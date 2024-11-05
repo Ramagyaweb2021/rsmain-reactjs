@@ -34,7 +34,7 @@ const HomeInnovateSection = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/experiments/book-review.webp" // Adjust the path as needed
+                          src="/images/experiments/book-review.png" // Adjust the path as needed
                           className="img feature-image"
                           width={310}
                           height={204}
