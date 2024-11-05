@@ -393,5 +393,6 @@
   z-index: 1030;
   /* Adjust based on your layout */
 }
-
-/* Sticky Navbar Styles */
+.carousel-item{
+  display: unset !important;
+}
