@@ -9,7 +9,7 @@ const HomeExperimentSectionSlider3 = () => {
   const [activeCategory, setActiveCategory] = useState('category1'); // Default active category
   
   // Settings for the Slick slider
-  const sliderSettings = {
+  const ExperimentSlider3 = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -23,7 +23,7 @@ const HomeExperimentSectionSlider3 = () => {
       {/* Third Row slider Section */}
       <div className="row slide-1 content g-1">
         <div className="col-md-12">
-          <Slider {...sliderSettings}>
+          <Slider {...ExperimentSlider3}>
             {/* Slider item for first category */}
             <div className={`slide-item ${activeCategory === 'category1' ? 'active' : ''}`} id='category1'>
               <div className="row slide-1 content g-1">

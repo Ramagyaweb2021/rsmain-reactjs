@@ -6,7 +6,7 @@ const HomeExperimentSectionSlider2 = () => {
   const [activeCategory, setActiveCategory] = useState('category1'); // Default active category
 
   // Slick slider settings
-  const sliderSettings = {
+  const ExperimentSlider2 = {
     dots: false,
     infinite: false,
     speed: 500,
@@ -21,7 +21,7 @@ const HomeExperimentSectionSlider2 = () => {
       {/* First Slick slider section */}
       <div className="row slide-1 content g-1">
         <div className="col-md-4">
-          <Slider {...sliderSettings}>
+          <Slider {...ExperimentSlider2}>
             {activeCategory === 'category1' && (
               <div>
                 <Image
@@ -84,8 +84,8 @@ const HomeExperimentSectionSlider2 = () => {
         </div>
 
         {/* Second Slick slider section */}
-        {/* <div className="col-md-4">
-          <Slider {...sliderSettings}>
+        <div className="col-md-4">
+          <Slider {...ExperimentSlider2}>
             {activeCategory === 'category1' && (
               <div className="row slide-1 content g-1">
                 <div className="col-6 image-wrapper">
@@ -144,7 +144,7 @@ const HomeExperimentSectionSlider2 = () => {
               </div>
             )}
           </Slider>
-        </div> */}
+        </div>
       </div>
     </>
   );
