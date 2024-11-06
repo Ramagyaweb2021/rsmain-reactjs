@@ -18,7 +18,7 @@ const HomeExploreSection = () => {
     <>
       
         <div className="fp-tableCell">
-          <div className="container">
+          <div className="container learn my-2">
             <div className="row">
               <div className="col-sm-12 position-r">
                 <h1>

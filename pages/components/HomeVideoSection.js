@@ -13,8 +13,9 @@ const HomeVideoSection = () => {
   };
   return (
     <>
-        <div className="fp-tableCell1">
-          <video
+        <div className="fp-tableCell">
+         <div className='video-banner'>
+         <video
             className="main-video"
             width="100%"
             poster="/images/main-banner.webp"
@@ -39,6 +40,7 @@ const HomeVideoSection = () => {
             width={30}
             height={30}
           />
+         </div>
         </div>
 
         {/* Target section to scroll to */}

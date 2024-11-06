@@ -25,7 +25,8 @@ const HomeDifferenceSection = () => {
     <>
   
     <div className='fp-tableDifference'>
-      <Container className='bg-tropical-mist p-0'>
+    <Container className='learn my-0-1'>
+      {/* <Container className='bg-tropical-mist p-0'> */}
       <div className="row">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
         <h1 className="main-heading">THE DIFFERENCE  WE MAKE

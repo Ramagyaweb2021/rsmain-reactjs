@@ -22,10 +22,10 @@ const HomeGallerySection = () => {
     { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
     { src: '/images/ach.webp', title: 'Achievement Day', category: 'School Events', type: 'image' },
     { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
-    { src: '/images/ach.webp', title: 'Achievement Day', category: 'School Events', type: 'image' },
-    { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
-    { src: '/images/ach.webp', title: 'Achievement Day', category: 'School Events', type: 'image' },
-    { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
+    // { src: '/images/ach.webp', title: 'Achievement Day', category: 'School Events', type: 'image' },
+    // { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
+    // { src: '/images/ach.webp', title: 'Achievement Day', category: 'School Events', type: 'image' },
+    // { src: '/images/slider-2.webp', title: 'Sports Day', category: 'Sports', type: 'image' },
     { src: 'https://www.youtube.com/embed/_cuUK64hQ7o', title: 'Sports Event', category: 'Sports Highlights', type: 'video' },
     { src: 'https://www.youtube.com/embed/_cuUK64hQ7o', title: 'Lab Experiments in Action', category: 'Lab Experiments', type: 'video' },
     { src: 'https://www.youtube.com/embed/_cuUK64hQ7o', title: 'Sports Event', category: 'Sports Highlights', type: 'video' },
@@ -66,7 +66,7 @@ const HomeGallerySection = () => {
   return (
     <>
       <div className="fp-tableGallery">
-        <div className="container">
+        <div className="container my-0">
           <div className="row">
           <div className="col-sm-12 position-r">
               <h1 className="">
@@ -80,7 +80,7 @@ const HomeGallerySection = () => {
             </div>
           </div>
         </div>
-        <div className="container my-2">
+        <div className="container my-0">
           <div className="d-flex justify-content-center mb-4">
             <button className={`btn mx-2 ${activeGallery === 'Images' ? 'btn-warning-gallery' : 'btn-outline-warning'}`} 
                     onClick={() => setActiveGallery('Images')}>
@@ -132,7 +132,14 @@ const HomeGallerySection = () => {
             ) : (
               <p className="text-center">No items found.</p>
             )}
+             {/* Learb more button */}
+          <div className="d-flex justify-content-center align-items-center mt-1">
+                    <div className="learn-more-button">
+                      <a href="#">View More</a>
+                    </div>
+                  </div>
           </div>
+          
         </div>
       </div>
 

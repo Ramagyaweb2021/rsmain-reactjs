@@ -1,17 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 // import { Row, Col, Form} from 'react-bootstrap';
-import Image from 'next/image' 
-import Link from 'next/link'
+import Link from 'next/link';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 const HomeSectionFooter = () => {
   return (
     <>
        {/* Footer Section */}
           <div className='fp-tableFooter'>
-          <div className='container-fluid'>
+          <div className='container-fluid my-1'>
            <div className='row'>
             <div className="col-md-3 col-sm-6 col-xs-12">
-              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={250} height={52}/>
+              {/* <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={250} height={52}/> */}
               <p className="footer-heading">Address</p>
               <p>E - 7, Sector 50, Noida  
                 </p>
@@ -26,10 +27,26 @@ const HomeSectionFooter = () => {
                 <p className="footer-heading">For Enquiries</p>
                 <p>Contact No. <a href="tel:+918010333555">+91-8010333555</a></p>
                 <p className="footer-heading">Social</p>
+                  <div className="social-icons">
+                  {/* <ul>
+                    <li className="co_icon">
+                      <Link
+                        href="https://api.whatsapp.com/send/?phone=918010333555&text&app_absent=0"
+                        className="whatsapp"
+                        rel="nofollow"
+                        target="_blank">
+                        <FontAwesomeIcon icon={faWhatsapp} size="1x"/>
+                        <i className="fa fa-whatsapp" />
+                        <span className='footer-social-media'>Whatsapp</span>
+                      </Link>
+                    
+                    </li>
 
+                  </ul> */}
+                </div>
                 <hr/>
-                <p className="footer-heading">Subscribe</p>
-                <p>Subscribe to our newsletter and get everyday updates.</p>
+                {/* <p className="footer-heading">Subscribe</p>
+                <p>Subscribe to our newsletter and get everyday updates.</p> */}
                 {/* <Form className="subscribe-form">
                 <Form.Group controlId="formEmail">
                 <Form.Control type="email" placeholder="Enter your email" />
@@ -62,11 +79,11 @@ const HomeSectionFooter = () => {
                 <p><Link href="#">Careers</Link></p>
                 <p><Link href="#">Contact Us</Link></p>
                 <p><Link href="#">Blog</Link></p>
-                <p className="footer-heading">News Feed</p>
+                {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>
                 <p><Link href="#">Media Press</Link></p>
                 <p><Link href="#">Events</Link></p>
-                <p><Link href="#">Awards</Link></p>
+                <p><Link href="#">Awards</Link></p> */}
               </div>
            </div>
            <hr/>

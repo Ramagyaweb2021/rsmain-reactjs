@@ -53,7 +53,7 @@ const HomeLeadSection = () => {
     <>
        
         <div className="fp-tableLead">
-          <div className="container"> 
+          <div className="container learn my-2"> 
             <div className="row">
               <div className="col-sm-12 position-r">
                 <h1 className="">
@@ -68,7 +68,7 @@ const HomeLeadSection = () => {
                 In a world that is ever-evolving, leadership takes many forms and can emerge from the most unexpected places. At Ramagya School, we believe in nurturing the leaders of tomorrow-individuals who are not only academically accomplished but also possess the skills, values, and vision to make a difference in their communities and beyond. Our commitment to fostering leadership is reflected in our vibrant alumni network, the remarkable achievements of our students, and the diverse career avenues we provide.
                 </p>
               
-                <div className="container-fluid my-5">
+                <div className="container-fluid my-0">
                   <Slider {...settings}>
                     {/* Slide 1 */}
                     <div className="col-md-4 mx-0">
@@ -85,7 +85,7 @@ const HomeLeadSection = () => {
                             <div className="text-left">
                               <h5 className="card-title-1-1 mb-1">Tanya Mehra</h5>
                               <p className="text-muted mb-2">BITS Pilani</p>
-                              <hr className="my-2 w-75" />
+                              <hr className="my-0 w-75" />
                             </div>
                           </div>
                           <div className="text-left">
@@ -112,7 +112,7 @@ const HomeLeadSection = () => {
                             <div className="text-left">
                               <h5 className="card-title-1 mb-1">Kunal Kumar</h5>
                               <p className="text-muted mb-2">BITS Pilani</p>
-                              <hr className="my-2 w-75" />
+                              <hr className="my-0 w-75" />
                             </div>
                           </div>
                           <div className="text-left">
@@ -139,7 +139,7 @@ const HomeLeadSection = () => {
                             <div className="text-left">
                               <h5 className="card-title-1 mb-1">Kavya Iyyer</h5>
                               <p className="text-muted mb-2">BITS Pilani</p>
-                              <hr className="my-2 w-75" />
+                              <hr className="my-0 w-75" />
                             </div>
                           </div>
                           <div className="text-left">
@@ -151,28 +151,29 @@ const HomeLeadSection = () => {
                       </div>
                     </div>
                   </Slider>
-                  <br/>
-                   {/* <div className="downsection" onClick={handleScroll}>
-                      <Image
-                        src="/images/down-section-gallery.png"
-                        className="animate__animated animate__fadeInDown animate__infinite animate__slow"
-                        alt="Ramagya school"
-                        width={80}
-                        height={80}
-                      />
-                    </div> */}
+                     {/* Learn more button */}
+                      <div className="d-flex justify-content-center align-items-center mt-1">
+                        <div className="learn-more-button">
+                          <a href="#">Learn More</a>
+                        </div>
+                      </div>
+                      {/* <br/>
+                      <div className="downsectio1n" onClick={handleScroll}>
+                          <Image
+                            src="/images/down-section-gallery.png"
+                            className="animate__animated animate__fadeInDown animate__infinite animate__slow"
+                            alt="Ramagya school"
+                            width={80}
+                            height={80}
+                          />
+                        </div> */}
                 </div>
               </div>
             </div>
             
           </div>
 
-          {/* Learn more button */}
-          {/* <div className="d-flex justify-content-center align-items-center mt-1">
-            <div className="learn-more-button">
-              <a href="#">Learn More</a>
-            </div>
-          </div> */}
+         
           
 
         </div>

@@ -9,9 +9,15 @@ body {
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1400px;
+    max-width: 1250px;
+    /* max-width: 1400px; */
     padding: 0 15px;
     margin: 0 auto;
+  }
+ 
+  .main-video {
+    /* margin-top: -88px; */
+    height: 100%;
   }
   .learn h1,
   .explore h1,
@@ -35,6 +41,13 @@ body {
   .container-xxl {
       max-width: 1140px;
   }
+  .section {
+    min-height: 600px;
+  }
+  /* .video-banner{
+    padding: 0; 
+    margin: 0; 
+  } */
   .navbar-brand img {
       width: 300px;
   }
@@ -49,6 +62,11 @@ body {
       font-size: 30px;
       padding-bottom: 5px;
       margin-bottom: 5px;
+  }
+  .main-video {
+    /* margin-top: -88px; */
+    height: 600px;
+    width: 100%;
   }
   .learn h1,
   .explore h1,
@@ -130,14 +148,18 @@ body {
       font-size: 12px;
   }
   .text-wrapper .box h6 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
   }
   .text-wrapper .box p {
-      line-height: 20px;
-      font-size: 13px;
-      font-weight: 500;
-      padding: 0;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0;
+    /* line-height: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0; */
   }
   .slide-content .image-wrapper img{
     height: 115px;
@@ -152,8 +174,9 @@ body {
       /* height: 155px; */
   }
   .explore .bluebox {
-    height: 120px;
+    height: 115px;
       /* height: 115px; */
+      /* border-radius: 5px; */
   }
   .exp-our-mis {
       top: 0;
@@ -257,6 +280,15 @@ body {
   .dropdown-item {
     font-size: 13px;
 }
+.scrollspyMenu a{
+    font-size: 11px;
+    padding: 0;
+}
+.scrollspyMenu .active a{
+    font-size: 11px;
+    padding: 0;
+}
+
   .learn #approach-mobile a {
       background-color: var(--color-set-green);
       color: var(--color-set-yellow);
@@ -297,6 +329,9 @@ body {
   .innovate h1 > span,
   .evolve h1 > span {
       display: none;
+  }
+  .learn p, .explore p{
+    padding: 0 9px;
   }
   .learn .approach a {
       width: 90%;
@@ -369,6 +404,9 @@ body {
   }
   .mobile-gutter {
     padding: 5px 0 0 0; /* Adjust as needed for mobile gutter */
+  }
+  .scrollspyMenu{
+    display: inline-block;
   }
   .footer {
       padding: 15px 0 0 10px;

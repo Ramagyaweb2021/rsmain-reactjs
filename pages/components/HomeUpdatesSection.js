@@ -30,7 +30,7 @@ const HomeUpdatesSection = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,            // Enable autoplay
-    autoplaySpeed: 3000,       // 3 seconds between slides
+    autoplaySpeed: 5000,       // 3 seconds between slides
     pauseOnHover: true,        // Pause on hover
   };
 
@@ -93,7 +93,8 @@ const HomeUpdatesSection = () => {
   return (
     
         <div className='fp-tableSchoolupdates'>
-          <Container className='bg-tropical-mist p-0'>
+          <Container className='learn my-0-1'>
+          {/* <Container className='bg-tropical-mist p-0'> */}
             <div className="row">
               <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <h1 className="main-heading"> SCHOOL UPDATES

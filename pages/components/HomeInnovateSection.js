@@ -6,7 +6,7 @@ const HomeInnovateSection = () => {
     <>
       
         <div className="fp-tableInnovate">
-          <div className="container px-0">
+          <div className="container learn my-0">
             <div className="row no-gutters">
               <div className="col-sm-12 position-r">
                 <h1 className="">
@@ -147,7 +147,7 @@ const HomeInnovateSection = () => {
                 </div>
 
                 {/* Learb more button */}
-                <div className="d-flex justify-content-center align-items-center mt-30">
+                <div className="d-flex justify-content-center align-items-center mt-1">
                   <div className="learn-more-button">
                     <a href="#">Learn More</a>
                   </div>

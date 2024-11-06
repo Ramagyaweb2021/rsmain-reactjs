@@ -91,7 +91,7 @@ img {
   border: 0 none;
   max-width: 100%;
   object-fit: cover;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 h1,
 h2,
@@ -970,7 +970,7 @@ ul {
   z-index: 2;
 }
 .service_box.type_four {
-  padding: 3px 0;
+  /* padding: 3px 0; */
   background: #e7eaebcc;
   border-radius: 1px;
   text-align: center;
@@ -1614,9 +1614,6 @@ title_3 trans {
   line-height: 66px;
   color: #fff;
 }
-/* .main-video {
-  margin-top: -88px;
-} */
 .the-difference-we-make {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -2002,11 +1999,11 @@ p.tabination-text {
   display: flex !important;
 }
 #testimonial-slider .slick-center {
-  border: 3px solid var(--color-set-yellow); /* Add a border to the active slide */
+  border: 1px solid var(--color-set-yellow); /* Add a border to the active slide */
   padding: 2px; /* Optional: to adjust for the border */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: to add shadow effect */
   transition: all 0.3s ease; /* Optional: smooth transition for the active slide */
-  border-radius: 10px;
+  border-radius: 5px;
   background-color:#fff;
 }
 #testimonial-slider .image-container-testimonial{
@@ -2125,7 +2122,6 @@ video.main-video {
   overflow: hidden;
 } */
  /* Experiment carousel css */
-
-
+ 
 
 

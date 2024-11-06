@@ -106,7 +106,7 @@ export default function Home() {
           "evolve", "lead", "difference", "gallery", "awards", 
           "school-updates", "testimonials", "footer"
         ]}
-        navigation={false}
+        navigation={true}
         licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
         responsiveWidth={1000}
         onLeave={onLeave}

@@ -22,7 +22,8 @@ const HomeAwardsSection = () => {
     <>
      
       <div className='fp-tableAwards'>
-        <Container className='bg-tropical-mist-awards p-0'>
+      <Container className='learn my-1'>
+        {/* <Container className='bg-tropical-mist-awards p-0'> */}
         <div className="row">
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <h1 className="main-heading"> AWARDS
@@ -37,25 +38,26 @@ const HomeAwardsSection = () => {
           <div className="d-flex flex-wrap justify-content-between">
           <div className='row'>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/times-school-survery-2024.webp" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="/images/awards/1.png" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/2.webp" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="/images/awards/2.png" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/3.webp" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="/images/awards/3.png" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/4.webp" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="/images/awards/4.png" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
           </div>
         </div>
-        </Container>
-        <div className="d-flex justify-content-center align-items-center mt-30">
+        <div className="d-flex justify-content-center align-items-center mt-1">
             <div className="learn-more-button">
               <a href="#">View More</a>
             </div>
           </div>
+        </Container>
+        
       </div>
       
   </>

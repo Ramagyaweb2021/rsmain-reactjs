@@ -34,7 +34,7 @@
   top: 0;
   width: 100%;
   background-color: var(--color-set-green);
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 0;
   z-index: 1000;
   display: flex;
@@ -49,6 +49,7 @@
   /* top: 0;  */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /* Optional shadow for visual effect */
+  z-index: 1111;
 }
 
 .scrollspyMenu ul {
@@ -93,14 +94,33 @@
 .fp-slidesNav ul li a span {
   background: white;
 }
-
+.my-0-1 {
+  margin-top: -2rem !important;
+  margin-bottom: 7rem !important;
+ }
+.my-0 {
+  margin-top: 1rem !important;
+  margin-bottom: 0rem !important;
+ }
+.my-1 {
+  margin-top: 3rem !important;
+  margin-bottom: 10rem !important;
+ }
+ .my-2 {
+  margin-top: 3rem !important;
+  margin-bottom: 8rem !important;
+ }
+ 
 /* Background colors for sections */
 .fp-section:nth-child(1) {
   background-color: #fff;
+  /* height: 100vh;  */
 }
 
 .fp-section:nth-child(2) {
   background-color: #fff;
+  /* height: 80vh;  */
+  /* margin-top: -150px; */
 }
 
 .fp-section:nth-child(3) {

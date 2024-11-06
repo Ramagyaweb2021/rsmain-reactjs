@@ -15,6 +15,10 @@ const HomeExperimentSection = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    swipe: false,
+    draggable: false,
+    dotsClass: "slick-dots custom-dots",
+    cssEase: "ease-in-out",
   };
 
   const ExperimentSlider2 = {
@@ -25,6 +29,10 @@ const HomeExperimentSection = () => {
     slidesToScroll: 1,
     // arrows: true,
     autoplay: true,
+    swipe: false,
+    draggable: false,
+    dotsClass: "slick-dots custom-dots",
+    cssEase: "ease-in-out",
   };
 
   const ExperimentSlider3 = {
@@ -34,12 +42,16 @@ const HomeExperimentSection = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    swipe: false,
+    draggable: false,
+    dotsClass: "slick-dots custom-dots",
+    cssEase: "ease-in-out",
   };
 
   return (
     <>
       <div className="learn fp-section-tableExperiment">
-        <div className="container">
+        <div className="container learn my-0">
           <h1>EXPERIMENT<span className="lineclass" />
             <span className="sub-heading">
               WORKSHOPS, PROGRAMS AND EXPERIENCES
@@ -50,7 +62,7 @@ const HomeExperimentSection = () => {
 
         <div className='container-fluid'>
           {/* First Row slider Section */}
-          <div className="row slide-1 content g-1">
+          <div className="row slide-1 content g-0">
               <Slider {...ExperimentSlider1}>
                {activeCategory === 'category1' && (
                   <div className='row'>
@@ -203,7 +215,7 @@ const HomeExperimentSection = () => {
           </div>
 
           {/* Second Row slider Section */}
-          <div className="row slide-1 content g-1" style={{backgroundColor:"#fff"}}>
+          <div className="row slide-1 content g-0" style={{backgroundColor:"#fff"}}>
             <div className="col-md-4">
               <Slider {...ExperimentSlider2}>
                 {activeCategory === 'category1' && (
@@ -363,7 +375,7 @@ const HomeExperimentSection = () => {
           </div>
 
           {/* Third Row slider Section */}
-          <div className="row slide-1 content g-1">
+          <div className="row slide-1 content g-0">
               <Slider {...ExperimentSlider3}>
                {activeCategory === 'category1' && (
                   <div className='row'>
@@ -518,7 +530,11 @@ const HomeExperimentSection = () => {
                 )}
               </Slider>
           </div>
-         
+          <div className="d-flex justify-content-center align-items-center mt-1">
+                  <div className="learn-more-button">
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
         </div>
       </div>
     </>
