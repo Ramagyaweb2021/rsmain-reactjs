@@ -23,7 +23,7 @@ const HomeSchoolBranchSection = () => {
         <div className="container learn my-1">
        <h1 className="main-heading"> OUR CAMPUSES
           <span className="lineclass" />
-          <span className="sub-heading">
+          <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
               Explore Our Vibrant Campuses Across Diverse Locations
           </span>
         </h1>

@@ -14,8 +14,7 @@ const HomeEvolveSection = () => {
                 <h1 className="">
                   EVOLVE
                   <span className="lineclass" />
-                  <span
-                    className="sub-heading">
+                  <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
                     EVOLVE YOUR CAREER WITH US
                   </span>
                 </h1>
@@ -30,13 +29,13 @@ const HomeEvolveSection = () => {
                           <div className="service_box type_four color_two hover_1_get hover_1">
                             <div className="image-container">
                               <div className="overlay">
-                                <div className="icon trans">
+                                {/* <div className="icon trans">
                                   <Image src="/images/innovation.webp" alt="STUDENT DRIVEN SOCIETY" width={80} height={80} />
-                                </div>
+                                </div> */}
                                 <h2 className="overlay-title">
                                   STUDENT DRIVEN SOCIETY
                                 </h2>
-                                <p>This is the overlay content that appears on hover.</p>
+                                <p>Empowering students to lead, connect, and enrich school culture through collaborative societies.</p>
                               </div>
                             </div>
                             <div className="content_box trans">
@@ -60,13 +59,13 @@ const HomeEvolveSection = () => {
                           <div className="service_box type_four color_two hover_1_get hover_1">
                             <div className="image-container">
                               <div className="overlay">
-                                <div className="icon trans">
+                                {/* <div className="icon trans">
                                   <Image src="/images/CSR.webp" alt="CSR INITIATIVE" width={80} height={80} />
-                                </div>
+                                </div> */}
                                 <h2 className="overlay-title">
                                   CSR INITIATIVE
                                 </h2>
-                                {/* <p>This is the overlay content that appears on hover.</p> */}
+                                <p>Inspiring social responsibility and community impact through student-driven outreach programs.</p>
                               </div>
                             </div>
                             <div className="content_box trans">
@@ -90,13 +89,13 @@ const HomeEvolveSection = () => {
                           <div className="service_box type_four color_two hover_1_get hover_1">
                             <div className="image-container">
                               <div className="overlay">
-                                <div className="icon trans">
+                                {/* <div className="icon trans">
                                   <Image src="/images/self-reflection.webp" alt="STUDENT CABINET" width={80} height={80} />
-                                 </div>
+                                 </div> */}
                                 <h2 className="overlay-title">
                                   STUDENT CABINET
                                 </h2>
-                                {/* <p>This is the overlay content that appears on hover.</p> */}
+                                <p>A platform for student leaders to make a difference, fostering democracy and decision-making.</p>
                               </div>
                             </div>
                             <div className="content_box trans">
@@ -120,13 +119,13 @@ const HomeEvolveSection = () => {
                           <div className="service_box type_four color_two hover_1_get hover_1">
                             <div className="image-container">
                               <div className="overlay">
-                                <div className="icon trans">
+                                {/* <div className="icon trans">
                                   <Image src="/images/innovation.webp" alt="MUN" width={80} height={80} />
-                                 </div>
+                                 </div> */}
                                 <h2 className="overlay-title">
                                   MUN
                                 </h2>
-                                {/* <p>This is the overlay content that appears on hover.</p> */}
+                                <p>Global perspectives and debate skills nurtured through the Ramagya Model United Nations conference.</p>
                               </div>
                             </div>
                             <div className="content_box trans">

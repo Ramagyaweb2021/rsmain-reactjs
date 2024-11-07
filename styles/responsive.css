@@ -432,7 +432,7 @@ body {
       color: var(--color-set-green);
       font-weight: 500;
       font-size: 13px;
-      padding: 5px;
+      /* padding: 5px; */
   }
   .custom-section {
       padding: 15px;

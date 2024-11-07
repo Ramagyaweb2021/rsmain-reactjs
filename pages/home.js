@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import ReactFullpage from "@fullpage/react-fullpage";
 import styles from "../styles/Home.module.css";
@@ -18,9 +18,9 @@ import HomeAwardsSection from "./components/HomeAwardsSection";
 import HomeTestimonialSection from "./components/HomeTestimonialSection";
 import HomeSectionFooter from "./components/HomeSectionFooter";
 import OfferPopup from "./components/OfferPopup";
-import 'animate.css';
+// import 'animate.css';
 
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
+// const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const ScrollspyMenu = ({ sections, activeSection }) => {
   return (
@@ -37,6 +37,7 @@ const ScrollspyMenu = ({ sections, activeSection }) => {
 };
 
 export default function Home() {
+  
   const [activeSection, setActiveSection] = useState("slider");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -58,11 +59,11 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    const WOWJS = require('wowjs');
-    const wow = new WOWJS.WOW({ live: false });
-    wow.init();
-  }, []);
+  // useEffect(() => {
+  //   const WOWJS = require('wowjs');
+  //   const wow = new WOWJS.WOW({ live: false });
+  //   wow.init();
+  // }, []);
 
   const onLeave = (origin, destination, direction) => {
     setActiveSection(destination.anchor);
@@ -114,7 +115,8 @@ export default function Home() {
           responsiveWidth={1000} // Keep as backup
           onLeave={onLeave}
           afterLoad={afterLoad}
-          scrollingSpeed={700}
+          scrollBar={true}
+          scrollingSpeed={100}
           render={() => (
             <ReactFullpage.Wrapper>
               <div className="section">

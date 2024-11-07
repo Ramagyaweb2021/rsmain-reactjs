@@ -59,8 +59,7 @@ const HomeLeadSection = () => {
                 <h1 className="">
                   LEAD
                   <span className="lineclass" />
-                  <span
-                    className="sub-heading">
+                  <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
                     MEET OUR ALUMNI
                   </span>
                 </h1>

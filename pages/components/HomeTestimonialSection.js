@@ -122,7 +122,7 @@ const HomeTestimonialSection = () => {
         <div className="col-md-12 learn text-center text-md-center">
           <h1 className="main-heading"> TESTIMONIALS
             <span className="lineclass" />
-            <span className="sub-heading">
+            <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
               WHAT LEGENDS SAY ABOUT US
             </span>
           </h1>

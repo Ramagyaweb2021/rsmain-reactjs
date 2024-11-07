@@ -72,7 +72,7 @@ const HomeGallerySection = () => {
               <h1>
                 GALLERY
                 <span className="lineclass" />
-                <span className="sub-heading">
+                <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
                   OUR CAPTURED MEMORY
                 </span>
               </h1>

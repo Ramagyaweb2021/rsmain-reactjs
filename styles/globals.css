@@ -1026,6 +1026,8 @@ ul {
   transition: opacity 0.3s ease;
   z-index: 1;
   border-radius: 1px;
+  /* height: 140px; */
+  /* overflow-y: scroll; */
 }
 .image-container:hover .overlay {
   opacity: 1;
@@ -1368,9 +1370,10 @@ ul {
 }
 .footer-bottom {
   margin-top: 35px;
-  border-top: 1px solid #e9f5f8;
+  border-top: 1px solid var(--color-set-green);
+  color: var(--color-set-green);
   /* padding-top: 20px; */
-  color: rgb(255 255 255 / 0.7);
+  /* color: rgb(255 255 255 / 0.7); */
 }
 .footer-bottom a {
   text-decoration: none;
