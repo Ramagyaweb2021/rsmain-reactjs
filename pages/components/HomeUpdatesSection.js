@@ -216,10 +216,10 @@ const HomeUpdatesSection = () => {
                       <Slider {...settings}>
                         {workshopActivitySlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
-                            <div className="col-md-5 image-resize">
+                            <div className="col-lg-5 col-md-5 col-12 image-resize">
                               <Image src={slide.imgSrc} alt="Workshop/Activity" width={430} height={306} />
                             </div>
-                            <div className="col-md-7">
+                            <div className="col-lg-7 col-md-7 col-12">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="https://ramagyaschoolblog.com/category/workshop/" target='_blank' className="btn custom-btn">View More</a>

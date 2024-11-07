@@ -449,9 +449,9 @@ body {
   .scrollspyMenu{
     display: none;
   }
-  .row-school-updates{
+  /* .row-school-updates{
     display: inline-block;
-  }
+  } */
   .footer {
       padding: 15px 0 0 10px;
   }
