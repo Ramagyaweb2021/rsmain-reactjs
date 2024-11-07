@@ -19,6 +19,10 @@ body {
     /* margin-top: -88px; */
     height: 100%;
   }
+  .explore .bluebox {
+    /* height: 115px; */
+    margin-top: 4px;
+  }
   .learn h1,
   .explore h1,
   .innovate h1 {
@@ -65,7 +69,7 @@ body {
   }
   .main-video {
     /* margin-top: -88px; */
-    height: 600px;
+    height: 650;
     width: 100%;
   }
   .learn h1,
@@ -175,6 +179,7 @@ body {
   }
   .explore .bluebox {
     height: 115px;
+    margin-top: 4px;
       /* height: 115px; */
       /* border-radius: 5px; */
   }
@@ -265,6 +270,14 @@ body {
   } */
 }
 @media only screen and (max-width: 767px) {
+/************************************************************************yesterday added css */
+ body, html {
+  overflow-x: hidden;
+}
+.section, .container, .scrollspyMenu {
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
   body {
       background-color: #fff;
       font-size: 12px;
@@ -288,6 +301,30 @@ body {
     font-size: 11px;
     padding: 0;
 }
+.my-0 {
+    margin-top: 4rem !important;
+    margin-bottom: 0rem !important;
+}
+.my-0-1 {
+    margin-top: 4rem !important;
+    margin-bottom: 5rem !important;
+}
+.my-1 {
+    margin-top: 4rem !important;
+    margin-bottom: 0rem !important;
+}
+.my-2 {
+    margin-top: 4rem !important;
+    margin-bottom: 5rem !important;
+}
+.feature-title{
+    font-size: 12px;
+}
+.feature-description{
+    height: 50px; 
+    overflow-y: scroll;
+    /* display: none; */
+}
 
   .learn #approach-mobile a {
       background-color: var(--color-set-green);
@@ -297,11 +334,15 @@ body {
       background-color: var(--color-set-yellow);
       color: var(--color-set-green);
   }
+  /* .footer p {
+    font-size: 14px !important;
+} */
   .footer-social-media {
       font-size: 12px;
   }
   .main-video {
       margin-top: 0;
+      height: auto;
   }
   .downsection {
       display: none;
@@ -406,6 +447,9 @@ body {
     padding: 5px 0 0 0; /* Adjust as needed for mobile gutter */
   }
   .scrollspyMenu{
+    display: none;
+  }
+  .row-school-updates{
     display: inline-block;
   }
   .footer {
@@ -423,7 +467,7 @@ body {
 @media only screen and (max-width: 414px) {
   body {
       background-color: #fff;
-      font-size: 10px;
+      font-size: 12px;
   }
   .navbar-brand img {
       width: 170px;

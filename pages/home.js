@@ -1,8 +1,4 @@
 import { useEffect, useState } from "react";
-// import Image from 'next/image'
-// import Link from 'next/link'
-// import Button from 'react-bootstrap/Button';
-// import Dropdown from 'react-bootstrap/Dropdown';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -26,7 +22,6 @@ import 'animate.css';
 
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
-// ScrollspyMenu component integrated directly into Home.js
 const ScrollspyMenu = ({ sections, activeSection }) => {
   return (
     <nav className="scrollspyMenu sticky">
@@ -43,15 +38,23 @@ const ScrollspyMenu = ({ sections, activeSection }) => {
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("slider");
-  
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1000); // Adjust width as needed
+    };
+    handleResize(); // Check screen size on load
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50); // Adjust scroll position as needed
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -73,7 +76,6 @@ export default function Home() {
     }
   };
 
-  // Show ScrollspyMenu only after the "slider" section
   const showMainMenu = ["branch", "explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
   const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials"].includes(activeSection);
 
@@ -99,66 +101,83 @@ export default function Home() {
         />
       )}
 
-      <ReactFullpage
-        debug={false}
-        anchors={[
-          "slider", "branch", "explore", "experiment", "innovate",
-          "evolve", "lead", "difference", "gallery", "awards", 
-          "school-updates", "testimonials", "footer"
-        ]}
-        navigation={true}
-        licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
-        responsiveWidth={1000}
-        onLeave={onLeave}
-        afterLoad={afterLoad}
-        scrollingSpeed={700}
-        render={() => (
-          <ReactFullpage.Wrapper>
-            {/* <div className="section" id="header">
-            <Header />
-            </div> */}
-             <div className="section">
-              <HomeVideoSection />
-            </div>
-            <div className="section">
-              <HomeSchoolBranchSection />
-            </div>
-            <div className="learn section fp-section fp-table">
-              <HomeExploreSection />
-            </div>
-            <div className="learn section fp-section fp-table">
-              <HomeExperimentSection />
-            </div>
-            <div className="learn section fp-section fp-table">
-              <HomeInnovateSection />
-            </div>
-            <div className="learn section fp-section fp-table">
-              <HomeEvolveSection />
-            </div>
-            <div className="learn section fp-section fp-table">
-              <HomeLeadSection />
-            </div>
-            <div className="learn section fp-section fp-table">
-              <HomeDifferenceSection />
-            </div>
-            <div className="learn section fp-section fp-table">
-              <HomeGallerySection />
-            </div>
-            <div className="learn section fp-section fp-table">
-              <HomeAwardsSection />
-            </div>
-            <div className="learn section fp-section fp-table">
-              <HomeUpdatesSection />
-            </div>
-            <div className="learn section fp-section fp-table">
-              <HomeTestimonialSection />
-            </div>
-            <div className="footer section fp-section fp-table" style={{ backgroundColor: "#fff" }}>
-              <HomeSectionFooter />
-            </div>
-          </ReactFullpage.Wrapper>
-        )}
-      />
+      {!isMobile ? (
+        <ReactFullpage
+          debug={false}
+          anchors={[
+            "slider", "branch", "explore", "experiment", "innovate",
+            "evolve", "lead", "difference", "gallery", "awards", 
+            "school-updates", "testimonials", "footer"
+          ]}
+          navigation={true}
+          licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
+          responsiveWidth={1000} // Keep as backup
+          onLeave={onLeave}
+          afterLoad={afterLoad}
+          scrollingSpeed={700}
+          render={() => (
+            <ReactFullpage.Wrapper>
+              <div className="section">
+                <HomeVideoSection />
+              </div>
+              <div className="section">
+                <HomeSchoolBranchSection />
+              </div>
+              <div className="learn section fp-section fp-table">
+                <HomeExploreSection />
+              </div>
+              <div className="learn section fp-section fp-table">
+                <HomeExperimentSection />
+              </div>
+              <div className="learn section fp-section fp-table">
+                <HomeInnovateSection />
+              </div>
+              <div className="learn section fp-section fp-table">
+                <HomeEvolveSection />
+              </div>
+              <div className="learn section fp-section fp-table">
+                <HomeLeadSection />
+              </div>
+              <div className="learn section fp-section fp-table">
+                <HomeDifferenceSection />
+              </div>
+              <div className="learn section fp-section fp-table">
+                <HomeGallerySection />
+              </div>
+              <div className="learn section fp-section fp-table">
+                <HomeAwardsSection />
+              </div>
+              <div className="learn section fp-section fp-table">
+                <HomeUpdatesSection />
+              </div>
+              <div className="learn section fp-section fp-table">
+                <HomeTestimonialSection />
+              </div>
+              <div className="footer section fp-section fp-table">
+                <HomeSectionFooter />
+              </div>
+            </ReactFullpage.Wrapper>
+          )}
+        />
+      ) : (
+        // Render alternative content when fullpage.js is disabled
+        <div>
+          <HomeVideoSection />
+          <HomeSchoolBranchSection />
+          <HomeExploreSection />
+          <HomeExperimentSection />
+          <HomeInnovateSection />
+          {/* <innovateformobile/> */}
+          <HomeEvolveSection />
+          <HomeLeadSection />
+          <HomeDifferenceSection />
+          <HomeGallerySection />
+          <HomeAwardsSection />
+          <HomeUpdatesSection />
+          <HomeTestimonialSection />
+          <HomeSectionFooter />
+        </div>
+      )}
     </div>
   );
 }

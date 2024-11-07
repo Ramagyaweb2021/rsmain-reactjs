@@ -56,7 +56,7 @@ const HomeExploreSection = () => {
                   </div>
                 </div>
 
-                <div className="d-flex justify-content-center align-items-center mt-30">
+                <div className="d-flex justify-content-center align-items-center mt-1">
                   <div className="learn-more-button">
                     <a href="#">Learn More</a>
                   </div>

@@ -66,10 +66,10 @@ const HomeGallerySection = () => {
   return (
     <>
       <div className="fp-tableGallery">
-        <div className="container my-0">
+        <div className="container learn my-0">
           <div className="row">
           <div className="col-sm-12 position-r">
-              <h1 className="">
+              <h1>
                 GALLERY
                 <span className="lineclass" />
                 <span className="sub-heading">
@@ -80,8 +80,8 @@ const HomeGallerySection = () => {
             </div>
           </div>
         </div>
-        <div className="container my-0">
-          <div className="d-flex justify-content-center mb-4">
+        <div className="container1 my-0">
+          <div className="d-flex justify-content-center mb-1">
             <button className={`btn mx-2 ${activeGallery === 'Images' ? 'btn-warning-gallery' : 'btn-outline-warning'}`} 
                     onClick={() => setActiveGallery('Images')}>
               Image Gallery
