@@ -28,7 +28,7 @@ const HomeSectionFooter = () => {
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">For Enquiries</p>
                 <p>Contact No. <a href="tel:+918010333555">+91-8010333555</a></p>
-                <p className="footer-heading">Social</p>
+                {/* <p className="footer-heading">Social</p> */}
                   <div className="social-icons">
                   {/* <ul>
                     <li className="co_icon">

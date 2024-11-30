@@ -359,7 +359,7 @@ body {
       font-size: 12px;
   }
   .main-video {
-      margin-top: 0;
+      margin-top: 66px;
       height: auto;
   }
   .downsection {
@@ -467,6 +467,34 @@ body {
   .scrollspyMenu{
     display: none;
   }
+  .my-custom-campuses{
+    padding-top: 4.5em;
+  }
+  .my-custom-explore{
+    padding-top: 4.5em;
+  }
+  .my-custom-experiment{
+    padding-top: 4.5em;
+  }
+  .my-custom-innovate {
+    padding-top: 4.5em;
+}
+.my-custom-evolve {
+    padding-top: 4.5em;
+}
+.my-custom-difference{
+    padding-top: 4.5em;
+}
+.my-custom-gallery {
+    padding-top: 4.5em;
+}
+.my-custom-awards{
+    padding-top: 4.5em;
+}
+.my-custom-school-updates{
+    padding-top: 4.5em;
+}
+
   .banner-sec{
     min-height: 160px;
     padding: 0;
@@ -475,7 +503,7 @@ body {
     font-size: 24px;
   }
   .banner-text{
-    padding-top: 65px;
+    padding-top: 80px;
   }
   .nav-link {
     font-size: 10px;
@@ -500,12 +528,17 @@ body {
       padding-bottom: 20px;
     }
   } */
-  
+  .fixed-top{
+    background: #ffff !important;
+  }
 }
 @media only screen and (max-width: 414px) {
   body {
       background-color: #fff;
       font-size: 12px;
+  }
+  .fixed-top{
+    background: #ffff !important;
   }
   .navbar-brand img {
       width: 170px;

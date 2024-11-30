@@ -1479,8 +1479,8 @@ title_3 trans {
   align-items: center;
   background-color: var(--color-set-green) 80;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
 }
 .play-button-overlay:hover {
@@ -2620,6 +2620,7 @@ hr {
 .next-button::before {
   background-image: url('/images/next.png');
 }
+
 
 
 

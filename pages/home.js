@@ -150,24 +150,16 @@ export default function Home() {
             "evolve", "lead", "difference", "gallery", "awards", 
             "school-updates", "testimonials", "footer"
           ]}
-          navigation={true}
-          licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
+          navigation={false}
+          // licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
           responsiveWidth={1000}
           onLeave={onLeave}
           afterLoad={afterLoad}
           scrollBar={true}  // Make sure to disable custom scrollbar
           scrollingSpeed={900}  // Adjust scrolling speed to avoid skipping sections
           fitToSection={true}  // Ensure the scroll stops on each section
-          normalScrollElements=".normal-scroll"  // Allow normal scrolling on specific sections if needed
+          //normalScrollElements=".normal-scroll"  // Allow normal scrolling on specific sections if needed
           render={() => (
-          // navigation={false}
-          // licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
-          // responsiveWidth={1000} // Keep as backup
-          // onLeave={onLeave}
-          // afterLoad={afterLoad}
-          // scrollBar={true}
-          // scrollingSpeed={600}
-          // render={() => (
             <ReactFullpage.Wrapper>
               <div className="section">
                 <HomeVideoSection />
