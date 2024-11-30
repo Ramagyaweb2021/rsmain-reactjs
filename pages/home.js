@@ -151,13 +151,13 @@ export default function Home() {
             "school-updates", "testimonials", "footer"
           ]}
           navigation={false}
-          // licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
           responsiveWidth={1000}
           onLeave={onLeave}
           afterLoad={afterLoad}
           scrollBar={true}  // Make sure to disable custom scrollbar
-          scrollingSpeed={900}  // Adjust scrolling speed to avoid skipping sections
-          fitToSection={true}  // Ensure the scroll stops on each section
+          scrollingSpeed={700}  // Adjust scrolling speed to avoid skipping sections
+          //scrollingSpeed={900}  // Adjust scrolling speed to avoid skipping sections
+          //fitToSection={true}  // Ensure the scroll stops on each section
           //normalScrollElements=".normal-scroll"  // Allow normal scrolling on specific sections if needed
           render={() => (
             <ReactFullpage.Wrapper>
