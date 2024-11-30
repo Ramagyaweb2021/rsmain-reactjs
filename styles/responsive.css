@@ -11,8 +11,8 @@ body {
   .container-xxl {
     max-width: 1250px;
     /* max-width: 1400px; */
-    padding: 0 15px;
-    margin: 0 auto;
+    /* padding: 0 15px;
+    margin: 0 auto; */
   }
  
   .main-video {
@@ -21,7 +21,7 @@ body {
   }
   .explore .bluebox {
     /* height: 115px; */
-    margin-top: 4px;
+    margin-top: 0;
   }
   .learn h1,
   .explore h1,
@@ -45,9 +45,9 @@ body {
   .container-xxl {
       max-width: 1140px;
   }
-  .section {
+  /* .section {
     min-height: 600px;
-  }
+  } */
   /* .video-banner{
     padding: 0; 
     margin: 0; 
@@ -69,8 +69,14 @@ body {
   }
   .main-video {
     /* margin-top: -88px; */
-    height: 650;
+    height: 650px;
     width: 100%;
+  }
+  .banner-sec{
+    min-height: 400px;
+  }
+  .banner-text{
+    padding-top: 185px;
   }
   .learn h1,
   .explore h1,
@@ -91,8 +97,10 @@ body {
   .explore h1 > span.lineclass::before,
   .innovate h1 > span.lineclass::before,
   .evolve h1 > span.lineclass::before {
-      height: 40px;
-      top: -20px;
+    height: 30px;
+    top: -15px;
+      /* height: 40px;
+      top: -20px; */
   }
   .learn .approach a {
       padding: 8px 5px;
@@ -132,6 +140,9 @@ body {
   .slider-item img {
       height: 175px;
       border-radius: 1px;
+  }
+  .slider-image img{
+    height: auto;
   }
   .play-button {
       height: auto !important;
@@ -179,7 +190,7 @@ body {
   }
   .explore .bluebox {
     height: 115px;
-    margin-top: 4px;
+    /* margin-top: 4px; */
       /* height: 115px; */
       /* border-radius: 5px; */
   }
@@ -188,7 +199,8 @@ body {
       /* top: 57px; */
   }
   .explore ol.carousel-catg li {
-      font-size: 14px;
+      font-size: 11px;
+      margin-bottom: 9px;  
   }
   .slide1 {
     height: auto;
@@ -228,6 +240,9 @@ body {
   .image-resize img{
     height: auto !important;
  }
+ .h3, h3 {
+    font-size: 1.2rem;
+}
 }
 @media only screen and (max-width: 1199px) {
   body {
@@ -282,6 +297,9 @@ body {
       background-color: #fff;
       font-size: 12px;
   }
+  /* h1, h2, h3, h4, h5, h6{
+    font-size: 22px !important;
+  } */
   .navbar-brand img {
       width: 190px;
       margin: 0 auto;
@@ -318,7 +336,7 @@ body {
     margin-bottom: 5rem !important;
 }
 .feature-title{
-    font-size: 12px;
+    font-size: 12px !important;
 }
 .feature-description{
     height: 50px; 
@@ -412,7 +430,7 @@ body {
   }
 
   .title_24 {
-      font-size: 13px;
+      font-size: 13px !important;
       padding: 5px;
       margin-bottom: 5px;
       line-height: 20px;
@@ -431,7 +449,7 @@ body {
       margin: 0;
       color: var(--color-set-green);
       font-weight: 500;
-      font-size: 13px;
+      font-size: 13px !important;
       /* padding: 5px; */
   }
   .custom-section {
@@ -449,6 +467,26 @@ body {
   .scrollspyMenu{
     display: none;
   }
+  .banner-sec{
+    min-height: 160px;
+    padding: 0;
+  }
+  .banner-text h1{
+    font-size: 24px;
+  }
+  .banner-text{
+    padding-top: 65px;
+  }
+  .nav-link {
+    font-size: 10px;
+    padding: 3px 1px;
+}
+.our-guiding-section .learn h2{
+    font-size: 22px;
+}
+.about-us-section{
+    padding: 0 !important;
+}
   /* .row-school-updates{
     display: inline-block;
   } */

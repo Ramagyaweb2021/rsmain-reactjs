@@ -20,9 +20,10 @@ const HomeAwardsSection = () => {
   }, []); // Empty dependency array ensures this runs once on mount
   return (
     <>
-     
-      <div className='fp-tableAwards'>
-      <Container className='learn my-1'>
+       <div className="learn fp-section tableAwards">
+       <Container className="container learn my-custom-awards">
+      {/* <div className='fp-tableAwards'>
+      <Container className='learn my-1'> */}
         {/* <Container className='bg-tropical-mist-awards p-0'> */}
         <div className="row">
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -52,7 +53,7 @@ const HomeAwardsSection = () => {
         </div>
         <div className="d-flex justify-content-center align-items-center mt-1">
             <div className="learn-more-button">
-              <a href="#">View More</a>
+              <a href="awards-and-recognition">View More</a>
             </div>
           </div>
         </Container>

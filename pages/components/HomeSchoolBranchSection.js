@@ -18,9 +18,10 @@ const HomeSchoolBranchSection = () => {
   
   return (
     <>
-     
-       <div className="fp-tableCell">
-        <div className="container learn my-1">
+     <div className="learn fp-section tableCampuses"> 
+        <div className="container learn my-custom-campuses">
+       {/* <div className="fp-tableCell">
+        <div className="container learn my-1"> */}
        <h1 className="main-heading"> OUR CAMPUSES
           <span className="lineclass" />
           <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>

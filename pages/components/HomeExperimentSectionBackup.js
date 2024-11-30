@@ -147,7 +147,7 @@ function SingleRowSlider() {
       {/* Slider first row section (Right to Left) */}
       <Slider ref={sliderRef} {...rightToLeftSettings}>
         {/* Slide 1 */}
-        <div className="slide">
+        <div className="slide-1">
           <div className="row slide-content">
             <div className="col-md-6 col-sm-12 col-6 image-wrapper">
               <Image
@@ -169,7 +169,7 @@ function SingleRowSlider() {
           </div>
         </div>
         {/* Slide 2 */}
-        <div className="slide">
+        <div className="slide-1">
           <div className="row slide-content">
             <div className="col-md-6 col-sm-12 col-6 text-wrapper">
               <div className="box">
@@ -191,7 +191,7 @@ function SingleRowSlider() {
           </div>
         </div>
         {/* Slide 3 */}
-        <div className="slide">
+        <div className="slide-1">
           <div className="row slide-content">
             <div className="col-md-12 col-sm-12 image-wrapper">
               <Image
@@ -258,7 +258,7 @@ function SingleRowSlider() {
           {/* Third Column (Image and Text Slider - Left to Right) */}
           <div className="col-12 col-md-4 mobile-gutter g-0 g-md-2">
             <Slider ref={sliderRef3} {...leftToRightSettings}>
-              <div className="slide">
+              <div className="slide-1">
                 <div className="row slide-content">
                   <div className="col-md-6 col-sm-12 col-6 image-wrapper">
                     <Image  
@@ -279,7 +279,7 @@ function SingleRowSlider() {
                   </div>
                 </div>
               </div>
-              <div className="slide">
+              <div className="slide-1">
                 <div className="row slide-content">
                   <div className="col-md-6 col-sm-12 col-6 image-wrapper">
                     <Image
@@ -310,7 +310,7 @@ function SingleRowSlider() {
        <div className="container-fluid mt-20" id="gutter-space">
         <Slider ref={sliderRef4} {...RtlSettings}>
           {/* Slide 1 */}
-          <div className="slide">
+          <div className="slide-1">
             <div className="row slide-content">
               <div className="col-md-6 col-sm-12 col-6 image-wrapper">
                 <Image
@@ -332,7 +332,7 @@ function SingleRowSlider() {
             </div>
           </div>
           {/* Slide 2 */}
-          <div className="slide">
+          <div className="slide-1">
             <div className="row slide-content">
               <div className="col-md-12 col-sm-12 image-wrapper">
                 <Image
@@ -346,7 +346,7 @@ function SingleRowSlider() {
             </div>
           </div>
           {/* Slide 3 */}
-          <div className="slide">
+          <div className="slide-1">
             <div className="row slide-content">
               <div className="col-md-6 col-sm-12 col-6 image-wrapper">
                 <Image

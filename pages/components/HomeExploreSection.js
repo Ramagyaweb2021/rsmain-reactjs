@@ -17,8 +17,8 @@ const HomeExploreSection = () => {
   return (
     <>
       
-        <div className="fp-tableCell">
-          <div className="container learn my-2">
+        <div className="learn fp-section tableExplore">
+          <div className="container learn my-custom-explore">
             <div className="row">
               <div className="col-sm-12 position-r">
                 <h1>
@@ -36,29 +36,29 @@ const HomeExploreSection = () => {
                 <div className="row g-0 justify-content-center">
                   <div className="col-6 col-sm-6 col-md-3 g-0">
                     <div className="approach">
-                      <a href="#">Primary</a>
+                      <a href="explore">Primary</a>
                     </div>
                   </div>
                   <div className="col-6 col-sm-6 col-md-3">
                     <div className="approach-1" id="approach-mobile">
-                      <a href="#">Middle</a>
+                      <a href="explore">Middle</a>
                     </div>
                   </div>
                   <div className="col-6 col-sm-6 col-md-3">
                     <div className="approach" id="approach-mobile">
-                      <a href="#">Secondary</a>
+                      <a href="explore">Secondary</a>
                     </div>
                   </div>
                   <div className="col-6 col-sm-6 col-md-3">
                     <div className="approach-1" id="approach-1-mobile">
-                      <a href="#">Senior Secondary</a>
+                      <a href="explore">Senior Secondary</a>
                     </div>
                   </div>
                 </div>
 
                 <div className="d-flex justify-content-center align-items-center mt-1">
                   <div className="learn-more-button">
-                    <a href="#">Learn More</a>
+                    <a href="explore">Learn More</a>
                   </div>
                 </div>
               </div>

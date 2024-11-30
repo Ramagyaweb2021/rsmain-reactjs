@@ -24,8 +24,10 @@ const HomeDifferenceSection = () => {
   return (
     <>
   
-    <div className='fp-tableDifference'>
-    <Container className='learn my-0-1'>
+    <div className="learn fp-section tableDifference">
+    <Container className="container learn my-custom-difference">
+    {/* <div className='fp-tableDifference'>
+    <Container className='learn my-0-1'> */}
       {/* <Container className='bg-tropical-mist p-0'> */}
       <div className="row">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -49,14 +51,14 @@ const HomeDifferenceSection = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/difference-we-make/poinner-in-sports.png" alt="difference-we-make" width={430} height={306}/>
+                    <Image src="/images/difference-we-make/poinner-in-sports.webp" alt="difference-we-make" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Pioneer in Sports</h2>
                       <p className='tabination-text'>
                       We pride ourselves on being a pioneer in sports education, offering students a rich array of athletic opportunities that foster teamwork, discipline, and physical fitness. Our state-of-the-art sports facilities are equipped to cater to a variety of interests and skill levels, ensuring that every student can find their passion.
                       </p>
-                      <a href="#" className="btn custom-btn">Learn More</a>
+                      <a href="poineer-in-sports" className="btn custom-btn">Learn More</a>
                   </div>
               </div>
             </div>
@@ -67,14 +69,14 @@ const HomeDifferenceSection = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/difference-we-make/baalsaathi.png" alt="baalsaathi" width={430} height={306}/>
+                    <Image src="/images/difference-we-make/baalsaathi.webp" alt="baalsaathi" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Baal Saathee (Mental Health)</h2>
                       <p className='tabination-text'>
                       The Baal Saathee initiative is a cornerstone of our commitment to nurturing the socio-emotional health of our students. By integrating cognitive, emotional, and social strategies, we create a supportive environment that fosters overall well-being. 
                       </p>
-                      <a href="#" className="btn custom-btn">Learn More</a>
+                      <a href="baalsaathi" className="btn custom-btn">Learn More</a>
                   </div>
               </div>
             </div>
@@ -85,14 +87,14 @@ const HomeDifferenceSection = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/difference-we-make/mental-health-club.png" alt="mental-health-club" width={430} height={306}/>
+                    <Image src="/images/difference-we-make/mental-health-club.webp" alt="mental-health-club" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Mental Health Club</h2>
                       <p className='tabination-text'>
                       Our Mental Health Club is dedicated to promoting mental well-being and providing students with practical tools to manage stress and build resilience. Key aspects of the club include Workshops and Activities, Peer Support and Collaboration with Professionals.
                       </p>
-                      <a href="#" className="btn custom-btn">Learn More</a>
+                      <a href="mental-health-club" className="btn custom-btn">Learn More</a>
                   </div>
               </div>
             </div>
@@ -103,14 +105,14 @@ const HomeDifferenceSection = () => {
             <div className="container">
               <div className="row align-items-center">
                   <div className="col-md-5 image-resize">
-                    <Image src="/images/difference-we-make/life-skills.png" alt="life-skills" width={430} height={306}/>
+                    <Image src="/images/difference-we-make/life-skills.webp" alt="life-skills" width={430} height={306}/>
                   </div>
                   <div className="col-md-7">
                       <h2 className="fw-bold mb-3">Life Skills</h2>
                       <p className='tabination-text'>
                       At Ramagya School, we recognize that life skills are essential for personal and professional success. Our comprehensive life skills program is designed to empower students with practical skills that will serve them throughout their lives.
                       </p>
-                      <a href="#" className="btn custom-btn">Learn More</a>
+                      <a href="life-skills" className="btn custom-btn">Learn More</a>
                   </div>
               </div>
             </div>

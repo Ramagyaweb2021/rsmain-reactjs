@@ -13,7 +13,8 @@ const HomeVideoSection = () => {
   };
   return (
     <>
-        <div className="fp-tableCell">
+    <div className="learn fp-section tableVideo"> 
+        <div className="container-fluid learn my-custom-video">
          <div className='video-banner'>
          <video
             className="main-video"
@@ -42,7 +43,7 @@ const HomeVideoSection = () => {
           />
          </div>
         </div>
-
+</div>
         {/* Target section to scroll to */}
       <div ref={scrollToSection} className="branch">
        

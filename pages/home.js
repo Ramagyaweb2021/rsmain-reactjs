@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import ReactFullpage from "@fullpage/react-fullpage";
 import styles from "../styles/Home.module.css";
@@ -18,23 +18,60 @@ import HomeAwardsSection from "./components/HomeAwardsSection";
 import HomeTestimonialSection from "./components/HomeTestimonialSection";
 import HomeSectionFooter from "./components/HomeSectionFooter";
 import OfferPopup from "./components/OfferPopup";
-// import 'animate.css';
+import 'animate.css';
 
-// const WOW = dynamic(() => import('wowjs'), { ssr: false });
+const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const ScrollspyMenu = ({ sections, activeSection }) => {
   return (
-    <nav className="scrollspyMenu sticky">
+    <nav className="scrollspyMenu sticky animate__animated animate__fadeInDown">
       <ul>
         {sections.map((section, index) => (
-          <li key={index} className={activeSection === section ? 'active' : ''}>
-            <a href={`#${section}`}>{section.charAt(0).toUpperCase() + section.slice(1)}</a>
+          <li
+            key={index}
+            className={activeSection === section ? "active" : ""}
+            style={{
+              animationDelay: `${index * 0.2}s`, // Apply dynamic delay based on index
+            }}
+          >
+            <a href={`#${section}`}>
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </a>
           </li>
         ))}
       </ul>
     </nav>
   );
 };
+
+
+// const ScrollspyMenu = ({ sections, activeSection }) => {
+//   return (
+//     <nav className={`scrollspyMenu sticky animate__animated animate__fadeInDown`}>
+//       <ul>
+//         {sections.map((section, index) => (
+//           <li key={index} className={activeSection === section ? 'active' : ''}>
+//             <a href={`#${section}`}>{section.charAt(0).toUpperCase() + section.slice(1)}</a>
+//           </li>
+//         ))}
+//       </ul>
+//     </nav>
+//   );
+// };
+
+// const ScrollspyMenu = ({ sections, activeSection }) => {
+//   return (
+//     <nav className="scrollspyMenu sticky">
+//       <ul>
+//         {sections.map((section, index) => (
+//           <li key={index} className={activeSection === section ? 'active' : ''}>
+//             <a href={`#${section}`}>{section.charAt(0).toUpperCase() + section.slice(1)}</a>
+//           </li>
+//         ))}
+//       </ul>
+//     </nav>
+//   );
+// };
 
 export default function Home() {
   
@@ -59,11 +96,11 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // useEffect(() => {
-  //   const WOWJS = require('wowjs');
-  //   const wow = new WOWJS.WOW({ live: false });
-  //   wow.init();
-  // }, []);
+  useEffect(() => {
+    const WOWJS = require('wowjs');
+    const wow = new WOWJS.WOW({ live: false });
+    wow.init();
+  }, []);
 
   const onLeave = (origin, destination, direction) => {
     setActiveSection(destination.anchor);
@@ -77,8 +114,11 @@ export default function Home() {
     }
   };
 
-  const showMainMenu = ["branch", "explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
+  const showMainMenu = ["explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
   const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials"].includes(activeSection);
+
+  // const showMainMenu = ["branch", "explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
+  // const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials"].includes(activeSection);
 
   return (
     <div className={styles.container}>
@@ -112,12 +152,22 @@ export default function Home() {
           ]}
           navigation={true}
           licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
-          responsiveWidth={1000} // Keep as backup
+          responsiveWidth={1000}
           onLeave={onLeave}
           afterLoad={afterLoad}
-          scrollBar={true}
-          scrollingSpeed={100}
+          scrollBar={true}  // Make sure to disable custom scrollbar
+          scrollingSpeed={900}  // Adjust scrolling speed to avoid skipping sections
+          fitToSection={true}  // Ensure the scroll stops on each section
+          normalScrollElements=".normal-scroll"  // Allow normal scrolling on specific sections if needed
           render={() => (
+          // navigation={false}
+          // licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
+          // responsiveWidth={1000} // Keep as backup
+          // onLeave={onLeave}
+          // afterLoad={afterLoad}
+          // scrollBar={true}
+          // scrollingSpeed={600}
+          // render={() => (
             <ReactFullpage.Wrapper>
               <div className="section">
                 <HomeVideoSection />
@@ -125,37 +175,37 @@ export default function Home() {
               <div className="section">
                 <HomeSchoolBranchSection />
               </div>
-              <div className="learn section fp-section fp-table">
+              <div className="section">
                 <HomeExploreSection />
               </div>
-              <div className="learn section fp-section fp-table">
+              <div className="section">
                 <HomeExperimentSection />
               </div>
-              <div className="learn section fp-section fp-table">
+              <div className="section">
                 <HomeInnovateSection />
               </div>
-              <div className="learn section fp-section fp-table">
+              <div className="section">
                 <HomeEvolveSection />
               </div>
-              <div className="learn section fp-section fp-table">
+              <div className="section">
                 <HomeLeadSection />
               </div>
-              <div className="learn section fp-section fp-table">
+              <div className="section">
                 <HomeDifferenceSection />
               </div>
-              <div className="learn section fp-section fp-table">
+              <div className="section">
                 <HomeGallerySection />
               </div>
-              <div className="learn section fp-section fp-table">
+              <div className="section">
                 <HomeAwardsSection />
               </div>
-              <div className="learn section fp-section fp-table">
+              <div className="section">
                 <HomeUpdatesSection />
               </div>
-              <div className="learn section fp-section fp-table">
+              <div className="section">
                 <HomeTestimonialSection />
               </div>
-              <div className="footer section fp-section fp-table">
+              <div className="section footer">
                 <HomeSectionFooter />
               </div>
             </ReactFullpage.Wrapper>

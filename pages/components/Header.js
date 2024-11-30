@@ -1,47 +1,48 @@
 import React, { useEffect } from 'react';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faWhatsapp, faFacebook, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import Image from 'next/image'
-import Link from 'next/link'
-// import Button from 'react-bootstrap/Button';
+import dynamic from 'next/dynamic';
+import 'animate.css';
+import Image from 'next/image';
+import Link from 'next/link';
 import Dropdown from 'react-bootstrap/Dropdown';
-// import { faBlog } from '@fortawesome/free-solid-svg-icons';
 import Enquirypopup from './Enquirypopup';
 import Typebot from '../components/Typebot';
-// import Socialmediaheader from '../components/Socialmediaheader';
-// import Myform from './Myform';
+
+// Dynamically import WOW.js to avoid server-side issues
+const WOW = dynamic(() => import('wowjs'), { ssr: false });
+
 const Header = () => {
-  // useEffect(() => {
-  //   const navbar = document.getElementById('navbar');
-  
-  //   if (navbar) {
-  //     const scrollThreshold = 100; 
-  
-  //     const handleScroll = () => {
-  //       if (window.scrollY > scrollThreshold) {
-  //         navbar.classList.add('fixed-top');
-  //       } else {
-  //         navbar.classList.remove('fixed-top');
-  //       }
-  //     };
-  
-  //     window.addEventListener('scroll', handleScroll);
-  
-  //     return () => {
-  //       window.removeEventListener('scroll', handleScroll);
-  //     };
-  //   }
-  // }, []);
-  
-// const Header = () => {
+  useEffect(() => {
+    const navbar = document.getElementById('navbar');
+    const scrollThreshold = 50;
+
+    const handleScroll = () => {
+      if (window.scrollY > scrollThreshold) {
+        navbar.classList.add('scroll-sticky');
+      } else {
+        navbar.classList.remove('scroll-sticky');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Initialize WOW.js only on the client side
+    const WOWJS = require('wowjs');
+    const wow = new WOWJS.WOW({
+      live: false
+    });
+    wow.init();
+  }, []); // Empty dependency array ensures this runs once on mount
+
   return (
     <>
-      <nav id="navbar" className="navbar navbar fixed-top">
-        <div className="container-fluid">
+      <nav id="navbar" className="navbar fixed-top wow animate__animated animate__none" style={{ animationDelay: '0.3s' }}>
+      <div className="container-fluid">
           <a className="navbar-brand" href="./">
             <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
           </a>
@@ -103,27 +104,27 @@ const Header = () => {
                   </Link>
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="overview">
                           Overview
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#" target='_blank'>
+                      <Link className="dropdown-item" href="about-us">
                         About Us 
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="https://ramagyaschool.com/gnoida/" target='_blank'>
+                      <Link className="dropdown-item" href="vision-and-values">
                         Our vision & values  
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="https://ramagyaschool.com/dadri/" target='_blank'>
+                      <Link className="dropdown-item" href="people">
                         People
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="https://ramagyaroots.com/" target='_blank'>
+                      <Link className="dropdown-item" href="ramagya-foundation">
                         Ramagya Foundation
                       </Link>
                     </li>
@@ -142,27 +143,27 @@ const Header = () => {
                   </Link>
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="explore">
                         Explore
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="experiment">
                         Experiment
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="innovate">
                         Innovate
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="evolve">
                         Evolve
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="lead">
                          Lead
                       </Link>
                     </li>
@@ -181,28 +182,28 @@ const Header = () => {
                   </Link>
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <Link className="dropdown-item" href="#">
-                        Overview
+                      <Link className="dropdown-item" href="pre-admission">
+                        Pre Admission
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
-                        Why Us
+                      <Link className="dropdown-item" href="post-admission">
+                        Post Admission
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
-                        Fee
+                      <Link className="dropdown-item" href="fee-structure">
+                        Fee Structure
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
-                       Admission Process
+                      <Link className="dropdown-item" href="scholarship-programme">
+                        Scholarship
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
-                        Apply Now
+                      <Link className="dropdown-item" href="recommend-a-student">
+                         Recomment a Student
                       </Link>
                     </li>
                   </ul>
@@ -220,22 +221,22 @@ const Header = () => {
                   </Link>
                   <ul className="dropdown-menu dropdown-menu-dark">
                   <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="https://ramagyaschoolblog.com/category/achievements/" target='_blank'>
                         Achievements
                       </Link>
                     </li>
                   <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="https://ramagyaschoolblog.com/category/media-press/" target='_blank'>
                         Media Press
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="https://ramagyaschoolblog.com/category/events/" target='_blank'>
                         Events
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="#">
+                      <Link className="dropdown-item" href="awards-and-recognition">
                         Awards
                       </Link>
                     </li>
@@ -244,13 +245,13 @@ const Header = () => {
                 </li>
                  {/* Careers menu */}
                  <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" href="#">
+                  <Link className="nav-link" aria-current="page" href="https://ramagyagroup.com/current-opening" target='_blank'>
                     Careers
                   </Link>
                 </li>
                 {/* Contact menu */}
                 <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" href="#">
+                  <Link className="nav-link" aria-current="page" href="contact-us">
                     Contact Us
                   </Link>
                 </li>
@@ -301,11 +302,11 @@ const Header = () => {
             </div>
         </div>
       </nav>
-      
-       <Enquirypopup/>
-       <Typebot/>
-    </>
-  )
-}
 
-export default Header
+      <Enquirypopup />
+      <Typebot />
+    </>
+  );
+};
+
+export default Header;

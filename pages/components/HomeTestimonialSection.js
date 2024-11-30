@@ -1,44 +1,79 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import 'animate.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; 
 import Image from 'next/image';
+
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
-const SampleNextArrow = ({ className, style, onClick }) => {
+const SampleNextArrow = ({ onClick }) => {
   return (
-    <div
-      className={`${className} custom-next-arrow`}
-      style={{ ...style, display: "block", right: "25px" }} // Adjust the position as needed
+    <button
+      type="button"
+      className="custom-next-arrow"
       onClick={onClick}
-    />
+      style={{
+        position: 'absolute',
+        right: '25px',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        zIndex: 1000,
+        cursor: 'pointer',
+        background: 'none',
+        border: 'none',
+        padding: '10px',
+      }}
+    >
+      <Image
+        src="/images/next.png" // Replace with your next arrow image path
+        alt="Next"
+        width={50} // Adjust the width of the arrow image
+        height={50} // Adjust the height of the arrow image
+      />
+    </button>
   );
 };
 
-const SamplePrevArrow = ({ className, style, onClick }) => {
+const SamplePrevArrow = ({ onClick }) => {
   return (
-    <div
-      className={`${className} custom-prev-arrow`}
-      style={{ ...style, display: "block", left: "25px" }} // Adjust the position as needed
+    <button
+      type="button"
+      className="custom-prev-arrow"
       onClick={onClick}
-    />
+      style={{
+        position: 'absolute',
+        left: '25px',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        zIndex: 1000,
+        cursor: 'pointer',
+        background: 'none',
+        border: 'none',
+        padding: '10px',
+      }}
+    >
+      <Image
+        src="/images/prev.png" // Replace with your prev arrow image path
+        alt="Previous"
+        width={50} // Adjust the width of the arrow image
+        height={50} // Adjust the height of the arrow image
+      />
+    </button>
   );
 };
+
 
 const HomeTestimonialSection = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   useEffect(() => {
     const WOWJS = require('wowjs');
     const wow = new WOWJS.WOW({ live: false });
     wow.init();
   }, []);
+
+  const sliderRef = useRef(null);
 
   const settings = {
     className: "center",
@@ -48,15 +83,15 @@ const HomeTestimonialSection = () => {
     slidesToShow: 3,
     speed: 500,
     autoplay: true,
-    prevArrow: <SamplePrevArrow />,
     nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1441,
         settings: {
           slidesToShow: 3,
           centerMode: true,
-          centerPadding: '50px',
+          centerPadding: '150px',
         }
       },
       {
@@ -115,55 +150,50 @@ const HomeTestimonialSection = () => {
       videoUrl: 'https://www.youtube.com/watch?v=KSBSoF2qYqc'
     },
   ];
+
   return (
-    <div className='fp-tableTestimonials'>
-    <div className="container my-0-1"> 
-      <div className="row align-items-center">
-        <div className="col-md-12 learn text-center text-md-center">
-          <h1 className="main-heading"> TESTIMONIALS
-            <span className="lineclass" />
-            <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-              WHAT LEGENDS SAY ABOUT US
-            </span>
-          </h1>
-          {/* <div className="rating-container-center">
-            <span className="stars">★★★★★</span>
-            <span className="rating-text">5.0 out of 5 – Based on</span>
-            <a href="#" className="review-count">457+</a>
-            <span className="rating-text">Certified Reviews</span>
-          </div> */}
+    <div className="learn fp-section tableTestimonials">
+      <div className="container learn my-custom-testimonials">
+        <div className="row align-items-center">
+          <div className="col-md-12 learn text-center text-md-center">
+            <h1 className="main-heading">
+              TESTIMONIALS
+              <span className="lineclass" />
+              <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                VOICES THAT INSPIRE OUR JOURNEY
+              </span>
+            </h1>
+            <p>We believe that the most powerful stories come from the experiences of those who have been a part of our family. Our testimonials reflect the trust, joy, and growth that students, parents, and even notable personalities have experienced with us. Each voice carries a unique perspective, adding to the rich tapestry of our community. Here’s what they have to say:</p>
+          </div>
+        </div>
+        <div className="row" id='testimonial-slider'>
+          <Slider ref={sliderRef} {...settings}>
+            {data.map((item, index) => (
+              <div key={index} className="slider-item">
+                <div className="number">{index + 1}</div>
+                <div className="image-container-testimonial">
+                  <Image src={item.img} alt={item.title} className="slider-image" width={310} height={265} />
+                  <div className="play-button-overlay">
+                    <a href={item.videoUrl} target='_blank' rel='noopener noreferrer'>
+                      <Image src="/images/youtube-play-icon.png" className="play-button" alt="play-button" width={96} height={96}/>
+                    </a>
+                  </div>
+                </div>
+                <div className='testimonial-content'>
+                  <h3>{item.title}</h3>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+        <div className="d-flex justify-content-center align-items-center mt-15">
+          <div className="learn-more-button">
+            <a href="testimonials">View More</a>
+          </div>
         </div>
       </div>
-      <div className="row" id='testimonial-slider'>
-      <Slider {...settings}>
-        {data.map((item, index) => (
-          <div key={index} className="slider-item">
-            <div className="number">{index + 1}</div>
-            <div className="image-container-testimonial">
-              <Image src={item.img} alt={item.title} className="slider-image" width={310} height={265} />
-              <div className="play-button-overlay">
-                <a href={item.videoUrl} target='_blank' rel='noopener noreferrer'>
-                  <Image src="/images/youtube-play-icon.png" className="play-button" alt="play-button" width={96} height={96}/>
-                </a>
-              </div>
-            </div>
-            <div className='testimonial-content'>
-              <h3>{item.title}</h3>
-            </div>
-          </div>
-        ))}
-      </Slider>
-      </div>
-      <div className="d-flex justify-content-center align-items-center mt-15">
-      <div className="learn-more-button">
-        <a href="#">View More</a>
-      </div>
     </div>
-    </div>
-  
-   
-  </div>
-  )
-}
+  );
+};
 
-export default HomeTestimonialSection
+export default HomeTestimonialSection;

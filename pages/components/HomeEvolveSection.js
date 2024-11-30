@@ -6,9 +6,10 @@ const HomeEvolveSection = () => {
   return (
     <>
     
-        <div className="fp-tableEvolve">
-          {/* style={{ height:"676px"}} */}
-          <div className="container learn my-0">
+        <div className="learn fp-section tableEvolve">
+        <div className="container learn my-custom-evolve">
+        {/* <div className="fp-tableEvolve">
+          <div className="container learn my-0"> */}
             <div className="row">
               <div className="col-sm-12 position-r">
                 <h1 className="">
@@ -29,9 +30,6 @@ const HomeEvolveSection = () => {
                           <div className="service_box type_four color_two hover_1_get hover_1">
                             <div className="image-container">
                               <div className="overlay">
-                                {/* <div className="icon trans">
-                                  <Image src="/images/innovation.webp" alt="STUDENT DRIVEN SOCIETY" width={80} height={80} />
-                                </div> */}
                                 <h2 className="overlay-title">
                                   STUDENT DRIVEN SOCIETY
                                 </h2>
@@ -196,7 +194,7 @@ const HomeEvolveSection = () => {
           {/* Learb more button */}
           <div className="d-flex justify-content-center align-items-center mt-1">
                     <div className="learn-more-button">
-                      <a href="#">Learn More</a>
+                      <a href="evolve">Learn More</a>
                     </div>
                   </div>
         </div>

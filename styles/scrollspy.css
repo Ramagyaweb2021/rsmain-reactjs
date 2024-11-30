@@ -34,7 +34,7 @@
   top: 0;
   width: 100%;
   background-color: var(--color-set-green);
-  padding: 1.2rem;
+  padding: 0.1rem;
   border-radius: 0;
   z-index: 1000;
   display: flex;
@@ -43,12 +43,11 @@
 }
 
 .scrollspyMenu.sticky {
-  position: sticky;
-  /* margin-top: 88px; */
-  /* background-color: red; */
+  position: fixed;
+  /* position: sticky; */
+  margin-top: 88px;
   /* top: 0;  */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Optional shadow for visual effect */
   z-index: 1111;
 }
 
@@ -94,7 +93,63 @@
 .fp-slidesNav ul li a span {
   background: white;
 }
-.my-0-1 {
+/* .my-custom-video{
+
+} */
+.my-custom-campuses{
+    height: auto;
+    padding-top: 2.5em;
+}
+.my-custom-explore{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-experiment{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-innovate{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-evolve{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-lead{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-difference{
+  height: auto;
+  padding-top: 5.5em;
+}
+.my-custom-gallery{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-awards{
+  height: auto;
+  padding-top: 5.5em;
+}
+.my-custom-school-updates{
+  height: auto;
+  padding-top: 5.5em;
+}
+.my-custom-testimonials{
+  height: auto;
+  padding-top: 5.5em;
+}
+.my-custom-testimonials{
+  height: auto;
+  padding-top: 5.5em;
+}
+.my-custom-footer{
+  height: auto;
+  padding-top: 5.5em;
+}
+
+/* .my-0-1 {
   margin-top: -2rem !important;
   margin-bottom: 7rem !important;
  }
@@ -109,7 +164,7 @@
  .my-2 {
   margin-top: 3rem !important;
   margin-bottom: 8rem !important;
- }
+ } */
  
 /* Background colors for sections */
 .fp-section:nth-child(1) {
@@ -403,16 +458,67 @@
   height: 100%;
   padding: 300px 0 200px;
 } */
-
-/* Home.module.css */
-.fixed-top {
+ /* Example CSS for sticky header */
+.scroll-sticky {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  /* Adjust based on your layout */
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.5s ease;
 }
-/* .carousel-item{
-  display: unset !important;
+/* Scrollspymenu internal pages css */
+.fixed-nav {
+  position: fixed;
+  top: 85px;
+  left: 0;
+  width: 100%;
+  /* z-index: 9999; */
+  background-color: var(--color-set-green);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  /* transition: all 0.3s ease-in-out; */
+  animation: smoothScroll 1s forwards;
+  -o-animation: smoothScroll 1s forwards;
+  -moz-animation: smoothScroll 1s forwards;
+  -webkit-animation: smoothScroll 1s forwards;
+  animation: smoothScroll 0.6s ease-out forwards;
+}
+/* Simplified keyframe animation for smooth scroll */
+@keyframes smoothScroll {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Home scrollspy menu animation timing */
+/* .scrollspyMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scrollspyMenu li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.scrollspyMenu li.active {
+  font-weight: bold;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 } */

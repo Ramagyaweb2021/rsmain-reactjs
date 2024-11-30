@@ -4,9 +4,10 @@ import Image from 'next/image';
 const HomeInnovateSection = () => {
   return (
     <>
-      
-        <div className="fp-tableInnovate">
-          <div className="container learn my-0">
+       <div className="learn fp-section tableInnovate">
+          <div className="container learn my-custom-innovate">
+        {/* <div className="fp-tableInnovate">
+          <div className="container learn my-0"> */}
             <div className="row no-gutters">
               <div className="col-sm-12 position-r">
                 <h1 className="">
@@ -33,8 +34,8 @@ const HomeInnovateSection = () => {
                       </div>
                       <div className="col-6 p-0">
                         <Image
-                          alt="Book Reviews"
-                          src="/images/slider/innovate/book-review.webp" 
+                          alt="mindbox"
+                          src="/images/slider/innovate/mind-box.webp" 
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -50,8 +51,8 @@ const HomeInnovateSection = () => {
                       </div>
                       <div className="col-6 p-0">
                         <Image
-                          alt="Book Reviews"
-                          src="/images/slider/innovate/robotics-design.png" 
+                          alt="robotics"
+                          src="/images/slider/innovate/robotics.webp" 
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -66,8 +67,8 @@ const HomeInnovateSection = () => {
 
                       <div className="col-6 p-0">
                         <Image
-                          alt="Book Reviews"
-                          src="/images/slider/innovate/steam.png" 
+                          alt="steam"
+                          src="/images/slider/innovate/steam.webp" 
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -84,7 +85,7 @@ const HomeInnovateSection = () => {
                       <div className="col-6 p-0">
                         <Image
                           alt="Book Reviews"
-                          src="/images/slider/innovate/design-thinking.png"
+                          src="/images/slider/innovate/design-thinking.webp"
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -149,7 +150,7 @@ const HomeInnovateSection = () => {
                 {/* Learb more button */}
                 <div className="d-flex justify-content-center align-items-center mt-1">
                   <div className="learn-more-button">
-                    <a href="#">Learn More</a>
+                    <a href="innovate">Learn More</a>
                   </div>
                 </div>
               </div>

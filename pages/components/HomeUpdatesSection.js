@@ -24,14 +24,23 @@ const HomeUpdatesSection = () => {
 
   // Slick slider settings with autoplay
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,            // Enable autoplay
     autoplaySpeed: 5000,       // 3 seconds between slides
     pauseOnHover: true,        // Pause on hover
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,           
+  //   autoplaySpeed: 5000,     
+  //   pauseOnHover: true,       
   };
 
   // Data for slides (to be mapped in the sliders)
@@ -124,8 +133,10 @@ const HomeUpdatesSection = () => {
   ];
   return (
     
-        <div className='fp-tableSchoolupdates'>
-          <Container className='learn my-0-1'>
+    <div className="learn fp-section tableSchoolupdates">
+    <Container className="container learn my-custom-school-updates">
+        {/* <div className='fp-tableSchoolupdates'>
+          <Container className='learn my-0-1'> */}
           {/* <Container className='bg-tropical-mist p-0'> */}
             <div className="row">
               <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">

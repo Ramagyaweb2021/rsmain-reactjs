@@ -44,7 +44,7 @@ export default function App() {
   return (
     <>
      {/* Side floating buttion discover section */}
-     {/* <div className="btn-float-discover animate__animated animate__fadeInRight" style={{ animationDelay: '3s' }}>
+     {/* <div className="btn-float-discover animate__animated animate__fadeInRight" style={{ animationDelay: '1s' }}>
           <Link
             href="https://qr1.be/ZJ68"
             target="_blank"

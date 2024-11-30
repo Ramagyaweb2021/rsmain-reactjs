@@ -8,8 +8,10 @@ const HomeSectionFooter = () => {
   return (
     <>
        {/* Footer Section */}
-          <div className='fp-tableFooter' style={{backgroundColor:"rgb(233 236 239 / 26%)"}}>
-          <div className='container-fluid my-1'>
+       <div className="fp-tableFooter" style={{backgroundColor:"rgb(233 236 239 / 26%)"}}>
+        <div className="container-fluid my-custom-footer">
+          {/* <div className='fp-tableFooter' style={{backgroundColor:"rgb(233 236 239 / 26%)", padding:"50px"}}>
+          <div className='container-fluid my-1'> */}
            <div className='row'>
             <div className="col-md-3 col-sm-6 col-xs-12">
               {/* <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={250} height={52}/> */}
@@ -56,29 +58,29 @@ const HomeSectionFooter = () => {
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">who we are</p>
-                <p><Link href="#">Overview</Link></p>
-                <p><Link href="#">About Us</Link></p>
-                <p><Link href="#">Our vision and values</Link></p>
-                <p><Link href="#">People</Link></p>
-                <p><Link href="https://ramagyaroots.com/" target='_blank'>Ramagya Foundation</Link></p>
+                <p><Link href="overview">Overview</Link></p>
+                <p><Link href="about-us">About Us</Link></p>
+                <p><Link href="about-us">Our vision and values</Link></p>
+                <p><Link href="people">People</Link></p>
+                <p><Link href="ramagya-foundation">Ramagya Foundation</Link></p>
                 <p className="footer-heading">what we do</p>
-                <p><Link href="#">Explore</Link></p>
-                <p><Link href="#">Experiment</Link></p>
-                <p><Link href="#">Innovate</Link></p>
-                <p><Link href="#">Evolve</Link></p>
-                <p><Link href="#">Lead</Link></p>
+                <p><Link href="explore">Explore</Link></p>
+                <p><Link href="experiment">Experiment</Link></p>
+                <p><Link href="innovate">Innovate</Link></p>
+                <p><Link href="evolve">Evolve</Link></p>
+                <p><Link href="lead">Lead</Link></p>
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">admission</p>
-                <p><Link href="#">Overview</Link></p>
-                <p><Link href="#">Why Us</Link></p>
-                <p><Link href="#">Fee</Link></p>
-                <p><Link href="#">Admission Process</Link></p>
-                <p><Link href="#">Apply Now</Link></p>
+                <p><Link href="pre-admission">Pre Admission</Link></p>
+                <p><Link href="post-admission">Post Admission</Link></p>
+                <p><Link href="fee-structure">Fee Structure</Link></p>
+                <p><Link href="scholarship-programme">Scholarship</Link></p>
+                <p><Link href="recommend-a-student">Recommend a Student</Link></p>
                 <p className="footer-heading">Other Links</p>
-                <p><Link href="#">Careers</Link></p>
-                <p><Link href="#">Contact Us</Link></p>
-                <p><Link href="#">Blog</Link></p>
+                <p><Link href="https://ramagyagroup.com/current-opening" target='_blank'>Careers</Link></p>
+                <p><Link href="contact-us">Contact Us</Link></p>
+                <p><Link href="https://ramagyaschool.com/blogs/" target='_blank'>Blog</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>
                 <p><Link href="#">Media Press</Link></p>
