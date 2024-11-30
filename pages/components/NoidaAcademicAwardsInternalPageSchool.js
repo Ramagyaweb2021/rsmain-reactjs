@@ -35,3 +35,4 @@ export const NoidaAcademicAwardsInternalPageSchool = () => {
     </div>
   );
 };
+export default NoidaAcademicAwardsInternalPageSchool;

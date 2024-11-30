@@ -110,3 +110,4 @@ export const NoidaFamousPersonalityTestimonial = () => {
     </div>
   );
 };
+export default NoidaFamousPersonalityTestimonial;

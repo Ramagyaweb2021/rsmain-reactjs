@@ -147,3 +147,4 @@ export const NoidaParentTestimonial = () => {
     </div>
   );
 };
+export default NoidaParentTestimonial;

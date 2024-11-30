@@ -43,3 +43,4 @@ export const NoidaSportsAwardsInternalPageSchool = () => {
     </div>
   );
 };
+export default NoidaSportsAwardsInternalPageSchool;

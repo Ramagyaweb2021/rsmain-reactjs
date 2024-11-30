@@ -81,3 +81,4 @@ export const NoidaStudentTestimonial = () => {
     </div>
   );
 };
+export default NoidaStudentTestimonial;

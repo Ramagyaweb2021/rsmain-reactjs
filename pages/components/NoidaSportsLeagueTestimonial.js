@@ -74,3 +74,4 @@ export const NoidaSportsLeagueTestimonial = () => {
     </div>
   );
 };
+export default NoidaSportsLeagueTestimonial;

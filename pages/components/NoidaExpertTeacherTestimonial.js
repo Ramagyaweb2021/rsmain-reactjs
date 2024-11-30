@@ -104,3 +104,4 @@ export const NoidaExpertTeacherTestimonial = () => {
     </div>
   );
 };
+export default NoidaExpertTeacherTestimonial;
