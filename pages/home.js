@@ -155,9 +155,9 @@ export default function Home() {
           onLeave={onLeave}
           afterLoad={afterLoad}
           scrollBar={false}  // Make sure to disable custom scrollbar
-          scrollingSpeed={700}  // Adjust scrolling speed to avoid skipping sections
+          scrollingSpeed={1100}  // Adjust scrolling speed to avoid skipping sections
           //scrollingSpeed={900}  // Adjust scrolling speed to avoid skipping sections
-          fitToSection={true}  // Ensure the scroll stops on each section
+          //fitToSection={true}  // Ensure the scroll stops on each section
           //normalScrollElements=".normal-scroll"  // Allow normal scrolling on specific sections if needed
           render={() => (
             <ReactFullpage.Wrapper>
