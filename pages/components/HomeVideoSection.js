@@ -13,7 +13,7 @@ const HomeVideoSection = () => {
   };
   return (
     <>
-    <div className="learn fp-section tableVideo"> 
+    <div className="learn"> 
         <div className="container-fluid learn my-custom-video">
          <div className='video-banner'>
          <video

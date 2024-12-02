@@ -6,8 +6,8 @@ const HomeEvolveSection = () => {
   return (
     <>
     
-        <div className="learn fp-section tableEvolve">
-        <div className="container learn my-custom-evolve">
+        <div className="learn">
+        <div className="container my-custom-evolve">
         {/* <div className="fp-tableEvolve">
           <div className="container learn my-0"> */}
             <div className="row">

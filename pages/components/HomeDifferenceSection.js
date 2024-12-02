@@ -24,7 +24,7 @@ const HomeDifferenceSection = () => {
   return (
     <>
   
-    <div className="learn fp-section tableDifference">
+    <div className="learn">
     <Container className="container learn my-custom-difference">
     {/* <div className='fp-tableDifference'>
     <Container className='learn my-0-1'> */}

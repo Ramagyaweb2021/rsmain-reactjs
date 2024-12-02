@@ -20,7 +20,7 @@ const HomeAwardsSection = () => {
   }, []); // Empty dependency array ensures this runs once on mount
   return (
     <>
-       <div className="learn fp-section tableAwards">
+       <div className="learn">
        <Container className="container learn my-custom-awards">
       {/* <div className='fp-tableAwards'>
       <Container className='learn my-1'> */}

@@ -4,8 +4,8 @@ import Image from 'next/image';
 const HomeInnovateSection = () => {
   return (
     <>
-       <div className="learn fp-section tableInnovate">
-          <div className="container learn my-custom-innovate">
+       <div className="learn">
+          <div className="container my-custom-innovate">
         {/* <div className="fp-tableInnovate">
           <div className="container learn my-0"> */}
             <div className="row no-gutters">

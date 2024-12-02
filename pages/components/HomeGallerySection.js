@@ -104,8 +104,8 @@ const NoidaGalleryInternalPage = () => {
   };
 
   return (
-    <div className="learn fp-section tableGallery">
-      <div className="container learn my-custom-gallery">
+    <div className="learn">
+      <div className="container my-custom-gallery">
         <div className="row">
           <div className="col-sm-12 text-center">
             <h1>

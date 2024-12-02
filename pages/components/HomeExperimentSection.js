@@ -70,8 +70,8 @@ const HomeExperimentSection = () => {
   }, []);
 
   return (
-    <div className="learn fp-section-tableExperiment">
-      <div className="container learn my-custom-experiment">
+    <div className="learn">
+      <div className="container my-custom-experiment">
         <h1>EXPERIMENT<span className="lineclass" />
           <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
             WORKSHOPS, PROGRAMS AND EXPERIENCES

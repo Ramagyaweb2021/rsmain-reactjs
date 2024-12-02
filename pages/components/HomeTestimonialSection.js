@@ -152,8 +152,8 @@ const HomeTestimonialSection = () => {
   ];
 
   return (
-    <div className="learn fp-section tableTestimonials">
-      <div className="container learn my-custom-testimonials">
+    <div className="learn">
+      <div className="container my-custom-testimonials">
         <div className="row align-items-center">
           <div className="col-md-12 learn text-center text-md-center">
             <h1 className="main-heading">

@@ -17,8 +17,8 @@ const HomeExploreSection = () => {
   return (
     <>
       
-        <div className="learn fp-section tableExplore">
-          <div className="container learn my-custom-explore">
+        <div className="learn">
+          <div className="container my-custom-explore">
             <div className="row">
               <div className="col-sm-12 position-r">
                 <h1>

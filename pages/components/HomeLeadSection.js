@@ -122,8 +122,8 @@ const HomeLeadSection = () => {
   };
 
   return (
-    <div className="learn fp-section tableLead">
-      <div className="container learn my-custom-evolve">
+    <div className="learn">
+      <div className="container my-custom-evolve">
         <div className="row">
           <div className="col-sm-12 position-r">
             <h1>

@@ -133,8 +133,8 @@ const HomeUpdatesSection = () => {
   ];
   return (
     
-    <div className="learn fp-section tableSchoolupdates">
-    <Container className="container learn my-custom-school-updates">
+    <div className="learn">
+    <Container className="container my-custom-school-updates">
         {/* <div className='fp-tableSchoolupdates'>
           <Container className='learn my-0-1'> */}
           {/* <Container className='bg-tropical-mist p-0'> */}

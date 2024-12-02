@@ -18,8 +18,8 @@ const HomeSchoolBranchSection = () => {
   
   return (
     <>
-     <div className="learn fp-section tableCampuses"> 
-        <div className="container learn my-custom-campuses">
+     <div className="learn"> 
+        <div className="container my-custom-campuses">
        {/* <div className="fp-tableCell">
         <div className="container learn my-1"> */}
        <h1 className="main-heading"> OUR CAMPUSES
