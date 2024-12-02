@@ -20,63 +20,7 @@ import HomeSectionFooter from "./components/HomeSectionFooter";
 import OfferPopup from "./components/OfferPopup";
 import 'animate.css';
 
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
-
-const ScrollspyMenu = ({ sections, activeSection }) => {
-  return (
-    <nav className="scrollspyMenu sticky animate__animated animate__fadeInDown">
-      <ul>
-        {sections.map((section, index) => (
-          <li
-            key={index}
-            className={activeSection === section ? "active" : ""}
-            style={{
-              animationDelay: `${index * 0.2}s`, // Apply dynamic delay based on index
-            }}
-          >
-            <a href={`#${section}`}>
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-};
-
-
-// const ScrollspyMenu = ({ sections, activeSection }) => {
-//   return (
-//     <nav className={`scrollspyMenu sticky animate__animated animate__fadeInDown`}>
-//       <ul>
-//         {sections.map((section, index) => (
-//           <li key={index} className={activeSection === section ? 'active' : ''}>
-//             <a href={`#${section}`}>{section.charAt(0).toUpperCase() + section.slice(1)}</a>
-//           </li>
-//         ))}
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// const ScrollspyMenu = ({ sections, activeSection }) => {
-//   return (
-//     <nav className="scrollspyMenu sticky">
-//       <ul>
-//         {sections.map((section, index) => (
-//           <li key={index} className={activeSection === section ? 'active' : ''}>
-//             <a href={`#${section}`}>{section.charAt(0).toUpperCase() + section.slice(1)}</a>
-//           </li>
-//         ))}
-//       </ul>
-//     </nav>
-//   );
-// };
-
 export default function Home() {
-  
-  const [activeSection, setActiveSection] = useState("slider");
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -87,38 +31,6 @@ export default function Home() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const WOWJS = require('wowjs');
-    const wow = new WOWJS.WOW({ live: false });
-    wow.init();
-  }, []);
-
-  const onLeave = (origin, destination, direction) => {
-    setActiveSection(destination.anchor);
-  };
-
-  const afterLoad = (origin, destination, direction) => {
-    setActiveSection(destination.anchor);
-    const currentSection = destination.item;
-    if (currentSection) {
-      currentSection.classList.add('animate__animated', 'animate__none');
-    }
-  };
-
-  const showMainMenu = ["explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
-  const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials"].includes(activeSection);
-
-  // const showMainMenu = ["branch", "explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
-  // const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials"].includes(activeSection);
 
   return (
     <div className={styles.container}>
@@ -132,19 +44,9 @@ export default function Home() {
       <Header />
       <OfferPopup />
 
-      {(showMainMenu || showAdditionalMenu) && (
-        <ScrollspyMenu
-          sections={showMainMenu 
-            ? ["", "explore", "experiment", "innovate", "evolve", "lead"] 
-            : ["difference", "gallery", "awards", "school-updates", "testimonials"]
-          }
-          activeSection={activeSection}
-        />
-      )}
-
       {!isMobile ? (
         <ReactFullpage
-          debug={false}
+          debug={true}
           anchors={[
             "slider", "branch", "explore", "experiment", "innovate",
             "evolve", "lead", "difference", "gallery", "awards", 
@@ -153,14 +55,11 @@ export default function Home() {
           navigation={false}
           licenseKey="NU1M9-5PXTK-R7H4J-MIJMJ-KELSL"
           responsiveWidth={1000}
-          onLeave={onLeave}
-          afterLoad={afterLoad}
-          scrollBar={true}  // Make sure to disable custom scrollbar
-          // autoScrolling: {true}
-          scrollingSpeed={700}  // Adjust scrolling speed to avoid skipping sections
-          //scrollingSpeed={900}  // Adjust scrolling speed to avoid skipping sections
-          fitToSection={true}  // Ensure the scroll stops on each section
-          //normalScrollElements=".normal-scroll"  // Allow normal scrolling on specific sections if needed
+          scrollBar={false}          // Use FullPage.js scrolling
+          autoScrolling={true}       // Enable FullPage.js auto-scrolling
+          scrollOverflow={true}      // Enable scroll overflow inside sections
+          scrollingSpeed={700}       // Adjust scrolling speed to avoid skipping sections
+          fitToSection={true}        // Ensure the scroll stops on each section
           render={() => (
             <ReactFullpage.Wrapper>
               <div className="section">
@@ -213,7 +112,6 @@ export default function Home() {
           <HomeExploreSection />
           <HomeExperimentSection />
           <HomeInnovateSection />
-          {/* <innovateformobile/> */}
           <HomeEvolveSection />
           <HomeLeadSection />
           <HomeDifferenceSection />
