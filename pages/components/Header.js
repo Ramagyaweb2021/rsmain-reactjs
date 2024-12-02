@@ -43,7 +43,7 @@ const Header = () => {
     <>
       <nav id="navbar" className="navbar fixed-top wow animate__animated animate__none" style={{ animationDelay: '0.3s' }}>
       <div className="container-fluid">
-          <a className="navbar-brand" href="./" style={{background:"white"}}>
+          <a className="navbar-brand" href="./">
             <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
           </a>
           {/* <Button variant="warning" size="lg" style={{float:"right"}}>
@@ -78,7 +78,7 @@ const Header = () => {
             style={{zIndex:"1111"}}
           >
             <div className="offcanvas-header">
-            <a className="navbar-brand" href="./" style={{ background:"#fff"}}>
+            <a className="navbar-brand" href="./">
               <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
             </a>
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>

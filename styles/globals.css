@@ -2610,7 +2610,14 @@ hr {
 .next-button::before {
   background-image: url('/images/next.png');
 }
-
+.navbar-brand{
+  background-image: url(/images/ellipse.png);
+    /* background-color: #ffffffc2; */
+    /* background-blend-mode: overlay; */
+    background-repeat: no-repeat;
+    /* background-position: 50%; */
+    background-size: cover;
+}
 
 
 
