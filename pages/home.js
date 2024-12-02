@@ -88,6 +88,9 @@ export default function Home() {
   const showMainMenu = ["explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
   const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials"].includes(activeSection);
 
+  // const showMainMenu = ["branch", "explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
+  // const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials"].includes(activeSection);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -112,7 +115,7 @@ export default function Home() {
 
       {!isMobile ? (
         <ReactFullpage
-          debug={true}
+          debug={false}
           anchors={[
             "slider", "branch", "explore", "experiment", "innovate",
             "evolve", "lead", "difference", "gallery", "awards", 
@@ -123,12 +126,12 @@ export default function Home() {
           responsiveWidth={1000}
           onLeave={onLeave}
           afterLoad={afterLoad}
-          scrollBar={false}        
-          autoScrolling={true}  
-          scrollOverflow={true}
+          scrollBar={true}        
+          autoScrolling={false}  
+          scrollOverflow={false}
           scrollingSpeed={700} 
           //scrollingSpeed={900} 
-          fitToSection={true} 
+          fitToSection={false} 
           //normalScrollElements=".normal-scroll" 
           render={() => (
             <ReactFullpage.Wrapper>
@@ -144,7 +147,7 @@ export default function Home() {
               <div className="section">
                 <HomeExperimentSection />
               </div>
-              {/* <div className="section">
+              <div className="section">
                 <HomeInnovateSection />
               </div>
               <div className="section">
@@ -170,7 +173,7 @@ export default function Home() {
               </div>
               <div className="section footer">
                 <HomeSectionFooter />
-              </div> */}
+              </div>
             </ReactFullpage.Wrapper>
           )}
         />

@@ -2,31 +2,6 @@
 .fp-watermark a {
   display: none !important;
 }
-
-/* Styling the callbacks log */
-/* #callbacksLog {
-  width: 50vw;
-  position: fixed;
-  top: 50px;
-  left: 50px;
-  color: white;
-  z-index: 999;
-  display: none;
-}
-
-#callbacksLog p {
-  font-size: calc(0.5em + 0.6vw);
-  background: rgba(255, 255, 255, 0.4);
-  margin: 0;
-  padding: 0.6em;
-}
-
-#callbacksLog h4 {
-  font-size: calc(0.7em + 0.6vw);
-  margin: 0 0 0.3em 0;
-  font-weight: bold;
-  text-decoration: underline;
-} */
 /* /styles/ScrollspyMenu.css */
 .scrollspyMenu {
   display: flex;
@@ -82,12 +57,6 @@
 }
 
 /* ***************************************************************Fullpage.js css */
-/* .section {
-  color: #fff;
-  text-align: center;
-  padding-right: 10%;
-} */
-
 /* Overwriting styles for the navigation dots */
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -149,23 +118,6 @@
   padding-top: 5.5em;
 }
 
-/* .my-0-1 {
-  margin-top: -2rem !important;
-  margin-bottom: 7rem !important;
- }
-.my-0 {
-  margin-top: 1rem !important;
-  margin-bottom: 0rem !important;
- }
-.my-1 {
-  margin-top: 3rem !important;
-  margin-bottom: 10rem !important;
- }
- .my-2 {
-  margin-top: 3rem !important;
-  margin-bottom: 8rem !important;
- } */
- 
 /* Background colors for sections */
 .fp-section:nth-child(1) {
   background-color: #fff;
@@ -271,193 +223,6 @@
 .fp-next {
   margin-right: 3%;
 }
-
-/* .fullpage {
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.fullpage-wrapper {
-  height: 100%;
-  position: relative;
-  touch-action: none;
-}
-.section {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: start;
-  min-height: 600px !important;
-  overflow: hidden;
-  animation: fadeIn 1s ease-out;
-  transition: transform 1s ease;
-  overflow-y: scroll;
-  scroll-snap-type: mandatory;
-  scroll-snap-align:start;
-} */
-
-/* .section.scrolling {
-  transform: translateY(100%);
-} */
-
-/* .fp-section.fp-table, .fp-slide.fp-table {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-}
-.fp-tableCell {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-} */
-/* .learn {
-  background-image: url(../images/learn-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 50px 0 60px;
-} */
-/* .fp-tableSlider {
-  background-color: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 200px 0 200px;
-}
-
-.fp-tableOurCampuses {
-  background-color: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 250px 0 200px;
-}
-
-.fp-tableExplore {
-  background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffc2;
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 350px 0 200px;
-}
-
-.fp-tableExperiment {
-  background-color: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 200px 0 200px;
-}
-
-.fp-tableInnovate {
-  background-color: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 300px 0 200px;
-}
-
-.fp-tableEvolve {
-  background-color: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 300px 0 200px;
-}
-
-.fp-tableLead {
-  background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffc2;
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 300px 0 200px;
-}
-
-.fp-tableGallery {
-  background-color: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 300px 0 200px;
-}
-
-.fp-tableDifference {
-  background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffc2;
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 300px 0 200px;
-}
-
-.fp-tableAwards {
-  background-color: #fff;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 300px 0 200px;
-}
-
-.fp-tableSchoolupdates {
-  background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffc2;
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 300px 0 200px;
-}
-
-.fp-tableTestimonials {
-  background-color: #fff;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 250px 0 200px;
-}
-
-.fp-tableFooter {
-  background-color: #fff;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  padding: 300px 0 200px;
-} */
  /* Example CSS for sticky header */
 .scroll-sticky {
   position: fixed;
@@ -495,30 +260,3 @@
     opacity: 1;
   }
 }
-/* Home scrollspy menu animation timing */
-/* .scrollspyMenu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.scrollspyMenu li {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.5s ease forwards;
-}
-
-.scrollspyMenu li.active {
-  font-weight: bold;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
