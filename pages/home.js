@@ -123,7 +123,7 @@ export default function Home() {
           responsiveWidth={1000}
           onLeave={onLeave}
           afterLoad={afterLoad}
-          scrollBar={true}        
+          scrollBar={false}        
           autoScrolling={true}  
           scrollOverflow={true}
           scrollingSpeed={700} 
