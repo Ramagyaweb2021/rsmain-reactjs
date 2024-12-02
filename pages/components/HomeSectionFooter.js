@@ -16,14 +16,14 @@ const HomeSectionFooter = () => {
             <div className="col-md-3 col-sm-6 col-xs-12">
               {/* <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={250} height={52}/> */}
               <p className="footer-heading">Address</p>
-              <p>E - 7, Sector 50, Noida  
+              <p>E - 7, Sector 50, Noida    
                 </p>
-              <p className="footer-heading">Email id</p>
-                <p><a href="mailto:admissions@ramagyaschool.com">admissions@ramagyaschool.com</a></p>
-                <p><a href="mailto:principal@ramagyaschool.com">principal@ramagyaschool.com</a></p>
-                <p><a href="mailto:careers@ramagyagroup.com">careers@ramagyagroup.com</a></p>
-                <p><a href="mailto:pc@ramagyagroup.com">pc@ramagyagroup.com</a></p>
-                <p><a href="mailto:sports@ramagyagroup.com">sports@ramagyagroup.com</a></p>
+                <p className="footer-heading">Email id</p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:admissions@ramagyaschool.com">admissions@ramagyaschool.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:principal@ramagyaschool.com">principal@ramagyaschool.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:careers@ramagyagroup.com">careers@ramagyagroup.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:pc@ramagyagroup.com">pc@ramagyagroup.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:sports@ramagyagroup.com">sports@ramagyagroup.com</a></p>
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">For Enquiries</p>
@@ -33,7 +33,7 @@ const HomeSectionFooter = () => {
                   {/* <ul>
                     <li className="co_icon">
                       <Link
-                        href="https://api.whatsapp.com/send/?phone=918010333555&text&app_absent=0"
+                        href="https://api.whatsapp.com/send/?phone=918010333555&text&app_absent=0n"
                         className="whatsapp"
                         rel="nofollow"
                         target="_blank">

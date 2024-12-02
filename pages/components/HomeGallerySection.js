@@ -182,7 +182,7 @@ const NoidaGalleryInternalPage = () => {
 
       {/* Image Modal */}
       {isImageModalOpen && (
-        <div className="custom-modal-backdrop">
+        <div className="custom-modal-backdrop" style={{zIndex:"1111"}}>
           <div className="custom-modal-content">
             <button className="close-button" onClick={closeModal}>X</button>
             <button className="prev-button" onClick={handlePrevious}></button>

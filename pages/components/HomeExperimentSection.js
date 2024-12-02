@@ -64,7 +64,7 @@ const HomeExperimentSection = () => {
         if (prevCategory === 'category2') return 'category3';
         return 'category1';
       });
-    }, 10000); // Change category every 6 seconds (adjust the time as needed)
+    }, 6000); // Change category every 6 seconds (adjust the time as needed)
 
     return () => clearInterval(categoryInterval); // Clean up on component unmount
   }, []);
@@ -77,7 +77,7 @@ const HomeExperimentSection = () => {
             WORKSHOPS, PROGRAMS AND EXPERIENCES
           </span>
         </h1>
-        <p>Encouraging hands-on experiments that bring theory to life to enhance student’s horizons across various disciplines through experiential learning.</p>
+        {/* <p>Encouraging hands-on experiments that bring theory to life to enhance student’s horizons across various disciplines through experiential learning.</p> */}
       </div>
 
       <div className='container-fluid'>
@@ -108,7 +108,7 @@ const HomeExperimentSection = () => {
                       <div className="col-12 col-md-4 col-lg-4 image-wrapper g-1">
                       <Image
                         src="/images/slider/experiment/big-slider-1.webp"
-                        alt="first row center image"
+                        alt="big-slider-1"
                         width={287}
                         height={200}
                         className="card-img-top"

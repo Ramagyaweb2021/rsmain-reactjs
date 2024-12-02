@@ -241,6 +241,7 @@ a:hover {
   width: 45px;
   height: 45px;
   position: relative;
+  margin-top: 10px;
 }
 #nav-icon1 .hamiocn2 {
   background: url(/images/geen-menu-icon.webp) no-repeat;
@@ -2326,9 +2327,9 @@ ul.custom-bullets li::before {
 .nav-item{
   margin-right: 10px;
 }
-.modal-dialog{
+/* .modal-dialog{
   max-width: 1000px !important;
-}
+} */
 .pre-admission-section p{
  padding: 0;
 }

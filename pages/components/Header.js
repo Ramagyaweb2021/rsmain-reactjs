@@ -75,6 +75,7 @@ const Header = () => {
             tabIndex={-1}
             id="offcanvasDarkNavbar"
             aria-labelledby="offcanvasDarkNavbarLabel"
+            style={{zIndex:"1111"}}
           >
             <div className="offcanvas-header">
             {/* <a className="navbar-brand" href="./">

@@ -31,7 +31,7 @@ const ScrollspyMenu = ({ sections, activeSection }) => {
             key={index}
             className={activeSection === section ? "active" : ""}
             style={{
-              animationDelay: `${index * 0.2}s`, // Apply dynamic delay based on index
+              animationDelay: `${index * 0.5}s`, // Apply dynamic delay based on index
             }}
           >
             <a href={`#${section}`}>
@@ -115,14 +115,14 @@ export default function Home() {
 
       {!isMobile ? (
         <ReactFullpage
-          debug={true}
+          debug={false}
           anchors={[
             "slider", "branch", "explore", "experiment", "innovate",
             "evolve", "lead", "difference", "gallery", "awards", 
             "school-updates", "testimonials", "footer"
           ]}
           navigation={false}
-          licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
+          licenseKey="NU1M9-5PXTK-R7H4J-MIJMJ-KELSL"
           responsiveWidth={1000}
           onLeave={onLeave}
           afterLoad={afterLoad}
