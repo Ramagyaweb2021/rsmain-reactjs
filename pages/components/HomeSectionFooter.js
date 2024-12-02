@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import "bootstrap-icons/font/bootstrap-icons.css";
 // import { Row, Col, Form} from 'react-bootstrap';
 import Link from 'next/link';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,33 +29,81 @@ const HomeSectionFooter = () => {
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">For Enquiries</p>
                 <p>Contact No. <a href="tel:+918010333555">+91-8010333555</a></p>
-                {/* <p className="footer-heading">Social</p> */}
+                <p className="footer-heading">Social</p>
+                {/* <hr/> */}
                   <div className="social-icons">
-                  {/* <ul>
-                    <li className="co_icon">
-                      <Link
-                        href="https://api.whatsapp.com/send/?phone=918010333555&text&app_absent=0n"
-                        className="whatsapp"
-                        rel="nofollow"
-                        target="_blank">
-                        <FontAwesomeIcon icon={faWhatsapp} size="1x"/>
-                        <i className="fa fa-whatsapp" />
-                        <span className='footer-social-media'>Whatsapp</span>
-                      </Link>
-                    
+                   <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", gap: "15px" }}>
+                    <li>
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=918010333555&text&app_absent=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#25D366" }}
+                      >
+                        <i className="bi bi-whatsapp" style={{ fontSize: "20px" }}></i>
+                      </a>
                     </li>
-
-                  </ul> */}
+                    <li>
+                      <a
+                        href="https://www.facebook.com/RamagyaSchoolNoida/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#1877F2" }}
+                      >
+                        <i className="bi bi-facebook" style={{ fontSize: "20px" }}></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/ramagya.school/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#E4405F" }}
+                      >
+                        <i className="bi bi-instagram" style={{ fontSize: "20px" }}></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/c/RamagyaSchoolNoida50"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#FF0000" }}
+                      >
+                        <i className="bi bi-youtube" style={{ fontSize: "20px" }}></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://in.linkedin.com/school/ramagya-school/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#0077B5" }}
+                      >
+                        <i className="bi bi-linkedin" style={{ fontSize: "20px" }}></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/ramagya_school"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#1DA1F2" }}
+                      >
+                        <i className="bi bi-twitter" style={{ fontSize: "20px" }}></i>
+                      </a>
+                    </li>
+                  </ul>
+                 
                 </div>
-                <hr/>
-                {/* <p className="footer-heading">Subscribe</p>
-                <p>Subscribe to our newsletter and get everyday updates.</p> */}
-                {/* <Form className="subscribe-form">
-                <Form.Group controlId="formEmail">
-                <Form.Control type="email" placeholder="Enter your email" />
-                </Form.Group>
-                <Image src="/images/submit.webp" alt="Ramagya school noida logo" width={56} height={56}/>
-                </Form> */}
+                <br></br>
+                {/* <hr/> */}
+                <p className="footer-heading">Our Schools</p>
+                <p><Link href="overview">Noida</Link></p>
+                <p><Link href="overview">Noida Extension</Link></p>
+                <p><Link href="about-us">Greater Noida</Link></p>
+                <p><Link href="about-us">Dadri</Link></p>
+              
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">who we are</p>

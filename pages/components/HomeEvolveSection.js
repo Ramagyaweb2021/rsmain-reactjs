@@ -121,19 +121,19 @@ const HomeEvolveSection = () => {
                                   <Image src="/images/innovation.webp" alt="MUN" width={80} height={80} />
                                  </div> */}
                                 <h2 className="overlay-title">
-                                  MUN
+                                NIPUNTA
                                 </h2>
-                                <p>Global perspectives and debate skills nurtured through the Ramagya Model United Nations conference.</p>
+                                <p>Bridging classroom learning with real-world experience through hands-on internships and professional exposure.</p>
                               </div>
                             </div>
                             <div className="content_box trans">
                               <div className="top">
                                 <div className="icon trans">
-                                  <Image src="/images/innovation.webp" alt="MUN" width={80} height={80} />
+                                  <Image src="/images/nipunta.webp" alt="MUN" width={80} height={80} />
                                 </div>
                                 <div className="steps trans">4</div>
                                 <h4 className="title_24 trans">
-                                  MUN
+                                NIPUNTA
                                 </h4>
                               </div>
                               <div className="line_box">

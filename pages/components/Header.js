@@ -288,11 +288,11 @@ const Header = () => {
                         Dadri
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a className="dropdown-item" href="https://ramagyaroots.com/" target='_blank'>
                         Ramagya Roots
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
                 {/* End of dropdown meun */}

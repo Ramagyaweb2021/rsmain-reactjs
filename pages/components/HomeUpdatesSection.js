@@ -25,6 +25,7 @@ const HomeUpdatesSection = () => {
   // Slick slider settings with autoplay
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 3000,
     slidesToShow: 1,
