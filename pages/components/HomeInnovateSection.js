@@ -13,8 +13,8 @@ const HomeInnovateSection = () => {
                 <h1 className="">
                   INNOVATE
                   <span className="lineclass" />
-                  <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-                   INNOVATE YOUR INTEREST WITH US!
+                   <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                    NURTURING THE FUTURE GENERATION
                   </span>
                 </h1>
                 {/* <p>

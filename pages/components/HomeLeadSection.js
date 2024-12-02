@@ -133,7 +133,7 @@ const HomeLeadSection = () => {
                 className="wow animate__animated animate__zoomIn"
                 style={{ animationDelay: "0.3s" }}
               >
-                MEET OUR ALUMNI
+                 EMPOWERING JOURNEYS, INSPIRING FUTURES
               </span>
             </h1>
             {/* <p>

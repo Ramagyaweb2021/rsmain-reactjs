@@ -30,19 +30,28 @@ const HomeUpdatesSection = () => {
     speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,            // Enable autoplay
-    autoplaySpeed: 5000,       // 3 seconds between slides
-    pauseOnHover: true,        // Pause on hover
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,           
-  //   autoplaySpeed: 5000,     
-  //   pauseOnHover: true,       
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 768, // Mobile view
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true, // Enable dots on mobile
+        },
+      },
+      {
+        breakpoint: 1024, // Tablet view
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+
 
   // Data for slides (to be mapped in the sliders)
   const schoolAchievementsSlides = [
@@ -163,13 +172,21 @@ const HomeUpdatesSection = () => {
                         {schoolAchievementsSlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
                             <div className="col-lg-5 col-md-5 col-12 image-resize">
+                             <a href="https://ramagyaschoolblog.com/category/achievements/" target='_blank'>
                               <Image src={slide.imgSrc} alt="School Achievements" width={430} height={306} />
+                              </a>
                             </div>
-                            <div className="col-lg-7 col-md-7 col-12">
+                            <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
+                                <h2 className="fw-bold mb-3">{slide.title}</h2>
+                                <p className='tabination-text'>{slide.text}</p>
+                                <a href="https://ramagyaschoolblog.com/category/achievements/" target='_blank' className="btn custom-btn">View More</a>
+                              </div>
+
+                            {/* <div className="col-lg-7 col-md-7 col-12">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="https://ramagyaschoolblog.com/category/achievements/" target='_blank' className="btn custom-btn">View More</a>
-                            </div>
+                            </div> */}
                           </div>
                         ))}
                       </Slider>
@@ -185,13 +202,20 @@ const HomeUpdatesSection = () => {
                         {mediaPressSlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
                             <div className="col-lg-5 col-md-5 col-12 image-resize">
+                            <a href="https://ramagyaschoolblog.com/category/media-press/" target='_blank'>
                               <Image src={slide.imgSrc} alt="Media Press" width={430} height={306} />
+                              </a>
                             </div>
-                            <div className="col-lg-7 col-md-7 col-12">
+                            <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
+                                <h2 className="fw-bold mb-3">{slide.title}</h2>
+                                <p className='tabination-text'>{slide.text}</p>
+                                <a href="https://ramagyaschoolblog.com/category/achievements/" target='_blank' className="btn custom-btn">View More</a>
+                              </div>
+                            {/* <div className="col-lg-7 col-md-7 col-12">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="https://ramagyaschoolblog.com/category/media-press/" target='_blank' className="btn custom-btn">View More</a>
-                            </div>
+                            </div> */}
                           </div>
                         ))}
                       </Slider>
@@ -207,13 +231,20 @@ const HomeUpdatesSection = () => {
                         {schoolEventsSlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
                             <div className="col-lg-5 col-md-5 col-12 image-resize">
+                             <a href="https://ramagyaschoolblog.com/category/events/" target='_blank'>
                               <Image src={slide.imgSrc} alt="School Events" width={430} height={306} />
+                              </a>
                             </div>
-                            <div className="col-lg-7 col-md-7 col-12">
+                            <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
+                                <h2 className="fw-bold mb-3">{slide.title}</h2>
+                                <p className='tabination-text'>{slide.text}</p>
+                                <a href="https://ramagyaschoolblog.com/category/events/" target='_blank' className="btn custom-btn">View More</a>
+                              </div>
+                            {/* <div className="col-lg-7 col-md-7 col-12">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="https://ramagyaschoolblog.com/category/events/" target='_blank' className="btn custom-btn">View More</a>
-                            </div>
+                            </div> */}
                           </div>
                         ))}
                       </Slider>
@@ -229,13 +260,20 @@ const HomeUpdatesSection = () => {
                         {workshopActivitySlides.map((slide, index) => (
                           <div key={index} className="row-school-updates align-items-center">
                             <div className="col-lg-5 col-md-5 col-12 image-resize">
+                             <a href="https://ramagyaschoolblog.com/category/workshop/" target='_blank'>
                               <Image src={slide.imgSrc} alt="Workshop/Activity" width={430} height={306} />
+                              </a>
                             </div>
-                            <div className="col-lg-7 col-md-7 col-12">
+                            <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
+                                <h2 className="fw-bold mb-3">{slide.title}</h2>
+                                <p className='tabination-text'>{slide.text}</p>
+                                <a href="https://ramagyaschoolblog.com/category/workshop/" target='_blank' className="btn custom-btn">View More</a>
+                              </div>
+                            {/* <div className="col-lg-7 col-md-7 col-12">
                               <h2 className="fw-bold mb-3">{slide.title}</h2>
                               <p className='tabination-text'>{slide.text}</p>
                               <a href="https://ramagyaschoolblog.com/category/workshop/" target='_blank' className="btn custom-btn">View More</a>
-                            </div>
+                            </div> */}
                           </div>
                         ))}
                       </Slider>

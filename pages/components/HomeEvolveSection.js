@@ -16,7 +16,7 @@ const HomeEvolveSection = () => {
                   EVOLVE
                   <span className="lineclass" />
                   <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-                    EVOLVE YOUR CAREER WITH US
+                    FOSTERING FUTURE LEADERS
                   </span>
                 </h1>
                 {/* <p>Dynamic programs that evolve students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p> */}

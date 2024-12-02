@@ -506,7 +506,7 @@ body {
     padding-top: 80px;
   }
   .nav-link {
-    font-size: 10px;
+    font-size: 11px;
     padding: 3px 1px;
 }
 .our-guiding-section .learn h2{
@@ -514,6 +514,12 @@ body {
 }
 .about-us-section{
     padding: 0 !important;
+}
+.explore ol.carousel-catg{
+  padding-left: 70px;
+}
+.explore ol.carousel-catg::before {
+  left: 71px;
 }
   /* .row-school-updates{
     display: inline-block;
@@ -541,7 +547,7 @@ body {
     background: #ffff !important;
   }
   .navbar-brand img {
-      width: 170px;
+      width: 160px;
       margin: 0 auto;
       height: auto;
   }
