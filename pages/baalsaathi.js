@@ -46,7 +46,7 @@ const Baalsaathi = () => {
                   className="wow animate__animated animate__fadeInDown"
                   style={{ animationDelay: '0.2s' }}
                 >
-                  Baal Saathee (Mental Health)
+                  Baal Saathee
                 </h1>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Baalsaathi = () => {
               alt="Sports Facility"
               width={371}
               height={423}
-              className="w-100 wow animate__animated animate__fadeInRight" style={{ animationDelay: '0.2s' }}
+              className="w-100 animate__animated animate__fadeInRight" style={{ animationDelay: '0.2s' }}
               // className="w-100"
             />
           </div>

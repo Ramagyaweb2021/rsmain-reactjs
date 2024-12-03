@@ -85,7 +85,7 @@ const MentalHealthClub = () => {
               alt="Sports Facility"
               width={371}
               height={423}
-              className="w-100 wow animate__animated animate__fadeInRight" style={{ animationDelay: '0.2s' }}
+              className="w-100 animate__animated animate__fadeInRight" style={{ animationDelay: '0.2s' }}
               // className="w-100"
             />
           </div>
@@ -98,7 +98,7 @@ const MentalHealthClub = () => {
           <div className="row justify-content-center my-0 g-1">
           {/* <p style={{ textAlign: "center" }}>Key roles of the Student Driven Society at Ramagya School include:</p> */}
             {/* Card 1 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/mental-health-club/1.png' alt="card-image" width={40} height={40}/>
@@ -111,7 +111,7 @@ const MentalHealthClub = () => {
               </div>
             </div>
             {/* Card 2 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/mental-health-club/2.png' alt="card-image" width={40} height={40}/>
@@ -124,7 +124,7 @@ const MentalHealthClub = () => {
               </div>
             </div>
             {/* Card 3 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/mental-health-club/3.png' alt="card-image" width={40} height={40}/>
@@ -137,7 +137,7 @@ const MentalHealthClub = () => {
               </div>
             </div>
             {/* Card 4 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/mental-health-club/4.png' alt="card-image" width={40} height={40}/>
@@ -150,7 +150,7 @@ const MentalHealthClub = () => {
               </div>
             </div>
             {/* Card 5 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/mental-health-club/5.png' alt="card-image" width={40} height={40}/>
@@ -164,7 +164,7 @@ const MentalHealthClub = () => {
               </div>
             </div>
             {/* Card 6 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/mental-health-club/6.png' alt="card-image" width={40} height={40}/>
@@ -182,16 +182,16 @@ const MentalHealthClub = () => {
           </div>
 
           <div className="row g-0 align-items-center">
-              <div className="col-3 card-body-our-leaders">
+              <div className="col-md-3 col-12 card-body-our-leaders">
                 <Image
                   alt="Managing Director"
                   loading="lazy"
-                  width={250}
-                  height={250}
+                  width={450}
+                  height={300}
                   src="/images/mental-health-club/utkarsh-gupta.png"
                 />
               </div>
-              <div className="col-9">
+              <div className="col-md-9 col-12">
                 <div className="card-body-our-leaders">
                   <p className="text-muted mb-1">Managing Director | Ramagya Group</p>
                   <h6 className="fw-bold">Mr. Utkarsh Gupta</h6>

@@ -2549,14 +2549,17 @@ hr {
   align-items: center;
   z-index: 1050;
 }
+/* .custom-modal-backdrop img{
+  height: auto;
+} */
 
 .custom-modal-content {
   position: relative;
-  background: var(--color-set-yellow);
+  background: var(--color-set-white);
   padding: 10px;
   border-radius: 1px;
   max-width: 90%;
-  max-height: 90%;
+  max-height: 80%;
 }
 
 .close-button {

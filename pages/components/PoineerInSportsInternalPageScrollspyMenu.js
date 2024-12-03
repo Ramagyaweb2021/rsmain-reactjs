@@ -29,7 +29,7 @@ function PoineerInSportsInternalPageScrollspyMenu() {
                 Pioneer in Sports
               </Nav.Link>
               <Nav.Link href="/baalsaathi" className={`mx-1 ${router.pathname === '/baalsaathi' ? 'active' : ''}`}>
-                Baal Saathee (Mental Health)
+                Baal Saathee 
               </Nav.Link>
               <Nav.Link href="/mental-health-club" className={`mx-1 ${router.pathname === '/mental-health-club' ? 'active' : ''}`}>
                Mental Health Club

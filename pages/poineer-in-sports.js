@@ -86,12 +86,12 @@ const PoineerInSports = () => {
 
           {/* Right Image */}
           <div className="col-lg-3 col-md-3">
-            <Image
+           <Image
               src="/images/poineer-in-sports/slide-2.png" // Replace with the actual image path
-              alt="Sports Facility"
+              alt="Sports Activity"
               width={371}
               height={423}
-              className="w-100 wow animate__animated animate__fadeInRight" style={{ animationDelay: '0.2s' }}
+              className="w-100 animate__animated animate__fadeInRight" style={{ animationDelay: '0.1s' }}
               // className="w-100"
             />
           </div>

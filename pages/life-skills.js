@@ -87,7 +87,7 @@ const LifeSkills = () => {
               alt="Sports Facility"
               width={371}
               height={423}
-              className="w-100 wow animate__animated animate__fadeInRight" style={{ animationDelay: '0.2s' }}
+              className="w-100 animate__animated animate__fadeInRight" style={{ animationDelay: '0.1s' }}
               // className="w-100"
             />
           </div>
@@ -100,7 +100,7 @@ const LifeSkills = () => {
           <div className="row justify-content-center my-0 g-1">
           {/* <p style={{ textAlign: "center" }}>Key roles of the Student Driven Society at Ramagya School include:</p> */}
             {/* Card 1 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/life-skills/1.png' alt="card-image" width={40} height={40}/>
@@ -113,7 +113,7 @@ const LifeSkills = () => {
               </div>
             </div>
             {/* Card 2 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/life-skills/2.png' alt="card-image" width={40} height={40}/>
@@ -126,7 +126,7 @@ const LifeSkills = () => {
               </div>
             </div>
             {/* Card 3 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/life-skills/3.png' alt="card-image" width={40} height={40}/>
@@ -139,7 +139,7 @@ const LifeSkills = () => {
               </div>
             </div>
             {/* Card 4 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/life-skills/4.png' alt="card-image" width={40} height={40}/>
@@ -152,7 +152,7 @@ const LifeSkills = () => {
               </div>
             </div>
             {/* Card 5 */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image src='/images/life-skills/5.png' alt="card-image" width={40} height={40}/>
@@ -172,7 +172,7 @@ const LifeSkills = () => {
           </div> */}
 
           <div className="row g-3 align-items-center mt-50">
-              <div className="col-6">
+              <div className="col-md-6 col-12">
                 <Image
                   alt="Managing Director"
                   loading="lazy"
@@ -181,7 +181,7 @@ const LifeSkills = () => {
                   src="/images/life-skills/school-cinema.png"
                 />
               </div>
-              <div className="col-6">
+              <div className="col-md-6 col-12">
                 <div className="card-body-our-leaders">
                   <h6 className="fw-bold">SCHOOL CINEMA: Life Lessons through Stories</h6>
                   <p className="text-muted small">
@@ -201,7 +201,7 @@ const LifeSkills = () => {
               </div>
             </div>
             <div className="row g-3 align-items-center">
-              <div className="col-5">
+              <div className="col-md-5 col-12">
                 <div className="card-body-our-leaders">
                   <h6 className="fw-bold">PERSONALIZED SUPPORT FOR EVERY LEARNER</h6>
                   <p className="text-muted small">
@@ -217,7 +217,7 @@ const LifeSkills = () => {
                   </button> */}
                 </div>
               </div>
-              <div className="col-7">
+              <div className="col-md-7 col-12">
                 <Image
                   alt="Managing Director"
                   loading="lazy"

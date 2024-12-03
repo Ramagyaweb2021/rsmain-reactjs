@@ -82,7 +82,7 @@ body {
   .explore h1,
   .innovate h1 {
     font-size: 30px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     margin-bottom: 5px;
     /* padding-bottom: 15px;
     margin-bottom: 15px; */
@@ -251,14 +251,34 @@ body {
 @media only screen and (max-width: 1199px) {
   body {
       background-color: #fff;
-      font-size: 14px;
+      font-size: 13px;
+  }
+  .learn h1, .explore h1, .innovate h1{
+    font-size: 25px;
+  }
+  .learn h1 > span, .explore h1 > span, .innovate h1 > span, .evolve h1 > span{
+    font-size: 18px;
   }
   .learn p, .explore p{
     font-size: 12px;
   }
   .explore ol.carousel-catg li {
-    font-size: 13px;
+    font-size: 10px;
   }
+  .scrollspyMenu li{
+    margin: 0.2rem 10px;
+  }
+  .scrollspyMenu .active a{
+    font-size: 14px;
+  }
+  .scrollspyMenu a{
+    font-size: 14px;
+  }
+  .nav-link{
+    font-size: 14px;
+        padding: 3px 10px;
+  }
+
   /* .image-wrapper,
   .text-wrapper {
     height: 115px;
@@ -323,7 +343,7 @@ body {
     font-size: 11px;
     padding: 0;
 }
-.my-0 {
+/* .my-0 {
     margin-top: 4rem !important;
     margin-bottom: 0rem !important;
 }
@@ -338,7 +358,7 @@ body {
 .my-2 {
     margin-top: 4rem !important;
     margin-bottom: 5rem !important;
-}
+} */
 .feature-title{
     font-size: 12px !important;
 }
@@ -512,7 +532,7 @@ body {
   .nav-link {
     font-size: 11px;
     padding: 3px 1px;
-    margin: 3px;
+    margin: 5px;
 }
 .our-guiding-section .learn h2{
     font-size: 22px;
@@ -577,13 +597,18 @@ body {
   .footer {
       padding: 15px 0 0 10px;
   }
-  /* @media (max-width: 768px) {
-    section {
-      height: auto; 
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-  } */
+  .learn h1,
+  .explore h1,
+  .innovate h1 {
+    /* font-size: 30px; */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    /* padding-bottom: 15px;
+    margin-bottom: 15px; */
+  }
+  .custom-modal-backdrop img{
+    height: auto;
+  }
   .fixed-top{
     background: #ffff !important;
   }
