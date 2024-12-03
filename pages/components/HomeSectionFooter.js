@@ -9,7 +9,7 @@ const HomeSectionFooter = () => {
   return (
     <>
        {/* Footer Section */}
-       <div className="home-footer" style={{backgroundColor:"rgb(233 236 239 / 26%)"}}>
+       <div className="home-footer" style={{backgroundColor:"#E7EAEB"}}>
         <div className="container-fluid my-custom-footer">
           {/* <div className='fp-tableFooter' style={{backgroundColor:"rgb(233 236 239 / 26%)", padding:"50px"}}>
           <div className='container-fluid my-1'> */}

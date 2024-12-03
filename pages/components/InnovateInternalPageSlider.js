@@ -8,22 +8,22 @@ const events = [
   {
     title: "MINDBOX",
     description: "Fosters creativity and problem-solving skills by engaging students in hands-on projects that address real-world challenges.",
-    image: "/images/innovate/mindbox.png",
+    image: "/images/innovate/slider/mindbox.webp",
   },
   {
     title: "STREAM",
     description: "Cultivates entrepreneurial skills and innovative thinking, preparing students to transform ideas into reality for future industries.",
-    image: "/images/innovate/stream.png",
+    image: "/images/innovate/slider/stream.webp",
   },
   {
     title: "DESIGN THINKING",
     description: "Empowers students to creatively tackle real-world problems, fostering innovative solutions through diverse cultural and sensory insights.",
-    image: "/images/innovate/design-thinking.png",
+    image: "/images/innovate/slider/design-thinking.webp",
   },
   {
     title: "ROBOTICS & DESIGN LAB",
     description: "Equips students with practical skills in robotics and design, enhancing their readiness for future careers through hands-on projects and expert guidance.",
-    image: "/images/innovate/robotics-design.png",
+    image: "/images/innovate/slider/robotics-design.webp",
   },
 ];
 

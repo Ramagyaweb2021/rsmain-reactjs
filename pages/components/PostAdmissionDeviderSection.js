@@ -30,7 +30,7 @@ const PostAdmissionDeviderSection = () => {
           >
             <Button variant="light-1" className="fw-bold" onClick={handleShow}>
               {/* <h6>CONTACT ADMISSION OFFICE</h6> */}
-              <Image src="/images/download.png" alt="" width={20} height={20} /> DOWNLOAD APP
+              <Image src="/images/doc.png" alt="" width={20} height={20} /> DOWNLOAD APP
             </Button>
           </Col>
         </Row>

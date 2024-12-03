@@ -51,25 +51,15 @@ const ScholarshipProgramme = () => {
       <AdmissionScrollspyMenu />
       {/* small push can section */}
       <section className="container learn pre-admission-section my-5">
-      <div className="row g-0">
-      <div className="col-lg-4 g-0">
-      <h1 className="main-heading wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.3s', fontSize: "30px" }}>
-      A SMALL PUSH CAN BE A GIANT LEAP!
-      <span className="lineclass" />
-      </h1>
-      </div>
-      <div className="col-lg-8 g-0">
-      <p className='justify-content-center wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.3s', marginTop: "10px", textAlign: "left" }}>
-      Each and every one of us has our own passions and areas of interest that we would like to explore and excel at. On the other hand, there are only a few who are brave enough as well as privileged enough to take the road less travelled. Would the world not be a much better place if people followed their passion?
+        <h1 className="main-heading wow animate__animated animate__fadeInUp mt-5" style={{ animationDelay: '0.3s'}}>
+            A SMALL PUSH CAN BE A GIANT LEAP!
+            </h1>
+            <p className='justify-content-center wow animate__animated animate__fadeInUp'>Each and every one of us has our own passions and areas of interest that we would like to explore and excel at. On the other hand, there are only a few who are brave enough as well as privileged enough to take the road less travelled. Would the world not be a much better place if people followed their passion?
       What if you got a push at the right moment? What if you were given a boost that could help you secure your future?
-      At Ramagya School this is what the Scholarship Programme is for; a morale-boosting push that can help you propel yourself into the annals of creative freedom and true self-worth in the area of academic success. There are three Scholarship Programmes offered by Ramagya that have been tailored for the purpose of ensuring that each student may avail this crucial push during their educational journeys, depending on their personal aspirations.
-      </p>
-      </div>
-      <div className='col-12'>
+      At Ramagya School this is what the Scholarship Programme is for; a morale-boosting push that can help you propel yourself into the annals of creative freedom and true self-worth in the area of academic success. There are three Scholarship Programmes offered by Ramagya that have been tailored for the purpose of ensuring that each student may avail this crucial push during their educational journeys, depending on their personal aspirations.</p>
       <p className='justify-content-center wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.4s'}}><b>NOTE:</b> Special benefits for BPL Card Holders: Eligible students for 100% scholarship will get books, uniform and transport free.</p>
-      </div>
-      </div>
       </section>
+    
       {/* THE ACADEMIC SCHOLARSHIP FOR SESSION 2024-2025 section */}
       <section className="container-fluid bg-image-section my-5">
       <div className="container my-5">
@@ -249,7 +239,7 @@ const ScholarshipProgramme = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 {/* <Image src="/images/admission/book-appointment.png" alt="book-appointment" width={120} height={140} /> */}
@@ -268,7 +258,7 @@ const ScholarshipProgramme = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 {/* <Image src="/images/admission/book-appointment.png" alt="book-appointment" width={120} height={140} /> */}
@@ -287,7 +277,7 @@ const ScholarshipProgramme = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 {/* <Image src="/images/admission/book-appointment.png" alt="book-appointment" width={120} height={140} /> */}
@@ -306,7 +296,7 @@ const ScholarshipProgramme = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 {/* <Image src="/images/admission/book-appointment.png" alt="book-appointment" width={120} height={140} /> */}

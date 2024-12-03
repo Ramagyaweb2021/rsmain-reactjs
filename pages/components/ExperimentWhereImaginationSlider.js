@@ -9,27 +9,27 @@ const events = [
   {
     title: 'DANCE',
     description: 'Inspires creativity and self-expression, enabling students to explore movement while enhancing coordination, confidence, and emotional connection through rhythm.',
-    image: '/images/experiment/dance.png',
+    image: '/images/experiment/internal-category-2/dance.webp',
   },
   {
     title: 'DRAMA',
     description: 'Encourages self-expression and creativity, allowing students to develop improvisation skills and gain confidence through engaging performances and role-playing.',
-    image: '/images/experiment/club.png',
+    image: '/images/experiment/internal-category-2/drama.webp',
   },
   {
     title: 'FILM MAKING',
     description: 'Explore creativity through photography and filmmaking, where students capture stories and experiment with visual storytelling techniques.',
-    image: '/images/experiment/film-making.png',
+    image: '/images/experiment/internal-category-2/film-making.webp',
   },
   {
     title: 'PHOTOGRAPHY',
     description: 'Fosters creativity and storytelling as students explore visual expression, capturing moments and perspectives through the art of photography x',
-    image: '/images/experiment/photography.png',
+    image: '/images/experiment/internal-category-2/photography.webp',
   },
   {
     title: 'VISUAL & PERFORMING ARTS',
     description: 'Cultivating creativity while boosting cognitive, emotional and motor skill development in students.',
-    image: '/images/experiment/performing-arts.png',
+    image: '/images/experiment/internal-category-2/performing-arts.webp',
   },
 ];
 

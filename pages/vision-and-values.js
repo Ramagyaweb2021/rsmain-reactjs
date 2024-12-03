@@ -84,7 +84,7 @@ const VissionAndValue = () => {
                 {/* <div className="col-lg-6">
                   <Image src="/path/to/your-image.jpg" width={600} height={400} alt="School Building" className="img-fluid rounded" />
                 </div> */}
-                <div className="col-lg-6 mx-auto d-flex align-items-center">
+                <div className="col-lg-6 col-12 mx-auto d-flex align-items-center">
                   <div className='about-us-detail'>
                     <h3 className='main-heading-internal-pages'>OUR VISION</h3>
                     <p>

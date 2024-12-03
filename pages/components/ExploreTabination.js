@@ -98,7 +98,7 @@ const ExploreTabination = () => {
                         <div className="text-center mb-4">
                           <h5 className="fw-bold" style={{ textAlign: "center" }}>Learning Domain</h5>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -112,7 +112,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -126,7 +126,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -140,7 +140,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -154,7 +154,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -168,7 +168,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -182,7 +182,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -196,7 +196,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -316,7 +316,7 @@ const ExploreTabination = () => {
                         <div className="text-center mb-4">
                           <h5 className="fw-bold" style={{ textAlign: "center" }}>Learning Domain</h5>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -330,7 +330,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -344,7 +344,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -358,7 +358,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -372,7 +372,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -386,7 +386,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -400,7 +400,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -414,7 +414,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -428,7 +428,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -442,7 +442,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -456,7 +456,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -585,7 +585,7 @@ const ExploreTabination = () => {
                         <div className="text-center mb-4">
                           <h5 className="fw-bold" style={{ textAlign: "center" }}>Learning Domain</h5>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -599,7 +599,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -613,7 +613,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -627,7 +627,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -641,7 +641,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -655,7 +655,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -669,7 +669,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -683,7 +683,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -697,7 +697,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -711,7 +711,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -725,7 +725,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -739,7 +739,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -865,7 +865,7 @@ const ExploreTabination = () => {
                         <div className="text-center mb-4">
                           <h5 className="fw-bold" style={{ textAlign: "center" }}>Learning Domain</h5>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -879,7 +879,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -893,7 +893,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -907,7 +907,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -921,7 +921,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -935,7 +935,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -949,7 +949,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -963,7 +963,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -977,7 +977,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -991,7 +991,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -1005,7 +1005,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -1019,7 +1019,7 @@ const ExploreTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-3 mb-4">
+                        <div className="col-md-3 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image

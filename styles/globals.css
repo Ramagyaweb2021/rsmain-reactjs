@@ -692,7 +692,8 @@ ul {
   position: relative;
   z-index: 1;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
+  /* font-weight: 600; */
   line-height: 19.5px;
   text-align: center;
   text-transform: capitalize;
@@ -1469,8 +1470,8 @@ title_3 trans {
   align-items: center;
   background-color: var(--color-set-green) 80;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 .play-button-overlay:hover {
@@ -1769,7 +1770,8 @@ title_3 trans {
 .learn-more-button {
   width: 100%;
   text-align: center;
-  max-width: 200px;
+  max-width: 150px;
+  /* max-width: 200px; */
   margin: 10px 0;
   padding: 3px 3px;
   position: relative;

@@ -37,7 +37,7 @@ export default function OurInitiative() {
       <h2 className="main-heading-internal-pages text-center my-5">OUR INITIATIVE</h2>
       <div className="row">
         {initiatives.map((initiative, index) => (
-          <div className="col-12 col-md-6 col-lg-3 mb-4" key={index}>
+          <div className="col-6 col-md-6 col-lg-3 mb-4" key={index}>
             <div className="card h-100 shadow-sm border-0">
               <Image src={initiative.imageSrc} className="card-img-top" alt={initiative.title} width={250} height={250}/>
               <div className="card-body-ramagya-foundation-our-initiative">

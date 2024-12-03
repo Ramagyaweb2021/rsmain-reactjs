@@ -26,7 +26,7 @@ const LeadershipSection = () => {
       name: 'Mr. Utkarsh Gupta',
       title: 'Managing Director | Ramagya Group',
       quote: '“There is only one corner of the universe you can be certain of improving, and that’s your own self.”',
-      imageUrl: '/images/people/utkarsh-gupta-full.png', // Large image
+      imageUrl: '/images/people/utkarsh-gupta-full.webp', // Large image
       thumbnailUrl: '/images/people/utkarsh-gupta-thumbnail.png', // Thumbnail image
       logo: '/images/people/forbes.png',
     },
@@ -99,7 +99,7 @@ const LeadershipSection = () => {
                   <h6>{leadershipData.chairman.name}</h6>
                   <p className="fst-italic">{leadershipData.chairman.quote}</p>
                   <a href='https://www.forbesindia.com/article/brand-connect/dr-sanjay-gupta-chairman-ramagya-group-a-benevolent-visionary/62865/1' target='_blank'><Image src={leadershipData.chairman.logo} alt="Forbes Logo" width={150} height={70} /></a>
-                  <p className="mt-3">{leadershipData.chairman.description}</p>
+                  <p>{leadershipData.chairman.description}</p>
                   {/* <div className="d-flex justify-content-center align-items-center mt-1">
                     <div className="learn-more-button">
                     <a href="#">Know More</a>
@@ -110,7 +110,7 @@ const LeadershipSection = () => {
             
               </div>
               <div className='row'>
-              <div className='col-md-12 text-left'>
+              <div className='col-md-12 p-mobile-margin text-left'>
                 <p>This quote perfectly encapsulates the remarkable journey of Ramagya School over the past 15 years. Every great achievement begins with a vision, and our journey started with a dream to create a space where young learners could explore their potential and thrive alongside their peers on an international scale.</p>
 
                 <p>From our modest beginnings, we envisioned an educational environment that transcends conventional standards, empowering students to reach for the stars and change the world. This vision has guided us in establishing our nascent academic foundation, as we not only dreamed but also committed ourselves to turning that dream into reality. It required immense perseverance, passion, determination, and self-discipline to nurture those initial seedlings into what we have today.</p>
@@ -148,7 +148,7 @@ const LeadershipSection = () => {
             
               </div>
               <div className='row'>
-              <div className='col-md-12 text-left'>
+              <div className='col-md-12 p-mobile-margin text-left'>
                 <p>At Ramagya, we align with UNICEF’s vision of education, where the focus is on equipping young minds with essential life skills, laying a foundation for transformational learning experiences. We believe in recruiting individuals of character and nurturing their potential, for education today serves a dual purpose: to enable students to make a meaningful living and to empower them to live independently. Our mission emphasizes learning how to think rather than what to think, cultivating a skill set that prepares students for a dynamic future.</p>
 
                 <p>Education, as we envision it, transcends technical proficiency; it broadens horizons, ignites intellectual curiosity, and fosters a lifelong journey of learning. At Ramagya, we aim for an education that encourages students to observe, question, and grow, with parents and teachers serving as the strongest role models in this journey. Your guidance, influence, and shared commitment to their development make all the difference in inspiring and shaping your child&#39;s potential.</p>
@@ -186,7 +186,7 @@ const LeadershipSection = () => {
             
               </div>
               <div className='row'>
-              <div className='col-md-12 text-left'>
+              <div className='col-md-12 p-mobile-margin text-left'>
                 <p>Under the visionary leadership of Mr. Utkarsh Gupta, Ramagya School has rapidly established itself as one of the top 30 schools in India, with ambitious aspirations to break into the top 10 in the coming years. Our commitment to providing the best facilities and resources for our students is unwavering. Through strategic collaborations with prestigious universities globally, we offer our students a rich, international platform that enhances their learning experiences and broadens their horizons.</p>
 
                 <p>Today, we proudly celebrate a track record of unparalleled academic results. As the demand for quality education continues to grow, we recognize the importance of moving closer to our students, ensuring that we remain attuned to their needs and aspirations. Our relentless pursuit of excellence in education drives us to continuously refine and enrich our teaching methodologies and resources.</p>

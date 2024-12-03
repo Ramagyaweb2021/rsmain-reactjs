@@ -77,22 +77,22 @@ const leadershipData = [
           `,
           },
   
-  // Other entries...
-];
+            // Other entries...
+          ];
 
-const Leadership = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [selectedLeader, setSelectedLeader] = useState(null);
+          const Leadership = () => {
+            const [showModal, setShowModal] = useState(false);
+            const [selectedLeader, setSelectedLeader] = useState(null);
 
-  const handleShowModal = (leader) => {
-    setSelectedLeader(leader);
-    setShowModal(true);
-  };
+            const handleShowModal = (leader) => {
+              setSelectedLeader(leader);
+              setShowModal(true);
+            };
 
-  const handleCloseModal = () => {
-    setShowModal(false);
-    setSelectedLeader(null);
-  };
+            const handleCloseModal = () => {
+              setShowModal(false);
+              setSelectedLeader(null);
+            };
 
   return (
     <section className="py-5">

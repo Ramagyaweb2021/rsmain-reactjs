@@ -173,7 +173,7 @@ const HomeLeadSection = () => {
                         <div className="text-left">
                           <h5 className="card-title-1 mb-1">{item.name}</h5>
                           <p className="text-muted mb-2">{item.desc}</p>
-                          <hr className="my-0 w-75" />
+                          {/* <hr className="my-0 w-75" /> */}
                         </div>
                       </div>
                       <div className="text-left">

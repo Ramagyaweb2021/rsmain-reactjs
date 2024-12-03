@@ -46,7 +46,7 @@ export default function GlimpseOfTheVideos() {
       <h2 className="main-heading-internal-pages text-center my-5">GLIMPSE OF THE VIDEOS</h2>
       <div className="row">
         {initiatives.map((initiative, index) => (
-          <div className="col-12 col-md-6 col-lg-4 mb-4" key={index}>
+          <div className="col-6 col-md-6 col-lg-4 mb-4" key={index}>
             <div className="card h-100 shadow-sm border-0">
               {initiative.video ? (
                 <iframe

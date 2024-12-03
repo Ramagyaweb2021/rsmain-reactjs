@@ -66,7 +66,7 @@ const LeadAchievementsInternalPage = () => {
     <Container className="container bg-image-section">
       <div className="row learn">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-          <h1 className="main-heading" style={{ fontSize: '30px' }}>
+          <h1 className="main-heading mt-3">
             ACHIEVEMENTS
             <span className="lineclass" />
             <span
@@ -127,7 +127,7 @@ const LeadAchievementsInternalPage = () => {
         <div className="row justify-content-center my-5 g-1">
          <h3 style={{textAlign:"center"}}>LASS X TOPPERS</h3>
           {activeCards.map((card, index) => (
-            <div key={index} className="col-md-2 col-lg-2">
+            <div key={index} className="col-md-2 col-lg-2 col-6 mt-10">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                 <Image
@@ -137,7 +137,7 @@ const LeadAchievementsInternalPage = () => {
                   width="200"
                   height="100"
                 />
-                  <h2 className="card-number text-left">{card.number}</h2>
+                  {/* <h2 className="card-number text-left">{card.number}</h2> */}
                   <center><div className="learn-more-button"><a href="#" target="_blank">Find Detail</a></div></center>
                   {/* <h5 className="card-subtitle mb-3 fw-bold">{card.title}</h5>
                   <p className="text-left">{card.text}</p> */}

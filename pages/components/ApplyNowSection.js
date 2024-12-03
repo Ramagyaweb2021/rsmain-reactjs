@@ -25,11 +25,11 @@ const leadershipData = [
 
 const ApplyNowSection = () => {
   return (
-    <section className="py-5">
+    <section className="py-0">
       <div className="container text-center">
         <div className="row g-3">
           {leadershipData.map((leader, index) => (
-            <div className="col-md-4" key={index}>
+            <div className="col-md-4 col-6 mx-auto" key={index}>
               <div className="card border-0 card-hover">
                 <div className="card-body-leader-ship text-center">
                   <div className="position-relative">

@@ -67,7 +67,7 @@ const EvolveTabination = () => {
                       <div className="row justify-content-center my-5 g-1">
                         <p style={{ textAlign: "center" }}>Key roles of the Student Driven Society at Ramagya School include:</p>
                         {/* Card 1 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">01</h2>
@@ -79,7 +79,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 2 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">02</h2>
@@ -91,7 +91,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 3 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">03</h2>
@@ -103,7 +103,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 4 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">04</h2>
@@ -115,7 +115,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 5 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">05</h2>
@@ -127,7 +127,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 6 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">06</h2>
@@ -139,7 +139,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 7 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">07</h2>
@@ -152,7 +152,7 @@ const EvolveTabination = () => {
                         </div>
                     
                       {/* Card 8 */}
-                      <div className="col-md-3">
+                      <div className="col-md-3 col-6">
                         <div className="card h-100 border-0 shadow-sm">
                           <div className="card-value-body text-left">
                             <h2 className="card-number text-left">08</h2>
@@ -164,7 +164,7 @@ const EvolveTabination = () => {
                         </div>
                       </div>
                       {/* Card 9 */}
-                      <div className="col-md-3">
+                      <div className="col-md-3 col-6">
                         <div className="card h-100 border-0 shadow-sm">
                           <div className="card-value-body text-left">
                             <h2 className="card-number text-left">09</h2>
@@ -176,7 +176,7 @@ const EvolveTabination = () => {
                         </div>
                       </div>
                       {/* Card 10 */}
-                      <div className="col-md-3">
+                      <div className="col-md-3 col-6">
                         <div className="card h-100 border-0 shadow-sm">
                           <div className="card-value-body text-left">
                             <h2 className="card-number text-left">10</h2>
@@ -265,7 +265,7 @@ const EvolveTabination = () => {
                       <div className="row justify-content-center my-5 g-1">
                         <p style={{ textAlign: "center" }}>In addition to organizing events, the Student Cabinet plays a pivotal role in</p>
                         {/* Card 1 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">01</h2>
@@ -277,7 +277,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 2 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">02</h2>
@@ -289,7 +289,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 3 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">03</h2>
@@ -301,7 +301,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 4 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">04</h2>
@@ -313,7 +313,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 5 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">05</h2>
@@ -403,7 +403,7 @@ const EvolveTabination = () => {
                       <div className="row justify-content-center my-5 g-1">
                         <p style={{ textAlign: "center" }}>Our CSR activities are brought to life through several dedicated initiatives:</p>
                         {/* Card 1 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">01</h2>
@@ -415,7 +415,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 2 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">02</h2>
@@ -427,7 +427,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 3 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">03</h2>
@@ -439,7 +439,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 4 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">04</h2>
@@ -451,7 +451,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 5 */}
-                        <div className="col-md-6">
+                        <div className="col-md-6 ">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">05</h2>
@@ -470,7 +470,7 @@ const EvolveTabination = () => {
                         {/* <div className="text-center mb-4">
                           <h5 className="fw-bold" style={{ textAlign: "center" }}>Learning Domain</h5>
                         </div> */}
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -484,7 +484,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -498,7 +498,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -513,7 +513,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -527,7 +527,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -541,7 +541,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -555,7 +555,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -569,7 +569,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -583,7 +583,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -597,7 +597,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -611,7 +611,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -625,7 +625,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -639,7 +639,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -653,7 +653,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -667,7 +667,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -681,7 +681,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -695,7 +695,7 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-2 mb-4">
+                        <div className="col-md-2 col-6 mb-4">
                           <div className="card text-center h-100 border-1">
                             <div className="card-value-body">
                               <Image
@@ -871,7 +871,7 @@ const EvolveTabination = () => {
                       <div className="row justify-content-center my-5 g-1">
                         <p style={{ textAlign: "center" }}>NIPUNTA aims to:</p>
                         {/* Card 1 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">01</h2>
@@ -883,7 +883,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 2 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">02</h2>
@@ -895,7 +895,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 3 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">03</h2>
@@ -907,7 +907,7 @@ const EvolveTabination = () => {
                           </div>
                         </div>
                         {/* Card 4 */}
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-6">
                           <div className="card h-100 border-0 shadow-sm">
                             <div className="card-value-body text-left">
                               <h2 className="card-number text-left">04</h2>

@@ -42,7 +42,7 @@ const LeadTabination = () => {
                       <div className='row justify-content-center my-3'>
                         <div className='col-md-12'>
                           <div className='about-content learn'>
-                          <h1 style={{fontSize:"30px"}}>
+                          <h1>
                              RAMAGYA ALUMNI REUNITE
                               <span className="lineclass" />
                               <span
@@ -74,13 +74,13 @@ const LeadTabination = () => {
                     </div>
                     <div className="container">
                       <div className='row justify-content-center my-3'>
-                        <div className='col-md-4'>
+                        <div className='col-md-4 col-6'>
                          <Image src="/images/lead/alumini/1.png" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
                         </div>
-                        <div className='col-md-4'>
+                        <div className='col-md-4 col-6'>
                          <Image src="/images/lead/alumini/1.png" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
                         </div>
-                        <div className='col-md-4'>
+                        <div className='col-md-4 col-12 mt-1'>
                          <Image src="/images/lead/alumini/1.png" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
                         </div>
                       </div>

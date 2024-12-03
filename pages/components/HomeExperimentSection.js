@@ -13,9 +13,9 @@ const HomeExperimentSection = () => {
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 10000,
+    speed: 5000,
     autoplay: true,
-    autoplaySpeed: 10000, 
+    autoplaySpeed: 5000, 
     swipe: false,
     draggable: false,
     dotsClass: "slick-dots custom-dots",
@@ -30,9 +30,9 @@ const HomeExperimentSection = () => {
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 10000,
+    speed: 3000,
     autoplay: true,
-    autoplaySpeed: 10000, 
+    autoplaySpeed: 5000, 
     swipe: false,
     draggable: false,
     dotsClass: "slick-dots custom-dots",
@@ -46,9 +46,9 @@ const HomeExperimentSection = () => {
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 10000,
+    speed: 3000,
     autoplay: true,
-    autoplaySpeed: 10000, 
+    autoplaySpeed: 5000, 
     swipe: false,
     draggable: false,
     dotsClass: "slick-dots custom-dots",
@@ -64,7 +64,7 @@ const HomeExperimentSection = () => {
         if (prevCategory === 'category2') return 'category3';
         return 'category1';
       });
-    }, 6000); // Change category every 6 seconds (adjust the time as needed)
+    }, 5000); // Change category every 6 seconds (adjust the time as needed)
 
     return () => clearInterval(categoryInterval); // Clean up on component unmount
   }, []);
@@ -101,7 +101,7 @@ const HomeExperimentSection = () => {
                       <div className="box">
                         <div className="flex">
                           <h6 className="colr1">JODO GYAN</h6>
-                          <p>Enhancing number sense and problem-solving through hands-on, innovative learning methods, building a solid math foundation.</p>
+                          <p>Enhancing number sense and problem-solving through hands-on, innovative learning methods.</p>
                         </div>
                       </div>
                       </div>
@@ -118,7 +118,7 @@ const HomeExperimentSection = () => {
                       <div className="box">
                         <div className="flex">
                           <h6 className="colr1">CLUBS</h6>
-                          <p>Clubs foster creativity, collaboration and life skills, while sharpens improvisation, confidence and communication.</p>
+                          <p>Clubs foster creativity, collaboration and life skills, while sharpens improvisation, confidence.</p>
                         </div>
                       </div>
                       </div>
@@ -152,7 +152,7 @@ const HomeExperimentSection = () => {
                     <div className="box">
                         <div className="flex">
                           <h6 className="colr1">DANCE</h6>
-                          <p>Inspires creativity and self-expression, enabling students to explore movement while enhancing coordination, confidence, and emotional connection through rhythm.</p>
+                          <p>Inspires creativity and self-expression, enabling students to explore movement while enhancing coordination.</p>
                         </div>
                       </div>
                     </div>
@@ -431,7 +431,7 @@ const HomeExperimentSection = () => {
                        <div className="box">
                           <div className="flex">
                           <h6 className="colr1">STREAM</h6>
-                          <p>Hands-on experiments and STEAM projects boost critical thinking, while the Computer Lab enhances coding skills and technological fluency.</p>
+                          <p>Hands-on experiments and STEAM projects boost critical thinking, while the Computer Lab enhances coding.</p>
                           </div>
                         </div>
                       </div>
@@ -537,7 +537,7 @@ const HomeExperimentSection = () => {
                         <div className="box">
                             <div className="flex">
                             <h6 className="colr1">POTTERY</h6>
-                            <p>Encourages creativity and hands-on learning, allowing students to shape their ideas while enhancing motor skills and focus.</p>
+                            <p>Encourages creativity and hands-on learning, allowing students to shape their ideas while enhancing motor skills.</p>
                             </div>
                           </div>
                         </div>

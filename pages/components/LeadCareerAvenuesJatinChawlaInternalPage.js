@@ -102,7 +102,7 @@ const LeadCareerAvenuesJatinChawlaInternalPage = () => {
     <Container className="container">
       <div className="row learn">
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-          <h1 className="main-heading" style={{ fontSize: '30px' }}>
+          <h1 className="main-heading mt-3">
             CAREER AVENUES
             <span className="lineclass" />
             <span
@@ -134,7 +134,7 @@ const LeadCareerAvenuesJatinChawlaInternalPage = () => {
         {/* Cards */}
         <div className="row justify-content-center my-5 g-1">
           {activeCards?.map((card, index) => (
-            <div key={index} className="col-md-3">
+            <div key={index} className="col-md-3 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
                   <h2 className="card-number text-left">{card.number}</h2>

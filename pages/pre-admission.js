@@ -62,21 +62,16 @@ const PreAdmission = () => {
 
       {/* Pre admission section */}
       <section className="container learn pre-admission-section my-5">
-        <div className="row g-0">
-          <div className="col-lg-3 g-0">
-            <h1 className="main-heading wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.3s', fontSize: "30px" }}> PRE - ADMISSION
-              <span className="lineclass" />
+        <h1 className="main-heading wow animate__animated animate__fadeInUp mt-5" style={{ animationDelay: '0.3s'}}>
+               PRE-ADMISSION 
             </h1>
-          </div>
-          <div className="col-lg-9 g-0">
-            <p className='wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.3s', marginTop: "55px", textAlign: "left" }}>Parents and guardians desirous of admitting their wards to Ramagya School should familiarize themselves with the school by filling the Inquiry Form. It is requested to fill in the undisguised details in the form that would help the school to create a suitable environment for the child, once admitted.</p>
-          </div>
-        </div>
+            <p>Parents and guardians desirous of admitting their wards to Ramagya School should familiarize themselves with the school by filling the Inquiry Form. It is requested to fill in the undisguised details in the form that would help the school to create a suitable environment for the child, once admitted.</p>
+            <Image src="/images/admission/pre-admission-step.png" alt="pre-admission-step" width={1256} height={296} />
       </section>
       {/* Pre admission step section */}
-      <section className="container pre-admission-step-section text-center my-5 wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.3s' }}>
+      {/* <section className="container pre-admission-step-section text-center my-5 wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.3s' }}>
         <Image src="/images/admission/pre-admission-step.png" alt="pre-admission-step" width={1256} height={296} />
-      </section>
+      </section> */}
       {/* Pre admission apply now section */}
       <ApplyNowSection />
       <PreAdmissionDeviderSection />
@@ -104,7 +99,7 @@ const PreAdmission = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/book-appointment.png" alt="book-appointment" width={120} height={140} />
@@ -121,7 +116,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/book-school-tour.png" alt="book-school-tour" width={120} height={140} />
@@ -138,7 +133,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/virtual-tour.png" alt="virtual-tour" width={120} height={140} />
@@ -155,7 +150,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/prospectus.png" alt="prospectus" width={120} height={140} />
@@ -246,7 +241,7 @@ const PreAdmission = () => {
           >
           Facilities
           </h2>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/extended-hours.png" alt="facility" width={95} height={80} />
@@ -254,7 +249,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/canteen-cafeteria.png" alt="facility" width={95} height={80} />
@@ -262,7 +257,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/transport-pick-up-and drop.png" alt="facility" width={95} height={80} />
@@ -270,7 +265,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/daily-monthly-report.png" alt="facility" width={95} height={80} />
@@ -278,7 +273,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/ramagya-first-step.png" alt="facility" width={95} height={80} />
@@ -286,7 +281,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-           <div className="col-md-2 mb-4">
+           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/cctv-camera.png" alt="facility" width={95} height={80} />
@@ -294,7 +289,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/live-app-for-parents.png" alt="facility" width={95} height={80} />
@@ -302,7 +297,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/emergency-services.png" alt="facility" width={95} height={80} />
@@ -310,7 +305,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/qualified-teachers.png" alt="facility" width={95} height={80} />
@@ -318,7 +313,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/ac-rooms.png" alt="facility" width={95} height={80} />
@@ -326,7 +321,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/indoor-play.png" alt="facility" width={95} height={80} />
@@ -334,7 +329,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/outdoor-play.png" alt="facility" width={95} height={80} />
@@ -342,7 +337,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/sports.png" alt="facility" width={95} height={80} />
@@ -350,7 +345,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/acitivity-classes.png" alt="facility" width={95} height={80} />
@@ -358,7 +353,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/acitivity-classes.png" alt="facility" width={95} height={80} />
@@ -366,7 +361,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/labs.png" alt="facility" width={95} height={80} />
@@ -374,7 +369,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/smart-classes.png" alt="facility" width={95} height={80} />
@@ -382,7 +377,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/wifi.png" alt="facility" width={95} height={80} />

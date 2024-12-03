@@ -52,6 +52,18 @@ const FeeStructure = () => {
       <AdmissionScrollspyMenu />
       {/* Depositing Fee section */}
       <section className="container learn pre-admission-section my-5">
+        <h1 className="main-heading wow animate__animated animate__fadeInUp mt-5" style={{ animationDelay: '0.3s'}}>
+            DEPOSTING FEE
+            </h1>
+            <p className='justify-content-center wow animate__animated animate__fadeInUp'>As alluded in the Fee Performa Invoice, School Fees has to be deposited at the time of the admission. <br/>
+            Parents must adhere to the dates indicated in the Fee Structure of the school. Students will not be allowed to attend the school if all or any of the Fee/ Amount is due.</p>
+            <p className='justify-content-center wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.3s', marginTop: "60px", textAlign: "left" }}>
+              As alluded in the Fee Performa Invoice, School Fees has to be deposited at the time of the admission. <br/>
+              Parents must adhere to the dates indicated in the Fee Structure of the school. Students will not be allowed to attend the school if all or any of the Fee/ Amount is due.
+            </p>
+            <p className='justify-content-center wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.4s'}}><b>Note-</b> Deduction of amount, on withdrawal of admission will be- Rs. 25000/- (within 30 days) and Rs. 50000/- (within 60 days) as processing fee from the total amount submitted. <br/> No admission fee will be refunded if the withdrawal application is made after 60 days from admission or after the session commencement.</p>
+      </section>
+      {/* <section className="container learn pre-admission-section my-5">
         <div className="row g-0">
           <div className="col-lg-3 g-0">
             <h1 className="main-heading wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.3s', fontSize: "30px" }}>
@@ -69,7 +81,7 @@ const FeeStructure = () => {
           <p className='justify-content-center wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.4s'}}><b>Note-</b> Deduction of amount, on withdrawal of admission will be- Rs. 25000/- (within 30 days) and Rs. 50000/- (within 60 days) as processing fee from the total amount submitted. <br/> No admission fee will be refunded if the withdrawal application is made after 60 days from admission or after the session commencement.</p>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Fee procedure section */}
       <section className='container-fluid fee-procedure-section my-5'>
         <div className="row">
@@ -77,7 +89,7 @@ const FeeStructure = () => {
           <div className="col-lg-6">
             <Image src="/path/to/your-image.jpg" width={600} height={400} alt="School Building" className="img-fluid rounded" />
           </div> */}
-          <div className="col-lg-8 mx-auto d-flex align-items-center">
+          <div className="col-lg-8 col-12 mx-auto d-flex align-items-center">
             <div className='fee-procedure-detail'>
               <h3 className='main-heading-internal-pages'>NOIDA</h3>
                 <p><b>The Procedure of Remitting Payments</b></p>

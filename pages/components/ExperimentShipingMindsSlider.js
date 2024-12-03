@@ -9,27 +9,27 @@ const events = [
   {
     title: 'BOOK REVIEWS',
     description: 'Sharpens critical thinking as students discuss themes, characters, and plots from the Book of the Month.',
-    image: '/images/experiment/book-review.png',
+    image: '/images/experiment/internal-category-3/book-review.webp',
   },
   {
     title: 'MUSIC',
     description: 'A vital part of education, teaching teamwork, patience, and creativity through both Indian and Western music forms.',
-    image: '/images/experiment/music.png',
+    image: '/images/experiment/internal-category-3/music.webp',
   },
   {
     title: 'CHARACTER ENHANCEMENT',
     description: '"Geeta Saar," TED Talks, and Circle Time foster emotional intelligence, leadership and personal growth in students.',
-    image: '/images/experiment/character-enhancement.png',
+    image: '/images/experiment/internal-category-3/character-enhancement.webp',
   },
   {
     title: 'DEBATE',
     description: 'Enhances critical thinking, communication, and confidence as students engage in structured discussions and express diverse perspectives.',
-    image: '/images/experiment/debate.png',
+    image: '/images/experiment/internal-category-3/debate.webp',
   },
   {
     title: 'POTTERY',
     description: 'Encourages creativity and hands-on learning, allowing students to shape their ideas while enhancing motor skills and focus.',
-    image: '/images/experiment/pottery.png',
+    image: '/images/experiment/internal-category-3/pottery.webp',
   },
 ];
 

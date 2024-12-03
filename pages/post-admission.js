@@ -60,22 +60,18 @@ const PostAdmission = () => {
         <AdmissionScrollspyMenu />
         {/*Post admission section */}
         <section className="container learn pre-admission-section my-5">
-        <div className="row g-0">
-          <div className="col-lg-3 g-0">
-            <h1 className="main-heading wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.3s', fontSize: "30px" }}> POST - ADMISSION
-              <span className="lineclass" />
+        <h1 className="main-heading wow animate__animated animate__fadeInUp mt-5" style={{ animationDelay: '0.3s'}}>
+             POST - ADMISSION
             </h1>
-          </div>
-          <div className="col-lg-9 g-0">
-            <p className='justify-content-center wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.3s', marginTop: "60px", textAlign: "left" }}>After securing admission, parents are encouraged to complete necessary formalities and stay engaged with our updates and resources. This helps ensure a seamless transition, fostering a supportive environment tailored to each child’s growth at Ramagya School.</p>
-          </div>
-        </div>
-        </section>
+            <p>After securing admission, parents are encouraged to complete necessary formalities and stay engaged with our updates and resources. This helps ensure a seamless transition, fostering a supportive environment tailored to each child’s growth at Ramagya School.</p>
+            {/* <Image src="/images/admission/pre-admission-step.png" alt="pre-admission-step" width={1256} height={296} /> */}
+      </section>
+       
         {/* Confirmation section */}
         <section className="container learn pre-admission-section my-5">
           <div className="row g-0">
             <div className="col-lg-12 g-0">
-              <h1 className='main-heading-internal-pages' style={{fontSize:"30px"}}>
+              <h1 className='main-heading-internal-pages'>
                   CONFIRMATION
                   <span className="lineclass" />
                   {/* <span className="sub-heading"> */}
@@ -138,7 +134,7 @@ const PostAdmission = () => {
         {/* Appointment section */}
         <section className="container about-us my-5">
         <div className="row justify-content-center">
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/transport.png" alt="transport" width={120} height={140} />
@@ -155,7 +151,7 @@ const PostAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/further-info.png" alt="further-info" width={120} height={140} />
@@ -172,7 +168,7 @@ const PostAdmission = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/whatsapp.png" alt="whatsapp" width={120} height={140} />

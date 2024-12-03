@@ -92,16 +92,16 @@ const RamagyaFoundation = () => {
             </div>
             <div className="col-lg-7">
               <div className='row'>
-                <div className='col-md-6 g-1'>
+                <div className='col-md-6 col-6 g-1'>
                   <Image src="/images/ramagya-foundation/1.png" width={350} height={276} alt="School Building" className="img-fluid rounded" />
                 </div>
-                <div className='col-md-6 g-1'>
+                <div className='col-md-6 col-6 g-1'>
                   <Image src="/images/ramagya-foundation/2.png" width={350} height={276} alt="School Building" className="img-fluid rounded" />
                 </div>
-                <div className='col-md-6 g-1'>
+                <div className='col-md-6 col-6 g-1'>
                   <Image src="/images/ramagya-foundation/3.png" width={350} height={276} alt="School Building" className="img-fluid rounded" />
                 </div>
-                <div className='col-md-6 g-1'>
+                <div className='col-md-6 col-6 g-1'>
                   <Image src="/images/ramagya-foundation/4.png" width={350} height={276} alt="School Building" className="img-fluid rounded" />
                 </div>
               </div>
@@ -117,7 +117,7 @@ const RamagyaFoundation = () => {
           <h3 className='main-heading-internal-pages'>OUR REACH SO FAR</h3>
         </div>
         <div className="row justify-content-center">
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 col-6 mb-4">
             <div className="card text-center h-100 border-1">
               <div className="card-value-body">
               <Image src="/images/ramagya-foundation/icon-1.png" alt="icon" width={50} height={50} />
@@ -128,7 +128,7 @@ const RamagyaFoundation = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 col-6 mb-4">
             <div className="card text-center h-100 border-1">
               <div className="card-value-body">
               <Image src="/images/ramagya-foundation/icon-2.png" alt="icon" width={50} height={50} />
@@ -139,7 +139,7 @@ const RamagyaFoundation = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-1">
               <div className="card-value-body">
               <Image src="/images/ramagya-foundation/icon-3.png" alt="icon" width={50} height={50} />
@@ -150,7 +150,7 @@ const RamagyaFoundation = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mb-4">
+          <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-1">
               <div className="card-value-body">
               <Image src="/images/ramagya-foundation/icon-4.png" alt="icon" width={50} height={50} />
