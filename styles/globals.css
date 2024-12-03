@@ -2260,8 +2260,9 @@ video.main-video {
   padding: 20px;
 }
 b, strong {
-  font-weight: bolder;
+  font-weight: 500;
   color: var(--color-set-green);
+  font-family: var(--font-family-text);
 }
  /* Custom bullet styling */
  ul.custom-bullets {
@@ -2611,7 +2612,7 @@ hr {
   background-image: url('/images/next.png');
 }
 .navbar-brand{
-  background-image: url(/images/ellipse.png);
+  /* background-image: url(/images/ellipse.png); */
     /* background-color: #ffffffc2; */
     /* background-blend-mode: overlay; */
     background-repeat: no-repeat;

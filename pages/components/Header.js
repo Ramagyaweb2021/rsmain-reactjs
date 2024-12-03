@@ -44,7 +44,8 @@ const Header = () => {
       <nav id="navbar" className="navbar fixed-top wow animate__animated animate__none" style={{ animationDelay: '0.3s' }}>
       <div className="container-fluid">
           <a className="navbar-brand" href="./">
-            <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
+           {/* <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/> */}
+           <Image src="/images/logo.webp" alt="Ramagya school logo" width={300} height={65}/>
           </a>
           {/* <Button variant="warning" size="lg" style={{float:"right"}}>
             APPLY NOW
@@ -79,7 +80,8 @@ const Header = () => {
           >
             <div className="offcanvas-header">
             <a className="navbar-brand" href="./">
-              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/>
+            <Image src="/images/logo.webp" alt="Ramagya school logo" width={300} height={65}/>
+              {/* <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={300} height={62}/> */}
             </a>
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
                 <Image src="/images/close.webp" alt="Close" width={64} height={64}  className="btn-close btn-close-yellow" data-bs-dismiss="offcanvas"/>

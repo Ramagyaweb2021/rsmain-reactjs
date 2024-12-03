@@ -5,7 +5,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import dynamic from 'next/dynamic';
 import 'animate.css';
 import Image from 'next/image'
-import ExploreSecondaryVideoSection from './ExploreSecondaryVideoSection';
+// import ExploreSecondaryVideoSection from './ExploreSecondaryVideoSection';
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
@@ -59,7 +59,7 @@ const ExploreTabination = () => {
                       <div className="row justify-content-center my-3">
                         <div className="col-md-8">
                           <p className='tabination-text'>
-                            Our curriculum includes three powerful learning approaches that make early education at Ramagya unique:
+                             Our curriculum includes three powerful learning approaches that make early education at Ramagya unique:
                           </p>
                           <h2 className="fw-bold mb-3">The Montessori Method</h2>
                           <p className='tabination-text'>
@@ -73,6 +73,10 @@ const ExploreTabination = () => {
                           <p className='tabination-text'>
                             We integrate knowledge across different subjects through central themes or topics, creating connections that help children understand complex ideas. With subjects like literacy, numeracy, science, and art woven into thematic learning experiences, children develop a deeper understanding of concepts and are encouraged to think critically and creatively.
                           </p>
+                          <h2 className="fw-bold mb-3">Raz Plus</h2>
+                          <p className='tabination-text'>
+                            Ramagya School partners with Raz-Plus, a dynamic blended learning platform, offering leveled resources, personalized reading, and data-driven assessments to enhance primary student&#39;s reading skills. Accessible in various formats, it bridges classroom instruction with independent practice for holistic literacy development.
+                          </p>
                         </div>
                         <div className="col-md-4">
                           <Image src="/images/explore/explore-1.png" alt="explore-1" width={430} height={306} />
@@ -81,9 +85,9 @@ const ExploreTabination = () => {
                       <div className="row justify-content-center my-3">
                         <div className="col-md-12">
                           <p className='tabination-text'>
-                            In addition to these teaching methodologies, a typical day in our Early Years Program incorporates Circle Time, Skill-Based Work Time, Music and Movement, Pottery, both Free Play and Structured Play, outdoor activities, DEAR Time (Drop Everything and Read), and Reflection Time. Each activity is carefully designed to support holistic development, focusing on building essential life skills such as empathy, patience, teamwork, and curiosity.
-                            Our approach fosters a collaborative relationship with families, where parents are regarded as key partners in their child’s journey. We provide regular updates and offer personalized learning plans (IEPs) to cater to each child’s unique strengths and learning pace. This partnership with parents and guardians, especially during the first days of school, helps children transition smoothly and build a sense of security in their new learning environment.
-                            By embedding these foundational experiences in our early education program, Ramagya School sets the stage for students to embark on a lifetime of passionate, purposeful learning.
+                              In addition to these teaching methodologies, a typical day in our Early Years Program incorporates Circle Time, Skill-Based Work Time, Music and Movement, Pottery, both Free Play and Structured Play, outdoor activities, DEAR Time (Drop Everything and Read), and Reflection Time. Each activity is carefully designed to support holistic development, focusing on building essential life skills such as empathy, patience, teamwork, and curiosity.
+                              Our approach fosters a collaborative relationship with families, where parents are regarded as key partners in their child’s journey. We provide regular updates and offer personalized learning plans (IEPs) to cater to each child’s unique strengths and learning pace. This partnership with parents and guardians, especially during the first days of school, helps children transition smoothly and build a sense of security in their new learning environment.
+                              By embedding these foundational experiences in our early education program, Ramagya School sets the stage for students to embark on a lifetime of passionate, purposeful learning.
                           </p>
 
                         </div>

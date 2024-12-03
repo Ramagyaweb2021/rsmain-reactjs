@@ -27,7 +27,7 @@ const LeadershipSection = () => {
       title: 'Managing Director | Ramagya Group',
       quote: '“There is only one corner of the universe you can be certain of improving, and that’s your own self.”',
       imageUrl: '/images/people/utkarsh-gupta-full.png', // Large image
-      thumbnailUrl: '/images/people/utkarsh-gupta-thubmnail.png', // Thumbnail image
+      thumbnailUrl: '/images/people/utkarsh-gupta-thumbnail.png', // Thumbnail image
       logo: '/images/people/forbes.png',
     },
   };
@@ -92,13 +92,13 @@ const LeadershipSection = () => {
            <div className='row'>
               <div className="col-md-12">
                 <div className="profile position-relative">
-                <Image src={leadershipData.chairman.imageUrl} alt={leadershipData.chairman.name} width={1250} height={574} className="rounded-rectangle" />
+                  <Image src={leadershipData.chairman.imageUrl} alt={leadershipData.chairman.name} width={1250} height={574} className="rounded-rectangle" />
                 {/* Overlay content */}
                 <div className="overlay-content">
                   <h5 className="mt-3">{leadershipData.chairman.title}</h5>
                   <h6>{leadershipData.chairman.name}</h6>
                   <p className="fst-italic">{leadershipData.chairman.quote}</p>
-                  <a href='#'><Image src={leadershipData.chairman.logo} alt="Forbes Logo" width={150} height={70} /></a>
+                  <a href='https://www.forbesindia.com/article/brand-connect/dr-sanjay-gupta-chairman-ramagya-group-a-benevolent-visionary/62865/1' target='_blank'><Image src={leadershipData.chairman.logo} alt="Forbes Logo" width={150} height={70} /></a>
                   <p className="mt-3">{leadershipData.chairman.description}</p>
                   {/* <div className="d-flex justify-content-center align-items-center mt-1">
                     <div className="learn-more-button">
@@ -136,7 +136,7 @@ const LeadershipSection = () => {
                   <h5 className="mt-3">{leadershipData.director.title}</h5>
                   <h6>{leadershipData.director.name}</h6>
                   <p className="fst-italic">{leadershipData.director.quote}</p>
-                  <a href='#'><Image src={leadershipData.director.logo} alt="Forbes Logo" width={250} height={70} /></a>
+                  <a href='https://www.shethepeople.tv/blog/survival-rajni-gupta-changemaker/' target='_blank'><Image src={leadershipData.director.logo} alt="Forbes Logo" width={250} height={70} /></a>
                   <p className="mt-3">{leadershipData.director.description}</p>
                   {/* <div className="d-flex justify-content-center align-items-center mt-1">
                     <div className="learn-more-button">
@@ -174,7 +174,7 @@ const LeadershipSection = () => {
                   <h5 className="mt-3">{leadershipData.managingDirector.title}</h5>
                   <h6>{leadershipData.managingDirector.name}</h6>
                   <p className="fst-italic">{leadershipData.managingDirector.quote}</p>
-                  <a href='#'><Image src={leadershipData.managingDirector.logo} alt="Forbes Logo" width={150} height={70} /></a>
+                  <a href='https://www.forbesindia.com/article/brand-connect/utkarsh-gupta-youthful-dynamism/57561/1' target='_blank'><Image src={leadershipData.managingDirector.logo} alt="Forbes Logo" width={150} height={70} /></a>
                   <p className="mt-3">{leadershipData.managingDirector.description}</p>
                   {/* <div className="d-flex justify-content-center align-items-center mt-1">
                     <div className="learn-more-button">

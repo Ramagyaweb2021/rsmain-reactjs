@@ -69,7 +69,7 @@ body {
   }
   .main-video {
     /* margin-top: -88px; */
-    height: 650px;
+    /* height: 650px; */
     width: 100%;
   }
   .banner-sec{
@@ -508,6 +508,7 @@ body {
   .nav-link {
     font-size: 11px;
     padding: 3px 1px;
+    margin: 5px;
 }
 .our-guiding-section .learn h2{
     font-size: 22px;
