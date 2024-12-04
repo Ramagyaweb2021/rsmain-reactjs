@@ -622,7 +622,8 @@ body {
     background: #ffff !important;
   }
   .navbar-brand img {
-      width: 200px;
+    width: 155px;
+      /* width: 200px; */
       margin: 0 auto;
       height: auto;
   }
