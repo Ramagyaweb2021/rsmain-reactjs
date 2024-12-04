@@ -64,7 +64,7 @@ const HomeExperimentSection = () => {
         if (prevCategory === 'category2') return 'category3';
         return 'category1';
       });
-    }, 5000); // Change category every 6 seconds (adjust the time as needed)
+    }, 50000); // Change category every 6 seconds (adjust the time as needed)
 
     return () => clearInterval(categoryInterval); // Clean up on component unmount
   }, []);
@@ -101,11 +101,11 @@ const HomeExperimentSection = () => {
                       <div className="box">
                         <div className="flex">
                           <h6 className="colr1">JODO GYAN</h6>
-                          <p>Enhancing number sense and problem-solving through hands-on, innovative learning methods.</p>
+                          <p>Enhancing number sense and problem-solving through hands-on.</p>
                         </div>
                       </div>
                       </div>
-                      <div className="col-12 col-md-4 col-lg-4 image-wrapper g-1">
+                      <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                       <Image
                         src="/images/slider/experiment/big-slider-1.webp"
                         alt="big-slider-1"
@@ -156,7 +156,7 @@ const HomeExperimentSection = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-4 col-lg-4 image-wrapper g-1">
+                    <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                     <Image
                         src="/images/slider/experiment/big-slider-4.webp"
                         alt="big-slider-4"
@@ -207,7 +207,7 @@ const HomeExperimentSection = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-12 col-md-4 col-lg-4 image-wrapper g-1">
+                        <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                           <Image
                           src="/images/slider/experiment/big-slider-7.webp"
                           alt="big-slider-7"
@@ -247,7 +247,7 @@ const HomeExperimentSection = () => {
             {activeCategory === 'category1' && (
               <>
                 <div className="row slide-content">
-                  <div className="col-12 col-md-12 col-lg-12 image-wrapper">
+                  <div className="col-12 col-md-12 col-lg-12 d-none d-md-block image-wrapper">
                   <Image
                       src="/images/slider/experiment/big-slider-2.webp"
                       alt="big-slider-2"
@@ -262,7 +262,7 @@ const HomeExperimentSection = () => {
             {activeCategory === 'category2' && (
               <>
                 <div className="row slide-content">
-                  <div className="col-12 col-md-12 col-lg-12 image-wrapper">
+                  <div className="col-12 col-md-12 col-lg-12 d-none d-md-block image-wrapper">
                       <Image
                         src="/images/slider/experiment/big-slider-5.webp"
                         alt="big-slider-5"
@@ -277,7 +277,7 @@ const HomeExperimentSection = () => {
             {activeCategory === 'category3' && (
               <>
                 <div className="row slide-content">
-                  <div className="col-12 col-md-12 col-lg-12 image-wrapper">
+                  <div className="col-12 col-md-12 col-lg-12 d-none d-md-block image-wrapper">
                      <Image
                         src="/images/slider/experiment/big-slider-8.webp"
                         alt="big-slider-8"
@@ -321,7 +321,7 @@ const HomeExperimentSection = () => {
                 {activeCategory === 'category1' && (
                   <>
                      <div className="row slide-content">
-                      <div className="col-12 col-md-6 col-lg-6 image-wrapper g-1">
+                      <div className="col-6 col-md-6 col-lg-6 image-wrapper g-1">
                       <Image
                         src="/images/slider/experiment/science-lab.webp"
                         alt="science-lab"
@@ -330,11 +330,11 @@ const HomeExperimentSection = () => {
                         className="card-img-top"
                       />
                       </div>
-                      <div className="col-12 col-md-6 col-lg-6 text-wrapper g-1">
+                      <div className="col-6 col-md-6 col-lg-6 text-wrapper g-1">
                         <div className="box">
                           <div className="flex">
                           <h6 className="colr1">SCIENCE LABS</h6>
-                          <p>Hands-on exploration and experimentation, allowing students to apply theoretical concepts and ignite curiosity through practical learning experiences.</p>
+                          <p>Hands-on exploration and experimentation, allowing students to apply theoretical concepts.</p>
                           </div>
                         </div>
                       </div>
@@ -345,7 +345,7 @@ const HomeExperimentSection = () => {
              {activeCategory === 'category2' && (
                   <>
                      <div className="row slide-content">
-                      <div className="col-12 col-md-6 col-lg-6 image-wrapper g-1">
+                      <div className="col-6 col-md-6 col-lg-6 image-wrapper g-1">
                         <Image
                         src="/images/slider/experiment/film-making.webp"
                         alt="film-making"
@@ -354,11 +354,11 @@ const HomeExperimentSection = () => {
                         className="card-img-top"
                       />
                       </div>
-                      <div className="col-12 col-md-6 col-lg-6 text-wrapper g-1">
+                      <div className="col-6 col-md-6 col-lg-6 text-wrapper g-1">
                         <div className="box">
                           <div className="flex">
                           <h6 className="colr1">FILM MAKING</h6>
-                          <p>Explore creativity through photography and filmmaking, where students capture stories and experiment with visual storytelling techniques.</p>
+                          <p>Explore creativity through photography and filmmaking.</p>
                           </div>
                         </div>
                       </div>
@@ -369,7 +369,7 @@ const HomeExperimentSection = () => {
              {activeCategory === 'category3' && (
                   <>
                      <div className="row slide-content">
-                      <div className="col-12 col-md-6 col-lg-6 image-wrapper g-1">
+                      <div className="col-6 col-md-6 col-lg-6 image-wrapper g-1">
                       <Image
                         src="/images/slider/experiment/character-enhancement.webp"
                         alt="character-enhancement"
@@ -378,11 +378,11 @@ const HomeExperimentSection = () => {
                         className="card-img-top"
                       />
                       </div>
-                      <div className="col-12 col-md-6 col-lg-6 text-wrapper g-1">
+                      <div className="col-6 col-md-6 col-lg-6 text-wrapper g-1">
                         <div className="box">
                           <div className="flex">
                           <h6 className="colr1">CHARACTER ENHANCEMENT</h6>
-                        <p>Geeta Saar, TED Talks, and Circle Time foster emotional intelligence, leadership and personal growth in students.</p>
+                        <p>Geeta Saar, TED Talks, and Circle Time foster emotional intelligence.</p>
                           </div>
                         </div>
                       </div>
@@ -401,7 +401,16 @@ const HomeExperimentSection = () => {
               <>
                  <div className='row'>
                      <div className="row slide-content">
-                      <div className="col-12 col-md-2 col-lg-2 image-wrapper g-1">
+                     
+                      <div className="col-6 col-md-2 col-lg-2 text-wrapper g-1">
+                        <div className="box">
+                          <div className="flex">
+                          <h6 className="colr1">COMPUTER LABS</h6>
+                          <p>Equipped with advanced technology, students experiment with coding, programming.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                       <Image
                         src="/images/slider/experiment/computer-lab.webp"
                         alt="computer-lab"
@@ -409,14 +418,6 @@ const HomeExperimentSection = () => {
                         height={200}
                         className="card-img-top"
                       />
-                      </div>
-                      <div className="col-12 col-md-2 col-lg-2 text-wrapper g-1">
-                        <div className="box">
-                          <div className="flex">
-                          <h6 className="colr1">COMPUTER LABS</h6>
-                          <p>Equipped with advanced technology, students experiment with coding, programming, and digital tools, fostering technological fluency.</p>
-                          </div>
-                        </div>
                       </div>
                       <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                        <Image
@@ -435,7 +436,7 @@ const HomeExperimentSection = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-12 col-md-4 col-lg-4 image-wrapper g-1">
+                      <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                       <Image
                         src="/images/slider/experiment/stream.webp"
                         alt="stream"
@@ -452,7 +453,15 @@ const HomeExperimentSection = () => {
               <>
                  <div className='row'>
                    <div className="row slide-content">
-                    <div className="col-12 col-md-2 col-lg-2 image-wrapper g-1">
+                    <div className="col-6 col-md-2 col-lg-2 text-wrapper g-1">
+                      <div className="box">
+                        <div className="flex">
+                        <h6 className="colr1">PHOTOGRAPHY</h6>
+                        <p>Fosters creativity and storytelling as students explore visual expression.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                     <Image
                       src="/images/slider/experiment/photography.webp"
                       alt="photography"
@@ -460,14 +469,6 @@ const HomeExperimentSection = () => {
                       height={200}
                       className="card-img-top"
                     />
-                    </div>
-                    <div className="col-12 col-md-2 col-lg-2 text-wrapper g-1">
-                      <div className="box">
-                        <div className="flex">
-                        <h6 className="colr1">PHOTOGRAPHY</h6>
-                        <p>Fosters creativity and storytelling as students explore visual expression, capturing moments and perspectives through the art of photography.</p>
-                        </div>
-                      </div>
                     </div>
                     <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                       <Image
@@ -488,7 +489,7 @@ const HomeExperimentSection = () => {
                       </div>
                     </div>
                   
-                    <div className="col-12 col-md-4 col-lg-4 image-wrapper g-1">
+                    <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                       <Image
                       src="/images/slider/experiment/big-slider-6.webp"
                       alt="big-slider-6"
@@ -505,7 +506,16 @@ const HomeExperimentSection = () => {
               <>
                  <div className='row'>
                     <div className="row slide-content">
-                        <div className="col-12 col-md-2 col-lg-2 image-wrapper g-1">
+                       
+                        <div className="col-6 col-md-2 col-lg-2 text-wrapper g-1">
+                          <div className="box">
+                            <div className="flex">
+                              <h6 className="colr1">DEBATE</h6>
+                              <p>Enhances critical thinking, communication, and confidence as students engages.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                         <Image
                           src="/images/slider/experiment/debate.webp"
                           alt="debate"
@@ -513,14 +523,6 @@ const HomeExperimentSection = () => {
                           height={200}
                           className="card-img-top"
                         />
-                        </div>
-                        <div className="col-12 col-md-2 col-lg-2 text-wrapper g-1">
-                          <div className="box">
-                            <div className="flex">
-                              <h6 className="colr1">DEBATE</h6>
-                              <p>Enhances critical thinking, communication, and confidence as students engage in structured discussions and express diverse perspectives.</p>
-                            </div>
-                          </div>
                         </div>
 
                         <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
@@ -537,12 +539,12 @@ const HomeExperimentSection = () => {
                         <div className="box">
                             <div className="flex">
                             <h6 className="colr1">POTTERY</h6>
-                            <p>Encourages creativity and hands-on learning, allowing students to shape their ideas while enhancing motor skills.</p>
+                            <p>Encourages creativity and hands-on learning, allowing students.</p>
                             </div>
                           </div>
                         </div>
                        
-                        <div className="col-12 col-md-4 col-lg-4 image-wrapper g-1">
+                        <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                         <Image
                           src="/images/slider/experiment/big-slider-9.webp"
                           alt="big-slider-9"

@@ -234,18 +234,18 @@ a:hover {
   margin-top: 20px;
 }
 #nav-icon1 .hamiocn1 {
-  background: url(/images/geen-menu-icon.webp) no-repeat;
+  background: url(/images/menu-icon-1.webp) no-repeat;
   background-position: 0 0;
 }
 #nav-icon1 strong {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   position: relative;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 #nav-icon1 .hamiocn2 {
-  background: url(/images/geen-menu-icon.webp) no-repeat;
-  background-position: -53px 0;
+  background: url(/images/menu-icon-2.webp) no-repeat;
+  /* background-position: 0px 14px; */
 }
 .dropdown-menu {
   --bs-dropdown-bg: var(--color-set-green);
@@ -263,7 +263,18 @@ a:hover {
   text-transform: uppercase;
   font-size: 15px;
 }
-#dropdown-basic {
+.dropdown-basic {
+  background-color: var(--color-set-green);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid var(--color-set-white);
+  padding: 7px;
+}
+/* .dropdown-basic:hover {
+  border: 1px dashed #fff0;
+} */
+/* #dropdown-basic {
   background-color: var(--color-set-green);
   font-size: 15px;
   font-weight: 600;
@@ -272,7 +283,7 @@ a:hover {
 }
 #dropdown-basic:hover {
   border: 1px dashed #fff0;
-}
+} */
 .dropdown-item:focus,
 .dropdown-item:hover {
   background-color: var(--color-set-green);
@@ -1527,8 +1538,18 @@ title_3 trans {
   padding: 2px 0 0 5px;
 }
 .dropdown-menu-end {
-  margin-left: auto;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 100px;
+  top: 20px;
 }
+
+/* .dropdown-menu-end {
+  margin-right: 80px;
+  margin-left: auto;
+  margin-top: -13px;
+} */
 .the-difference-we-make {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -2623,6 +2644,22 @@ hr {
     background-repeat: no-repeat;
     /* background-position: 50%; */
     background-size: cover;
+    /* margin-top: -13px; */
+}
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown.show .dropdown-menu {
+  display: block;
+}
+.hamburger{
+  margin-top: 0px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0px;
+  top: 0;
 }
 
 

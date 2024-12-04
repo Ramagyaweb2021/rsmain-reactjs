@@ -57,7 +57,7 @@ const FeeStructure = () => {
             </h1>
             <p className='justify-content-center wow animate__animated animate__fadeInUp'>As alluded in the Fee Performa Invoice, School Fees has to be deposited at the time of the admission. <br/>
             Parents must adhere to the dates indicated in the Fee Structure of the school. Students will not be allowed to attend the school if all or any of the Fee/ Amount is due.</p>
-            <p className='justify-content-center wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.3s', marginTop: "60px", textAlign: "left" }}>
+            <p className='justify-content-center wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.3s', textAlign: "center" }}>
               As alluded in the Fee Performa Invoice, School Fees has to be deposited at the time of the admission. <br/>
               Parents must adhere to the dates indicated in the Fee Structure of the school. Students will not be allowed to attend the school if all or any of the Fee/ Amount is due.
             </p>

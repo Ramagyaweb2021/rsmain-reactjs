@@ -20,7 +20,7 @@
 .scrollspyMenu.sticky {
   position: fixed;
   /* position: sticky; */
-  margin-top: 88px;
+  margin-top: 72px;
   /* top: 0;  */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1111;
@@ -232,11 +232,12 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: all 0.5s ease;
+  /* height: 55px; */
 }
 /* Scrollspymenu internal pages css */
 .fixed-nav {
   position: fixed;
-  top: 85px;
+  top: 55px;
   left: 0;
   width: 100%;
   /* z-index: 9999; */

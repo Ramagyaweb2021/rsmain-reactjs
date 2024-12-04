@@ -11,7 +11,8 @@ export default function Document() {
         <meta httpEquiv="Permissions-Policy" content="interest-cohort=()"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="content-language" content="english" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Cache-control" content="public"/>
         <meta name="robots" content="index, follow"/>
         <meta property="og:site_name" content="Ramagya School" />
