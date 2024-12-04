@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import 'animate.css';
 import Image from 'next/image';
 import Enquirypopup from './Enquirypopup';
 import Typebot from '../components/Typebot';
 import Link from 'next/link';
-// Dynamically import WOW.js to avoid server-side issues
+
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [hideDropdown, setHideDropdown] = useState(false); // Track if dropdown should be hidden
+  const [hideDropdown, setHideDropdown] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false); // Track dropdown state
 
   useEffect(() => {
     const navbar = document.getElementById('navbar');
@@ -25,7 +26,6 @@ const Header = () => {
         setIsSticky(false);
       }
 
-      // Check window width and scroll position for mobile devices
       if (window.innerWidth <= 768 && window.scrollY > scrollThreshold) {
         setHideDropdown(true); // Hide dropdown on mobile after scroll
       } else {
@@ -41,13 +41,16 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    // Initialize WOW.js on the client side
     const WOWJS = require('wowjs');
     const wow = new WOWJS.WOW({
       live: false,
     });
     wow.init();
   }, []);
+
+  const handleDropdownToggle = () => {
+    setDropdownOpen((prevState) => !prevState); // Toggle dropdown state
+  };
 
   return (
     <>
@@ -72,7 +75,11 @@ const Header = () => {
             onMouseEnter={(e) => e.currentTarget.classList.add('show')}
             onMouseLeave={(e) => e.currentTarget.classList.remove('show')}
           >
-            <button className="dropdown-basic dropdown-toggle" type="button">
+            <button
+              className="dropdown-basic dropdown-toggle"
+              type="button"
+              onClick={handleDropdownToggle} // Add click event to toggle dropdown
+            >
               <Image
                 src="/images/fi_check-circle.webp"
                 alt="Apply Now"
@@ -81,7 +88,7 @@ const Header = () => {
               />{' '}
               APPLY NOW
             </button>
-            <ul className="dropdown-menu">
+            <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}> {/* Add show class based on dropdown state */}
               <li>
                 <a className="dropdown-item" href="https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/" target="_blank">
                   Noida
@@ -89,11 +96,11 @@ const Header = () => {
               </li>
               <li>
                 <a className="dropdown-item" href="https://forms.edunexttechnologies.com/forms/ramagyanoidaextension/registration/" target="_blank">
-                  Noida Extension
+                  Noida Ext.
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">Greater Noida</a>
+                <a className="dropdown-item" href="#">Gr. Noida</a>
               </li>
               <li>
                 <a className="dropdown-item" href="#">Dadri</a>

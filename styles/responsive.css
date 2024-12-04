@@ -660,7 +660,6 @@ body {
   top: 0;
 }
 
-
 /* Sticky Logo */
 .sticky-logo {
   width: auto;
@@ -675,10 +674,17 @@ body {
     margin-top: -10px;
     margin-left: 12px;
     margin-right: 15px;
-    width: 347px;
+    width: 370px;
 }
 .explore ol.carousel-catg li{
   font-size: 12px;
+}
+.fixed-nav {
+  position: fixed;
+  top: 55px;
+}
+.btn-outline-warning{
+  margin: 5px;
 }
 /* .scroll-sticky {
   position: relative !important;
