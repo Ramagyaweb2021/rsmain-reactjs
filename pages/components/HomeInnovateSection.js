@@ -17,11 +17,11 @@ const HomeInnovateSection = () => {
                     NURTURING THE FUTURE GENERATION
                   </span>
                 </h1>
-                {/* <p>
+                <p>
                 Cutting-edge programs designed to ignite creativity, critical thinking, and problem-solving skills in students. By exploring real-world issues through 
                 cultural and sensory perspectives, students develop effective, innovative solutions.
                 We are committed to nurturing the next generation of innovators, preparing them to lead and excel in a rapidly changing world!
-                </p> */}
+                </p>
 
                 <div className="service_post position-relative mt-10">
                   {/* For large */}

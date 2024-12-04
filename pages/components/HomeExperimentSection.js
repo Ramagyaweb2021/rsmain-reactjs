@@ -77,7 +77,7 @@ const HomeExperimentSection = () => {
             WORKSHOPS, PROGRAMS AND EXPERIENCES
           </span>
         </h1>
-        {/* <p>Encouraging hands-on experiments that bring theory to life to enhance student’s horizons across various disciplines through experiential learning.</p> */}
+        <p>Encouraging hands-on experiments that bring theory to life to enhance student’s horizons across various disciplines through experiential learning.</p>
       </div>
 
       <div className='container-fluid'>

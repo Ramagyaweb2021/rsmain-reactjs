@@ -19,7 +19,7 @@ const HomeEvolveSection = () => {
                     FOSTERING FUTURE LEADERS
                   </span>
                 </h1>
-                {/* <p>Dynamic programs that evolve students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p> */}
+                <p>Dynamic programs that evolve students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p>
                 {/* <p>Fostering future leaders through our comprehensive approach that helps students to Evolve.
                   Through these dynamic programs, Ramagya School is committed to evolving our students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p> */}
                 <section className="service_post_111 position-relative">

@@ -136,10 +136,10 @@ const HomeLeadSection = () => {
                  EMPOWERING JOURNEYS, INSPIRING FUTURES
               </span>
             </h1>
-            {/* <p>
+            <p>
             In a world that is ever-evolving, we believe in nurturing individuals who are not only academically accomplished but also possess the skills, values, and vision to make a difference in their communities and beyond.
 
-            </p> */}
+            </p>
 
             {/* Category Buttons */}
             {/* <div className="d-flex justify-content-center my-3">

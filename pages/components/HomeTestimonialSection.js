@@ -163,8 +163,8 @@ const HomeTestimonialSection = () => {
                 VOICES THAT INSPIRE OUR JOURNEY
               </span>
             </h1>
-            <p>We believe that the most powerful stories come from the experiences of those who have been a part of our family. Our testimonials reflect the trust, joy, and growth that students, parents, and even notable personalities have experienced with us.</p>
-            {/* <p>We believe that the most powerful stories come from the experiences of those who have been a part of our family. Our testimonials reflect the trust, joy, and growth that students, parents, and even notable personalities have experienced with us. Each voice carries a unique perspective, adding to the rich tapestry of our community. Here’s what they have to say:</p> */}
+            {/* <p>We believe that the most powerful stories come from the experiences of those who have been a part of our family. Our testimonials reflect the trust, joy, and growth that students, parents, and even notable personalities have experienced with us.</p> */}
+            <p>We believe that the most powerful stories come from the experiences of those who have been a part of our family. Our testimonials reflect the trust, joy, and growth that students, parents, and even notable personalities have experienced with us. Each voice carries a unique perspective, adding to the rich tapestry of our community. Here’s what they have to say:</p>
           </div>
         </div>
         <div className="row" id='testimonial-slider'>
