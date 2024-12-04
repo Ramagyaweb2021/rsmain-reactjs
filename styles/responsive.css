@@ -496,6 +496,12 @@ body {
   }
   .my-custom-explore{
     padding-top: 4.5em;
+    background-image: url(/images/explore-bg.webp);
+    background-color: #ffffffc2;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
   }
   .my-custom-experiment{
     padding-top: 4.5em;
@@ -505,6 +511,12 @@ body {
 }
 .my-custom-evolve {
     padding-top: 4.5em;
+    background-image: url(/images/explore-bg.webp);
+    background-color: #ffffffc2;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
 }
 .my-custom-difference{
     padding-top: 4.5em;
@@ -659,7 +671,15 @@ body {
   left: 0;
   top: 0;
 }
-
+.explore .bluebox{
+    margin-top: -10px;
+    margin-left: 12px;
+    margin-right: 15px;
+    width: 347px;
+}
+.explore ol.carousel-catg li{
+  font-size: 12px;
+}
 /* .scroll-sticky {
   position: relative !important;
   top: 0;
@@ -679,6 +699,9 @@ body {
   } */
 /* #nav-icon1 strong{
   margin-top: -10px;
+} */
+/* .mt-2 explore{
+  
 } */
 }
 @media only screen and (max-width: 414px) {

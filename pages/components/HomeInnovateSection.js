@@ -24,8 +24,8 @@ const HomeInnovateSection = () => {
                 </p> */}
 
                 <div className="service_post position-relative mt-10">
-
-                  <div className="row g-4">
+                  {/* For large */}
+                  <div className="row g-4 d-none d-md-flex">
                     <div className="col-md-6 col-6 d-flex align-items-stretch g-0">
                       <div className="col-6 p-3">
                         <h5 className="feature-title">MINDBOX</h5>
@@ -104,17 +104,21 @@ const HomeInnovateSection = () => {
 
 
                     </div>
-                    {/* <div className="col-md-6 col-6 d-flex align-items-stretch g-0">
-                    <div className="col-6 p-3">
-                        <h5 className="feature-title"> VISUAL & PERFORMING ARTS</h5>
+                  
+                  </div>
+                  {/* For mobile */}
+                  <div className="row g-4 d-block d-md-none">
+                    <div className="col-6 col-md-3 d-flex align-items-stretch g-0">
+                      <div className="col-12 p-3">
+                        <h5 className="feature-title">MINDBOX</h5>
                         <p className="feature-description">
-                          Cultivating creativity while boosting cognitive, emotional, and motor skill development in students.
+                          Fosters creativity and problem-solving skills by engaging students in hands-on projects that address real-world challenges.
                         </p>
                       </div>
-                      <div className="col-6 p-0">
+                      <div className="col-12 p-0">
                         <Image
-                          alt="Book Reviews"
-                          src="/images/experiments/visual-arts.webp" 
+                          alt="mindbox"
+                          src="/images/slider/innovate/mind-box.webp" 
                           className="img feature-image"
                           width={310}
                           height={204}
@@ -122,27 +126,68 @@ const HomeInnovateSection = () => {
                           decoding="async"
                         />
                       </div>
-                      <div className="col-6 p-3">
-                        <h5 className="feature-title">STEM</h5>
-                        <p className="feature-description">
-                           Hands-on experiments and STEAM projects boost critical thinking, while the Computer Lab enhances coding skills and technological fluency.
-                        </p>
-                      </div>
-                      <div className="col-6 p-0">
-                        <Image
-                          alt="Book Reviews"
-                          src="/images/experiments/jadu-gyan.webp" 
-                          className="img feature-image"
-                          width={310}
-                          height={204}
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </div>
-
-                      
                     </div>
-  */}
+                    
+                    <div className="col-6 col-md-3 d-flex align-items-stretch g-0">
+                      <div className="col-12 p-0">
+                        <Image
+                          alt="robotics"
+                          src="/images/slider/innovate/robotics.webp" 
+                          className="img feature-image"
+                          width={310}
+                          height={204}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div className="col-12 p-3">
+                        <h5 className="feature-title">ROBOTICS & DESIGN LAB</h5>
+                        <p className="feature-description">
+                          Equips students with practical skills in robotics and design, enhancing their readiness for future careers through hands-on projects and expert guidance.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="col-6 col-md-3 d-flex align-items-stretch g-0">
+                    <div className="col-12 p-3">
+                        <h5 className="feature-title">STEAM</h5>
+                        <p className="feature-description">
+                          Cultivates entrepreneurial skills and innovative thinking, preparing students to transform ideas into reality for future industries.
+                        </p>
+                      </div>
+                      <div className="col-12 p-0">
+                        <Image
+                          alt="steam"
+                          src="/images/slider/innovate/steam.webp" 
+                          className="img feature-image"
+                          width={310}
+                          height={204}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    
+                    </div>
+
+                    <div className="col-6 col-md-3 d-flex align-items-stretch g-0">
+                      <div className="col-12 p-0">
+                        <Image
+                          alt="Book Reviews"
+                          src="/images/slider/innovate/design-thinking.webp"
+                          className="img feature-image"
+                          width={310}
+                          height={204}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div className="col-12 p-3">
+                        <h5 className="feature-title">DESIGN THINKING</h5>
+                        <p className="feature-description">
+                          Empowers students to creatively tackle real-world problems, fostering innovative solutions through diverse cultural and sensory insights.
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
 
