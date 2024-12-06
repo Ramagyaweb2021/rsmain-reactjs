@@ -100,10 +100,10 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">Gr. Noida</a>
+                <a className="dropdown-item" href="https://greaternoida.ramagyaschool.com/" target="_blank">Gr. Noida</a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">Dadri</a>
+                <a className="dropdown-item" href="https://dadri.ramagyaschool.com/" target="_blank">Dadri</a>
               </li>
             </ul>
           </div>
@@ -116,8 +116,21 @@ const Header = () => {
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar"
           >
-            <strong className={`hamiocn1 ${isSticky ? '' : 'animate__animated animate__fadeInUp'}`} style={{ display: isSticky ? 'none' : 'inline-block' }} />
-            <strong className={`hamiocn2 ${isSticky ? 'animate__animated animate__fadeInUp' : ''}`} style={{ display: isSticky ? 'inline-block' : 'none' }} />
+            <a href="#" onClick={() => console.log('hamiocn1 clicked')}>
+              <strong
+                className={`hamiocn1 ${isSticky ? '' : 'animate__animated animate__fadeInUp'}`}
+                style={{ display: isSticky ? 'none' : 'inline-block' }}
+              />
+            </a>
+            <a href="#" onClick={() => console.log('hamiocn2 clicked')}>
+              <strong
+                className={`hamiocn2 ${isSticky ? 'animate__animated animate__fadeInUp' : ''}`}
+                style={{ display: isSticky ? 'inline-block' : 'none' }}
+              />
+            </a>
+
+            {/* <strong className={`hamiocn1 ${isSticky ? '' : 'animate__animated animate__fadeInUp'}`} style={{ display: isSticky ? 'none' : 'inline-block' }} />
+            <strong className={`hamiocn2 ${isSticky ? 'animate__animated animate__fadeInUp' : ''}`} style={{ display: isSticky ? 'inline-block' : 'none' }} /> */}
             <span />
             <span />
             <span />
@@ -127,7 +140,20 @@ const Header = () => {
         {/* Offcanvas */}
         <div className="offcanvas offcanvas-top text-bg-dark" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div className="offcanvas-header">
-            <img src="/images/main-webiste-logo/logo-1.webp" alt="Ramagya school noida" />
+           <a className="navbar-brand" href="./">
+             <img src="/images/main-webiste-logo/logo-1.webp" alt="Ramagya school noida" />
+            </a>
+            {/* <a href="#" onClick={() => console.log('Close button clicked')}>
+              <Image
+                src="/images/close.webp"
+                alt="Close"
+                width={64}
+                height={64}
+                className="btn-close btn-close-yellow"
+                data-bs-dismiss="offcanvas"
+              />
+            </a> */}
+
             <Image
               src="/images/close.webp"
               alt="Close"
@@ -141,7 +167,7 @@ const Header = () => {
           <ul className="navbar-nav justify-content-center flex-grow-0 pe-3">
                {/* Who we are menu */}
                <li className="nav-item dropdown dropend">
-                  <Link
+                  <a
                     className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
@@ -149,38 +175,53 @@ const Header = () => {
                     aria-expanded="false"
                   >
                     Who are we
-                  </Link>
+                  </a>
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <Link className="dropdown-item" href="overview">
+                      <a className="dropdown-item" href="overview">
                           Overview
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="about-us">
+                      <a className="dropdown-item" href="about-us">
                         About Us 
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="vision-and-values">
+                      <a className="dropdown-item" href="vision-and-values">
                         Our vision & values  
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="people">
+                      <a className="dropdown-item" href="people">
                         People
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="ramagya-foundation">
+                      <a className="dropdown-item" href="ramagya-foundation">
                         Ramagya Foundation
-                      </Link>
+                      </a>
                     </li>
+                    <li>
+                      <a className="dropdown-item" href="testimonials">
+                        Testimonials
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="https://ramagyagroup.com/" target='_blank'>
+                        Sister Concerns
+                      </a>
+                    </li>
+                    {/* <li>
+                      <a className="dropdown-item" href="testimonials">
+                        Partnership
+                      </a>
+                    </li> */}
                   </ul>
                 </li>
                 {/* What we do */}
                 <li className="nav-item dropdown dropend">
-                  <Link
+                  <a
                     className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
@@ -188,38 +229,38 @@ const Header = () => {
                     aria-expanded="false"
                   >
                     What we do
-                  </Link>
+                  </a>
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <Link className="dropdown-item" href="explore">
+                      <a className="dropdown-item" href="explore">
                         Explore
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="experiment">
+                      <a className="dropdown-item" href="experiment">
                         Experiment
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="innovate">
+                      <a className="dropdown-item" href="innovate">
                         Innovate
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="evolve">
+                      <a className="dropdown-item" href="evolve">
                         Evolve
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="lead">
+                      <a className="dropdown-item" href="lead">
                          Lead
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </li>
                  {/*Admissions */}
-                 <li className="nav-item dropdown dropend">
-                  <Link
+                 {/* <li className="nav-item dropdown dropend">
+                  <a
                     className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
@@ -227,38 +268,38 @@ const Header = () => {
                     aria-expanded="false"
                   >
                     Admissions
-                  </Link>
+                  </a>
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <Link className="dropdown-item" href="pre-admission">
+                      <a className="dropdown-item" href="pre-admission">
                         Pre Admission
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="post-admission">
+                      <a className="dropdown-item" href="post-admission">
                         Post Admission
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="fee-structure">
+                      <a className="dropdown-item" href="fee-structure">
                         Fee Structure
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="scholarship-programme">
+                      <a className="dropdown-item" href="scholarship-programme">
                         Scholarship
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="recommend-a-student">
+                      <a className="dropdown-item" href="recommend-a-student">
                          Recomment a Student
-                      </Link>
+                      </a>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                   {/*News Feed */}
                   <li className="nav-item dropdown dropend">
-                  <Link
+                  <a
                     className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
@@ -266,46 +307,46 @@ const Header = () => {
                     aria-expanded="false"
                   >
                     News Feed
-                  </Link>
+                  </a>
                   <ul className="dropdown-menu dropdown-menu-dark">
                   <li>
-                      <Link className="dropdown-item" href="https://ramagyaschoolblog.com/category/achievements/" target='_blank'>
+                      <a className="dropdown-item" href="https://ramagyaschoolblog.com/category/achievements/" target='_blank'>
                         Achievements
-                      </Link>
+                      </a>
                     </li>
                   <li>
-                      <Link className="dropdown-item" href="https://ramagyaschoolblog.com/category/media-press/" target='_blank'>
+                      <a className="dropdown-item" href="https://ramagyaschoolblog.com/category/media-press/" target='_blank'>
                         Media Press
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="https://ramagyaschoolblog.com/category/events/" target='_blank'>
+                      <a className="dropdown-item" href="https://ramagyaschoolblog.com/category/events/" target='_blank'>
                         Events
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="awards-and-recognition">
+                      <a className="dropdown-item" href="awards-and-recognition">
                         Awards
-                      </Link>
+                      </a>
                     </li>
                   
                   </ul>
                 </li>
                  {/* Careers menu */}
                  <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" href="https://ramagyagroup.com/current-opening" target='_blank'>
+                  <a className="nav-link" aria-current="page" href="https://ramagyagroup.com/current-opening" target='_blank'>
                     Careers
-                  </Link>
+                  </a>
                 </li>
                 {/* Contact menu */}
                 <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" href="contact-us">
+                  <a className="nav-link" aria-current="page" href="contact-us">
                     Contact Us
-                  </Link>
+                  </a>
                 </li>
                 {/* Schools  */}
                <li className="nav-item dropdown dropend">
-                  <Link
+                  <a
                     className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
@@ -313,33 +354,33 @@ const Header = () => {
                     aria-expanded="false"
                   >
                     Schools
-                  </Link>
+                  </a>
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <Link className="dropdown-item" href="https://ramagyaschool.com/noida/" target='_blank'>
+                      <a className="dropdown-item" href="https://noida.ramagyaschool.com/" target='_blank'>
                         Noida
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="https://ramagyaschool.com/noida-extension/" target='_blank'>
-                       Noida Extension
-                      </Link>
+                      <a className="dropdown-item" href="https://noidaextension.ramagyaschool.com/" target='_blank'>
+                       Noida Ext.
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="https://ramagyaschool.com/gnoida/" target='_blank'>
-                        Greater Noida
-                      </Link>
+                      <a className="dropdown-item" href="https://greaternoida.ramagyaschool.com/" target='_blank'>
+                        Gr. Noida
+                      </a>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="https://ramagyaschool.com/dadri/" target='_blank'>
+                      <a className="dropdown-item" href="https://dadri.ramagyaschool.com/" target='_blank'>
                         Dadri
-                      </Link>
+                      </a>
                     </li>
-                    <li>
-                      <Link className="dropdown-item" href="https://ramagyaroots.com/" target='_blank'>
+                    {/* <li>
+                      <a className="dropdown-item" href="https://ramagyaroots.com/" target='_blank'>
                         Ramagya Roots
-                      </Link>
-                    </li>
+                      </a>
+                    </li> */}
                   </ul>
                 </li>
                 {/* End of dropdown meun */}

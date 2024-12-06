@@ -25,8 +25,8 @@ const HomeExploreSection = () => {
                   EXPLORE
                   <span className="lineclass" />
                   {/* <span className="sub-heading"> */}
-                  <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-                    OUR APPROACH AND CURRICULUM
+                  <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                    OUR APPROACH & CURRICULUM
                   </span>
                 </h1>
                 <p>

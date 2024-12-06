@@ -33,7 +33,7 @@ const HomeDifferenceSection = () => {
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
         <h1 className="main-heading">THE DIFFERENCE  WE MAKE
           <span className="lineclass" />
-          <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+          <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
               Don’t Just Educate; Transform Holistically!
           </span>
         </h1>

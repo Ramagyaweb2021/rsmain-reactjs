@@ -64,7 +64,7 @@ const HomeExperimentSection = () => {
         if (prevCategory === 'category2') return 'category3';
         return 'category1';
       });
-    }, 50000); // Change category every 6 seconds (adjust the time as needed)
+    }, 5000); // Change category every 6 seconds (adjust the time as needed)
 
     return () => clearInterval(categoryInterval); // Clean up on component unmount
   }, []);
@@ -72,16 +72,16 @@ const HomeExperimentSection = () => {
   return (
     <div className="learn">
       <div className="container my-custom-experiment">
-        <h1>EXPERIMENT<span className="lineclass" />
-          <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-            WORKSHOPS, PROGRAMS AND EXPERIENCES
+        <h1 className='scrollspy-p-0'>EXPERIMENT<span className="lineclass" />
+          <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+            WORKSHOPS, PROGRAMS & EXPERIENCES
           </span>
         </h1>
-        <p>Encouraging hands-on experiments that bring theory to life to enhance student’s horizons across various disciplines through experiential learning.</p>
+        <p className='scrollspy-p-0'>Encouraging hands-on experiments that bring theory to life to enhance student’s horizons across various disciplines through experiential learning.</p>
       </div>
 
       <div className='container-fluid'>
-        {/* First Row slider Section */}
+        {/* First Row slider Section */}  
         <div className="row slide-1 content g-1">
           <Slider {...ExperimentSlider1}>
             {activeCategory === 'category1' && (
@@ -90,7 +90,7 @@ const HomeExperimentSection = () => {
                      <div className="row slide-content">
                       <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                         <Image
-                          src="/images/slider/experiment/jadu-gyan.webp"
+                          src="/images/slider/experiment/jadu-gyan.png"
                           alt="jadu gyan"
                           width={287}
                           height={200}
@@ -107,7 +107,7 @@ const HomeExperimentSection = () => {
                       </div>
                       <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                       <Image
-                        src="/images/slider/experiment/big-slider-1.webp"
+                        src="/images/slider/experiment/big-slider-1.png"
                         alt="big-slider-1"
                         width={287}
                         height={200}
@@ -124,7 +124,7 @@ const HomeExperimentSection = () => {
                       </div>
                       <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                       <Image
-                        src="/images/slider/experiment/clubs.webp"
+                        src="/images/slider/experiment/clubs.png"
                         alt="clubs"
                         width={287}
                         height={200}
@@ -141,7 +141,7 @@ const HomeExperimentSection = () => {
                    <div className="row slide-content">
                     <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                     <Image
-                        src="/images/slider/experiment/dance.webp"
+                        src="/images/slider/experiment/dance.png"
                         alt="dance"
                         width={287}
                         height={200}
@@ -158,7 +158,7 @@ const HomeExperimentSection = () => {
                     </div>
                     <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                     <Image
-                        src="/images/slider/experiment/big-slider-4.webp"
+                        src="/images/slider/experiment/big-slider-4.png"
                         alt="big-slider-4"
                         width={287}
                         height={200}
@@ -169,13 +169,13 @@ const HomeExperimentSection = () => {
                      <div className="box">
                         <div className="flex">
                         <h6 className="colr1">DRAMA</h6>
-                        <p>Encourages self-expression and creativity, allowing students to develop improvisation skills and gain confidence through engaging performances and role-playing.</p>
+                        <p>Encourages self-expression and creativity, allowing students to develop improvisation skills.</p>
                         </div>
                       </div>
                     </div>
                     <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                     <Image
-                        src="/images/slider/experiment/drama.webp"
+                        src="/images/slider/experiment/drama.png"
                         alt="drama"
                         width={287}
                         height={200}
@@ -192,7 +192,7 @@ const HomeExperimentSection = () => {
                     <div className="row slide-content">
                         <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                           <Image
-                          src="/images/slider/experiment/book-review.webp"
+                          src="/images/slider/experiment/book-review.png"
                           alt="book-review"
                           width={287}
                           height={200}
@@ -209,7 +209,7 @@ const HomeExperimentSection = () => {
                         </div>
                         <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                           <Image
-                          src="/images/slider/experiment/big-slider-7.webp"
+                          src="/images/slider/experiment/big-slider-7.png"
                           alt="big-slider-7"
                           width={287}
                           height={200}
@@ -226,7 +226,7 @@ const HomeExperimentSection = () => {
                         </div>
                         <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                           <Image
-                          src="/images/slider/experiment/music.webp"
+                          src="/images/slider/experiment/music.png"
                           alt="music"
                           width={287}
                           height={200}
@@ -249,7 +249,7 @@ const HomeExperimentSection = () => {
                 <div className="row slide-content">
                   <div className="col-12 col-md-12 col-lg-12 d-none d-md-block image-wrapper">
                   <Image
-                      src="/images/slider/experiment/big-slider-2.webp"
+                      src="/images/slider/experiment/big-slider-2.png"
                       alt="big-slider-2"
                       width={287}
                       height={200}
@@ -264,7 +264,7 @@ const HomeExperimentSection = () => {
                 <div className="row slide-content">
                   <div className="col-12 col-md-12 col-lg-12 d-none d-md-block image-wrapper">
                       <Image
-                        src="/images/slider/experiment/big-slider-5.webp"
+                        src="/images/slider/experiment/big-slider-5.png"
                         alt="big-slider-5"
                         width={287}
                         height={200}
@@ -279,7 +279,7 @@ const HomeExperimentSection = () => {
                 <div className="row slide-content">
                   <div className="col-12 col-md-12 col-lg-12 d-none d-md-block image-wrapper">
                      <Image
-                        src="/images/slider/experiment/big-slider-8.webp"
+                        src="/images/slider/experiment/big-slider-8.png"
                         alt="big-slider-8"
                         width={287}
                         height={200}
@@ -323,7 +323,7 @@ const HomeExperimentSection = () => {
                      <div className="row slide-content">
                       <div className="col-6 col-md-6 col-lg-6 image-wrapper g-1">
                       <Image
-                        src="/images/slider/experiment/science-lab.webp"
+                        src="/images/slider/experiment/science-lab.png"
                         alt="science-lab"
                         width={287}
                         height={200}
@@ -347,7 +347,7 @@ const HomeExperimentSection = () => {
                      <div className="row slide-content">
                       <div className="col-6 col-md-6 col-lg-6 image-wrapper g-1">
                         <Image
-                        src="/images/slider/experiment/film-making.webp"
+                        src="/images/slider/experiment/film-making.png"
                         alt="film-making"
                         width={287}
                         height={200}
@@ -371,7 +371,7 @@ const HomeExperimentSection = () => {
                      <div className="row slide-content">
                       <div className="col-6 col-md-6 col-lg-6 image-wrapper g-1">
                       <Image
-                        src="/images/slider/experiment/character-enhancement.webp"
+                        src="/images/slider/experiment/character-enhancement.png"
                         alt="character-enhancement"
                         width={287}
                         height={200}
@@ -412,7 +412,7 @@ const HomeExperimentSection = () => {
                       </div>
                       <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                       <Image
-                        src="/images/slider/experiment/computer-lab.webp"
+                        src="/images/slider/experiment/computer-lab.png"
                         alt="computer-lab"
                         width={287}
                         height={200}
@@ -421,7 +421,7 @@ const HomeExperimentSection = () => {
                       </div>
                       <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                        <Image
-                          src="/images/slider/experiment/steam.webp"
+                          src="/images/slider/experiment/steam.png"
                           alt="steam"
                           width={287}
                           height={200}
@@ -438,7 +438,7 @@ const HomeExperimentSection = () => {
                       </div>
                       <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                       <Image
-                        src="/images/slider/experiment/stream.webp"
+                        src="/images/slider/experiment/stream.png"
                         alt="stream"
                         width={287}
                         height={200}
@@ -463,7 +463,7 @@ const HomeExperimentSection = () => {
                     </div>
                     <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                     <Image
-                      src="/images/slider/experiment/photography.webp"
+                      src="/images/slider/experiment/photography.png"
                       alt="photography"
                       width={287}
                       height={200}
@@ -472,7 +472,7 @@ const HomeExperimentSection = () => {
                     </div>
                     <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                       <Image
-                      src="/images/slider/experiment/performing-arts.webp"
+                      src="/images/slider/experiment/performing-arts.png"
                       alt="performing-arts"
                       width={287}
                       height={200}
@@ -491,7 +491,7 @@ const HomeExperimentSection = () => {
                   
                     <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                       <Image
-                      src="/images/slider/experiment/big-slider-6.webp"
+                      src="/images/slider/experiment/big-slider-6.png"
                       alt="big-slider-6"
                       width={287}
                       height={200}
@@ -517,7 +517,7 @@ const HomeExperimentSection = () => {
                         </div>
                         <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                         <Image
-                          src="/images/slider/experiment/debate.webp"
+                          src="/images/slider/experiment/debate.png"
                           alt="debate"
                           width={287}
                           height={200}
@@ -527,7 +527,7 @@ const HomeExperimentSection = () => {
 
                         <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                         <Image
-                          src="/images/slider/experiment/pottery.webp"
+                          src="/images/slider/experiment/pottery.png"
                           alt="pottery"
                           width={287}
                           height={200}
@@ -546,7 +546,7 @@ const HomeExperimentSection = () => {
                        
                         <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                         <Image
-                          src="/images/slider/experiment/big-slider-9.webp"
+                          src="/images/slider/experiment/big-slider-9.png"
                           alt="big-slider-9"
                           width={287}
                           height={200}

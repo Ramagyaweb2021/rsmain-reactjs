@@ -99,10 +99,10 @@ const HomeSectionFooter = () => {
                 <br></br>
                 {/* <hr/> */}
                 <p className="footer-heading">Our Schools</p>
-                <p><Link href="overview">Noida</Link></p>
-                <p><Link href="overview">Noida Extension</Link></p>
-                <p><Link href="about-us">Greater Noida</Link></p>
-                <p><Link href="about-us">Dadri</Link></p>
+                <p><Link href="https://noida.ramagyaschool.com/" target='_blank'>Noida</Link></p>
+                <p><Link href="https://noidaextension.ramagyaschool.com/" target='_blank'>Noida Extension</Link></p>
+                <p><Link href="https://greaternoida.ramagyaschool.com/" target='_blank'>Greater Noida</Link></p>
+                <p><Link href="https://dadri.ramagyaschool.com/" target='_blank'>Dadri</Link></p>
               
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
@@ -112,24 +112,27 @@ const HomeSectionFooter = () => {
                 <p><Link href="about-us">Our vision and values</Link></p>
                 <p><Link href="people">People</Link></p>
                 <p><Link href="ramagya-foundation">Ramagya Foundation</Link></p>
-                <p className="footer-heading">what we do</p>
+                <p><Link href="testimonials">Testimonials</Link></p>
+                <p><Link href="https://ramagyagroup.com/">Sister Concerns</Link></p>
+               
+              </div>
+              <div className="col-md-3 col-sm-6 col-xs-12">
+              <p className="footer-heading">what we do</p>
                 <p><Link href="explore">Explore</Link></p>
                 <p><Link href="experiment">Experiment</Link></p>
                 <p><Link href="innovate">Innovate</Link></p>
                 <p><Link href="evolve">Evolve</Link></p>
                 <p><Link href="lead">Lead</Link></p>
-              </div>
-              <div className="col-md-3 col-sm-6 col-xs-12">
-                <p className="footer-heading">admission</p>
-                <p><Link href="pre-admission">Pre Admission</Link></p>
+                {/* <p className="footer-heading">admission</p> */}
+                {/* <p><Link href="pre-admission">Pre Admission</Link></p>
                 <p><Link href="post-admission">Post Admission</Link></p>
                 <p><Link href="fee-structure">Fee Structure</Link></p>
                 <p><Link href="scholarship-programme">Scholarship</Link></p>
-                <p><Link href="recommend-a-student">Recommend a Student</Link></p>
+                <p><Link href="recommend-a-student">Recommend a Student</Link></p> */}
                 <p className="footer-heading">Other Links</p>
                 <p><Link href="https://ramagyagroup.com/current-opening" target='_blank'>Careers</Link></p>
                 <p><Link href="contact-us">Contact Us</Link></p>
-                <p><Link href="https://ramagyaschool.com/blogs/" target='_blank'>Blog</Link></p>
+                <p><Link href="https://blogs.ramagyaschool.com" target='_blank'>Blog</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>
                 <p><Link href="#">Media Press</Link></p>

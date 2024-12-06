@@ -19,30 +19,57 @@ const NoidaGalleryInternalPage = () => {
   const items = [
     // Image items
     {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/68.webp",
+      "src": "/images/gallery/img/1.webp",
       "title": "Ramagya School Gallery",
       "category": "Gallery",
       "type": "image"
     },
     {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/69.webp",
+      "src": "/images/gallery/img/2.webp",
       "title": "Ramagya School Gallery",
       "category": "Gallery",
       "type": "image"
     },
     {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/70.webp",
+      "src": "/images/gallery/img/3.webp",
       "title": "Ramagya School Gallery",
       "category": "Gallery",
       "type": "image"
     },
     {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/71.webp",
+      "src": "/images/gallery/img/4.webp",
       "title": "Ramagya School Gallery",
       "category": "Gallery",
       "type": "image"
     },
-    // Video items
+    ,
+    {
+      "src": "/images/gallery/img/5.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Gallery",
+      "type": "image"
+    },
+    ,
+    {
+      "src": "/images/gallery/img/6.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Gallery",
+      "type": "image"
+    },
+    ,
+    {
+      "src": "/images/gallery/img/7.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Gallery",
+      "type": "image"
+    },
+    ,
+    {
+      "src": "/images/gallery/img/8.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Gallery",
+      "type": "image"
+    },
     {
       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/shive-aroore.webp',
       title: 'Shive Aroore Testimonial',
@@ -111,7 +138,7 @@ const NoidaGalleryInternalPage = () => {
             <h1>
               GALLERY
               <span className="lineclass" />
-              <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+              <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
                 OUR CAPTURED MEMORY
               </span>
             </h1>

@@ -152,7 +152,7 @@ const HomeUpdatesSection = () => {
               <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <h1 className="main-heading"> SCHOOL UPDATES
                   <span className="lineclass" />
-                  <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                  <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
                     STAY INFORMED
                   </span>
                 </h1>

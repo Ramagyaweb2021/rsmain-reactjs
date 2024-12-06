@@ -12,21 +12,21 @@ const HomeEvolveSection = () => {
           <div className="container learn my-0"> */}
             <div className="row">
               <div className="col-sm-12 position-r">
-                <h1 className="">
+                <h1 className="scrollspy-p-0">
                   EVOLVE
                   <span className="lineclass" />
-                  <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                  <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
                     FOSTERING FUTURE LEADERS
                   </span>
                 </h1>
-                <p>Dynamic programs that evolve students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p>
+                <p className='scrollspy-p-0'>Dynamic programs that evolve students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p>
                 {/* <p>Fostering future leaders through our comprehensive approach that helps students to Evolve.
                   Through these dynamic programs, Ramagya School is committed to evolving our students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p> */}
                 <section className="service_post_111 position-relative">
                   <div className="row">
                     <div className='col-md-6 service_post_11 position-relative'>
-                      <div className='row'>
-                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 g-2">
+                      <div className='row internal-evolve-items'>
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 g-1">
                           <div className="service_box type_four color_two hover_1_get hover_1">
                             <div className="image-container">
                               <div className="overlay">
@@ -53,7 +53,7 @@ const HomeEvolveSection = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6  col-6 g-2">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6  col-6 g-1">
                           <div className="service_box type_four color_two hover_1_get hover_1">
                             <div className="image-container">
                               <div className="overlay">
@@ -83,7 +83,7 @@ const HomeEvolveSection = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6  col-6 g-2">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6  col-6 g-1">
                           <div className="service_box type_four color_two hover_1_get hover_1">
                             <div className="image-container">
                               <div className="overlay">
@@ -113,7 +113,7 @@ const HomeEvolveSection = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6  col-6 g-2">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6  col-6 g-1">
                           <div className="service_box type_four color_two hover_1_get hover_1">
                             <div className="image-container">
                               <div className="overlay">

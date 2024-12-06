@@ -10,14 +10,14 @@ const HomeInnovateSection = () => {
           <div className="container learn my-0"> */}
             <div className="row no-gutters">
               <div className="col-sm-12 position-r">
-                <h1 className="">
+                <h1 className="scrollspy-p-0">
                   INNOVATE
                   <span className="lineclass" />
-                   <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                   <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
                     NURTURING THE FUTURE GENERATION
                   </span>
                 </h1>
-                <p>
+                <p className='scrollspy-p-0'>
                 Cutting-edge programs designed to ignite creativity, critical thinking, and problem-solving skills in students. By exploring real-world issues through 
                 cultural and sensory perspectives, students develop effective, innovative solutions.
                 We are committed to nurturing the next generation of innovators, preparing them to lead and excel in a rapidly changing world!

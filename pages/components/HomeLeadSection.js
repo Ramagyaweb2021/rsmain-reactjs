@@ -130,7 +130,7 @@ const HomeLeadSection = () => {
               LEAD
               <span className="lineclass" />
               <span
-                className="wow animate__animated animate__zoomIn"
+                className="sub-heading wow animate__animated animate__zoomIn"
                 style={{ animationDelay: "0.3s" }}
               >
                  EMPOWERING JOURNEYS, INSPIRING FUTURES

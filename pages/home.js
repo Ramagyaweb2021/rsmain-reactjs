@@ -17,7 +17,7 @@ import HomeUpdatesSection from "./components/HomeUpdatesSection";
 import HomeAwardsSection from "./components/HomeAwardsSection";
 import HomeTestimonialSection from "./components/HomeTestimonialSection";
 import HomeSectionFooter from "./components/HomeSectionFooter";
-import OfferPopup from "./components/OfferPopup";
+//import OfferPopup from "./components/OfferPopup";
 import 'animate.css';
 
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
@@ -101,7 +101,7 @@ export default function Home() {
       </Head>
 
       <Header />
-      <OfferPopup />
+      {/* <OfferPopup /> */}
 
       {(showMainMenu || showAdditionalMenu) && (
         <ScrollspyMenu
