@@ -729,6 +729,15 @@ body {
 .btn-outline-warning{
   margin: 5px;
 }
+.card-experiment{
+  padding: 0;
+}
+.custom-prev-arrow {
+  left: 0px !important;
+}
+.custom-next-arrow {
+  right: 0px !important;
+}
 
 /* .scroll-sticky {
   position: relative !important;

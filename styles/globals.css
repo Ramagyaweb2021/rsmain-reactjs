@@ -1179,7 +1179,7 @@ ul {
 .visit-web-button {
   width: 100%;
   max-width: 150px;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 .visit-tour-button {
   width: 100%;

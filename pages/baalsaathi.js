@@ -98,7 +98,7 @@ const Baalsaathi = () => {
       <div className="container bg-dark text-light py-5">
       <div className="container text-center">
         <div className='row align-items-center justify-content-center'>
-          <div className='col-md-10'>
+          <div className='col-md-12'>
              {/* Tabs Navigation */}
             <ul className="nav nav-tabs justify-content-center mb-4" id="healthTabs" role="tablist">
               <li className="nav-item" role="presentation">

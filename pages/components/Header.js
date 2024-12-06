@@ -189,7 +189,7 @@ const Header = () => {
                     </li>
                     <li>
                       <a className="dropdown-item" href="vision-and-values">
-                        Our vision & values  
+                       Our Values 
                       </a>
                     </li>
                     <li>
@@ -207,11 +207,11 @@ const Header = () => {
                         Testimonials
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a className="dropdown-item" href="https://ramagyagroup.com/" target='_blank'>
                         Sister Concerns
                       </a>
-                    </li>
+                    </li> */}
                     {/* <li>
                       <a className="dropdown-item" href="testimonials">
                         Partnership

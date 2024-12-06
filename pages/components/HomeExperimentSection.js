@@ -226,7 +226,7 @@ const HomeExperimentSection = () => {
                         </div>
                         <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                           <Image
-                          src="/images/slider/experiment/music.png"
+                          src="/images/slider/experiment/music.webp"
                           alt="music"
                           width={287}
                           height={200}
@@ -323,7 +323,7 @@ const HomeExperimentSection = () => {
                      <div className="row slide-content">
                       <div className="col-6 col-md-6 col-lg-6 image-wrapper g-1">
                       <Image
-                        src="/images/slider/experiment/science-lab.png"
+                        src="/images/slider/experiment/science-lab.webp"
                         alt="science-lab"
                         width={287}
                         height={200}
