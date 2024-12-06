@@ -36,8 +36,17 @@ const LeadTabination = () => {
                 className="mb-3"
                 fill
               >
-                <Tab eventKey="home" title="Alumini">
-                  <section section className="explore-section my-5">
+                <Tab eventKey="home" title="Achievements">
+                 <LeadAchievementsInternalPage/>
+                </Tab>
+                <Tab eventKey="longer-tab" title="Career Avenues">
+                 <LeadCareerAvenuesJatinChawlaInternalPage/>
+                 <p className='my-4' style={{ textAlign: "center" }}>
+                    Through this collaboration, Ramagya School is proud to equip students with the tools, insights, and support needed to pursue their academic dreams on an international stage.</p>
+                </Tab>
+                <Tab eventKey="alumini" title="Alumini">
+                  
+                  {/* <section section className="explore-section my-5">
                     <div className="container">
                       <div className='row justify-content-center my-3'>
                         <div className='col-md-12'>
@@ -53,12 +62,7 @@ const LeadTabination = () => {
                               </span>
                             </h1>
 
-                            {/* <h2
-                              className="main-heading-internal-pages wow animate__animated animate__none"
-                              style={{ animationDelay: '0.2s', textAlign: "center" }}
-                            >
-                              Cultivating a Lifelong Passion for Learning
-                            </h2> */}
+                      
 
                             <p className='my-4' style={{ textAlign: "center" }}>
                             Univariety is more than a simple platform; it is an energetic community for Ramagya alumni across the globe to come together. At its core, Univariety acts as a digital ecosystem tailored specifically for Ramagya alumni needs and ensures a seamless experience for connecting, engaging, and expanding each other&#39;s skill sets.</p>
@@ -88,16 +92,8 @@ const LeadTabination = () => {
                    
                     </div>
                     <AluminiInternalpageSlider/>
-                    {/* <LeadInternalStories/> */}
-                  </section>
-                </Tab>
-                <Tab eventKey="profile" title="Achievements">
-                 <LeadAchievementsInternalPage/>
-                </Tab>
-                <Tab eventKey="longer-tab" title="Career Avenues">
-                 <LeadCareerAvenuesJatinChawlaInternalPage/>
-                 <p className='my-4' style={{ textAlign: "center" }}>
-                    Through this collaboration, Ramagya School is proud to equip students with the tools, insights, and support needed to pursue their academic dreams on an international stage.</p>
+                    
+                  </section> */}
                 </Tab>
                
               </Tabs>

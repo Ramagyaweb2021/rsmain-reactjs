@@ -51,7 +51,7 @@ const HomeLeadSection = () => {
       {
         name: "Ayushi Kaur",
         desc: "B.Com LLB",
-        img: "/images/lead/lead-1.webp",
+        img: "/images/lead/ayushi.webp",
         text: `Pursuing my B.Com LLB, I often reflect on the invaluable lessons I learned at Ramagya. 
         The school instilled in me the discipline and sincerity that are the backbone of my academic and personal life today. 
         I am incredibly grateful for the guidance and encouragement I received from my teachers, which continues to inspire me.`,
@@ -59,23 +59,22 @@ const HomeLeadSection = () => {
       {
         name: "Tushar Nagpal",
         desc: "Advocate, Delhi High Court",
-        img: "/images/lead/lead-2.webp",
+        img: "/images/lead/tushar.webp",
         text: `Now a practicing Advocate at the Delhi High Court, I hold immense gratitude for the values Ramagya imparted in me. 
         My experiences at school shaped my character and drive, instilling a deep sense of responsibility and perseverance. Ramagya's influence has been pivotal in my journey, and I am truly thankful for its lasting impact.`,
       },
       {
-        name: "Shashank Rawat",
-        desc: "IIT Bombay",
-        img: "/images/lead/lead-3.png",
-        text: `As a second-year student at IIT Bombay, I owe a significant part of my success to the nurturing and supportive environment at Ramagya. The unwavering encouragement from my teachers was instrumental in helping me realize my potential. 
-        I am incredibly thankful to Ramagya for setting me on this path and believing in me every step of the way.`,
+        name: "Garwit Bansal",
+        desc: "CA & Commerce Graduate",
+        img: "/images/lead/garwit.webp",
+        text: `Being a Chartered Accountant and Commerce graduate, I attribute much of my confidence and adaptability to my years at Ramagya. The environment encouraged me to present myself with pride and embrace new challenges. I’m thankful for the foundation Ramagya laid, enabling me to pursue a versatile and dynamic career path.`,
       },
     ],
     Achievements: [
       {
         name: "Ayushi Kaur",
         desc: "B.Com LLB",
-        img: "/images/lead/lead-1.webp",
+        img: "/images/lead/ayushi.webp",
         text: `Pursuing my B.Com LLB, I often reflect on the invaluable lessons I learned at Ramagya. 
         The school instilled in me the discipline and sincerity that are the backbone of my academic and personal life today. 
         I am incredibly grateful for the guidance and encouragement I received from my teachers, which continues to inspire me.`,
@@ -83,23 +82,22 @@ const HomeLeadSection = () => {
       {
         name: "Tushar Nagpal",
         desc: "Advocate, Delhi High Court",
-        img: "/images/lead/lead-2.webp",
+        img: "/images/lead/tushar.webp",
         text: `Now a practicing Advocate at the Delhi High Court, I hold immense gratitude for the values Ramagya imparted in me. 
         My experiences at school shaped my character and drive, instilling a deep sense of responsibility and perseverance. Ramagya's influence has been pivotal in my journey, and I am truly thankful for its lasting impact.`,
       },
       {
-        name: "Shashank Rawat",
-        desc: "IIT Bombay",
-        img: "/images/lead/lead-3.png",
-        text: `As a second-year student at IIT Bombay, I owe a significant part of my success to the nurturing and supportive environment at Ramagya. The unwavering encouragement from my teachers was instrumental in helping me realize my potential. 
-        I am incredibly thankful to Ramagya for setting me on this path and believing in me every step of the way.`,
+        name: "Garwit Bansal",
+        desc: "CA & Commerce Graduate",
+        img: "/images/lead/garwit.webp",
+        text: `Being a Chartered Accountant and Commerce graduate, I attribute much of my confidence and adaptability to my years at Ramagya. The environment encouraged me to present myself with pride and embrace new challenges. I’m thankful for the foundation Ramagya laid, enabling me to pursue a versatile and dynamic career path.`,
       },
     ],
     CareerAvenue: [
       {
         name: "Ayushi Kaur",
         desc: "B.Com LLB",
-        img: "/images/lead/lead-1.webp",
+        img: "/images/lead/ayushi.webp",
         text: `Pursuing my B.Com LLB, I often reflect on the invaluable lessons I learned at Ramagya. 
         The school instilled in me the discipline and sincerity that are the backbone of my academic and personal life today. 
         I am incredibly grateful for the guidance and encouragement I received from my teachers, which continues to inspire me.`,
@@ -107,16 +105,15 @@ const HomeLeadSection = () => {
       {
         name: "Tushar Nagpal",
         desc: "Advocate, Delhi High Court",
-        img: "/images/lead/lead-2.webp",
+        img: "/images/lead/tushar.webp",
         text: `Now a practicing Advocate at the Delhi High Court, I hold immense gratitude for the values Ramagya imparted in me. 
         My experiences at school shaped my character and drive, instilling a deep sense of responsibility and perseverance. Ramagya's influence has been pivotal in my journey, and I am truly thankful for its lasting impact.`,
       },
       {
-        name: "Shashank Rawat",
-        desc: "IIT Bombay",
-        img: "/images/lead/lead-3.png",
-        text: `As a second-year student at IIT Bombay, I owe a significant part of my success to the nurturing and supportive environment at Ramagya. The unwavering encouragement from my teachers was instrumental in helping me realize my potential. 
-        I am incredibly thankful to Ramagya for setting me on this path and believing in me every step of the way.`,
+        name: "Garwit Bansal",
+        desc: "CA & Commerce Graduate",
+        img: "/images/lead/garwit.webp",
+        text: `Being a Chartered Accountant and Commerce graduate, I attribute much of my confidence and adaptability to my years at Ramagya. The environment encouraged me to present myself with pride and embrace new challenges. I’m thankful for the foundation Ramagya laid, enabling me to pursue a versatile and dynamic career path.`,
       },
     ],
   };
