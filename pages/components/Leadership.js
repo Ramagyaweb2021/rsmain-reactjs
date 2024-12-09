@@ -131,7 +131,8 @@ const leadershipData = [
 
       {/* Modal for Leadership Details */}
       {selectedLeader && (
-        <Modal show={showModal} onHide={handleCloseModal} centered>
+        <Modal show={showModal} onHide={handleCloseModal} centered id="leadeship-modal-popup">
+        {/* <Modal show={showModal} onHide={handleCloseModal} centered> */}
           <Modal.Header closeButton></Modal.Header>
           <Modal.Body>
             <div className="container">

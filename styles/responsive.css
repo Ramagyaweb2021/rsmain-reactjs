@@ -519,7 +519,7 @@ body {
       margin: 0;
       color: var(--color-set-green);
       font-weight: 500;
-      font-size: 13px !important;
+      font-size: 11px !important;
       /* padding: 5px; */
   }
   .custom-section {
@@ -750,6 +750,12 @@ body {
 }
 .custom-next-arrow {
   right: 0px !important;
+}
+#leadeship-modal-popup {
+  /* height: 250px; */
+  /* overflow-y: scroll; */
+  /* padding-right: 15px; */
+  margin-top: 120px;
 }
 
 /* .scroll-sticky {
