@@ -107,7 +107,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/explore-1.webp"
+          src="/images/poineer-in-sports/nba.webp"
           />
         </div>
         <div className="col-md-8">
@@ -131,7 +131,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/middle-1.webp"
+          src="/images/poineer-in-sports/sporty-beans.webp"
           />
         </div>
         <div className="col-md-8 order-md-1">
@@ -154,7 +154,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/explore-1.webp"
+          src="/images/poineer-in-sports/shooting-academy.webp"
           />
         </div>
         <div className="col-md-8">
@@ -173,7 +173,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/middle-1.webp"
+          src="/images/poineer-in-sports/crc.webp"
           />
         </div>
         <div className="col-md-8 order-md-1">
@@ -192,7 +192,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/explore-1.webp"
+          src="/images/poineer-in-sports/football.webp"
           />
         </div>
         <div className="col-md-8">
@@ -211,7 +211,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/middle-1.webp"
+          src="/images/poineer-in-sports/martial-arts.webp"
           />
         </div>
         <div className="col-md-8 order-md-1">
@@ -230,7 +230,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/explore-1.webp"
+          src="/images/poineer-in-sports/pilates-yoga.webp"
           />
         </div>
         <div className="col-md-8">
@@ -249,7 +249,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/middle-1.webp"
+          src="/images/dummy-image.webp"
           />
         </div>
         <div className="col-md-8 order-md-1">

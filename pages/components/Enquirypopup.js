@@ -18,7 +18,7 @@ function MyVerticallyCenteredModal(props) {
       <div className='modal-content'>
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            <h3 className="mb-0 text-black1" style={{ fontSize: "25px", textAlign: "center", marginLeft:"10px"}}>ENQUIRE NOW!</h3>
+            <h3 className="mb-0 text-black1" style={{ fontSize: "25px", textAlign: "center", marginLeft: "10px" }}>ENQUIRE NOW!</h3>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="grid-col">
@@ -43,8 +43,8 @@ export default function App() {
 
   return (
     <>
-     {/* Side floating buttion discover section */}
-     {/* <div className="sidebar-btn-float-discover animate__animated animate__fadeInRight" style={{ animationDelay: '1s' }}>
+      {/* Side floating buttion discover section */}
+      {/* <div className="sidebar-btn-float-discover animate__animated animate__fadeInRight" style={{ animationDelay: '1s' }}>
           <Link
             href="https://qr1.be/ZJ68"
             target="_blank"
@@ -54,8 +54,8 @@ export default function App() {
             <Image src="/images/discover-more.webp" alt="Ramagya school discover button" width={40} height={154}/>
           </Link>
        </div> */}
-       {/* Enquiry buttion */}
-       <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
+      {/* Enquiry buttion */}
+      <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
         <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral btn-flash-1' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>
           <Image src="/images/enquiry-widget.webp" alt="Ramagya school enquire button" width={80} height={80} />
         </Button>

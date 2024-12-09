@@ -281,6 +281,10 @@ const ExploreTabination = () => {
                           <p className='tabination-text'>
                             Physical activity is central to our curriculum, promoting fitness, teamwork, and the importance of a balanced lifestyle through structured sports and health education.
                           </p>
+                          <h2 className="fw-bold mb-0">Personal Development & 21st Century Skills</h2>
+                          <p className='tabination-text'>
+                          Skills like critical thinking, leadership, and collaboration are cultivated to prepare students for the future workforce and instill a growth mindset.
+                          </p>
 
                         </div>
                         <div className="col-md-4">
@@ -537,9 +541,9 @@ const ExploreTabination = () => {
                           <p className='tabination-text'>
                             Dedicated activities and counseling sessions foster emotional intelligence, resilience, and empathy, supporting students&#39; mental and emotional health.
                           </p>
-                          <h2 className="fw-bold mb-0">Socio-Emotional & Mental Well-Being</h2>
+                          <h2 className="fw-bold mb-0">Community Outreach</h2>
                           <p className='tabination-text'>
-                            We focus on emotional resilience, self-awareness, and empathy through counseling and group activities, helping students manage stress and build positive relationships.
+                            Volunteering and outreach initiatives connect students to their communities, encouraging empathy, social responsibility, and a spirit of service.
                           </p>
                           <h2 className="fw-bold mb-0">Technological Skills</h2>
                           <p className='tabination-text'>
@@ -557,10 +561,7 @@ const ExploreTabination = () => {
                       </div>
                       <div className="row justify-content-center my-2">
                         <div className="col-md-12">
-                        <h2 className="fw-bold mb-0">Community Outreach</h2>
-                          <p className='tabination-text'>
-                            Volunteering and outreach initiatives connect students to their communities, encouraging empathy, social responsibility, and a spirit of service.
-                          </p>
+                       
                           <h2 className="fw-bold mb-0">Values & Ethics</h2>
                           <p className='tabination-text'>
                             haracter-building programs instill values like honesty, respect, and kindness, nurturing ethically grounded individuals.

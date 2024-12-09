@@ -85,9 +85,12 @@ const AboutUs = () => {
                   <li>Ranked #1 in India for &quot;Individual Attention to Students&quot; by Education Today Highlighting our focus on personalized learning, where every student receives tailored attention to nurture their unique potential.</li>
                   <li>Featured among the Top 30 Great Indian Schools by Forbes India Acknowledging our exceptional academic and co-curricular programs, this recognition places us among India’s most distinguished institutions.</li>
                   <li>Ranked #3 in Noida by Times School Survey Celebrating our academic excellence, cutting-edge facilities, and holistic development, this accolade recognizes our prominent standing in the Noida region.</li>
-                  <li>Named &quot;The Reformers of Indian Education&quot; by India Today Conclave</li>
+                  <li>Named &quot;The Reformers of Indian Education&quot; by India Today Conclave Recognized for our innovative approach to education, blending traditional values with modern pedagogy to redefine the learning experience.
+                  Sustainability is integral to our ethos, shaping forward-thinking and responsible citizens. Our school is built on four key pillars: Mental Health, Sports Excellence, Transcendental Meditation, and the wisdom of the Bhagavad Gita (Geeta Saar). These pillars ensure we provide an education that nurtures not only academic achievement but also the emotional, physical, and spiritual well-being of every student.</li>
                 </ul>
-
+                <p style={{ textAlign: "left" }}>
+                  We cultivate an environment where learning transcends the classroom, empowering students to become resilient, compassionate leaders ready to navigate the challenges of tomorrow. Through our holistic approach and commitment to educational innovation, we continue to inspire and shape the future of education.
+                </p>
                 <h2 className='main-heading-internal-pages'>Key Features</h2>
                 <ul className='custom-bullets'>
                   <li>Double glazed windows have been used in façade which provide excellent insulation from the temperature outside.</li>

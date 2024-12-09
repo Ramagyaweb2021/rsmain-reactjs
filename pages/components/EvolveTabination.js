@@ -753,9 +753,7 @@ const EvolveTabination = () => {
                             <li className='mb-4'>
                               <strong>The Rise of Women</strong> Grade 5 students engage with an NGO to learn about the education and empowerment of destitute girls, promoting gender equality and the value of education for girls.
                             </li>
-                            <li className='mb-4'>
-                              <strong>Birthday Celebrations for Staff</strong> Students celebrate the birthdays of caretakers and staff members, cultivating gratitude, empathy, and respect within the school community.
-                            </li>
+                          
                           </ul>
                         </div>
                       </div>
