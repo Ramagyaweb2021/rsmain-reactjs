@@ -103,7 +103,7 @@ const NoidaScrollspyHomePageTabination = () => {
                 <div className="row g-0 align-items-center">
                   <div className="col-md-4">
                     <Image
-                      src="/images/noida/principal-note.png"
+                      src="/images/noida/principal-note.webp"
                       alt="Principal"
                       width={300}
                       height={300}

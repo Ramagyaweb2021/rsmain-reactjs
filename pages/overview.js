@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -91,13 +91,13 @@ const Overview = () => {
       {/* Value section */}
       <section className="container-fluid value-section my-5">
       <div className="text-center mb-4">
-        <h3>VALUES WE PRESERVE</h3>
+        <h3 className="main-heading-internal-pages">VALUES WE PRESERVE</h3>
       </div>
       <div className="row justify-content-center">
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-             <Image src="/images/who-we-are/mission.png" alt="Our Mission" width={50} height={50} />
+             <Image src="/images/who-we-are/mission.webp" alt="Our Mission" width={50} height={50} />
               <h5>Our Mission</h5>
               <p>
                 Ramagya Senior Secondary School (affiliated to CBSE & CIE), located in Sector- 50, Noida (near Noida City Centre Metro Station) was founded in April 2005 and has carved a niche for itself as a prime educational institute in the field of education. Ra = light, Ma = Me, Gya = Inner voice came into existence for the amalgamation of contemporary education with traditional values.
@@ -108,7 +108,7 @@ const Overview = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-            <Image src="/images/who-we-are/vision.png" alt="Our Vision" width={50} height={50} />
+            <Image src="/images/who-we-are/vision.webp" alt="Our Vision" width={50} height={50} />
               <h5>Our Vision</h5>
               <p>
                 The school’s mission is to establish a world class centre of learning by delivering an educational experience that engages students intellectually, creatively, physically, spiritually and socially to transcend all barriers and work in unison to bring about a positive change in society
@@ -127,28 +127,28 @@ const Overview = () => {
       {/* Ramagya at a glance section */}
       <section className="container ramagya-at-a-glance-section my-5">
       <div className="text-center mb-4">
-        <h3>RAMAGYA AT A GLANCE</h3>
+        <h3 className="main-heading-internal-pages">RAMAGYA AT A GLANCE</h3>
       </div>
 
       <div className="row justify-content-center g-3">
         <div className="col-md-3 col-6">
           <div className="card-ramagya-at-glance border-0 position-relative">
             <Image 
-              src="/images/who-we-are/school-building.png" 
+              src="/images/who-we-are/school-building.webp" 
               alt="Campus"
               width={300} 
               height={200} 
               objectFit="cover"
-              className="rounded img-fluid"
+              className="rounded img"
             />
             <div className="overlay-text position-absolute top-50 start-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-3">
             <Image 
-              src="/images/who-we-are/campus.png" 
+              src="/images/who-we-are/campus.webp" 
               alt="Campus"
               width={50} 
               height={50} 
               objectFit="cover"
-              className="rounded img-fluid"
+              className="rounded img"
             />
               <h3 className="fw-bold text-black">4+</h3>
               <p className="mb-0 text-black">Campus</p>
@@ -158,21 +158,21 @@ const Overview = () => {
         <div className="col-md-3 col-6">
           <div className="card-ramagya-at-glance border-0 position-relative">
             <Image 
-              src="/images/who-we-are/faculity.png" 
+              src="/images/who-we-are/faculity.webp" 
               alt="Campus"
               width={300} 
               height={200} 
               objectFit="cover"
-              className="rounded img-fluid"
+              className="rounded img"
             />
             <div className="overlay-text position-absolute top-50 start-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-3">
             <Image 
-              src="/images/who-we-are/faculity-staff.png" 
+              src="/images/who-we-are/faculity-staff.webp" 
               alt="Faculty & Staff"
               width={300} 
               height={200} 
               objectFit="cover"
-              className="rounded img-fluid"
+              className="rounded img"
             />
               <h3 className="fw-bold text-black">500+</h3>
               <p className="mb-0 text-black">Faculty & Staff</p>
@@ -182,21 +182,21 @@ const Overview = () => {
         <div className="col-md-3 col-6">
           <div className="card-ramagya-at-glance border-0 position-relative">
             <Image 
-              src="/images/who-we-are/student-bg.png" 
+              src="/images/who-we-are/student-bg.webp" 
               alt="Campus"
               width={300} 
               height={200} 
               objectFit="cover"
-              className="rounded img-fluid"
+              className="rounded img"
             />
             <div className="overlay-text position-absolute top-50 start-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-3">
             <Image 
-              src="/images/who-we-are/student.png" 
+              src="/images/who-we-are/student.webp" 
               alt="Student"
               width={300} 
               height={200} 
               objectFit="cover"
-              className="rounded img-fluid"
+              className="rounded img"
             />
               <h3 className="fw-bold text-black">10k+</h3>
               <p className="mb-0 text-black">Students Guaranteed</p>
@@ -206,21 +206,21 @@ const Overview = () => {
         <div className="col-md-3 col-6">
           <div className="card-ramagya-at-glance border-0 position-relative">
             <Image 
-              src="/images/who-we-are/alumni-bg.png" 
+              src="/images/who-we-are/alumni-bg.webp" 
               alt="Campus"
               width={300} 
               height={200} 
               objectFit="cover"
-              className="rounded img-fluid"
+              className="rounded img"
             />
             <div className="overlay-text position-absolute top-50 start-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-3">
             <Image 
-              src="/images/who-we-are/alumni.png" 
+              src="/images/who-we-are/alumni.webp" 
               alt="Campus"
               width={300} 
               height={200} 
               objectFit="cover"
-              className="rounded img-fluid"
+              className="rounded img"
             />
               <h3 className="fw-bold text-black">8k+</h3>
               <p className="mb-0 text-black">Alumini Worldwide</p>
@@ -232,7 +232,7 @@ const Overview = () => {
        {/* Our leaders section */}
       <section className="container-fluid our-leaders-section my-5">
       <div className="text-center mb-4">
-        <h3>OUR LEADERSHIP</h3>
+       <h3 className="main-heading-internal-pages">OUR LEADERSHIP</h3>
       </div>
 
       <div className="row justify-content-center">
@@ -242,7 +242,7 @@ const Overview = () => {
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
                 <Image
-                  src="/images/who-we-are/sanjya-gupta.png" // Replace with your image path
+                  src="/images/who-we-are/sanjya-gupta.webp" // Replace with your image path
                   alt="Chairman"
                   width={300}
                   height={300}
@@ -277,7 +277,7 @@ const Overview = () => {
               <div className="row g-0 align-items-center">
                 <div className="col-4">
                   <Image
-                    src="/images/who-we-are/rajni-gupta.png" // Replace with your image path
+                    src="/images/who-we-are/rajni-gupta.webp" // Replace with your image path
                     alt="Director"
                     width={100}
                     height={100}
@@ -302,7 +302,7 @@ const Overview = () => {
               <div className="row g-0 align-items-center">
                 <div className="col-4">
                   <Image
-                    src="/images/who-we-are/utkarsh-gupta.png" // Replace with your image path
+                    src="/images/who-we-are/utkarsh-gupta.webp" // Replace with your image path
                     alt="Managing Director"
                     width={100}
                     height={100}
@@ -345,11 +345,11 @@ const Overview = () => {
          <div className="col-md-6 mx-auto g-0">
         <div className="image-section">
           {/* Replace with your image source */}
-          <Image src='/images/who-we-are/ramagya-foundation-video-bg.png' alt="" width={650} height={370} />
+          <Image src='/images/who-we-are/ramagya-foundation-video-bg.webp' alt="" width={650} height={370} />
           {/* Play button overlay */}
           <div className="play-button">
             {/* <i className="bi bi-play-circle-fill"></i> */}
-            <Link href="https://www.youtube.com/watch?v=wzIgSGv3WhI&t=6s" target="_blank">
+            <Link href="https://www.youtube.com/watch?v=FxT3xJFYpDg" target="_blank">
               <Image src='/images/video-play.webp' alt="play button" width={80} height={80}/>
             </Link>
               {/* <Image src='/images/video-play.webp' alt="" width={80} height={80} onClick={handleShow} /> */}

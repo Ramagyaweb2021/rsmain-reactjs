@@ -60,7 +60,7 @@ const LifeSkills = () => {
           {/* Left Image */}
           <div className="col-lg-3 col-md-3">
             <Image
-              src="/images/mental-health-club/slide-1.png" // Replace with the actual image path
+              src="/images/mental-health-club/slide-1.webp" // Replace with the actual image path
               alt="Sports Activity"
               width={371}
               height={423}
@@ -83,7 +83,7 @@ const LifeSkills = () => {
           {/* Right Image */}
           <div className="col-lg-3 col-md-3">
             <Image
-              src="/images/mental-health-club/slide-2.png" // Replace with the actual image path
+              src="/images/mental-health-club/slide-2.webp" // Replace with the actual image path
               alt="Sports Facility"
               width={371}
               height={423}
@@ -103,7 +103,7 @@ const LifeSkills = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/life-skills/1.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/life-skills/1.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">01</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">Critical Thinking and Problem-Solving</h5>
                   <p className="text-left">
@@ -116,7 +116,7 @@ const LifeSkills = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/life-skills/2.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/life-skills/2.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">02</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">Confidence and Communication</h5>
                   <p className="text-left">
@@ -129,7 +129,7 @@ const LifeSkills = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/life-skills/3.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/life-skills/3.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">03</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">Self-Awareness and Empathy</h5>
                   <p className="text-left">
@@ -142,7 +142,7 @@ const LifeSkills = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/life-skills/4.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/life-skills/4.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">04</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">Decision-Making</h5>
                   <p className="text-left">
@@ -155,7 +155,7 @@ const LifeSkills = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/life-skills/5.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/life-skills/5.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">05</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">Responsibility</h5>
                   <p className="text-left">
@@ -178,7 +178,7 @@ const LifeSkills = () => {
                   loading="lazy"
                   width={655}
                   height={530}
-                  src="/images/life-skills/school-cinema.png"
+                  src="/images/life-skills/school-cinema.webp"
                 />
               </div>
               <div className="col-md-6 col-12">
@@ -223,7 +223,7 @@ const LifeSkills = () => {
                   loading="lazy"
                   width={655}
                   height={530}
-                  src="/images/life-skills/personalised-support.png"
+                  src="/images/life-skills/personalised-support.webp"
                 />
               </div>
             </div>

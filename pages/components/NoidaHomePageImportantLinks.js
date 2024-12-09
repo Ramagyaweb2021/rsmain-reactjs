@@ -5,32 +5,32 @@ const NoidaHomePageImportantLinks = () => {
   // Data for the cards
   const cardData = [
     {
-      img: "/images/noida/important-link/icon-1.png",
+      img: "/images/noida/important-link/icon-1.webp",
       text: "Admission",
       link: "https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/",
     },
     {
-      img: "/images/noida/important-link/icon-2.png",
+      img: "/images/noida/important-link/icon-2.webp",
       text: "School Tour",
       link: "https://vtour.ramagyaschool.com/",
     },
     {
-      img: "/images/noida/important-link/icon-3.png",
+      img: "/images/noida/important-link/icon-3.webp",
       text: "Download Prospectus",
       link: "https://ramagyaschool.com/noida/assets/pdf/Ramagya-School-Brochure.pdf",
     },
     {
-      img: "/images/noida/important-link/icon-4.png",
+      img: "/images/noida/important-link/icon-4.webp",
       text: "Pay Fees",
       link: "https://ramagyanoida.edunexttechnologies.com/DirectStudentOnlineFee",
     },
     {
-      img: "/images/noida/important-link/icon-5.png",
+      img: "/images/noida/important-link/icon-5.webp",
       text: "School Life",
       link: "school-life",
     },
     {
-      img: "/images/noida/important-link/icon-6.png",
+      img: "/images/noida/important-link/icon-6.webp",
       text: "Parents’ Speak",
       link: "testimonials",
     },

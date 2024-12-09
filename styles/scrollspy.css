@@ -44,6 +44,7 @@
   font-family: var(--font-family-heading);
   font-size: 15px;
   padding: 1px 10px;
+  letter-spacing: 1px;
 }
 
 .scrollspyMenu .active a {
@@ -237,7 +238,7 @@
 /* Scrollspymenu internal pages css */
 .fixed-nav {
   position: fixed;
-  top: 80px;
+  top: 75px;
   left: 0;
   width: 100%;
   /* z-index: 9999; */

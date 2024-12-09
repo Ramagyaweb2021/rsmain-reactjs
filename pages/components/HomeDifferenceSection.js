@@ -34,7 +34,8 @@ const HomeDifferenceSection = () => {
         <h1 className="main-heading">THE DIFFERENCE  WE MAKE
           <span className="lineclass" />
           <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-              Don’t Just Educate; Transform Holistically!
+              Don’t Just Educate!
+              {/* Transform Holistically! */}
           </span>
         </h1>
           {/* <h1 className="main-heading">

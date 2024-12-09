@@ -4,19 +4,19 @@ import Image from 'next/image';
 const leadershipData = [
   {
     name: "Enquire Now",
-    image: "/images/admission/enquire-now.png",
+    image: "/images/admission/enquire-now.webp",
     button: "Enquire Now",
     Link: "https://ramagyaschool.com/landing/",
   },
   {
     name: "Admission 2024-25",
-    image: "/images/admission/admission-1.png",
+    image: "/images/admission/admission-1.webp",
     button: "Admission 2024-25",
     Link: "https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/",
   },
   {
     name: "Admission 2025-26",
-    image: "/images/admission/admission-2.png",
+    image: "/images/admission/admission-2.webp",
     button: "Admission 2025-26",
     Link: "https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/",
   },

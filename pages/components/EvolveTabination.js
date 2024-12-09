@@ -5,9 +5,8 @@ import Tabs from 'react-bootstrap/Tabs';
 import dynamic from 'next/dynamic';
 import 'animate.css';
 import Image from 'next/image'
-// Import Link from 'next/link'
-import ExploreSecondaryVideoSection from './ExploreSecondaryVideoSection';
-import { Link } from 'react-scroll';
+import Link from 'next/link'
+// import { Link } from 'react-scroll';
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
@@ -150,64 +149,64 @@ const EvolveTabination = () => {
                             </div>
                           </div>
                         </div>
-                    
-                      {/* Card 8 */}
-                      <div className="col-md-3 col-6">
-                        <div className="card h-100 border-0 shadow-sm">
-                          <div className="card-value-body text-left">
-                            <h2 className="card-number text-left">08</h2>
-                            <h5 className="card-subtitle mb-3 fw-bold">NCC</h5>
-                            <p className="text-left">
-                              Instilling discipline and leadership through foundational military training and national service.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      {/* Card 9 */}
-                      <div className="col-md-3 col-6">
-                        <div className="card h-100 border-0 shadow-sm">
-                          <div className="card-value-body text-left">
-                            <h2 className="card-number text-left">09</h2>
-                            <h5 className="card-subtitle mb-3 fw-bold">3rd Language</h5>
-                            <p className="text-left">
-                              Enhancing linguistic skills and cultural awareness through the study of foreign languages.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      {/* Card 10 */}
-                      <div className="col-md-3 col-6">
-                        <div className="card h-100 border-0 shadow-sm">
-                          <div className="card-value-body text-left">
-                            <h2 className="card-number text-left">10</h2>
-                            <h5 className="card-subtitle mb-3 fw-bold">Sculpting</h5>
-                            <p className="text-left">
-                              Nurturing creativity and dexterity through hands-on sculpting and three-dimensional art.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
 
-                      {/* Footer Text */}
-                      <div className="mt-5 text-center">
-                        <p className="text-muted">
-                          Through the Student Driven Society, Ramagya School empowers students to take charge of their own growth, develop leadership skills, and actively contribute to building a positive school culture. This initiative not only prepares students for leadership roles within the school but also equips them with the tools needed to excel in their future endeavors.
-                        </p>
-                      </div>
-                      <div className='row justify-content-center my-5'>
-                        <div className="col-md-6 mx-auto g-0">
-                          <div className="image-section">
-                            {/* Replace with your image source */}
-                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.png' alt="" width={650} height={370} />
-                            {/* Play button overlay */}
-                            <div className="play-button">
-                              {/* <i className="bi bi-play-circle-fill"></i> */}
-                              <Link href="https://www.youtube.com/watch?v=8n75vK3X9BE" target="_blank">
-                                <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
-                              </Link>
-                              {/* <Image src='/images/video-play.webp' alt="" width={80} height={80} onClick={handleShow} /> */}
-                              {/* Popup Modal */}
-                              {/* <Modal show={show} onHide={handleClose} centered>
+                        {/* Card 8 */}
+                        <div className="col-md-3 col-6">
+                          <div className="card h-100 border-0 shadow-sm">
+                            <div className="card-value-body text-left">
+                              <h2 className="card-number text-left">08</h2>
+                              <h5 className="card-subtitle mb-3 fw-bold">NCC</h5>
+                              <p className="text-left">
+                                Instilling discipline and leadership through foundational military training and national service.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        {/* Card 9 */}
+                        <div className="col-md-3 col-6">
+                          <div className="card h-100 border-0 shadow-sm">
+                            <div className="card-value-body text-left">
+                              <h2 className="card-number text-left">09</h2>
+                              <h5 className="card-subtitle mb-3 fw-bold">3rd Language</h5>
+                              <p className="text-left">
+                                Enhancing linguistic skills and cultural awareness through the study of foreign languages.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        {/* Card 10 */}
+                        <div className="col-md-3 col-6">
+                          <div className="card h-100 border-0 shadow-sm">
+                            <div className="card-value-body text-left">
+                              <h2 className="card-number text-left">10</h2>
+                              <h5 className="card-subtitle mb-3 fw-bold">Sculpting</h5>
+                              <p className="text-left">
+                                Nurturing creativity and dexterity through hands-on sculpting and three-dimensional art.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Footer Text */}
+                        <div className="mt-5 text-center">
+                          <p className="text-muted">
+                            Through the Student Driven Society, Ramagya School empowers students to take charge of their own growth, develop leadership skills, and actively contribute to building a positive school culture. This initiative not only prepares students for leadership roles within the school but also equips them with the tools needed to excel in their future endeavors.
+                          </p>
+                        </div>
+                        <div className='row justify-content-center my-5'>
+                          <div className="col-md-6 mx-auto g-0">
+                            <div className="image-section">
+                              {/* Replace with your image source */}
+                              <Image src='/images/who-we-are/ramagya-foundation-video-bg.webp' alt="" width={650} height={370} />
+                              {/* Play button overlay */}
+                              <div className="play-button">
+                                {/* <i className="bi bi-play-circle-fill"></i> */}
+                                <Link href="https://www.youtube.com/watch?v=uH-Q0PPe-ew" target="_blank">
+                                  <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
+                                </Link>
+                                {/* <Image src='/images/video-play.webp' alt="" width={80} height={80} onClick={handleShow} /> */}
+                                {/* Popup Modal */}
+                                {/* <Modal show={show} onHide={handleClose} centered>
                               <Modal.Header closeButton>
                                 <Modal.Title style={{color:"#2f6575"}}>From Curiosity to Leadership</Modal.Title>
                               </Modal.Header>
@@ -226,12 +225,12 @@ const EvolveTabination = () => {
                                 </div>
                               </Modal.Body>
                             </Modal> */}
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-</div>
                   </section>
                 </Tab>
                 <Tab eventKey="profile" title="STUDENT CABINET">
@@ -337,13 +336,13 @@ const EvolveTabination = () => {
                         <div className="col-md-6 mx-auto g-0">
                           <div className="image-section">
                             {/* Replace with your image source */}
-                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.png' alt="" width={650} height={370} />
+                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.webp' alt="" width={650} height={370} />
                             {/* Play button overlay */}
                             <div className="play-button">
                               {/* <i className="bi bi-play-circle-fill"></i> */}
-                              <Link href="https://www.youtube.com/watch?v=8n75vK3X9BE" target="_blank">
-                                <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
-                              </Link>
+                              <Link href="https://www.youtube.com/watch?v=uH-Q0PPe-ew" target="_blank">
+                                  <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
+                                </Link>
                               {/* <Image src='/images/video-play.webp' alt="" width={80} height={80} onClick={handleShow} /> */}
                               {/* Popup Modal */}
                               {/* <Modal show={show} onHide={handleClose} centered>
@@ -409,7 +408,7 @@ const EvolveTabination = () => {
                               <h2 className="card-number text-left">01</h2>
                               <h5 className="card-subtitle mb-3 fw-bold">Ramagya Foundation</h5>
                               <p className="text-left">
-                                 As a non-profit organization under Purusharth Charitable Society, the Ramagya Foundation is committed to sustainable progress, social justice, and community development. Our foundation works across various sectors including Education, Health, Women Empowerment, Animal Welfare, and more, aiming to improve living standards and create an equitable society for all. By nurturing talent and values, we inspire our students to actively contribute to a better world.
+                                As a non-profit organization under Purusharth Charitable Society, the Ramagya Foundation is committed to sustainable progress, social justice, and community development. Our foundation works across various sectors including Education, Health, Women Empowerment, Animal Welfare, and more, aiming to improve living standards and create an equitable society for all. By nurturing talent and values, we inspire our students to actively contribute to a better world.
                               </p>
                             </div>
                           </div>
@@ -457,7 +456,7 @@ const EvolveTabination = () => {
                               <h2 className="card-number text-left">05</h2>
                               <h5 className="card-subtitle mb-3 fw-bold">Commitment to the United Nations’ 17 Sustainable Development Goals (SDGs)</h5>
                               <p className="text-left">
-                                 Aligned with the United Nations’ SDGs, we focus on quality education, health, and environmental responsibility, among others, in our CSR efforts. These goals guide our activities, ensuring that students engage in meaningful actions that contribute to global progress and a more sustainable future.
+                                Aligned with the United Nations’ SDGs, we focus on quality education, health, and environmental responsibility, among others, in our CSR efforts. These goals guide our activities, ensuring that students engage in meaningful actions that contribute to global progress and a more sustainable future.
                               </p>
                             </div>
                           </div>
@@ -478,7 +477,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/1.png"
+                                src="/images/evolve/1.webp"
                               />
                               <p className='mt-2'>No Poverty</p>
                             </div>
@@ -492,7 +491,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/2.png"
+                                src="/images/evolve/2.webp"
                               />
                               <p className='mt-2'>Zero Hunger</p>
                             </div>
@@ -506,7 +505,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/3.png"
+                                src="/images/evolve/3.webp"
                               />
                               <p className='mt-2'>Good Health
                                 & Well-Being</p>
@@ -521,7 +520,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/4.png"
+                                src="/images/evolve/4.webp"
                               />
                               <p className='mt-2'>Quality Education</p>
                             </div>
@@ -535,7 +534,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/5.png"
+                                src="/images/evolve/5.webp"
                               />
                               <p className='mt-2'>Gender Equality</p>
                             </div>
@@ -549,7 +548,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/6.png"
+                                src="/images/evolve/6.webp"
                               />
                               <p className='mt-2'>Clean Water & Sanitation</p>
                             </div>
@@ -563,7 +562,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/7.png"
+                                src="/images/evolve/7.webp"
                               />
                               <p className='mt-2'>Affordable & Clean Energy</p>
                             </div>
@@ -577,7 +576,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/8.png"
+                                src="/images/evolve/8.webp"
                               />
                               <p className='mt-2'>Decent Work & Economic Growth</p>
                             </div>
@@ -591,7 +590,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/9.png"
+                                src="/images/evolve/9.webp"
                               />
                               <p className='mt-2'>Industry, Innovation & Infrastructure</p>
                             </div>
@@ -605,7 +604,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/10.png"
+                                src="/images/evolve/10.webp"
                               />
                               <p className='mt-2'>Reduced Inequalities</p>
                             </div>
@@ -619,7 +618,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/11.png"
+                                src="/images/evolve/11.webp"
                               />
                               <p className='mt-2'>Sustainable Cities & Communities</p>
                             </div>
@@ -633,7 +632,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/12.png"
+                                src="/images/evolve/12.webp"
                               />
                               <p className='mt-2'>Responsible Consumption & Production</p>
                             </div>
@@ -647,7 +646,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/13.png"
+                                src="/images/evolve/13.webp"
                               />
                               <p className='mt-2'>Climate Action</p>
                             </div>
@@ -661,7 +660,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/14.png"
+                                src="/images/evolve/14.webp"
                               />
                               <p className='mt-2'>Life Below Water</p>
                             </div>
@@ -675,7 +674,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/15.png"
+                                src="/images/evolve/15.webp"
                               />
                               <p className='mt-2'>Life On Land</p>
                             </div>
@@ -689,7 +688,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/16.png"
+                                src="/images/evolve/16.webp"
                               />
                               <p className='mt-2'>Peace, Justice & Strong Institution</p>
                             </div>
@@ -703,7 +702,7 @@ const EvolveTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/evolve/17.png"
+                                src="/images/evolve/17.webp"
                               />
                               <p className='mt-2'>Partnership for the Goals</p>
                             </div>
@@ -714,12 +713,12 @@ const EvolveTabination = () => {
                       </div>
                       <div className='row justify-content-center my-5'>
                         <p style={{ textAlign: "center" }}>Through these CSR initiatives, Ramagya School instills values of empathy, leadership, and social responsibility, encouraging students to evolve into conscientious individuals committed to building a better world.</p>
-                       
-                        <h6 className='main-heading-internal-pages' style={{textAlign:"center"}}>Community Care Programs by Age Group</h6>
+
+                        <h6 className='main-heading-internal-pages' style={{ textAlign: "center" }}>Community Care Programs by Age Group</h6>
                         <p style={{ textAlign: "center" }}>At Ramagya School, our students are encouraged to participate in community initiatives based on their age group, fostering a sense of responsibility and community engagement from a young age:</p>
                         {/* <div className="col-md-6 mx-auto g-0">
                           <div className="image-section">
-                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.png' alt="" width={650} height={370} />
+                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.webp' alt="" width={650} height={370} />
                             <div className="play-button">
                               <Link href="https://www.youtube.com/watch?v=8n75vK3X9BE" target="_blank">
                                 <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
@@ -728,116 +727,116 @@ const EvolveTabination = () => {
                           </div>
                         </div> */}
                       </div>
-                       {/* Junior School Section */}
-                        <div className="row border-1 rounded p-4 mb-4 shadow-sm bg-white">
-                          <div className="col-md-3">
-                            <Image
-                              src="/images/evolve/junior-school-grade-1.png" // Replace with the actual image path
-                              alt="Junior School"
-                              width={400}
-                              height={300}
-                              className="img-fluid rounded"
-                            />
-                          </div>
-                          <div className="col-md-9">
-                            <h3 className='fw-bold mb-4'>Junior School (Grade 1-5)</h3>
-                            <ul className="list-unstyled">
-                              <li className='mb-4'>
-                                <strong>Hygiene Education Outreach</strong> Junior students visit underserved areas to teach children the importance of hygiene, including handwashing, dental care, and regular bathing, while distributing hygiene kits to reinforce these practices.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>Park Clean-up & Gardening Project</strong> Students lead local park clean-ups and plant community gardens, fostering environmental stewardship and promoting sustainability.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>Clothing & Toy Drives</strong> Students organize drives to collect and donate gently used clothes and toys to orphanages, spreading kindness and generosity.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>The Rise of Women</strong> Grade 5 students engage with an NGO to learn about the education and empowerment of destitute girls, promoting gender equality and the value of education for girls.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>Birthday Celebrations for Staff</strong> Students celebrate the birthdays of caretakers and staff members, cultivating gratitude, empathy, and respect within the school community.
-                              </li>
-                            </ul>
-                          </div>
+                      {/* Junior School Section */}
+                      <div className="row border-1 rounded p-4 mb-4 shadow-sm bg-white">
+                        <div className="col-md-3">
+                          <Image
+                            src="/images/evolve/junior-school-grade-1.webp" // Replace with the actual image path
+                            alt="Junior School"
+                            width={400}
+                            height={300}
+                            className="img-fluid rounded"
+                          />
                         </div>
+                        <div className="col-md-9">
+                          <h3 className='fw-bold mb-4'>Junior School (Grade 1-5)</h3>
+                          <ul className="list-unstyled">
+                            <li className='mb-4'>
+                              <strong>Hygiene Education Outreach</strong> Junior students visit underserved areas to teach children the importance of hygiene, including handwashing, dental care, and regular bathing, while distributing hygiene kits to reinforce these practices.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>Park Clean-up & Gardening Project</strong> Students lead local park clean-ups and plant community gardens, fostering environmental stewardship and promoting sustainability.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>Clothing & Toy Drives</strong> Students organize drives to collect and donate gently used clothes and toys to orphanages, spreading kindness and generosity.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>The Rise of Women</strong> Grade 5 students engage with an NGO to learn about the education and empowerment of destitute girls, promoting gender equality and the value of education for girls.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>Birthday Celebrations for Staff</strong> Students celebrate the birthdays of caretakers and staff members, cultivating gratitude, empathy, and respect within the school community.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
 
-                        {/* Middle School Section */}
-                        <div className="row border-1 rounded p-4 mb-4 shadow-sm bg-white">
-                          <div className="col-md-3">
-                            <Image
-                              src="/images/evolve/middle-school.png" // Replace with the actual image path
-                              alt="Middle School"
-                              width={400}
-                              height={300}
-                              className="img-fluid rounded"
-                            />
-                          </div>
-                          <div className="col-md-9">
+                      {/* Middle School Section */}
+                      <div className="row border-1 rounded p-4 mb-4 shadow-sm bg-white">
+                        <div className="col-md-3">
+                          <Image
+                            src="/images/evolve/middle-school.webp" // Replace with the actual image path
+                            alt="Middle School"
+                            width={400}
+                            height={300}
+                            className="img-fluid rounded"
+                          />
+                        </div>
+                        <div className="col-md-9">
                           <h3 className='fw-bold mb-4'>Middle School (Grade 6-8)</h3>
-                            <ul className="list-unstyled">
-                              <li className='mb-4'>
-                                <strong>Environmental Conservation Projects</strong> Middle school students participate in tree planting, recycling initiatives, and campaigns to raise awareness about environmental issues.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>Animal Shelter Support</strong> Students visit animal shelters, providing supplies and support to improve the welfare of stray animals and promote responsible pet care.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>Support for Senior Citizens</strong> Students volunteer at old age homes, assisting with daily activities and ensuring the elderly feel valued and supported.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>Peer Tutoring Programs</strong> Students mentor peers in academic subjects, fostering collaboration and supporting the academic growth of others.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>Birthday Celebrations for Staff:</strong> Students celebrate the birthdays of caretakers and staff members, cultivating gratitude, empathy, and respect within the school community.
-                              </li>
-                            </ul>
-                          </div>
+                          <ul className="list-unstyled">
+                            <li className='mb-4'>
+                              <strong>Environmental Conservation Projects</strong> Middle school students participate in tree planting, recycling initiatives, and campaigns to raise awareness about environmental issues.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>Animal Shelter Support</strong> Students visit animal shelters, providing supplies and support to improve the welfare of stray animals and promote responsible pet care.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>Support for Senior Citizens</strong> Students volunteer at old age homes, assisting with daily activities and ensuring the elderly feel valued and supported.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>Peer Tutoring Programs</strong> Students mentor peers in academic subjects, fostering collaboration and supporting the academic growth of others.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>Birthday Celebrations for Staff:</strong> Students celebrate the birthdays of caretakers and staff members, cultivating gratitude, empathy, and respect within the school community.
+                            </li>
+                          </ul>
                         </div>
-                         {/* Senior School Section */}
-                         <div className="row border-1 rounded p-4 mb-4 shadow-sm bg-white">
-                          <div className="col-md-3">
-                            <Image
-                              src="/images/evolve/senior-school.png" // Replace with the actual image path
-                              alt="Junior School"
-                              width={400}
-                              height={300}
-                              className="img-fluid rounded"
-                            />
-                          </div>
-                          <div className="col-md-9">
-                            <h3 className='fw-bold mb-4'>Senior School (Grade 9-12)</h3>
-                            <ul className="list-unstyled">
-                              <li className='mb-4'>
-                                <strong>Tutoring and Mentoring Programs</strong> Senior students mentor younger students, offering personalized support and guidance to enhance their academic performance.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>Environmental Initiatives</strong> Senior students engage in environmental campaigns, including tree planting and pollution awareness, promoting eco-consciousness across the school community.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>Community Sports & Fitness Programs</strong> Students promote physical health and wellness through sports programs and fitness initiatives within the community.
-                              </li>
-                              <li className='mb-4'>
-                                <strong>Senior Citizen Outreach</strong> Senior students connect with elderly individuals in old age homes, offering companionship and support while helping improve their quality of life.
-                              </li>
-                             
-                            </ul>
-                          </div>
+                      </div>
+                      {/* Senior School Section */}
+                      <div className="row border-1 rounded p-4 mb-4 shadow-sm bg-white">
+                        <div className="col-md-3">
+                          <Image
+                            src="/images/evolve/senior-school.webp" // Replace with the actual image path
+                            alt="Junior School"
+                            width={400}
+                            height={300}
+                            className="img-fluid rounded"
+                          />
                         </div>
-                        <div className='row justify-content-center my-5'>
+                        <div className="col-md-9">
+                          <h3 className='fw-bold mb-4'>Senior School (Grade 9-12)</h3>
+                          <ul className="list-unstyled">
+                            <li className='mb-4'>
+                              <strong>Tutoring and Mentoring Programs</strong> Senior students mentor younger students, offering personalized support and guidance to enhance their academic performance.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>Environmental Initiatives</strong> Senior students engage in environmental campaigns, including tree planting and pollution awareness, promoting eco-consciousness across the school community.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>Community Sports & Fitness Programs</strong> Students promote physical health and wellness through sports programs and fitness initiatives within the community.
+                            </li>
+                            <li className='mb-4'>
+                              <strong>Senior Citizen Outreach</strong> Senior students connect with elderly individuals in old age homes, offering companionship and support while helping improve their quality of life.
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div className='row justify-content-center my-5'>
                         <p style={{ textAlign: "center" }}>Through these CSR initiatives, Ramagya School instills values of empathy, leadership, and social responsibility, encouraging students to evolve into conscientious individuals committed to building a better world.</p>
                         <div className="col-md-6 mx-auto g-0">
                           <div className="image-section">
-                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.png' alt="" width={650} height={370} />
+                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.webp' alt="" width={650} height={370} />
                             <div className="play-button">
-                              <Link href="https://www.youtube.com/watch?v=8n75vK3X9BE" target="_blank">
-                                <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
-                              </Link>
+                               <Link href="https://www.youtube.com/watch?v=uH-Q0PPe-ew" target="_blank">
+                                  <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
+                                </Link>
                             </div>
                           </div>
                         </div>
                       </div>
-                      </div>
-             
+                    </div>
+
                   </section>
                 </Tab>
                 <Tab eventKey="contact" title="NIPUNTA">
@@ -931,13 +930,13 @@ const EvolveTabination = () => {
                         <div className="col-md-6 mx-auto g-0">
                           <div className="image-section">
                             {/* Replace with your image source */}
-                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.png' alt="" width={650} height={370} />
+                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.webp' alt="" width={650} height={370} />
                             {/* Play button overlay */}
                             <div className="play-button">
                               {/* <i className="bi bi-play-circle-fill"></i> */}
-                              <Link href="https://www.youtube.com/watch?v=8n75vK3X9BE" target="_blank">
-                                <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
-                              </Link>
+                              <Link href="https://www.youtube.com/watch?v=uH-Q0PPe-ew" target="_blank">
+                                  <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
+                                </Link>
                               {/* <Image src='/images/video-play.webp' alt="" width={80} height={80} onClick={handleShow} /> */}
                               {/* Popup Modal */}
                               {/* <Modal show={show} onHide={handleClose} centered>

@@ -75,7 +75,7 @@ const RecommendAStudent = () => {
       <div className="row">
       <div className="col-md-4 custom-column">
       <div className="p-0 border rounded mb-3">
-      <Image src="/images/admission/schorlaship-1.png" alt="Scholarship Image" className="img-fluid rounded" width={364} height={364} />
+      <Image src="/images/admission/schorlaship-1.webp" alt="Scholarship Image" className="img-fluid rounded" width={364} height={364} />
       </div>
       </div>
       <div className="col-md-4 custom-column">

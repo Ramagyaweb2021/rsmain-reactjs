@@ -186,7 +186,7 @@ const NoidaGalleryInternalPage = () => {
                     <div className="image-container-testimonial">
                       <Image src={item.src} alt={item.title} width={450} height={250} />
                       <div className="play-button-overlay">
-                        <Image src="/images/youtube-play-icon.png" alt="Play Button" width={96} height={96} />
+                        <Image src="/images/youtube-play-icon.webp" alt="Play Button" width={96} height={96} />
                       </div>
                     </div>
                   )}

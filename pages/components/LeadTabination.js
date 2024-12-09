@@ -79,13 +79,13 @@ const LeadTabination = () => {
                     <div className="container">
                       <div className='row justify-content-center my-3'>
                         <div className='col-md-4 col-6'>
-                         <Image src="/images/lead/alumini/1.png" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
+                         <Image src="/images/lead/alumini/1.webp" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
                         </div>
                         <div className='col-md-4 col-6'>
-                         <Image src="/images/lead/alumini/1.png" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
+                         <Image src="/images/lead/alumini/1.webp" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
                         </div>
                         <div className='col-md-4 col-12 mt-1'>
-                         <Image src="/images/lead/alumini/1.png" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
+                         <Image src="/images/lead/alumini/1.webp" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
                         </div>
                       </div>
 

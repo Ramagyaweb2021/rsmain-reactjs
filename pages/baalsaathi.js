@@ -60,7 +60,7 @@ const Baalsaathi = () => {
           {/* Left Image */}
           <div className="col-lg-3 col-md-3">
             <Image
-              src="/images/baalsaathi/slide-1.png" // Replace with the actual image path
+              src="/images/baalsaathi/slide-1.webp" // Replace with the actual image path
               alt="Sports Activity"
               width={371}
               height={423}
@@ -83,7 +83,7 @@ const Baalsaathi = () => {
           {/* Right Image */}
           <div className="col-lg-3 col-md-3">
             <Image
-              src="/images/baalsaathi/slide-2.png" // Replace with the actual image path
+              src="/images/baalsaathi/slide-2.webp" // Replace with the actual image path
               alt="Sports Facility"
               width={371}
               height={423}

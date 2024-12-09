@@ -29,7 +29,9 @@ const HomeSchoolBranchSection = () => {
               className="sub-heading wow animate__animated animate__zoomIn sub-heading"
               style={{ animationDelay: '0.3s' }}
             >
-              Explore Our Vibrant Campuses Across Diverse Locations
+               Explore Our campuses
+              {/* Explore Our Vibrant campuses
+              Across Diverse Locations */}
             </span>
           </h1>
 

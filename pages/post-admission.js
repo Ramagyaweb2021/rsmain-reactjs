@@ -64,7 +64,7 @@ const PostAdmission = () => {
              POST - ADMISSION
             </h1>
             <p>After securing admission, parents are encouraged to complete necessary formalities and stay engaged with our updates and resources. This helps ensure a seamless transition, fostering a supportive environment tailored to each child’s growth at Ramagya School.</p>
-            {/* <Image src="/images/admission/pre-admission-step.png" alt="pre-admission-step" width={1256} height={296} /> */}
+            {/* <Image src="/images/admission/pre-admission-step.webp" alt="pre-admission-step" width={1256} height={296} /> */}
       </section>
        
         {/* Confirmation section */}
@@ -121,7 +121,7 @@ const PostAdmission = () => {
           <div className="col-lg-4">
             <div className='row'>
               <div className='col-md-12 g-1'>
-                <Image src="/images/admission/payment.png" width={350} height={276} alt="School Building" className="img-fluid rounded" />
+                <Image src="/images/admission/payment.webp" width={350} height={276} alt="School Building" className="img-fluid rounded" />
               </div>
             </div>
 
@@ -137,7 +137,7 @@ const PostAdmission = () => {
           <div className="col-md-4 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/transport.png" alt="transport" width={120} height={140} />
+                <Image src="/images/admission/transport.webp" alt="transport" width={120} height={140} />
                 <p>
                   <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSc-77BLVQkfQ7J-NAB9tVDY7OG9hWQSFxh-OTRJxX6UjtUNcg/viewform"
@@ -154,7 +154,7 @@ const PostAdmission = () => {
           <div className="col-md-4 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/further-info.png" alt="further-info" width={120} height={140} />
+                <Image src="/images/admission/further-info.webp" alt="further-info" width={120} height={140} />
                 <p>
                   <a
                     href="https://ramagyaschool.com/noida/ramagya-school-edunext-app"
@@ -171,7 +171,7 @@ const PostAdmission = () => {
           <div className="col-md-4 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/whatsapp.png" alt="whatsapp" width={120} height={140} />
+                <Image src="/images/admission/whatsapp.webp" alt="whatsapp" width={120} height={140} />
                 <p>
                   <a
                     href="https://api.whatsapp.com/send?phone=7065465400"

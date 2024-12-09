@@ -23,9 +23,9 @@ const LeadAchievementsInternalPage = () => {
       cards: [
         {
           number: '01',
-          title: 'ADARSH TRIPATHI - First saturday grandmaster tournament, vezerkepzo grandmaster tournament and llobregat open chess tournamnet in budapest, hungary.',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
-          image: '/images/school-updates/sports.png', // Add image path here
+          title: 'ACHIEVEMENTS Adarsh Tripathi Participant In 3 prestigious Chess Tournaments In Hungry',
+          text: 'All the best to Adarsh Tripathi (XII B) who will be participating in the First Saturday Grandmaster Tournament, Vezerkepzo Grandmaster Tournament and Ellobregat Open Chess Tournament in Budapest, Hungary in November and December. He is ranked #115 in India, and #1 in Uttar Pradesh (Active Players, Open Category).',
+          image: '/images/school-updates/sports.webp', // Add image path here
         },
       ],
     },
@@ -34,23 +34,23 @@ const LeadAchievementsInternalPage = () => {
       cards: [
         {
           number: '01',
-          image: '/images/result/1.png',
+          image: '/images/result/1.webp',
         },
         {
           number: '02',
-          image: '/images/result/2.png',
+          image: '/images/result/2.webp',
         },
         {
           number: '03',
-          image: '/images/result/3.png',
+          image: '/images/result/3.webp',
         },
         {
           number: '04',
-          image: '/images/result/4.png',
+          image: '/images/result/4.webp',
         },
         {
           number: '05',
-          image: '/images/result/5.png',
+          image: '/images/result/5.webp',
         },
       ],
     },
@@ -68,13 +68,13 @@ const LeadAchievementsInternalPage = () => {
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <h1 className="main-heading mt-3">
             ACHIEVEMENTS
-            <span className="lineclass" />
+            {/* <span className="lineclass" />
             <span
               className="wow animate__animated animate__zoomIn"
               style={{ animationDelay: '0.3s' }}
             >
-              Recognizing Excellence and Achievements
-            </span>
+              Recognizing Excellence & Achievements
+            </span> */}
           </h1>
         </div>
       </div>
@@ -104,7 +104,7 @@ const LeadAchievementsInternalPage = () => {
           {activeCards.map((card, index) => (
             <div key={index} className="col-md-12 d-flex align-items-center">
               {/* Image Column */}
-              <div className="col-md-4">
+              <div className="col-md-4 d-none d-md-block">
                 <Image
                   src={card.image}
                   alt={card.title}
@@ -138,7 +138,7 @@ const LeadAchievementsInternalPage = () => {
                   height="100"
                 />
                   {/* <h2 className="card-number text-left">{card.number}</h2> */}
-                  <center><div className="learn-more-button"><a href="#" target="_blank">Find Detail</a></div></center>
+                  <center><div className="learn-more-button"><a href="https://noida.ramagyaschool.com/results" target="_blank">View More</a></div></center>
                   {/* <h5 className="card-subtitle mb-3 fw-bold">{card.title}</h5>
                   <p className="text-left">{card.text}</p> */}
                 </div>

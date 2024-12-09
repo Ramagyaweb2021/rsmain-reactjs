@@ -29,7 +29,7 @@ const PreAdmissionDeviderSection = () => {
           >
             <Button variant="light-1" className="fw-bold" onClick={handleShow}>
               <h6>CONTACT ADMISSION OFFICE</h6>
-              <Image src="/images/fi_phone-call.png" alt="" width={20} height={20} /> +91 - 8010 333 555
+              <Image src="/images/fi_phone-call.webp" alt="" width={20} height={20} /> +91 - 8010 333 555
             </Button>
           </Col>
         </Row>

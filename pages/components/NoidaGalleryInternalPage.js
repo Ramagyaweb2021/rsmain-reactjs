@@ -1577,7 +1577,7 @@ const NoidaGalleryInternalPage = () => {
                         className="play-button"
                       >
                         <Image
-                          src="/images/youtube-play-icon.png"
+                          src="/images/youtube-play-icon.webp"
                           alt="play-button"
                           width={96}
                           height={96}

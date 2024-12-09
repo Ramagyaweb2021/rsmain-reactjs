@@ -5,28 +5,28 @@ const initiatives = [
     title: "Education",
     quote: '"The only dreams impossible to reach are the ones you never pursue."',
     description: "We are committed to providing quality education to children from marginalized communities. We believe that education...",
-    imageSrc: "/images/ramagya-foundation/education.png",
+    imageSrc: "/images/ramagya-foundation/education.webp",
     link: "https://ramagyafoundation.org/education/"
   },
   {
     title: "Health",
     quote: '"Happiness doesn’t result from what we get, but from what we give."',
     description: "Health is the foundation of a thriving community, and our health initiatives prioritize accessibility to basic healthcare and health education...",
-    imageSrc: "/images/ramagya-foundation/health.png",
+    imageSrc: "/images/ramagya-foundation/health.webp",
     link: "https://ramagyafoundation.org/health/"
   },
   {
     title: "Women Empowerment",
     quote: '"Intertwining human rights with respect for women\'s empowerment."',
     description: "We are passionate about empowering women. With this initiative, we provide skill development, educational resources, and community support...",
-    imageSrc: "/images/ramagya-foundation/women-empowerment.png",
+    imageSrc: "/images/ramagya-foundation/women-empowerment.webp",
     link: "https://ramagyafoundation.org/women-empowerment-and-skilling/"
   },
   {
     title: "Animal Welfare",
     quote: '"Raising a voice for the voiceless."',
     description: "The welfare of animals is close to our heart. We actively support animal welfare through rescue efforts, medical care, and awareness programs aimed at fostering empathy and responsible....",
-    imageSrc: "/images/ramagya-foundation/animal-welfare.png",
+    imageSrc: "/images/ramagya-foundation/animal-welfare.webp",
     link: "https://ramagyafoundation.org/animal-welfare/"
   }
 ];
@@ -37,7 +37,7 @@ export default function OurInitiative() {
       <h2 className="main-heading-internal-pages text-center my-5">OUR INITIATIVE</h2>
       <div className="row">
         {initiatives.map((initiative, index) => (
-          <div className="col-6 col-md-6 col-lg-3 mb-4" key={index}>
+          <div className="col-6 col-md-3 col-lg-3 mb-4" key={index}>
             <div className="card h-100 shadow-sm border-0">
               <Image src={initiative.imageSrc} className="card-img-top" alt={initiative.title} width={250} height={250}/>
               <div className="card-body-ramagya-foundation-our-initiative">

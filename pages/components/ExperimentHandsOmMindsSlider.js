@@ -55,7 +55,7 @@ const CustomNextArrow = ({ onClick }) => (
     }}
   >
     <Image
-      src="/images/next.png" // Update with your arrow image path
+      src="/images/next.webp" // Update with your arrow image path
       alt="Next"
       width={50}
       height={50}
@@ -81,7 +81,7 @@ const CustomPrevArrow = ({ onClick }) => (
     }}
   >
     <Image
-      src="/images/prev.png" // Update with your arrow image path
+      src="/images/prev.webp" // Update with your arrow image path
       alt="Previous"
       width={50}
       height={50}

@@ -30,7 +30,7 @@ const SampleNextArrow = ({ onClick }) => {
       }}
     >
       <Image
-        src="/images/next.png"
+        src="/images/next.webp"
         alt="Next"
         width={50}
         height={50}
@@ -58,7 +58,7 @@ const SamplePrevArrow = ({ onClick }) => {
       }}
     >
       <Image
-        src="/images/prev.png"
+        src="/images/prev.webp"
         alt="Previous"
         width={50}
         height={50}
@@ -127,35 +127,35 @@ const HomeTestimonialSection = () => {
       title: 'Honble Smt. Smriti Zubin Irani',
       content: 'Minister of Women and Child Development, and also Minister of Minority Affairs',
       value: 'RS Noida Branch',
-      img: '/images/testimonial-thumb/smiriti.png',
+      img: '/images/testimonial-thumb/smiriti.webp',
       videoUrl: 'https://www.youtube.com/watch?v=1yWQuKlJqTc'
     },
     {
       title: 'Abhinav Bindra',
       content: 'Olympic Gold Medalist',
       value: 'RS Noida Extension',
-      img: '/images/testimonial-thumb/abhinav-bindra.png',
+      img: '/images/testimonial-thumb/abhinav-bindra.webp',
       videoUrl: 'https://www.youtube.com/watch?v=Hmp_tCEB0Y4'
     },
     {
       title: 'Mr. Mahesh Shrinivas Bhupathi',
       content: 'International Tennis Player',
       value: 'RS Noida Branch',
-      img: '/images/testimonial-thumb/mahesh-bhupati.png',
+      img: '/images/testimonial-thumb/mahesh-bhupati.webp',
       videoUrl: 'https://www.youtube.com/watch?v=KSBSoF2qYqc'
     },
     {
       title: 'Dav Whatmore',
       content: 'Australian Cricketer',
       value: 'RS Noida Branch',
-      img: '/images/testimonial-thumb/dav-whatmore.png',
+      img: '/images/testimonial-thumb/dav-whatmore.webp',
       videoUrl: 'https://www.youtube.com/watch?v=L9kJnwDDF34'
     },
     {
       title: 'Viswanathan Anand',
       content: 'World Chess Champion',
       value: 'RS Noida Branch',
-      img: '/images/testimonial-thumb/vishwanath-anand.png',
+      img: '/images/testimonial-thumb/vishwanath-anand.webp',
       videoUrl: 'https://www.youtube.com/watch?v=rYnH2LND6Lg'
     },
   ];
@@ -189,7 +189,7 @@ const HomeTestimonialSection = () => {
                 <div className="image-container-testimonial">
                   <Image src={item.img} alt={item.title} className="slider-image" width={310} height={265} />
                   <div className="play-button-overlay" onClick={() => openModal(item.videoUrl)}>
-                    <Image src="/images/youtube-play-icon.png" className="play-button" alt="play-button" width={96} height={96}/>
+                    <Image src="/images/youtube-play-icon.webp" className="play-button" alt="play-button" width={96} height={96}/>
                   </div>
                 </div>
                 <div className="testimonial-content">

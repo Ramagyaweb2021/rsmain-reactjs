@@ -60,7 +60,7 @@ const PoineerInSports = () => {
           {/* Left Image */}
           <div className="col-lg-3 col-md-3">
             <Image
-              src="/images/poineer-in-sports/slide-1.png" // Replace with the actual image path
+              src="/images/poineer-in-sports/slide-1.webp" // Replace with the actual image path
               alt="Sports Activity"
               width={371}
               height={423}
@@ -87,7 +87,7 @@ const PoineerInSports = () => {
           {/* Right Image */}
           <div className="col-lg-3 col-md-3">
            <Image
-              src="/images/poineer-in-sports/slide-2.png" // Replace with the actual image path
+              src="/images/poineer-in-sports/slide-2.webp" // Replace with the actual image path
               alt="Sports Activity"
               width={371}
               height={423}
@@ -107,7 +107,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/explore-1.png"
+          src="/images/explore/explore-1.webp"
           />
         </div>
         <div className="col-md-8">
@@ -131,7 +131,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/middle-1.png"
+          src="/images/explore/middle-1.webp"
           />
         </div>
         <div className="col-md-8 order-md-1">
@@ -154,7 +154,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/explore-1.png"
+          src="/images/explore/explore-1.webp"
           />
         </div>
         <div className="col-md-8">
@@ -173,7 +173,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/middle-1.png"
+          src="/images/explore/middle-1.webp"
           />
         </div>
         <div className="col-md-8 order-md-1">
@@ -192,7 +192,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/explore-1.png"
+          src="/images/explore/explore-1.webp"
           />
         </div>
         <div className="col-md-8">
@@ -211,7 +211,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/middle-1.png"
+          src="/images/explore/middle-1.webp"
           />
         </div>
         <div className="col-md-8 order-md-1">
@@ -230,7 +230,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/explore-1.png"
+          src="/images/explore/explore-1.webp"
           />
         </div>
         <div className="col-md-8">
@@ -249,7 +249,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/explore/middle-1.png"
+          src="/images/explore/middle-1.webp"
           />
         </div>
         <div className="col-md-8 order-md-1">

@@ -1,11 +1,13 @@
 :root {
   --font-family-heading: "Oswald", sans-serif;
-  --font-family-text: "Raleway", sans-serif;
+  /* --font-family-text: "Raleway", sans-serif; */
+  --font-family-text: "Montserrat", serif;
   --color-set-green: #002c39;
   --color-set-yellow: #ffdf8b;
   --color-set-white: #ffffff;
-  --color-set-grey: #676767;
-  --paragraph-font-size: 16px;
+  --color-set-grey: #676767e3;
+  /* --color-set-grey: #676767; */
+  --paragraph-font-size: 13px;
 }
 html, body {
   margin: 0;
@@ -13,7 +15,7 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: var(--font-family-text);
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1.5;
   font-weight: 500;
   background-color: #fff;
@@ -105,7 +107,7 @@ h4,
 h5,
 h6 {
   color: var(--color-set-green);
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-text);
 }
 ol,
 ul {
@@ -201,7 +203,7 @@ a:hover {
   padding: 5px 10px;
   transition: 0.2s;
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--font-family-text);
   text-transform: uppercase;
 }
@@ -380,7 +382,7 @@ a:hover {
 .social-icon a.bold:hover {
   color: #f06a35;
 }
-.btn-float-discover {
+.sidebar-btn-float-discover {
   position: fixed;
   right: 0;
   bottom: 40%;
@@ -456,6 +458,7 @@ span.highlight-lg::after {
 .explore-menu .nav-link {
   text-transform: uppercase;
   font-family: var(--font-family-heading);
+  letter-spacing: 0.5px;
 }
 .justify-content-center.fixed-top {
   background-color: var(--color-set-green) !important;
@@ -480,7 +483,7 @@ span.highlight-lg::after {
   text-align: center;
   color: var(--color-set-green);
   font-weight: 500;
-  font-size: 40px;
+  font-size: 35px;
   font-family: var(--font-family-heading);
   position: relative;
   padding-bottom: 20px;
@@ -762,7 +765,7 @@ ul {
 .title_2 a {
   font-size: 18px;
   line-height: 34px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-set-green) !important;
   display: block;
   margin-bottom: 0;
@@ -836,7 +839,7 @@ ul {
   position: absolute;
   right: 15px;
   bottom: 0;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 120px;
   line-height: 120px;
   color: #ffffff8a;
@@ -884,6 +887,7 @@ ul {
   display: block;
   margin-bottom: 10px;
   padding: 5%;
+  font-family: var(--font-family-heading);
 }
 .hover_1 .oh {
   position: absolute;
@@ -951,7 +955,7 @@ ul {
   position: absolute;
   right: 5px;
   bottom: 0;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 120px;
   line-height: 120px;
   color: #ffffff30;
@@ -1021,7 +1025,7 @@ ul {
   padding: 6px 35px;
   border-radius: 5px;
   transition: all 0.3s ease;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-set-green);
   font-family: var(--font-family-text);
 }
@@ -1073,7 +1077,7 @@ ul {
 .fw-bold {
   color: var(--color-set-green) !important;
   font-weight: 500 !important;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26.01px;
   text-align: left;
   font-family: var(--font-family-text);
@@ -1089,7 +1093,7 @@ ul {
   background-color: #ffdf8b33;
   color: var(--color-set-green);
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0;
   margin-bottom: 5px;
   width: 30px;
@@ -1135,7 +1139,7 @@ ul {
   /* box-shadow: 0 4px 8px rgb(0 0 0 / 2%); */
   box-shadow: 0 4px 8px rgb(0 0 0 / 5%);
   transition: transform 0.3s ease;
-  border: 1px solid var(--color-set-yellow);
+  border: 1px solid #ffdf8b4f;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -1152,7 +1156,7 @@ ul {
 .card-title {
   font-size: 18px;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 6px;
   text-align: center;
   color: var(--color-set-white);
 }
@@ -1202,7 +1206,7 @@ ul {
   border: none;
   padding: 8px 15px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   transition: background-color 0.3s ease;
   border: 1px solid;
   border-image: linear-gradient(45deg, var(--color-set-yellow), var(--color-set-green)) 1;
@@ -1287,7 +1291,8 @@ ul {
 }
 .footer {
   background-color: #e7eaeb30;
-  padding: 200px 0 0 200px;
+  padding: 50px 0 0 50px;
+  /* padding: 200px 0 0 200px; */
   color: #404040;
 }
 .footer-logo {
@@ -1295,7 +1300,7 @@ ul {
   margin-bottom: 20px;
 }
 .footer-heading {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-set-green);
   text-transform: uppercase;
   font-size: 18px !important;
@@ -1418,7 +1423,7 @@ ul {
 }
 .campuses-title {
   color: #ffc107;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 .campuses-list {
@@ -1427,7 +1432,7 @@ ul {
 .campus-link {
   color: #fff;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   font-size: 14px;
 }
@@ -1456,7 +1461,7 @@ title_3 trans {
 }
 .review-count {
   color: #fc3;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
 }
 .review-count:hover {
@@ -1614,7 +1619,7 @@ title_3 trans {
 }
 .text-wrapper .box h6 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0;
   padding-bottom: 10px;
 }
@@ -1815,7 +1820,7 @@ title_3 trans {
   padding: 4px 4px;
   text-align: center;
   color: var(--color-set-green);
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
   font-family: var(--font-family-text);
 }
@@ -1829,13 +1834,13 @@ title_3 trans {
   padding: 0;
 }
 .experiment-item-title {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-set-green);
   font-family: var(--font-family-heading);
   padding: 5px;
 }
 .feature-title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1rem;
   color: #046;
   font-family: var(--font-family-text);
@@ -2065,7 +2070,20 @@ video.main-video {
  /*****************************************************************Internal pages css */
  .banner-sec {
   background-repeat: no-repeat;
-  background-image: url(/images/who-we-are/overview.png);
+  background-image: url(/images/who-we-are/overview.webp);
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  padding: 15px 60px;
+  z-index: 1;
+  color: #fff;
+  margin-top: 0;
+}
+.gallery-award-testimonial-section {
+  background-repeat: no-repeat;
+  background-image: url(/images/gallery/gallery.webp);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2078,7 +2096,7 @@ video.main-video {
 }
 .banner-section-contact{
   background-repeat: no-repeat;
-  background-image: url(/images/contact-us.png);
+  background-image: url(/images/contact-us.webp);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2091,7 +2109,7 @@ video.main-video {
 }
 .banner-section-explore{
   background-repeat: no-repeat;
-  background-image: url(/images/explore/explore-banner.png);
+  background-image: url(/images/explore/explore-banner.webp);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2104,7 +2122,7 @@ video.main-video {
 }
 .banner-section-admission{
   background-repeat: no-repeat;
-  background-image: url(/images/admission/admission.png);
+  background-image: url(/images/admission/admission.webp);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2125,11 +2143,12 @@ video.main-video {
 }
 .banner-text h1 {
   font-size: 35px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 5px;
   text-transform: uppercase;
   line-height: 66px;
   color: #fff;
+  letter-spacing: 1px;
 }
 .our-guiding-section .learn h2{
   color: var(--color-set-green);
@@ -2144,7 +2163,7 @@ video.main-video {
 }
 .about-us-section{
   background-repeat: no-repeat;
-  background-image: url(/images/who-we-are/about-us-background.png);
+  background-image: url(/images/who-we-are/about-us-background.webp);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2157,7 +2176,7 @@ video.main-video {
 }
 .vision-section{
   background-repeat: no-repeat;
-  background-image: url(/images/vision-mission/vision-bg.png);
+  background-image: url(/images/vision-mission/vision-bg.webp);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2231,6 +2250,8 @@ video.main-video {
   border-radius: 5px;
   box-shadow: 0 4px 20px 0 #e9e5e514;
   box-shadow: 0 -4px 20px 0 #e9e5e514;
+  height: 155px;
+  width: 85px;
 }
 .our-leaders-section{
   background-image: url(/images/explore-bg.webp);
@@ -2242,7 +2263,7 @@ video.main-video {
 }
 .poinner-banner-section{
   background-repeat: no-repeat;
-  background-image: url(/images/poineer-in-sports/main-banner.png);
+  background-image: url(/images/poineer-in-sports/main-banner.webp);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2255,7 +2276,7 @@ video.main-video {
 }
 .bg-poineer{
     background-repeat: no-repeat;
-    background-image: url(/images/poineer-in-sports/bg-banner-1.png);
+    background-image: url(/images/poineer-in-sports/bg-banner-1.webp);
     position: relative;
     background-size: cover;
     background-position: center center;
@@ -2268,7 +2289,7 @@ video.main-video {
 }
 .bg-baalsaathi{
   background-repeat: no-repeat;
-  background-image: url(/images/baalsaathi/bg-baalsaathi.png);
+  background-image: url(/images/baalsaathi/bg-baalsaathi.webp);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2508,7 +2529,7 @@ hr {
 /****************************************************************************** CSS for noida branch website  */
 .main-banner-noida {
   background-repeat: no-repeat;
-  background-image: url(/images/noida/main-banners/home-page-main-banner.png);
+  background-image: url(/images/noida/main-banners/home-page-main-banner.webp);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2633,14 +2654,14 @@ hr {
 }
 
 .prev-button::before {
-  background-image: url('/images/prev.png');
+  background-image: url('/images/prev.webp');
 }
 
 .next-button::before {
-  background-image: url('/images/next.png');
+  background-image: url('/images/next.webp');
 }
 .navbar-brand{
-  /* background-image: url(/images/ellipse.png); */
+  /* background-image: url(/images/ellipse.webp); */
     /* background-color: #ffffffc2; */
     /* background-blend-mode: overlay; */
     background-repeat: no-repeat;

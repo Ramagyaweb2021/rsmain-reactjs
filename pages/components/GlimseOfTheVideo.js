@@ -4,37 +4,37 @@ import Image from 'next/image';
 const initiatives = [
   {
     title: "Health",
-    imageSrc: "/images/ramagya-foundation/health.png",
-    video: "https://www.youtube.com/embed/xkDrHZcrhfg",
+    imageSrc: "/images/ramagya-foundation/health.webp",
+    video: "https://www.youtube.com/embed/FxT3xJFYpDg",
     link: "https://ramagyafoundation.org/health/"
   },
   {
     title: "Education Video",
-    imageSrc: "/images/ramagya-foundation/education.png",
-    video: "https://www.youtube.com/embed/T9A332dY1oo", 
+    imageSrc: "/images/ramagya-foundation/education.webp",
+    video: "https://www.youtube.com/embed/4xbFf25pguo", 
     link: "https://ramagyafoundation.org/education/"
   },
   {
     title: "Education Video",
-    imageSrc: "/images/ramagya-foundation/education.png",
-    video: "https://www.youtube.com/embed/T8DsS-rDr0k", 
+    imageSrc: "/images/ramagya-foundation/education.webp",
+    video: "https://www.youtube.com/embed/wzIgSGv3WhI", 
     link: "https://ramagyafoundation.org/education/"
   },
   {
     title: "Education Video",
-    imageSrc: "/images/ramagya-foundation/education.png",
-    video: "https://www.youtube.com/embed/de_BXRJQF4o", 
+    imageSrc: "/images/ramagya-foundation/education.webp",
+    video: "https://www.youtube.com/embed/EKIhsAMvrBk", 
     link: "https://ramagyafoundation.org/education/"
   },
   {
     title: "Education Video",
-    imageSrc: "/images/ramagya-foundation/education.png",
-    video: "https://www.youtube.com/embed/h90p1IQbZrQ", 
+    imageSrc: "/images/ramagya-foundation/education.webp",
+    video: "https://www.youtube.com/embed/TUCE9e2eFBQ", 
     link: "https://ramagyafoundation.org/education/"
   },
   {
     title: "Education Video",
-    imageSrc: "/images/ramagya-foundation/education.png",
+    imageSrc: "/images/ramagya-foundation/education.webp",
     video: "https://www.youtube.com/embed/KH9VVUezad8", 
     link: "https://ramagyafoundation.org/education/"
   },

@@ -66,11 +66,11 @@ const PreAdmission = () => {
                PRE-ADMISSION 
             </h1>
             <p>Parents and guardians desirous of admitting their wards to Ramagya School should familiarize themselves with the school by filling the Inquiry Form. It is requested to fill in the undisguised details in the form that would help the school to create a suitable environment for the child, once admitted.</p>
-            <Image src="/images/admission/pre-admission-step.png" alt="pre-admission-step" width={1256} height={296} />
+            <Image src="/images/admission/pre-admission-step.webp" alt="pre-admission-step" width={1256} height={296} />
       </section>
       {/* Pre admission step section */}
       {/* <section className="container pre-admission-step-section text-center my-5 wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.3s' }}>
-        <Image src="/images/admission/pre-admission-step.png" alt="pre-admission-step" width={1256} height={296} />
+        <Image src="/images/admission/pre-admission-step.webp" alt="pre-admission-step" width={1256} height={296} />
       </section> */}
       {/* Pre admission apply now section */}
       <ApplyNowSection />
@@ -102,7 +102,7 @@ const PreAdmission = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/book-appointment.png" alt="book-appointment" width={120} height={140} />
+                <Image src="/images/admission/book-appointment.webp" alt="book-appointment" width={120} height={140} />
                 <p>
                   <a
                     href="https://calendly.com/d/y33-gfm-tcs/30min?month=2024-11"
@@ -119,7 +119,7 @@ const PreAdmission = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/book-school-tour.png" alt="book-school-tour" width={120} height={140} />
+                <Image src="/images/admission/book-school-tour.webp" alt="book-school-tour" width={120} height={140} />
                 <p>
                   <a
                     href="https://calendly.com/schooltour-appointment-ramagyaschool/schoolvisit?month=2024-11"
@@ -136,7 +136,7 @@ const PreAdmission = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/virtual-tour.png" alt="virtual-tour" width={120} height={140} />
+                <Image src="/images/admission/virtual-tour.webp" alt="virtual-tour" width={120} height={140} />
                 <p>
                   <a
                     href="https://vtour.ramagyaschool.com/"
@@ -153,7 +153,7 @@ const PreAdmission = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/prospectus.png" alt="prospectus" width={120} height={140} />
+                <Image src="/images/admission/prospectus.webp" alt="prospectus" width={120} height={140} />
                 <p>
                   <a
                     href="https://ramagyaschool.com/noida/assets/pdf/Ramagya-School-Brochure.pdf"
@@ -187,8 +187,8 @@ const PreAdmission = () => {
 
               <p><b>DOCUMENTS - Required for Interaction session</b></p>
 
-              <p><Image src="/images/doc.png" width={10} height={13} alt="doc" /> Archetypes of applicant’s school work i.e. exercise books, portfolios, etc.</p>
-              <p><Image src="/images/doc.png" width={10} height={13} alt="doc" /> Primary level applicants (up to Grade 5) should bear at least one book that they prefer reading</p>
+              <p><Image src="/images/doc.webp" width={10} height={13} alt="doc" /> Archetypes of applicant’s school work i.e. exercise books, portfolios, etc.</p>
+              <p><Image src="/images/doc.webp" width={10} height={13} alt="doc" /> Primary level applicants (up to Grade 5) should bear at least one book that they prefer reading</p>
               <p><b>Assessment Measures</b></p>
              
               <p><b>For Pre-primary School -</b> Applicants will be examined by the Primary Head. During this interactive session, the applicant may be asked to mount on a few simple activities.</p>
@@ -202,7 +202,7 @@ const PreAdmission = () => {
           <div className="col-lg-4">
             <div className='row'>
               <div className='col-md-12 g-1'>
-                <Image src="/images/admission/interaction.png" width={350} height={276} alt="School Building" className="img-fluid rounded" />
+                <Image src="/images/admission/interaction.webp" width={350} height={276} alt="School Building" className="img-fluid rounded" />
               </div>
             </div>
 
@@ -244,7 +244,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/extended-hours.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/extended-hours.webp" alt="facility" width={95} height={80} />
                 <p>Extended Hours</p>
               </div>
             </div>
@@ -252,7 +252,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/canteen-cafeteria.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/canteen-cafeteria.webp" alt="facility" width={95} height={80} />
                 <p>Canteen Cafeteria</p>
               </div>
             </div>
@@ -260,7 +260,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/transport-pick-up-and drop.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/transport-pick-up-and drop.webp" alt="facility" width={95} height={80} />
                 <p>Transport – Pick up and Drop</p>
               </div>
             </div>
@@ -268,7 +268,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/daily-monthly-report.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/daily-monthly-report.webp" alt="facility" width={95} height={80} />
                 <p>Daily / Monthly Report</p>
               </div>
             </div>
@@ -276,7 +276,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/ramagya-first-step.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/ramagya-first-step.webp" alt="facility" width={95} height={80} />
                 <p>Ramagya First Step</p>
               </div>
             </div>
@@ -284,7 +284,7 @@ const PreAdmission = () => {
            <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/cctv-camera.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/cctv-camera.webp" alt="facility" width={95} height={80} />
                 <p>CCTV Camera</p>
               </div>
             </div>
@@ -292,7 +292,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/live-app-for-parents.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/live-app-for-parents.webp" alt="facility" width={95} height={80} />
                 <p>Live App for Parents</p>
               </div>
             </div>
@@ -300,7 +300,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/emergency-services.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/emergency-services.webp" alt="facility" width={95} height={80} />
                 <p>Emergency Services (First Aid / Doctor)</p>
               </div>
             </div>
@@ -308,7 +308,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/qualified-teachers.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/qualified-teachers.webp" alt="facility" width={95} height={80} />
                 <p>Qualified Teachers</p>
               </div>
             </div>
@@ -316,7 +316,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/ac-rooms.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/ac-rooms.webp" alt="facility" width={95} height={80} />
                 <p>AC Rooms</p>
               </div>
             </div>
@@ -324,7 +324,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/indoor-play.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/indoor-play.webp" alt="facility" width={95} height={80} />
                 <p>Indoor Play / Activity Space and Materials</p>
               </div>
             </div>
@@ -332,7 +332,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/outdoor-play.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/outdoor-play.webp" alt="facility" width={95} height={80} />
                 <p>Outdoor Play / Activity Space and Materials</p>
               </div>
             </div>
@@ -340,7 +340,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/sports.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/sports.webp" alt="facility" width={95} height={80} />
                 <p>Sports</p>
               </div>
             </div>
@@ -348,7 +348,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/acitivity-classes.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/acitivity-classes.webp" alt="facility" width={95} height={80} />
                 <p>Activity Classes (like crafts, painting, pottery)</p>
               </div>
             </div>
@@ -356,7 +356,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/acitivity-classes.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/acitivity-classes.webp" alt="facility" width={95} height={80} />
                 <p>Activity Classes (like crafts, painting, pottery)</p>
               </div>
             </div>
@@ -364,7 +364,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/labs.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/labs.webp" alt="facility" width={95} height={80} />
                 <p>Labs</p>
               </div>
             </div>
@@ -372,7 +372,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/smart-classes.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/smart-classes.webp" alt="facility" width={95} height={80} />
                 <p>Smart Classes</p>
               </div>
             </div>
@@ -380,7 +380,7 @@ const PreAdmission = () => {
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                <Image src="/images/admission/facility/wifi.png" alt="facility" width={95} height={80} />
+                <Image src="/images/admission/facility/wifi.webp" alt="facility" width={95} height={80} />
                 <p>WiFi Facility</p>
               </div>
             </div>
@@ -397,7 +397,7 @@ const PreAdmission = () => {
       <div className="col-md-2 col-6">
         <div className="card-ramagya-at-glance border-0 position-relative">
           <Image 
-            src="/images/admission/services/1.png" 
+            src="/images/admission/services/1.webp" 
             alt="Services"
             width={228} 
             height={290} 
@@ -412,7 +412,7 @@ const PreAdmission = () => {
       <div className="col-md-2 col-6">
         <div className="card-ramagya-at-glance border-0 position-relative">
           <Image 
-            src="/images/admission/services/2.png" 
+            src="/images/admission/services/2.webp" 
             alt="Services"
             width={228} 
             height={290} 
@@ -427,7 +427,7 @@ const PreAdmission = () => {
       <div className="col-md-2 col-6">
         <div className="card-ramagya-at-glance border-0 position-relative">
           <Image 
-            src="/images/admission/services/3.png" 
+            src="/images/admission/services/3.webp" 
             alt="Services"
             width={228} 
             height={290} 
@@ -442,7 +442,7 @@ const PreAdmission = () => {
       <div className="col-md-2 col-6">
         <div className="card-ramagya-at-glance border-0 position-relative">
           <Image 
-            src="/images/admission/services/4.png" 
+            src="/images/admission/services/4.webp" 
             alt="Services"
             width={228} 
             height={290} 
@@ -457,7 +457,7 @@ const PreAdmission = () => {
       <div className="col-md-2 col-6">
         <div className="card-ramagya-at-glance border-0 position-relative">
           <Image 
-            src="/images/admission/services/5.png" 
+            src="/images/admission/services/5.webp" 
             alt="Services"
             width={228} 
             height={290} 

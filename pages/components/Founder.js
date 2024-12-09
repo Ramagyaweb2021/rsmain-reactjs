@@ -9,26 +9,26 @@ const LeadershipSection = () => {
       name: 'Dr. Sanjay Gupta',
       title: 'Chairman | Ramagya Group',
       quote: 'You see things; and you say, "Why?" But I dream things that never were; and I say, "Why not?"',
-      imageUrl: '/images/people/sanjay-gupta-full.png', // Large image
-      thumbnailUrl: '/images/people/sanjay-gupta-thumbnail.png', // Thumbnail image
+      imageUrl: '/images/people/sanjay-gupta-full.webp', // Large image
+      thumbnailUrl: '/images/people/sanjay-gupta-thumbnail.webp', // Thumbnail image
       // description: 'This quote perfectly encapsulates the remarkable journey...  – George Bernard Shaw',
-      logo: '/images/people/forbes.png',
+      logo: '/images/people/forbes.webp',
     },
     director: {
       name: 'Mrs. Rajni Gupta',
       title: 'Director | Ramagya Group',
       quote: '"Wisdom is knowing what to do next, skill is knowing how to do it and virtue is doing it.”" – David S Jordon',
-      imageUrl: '/images/people/rajni-gupta-full.png', // Large image
-      thumbnailUrl: '/images/people/rajni-gupta-thumbnail.png', // Thumbnail image
-      logo: '/images/people/see-the-people.png',
+      imageUrl: '/images/people/rajni-gupta-full.webp', // Large image
+      thumbnailUrl: '/images/people/rajni-gupta-thumbnail.webp', // Thumbnail image
+      logo: '/images/people/see-the-people.webp',
     },
     managingDirector: {
       name: 'Mr. Utkarsh Gupta',
       title: 'Managing Director | Ramagya Group',
       quote: '“There is only one corner of the universe you can be certain of improving, and that’s your own self.”',
       imageUrl: '/images/people/utkarsh-gupta-full.webp', // Large image
-      thumbnailUrl: '/images/people/utkarsh-gupta-thumbnail.png', // Thumbnail image
-      logo: '/images/people/forbes.png',
+      thumbnailUrl: '/images/people/utkarsh-gupta-thumbnail.webp', // Thumbnail image
+      logo: '/images/people/forbes.webp',
     },
   };
 

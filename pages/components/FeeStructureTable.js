@@ -9,7 +9,7 @@ const FeeStructureTable = () => {
           <div className="text-center mb-4">
             <h2 className="fw-bold" style={{textAlign:"center"}}>
               {/* <Image
-              src="/images/admission/transport-1.png"
+              src="/images/admission/transport-1.webp"
               alt="Sample Image 3"
               width={50}
               height={50}

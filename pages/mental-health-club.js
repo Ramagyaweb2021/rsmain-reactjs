@@ -60,7 +60,7 @@ const MentalHealthClub = () => {
           {/* Left Image */}
           <div className="col-lg-3 col-md-3">
             <Image
-              src="/images/mental-health-club/slide-1.png" // Replace with the actual image path
+              src="/images/mental-health-club/slide-1.webp" // Replace with the actual image path
               alt="Sports Activity"
               width={371}
               height={423}
@@ -81,7 +81,7 @@ const MentalHealthClub = () => {
           {/* Right Image */}
           <div className="col-lg-3 col-md-3">
             <Image
-              src="/images/mental-health-club/slide-2.png" // Replace with the actual image path
+              src="/images/mental-health-club/slide-2.webp" // Replace with the actual image path
               alt="Sports Facility"
               width={371}
               height={423}
@@ -101,7 +101,7 @@ const MentalHealthClub = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/mental-health-club/1.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/mental-health-club/1.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">01</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">Timeless Wisdom Meets Modern Wellness</h5>
                   <p className="text-left">
@@ -114,7 +114,7 @@ const MentalHealthClub = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/mental-health-club/2.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/mental-health-club/2.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">02</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">Guidance from Experts</h5>
                   <p className="text-left">
@@ -127,7 +127,7 @@ const MentalHealthClub = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/mental-health-club/3.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/mental-health-club/3.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">03</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">Quiet Time Curriculum</h5>
                   <p className="text-left">
@@ -140,7 +140,7 @@ const MentalHealthClub = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/mental-health-club/4.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/mental-health-club/4.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">04</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">Life Lessons Through Stories</h5>
                   <p className="text-left">
@@ -153,7 +153,7 @@ const MentalHealthClub = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/mental-health-club/5.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/mental-health-club/5.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">05</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">Empowering Students to Thrive</h5>
                   <p className="text-left">
@@ -167,7 +167,7 @@ const MentalHealthClub = () => {
             <div className="col-md-4 col-6">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-value-body text-left">
-                <Image src='/images/mental-health-club/6.png' alt="card-image" width={40} height={40}/>
+                <Image src='/images/mental-health-club/6.webp' alt="card-image" width={40} height={40}/>
                   <h2 className="card-number text-left">06</h2>
                   <h5 className="card-subtitle mb-3 fw-bold">The Power of Connection</h5>
                   <p className="text-left">
@@ -188,7 +188,7 @@ const MentalHealthClub = () => {
                   loading="lazy"
                   width={450}
                   height={300}
-                  src="/images/mental-health-club/utkarsh-gupta.png"
+                  src="/images/mental-health-club/utkarsh-gupta.webp"
                 />
               </div>
               <div className="col-md-9 col-12">

@@ -5,32 +5,32 @@ const NoidaHomePageInfographics = () => {
   // Data for the cards
   const cardData = [
     {
-      img: "/images/noida/infographics/icon-1.png",
+      img: "/images/noida/infographics/icon-1.webp",
       value: "30,000+",
       text: "Students",
     },
     {
-      img: "/images/noida/infographics/icon-2.png",
+      img: "/images/noida/infographics/icon-2.webp",
       value: "200+",
       text: "Educators",
     },
     {
-      img: "/images/noida/infographics/icon-3.png",
+      img: "/images/noida/infographics/icon-3.webp",
       value: "4",
       text: "Branches",
     },
     {
-      img: "/images/noida/infographics/icon-4.png",
+      img: "/images/noida/infographics/icon-4.webp",
       value: "20+",
       text: "Years",
     },
     {
-      img: "/images/noida/infographics/icon-5.png",
+      img: "/images/noida/infographics/icon-5.webp",
       value: "35+",
       text: "Sports",
     },
     {
-      img: "/images/noida/infographics/icon-6.png",
+      img: "/images/noida/infographics/icon-6.webp",
       value: "20+",
       text: "Sister Concern",
     },

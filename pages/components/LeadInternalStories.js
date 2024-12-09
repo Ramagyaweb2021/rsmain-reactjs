@@ -61,7 +61,7 @@ const HomeLeadSection = () => {
     {
       name: "Shashank Rawat",
       desc: "IIT Bombay",
-      img: "/images/lead/lead-3.png",
+      img: "/images/lead/lead-3.webp",
       text: `As a second-year student at IIT Bombay, I owe a significant part of my success to the nurturing and supportive environment at Ramagya. The unwavering encouragement from my teachers was instrumental in helping me realize my potential. 
       I am incredibly thankful to Ramagya for setting me on this path and believing in me every step of the way.`,
     },

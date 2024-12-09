@@ -6,7 +6,7 @@ const leadershipData = [
   {
     name: "Rina Singh",
     title: "Principal, Ramagya School, Noida",
-    image: "/images/people/noida.png",
+    image: "/images/people/noida.webp",
     description: `Education is the passport to the future, for tomorrow belongs to those who prepare for it today.”
     
     At Ramagya School, we are more than just an educational institution; we are a dynamic community of passionate educators committed to nurturing both academic excellence and the holistic development of every student. We take immense pride in welcoming you into our community, where your child will be embraced in a safe, supportive, and caring environment.
@@ -23,7 +23,7 @@ const leadershipData = [
   {
     name: "Priyanka Singh",
     title: "Principal, Ramagya School, Noida Extension",
-    image: "/images/people/noida-ext.png",
+    image: "/images/people/noida-ext.webp",
     description: `“There are only two lasting bequests we can hope to give our children, one of these is roots; the other, wings.”
     
       Dear Parents and Students,
@@ -43,7 +43,7 @@ const leadershipData = [
   {
     name: "Shreshtha Tripathi",
     title: "Principal, Ramagya School, Greater Noida",
-    image: "/images/people/gr-noida.png",
+    image: "/images/people/gr-noida.webp",
     description: `“The greatest gifts we can give our children are the roots of responsibility and the wings of independence.”
     
       Dear Parents,
@@ -61,7 +61,7 @@ const leadershipData = [
       {
         name: "Kavita Chaudhary",
         title: "Principal, Ramagya School, Dadri",
-        image: "/images/people/dadri.png",
+        image: "/images/people/dadri.webp",
         description: `Dear Parents and Students,
 
         At Ramagya School Dadri, our mission goes far beyond academics. We believe in preparing students for life, helping them cultivate the skills, confidence, and resilience needed to pursue their aspirations. Our educational approach emphasizes not only academic excellence but also the development of character, curiosity, and creativity.

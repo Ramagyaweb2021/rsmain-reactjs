@@ -30,7 +30,7 @@ const HomeAwardsSection = () => {
           <h1 className="main-heading"> AWARDS
             <span className="lineclass" />
             <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-                Recognizing Excellence and Achievements
+                Recognizing Excellence & Achievements
             </span>
           </h1>
           </div>

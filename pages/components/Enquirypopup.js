@@ -44,11 +44,11 @@ export default function App() {
   return (
     <>
      {/* Side floating buttion discover section */}
-     {/* <div className="btn-float-discover animate__animated animate__fadeInRight" style={{ animationDelay: '1s' }}>
+     {/* <div className="sidebar-btn-float-discover animate__animated animate__fadeInRight" style={{ animationDelay: '1s' }}>
           <Link
             href="https://qr1.be/ZJ68"
             target="_blank"
-            className="btn btn-default btn-circle btn-lg btn-lateral"
+            className="btn btn-default1 btn-circle btn-lg btn-lateral"
             title="Discover Ramagya School"
           >
             <Image src="/images/discover-more.webp" alt="Ramagya school discover button" width={40} height={154}/>

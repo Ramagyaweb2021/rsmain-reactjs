@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 export const NoidaPreSchoolAwardsInternalPageSchool = () => {
   const awards = [
-    { name: 'Pre 1', img: '/images/awards/pre1.png' },
-    { name: 'Pre 2', img: '/images/awards/pre2.png' },
-    { name: 'Pre 3', img: '/images/awards/pre3.png' },
-    { name: 'Pre 4', img: '/images/awards/pre4.png' },
-    { name: 'Pre 5', img: '/images/awards/pre5.png' },
-    { name: 'Pre 6', img: '/images/awards/pre6.png' },
-    { name: 'Pre 7', img: '/images/awards/pre7.png' },
-    { name: 'Pre 8', img: '/images/awards/pre8.png' },
-    { name: 'Pre 9', img: '/images/awards/pre9.png' }
+    { name: 'Pre 1', img: '/images/awards/pre1.webp' },
+    { name: 'Pre 2', img: '/images/awards/pre2.webp' },
+    { name: 'Pre 3', img: '/images/awards/pre3.webp' },
+    { name: 'Pre 4', img: '/images/awards/pre4.webp' },
+    { name: 'Pre 5', img: '/images/awards/pre5.webp' },
+    { name: 'Pre 6', img: '/images/awards/pre6.webp' },
+    { name: 'Pre 7', img: '/images/awards/pre7.webp' },
+    { name: 'Pre 8', img: '/images/awards/pre8.webp' },
+    { name: 'Pre 9', img: '/images/awards/pre9.webp' }
 ];
 
   return (

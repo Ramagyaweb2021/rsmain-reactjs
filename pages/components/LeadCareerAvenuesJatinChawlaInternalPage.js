@@ -104,13 +104,13 @@ const LeadCareerAvenuesJatinChawlaInternalPage = () => {
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <h1 className="main-heading mt-3">
             CAREER AVENUES
-            <span className="lineclass" />
+            {/* <span className="lineclass" />
             <span
               className="wow animate__animated animate__zoomIn"
               style={{ animationDelay: '0.3s' }}
             >
               Pathway to a Bright and Successful Future
-            </span>
+            </span> */}
           </h1>
         </div>
       </div>

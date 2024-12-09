@@ -47,37 +47,37 @@ const NoidaEmpoweredMindsSlider = () => {
     {
       id: 1,
       name: "Socio Emotional & Character Building",
-      img: "/images/noida/empowered-mind/icon-1.png",
+      img: "/images/noida/empowered-mind/icon-1.webp",
       text: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.`,
     },
     {
       id: 2,
       name: "Communication Enhancement",
-      img: "/images/noida/empowered-mind/icon-2.png",
+      img: "/images/noida/empowered-mind/icon-2.webp",
       text: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.`,
     },
     {
       id: 3,
       name: "Parent’s Engagement",
-      img: "/images/noida/empowered-mind/icon-3.png",
+      img: "/images/noida/empowered-mind/icon-3.webp",
       text: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.`,
     },
     {
       id: 4,
       name: "Skill Development through Experiential Learning",
-      img: "/images/noida/empowered-mind/icon-4.png",
+      img: "/images/noida/empowered-mind/icon-4.webp",
       text: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.`,
     },
     {
       id: 5,
       name: "Student Leadership & Personality Enhancement",
-      img: "/images/noida/empowered-mind/icon-5.png",
+      img: "/images/noida/empowered-mind/icon-5.webp",
       text: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.`,
     },
     {
       id: 6,
       name: "Intra/Inter Class Activity and Interhouse Activity",
-      img: "/images/noida/empowered-mind/icon-6.png",
+      img: "/images/noida/empowered-mind/icon-6.webp",
       text: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took... Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.`,
     },
   ];

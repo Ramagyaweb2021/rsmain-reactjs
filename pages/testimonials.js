@@ -38,7 +38,7 @@ const Testimonials = () => {
       <Header />
 
       {/* Main banner section of the page */}
-      <section className="section banner-sec">
+      <section className="section banner-sec gallery-award-testimonial-section">
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12">

@@ -32,7 +32,7 @@ function WhoWeAreScrollspyMenu() {
                 About Us
               </Nav.Link>
               <Nav.Link href="/vision-and-values" className={`mx-1 ${router.pathname === '/vision-and-values' ? 'active' : ''}`}>
-                Vision & Values
+                Our Values
               </Nav.Link>
               <Nav.Link href="/people" className={`mx-1 ${router.pathname === '/people' ? 'active' : ''}`}>
                 People

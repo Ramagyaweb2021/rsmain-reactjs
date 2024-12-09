@@ -27,16 +27,16 @@ const NoidaAwardsHomePage = () => {
           <div className="d-flex flex-wrap justify-content-between">
           <div className='row'>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="/images/awards/1.png" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="/images/awards/1.webp" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="/images/awards/2.png" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="/images/awards/2.webp" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="/images/awards/3.png" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="/images/awards/3.webp" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="/images/awards/4.png" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="/images/awards/4.webp" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
           </div>
         </div>

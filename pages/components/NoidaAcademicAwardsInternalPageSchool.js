@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 export const NoidaAcademicAwardsInternalPageSchool = () => {
   const awards = [
-    { name: 'Academic 1', img: '/images/awards/academic1.png' },
-    { name: 'Academic 2', img: '/images/awards/academic2.png' },
-    { name: 'Academic 3', img: '/images/awards/academic3.png' },
-    { name: 'Academic 4', img: '/images/awards/academic4.png' }
+    { name: 'Academic 1', img: '/images/awards/academic1.webp' },
+    { name: 'Academic 2', img: '/images/awards/academic2.webp' },
+    { name: 'Academic 3', img: '/images/awards/academic3.webp' },
+    { name: 'Academic 4', img: '/images/awards/academic4.webp' }
 ];
 
   return (

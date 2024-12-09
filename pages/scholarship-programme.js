@@ -86,7 +86,7 @@ const ScholarshipProgramme = () => {
       <div className="row my-5">
       <div className="col-md-4 custom-column">
       <div className="p-0 border rounded mb-3">
-      <Image src="/images/admission/schorlaship-1.png" alt="Scholarship Image" className="img-fluid rounded" width={364} height={364} />
+      <Image src="/images/admission/schorlaship-1.webp" alt="Scholarship Image" className="img-fluid rounded" width={364} height={364} />
       </div>
       </div>
       <div className="col-md-4 custom-column">
@@ -124,7 +124,7 @@ const ScholarshipProgramme = () => {
       </div>
       </div>
       <div className="col-md-4">
-      <Image src="/images/admission/scholarship-2.png" alt="Scholarship Image" className="img-fluid rounded" width={364} height={364} />
+      <Image src="/images/admission/scholarship-2.webp" alt="Scholarship Image" className="img-fluid rounded" width={364} height={364} />
       </div>
       <div className="col-md-4">
       <div className="p-3 border rounded" style={{ backgroundColor: '#fff' }}>
@@ -211,7 +211,7 @@ const ScholarshipProgramme = () => {
           </div>
           <div className="col-md-4 custom-column">
           <div className="p-0 border rounded mb-3">
-          <Image src="/images/admission/scholarship-3.png" alt="Scholarship Image" className="img-fluid rounded" width={364} height={364} />
+          <Image src="/images/admission/scholarship-3.webp" alt="Scholarship Image" className="img-fluid rounded" width={364} height={364} />
           </div>
           </div>
           <p style={{ textAlign: "center" }}>
@@ -242,7 +242,7 @@ const ScholarshipProgramme = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                {/* <Image src="/images/admission/book-appointment.png" alt="book-appointment" width={120} height={140} /> */}
+                {/* <Image src="/images/admission/book-appointment.webp" alt="book-appointment" width={120} height={140} /> */}
                  <h5>Ramagya School</h5>
                  <h2 className='mt-50'>NOIDA</h2>
                 <p>
@@ -261,7 +261,7 @@ const ScholarshipProgramme = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                {/* <Image src="/images/admission/book-appointment.png" alt="book-appointment" width={120} height={140} /> */}
+                {/* <Image src="/images/admission/book-appointment.webp" alt="book-appointment" width={120} height={140} /> */}
                  <h5>Ramagya School</h5>
                  <h2 className='mt-50'>NOIDA EXT.</h2>
                 <p>
@@ -280,7 +280,7 @@ const ScholarshipProgramme = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                {/* <Image src="/images/admission/book-appointment.png" alt="book-appointment" width={120} height={140} /> */}
+                {/* <Image src="/images/admission/book-appointment.webp" alt="book-appointment" width={120} height={140} /> */}
                  <h5>Ramagya School</h5>
                  <h2 className='mt-50'>GREATER NOIDA</h2>
                 <p>
@@ -299,7 +299,7 @@ const ScholarshipProgramme = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                {/* <Image src="/images/admission/book-appointment.png" alt="book-appointment" width={120} height={140} /> */}
+                {/* <Image src="/images/admission/book-appointment.webp" alt="book-appointment" width={120} height={140} /> */}
                  <h5>Ramagya School</h5>
                  <h2 className='mt-50'>DADRI</h2>
                 <p>

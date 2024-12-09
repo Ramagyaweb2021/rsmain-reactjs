@@ -79,7 +79,7 @@ const ExploreTabination = () => {
                           </p>
                         </div>
                         <div className="col-md-4">
-                          <Image src="/images/explore/explore-1.png" alt="explore-1" width={430} height={306} />
+                          <Image src="/images/explore/explore-1.webp" alt="explore-1" width={430} height={306} />
                         </div>
                       </div>
                       <div className="row justify-content-center my-3">
@@ -106,7 +106,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/primary/learning-domain/1.png"
+                                src="/images/explore/primary/learning-domain/1.webp"
                               />
                               <p className='mt-2'>Students</p>
                             </div>
@@ -120,7 +120,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/primary/learning-domain/2.png"
+                                src="/images/explore/primary/learning-domain/2.webp"
                               />
                               <p className='mt-2'>Numerics & Maths</p>
                             </div>
@@ -134,7 +134,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/primary/learning-domain/3.png"
+                                src="/images/explore/primary/learning-domain/3.webp"
                               />
                               <p className='mt-2'>EVS</p>
                             </div>
@@ -148,7 +148,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/primary/learning-domain/4.png"
+                                src="/images/explore/primary/learning-domain/4.webp"
                               />
                               <p className='mt-2'>Students</p>
                             </div>
@@ -162,7 +162,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/primary/learning-domain/5.png"
+                                src="/images/explore/primary/learning-domain/5.webp"
                               />
                               <p className='mt-2'>Art</p>
                             </div>
@@ -176,7 +176,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/primary/learning-domain/6.png"
+                                src="/images/explore/primary/learning-domain/6.webp"
                               />
                               <p className='mt-2'>Physical Education</p>
                             </div>
@@ -190,7 +190,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/primary/learning-domain/7.png"
+                                src="/images/explore/primary/learning-domain/7.webp"
                               />
                               <p className='mt-2'>Dance</p>
                             </div>
@@ -204,7 +204,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/primary/learning-domain/7.png"
+                                src="/images/explore/primary/learning-domain/8.webp"
                               />
                               <p className='mt-2'>Music</p>
                             </div>
@@ -235,7 +235,7 @@ const ExploreTabination = () => {
                       </div>
                       <div className="row justify-content-center my-3">
                         <div className="col-md-4">
-                          <Image src="/images/explore/middle.png" alt="middle" width={430} height={306} />
+                          <Image src="/images/explore/middle.webp" alt="middle" width={430} height={306} />
                         </div>
                         <div className="col-md-8">
                           <p className='tabination-text mt-1'>
@@ -284,7 +284,7 @@ const ExploreTabination = () => {
 
                         </div>
                         <div className="col-md-4">
-                          <Image src="/images/explore/middle-1.png" alt="middle" width={430} height={306} />
+                          <Image src="/images/explore/middle-1.webp" alt="middle" width={430} height={306} />
                         </div>
                       </div>
                       <div className="row justify-content-center my-2">
@@ -324,7 +324,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/1.png"
+                                src="/images/explore/middle/learning-domain/1.webp"
                               />
                               <p className='mt-2'>Social Science</p>
                             </div>
@@ -338,7 +338,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/2.png"
+                                src="/images/explore/middle/learning-domain/2.webp"
                               />
                               <p className='mt-2'>Science</p>
                             </div>
@@ -352,7 +352,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/3.png"
+                                src="/images/explore/middle/learning-domain/3.webp"
                               />
                               <p className='mt-2'>Mathematics</p>
                             </div>
@@ -366,7 +366,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/4.png"
+                                src="/images/explore/middle/learning-domain/4.webp"
                               />
                               <p className='mt-2'>Information Technology</p>
                             </div>
@@ -380,7 +380,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/5.png"
+                                src="/images/explore/middle/learning-domain/5.webp"
                               />
                               <p className='mt-2'>Art</p>
                             </div>
@@ -394,7 +394,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/6.png"
+                                src="/images/explore/middle/learning-domain/6.webp"
                               />
                               <p className='mt-2'>Sports</p>
                             </div>
@@ -408,7 +408,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/7.png"
+                                src="/images/explore/middle/learning-domain/7.webp"
                               />
                               <p className='mt-2'>Dance</p>
                             </div>
@@ -422,7 +422,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/8.png"
+                                src="/images/explore/middle/learning-domain/8.webp"
                               />
                               <p className='mt-2'>Music</p>
                             </div>
@@ -436,7 +436,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/9.png"
+                                src="/images/explore/middle/learning-domain/9.webp"
                               />
                               <p className='mt-2'>EVS</p>
                             </div>
@@ -450,7 +450,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/10.png"
+                                src="/images/explore/middle/learning-domain/10.webp"
                               />
                               <p className='mt-2'>Theatre</p>
                             </div>
@@ -464,7 +464,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/11.png"
+                                src="/images/explore/middle/learning-domain/11.webp"
                               />
                               <p className='mt-2'>Debate</p>
                             </div>
@@ -495,7 +495,7 @@ const ExploreTabination = () => {
                       </div>
                       <div className="row justify-content-center my-3">
                         <div className="col-md-6">
-                          <Image src="/images/explore/secondary-1.png" alt="secondary-1" width={600} height={450} />
+                          <Image src="/images/explore/secondary-1.webp" alt="secondary-1" width={600} height={450} />
                         </div>
                         <div className="col-md-6">
                           <p className='tabination-text mt-1'>
@@ -552,7 +552,7 @@ const ExploreTabination = () => {
                         
                         </div>
                         <div className="col-md-6">
-                          <Image src="/images/explore/secondary-2.png" alt="secondary-2" width={600} height={450} />
+                          <Image src="/images/explore/secondary-2.webp" alt="secondary-2" width={600} height={450} />
                         </div>
                       </div>
                       <div className="row justify-content-center my-2">
@@ -593,7 +593,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/1.png"
+                                src="/images/explore/middle/learning-domain/1.webp"
                               />
                               <p className='mt-2'>Social Science</p>
                             </div>
@@ -607,7 +607,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/2.png"
+                                src="/images/explore/middle/learning-domain/2.webp"
                               />
                               <p className='mt-2'>Science</p>
                             </div>
@@ -621,7 +621,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/3.png"
+                                src="/images/explore/middle/learning-domain/3.webp"
                               />
                               <p className='mt-2'>Mathematics</p>
                             </div>
@@ -635,7 +635,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/4.png"
+                                src="/images/explore/middle/learning-domain/4.webp"
                               />
                               <p className='mt-2'>Information Technology</p>
                             </div>
@@ -649,7 +649,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/5.png"
+                                src="/images/explore/middle/learning-domain/5.webp"
                               />
                               <p className='mt-2'>Art</p>
                             </div>
@@ -663,7 +663,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/6.png"
+                                src="/images/explore/middle/learning-domain/6.webp"
                               />
                               <p className='mt-2'>Sports</p>
                             </div>
@@ -677,7 +677,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/7.png"
+                                src="/images/explore/middle/learning-domain/7.webp"
                               />
                               <p className='mt-2'>Dance</p>
                             </div>
@@ -691,7 +691,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/8.png"
+                                src="/images/explore/middle/learning-domain/8.webp"
                               />
                               <p className='mt-2'>Music</p>
                             </div>
@@ -705,7 +705,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/9.png"
+                                src="/images/explore/middle/learning-domain/9.webp"
                               />
                               <p className='mt-2'>EVS</p>
                             </div>
@@ -719,7 +719,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/10.png"
+                                src="/images/explore/middle/learning-domain/10.webp"
                               />
                               <p className='mt-2'>Theatre</p>
                             </div>
@@ -733,7 +733,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/11.png"
+                                src="/images/explore/middle/learning-domain/11.webp"
                               />
                               <p className='mt-2'>Debate</p>
                             </div>
@@ -747,7 +747,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/12.png"
+                                src="/images/explore/middle/learning-domain/12.webp"
                               />
                               <p className='mt-2'>Clubs</p>
                             </div>
@@ -778,7 +778,7 @@ const ExploreTabination = () => {
                       </div>
                       <div className="row justify-content-center my-3">
                         <div className="col-md-5">
-                          <Image src="/images/explore/senior-secondary/sr-secondary.png" alt="sr-secondary" width={600} height={450} />
+                          <Image src="/images/explore/senior-secondary/sr-secondary.webp" alt="sr-secondary" width={600} height={450} />
                         </div>
                         <div className="col-md-7">
                           <p className='tabination-text mt-50'>
@@ -832,7 +832,7 @@ const ExploreTabination = () => {
                         
                         </div>
                         <div className="col-md-5">
-                          <Image src="/images/explore/senior-secondary/sr-secondary-1.png" alt="sr-secondary-1" width={600} height={450} />
+                          <Image src="/images/explore/senior-secondary/sr-secondary-1.webp" alt="sr-secondary-1" width={600} height={450} />
                         </div>
                       </div>
                       <div className="row justify-content-center my-2">
@@ -873,7 +873,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/1.png"
+                                src="/images/explore/middle/learning-domain/1.webp"
                               />
                               <p className='mt-2'>Social Science</p>
                             </div>
@@ -887,7 +887,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/2.png"
+                                src="/images/explore/middle/learning-domain/2.webp"
                               />
                               <p className='mt-2'>Science</p>
                             </div>
@@ -901,7 +901,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/3.png"
+                                src="/images/explore/middle/learning-domain/3.webp"
                               />
                               <p className='mt-2'>Mathematics</p>
                             </div>
@@ -915,7 +915,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/4.png"
+                                src="/images/explore/middle/learning-domain/4.webp"
                               />
                               <p className='mt-2'>Information Technology</p>
                             </div>
@@ -929,7 +929,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/5.png"
+                                src="/images/explore/middle/learning-domain/5.webp"
                               />
                               <p className='mt-2'>Art</p>
                             </div>
@@ -943,7 +943,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/6.png"
+                                src="/images/explore/middle/learning-domain/6.webp"
                               />
                               <p className='mt-2'>Sports</p>
                             </div>
@@ -957,7 +957,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/7.png"
+                                src="/images/explore/middle/learning-domain/7.webp"
                               />
                               <p className='mt-2'>Dance</p>
                             </div>
@@ -971,7 +971,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/8.png"
+                                src="/images/explore/middle/learning-domain/8.webp"
                               />
                               <p className='mt-2'>Music</p>
                             </div>
@@ -985,7 +985,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/9.png"
+                                src="/images/explore/middle/learning-domain/9.webp"
                               />
                               <p className='mt-2'>EVS</p>
                             </div>
@@ -999,7 +999,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/10.png"
+                                src="/images/explore/middle/learning-domain/10.webp"
                               />
                               <p className='mt-2'>Theatre</p>
                             </div>
@@ -1013,7 +1013,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/11.png"
+                                src="/images/explore/middle/learning-domain/11.webp"
                               />
                               <p className='mt-2'>Debate</p>
                             </div>
@@ -1027,7 +1027,7 @@ const ExploreTabination = () => {
                                 loading="lazy"
                                 width={80}
                                 height={80}
-                                src="/images/explore/middle/learning-domain/12.png"
+                                src="/images/explore/middle/learning-domain/12.webp"
                               />
                               <p className='mt-2'>Clubs</p>
                             </div>

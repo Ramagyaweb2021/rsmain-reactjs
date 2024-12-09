@@ -32,7 +32,7 @@ const VissionAndValue = () => {
         <title>Vision & Values | Ramagya School</title>
         <meta name="description" content="AboutUs" />
         <meta name="keywords" content="AboutUs" />
-        <link rel="canonical" href="https://ramagyaschool.com/about-us" />
+        <link rel="canonical" href="https://ramagyaschool.com/vision-and-values" />
       </Head>
       <Header />
 
@@ -46,7 +46,7 @@ const VissionAndValue = () => {
                   className="wow animate__animated animate__fadeInDown"
                   style={{ animationDelay: '0.2s' }}
                 >
-                  Vision & Values!
+                  Our Values!
                 </h1>
               </div>
             </div>
@@ -102,13 +102,13 @@ const VissionAndValue = () => {
         {/* Core Value section */}
         <section className="container value-section my-5">
       <div className="text-center mb-4">
-        <h3>CORE VALUE</h3>
+      <h3 className="main-heading-internal-pages">CORE VALUE</h3>
       </div>
       <div className="row justify-content-center">
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-             <Image src="/images/vision-mission/1.png" alt="core value" width={50} height={50} />
+             <Image src="/images/vision-mission/1.webp" alt="core value" width={50} height={50} />
               <h5>INTEGRITY</h5>
               <p>
                   We believe in upholding honesty, ethics, and moral principles in all our actions and decisions. By fostering a culture of transparency and accountability, we create an environment where trust and credibility thrive. This commitment to integrity helps build strong relationships within our community, guiding students to be responsible, ethical citizens.
@@ -119,7 +119,7 @@ const VissionAndValue = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-            <Image src="/images/vision-mission/2.png" alt="core value" width={50} height={50} />
+            <Image src="/images/vision-mission/2.webp" alt="core value" width={50} height={50} />
               <h5>COMMITMENT TO EXCELLENCE</h5>
               <p>
                 At the heart of our philosophy is the relentless pursuit of excellence. We encourage our students to strive for the highest standards in academics, sports, and personal development. By nurturing a mindset of continuous improvement, we empower them to achieve their full potential, ensuring that success is not just a goal but a habit.
@@ -131,7 +131,7 @@ const VissionAndValue = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-            <Image src="/images/vision-mission/3.png" alt="Our Vision" width={50} height={50} />
+            <Image src="/images/vision-mission/3.webp" alt="Our Vision" width={50} height={50} />
               <h5>RESPECT & COMPASSION</h5>
               <p>
                   We value diversity and believe in treating every individual with empathy, kindness, and respect. By fostering an atmosphere of inclusion and mutual understanding, we aim to create a supportive community where everyone feels valued. Our commitment to compassion helps students build meaningful relationships and promotes a culture of care and acceptance.
@@ -143,7 +143,7 @@ const VissionAndValue = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-            <Image src="/images/vision-mission/4.png" alt="Our Vision" width={50} height={50} />
+            <Image src="/images/vision-mission/4.webp" alt="Our Vision" width={50} height={50} />
               <h5>RESILIENCE & PERSEVERANCE</h5>
               <p>
                   We inspire our students to face challenges with courage and determination. By nurturing resilience, we encourage them to view obstacles as opportunities for growth. Our focus on perseverance instills a never-give-up attitude, helping students develop the grit and adaptability needed to thrive in an ever-changing world.
@@ -156,7 +156,7 @@ const VissionAndValue = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-            <Image src="/images/vision-mission/5.png" alt="Our Vision" width={50} height={50} />
+            <Image src="/images/vision-mission/5.webp" alt="Our Vision" width={50} height={50} />
               <h5>INCLUSIVITY</h5>
               <p>
                  We embrace the beauty of diversity, ensuring equal opportunities for all, regardless of background, culture, or beliefs. Our inclusive approach celebrates the uniqueness of each individual, promoting a sense of belonging and unity. We strive to create an environment where every voice is heard, respected, and appreciated.
@@ -168,7 +168,7 @@ const VissionAndValue = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-            <Image src="/images/vision-mission/6.png" alt="Our Vision" width={50} height={50} />
+            <Image src="/images/vision-mission/6.webp" alt="Our Vision" width={50} height={50} />
               <h5>ADHERENCE & ALLEGIANCE TO INDIAN VALUES & TRADITIONS</h5>
               <p>
                   Rooted in the rich heritage of Indian culture, we emphasize the importance of traditional values while preparing students for a modern world. By instilling a deep sense of pride in India&#39;s customs and traditions, we help students maintain their cultural identity, blending the wisdom of the past with the progress of the present.

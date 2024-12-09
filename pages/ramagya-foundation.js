@@ -93,16 +93,16 @@ const RamagyaFoundation = () => {
             <div className="col-lg-7">
               <div className='row'>
                 <div className='col-md-6 col-6 g-1'>
-                  <Image src="/images/ramagya-foundation/1.png" width={350} height={276} alt="School Building" className="img-fluid rounded" />
+                  <Image src="/images/ramagya-foundation/1.webp" width={350} height={276} alt="School Building" className="img-fluid rounded" />
                 </div>
                 <div className='col-md-6 col-6 g-1'>
-                  <Image src="/images/ramagya-foundation/2.png" width={350} height={276} alt="School Building" className="img-fluid rounded" />
+                  <Image src="/images/ramagya-foundation/2.webp" width={350} height={276} alt="School Building" className="img-fluid rounded" />
                 </div>
                 <div className='col-md-6 col-6 g-1'>
-                  <Image src="/images/ramagya-foundation/3.png" width={350} height={276} alt="School Building" className="img-fluid rounded" />
+                  <Image src="/images/ramagya-foundation/3.webp" width={350} height={276} alt="School Building" className="img-fluid rounded" />
                 </div>
                 <div className='col-md-6 col-6 g-1'>
-                  <Image src="/images/ramagya-foundation/4.png" width={350} height={276} alt="School Building" className="img-fluid rounded" />
+                  <Image src="/images/ramagya-foundation/4.webp" width={350} height={276} alt="School Building" className="img-fluid rounded" />
                 </div>
               </div>
               
@@ -120,7 +120,7 @@ const RamagyaFoundation = () => {
           <div className="col-md-3 col-6 col-6 mb-4">
             <div className="card text-center h-100 border-1">
               <div className="card-value-body">
-              <Image src="/images/ramagya-foundation/icon-1.png" alt="icon" width={50} height={50} />
+              <Image src="/images/ramagya-foundation/icon-1.webp" alt="icon" width={50} height={50} />
                 <h5>40,000+</h5>
                 <p>
                   Students
@@ -131,7 +131,7 @@ const RamagyaFoundation = () => {
           <div className="col-md-3 col-6 col-6 mb-4">
             <div className="card text-center h-100 border-1">
               <div className="card-value-body">
-              <Image src="/images/ramagya-foundation/icon-2.png" alt="icon" width={50} height={50} />
+              <Image src="/images/ramagya-foundation/icon-2.webp" alt="icon" width={50} height={50} />
                 <h5>5,000+</h5>
                 <p>
                   Stray Dogs
@@ -142,7 +142,7 @@ const RamagyaFoundation = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-1">
               <div className="card-value-body">
-              <Image src="/images/ramagya-foundation/icon-3.png" alt="icon" width={50} height={50} />
+              <Image src="/images/ramagya-foundation/icon-3.webp" alt="icon" width={50} height={50} />
                 <h5>35,000+</h5>
                 <p>
                 Youth for Sports
@@ -153,7 +153,7 @@ const RamagyaFoundation = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-1">
               <div className="card-value-body">
-              <Image src="/images/ramagya-foundation/icon-4.png" alt="icon" width={50} height={50} />
+              <Image src="/images/ramagya-foundation/icon-4.webp" alt="icon" width={50} height={50} />
                 <h5>20,000+</h5>
                 <p>
                   Children & Adult

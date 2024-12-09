@@ -81,7 +81,8 @@ body {
   .learn h1,
   .explore h1,
   .innovate h1 {
-    font-size: 30px;
+    font-size: 25px;
+    /* font-size: 30px; */
     /* padding-bottom: 15px;
     margin-bottom: 5px; */
     padding-bottom: 15px;
@@ -94,6 +95,7 @@ body {
       font-size: 20px;
       margin-top: -5px;
       padding: 0 0 0 15px;
+      /* left: -5px; */
   }
   .learn h1 > span.lineclass::before,
   .explore h1 > span.lineclass::before,
@@ -174,14 +176,14 @@ body {
       /* height: auto; */
   }
   .feature-title {
-      font-size: 14px;
+      font-size: 13px;
   }
   .feature-description {
       font-size: 12px;
   }
   .text-wrapper .box h6 {
-      font-size: 16px;
-      font-weight: 500;
+      font-size: 15px;
+      font-weight: 600;
   }
   .text-wrapper .box p {
       line-height: 20px;
@@ -216,8 +218,8 @@ body {
       /* top: 57px; */
   }
   .explore ol.carousel-catg li {
-      font-size: 11px;
-      margin-bottom: 9px;  
+      font-size: 10px;
+      margin-bottom: 8px;  
   }
   .slide1 {
     height: auto;
@@ -248,7 +250,7 @@ body {
       padding: 45px 0 0 30px;
   }
   .footer p {
-      font-size: 14px;
+      font-size: 13px;
   }
   .footer-social-media {
       font-size: 14px;
@@ -293,6 +295,9 @@ body {
     font-size: 14px;
         padding: 3px 10px;
   }
+  .explore ol.carousel-catg li {
+    font-size: 9px;
+}
 
   /* .image-wrapper,
   .text-wrapper {
@@ -348,7 +353,7 @@ body {
       padding: 0 5px;
   }
   .dropdown-item {
-    font-size: 13px;
+    font-size: 12px;
 }
 .scrollspyMenu a{
     font-size: 11px;
@@ -375,11 +380,12 @@ body {
     margin-bottom: 5rem !important;
 } */
 .feature-title{
-    font-size: 12px !important;
+    font-size: 11px !important;
 }
 .feature-description{
     height: 50px; 
-    overflow-y: scroll;
+    font-size: 11px !important;
+    /* overflow-y: scroll; */
     /* display: none; */
 }
   .learn #approach-mobile a {
@@ -422,12 +428,12 @@ body {
     font-size: 20px;
   }
   .learn h1 > span, .explore h1 > span, .innovate h1 > span, .evolve h1 > span{
-    display: inline;
-    font-size: 12px;
+    /* display:inline; */
+    font-size: 11px !important;
   }
   .learn h1 > span.lineclass::before, .explore h1 > span.lineclass::before, .innovate h1 > span.lineclass::before, .evolve h1 > span.lineclass::before {
     height: 20px;
-    top: -5px;
+    top: -10px;
     left: 5px;
   }
   .sub-heading{
@@ -454,7 +460,7 @@ body {
       display: none;
   } */
   .learn p, .explore p{
-    padding: 0 9px;
+    padding: 0 5px;
   }
   .learn .approach a {
       width: 90%;
@@ -532,7 +538,7 @@ body {
     display: none;
   }
   .my-custom-campuses{
-    padding-top: 4.5em;
+    padding-top: 2.5em;
   }
   .my-custom-explore{
     padding-top: 4.5em;
@@ -572,14 +578,14 @@ body {
 }
 
   .banner-sec{
-    min-height: 250px;
+    min-height: 200px;
     padding: 0;
   }
   .banner-text h1{
-    font-size: 24px;
+    font-size: 22px;
   }
   .banner-text{
-    padding-top: 140px;
+    padding-top: 90px;
   }
   .nav-link {
     font-size: 10px;
@@ -587,7 +593,9 @@ body {
     margin: 5px;
 }
 .our-guiding-section .learn h2{
-    font-size: 22px;
+    font-size: 20px;
+    margin-top: 25px;
+    padding-bottom: 5px;
 }
 .about-us-section{
     padding: 0 !important;
@@ -604,23 +612,23 @@ body {
 .profile .overlay-content{
   width: 100%;
   padding: 0;
-  margin-top: 180px;
+  margin-top: 160px;
   background: rgb(0 0 0);
 }
 .p-mobile-margin {
   margin-top: 14rem; /* Adjust this value as needed */
 }
 .main-heading-internal-pages{
-  font-size: 22px;
+  font-size: 20px;
 }
 .my-5{
   margin-top: 1rem !important;
 }
 .vision-section{
-  padding: 50px 50px;
+  padding: 50px 20px;
 }
 .about-us-detail h3{
-  font-size: 22px;
+  font-size: 20px;
 }
 .h5, h5{
   font-size: 16px;
@@ -629,7 +637,8 @@ body {
   font-size: 14px;
 }
 .overlay-text{
-  width: 120px;
+  width: 90px;
+  height: 135px;
 }
 .card-1-body{
   padding: 5px;
@@ -653,8 +662,8 @@ body {
   .explore h1,
   .innovate h1 {
     /* font-size: 30px; */
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 13px;
     /* padding-bottom: 15px;
     margin-bottom: 15px; */
   }
@@ -688,6 +697,10 @@ body {
 } */
 .scroll-sticky {
   height: 55px;
+  z-index: 1111;
+}
+.footer-heading{
+  font-size: 15px !important;
 }
 /* Non-Sticky Logo */
 .logo {
