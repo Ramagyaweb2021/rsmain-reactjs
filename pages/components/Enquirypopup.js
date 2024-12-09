@@ -25,7 +25,7 @@ function MyVerticallyCenteredModal(props) {
           <Container>
             <Row>
               <Col xs={12} md={12}>
-                <iframe src="https://forms.edunexttechnologies.com/forms/ramagyanoida/main-enquiry/" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://forms.edunexttechnologies.com/forms/ramagya/main-branch/" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
               </Col>
             </Row>
           </Container>
