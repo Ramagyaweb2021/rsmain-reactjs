@@ -4,7 +4,7 @@ import 'animate.css';
 import Image from 'next/image';
 import Enquirypopup from './Enquirypopup';
 import Typebot from '../components/Typebot';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
@@ -12,6 +12,7 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [hideDropdown, setHideDropdown] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false); // Track dropdown state
+  const [isMobile, setIsMobile] = useState(false); // Track if view is mobile
 
   useEffect(() => {
     const navbar = document.getElementById('navbar');
@@ -33,10 +34,21 @@ const Header = () => {
       }
     };
 
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Set initial mobile state
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
+
+    //window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+      // window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -70,16 +82,26 @@ const Header = () => {
           </a>
 
           {/* Dropdown Menu */}
-          <div
+           <div
+            className={`dropdown dropdown-menu-end ${hideDropdown ? 'd-none' : ''}`}
+            onMouseEnter={(e) => !isMobile && e.currentTarget.classList.add('show')}
+            onMouseLeave={(e) => !isMobile && e.currentTarget.classList.remove('show')}
+          >
+          {/* <div
             className={`dropdown dropdown-menu-end ${hideDropdown ? 'd-none' : ''}`}
             onMouseEnter={(e) => e.currentTarget.classList.add('show')}
             onMouseLeave={(e) => e.currentTarget.classList.remove('show')}
-          >
-            <button
+          > */}
+           <button
               className="dropdown-basic dropdown-toggle"
               type="button"
-              onClick={handleDropdownToggle} // Add click event to toggle dropdown
+              onClick={isMobile ? handleDropdownToggle : undefined} // Handle click only on mobile
             >
+            {/* <button
+              className="dropdown-basic dropdown-toggle"
+              type="button"
+              onClick={handleDropdownToggle} 
+            > */}
               <Image
                 src="/images/fi_check-circle.webp"
                 alt="Apply Now"
@@ -88,7 +110,8 @@ const Header = () => {
               />{' '}
               APPLY NOW
             </button>
-            <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}> {/* Add show class based on dropdown state */}
+            <ul className={`dropdown-menu ${dropdownOpen && isMobile ? 'show' : ''}`}>
+            {/* <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}> */}
               <li>
                 <a className="dropdown-item" href="https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/" target="_blank">
                   Noida
