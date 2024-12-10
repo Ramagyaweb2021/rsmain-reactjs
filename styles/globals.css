@@ -2053,10 +2053,10 @@ button:hover {
    color: #ffdf8b;
 } */
 video.main-video {
-  width: 100%;
-  /* height: 100%; */
   object-fit: cover;
+  width: 100%;
 }
+  /* width: 100%; */
 .image-container-testimonial img{
    height: auto !important;
 }

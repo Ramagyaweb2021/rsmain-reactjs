@@ -43,7 +43,7 @@ const HomeVideoSection = () => {
           />
          </div>
         </div>
-</div>
+      </div>
         {/* Target section to scroll to */}
       <div ref={scrollToSection} className="branch">
        

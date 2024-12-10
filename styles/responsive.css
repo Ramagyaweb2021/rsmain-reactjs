@@ -317,16 +317,27 @@ body {
   #gutter-space {
     margin-top: 15px;
     /* margin-top: -25px; */
-}
-/* .service_box.type_four{
-    height: 140px;
-} */
-/* .image-section img{
-    height: 300px;
-} */
-  /* .downsection {
-      bottom: 50px;
+  }
+  /* video.main-video{
+    object-fit: cover;
+    margin-top: 0px;
+    width: 100% !important; 
+    height: 630px !important;
+    position: relative;
+    right: 0px;
+    top: 0;
   } */
+}
+@media only screen and (min-width: 1000px) and (max-width: 1109px) {
+  video.main-video {
+    object-fit: cover;
+    margin-top: 0px;
+    width: 100% !important; 
+    height: 650px !important;
+    position: relative;
+    right: 0px;
+    top: 0;
+  }
 }
 @media only screen and (max-width: 767px) {
 /************************************************************************yesterday added css */
