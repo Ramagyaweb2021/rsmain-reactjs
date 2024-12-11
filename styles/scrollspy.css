@@ -1,0 +1,264 @@
+.fp-warning,
+.fp-watermark a {
+  display: none !important;
+}
+/* /styles/ScrollspyMenu.css */
+.scrollspyMenu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-set-green);
+  padding: 0.1rem;
+  border-radius: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollspyMenu.sticky {
+  position: fixed;
+  /* position: sticky; */
+  margin-top: 72px;
+  /* top: 0;  */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1111;
+}
+
+.scrollspyMenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.scrollspyMenu li {
+  margin: 0.5rem 15px;
+  display: inline-block;
+}
+
+.scrollspyMenu a {
+  text-decoration: none;
+  color: var(--color-set-white);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--font-family-heading);
+  font-size: 15px;
+  padding: 1px 10px;
+  letter-spacing: 1px;
+}
+
+.scrollspyMenu .active a {
+  color: var(--color-set-yellow);
+  /* color: var(--color-set-yellow); */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--font-family-heading);
+  font-size: 15px;
+  padding: 1px 10px;
+}
+
+/* ***************************************************************Fullpage.js css */
+/* Overwriting styles for the navigation dots */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white;
+}
+/* .my-custom-video{
+
+} */
+.my-custom-campuses{
+    height: auto;
+    padding-top: 2.5em;
+}
+.my-custom-explore{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-experiment{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-innovate{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-evolve{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-lead{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-difference{
+  height: auto;
+  padding-top: 5.5em;
+}
+.my-custom-gallery{
+  height: auto;
+  padding-top: 10.5em;
+}
+.my-custom-awards{
+  height: auto;
+  padding-top: 5.5em;
+}
+.my-custom-school-updates{
+  height: auto;
+  padding-top: 5.5em;
+}
+.my-custom-testimonials{
+  height: auto;
+  padding-top: 5.5em;
+}
+.my-custom-testimonials{
+  height: auto;
+  padding-top: 5.5em;
+}
+.my-custom-footer{
+  height: auto;
+  padding-top: 5.5em;
+}
+
+/* Background colors for sections */
+.fp-section:nth-child(1) {
+  background-color: #fff;
+  /* height: 100vh;  */
+}
+
+.fp-section:nth-child(2) {
+  background-color: #fff;
+  /* height: 80vh;  */
+  /* margin-top: -150px; */
+}
+
+.fp-section:nth-child(3) {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffff69;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.fp-section:nth-child(4) {
+  background-color: #fff;
+  /* margin-top: 100px; */
+}
+
+.fp-section:nth-child(5) {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffff69;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.fp-section:nth-child(6) {
+  background-color: #fff;
+}
+
+.fp-section:nth-child(7) {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffff69;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.fp-section:nth-child(8) {
+  background-color: #fff;
+}
+
+.fp-section:nth-child(9) {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffff69;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.fp-section:nth-child(10) {
+  background-color: #fff;
+}
+
+.fp-section:nth-child(11) {
+  background-image: url(/images/explore-bg.webp);
+  background-color: #ffffff69;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.fp-section:nth-child(12) {
+  background-color: #fff;
+}
+
+.fp-section:nth-child(13) {
+  background-color: rgb(233, 236, 239);
+  /* background-image: url(/images/explore-bg.webp);
+  background-color: #ffffff69;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover; */
+}
+
+/* Overwriting navigation arrows for slides */
+#fp-nav.fp-right {
+  right: 0;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: var(--color-set-yellow) !important;
+}
+
+.fp-prev {
+  margin-left: 3%;
+}
+
+.fp-next {
+  margin-right: 3%;
+}
+ /* Example CSS for sticky header */
+.scroll-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.5s ease;
+  /* height: 55px; */
+}
+/* Scrollspymenu internal pages css */
+.fixed-nav {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  /* z-index: 9999; */
+  background-color: var(--color-set-green);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  /* transition: all 0.3s ease-in-out; */
+  animation: smoothScroll 1s forwards;
+  -o-animation: smoothScroll 1s forwards;
+  -moz-animation: smoothScroll 1s forwards;
+  -webkit-animation: smoothScroll 1s forwards;
+  animation: smoothScroll 0.6s ease-out forwards;
+}
+/* Simplified keyframe animation for smooth scroll */
+@keyframes smoothScroll {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
