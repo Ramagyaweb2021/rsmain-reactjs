@@ -34,7 +34,9 @@ const HomeSchoolBranchSection = () => {
               Across Diverse Locations */}
             </span>
           </h1>
-
+          <p className="scrollspy-p-0">
+             Fostering holistic development with innovative education, experienced faculty, and a vibrant learning environment. Excellence in education awaits..
+            </p>
        {/* <h1 className="main-heading"> OUR CAMPUSES
           <span className="lineclass" />
           <span className="wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>

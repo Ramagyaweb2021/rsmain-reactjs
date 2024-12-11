@@ -183,10 +183,10 @@ a:hover {
 }
 .text-bg-dark {
   background-color: var(--color-set-green) !important;
-  background-image: url(https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/rs-new-web/bg-images/header-background.webp);
+  background-image: url(/images/header-background.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
 .navbar-nav .nav-link {
@@ -852,7 +852,7 @@ ul {
 }
 .steps:hover {
   transform: scale(1.2);
-  background-color: var(--color-set-green);
+  background-color:transparent;
   color: #fff;
 }
 .title_24:hover {
@@ -880,13 +880,13 @@ ul {
   -o-transition: 0.5s ease-in-out;
 }
 .title_24 {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 35px;
   font-weight: 500;
   color: var(--color-set-green);
   display: block;
   margin-bottom: 10px;
-  padding: 5%;
+  /* padding: 5%; */
   font-family: var(--font-family-heading);
 }
 .hover_1 .oh {
@@ -932,8 +932,8 @@ ul {
   z-index: 2;
 }
 .service_box.type_four {
-  padding: 10px 0;
-  background: #e7eaebcc;
+  padding: 3px 0;
+  background: #e7eaeb;
   border-radius: 1px;
   text-align: center;
   overflow: hidden;
@@ -1079,7 +1079,7 @@ ul {
 }
 .fw-bold {
   color: var(--color-set-green) !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   font-size: 16px;
   line-height: 26.01px;
   text-align: left;
@@ -1339,10 +1339,17 @@ ul {
 }
 .footer-bottom {
   margin-top: 35px;
-  border-top: 1px solid var(--color-set-green);
+  border-top: 1px solid #002c392e;
   color: var(--color-set-green);
-  /* padding-top: 20px; */
-  /* color: rgb(255 255 255 / 0.7); */
+  padding-top: 20px;
+  color: rgb(255 255 255 / 0.7);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  /* padding: 3px 0; */
+  box-shadow: 0 -2px 5px rgba(13, 110, 253, 0.25);
+  z-index: 1000;
 }
 .footer-bottom a {
   text-decoration: none;
@@ -1748,7 +1755,7 @@ title_3 trans {
   cursor: pointer;
   position: relative;
   padding-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   line-height: normal;
 }
 .explore ol.carousel-catg li::before {
@@ -2060,9 +2067,19 @@ video.main-video {
 .image-container-testimonial img{
    height: auto !important;
 }
-.image-section img{
+.internal-evolve-items{
+  /* margin-top: 10px; */
+  width: auto;
   height: auto;
+  position: relative;
+  right: 0px;
+  top: 0;
+  padding: 8px;
 }
+
+/* .image-section img{
+  height: 100px;
+} */
 
 /* .slide1 {
   position: relative;
@@ -2687,14 +2704,7 @@ hr {
   right: 0px;
   top: 0;
 }
-.internal-evolve-items{
-  margin-top: 10px;
-  width: auto;
-  height: auto;
-  position: relative;
-  right: 0px;
-  top: 0;
-}
+
 
 
 

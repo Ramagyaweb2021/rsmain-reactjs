@@ -152,7 +152,7 @@ const HomeExperimentSection = () => {
                     <div className="box">
                         <div className="flex">
                           <h6 className="colr1">DANCE</h6>
-                          <p>Inspires creativity and self-expression, enabling students to explore movement while enhancing coordination.</p>
+                          <p>Inspires creativity and self-expression, enabling students to explore movement.</p>
                         </div>
                       </div>
                     </div>
@@ -220,7 +220,7 @@ const HomeExperimentSection = () => {
                         <div className="box">
                             <div className="flex">
                             <h6 className="colr1">MUSIC</h6>
-                            <p>A vital part of education, teaching teamwork, patience, and creativity through both Indian and Western music forms.</p>
+                            <p>A vital part of education, teaching teamwork, patience, and creativity through both Indian.</p>
                             </div>
                           </div>
                         </div>
@@ -299,19 +299,19 @@ const HomeExperimentSection = () => {
                       className={`btn1 ${activeCategory === 'category1' ? 'active' : ''}`}
                       onClick={() => setActiveCategory('category1')}
                     >
-                      Hands-On. Minds-On. Limitless <br/>Learning
+                      Hands-On. Minds-On. Limitless Learning
                     </li>
                     <li
                       className={`btn1 ${activeCategory === 'category2' ? 'active' : ''}`}
                       onClick={() => setActiveCategory('category2')}
                     >
-                      Where Imagination Takes Center <br/>Stage
+                      Where Imagination Takes Center Stage
                     </li>
                     <li
                       className={`btn1 ${activeCategory === 'category3' ? 'active' : ''}`}
                       onClick={() => setActiveCategory('category3')}
                     >
-                      Shaping Minds & Inspiring <br/>Creativity
+                      Shaping Minds & Inspiring Creativity
                     </li>
                   </ol>
                 </div>
@@ -432,7 +432,7 @@ const HomeExperimentSection = () => {
                        <div className="box">
                           <div className="flex">
                           <h6 className="colr1">STREAM</h6>
-                          <p>Hands-on experiments and STEAM projects boost critical thinking, while the Computer Lab enhances coding.</p>
+                          <p>Hands-on experiments and STEAM projects boost critical thinking, while the Computer Lab enhances.</p>
                           </div>
                         </div>
                       </div>

@@ -121,7 +121,7 @@ export default function Home() {
             "evolve", "lead", "difference", "gallery", "awards", 
             "school-updates", "testimonials", "footer"
           ]}
-          navigation={false}
+          navigation={true}
           licenseKey="NU1M9-5PXTK-R7H4J-MIJMJ-KELSL"
           responsiveWidth={1000}
           onLeave={onLeave}
@@ -129,8 +129,10 @@ export default function Home() {
           scrollBar={true}  // Make sure to disable custom scrollbar
           scrollingSpeed={700}  // Adjust scrolling speed to avoid skipping sections
           //scrollingSpeed={900}  // Adjust scrolling speed to avoid skipping sections
+          scrollOverflow={true} // Enable scrolling overflow
+          autoScrolling={true}  // Auto scroll sections
           fitToSection={true}  // Ensure the scroll stops on each section
-          normalScrollElements=".normal-scroll"  // Allow normal scrolling on specific sections if needed
+          //normalScrollElements=".normal-scroll"  // Allow normal scrolling on specific sections if needed
           render={() => (
             <ReactFullpage.Wrapper>
               <div className="section">

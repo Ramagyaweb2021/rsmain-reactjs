@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import 'animate.css';
 import Image from 'next/image'
 import Link from 'next/link'
+import EvolveVideosInternal from "./EvolveVideosInternal";
 // import { Link } from 'react-scroll';
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
@@ -193,42 +194,7 @@ const EvolveTabination = () => {
                             Through the Student Driven Society, Ramagya School empowers students to take charge of their own growth, develop leadership skills, and actively contribute to building a positive school culture. This initiative not only prepares students for leadership roles within the school but also equips them with the tools needed to excel in their future endeavors.
                           </p>
                         </div>
-                        <div className='row justify-content-center my-5'>
-                          <div className="col-md-6 mx-auto g-0">
-                            <div className="image-section">
-                              {/* Replace with your image source */}
-                              <Image src='/images/who-we-are/ramagya-foundation-video-bg.webp' alt="" width={650} height={370} />
-                              {/* Play button overlay */}
-                              <div className="play-button">
-                                {/* <i className="bi bi-play-circle-fill"></i> */}
-                                <Link href="https://www.youtube.com/watch?v=uH-Q0PPe-ew" target="_blank">
-                                  <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
-                                </Link>
-                                {/* <Image src='/images/video-play.webp' alt="" width={80} height={80} onClick={handleShow} /> */}
-                                {/* Popup Modal */}
-                                {/* <Modal show={show} onHide={handleClose} centered>
-                              <Modal.Header closeButton>
-                                <Modal.Title style={{color:"#2f6575"}}>From Curiosity to Leadership</Modal.Title>
-                              </Modal.Header>
-                              <Modal.Body>
-                                <div style={{ width: '100%', height: '315px' }}>
-                                  <iframe
-                                    width="100%"
-                                    height="315"
-                                    src="https://www.youtube.com/embed/J2darvxUR-0?si=8kdBxZieBtUIOwis"
-                                    title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                  ></iframe>
-                                </div>
-                              </Modal.Body>
-                            </Modal> */}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <EvolveVideosInternal/>
                       </div>
                     </div>
                   </section>
@@ -332,42 +298,7 @@ const EvolveTabination = () => {
                           Through democratic selection and parliamentary procedures, the Student Cabinet upholds a model of inclusive leadership, offering every student the opportunity to grow as a leader and contribute meaningfully to their school community.
                         </p>
                       </div>
-                      <div className='row justify-content-center my-5'>
-                        <div className="col-md-6 mx-auto g-0">
-                          <div className="image-section">
-                            {/* Replace with your image source */}
-                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.webp' alt="" width={650} height={370} />
-                            {/* Play button overlay */}
-                            <div className="play-button">
-                              {/* <i className="bi bi-play-circle-fill"></i> */}
-                              <Link href="https://www.youtube.com/watch?v=uH-Q0PPe-ew" target="_blank">
-                                  <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
-                                </Link>
-                              {/* <Image src='/images/video-play.webp' alt="" width={80} height={80} onClick={handleShow} /> */}
-                              {/* Popup Modal */}
-                              {/* <Modal show={show} onHide={handleClose} centered>
-                              <Modal.Header closeButton>
-                                <Modal.Title style={{color:"#2f6575"}}>From Curiosity to Leadership</Modal.Title>
-                              </Modal.Header>
-                              <Modal.Body>
-                                <div style={{ width: '100%', height: '315px' }}>
-                                  <iframe
-                                    width="100%"
-                                    height="315"
-                                    src="https://www.youtube.com/embed/J2darvxUR-0?si=8kdBxZieBtUIOwis"
-                                    title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                  ></iframe>
-                                </div>
-                              </Modal.Body>
-                            </Modal> */}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      <EvolveVideosInternal/>
                     </div>
 
                   </section>
@@ -822,7 +753,8 @@ const EvolveTabination = () => {
                       </div>
                       <div className='row justify-content-center my-5'>
                         <p style={{ textAlign: "center" }}>Through these CSR initiatives, Ramagya School instills values of empathy, leadership, and social responsibility, encouraging students to evolve into conscientious individuals committed to building a better world.</p>
-                        <div className="col-md-6 mx-auto g-0">
+                        <EvolveVideosInternal/>
+                        {/* <div className="col-md-6 mx-auto g-0">
                           <div className="image-section">
                             <Image src='/images/who-we-are/ramagya-foundation-video-bg.webp' alt="" width={650} height={370} />
                             <div className="play-button">
@@ -831,7 +763,7 @@ const EvolveTabination = () => {
                                 </Link>
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
 
@@ -924,42 +856,7 @@ const EvolveTabination = () => {
                           Through NIPUNTA, Ramagya School equips students with the tools and knowledge to embark on their professional journey, turning aspirations into tangible career goals.
                         </p>
                       </div>
-                      <div className='row justify-content-center my-5'>
-                        <div className="col-md-6 mx-auto g-0">
-                          <div className="image-section">
-                            {/* Replace with your image source */}
-                            <Image src='/images/who-we-are/ramagya-foundation-video-bg.webp' alt="" width={650} height={370} />
-                            {/* Play button overlay */}
-                            <div className="play-button">
-                              {/* <i className="bi bi-play-circle-fill"></i> */}
-                              <Link href="https://www.youtube.com/watch?v=uH-Q0PPe-ew" target="_blank">
-                                  <Image src='/images/video-play.webp' alt="play button" width={80} height={80} />
-                                </Link>
-                              {/* <Image src='/images/video-play.webp' alt="" width={80} height={80} onClick={handleShow} /> */}
-                              {/* Popup Modal */}
-                              {/* <Modal show={show} onHide={handleClose} centered>
-                              <Modal.Header closeButton>
-                                <Modal.Title style={{color:"#2f6575"}}>From Curiosity to Leadership</Modal.Title>
-                              </Modal.Header>
-                              <Modal.Body>
-                                <div style={{ width: '100%', height: '315px' }}>
-                                  <iframe
-                                    width="100%"
-                                    height="315"
-                                    src="https://www.youtube.com/embed/J2darvxUR-0?si=8kdBxZieBtUIOwis"
-                                    title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                  ></iframe>
-                                </div>
-                              </Modal.Body>
-                            </Modal> */}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                     <EvolveVideosInternal/>
                     </div>
 
                   </section>

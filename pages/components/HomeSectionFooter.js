@@ -9,7 +9,7 @@ const HomeSectionFooter = () => {
   return (
     <>
        {/* Footer Section */}
-       <div className="home-footer" style={{backgroundColor:"#E7EAEB"}}>
+       <div className="home-footer">
         <div className="container-fluid my-custom-footer">
           {/* <div className='fp-tableFooter' style={{backgroundColor:"rgb(233 236 239 / 26%)", padding:"50px"}}>
           <div className='container-fluid my-1'> */}
@@ -140,7 +140,7 @@ const HomeSectionFooter = () => {
                 <p><Link href="#">Awards</Link></p> */}
               </div>
            </div>
-           <hr/>
+           {/* <hr/> */}
            <row className="footer-bottom">
               <col-md-12 className="text-center">
                 <p style={{textAlign:"center"}}>Copyright 2024. Sai Chhaya Educational And Welfare Society | Designed & Marketed by <a href="#">Ramagya Digital</a></p>

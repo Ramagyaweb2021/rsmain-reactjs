@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 // import Link from 'next/link';
 
-const HomeEvolveSection = () => {
+const EvolveVideosInternal = () => {
   const [videoSrc, setVideoSrc] = useState('');
 
   const videos = [
@@ -30,20 +30,7 @@ const HomeEvolveSection = () => {
 
   return (
     <>
-      <div className="learn">
-        <div className="container my-custom-evolve">
-          <div className="row">
-            <div className="col-sm-12 position-r">
-              <h1 className="scrollspy-p-0">
-                EVOLVE
-                <span className="lineclass" />
-                <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
-                  FOSTERING FUTURE LEADERS
-                </span>
-              </h1>
-              <p className='scrollspy-p-0'>Dynamic programs that evolve students into confident, capable leaders ready to tackle future challenges with purpose and responsibility.</p>
-
-              <section className="service_post_111 position-relative">
+       <section className="service_post_111 position-relative">
                 <div className="row">
                   <div className='col-md-6 service_post_11 position-relative'>
                     <div className='row internal-evolve-items'>
@@ -98,18 +85,8 @@ const HomeEvolveSection = () => {
                   </div>
                 </div>
               </section>
-            </div>
-          </div>
-
-          <div className="d-flex justify-content-center align-items-center mt-1">
-            <div className="learn-more-button">
-              <a href="evolve">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 };
 
-export default HomeEvolveSection;
+export default EvolveVideosInternal;
