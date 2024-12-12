@@ -3,10 +3,14 @@ import Image from 'next/image';
 
 export const NoidaSchoolAwardsInternalPageSchool = () => {
   const awards = [
-    { name: 'Times School Survey 2024', img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/times-school-survery-2024.webp' },
-    { name: 'Award 1', img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/1.webp' },
-    { name: 'Award 2', img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/2.webp' },
-    { name: 'Award 3', img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/3.webp' },
+    { name: 'Times', img: '/images/awards/home-1.webp' },
+    { name: 'Award 1', img: '/images/awards/home-2.webp' },
+    { name: 'Award 2', img: '/images/awards/home-3.webp' },
+    { name: 'Award 3', img: '/images/awards/home-4.webp' },
+    // { name: 'Times School Survey 2024', img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/times-school-survery-2024.webp' },
+    // { name: 'Award 1', img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/1.webp' },
+    // { name: 'Award 2', img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/2.webp' },
+    // { name: 'Award 3', img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/3.webp' },
     { name: 'Award 4', img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/4.webp' },
     { name: 'India Today Leaf', img: '/images/awards/india-today-leaf.webp' },
     { name: 'Education Icon 2024', img: '/images/awards/education-icon-2024.webp' },

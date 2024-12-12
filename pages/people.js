@@ -8,7 +8,7 @@ import Header from './components/Header'; // Adjust this path if needed
 import 'animate.css';
 import WhoWeAreScrollspyMenu from './components/WhoWeAreScrollspyMenu';
 import Founder from './components/Founder';
-import Leadership from './components/Leadership';
+// import Leadership from './components/Leadership';
 import HomeSectionFooter from './components/HomeSectionFooter';
 
 
@@ -82,7 +82,7 @@ const People = () => {
         </div>
       </section> */}
       <Founder/>
-      <Leadership/>
+      {/* <Leadership/> */}
       <HomeSectionFooter />
     </>
   );

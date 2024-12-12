@@ -34,7 +34,7 @@ const AboutUs = () => {
         <link rel="canonical" href="https://ramagyaschool.com/noida" />
       </Head>
       <HeaderNoida/>
-      <OfferPopup/>
+      {/* <OfferPopup/> */}
 
       {/* Main banner section of the page */}
       <section className="section banner-sec main-banner-noida">

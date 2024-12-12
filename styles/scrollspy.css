@@ -117,6 +117,7 @@
 .my-custom-footer{
   height: auto;
   padding-top: 5.5em;
+  background-color:rgb(233, 236, 239);
 }
 
 /* Background colors for sections */
@@ -133,7 +134,7 @@
 
 .fp-section:nth-child(3) {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffff69;
+  background-color: #ffffffb5;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -147,7 +148,7 @@
 
 .fp-section:nth-child(5) {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffff69;
+  background-color: #ffffffb5;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -160,7 +161,7 @@
 
 .fp-section:nth-child(7) {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffff69;
+  background-color: #ffffffb5;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -173,7 +174,7 @@
 
 .fp-section:nth-child(9) {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffff69;
+  background-color: #ffffffb5;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -186,7 +187,7 @@
 
 .fp-section:nth-child(11) {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffff69;
+  background-color: #ffffffb5;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -200,7 +201,7 @@
 .fp-section:nth-child(13) {
   background-color: rgb(233, 236, 239);
   /* background-image: url(/images/explore-bg.webp);
-  background-color: #ffffff69;
+  background-color: #ffffffb5;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50%;

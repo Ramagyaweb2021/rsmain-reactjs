@@ -71,10 +71,13 @@ export default function GlimpseOfTheVideos() {
               {/* <div className="card-body-ramagya-foundation-our-initiative">
                 <h5 className="card-title text-dark">{initiative.title}</h5>
               </div> */}
+              
             </div>
           </div>
+          
         ))}
       </div>
     </div>
+    
   );
 }

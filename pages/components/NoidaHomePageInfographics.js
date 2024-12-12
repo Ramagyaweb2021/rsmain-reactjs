@@ -11,7 +11,7 @@ const NoidaHomePageInfographics = () => {
     },
     {
       img: "/images/noida/infographics/icon-2.webp",
-      value: "200+",
+      value: "350+",
       text: "Educators",
     },
     {

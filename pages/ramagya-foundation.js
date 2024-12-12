@@ -172,6 +172,11 @@ const RamagyaFoundation = () => {
         {/* OUR INITIATIVE section */}
         <OurInitiative/>
         <GlimseOfTheVideo/>
+        <div className="d-flex justify-content-center align-items-center my-5">
+                  <div className="learn-more-button">
+                    <a href="https://www.youtube.com/@ramagyafoundation25/videos" target='_blank'>View More Videos</a>
+                  </div>
+            </div>
         <HomeSectionFooter />
             </>
           );
