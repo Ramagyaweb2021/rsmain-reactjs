@@ -40,6 +40,9 @@ body {
   /* .explore ol.carousel-catg li {
     margin-bottom: 10px;
   } */
+  .sticky-top{
+    top: 139px;
+  }
 }
 @media (max-width: 1440px) {
   .container,
@@ -63,6 +66,9 @@ body {
   /* .downsection {
       bottom: 150px;
   } */
+  .sticky-top{
+    top: 130px;
+  }
   .nav-link {
       font-size: 15px;
       padding: 3px 15px;
@@ -430,7 +436,7 @@ body {
   height: 155px;
 }
 .explore ol.carousel-catg li {
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.5px;
 }
 .my-custom-experiment {
@@ -548,6 +554,36 @@ body {
 .scrollspyMenu .active a{
     font-size: 11px;
     padding: 0;
+}
+.nav-pills .nav-link{
+  padding: 5px;
+}
+.nav-item {
+  margin-right: 1px;
+}
+.nav-pills .nav-link.active {
+  padding: 5px;
+}
+.sticky-top {
+  top: 99px;
+}
+#infographics{
+  margin-top: -35px !important;
+}
+/* #principals-note{
+  margin-top: -35px !important;
+} */
+#school-updates{
+  margin-top: -35px !important;
+}
+#important-links{
+  margin-top: -35px !important;
+}
+.toggle-menu-btn {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-set-green);
 }
 /* .my-0 {
     margin-top: 4rem !important;
@@ -820,7 +856,14 @@ body {
   font-size: 16px;
 }
 .h6, h6{
-  font-size: 14px;
+  font-size: 13px;
+}
+.banner-text h1{
+  line-height: 30px;
+}
+.title-100{
+  font-size: 18px;
+  text-align: left;
 }
 .overlay-text{
   width: 90px;
@@ -835,6 +878,9 @@ body {
 .fee-procedure-section{
   padding: 20px 20px;
 }
+.explore-menu{
+  margin-top: -5px;
+}
 /* .pre-admission-step-section{
   height: auto !important;
 } */
@@ -843,6 +889,12 @@ body {
   } */
   .footer {
       padding: 15px 0 0 10px;
+  }
+  .footer-bottom{
+    position: relative;
+  }
+  .my-custom-footer{
+    padding: 10px;
   }
   .learn h1,
   .explore h1,

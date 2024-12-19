@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+// import { useRouter } from 'next/router';
+// import Link from 'next/link';
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Header from './components/Header'; // Adjust this path if needed
 import 'animate.css';
 import WhoWeAreScrollspyMenu from './components/WhoWeAreScrollspyMenu';
 import Founder from './components/Founder';
 // import Leadership from './components/Leadership';
-import HomeSectionFooter from './components/HomeSectionFooter';
+import FooterNoida from './components/FooterNoida';
 
 
 // Dynamically import WOW.js to avoid server-side issues
@@ -83,7 +83,7 @@ const People = () => {
       </section> */}
       <Founder/>
       {/* <Leadership/> */}
-      <HomeSectionFooter />
+      <FooterNoida />
     </>
   );
 };

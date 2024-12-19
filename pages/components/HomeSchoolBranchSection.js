@@ -58,7 +58,7 @@ const HomeSchoolBranchSection = () => {
             </div>
               <div className="school-branch-buttions">
                   <div className="visit-web-button">
-                    <Link href="https://noida.ramagyaschool.com/" target="_blank" className="btn btn-warning">Visit Website</Link>
+                    <Link href="https://ramagyaschool.com/noida" target="_blank" className="btn btn-warning">Visit Website</Link>
                   </div>
                   <div className="visit-tour-button">
                     <Link href="https://vtour.ramagyaschool.com/" target="_blank" className="btn btn-warning">360 Tour</Link>
@@ -77,7 +77,7 @@ const HomeSchoolBranchSection = () => {
             </div>
             <div className="school-branch-buttions">
                   <div className="visit-web-button">
-                    <Link href="https://noidaextension.ramagyaschool.com/" target="_blank" className="btn btn-warning">Visit Website</Link>
+                    <Link href="https://ramagyaschool.com/noida-extension" target="_blank" className="btn btn-warning">Visit Website</Link>
                   </div>
                   <div className="visit-tour-button">
                     <Link href="https://vtourext.ramagyaschool.com/" target="_blank" className="btn btn-warning">360 Tour</Link>
@@ -95,7 +95,7 @@ const HomeSchoolBranchSection = () => {
             </div>
             <div className="school-branch-buttions">
                   <div className="visit-web-button">
-                    <Link href="https://greaternoida.ramagyaschool.com/" target='_blank' className="btn btn-warning">Visit Website</Link>
+                    <Link href="https://ramagyaschool.com/greater-noida" target='_blank' className="btn btn-warning">Visit Website</Link>
                   </div>
                   <div className="visit-tour-button">
                     <Link href="https://vtourgnoida.ramagyaschool.com/" target='_blank' className="btn btn-warning">360 Tour</Link>
@@ -113,7 +113,7 @@ const HomeSchoolBranchSection = () => {
             </div>
             <div className="school-branch-buttions">
                   <div className="visit-web-button">
-                     <Link href="https://dadri.ramagyaschool.com/" target='_blank' className="btn btn-warning">Visit Website</Link>
+                     <Link href="https://ramagyaschool.com/dadri" target='_blank' className="btn btn-warning">Visit Website</Link>
                   </div>
                   <div className="visit-tour-button">
                     <Link href="https://tourdadri.ramagyaschool.com/" target='_blank' className="btn btn-warning">360 Tour</Link>

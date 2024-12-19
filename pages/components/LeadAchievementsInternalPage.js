@@ -138,7 +138,7 @@ const LeadAchievementsInternalPage = () => {
                   height="100"
                 />
                   {/* <h2 className="card-number text-left">{card.number}</h2> */}
-                  <center><div className="learn-more-button"><a href="https://noida.ramagyaschool.com/results" target="_blank">View More</a></div></center>
+                  <center><div className="learn-more-button"><a href="/results" target="_blank">View More</a></div></center>
                   {/* <h5 className="card-subtitle mb-3 fw-bold">{card.title}</h5>
                   <p className="text-left">{card.text}</p> */}
                 </div>

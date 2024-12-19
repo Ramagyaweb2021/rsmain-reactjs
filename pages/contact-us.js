@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Header from './components/Header'; // Adjust this path if needed
 import "bootstrap-icons/font/bootstrap-icons.css";
 import 'animate.css';
-import HomeSectionFooter from './components/HomeSectionFooter';
+import FooterNoida from './components/FooterNoida';
 import LocationMap from './components/LocationMap';
 
 // Dynamically import WOW.js to avoid server-side issues
@@ -21,22 +21,22 @@ const ContactUs = () => {
       emails: [
         "admissions@ramagyaschool.com",
         "principal@ramagyaschool.com",
-        "careers@ramagyagroup.com",
+        "recruitment@ramagyagroup.com",
         "pr@ramagyagroup.com",
         "sports@ramagyagroup.com",
       ],
     },
     {
       title: "Ramagya School",
-      subtitle: "Noida Ext.",
+      subtitle: "Noida Extension",
       address:
         "Plot No. A-229 Knowledge Park 5 Noida Extension & Greater Noida, Uttar Pradesh 201307",
-      phone: "+91-8010 333 555",
+      phone: "+91-8010 770 770",
       emails: [
         "info.ext@ramagyaschool.com",
         "admissions.noidaext@ramagyaschool.com",
         "principal.ext@ramagyaschool.com",
-        "careers.noidaext@ramagyaschool.com",
+        "recruitment@ramagyagroup.com",
         "pr@ramagyagroup.com",
         "sports@ramagyagroup.com",
       ],
@@ -49,7 +49,7 @@ const ContactUs = () => {
       emails: [
         "admissions.greaternoida@ramagyaschool.com",
         "principal.greaternoida@ramagyaschool.com",
-        "careers@ramagyagroup.com",
+        "recruitment@ramagyagroup.com",
         "pr@ramagyagroup.com",
         "sports@ramagyagroup.com",
       ],
@@ -62,7 +62,7 @@ const ContactUs = () => {
       emails: [
         "admissions.dadri@ramagyaschool.com",
         "principal.dadri@ramagyaschool.com",
-        "careers@ramagyagroup.com",
+        "recruitment@ramagyagroup.com",
         "pr@ramagyagroup.com",
         "sports@ramagyagroup.com",
       ],
@@ -115,10 +115,10 @@ const ContactUs = () => {
               <div className="col-md-6 col-lg-3 g-3" key={index}>
                 <div className="card shadow-sm border-0 h-100 p-3">
                   <div className="card-body-contact-us">
-                    <h5 className="card-title fw-bold mb-4">{location.title}</h5>
-                    <h6 className="card-subtitle mb-2 text-uppercase text-center">
+                    {/* <h5 className="card-title fw-bold mb-4">{location.title}</h5> */}
+                    <center><h5 className="title-100 mb-2 text-uppercase">
                       {location.subtitle}
-                    </h6>
+                    </h5></center>
                     <p className="card-text">
                       <i className="bi bi-geo-alt-fill"></i> {location.address}
                     </p>
@@ -152,7 +152,7 @@ const ContactUs = () => {
       <section className='container location-map my-5'>
         <LocationMap/>
       </section>
-      <HomeSectionFooter />
+      <FooterNoida />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import "bootstrap-icons/font/bootstrap-icons.css";
 // import { Row, Col, Form} from 'react-bootstrap';
 import Link from 'next/link';
@@ -17,18 +17,18 @@ const HomeSectionFooter = () => {
             <div className="col-md-3 col-sm-6 col-xs-12">
               {/* <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={250} height={52}/> */}
               <p className="footer-heading">Address</p>
-              <p>E - 7, Sector 50, Noida    
+              <p>E-7, E Block, Sector 50, Noida, Uttar Pradesh 201301  
                 </p>
                 <p className="footer-heading">Email id</p>
                 <p style={{textTransform:"lowercase"}}><a href="mailto:admissions@ramagyaschool.com">admissions@ramagyaschool.com</a></p>
                 <p style={{textTransform:"lowercase"}}><a href="mailto:principal@ramagyaschool.com">principal@ramagyaschool.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:careers@ramagyagroup.com">careers@ramagyagroup.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:recruitment@ramagyagroup.com">recruitment@ramagyagroup.com</a></p>
                 <p style={{textTransform:"lowercase"}}><a href="mailto:pc@ramagyagroup.com">pc@ramagyagroup.com</a></p>
                 <p style={{textTransform:"lowercase"}}><a href="mailto:sports@ramagyagroup.com">sports@ramagyagroup.com</a></p>
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">For Enquiries</p>
-                <p>Contact No. <a href="tel:+918010333555">+91-8010333555</a></p>
+                <p>Contact No. <a href="tel:+918010333555">+91-8010 333 555</a></p>
                 <p className="footer-heading">Social</p>
                 {/* <hr/> */}
                   <div className="social-icons">
@@ -99,10 +99,10 @@ const HomeSectionFooter = () => {
                 <br></br>
                 {/* <hr/> */}
                 <p className="footer-heading">Our Schools</p>
-                <p><Link href="https://noida.ramagyaschool.com/" target='_blank'>Noida</Link></p>
-                <p><Link href="https://noidaextension.ramagyaschool.com/" target='_blank'>Noida Extension</Link></p>
-                <p><Link href="https://greaternoida.ramagyaschool.com/" target='_blank'>Greater Noida</Link></p>
-                <p><Link href="https://dadri.ramagyaschool.com/" target='_blank'>Dadri</Link></p>
+                <p><Link href="https://ramagyaschool.com/noida" target='_blank'>Noida</Link></p>
+                <p><Link href="https://ramagyaschool.com/noida-extension" target='_blank'>Noida Extension</Link></p>
+                <p><Link href="https://ramagyaschool.com/greater-noida" target='_blank'>Greater Noida</Link></p>
+                <p><Link href="https://ramagyaschool.com/dadri" target='_blank'>Dadri</Link></p>
               
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
@@ -132,7 +132,8 @@ const HomeSectionFooter = () => {
                 <p className="footer-heading">Other Links</p>
                 <p><Link href="https://ramagyagroup.com/current-opening" target='_blank'>Careers</Link></p>
                 <p><Link href="contact-us">Contact Us</Link></p>
-                <p><Link href="https://blogs.ramagyaschool.com" target='_blank'>Blog</Link></p>
+                <p><Link href="results" target='_blank'>Results</Link></p>
+                <p><Link href="https://blogs.ramagyaschool.com">Blog</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>
                 <p><Link href="#">Media Press</Link></p>
@@ -141,11 +142,12 @@ const HomeSectionFooter = () => {
               </div>
            </div>
            {/* <hr/> */}
-           {/* <row className="footer-bottom">
-              <col-md-12 className="text-center">
-                <p style={{textAlign:"center"}}>Copyright 2024. Sai Chhaya Educational And Welfare Society | Designed & Marketed by <a href="#">Ramagya Digital</a></p>
-              </col-md-12>
-        </row> */}
+           <row className="footer-bottom">
+                  <col-md-12 className="text-center">
+                  <p style={{textAlign:"center"}}>Copyright 2024. Sai Chhaya Educational And Welfare Society | Designed & Marketed by Ramagya Digital</p>
+                  </col-md-12>
+              </row>
+              
            </div>
       
           </div>

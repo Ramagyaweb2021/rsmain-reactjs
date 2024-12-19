@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import Link from 'next/link';
+// import Link from 'next/link';
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Header from './components/Header'; // Adjust this path if needed
 import 'animate.css';
-import HomeSectionFooter from './components/HomeSectionFooter';
+import FooterNoida from './components/FooterNoida';
 import TestimonialGalleryAwardsSchoolUpdatesScrollSpyMenu from './components/TestimonialGalleryAwardsSchoolUpdatesScrollSpyMenu';
 import NoidaGalleryInternalPage from './components/NoidaGalleryInternalPage';
 
@@ -55,7 +55,7 @@ const Testimonials = () => {
       </section>
       <TestimonialGalleryAwardsSchoolUpdatesScrollSpyMenu/>
        <NoidaGalleryInternalPage/>
-      <HomeSectionFooter />
+      <FooterNoida />
     </>
   );
 };

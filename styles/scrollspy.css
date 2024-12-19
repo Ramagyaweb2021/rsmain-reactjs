@@ -23,7 +23,7 @@
   margin-top: 72px;
   /* top: 0;  */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1111;
+  z-index: 111;
 }
 
 .scrollspyMenu ul {
@@ -116,8 +116,9 @@
 }
 .my-custom-footer{
   height: auto;
-  padding-top: 5.5em;
+  padding-top: 2.5em;
   background-color:rgb(233, 236, 239);
+  padding: 45px 0 10px 0;
 }
 
 /* Background colors for sections */

@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+// import { useRouter } from 'next/router';
+// import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from '/pages/components/Header';
 import 'animate.css';
-import HomeSectionFooter from './components/HomeSectionFooter';
+import FooterNoida from './components/FooterNoida';
 import WhoWeAreScrollspyMenu from './components/WhoWeAreScrollspyMenu';
 import OurInitiative from './components/OurInitiative';
 import GlimseOfTheVideo from './components/GlimseOfTheVideo';
@@ -177,7 +177,7 @@ const RamagyaFoundation = () => {
                     <a href="https://www.youtube.com/@ramagyafoundation25/videos" target='_blank'>View More Videos</a>
                   </div>
             </div>
-        <HomeSectionFooter />
+        <FooterNoida />
             </>
           );
         };

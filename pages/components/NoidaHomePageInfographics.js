@@ -40,7 +40,7 @@ const NoidaHomePageInfographics = () => {
     <div className="container">
       <div className="row justify-content-center">
         {cardData.map((card, index) => (
-          <div key={index} className="col-md-4 mb-4">
+          <div key={index} className="col-md-4 col-6 mb-4">
             <div className="card text-center h-100 border-1">
               <div className="card-value-body">
                 <Image src={card.img} alt="icon" width={80} height={80} />

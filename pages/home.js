@@ -19,7 +19,7 @@ import HomeTestimonialSection from "./components/HomeTestimonialSection";
 import HomeSectionFooter from "./components/HomeSectionFooter";
 //import OfferPopup from "./components/OfferPopup";
 import 'animate.css';
-import FooterBottom from "./components/FooterBottom";
+// import FooterBottom from "./components/FooterBottom";
 
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
@@ -196,7 +196,7 @@ export default function Home() {
           <HomeUpdatesSection />
           <HomeTestimonialSection />
           <HomeSectionFooter />
-          <FooterBottom/>
+          {/* <FooterBottom/> */}
         </div>
       )}
     </div>

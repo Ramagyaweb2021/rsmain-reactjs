@@ -40,6 +40,12 @@ function WhoWeAreScrollspyMenu() {
               <Nav.Link href="/ramagya-foundation" className={`mx-1 ${router.pathname === '/ramagya-foundation' ? 'active' : ''}`}>
                 Ramagya Foundation
               </Nav.Link>
+              {/* <Nav.Link href="/testimonials" className={`mx-1 ${router.pathname === '/testimonials' ? 'active' : ''}`}>
+                TESTIMONIALS
+              </Nav.Link>
+              <Nav.Link href="/partnership" className={`mx-1 ${router.pathname === '/Partnership' ? 'active' : ''}`}>
+                Partnership
+              </Nav.Link> */}
             </Nav>
           </Col>
         </Row>

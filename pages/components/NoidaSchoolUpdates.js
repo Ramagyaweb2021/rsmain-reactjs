@@ -25,6 +25,7 @@ const NoidaSchoolUpdates = () => {
   // Slick slider settings with autoplay
   const settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 5000,
     slidesToShow: 1,
@@ -32,8 +33,24 @@ const NoidaSchoolUpdates = () => {
     autoplay: false,            // Enable autoplay
     autoplaySpeed: 5000,       // 3 seconds between slides
     pauseOnHover: true,        // Pause on hover
+    responsive: [
+      {
+        breakpoint: 768, // Mobile view
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true, // Enable dots on mobile
+        },
+      },
+      {
+        breakpoint: 1024, // Tablet view
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
-
   // Data for slides (to be mapped in the sliders)
   const schoolAchievementsSlides = [
     {
@@ -127,7 +144,7 @@ const NoidaSchoolUpdates = () => {
     <Container className="container">
         <div className="row">
         <div className="text-center mb-4">
-          <h3 className='main-heading-internal-pages'>SCHOOL UPDATES</h3>
+          <h3 className='main-heading-internal-pages wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.1s'}}>SCHOOL UPDATES</h3>
         </div>
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
             <Tabs
@@ -137,94 +154,124 @@ const NoidaSchoolUpdates = () => {
               fill
             >
             {/* <Tabs defaultActiveKey="home" id="fill-tab-example" className="mb-3" fill> */}
-              
-              {/* School Achievements Slider */}
-              <Tab eventKey="home" title="School Achievements">
-              <div className="container">
-                <section className="custom-section">
-                  <Slider {...settings}>
-                    {schoolAchievementsSlides.map((slide, index) => (
-                      <div key={index} className="row-school-updates align-items-center">
-                        <div className="col-lg-5 col-md-5 col-12 image-resize">
-                          <Image src={slide.imgSrc} alt="School Achievements" width={430} height={306} />
-                        </div>
-                        <div className="col-lg-7 col-md-7 col-12">
-                          <h2 className="fw-bold mb-3">{slide.title}</h2>
-                          <p className='tabination-text'>{slide.text}</p>
-                          <a href="https://ramagyaschoolblog.com/category/achievements/" target='_blank' className="btn custom-btn">View More</a>
-                        </div>
-                      </div>
-                    ))}
-                  </Slider>
-                </section>
-                </div>
-              </Tab>
+                  
+                  {/* School Achievements Slider */}
+                  <Tab eventKey="home" title="School Achievements">
+                  <div className="container">
+                    <section className="custom-section">
+                      <Slider {...settings}>
+                        {schoolAchievementsSlides.map((slide, index) => (
+                          <div key={index} className="row-school-updates align-items-center">
+                            <div className="col-lg-5 col-md-5 col-12 image-resize">
+                             <a href="https://ramagyaschoolblog.com/category/achievements/" target='_blank'>
+                              <Image src={slide.imgSrc} alt="School Achievements" width={430} height={306} />
+                              </a>
+                            </div>
+                            <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
+                                <h2 className="fw-bold mb-3">{slide.title}</h2>
+                                <p className='tabination-text'>{slide.text}</p>
+                                <a href="https://ramagyaschoolblog.com/category/achievements/" target='_blank' className="btn custom-btn">View More</a>
+                              </div>
 
-              {/* Media Press Slider */}
-              <Tab eventKey="press" title="Media Press">
-              <div className="container">
-                <section className="custom-section">
-                  <Slider {...settings}>
-                    {mediaPressSlides.map((slide, index) => (
-                      <div key={index} className="row-school-updates align-items-center">
-                        <div className="col-lg-5 col-md-5 col-12 image-resize">
-                          <Image src={slide.imgSrc} alt="Media Press" width={430} height={306} />
-                        </div>
-                        <div className="col-lg-7 col-md-7 col-12">
-                          <h2 className="fw-bold mb-3">{slide.title}</h2>
-                          <p className='tabination-text'>{slide.text}</p>
-                          <a href="https://ramagyaschoolblog.com/category/media-press/" target='_blank' className="btn custom-btn">View More</a>
-                        </div>
-                      </div>
-                    ))}
-                  </Slider>
-                </section>
-                </div>
-              </Tab>
+                            {/* <div className="col-lg-7 col-md-7 col-12">
+                              <h2 className="fw-bold mb-3">{slide.title}</h2>
+                              <p className='tabination-text'>{slide.text}</p>
+                              <a href="https://ramagyaschoolblog.com/category/achievements/" target='_blank' className="btn custom-btn">View More</a>
+                            </div> */}
+                          </div>
+                        ))}
+                      </Slider>
+                    </section>
+                    </div>
+                  </Tab>
 
-              {/* School Events Slider */}
-              <Tab eventKey="events" title="School Events">
-              <div className="container">
-                <section className="custom-section">
-                  <Slider {...settings}>
-                    {schoolEventsSlides.map((slide, index) => (
-                      <div key={index} className="row-school-updates align-items-center">
-                        <div className="col-lg-5 col-md-5 col-12 image-resize">
-                          <Image src={slide.imgSrc} alt="School Events" width={430} height={306} />
-                        </div>
-                        <div className="col-lg-7 col-md-7 col-12">
-                          <h2 className="fw-bold mb-3">{slide.title}</h2>
-                          <p className='tabination-text'>{slide.text}</p>
-                          <a href="https://ramagyaschoolblog.com/category/events/" target='_blank' className="btn custom-btn">View More</a>
-                        </div>
-                      </div>
-                    ))}
-                  </Slider>
-                </section>
-                </div>
-              </Tab>
+                  {/* Media Press Slider */}
+                  <Tab eventKey="press" title="Media Press">
+                  <div className="container">
+                    <section className="custom-section">
+                      <Slider {...settings}>
+                        {mediaPressSlides.map((slide, index) => (
+                          <div key={index} className="row-school-updates align-items-center">
+                            <div className="col-lg-5 col-md-5 col-12 image-resize">
+                            <a href="https://ramagyaschoolblog.com/category/media-press/" target='_blank'>
+                              <Image src={slide.imgSrc} alt="Media Press" width={430} height={306} />
+                              </a>
+                            </div>
+                            <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
+                                <h2 className="fw-bold mb-3">{slide.title}</h2>
+                                <p className='tabination-text'>{slide.text}</p>
+                                <a href="https://ramagyaschoolblog.com/category/achievements/" target='_blank' className="btn custom-btn">View More</a>
+                              </div>
+                            {/* <div className="col-lg-7 col-md-7 col-12">
+                              <h2 className="fw-bold mb-3">{slide.title}</h2>
+                              <p className='tabination-text'>{slide.text}</p>
+                              <a href="https://ramagyaschoolblog.com/category/media-press/" target='_blank' className="btn custom-btn">View More</a>
+                            </div> */}
+                          </div>
+                        ))}
+                      </Slider>
+                    </section>
+                    </div>
+                  </Tab>
 
-              {/* Workshop/Activity Slider */}
-              <Tab eventKey="awards" title="Workshop/Activity">
-              <div className="container">
-                <section className="custom-section">
-                  <Slider {...settings}>
-                    {workshopActivitySlides.map((slide, index) => (
-                      <div key={index} className="row-school-updates align-items-center">
-                        <div className="col-lg-5 col-md-5 col-12 image-resize">
-                          <Image src={slide.imgSrc} alt="Workshop/Activity" width={430} height={306} />
-                        </div>
-                        <div className="col-lg-7 col-md-7 col-12">
-                          <h2 className="fw-bold mb-3">{slide.title}</h2>
-                          <p className='tabination-text'>{slide.text}</p>
-                          <a href="https://ramagyaschoolblog.com/category/workshop/" target='_blank' className="btn custom-btn">View More</a>
-                        </div>
-                      </div>
-                    ))}
-                  </Slider>
-                </section>
-                </div>
-              </Tab>
+                  {/* School Events Slider */}
+                  <Tab eventKey="events" title="School Events">
+                  <div className="container">
+                    <section className="custom-section">
+                      <Slider {...settings}>
+                        {schoolEventsSlides.map((slide, index) => (
+                          <div key={index} className="row-school-updates align-items-center">
+                            <div className="col-lg-5 col-md-5 col-12 image-resize">
+                             <a href="https://ramagyaschoolblog.com/category/events/" target='_blank'>
+                              <Image src={slide.imgSrc} alt="School Events" width={430} height={306} />
+                              </a>
+                            </div>
+                            <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
+                                <h2 className="fw-bold mb-3">{slide.title}</h2>
+                                <p className='tabination-text'>{slide.text}</p>
+                                <a href="https://ramagyaschoolblog.com/category/events/" target='_blank' className="btn custom-btn">View More</a>
+                              </div>
+                            {/* <div className="col-lg-7 col-md-7 col-12">
+                              <h2 className="fw-bold mb-3">{slide.title}</h2>
+                              <p className='tabination-text'>{slide.text}</p>
+                              <a href="https://ramagyaschoolblog.com/category/events/" target='_blank' className="btn custom-btn">View More</a>
+                            </div> */}
+                          </div>
+                        ))}
+                      </Slider>
+                    </section>
+                    </div>
+                  </Tab>
+
+                  {/* Workshop/Activity Slider */}
+                  <Tab eventKey="awards" title="Workshop/Activity">
+                  <div className="container">
+                    <section className="custom-section">
+                      <Slider {...settings}>
+                        {workshopActivitySlides.map((slide, index) => (
+                          <div key={index} className="row-school-updates align-items-center">
+                            <div className="col-lg-5 col-md-5 col-12 image-resize">
+                             <a href="https://ramagyaschoolblog.com/category/workshop/" target='_blank'>
+                              <Image src={slide.imgSrc} alt="Workshop/Activity" width={430} height={306} />
+                              </a>
+                            </div>
+                            <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
+                                <h2 className="fw-bold mb-3">{slide.title}</h2>
+                                <p className='tabination-text'>{slide.text}</p>
+                                <a href="https://ramagyaschoolblog.com/category/workshop/" target='_blank' className="btn custom-btn">View More</a>
+                              </div>
+                            {/* <div className="col-lg-7 col-md-7 col-12">
+                              <h2 className="fw-bold mb-3">{slide.title}</h2>
+                              <p className='tabination-text'>{slide.text}</p>
+                              <a href="https://ramagyaschoolblog.com/category/workshop/" target='_blank' className="btn custom-btn">View More</a>
+                            </div> */}
+                          </div>
+                        ))}
+                      </Slider>
+                    </section>
+                    </div>
+                  </Tab>
+
 
             </Tabs>
           </div>

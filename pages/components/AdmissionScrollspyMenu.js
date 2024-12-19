@@ -25,19 +25,19 @@ function AdmissionScrollspyMenu() {
         <Row>
           <Col xs={12} className="d-flex justify-content-center col-12">
             <Nav className="bg-dark p-1">
-              <Nav.Link href="/pre-admission" className={`mx-2 ${router.pathname === '/pre-admission' ? 'active' : ''}`}>
+              <Nav.Link href="/noida/pre-admission" className={`mx-2 ${router.pathname === '/noida/pre-admission' ? 'active' : ''}`}>
                 PRE-ADMISSION
               </Nav.Link>
-              <Nav.Link href="/post-admission" className={`mx-2 ${router.pathname === '/post-admission' ? 'active' : ''}`}>
+              <Nav.Link href="/noida/post-admission" className={`mx-2 ${router.pathname === '/noida/post-admission' ? 'active' : ''}`}>
                 POST-ADMISSION
               </Nav.Link>
-              <Nav.Link href="/fee-structure" className={`mx-2 ${router.pathname === '/fee-structure' ? 'active' : ''}`}>
+              <Nav.Link href="/noida/fee-structure" className={`mx-2 ${router.pathname === '/noida/fee-structure' ? 'active' : ''}`}>
                 FEE STRUCTURE
               </Nav.Link>
-              <Nav.Link href="/scholarship-programme" className={`mx-2 ${router.pathname === '/scholarship-programme' ? 'active' : ''}`}>
+              <Nav.Link href="/noida/scholarship-programme" className={`mx-2 ${router.pathname === '/noida/scholarship-programme' ? 'active' : ''}`}>
                 SCHOLARSHIP
               </Nav.Link>
-              <Nav.Link href="/recommend-a-student" className={`mx-2 ${router.pathname === '/recommend-a-student' ? 'active' : ''}`}>
+              <Nav.Link href="/noida/recommend-a-student" className={`mx-2 ${router.pathname === '/noida/recommend-a-student' ? 'active' : ''}`}>
                 RECOMMEND A STUDENT
               </Nav.Link>
             </Nav>

@@ -13,8 +13,9 @@ const NoidaGalleryInternalPage = () => {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const imageTabs = ['All', 'School Events', 'Sports', 'Science Lab'];
+  
+  const imageTabs = ['All'];
+  // const imageTabs = ['All', 'Indoor Sports', 'Outdoor Sports', 'Workshops', 'Daycare', 'Events', 'Interschool', 'Education Hub'];
   const videoTabs = [
     'All', 'Celeb Bites', 'Testimonials', 'Sports Galore', 'Ramagya Life', 'Mental Health', 
     'Parents', 'Student', 'Events', 'Helping Hand'
@@ -74,1412 +75,1010 @@ const NoidaGalleryInternalPage = () => {
       "category": "Gallery",
       "type": "image"
     },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/68.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/69.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/70.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/71.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/72.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/73.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/74.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/75.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/76.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/77.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/78.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/79.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/80.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/81.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/82.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/83.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/84.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/85.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/86.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/87.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/88.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/89.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/90.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/91.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/92.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/93.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/94.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/95.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/96.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-      // {
-      //   "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/97.webp",
-      //   "title": "Ramagya School Gallery",
-      //   "category": "Gallery",
-      //   "type": "image"
-      // },
-    
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/98.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/99.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/100.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/101.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/102.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/103.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/104.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/105.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/106.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/107.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/108.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/109.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/110.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/111.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/112.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/113.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/1.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/2.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/3.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/4.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/5.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/6.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/7.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-      //   { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/8.webp', 
-      //       title: 'Ramagya School Gallery', 
-      //       category: 'Gallery', 
-      //       type: 'image', 
-      //   },
-        
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/9.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/10.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/11.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/12.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/13.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/14.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/15.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/16.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/17.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/20.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/22.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/23.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/24.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/25.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/27.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/28.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //     { 
-      //       src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/29.webp',
-      //       title: 'Ramagya School Gallery',
-      //       category: 'Gallery', 
-      //       type: 'image',  
-      //     },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/30.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/32.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/34.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/35.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/37.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/38.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/39.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/40.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/41.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/42.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/43.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/44.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/45.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/47.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/48.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/49.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/50.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/51.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/52.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/53.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/56.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/57.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/60.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-      //       { 
-      //         src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/gallery/67.webp',
-      //         title: 'Ramagya School Gallery',
-      //         category: 'Gallery',
-      //         type: 'image'
-      //       },
-          
-
- 
-    
-    // **********Video gallery for celeb bites
+   
+    // ********************************************************************Video gallery for celeb bites
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/shive-aroore.webp',
+      src: 'https://img.youtube.com/vi/zUB6ocBTYzs/hqdefault.jpg', 
+      title: 'Nikhil Naz',
+      category: 'Celeb Bites',
+      type: 'video',
+      videoId: 'zUB6ocBTYzs'
+    },
+   
+  {
+    src: 'https://img.youtube.com/vi/9ITohrzpf7Q/hqdefault.jpg', 
+    title: 'Nikhil Naz',
+    category: 'Celeb Bites',
+    type: 'video',
+    videoId: '9ITohrzpf7Q'
+  },
+  {
+    src: 'https://img.youtube.com/vi/8xfmljcYBZ0/hqdefault.jpg', 
+    title: 'Nikhil Naz',
+    category: 'Celeb Bites',
+    type: 'video',
+    videoId: '8xfmljcYBZ0'
+  },
+    {
       title: 'Shive Aroore Testimonial',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'tm0yBtH04ao'
+      videoId: 'tm0yBtH04ao',
+      src: `https://img.youtube.com/vi/tm0yBtH04ao/hqdefault.jpg`
     },
+    
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-92.jpg',
+     
       title: 'Sports Event',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'cwrBuQjYpOI'
+      videoId: 'cwrBuQjYpOI',
+      src: `https://img.youtube.com/vi/cwrBuQjYpOI/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-90.jpg',
+     
       title: 'Testimonial Video 1',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'YCDEIq4f--g'
+      videoId: 'YCDEIq4f--g',
+      src: `https://img.youtube.com/vi/YCDEIq4f--g/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-93.jpg',
+     
       title: 'Testimonial Video 2',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'PARbI2ne94c'
+      videoId: 'PARbI2ne94c',
+      src: `https://img.youtube.com/vi/PARbI2ne94c/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/jacob.webp',
+      
       title: 'Jacob Testimonial',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'EJW8mgGx8dA'
+      videoId: 'EJW8mgGx8dA',
+      src: `https://img.youtube.com/vi/EJW8mgGx8dA/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/smiriti.webp',
+     
       title: 'Smiriti Testimonial 1',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'J80V7ZEn25I'
+      videoId: 'J80V7ZEn25I',
+      src: `https://img.youtube.com/vi/J80V7ZEn25I/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/smiriti.webp',
+     
       title: 'Smiriti Testimonial 2',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'XzhWSqIlts8'
+      videoId: 'XzhWSqIlts8',
+      src: `https://img.youtube.com/vi/XzhWSqIlts8/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/smiriti.webp',
+     
       title: 'Smiriti Testimonial 3',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: '1yWQuKlJqTc'
+      videoId: '1yWQuKlJqTc',
+      src: `https://img.youtube.com/vi/1yWQuKlJqTc/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/ball-krishna.webp',
+    
       title: 'Krishna Testimonial',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'EDJKvB2tPGk'
+      videoId: 'EDJKvB2tPGk',
+      src: `https://img.youtube.com/vi/EDJKvB2tPGk/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sunil-dabas.webp',
+     
       title: 'Sunil Dabas Testimonial',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'HbN-R3NqP2k'
+      videoId: 'HbN-R3NqP2k',
+      src: `https://img.youtube.com/vi/HbN-R3NqP2k/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/chetan-bhagat.webp',
+     
       title: 'Chetan Bhagat Testimonial',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'WrQHBzo0ww4'
+      videoId: 'WrQHBzo0ww4',
+      src: `https://img.youtube.com/vi/WrQHBzo0ww4/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/ball-krishna.webp',
+     
       title: 'Krishna Testimonial 2',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: '-GLEJ9Kl4Cc'
+      videoId: '-GLEJ9Kl4Cc',
+      src: `https://img.youtube.com/vi/-GLEJ9Kl4Cc/hqdefault.jpg`
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/dav-more.webp',
+     
       title: 'Dav More Testimonial',
       category: 'Celeb Bites',
       type: 'video',
-      videoId: 'GS5QKlc0a4Y'
+      videoId: 'GS5QKlc0a4Y',
+      src: `https://img.youtube.com/vi/GS5QKlc0a4Y/hqdefault.jpg`
     },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/percillaherrera.webp',
-      title: 'Percilla Herrera Testimonial',
-      category: 'Celeb Bites',
-      type: 'video',
-      videoId: '1Ed7WJhGUig'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/ashley-deans.webp',
-      title: 'Ashley Deans Testimonial',
-      category: 'Celeb Bites',
-      type: 'video',
-      videoId: 'EdpF4q8OYEE'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/abhinav-bindra.webp',
-      title: 'Abhinav Bindra Testimonial',
-      category: 'Celeb Bites',
-      type: 'video',
-      videoId: 'Hmp_tCEB0Y4'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/bhupati.webp',
-      title: 'Bhupati Testimonial',
-      category: 'Celeb Bites',
-      type: 'video',
-      videoId: 'ik4fTTk2CSQ'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/vishwanathan.webp',
-      title: 'Vishwanathan Testimonial',
-      category: 'Celeb Bites',
-      type: 'video',
-      videoId: 'rYnH2LND6Lg'
-    },
-     // **********Video gallery for sports galore
-     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-18.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'LZiBjKNuf2Q'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-1.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'zpirz-zY3VI'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-3.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'kwYavFDgETw'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-4.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'pGjOxDtp2Ns'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-5.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'YX8dwNxeE-E'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-2.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'mxbwTmAZa-8'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-6.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'X65h8NLrn8g'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-7.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: '6tM9RYwefSk'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-8.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'VpHoW4iWJS4'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-9.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'mx4OZNJTZEg'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-10.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'X65h8NLrn8g'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-11.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'tqjx5l0iJ70'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-12.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: '6JLibwEKZbo'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-13.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: '-GLEJ9Kl4Cc'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-14.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: '5t3LvHYADj4'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-15.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'efbxjrntRjs'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-16.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'xOJoQ3woW4g'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-17.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'tCd3irE7pk8'
-    },
-    // Video gallery for testimonials
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/media-testimonial-1.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Testimonials',
-      type: 'video',
-      videoId: 'RCOvRuBpg7I'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/media-testimonial-2.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Testimonials',
-      type: 'video',
-      videoId: '14G-R2THcmI'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/media-testimonial-3.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Testimonials',
-      type: 'video',
-      videoId: 'yIvEpafH0zU'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/media-testimonial-4.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Testimonials',
-      type: 'video',
-      videoId: 'pjNDUbWuzbM'
-    },
-     // Video gallery for RAMAGYA'S LIFE
-     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-89.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: '0KJtNyd5nOI'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-88.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: '57VshWHvrDg'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-81.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: 'bOSV9sBJG4A'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-82.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: 'biSL84-A1ag'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-83.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: 'tgHMqB9yO70'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-84.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: 'vp7wMKKdIZA'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-85.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: 'u-_RKgXweCU'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-86.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: 'VW8Q65Tq2tQ'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/all-india-karate-championship.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: 'ZrBqOyJ9VQo'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/curiosity-leadership.webp',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: 'J2darvxUR-0'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-19.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: 'xdfOJd3DmEw'
-    },
-    {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-20.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Ramagya Life',
-      type: 'video',
-      videoId: 'mVoEskcPaMk'
-    },
-    {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-21.jpg",
-      "title": "Ramagya School Gallery",
-      "category": "Ramagya Life",
-      "type": "video",
-      "videoId": "799cRaGyMLc"
-    },
-    {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-22.jpg",
-      "title": "Ramagya School Gallery",
-      "category": "Ramagya Life",
-      "type": "video",
-      "videoId": "JxosIQNztdY"
-    },
-    {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-23.jpg",
-      "title": "Ramagya School Gallery",
-      "category": "Ramagya Life",
-      "type": "video",
-      "videoId": "2ygyjc9Zx74"
-    },
-    {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-24.jpg",
-      "title": "Ramagya School Gallery",
-      "category": "Ramagya Life",
-      "type": "video",
-      "videoId": "keA-NmKKqkA"
-    },
-    {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-25.jpg",
-      "title": "Ramagya School Gallery",
-      "category": "Ramagya Life",
-      "type": "video",
-      "videoId": "DrkcUHteeeE"
-    },
-    {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-26.jpg",
-      "title": "Ramagya School Gallery",
-      "category": "Ramagya Life",
-      "type": "video",
-      "videoId": "uH-Q0PPe-ew"
-    },
-    {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-27.jpg",
-      "title": "Ramagya School Gallery",
-      "category": "Ramagya Life",
-      "type": "video",
-      "videoId": "BhzGXBmZ_Pg"
-    },
-    {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-28.jpg",
-      "title": "Ramagya School Gallery",
-      "category": "Ramagya Life",
-      "type": "video",
-      "videoId": "bkuk6N7V7CA"
-    },
-    {
-      "src": "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-29.jpg",
-      "title": "Ramagya School Gallery",
-      "category": "Ramagya Life",
-      "type": "video",
-      "videoId": "K01-HfuJ2XQ"
-    },
+  
       {
-        src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-30.jpg',
-        title: 'Ramagya School Gallery',
-        category: 'Ramagya Life',
+        title: 'Percilla Herrera Testimonial',
+        category: 'Celeb Bites',
         type: 'video',
-        videoId: 'ad1Sfg1v4BE'
+        videoId: '1Ed7WJhGUig',
+        src: 'https://img.youtube.com/vi/1Ed7WJhGUig/hqdefault.jpg'
       },
       {
-        src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-31.jpg',
-        title: 'Ramagya School Gallery',
-        category: 'Ramagya Life',
+        title: 'Ashley Deans Testimonial',
+        category: 'Celeb Bites',
         type: 'video',
-        videoId: 'S5rSjEobMYo'
+        videoId: 'EdpF4q8OYEE',
+        src: 'https://img.youtube.com/vi/EdpF4q8OYEE/hqdefault.jpg'
       },
       {
-        src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-32.jpg',
-        title: 'Ramagya School Gallery',
-        category: 'Ramagya Life',
+        title: 'Abhinav Bindra Testimonial',
+        category: 'Celeb Bites',
         type: 'video',
-        videoId: 'nI45OWWdfCY'
+        videoId: 'Hmp_tCEB0Y4',
+        src: 'https://img.youtube.com/vi/Hmp_tCEB0Y4/hqdefault.jpg'
       },
       {
-        src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-33.jpg',
-        title: 'Ramagya School Gallery',
-        category: 'Ramagya Life',
+        title: 'Bhupati Testimonial',
+        category: 'Celeb Bites',
         type: 'video',
-        videoId: 'm7KcNMrqLMA'
+        videoId: 'ik4fTTk2CSQ',
+        src: 'https://img.youtube.com/vi/ik4fTTk2CSQ/hqdefault.jpg'
       },
       {
-        src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-34.jpg',
-        title: 'Ramagya School Gallery',
-        category: 'Ramagya Life',
+        title: 'Vishwanathan Testimonial',
+        category: 'Celeb Bites',
         type: 'video',
-        videoId: '-AB_bZjWJ2I'
+        videoId: 'rYnH2LND6Lg',
+        src: 'https://img.youtube.com/vi/rYnH2LND6Lg/hqdefault.jpg'
+      },
+      // ********** Video gallery for sports galore **********
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: 'y4z2bMzqojg',
+        src: 'https://img.youtube.com/vi/y4z2bMzqojg/hqdefault.jpg'
       },
       {
-        src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-35.jpg',
         title: 'Ramagya School Gallery',
-        category: 'Ramagya Life',
+        category: 'Sports Galore',
         type: 'video',
-        videoId: 'DM2GJYW3KWg'
+        videoId: 'MRgzaMy-7OA',
+        src: 'https://img.youtube.com/vi/MRgzaMy-7OA/hqdefault.jpg'
+      },
+      
+        {
+        
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: 'ZrBqOyJ9VQo',
+          src: 'https://img.youtube.com/vi/ZrBqOyJ9VQo/hqdefault.jpg'
+        },
+        {
+        
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: 'OSyE2yCYtiw',
+          src: 'https://img.youtube.com/vi/OSyE2yCYtiw/hqdefault.jpg'
+        },
+        {
+          src: 'https://www.youtube.com/shorts/g_LoNu9-hXU',
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: 'g_LoNu9-hXU',
+          src: 'https://img.youtube.com/vi/g_LoNu9-hXU/hqdefault.jpg'
+        },
+        {
+        
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: 'Op60ICTI7RE',
+          src: 'https://img.youtube.com/vi/Op60ICTI7RE/hqdefault.jpg'
+        },
+        {
+        
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: '-AB_bZjWJ2I',
+          src: 'https://img.youtube.com/vi/-AB_bZjWJ2I/hqdefault.jpg'
+        },
+        {
+        
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: 'OaxzZbBrD9U',
+          src: 'https://img.youtube.com/vi/OaxzZbBrD9U/hqdefault.jpg'
+        },
+        {
+        
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: '-XWLnGsLs54',
+          src: 'https://img.youtube.com/vi/-XWLnGsLs54/hqdefault.jpg'
+        },
+        {
+        
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: '4wp1Z6My1lY',
+          src: 'https://img.youtube.com/vi/4wp1Z6My1lY/hqdefault.jpg'
+        },
+        {
+        
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: 'ix-qDmGcC9E',
+          src: 'https://img.youtube.com/vi/ix-qDmGcC9E/hqdefault.jpg'
+        },
+        {
+        
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: 'Ff3dJCUtoN8',
+          src: 'https://img.youtube.com/vi/Ff3dJCUtoN8/hqdefault.jpg'
+        },      
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: 'LZiBjKNuf2Q',
+        src: 'https://img.youtube.com/vi/LZiBjKNuf2Q/hqdefault.jpg'
       },
       {
-        src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-36.jpg',
         title: 'Ramagya School Gallery',
-        category: 'Ramagya Life',
+        category: 'Sports Galore',
         type: 'video',
-        videoId: 'K8DOvMu7eoQ'
+        videoId: 'zpirz-zY3VI',
+        src: 'https://img.youtube.com/vi/zpirz-zY3VI/hqdefault.jpg'
       },
       {
-        src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-37.jpg',
         title: 'Ramagya School Gallery',
-        category: 'Ramagya Life',
+        category: 'Sports Galore',
         type: 'video',
-        videoId: 'rueSBh7Py2E'
+        videoId: 'kwYavFDgETw',
+        src: 'https://img.youtube.com/vi/kwYavFDgETw/hqdefault.jpg'
       },
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: 'pGjOxDtp2Ns',
+        src: 'https://img.youtube.com/vi/pGjOxDtp2Ns/hqdefault.jpg'
+      },
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: 'YX8dwNxeE-E',
+        src: 'https://img.youtube.com/vi/YX8dwNxeE-E/hqdefault.jpg'
+      },
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: 'mxbwTmAZa-8',
+        src: 'https://img.youtube.com/vi/mxbwTmAZa-8/hqdefault.jpg'
+      },
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: 'X65h8NLrn8g',
+        src: 'https://img.youtube.com/vi/X65h8NLrn8g/hqdefault.jpg'
+      },
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: '6tM9RYwefSk',
+        src: 'https://img.youtube.com/vi/6tM9RYwefSk/hqdefault.jpg'
+      },
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: 'VpHoW4iWJS4',
+        src: 'https://img.youtube.com/vi/VpHoW4iWJS4/hqdefault.jpg'
+      },
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: 'mx4OZNJTZEg',
+        src: 'https://img.youtube.com/vi/mx4OZNJTZEg/hqdefault.jpg'
+      },
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: 'X65h8NLrn8g',
+        src: 'https://img.youtube.com/vi/X65h8NLrn8g/hqdefault.jpg'
+      },
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: 'tqjx5l0iJ70',
+        src: 'https://img.youtube.com/vi/tqjx5l0iJ70/hqdefault.jpg'
+      },
+      {
+        title: 'Ramagya School Gallery',
+        category: 'Sports Galore',
+        type: 'video',
+        videoId: '6JLibwEKZbo',
+        src: 'https://img.youtube.com/vi/6JLibwEKZbo/hqdefault.jpg'
+      },
+      
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-38.jpg',
+          src: 'https://img.youtube.com/vi/-GLEJ9Kl4Cc/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: '-GLEJ9Kl4Cc'
+        },
+        {
+          src: 'https://img.youtube.com/vi/5t3LvHYADj4/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: '5t3LvHYADj4'
+        },
+        {
+          src: 'https://img.youtube.com/vi/efbxjrntRjs/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: 'efbxjrntRjs'
+        },
+        {
+          src: 'https://img.youtube.com/vi/xOJoQ3woW4g/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: 'xOJoQ3woW4g'
+        },
+        {
+          src: 'https://img.youtube.com/vi/tCd3irE7pk8/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Sports Galore',
+          type: 'video',
+          videoId: 'tCd3irE7pk8'
+        },
+        // Video gallery for testimonials
+        {
+          src: 'https://img.youtube.com/vi/RCOvRuBpg7I/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Testimonials',
+          type: 'video',
+          videoId: 'RCOvRuBpg7I'
+        },
+        {
+          src: 'https://img.youtube.com/vi/14G-R2THcmI/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Testimonials',
+          type: 'video',
+          videoId: '14G-R2THcmI'
+        },
+        {
+          src: 'https://img.youtube.com/vi/yIvEpafH0zU/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Testimonials',
+          type: 'video',
+          videoId: 'yIvEpafH0zU'
+        },
+        {
+          src: 'https://img.youtube.com/vi/pjNDUbWuzbM/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Testimonials',
+          type: 'video',
+          videoId: 'pjNDUbWuzbM'
+        },
+        // Video gallery for RAMAGYA'S LIFE
+        {
+          src: 'https://img.youtube.com/vi/0KJtNyd5nOI/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
-          videoId: 'NLIs9tgIRBM'
+          videoId: '0KJtNyd5nOI'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-39.jpg',
+          src: 'https://img.youtube.com/vi/57VshWHvrDg/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
-          videoId: 'OlGtv2a6JOI'
+          videoId: '57VshWHvrDg'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-40.jpg',
+          src: 'https://img.youtube.com/vi/bOSV9sBJG4A/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
-          videoId: 'zz96x_Dpa8U'
+          videoId: 'bOSV9sBJG4A'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-41.jpg',
+          src: 'https://img.youtube.com/vi/biSL84-A1ag/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
-          videoId: 'J0EpNRLjEwo'
+          videoId: 'biSL84-A1ag'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-42.jpg',
+          src: 'https://img.youtube.com/vi/tgHMqB9yO70/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
-          videoId: 'ai6eY57M4L8'
+          videoId: 'tgHMqB9yO70'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-43.jpg',
+          src: 'https://img.youtube.com/vi/vp7wMKKdIZA/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
-          videoId: 'UyiQZQYOUM0'
+          videoId: 'vp7wMKKdIZA'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-44.jpg',
+          src: 'https://img.youtube.com/vi/u-_RKgXweCU/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
-          videoId: 'AGZBz2DGPRo'
+          videoId: 'u-_RKgXweCU'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-45.jpg',
+          src: 'https://img.youtube.com/vi/VW8Q65Tq2tQ/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
-          videoId: '-JgPxPnTKuY'
+          videoId: 'VW8Q65Tq2tQ'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-46.jpg',
+          src: 'https://img.youtube.com/vi/ZrBqOyJ9VQo/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
-          videoId: 'EW1-kY0mxtk'
+          videoId: 'ZrBqOyJ9VQo'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-47.jpg',
+          src: 'https://img.youtube.com/vi/J2darvxUR-0/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
-          videoId: 'v4PEoZJr2qs'
+          videoId: 'J2darvxUR-0'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-48.jpg',
+          src: 'https://img.youtube.com/vi/xdfOJd3DmEw/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Ramagya Life',
+          type: 'video',
+          videoId: 'xdfOJd3DmEw'
+        },
+        {
+          src: 'https://img.youtube.com/vi/mVoEskcPaMk/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Ramagya Life',
+          type: 'video',
+          videoId: 'mVoEskcPaMk'
+        },
+        {
+          src: 'https://img.youtube.com/vi/799cRaGyMLc/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Ramagya Life',
+          type: 'video',
+          videoId: '799cRaGyMLc'
+        },
+        {
+          src: 'https://img.youtube.com/vi/JxosIQNztdY/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Ramagya Life',
+          type: 'video',
+          videoId: 'JxosIQNztdY'
+        },
+        {
+          src: 'https://img.youtube.com/vi/2ygyjc9Zx74/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Ramagya Life',
+          type: 'video',
+          videoId: '2ygyjc9Zx74'
+        },
+        {
+          src: 'https://img.youtube.com/vi/keA-NmKKqkA/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Ramagya Life',
+          type: 'video',
+          videoId: 'keA-NmKKqkA'
+        },
+        {
+          "src": "https://img.youtube.com/vi/DrkcUHteeeE/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "DrkcUHteeeE"
+        },
+        {
+          "src": "https://img.youtube.com/vi/uH-Q0PPe-ew/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "uH-Q0PPe-ew"
+        },
+        {
+          "src": "https://img.youtube.com/vi/BhzGXBmZ_Pg/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "BhzGXBmZ_Pg"
+        },
+        {
+          "src": "https://img.youtube.com/vi/bkuk6N7V7CA/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "bkuk6N7V7CA"
+        },
+        {
+          "src": "https://img.youtube.com/vi/K01-HfuJ2XQ/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "K01-HfuJ2XQ"
+        },
+        {
+          "src": "https://img.youtube.com/vi/ad1Sfg1v4BE/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "ad1Sfg1v4BE"
+        },
+        {
+          "src": "https://img.youtube.com/vi/S5rSjEobMYo/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "S5rSjEobMYo"
+        },
+        {
+          "src": "https://img.youtube.com/vi/nI45OWWdfCY/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "nI45OWWdfCY"
+        },
+        {
+          "src": "https://img.youtube.com/vi/m7KcNMrqLMA/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "m7KcNMrqLMA"
+        },
+        // {
+        //   "src": "https://img.youtube.com/vi/-AB_bZjWJ2I/hqdefault.jpg",
+        //   "title": "Ramagya School Gallery",
+        //   "category": "Ramagya Life",
+        //   "type": "video",
+        //   "videoId": "-AB_bZjWJ2I"
+        // },
+        {
+          "src": "https://img.youtube.com/vi/DM2GJYW3KWg/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "DM2GJYW3KWg"
+        },
+        {
+          "src": "https://img.youtube.com/vi/K8DOvMu7eoQ/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "K8DOvMu7eoQ"
+        },
+        {
+          "src": "https://img.youtube.com/vi/rueSBh7Py2E/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "rueSBh7Py2E"
+        },
+        {
+          "src": "https://img.youtube.com/vi/NLIs9tgIRBM/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "NLIs9tgIRBM"
+        },
+        {
+          "src": "https://img.youtube.com/vi/OlGtv2a6JOI/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "OlGtv2a6JOI"
+        },
+        {
+          "src": "https://img.youtube.com/vi/zz96x_Dpa8U/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "zz96x_Dpa8U"
+        },
+        {
+          "src": "https://img.youtube.com/vi/J0EpNRLjEwo/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "J0EpNRLjEwo"
+        },
+        {
+          "src": "https://img.youtube.com/vi/ai6eY57M4L8/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "ai6eY57M4L8"
+        },
+        {
+          "src": "https://img.youtube.com/vi/UyiQZQYOUM0/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "UyiQZQYOUM0"
+        },
+        {
+          "src": "https://img.youtube.com/vi/AGZBz2DGPRo/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "AGZBz2DGPRo"
+        },
+        {
+          "src": "https://img.youtube.com/vi/-JgPxPnTKuY/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "-JgPxPnTKuY"
+        },
+        {
+          "src": "https://img.youtube.com/vi/EW1-kY0mxtk/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "EW1-kY0mxtk"
+        },
+        {
+          "src": "https://img.youtube.com/vi/v4PEoZJr2qs/hqdefault.jpg",
+          "title": "Ramagya School Gallery",
+          "category": "Ramagya Life",
+          "type": "video",
+          "videoId": "v4PEoZJr2qs"
+        },
+
+        {
+          src: 'https://img.youtube.com/vi/W2Pzn4Q3IlY/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Ramagya Life',
           type: 'video',
           videoId: 'W2Pzn4Q3IlY'
-        }, 
-        //  Video gallery for mental health
-          {
-            src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-49.jpg',
-            title: 'Ramagya School Gallery',
-            category: 'Mental Health',
-            type: 'video',
-            videoId: 'CEbwZBE0LOU'
-          },
-          {
-            src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-50.jpg',
-            title: 'Ramagya School Gallery',
-            category: 'Mental Health',
-            type: 'video',
-            videoId: 'LJaMBTc_rDk'
-          },
-          {
-            src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-51.jpg',
-            title: 'Ramagya School Gallery',
-            category: 'Mental Health',
-            type: 'video',
-            videoId: 'AgB1VhWqleg'
-          },
-          {
-            src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-52.jpg',
-            title: 'Ramagya School Gallery',
-            category: 'Mental Health',
-            type: 'video',
-            videoId: '6JLibwEKZbo'
-          },
-          {
-            src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-53.jpg',
-            title: 'Ramagya School Gallery',
-            category: 'Mental Health',
-            type: 'video',
-            videoId: 'GNnCr1FyEsE'
-          },   
-          
-          // Video gallery for parents
-          {
-            src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-54.jpg',
-            title: 'Ramagya School Gallery',
-            category: 'Parents',
-            type: 'video',
-            videoId: 'dX4E-tRVlh8'
-          },
-          {
-            src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-55.jpg',
-            title: 'Ramagya School Gallery',
-            category: 'Parents',
-            type: 'video',
-            videoId: 'FT1TNGL5XNk'
-          },
-          {
-            src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-56.jpg',
-            title: 'Ramagya School Gallery',
-            category: 'Parents',
-            type: 'video',
-            videoId: 'a-nRhn2vCrk'
-            },
-
-            // Video gallery for students
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-57.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Student',
-              type: 'video',
-              videoId: 'A2p1Tl4zJxs'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-58.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Student',
-              type: 'video',
-              videoId: 'NSvWjjjSsWM'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-59.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Student',
-              type: 'video',
-              videoId: '1fMz-BI_dDU'
-            },
-            // Video gallery for EVENTS
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-60.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'EAl4KTafmEY'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-61.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'i4V0qCLZ4RQ'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-62.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'DeEZG0dFQOc'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-63.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'StGwjiCbg_Y'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-64.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'fEHfU3PImF0'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-65.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'J4SRYv2T6k8'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-66.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'sKWPq4iRGRY'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-67.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'bxuaeGqHwsw'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-68.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'w8ZV2UvlS1I'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-82.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'biSL84-A1ag'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-83.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'tgHMqB9yO70'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-85.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'u-_RKgXweCU'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-87.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: '57VshWHvrDg'
-            },
-            {
-              src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-86.jpg',
-              title: 'Ramagya School Gallery',
-              category: 'Events',
-              type: 'video',
-              videoId: 'VW8Q65Tq2tQ'
-            },
-      // Video gallery for helping hands
+        },
+        
+        // Video gallery for Mental Health
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-69.jpg',
+          src: 'https://img.youtube.com/vi/CEbwZBE0LOU/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Mental Health',
+          type: 'video',
+          videoId: 'CEbwZBE0LOU'
+        },
+        {
+          src: 'https://img.youtube.com/vi/LJaMBTc_rDk/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Mental Health',
+          type: 'video',
+          videoId: 'LJaMBTc_rDk'
+        },
+        {
+          src: 'https://img.youtube.com/vi/AgB1VhWqleg/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Mental Health',
+          type: 'video',
+          videoId: 'AgB1VhWqleg'
+        },
+        {
+          src: 'https://img.youtube.com/vi/6JLibwEKZbo/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Mental Health',
+          type: 'video',
+          videoId: '6JLibwEKZbo'
+        },
+        {
+          src: 'https://img.youtube.com/vi/GNnCr1FyEsE/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Mental Health',
+          type: 'video',
+          videoId: 'GNnCr1FyEsE'
+        },
+      
+        // Video gallery for Parents
+        {
+          src: 'https://img.youtube.com/vi/dX4E-tRVlh8/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Parents',
+          type: 'video',
+          videoId: 'dX4E-tRVlh8'
+        },
+        {
+          src: 'https://img.youtube.com/vi/FT1TNGL5XNk/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Parents',
+          type: 'video',
+          videoId: 'FT1TNGL5XNk'
+        },
+        {
+          src: 'https://img.youtube.com/vi/a-nRhn2vCrk/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Parents',
+          type: 'video',
+          videoId: 'a-nRhn2vCrk'
+        },
+      
+        // Video gallery for Students
+        {
+          src: 'https://img.youtube.com/vi/A2p1Tl4zJxs/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Student',
+          type: 'video',
+          videoId: 'A2p1Tl4zJxs'
+        },
+        {
+          src: 'https://img.youtube.com/vi/NSvWjjjSsWM/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Student',
+          type: 'video',
+          videoId: 'NSvWjjjSsWM'
+        },
+        {
+          src: 'https://img.youtube.com/vi/1fMz-BI_dDU/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Student',
+          type: 'video',
+          videoId: '1fMz-BI_dDU'
+        },
+      
+        // Video gallery for Events
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: '2YZNcF_JA4I',
+          src: 'https://img.youtube.com/vi/2YZNcF_JA4I/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'MeXdDdNVtio',
+          src: 'https://img.youtube.com/vi/MeXdDdNVtio/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'CbUznSqklgs',
+          src: 'https://img.youtube.com/vi/CbUznSqklgs/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'Qo_xm0aPMyQ',
+          src: 'https://img.youtube.com/vi/Qo_xm0aPMyQ/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'sKWPq4iRGRY',
+          src: 'https://img.youtube.com/vi/sKWPq4iRGRY/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'NsAiVlG0CQc',
+          src: 'https://img.youtube.com/vi/NsAiVlG0CQc/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'sf11wrC5Y8Q',
+          src: 'https://img.youtube.com/vi/sf11wrC5Y8Q/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: '_xAu1arLx0o',
+          src: 'https://img.youtube.com/vi/_xAu1arLx0o/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'da7JSps97Uo',
+          src: 'https://img.youtube.com/vi/da7JSps97Uo/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'NAVtTCCilC0',
+          src: 'https://img.youtube.com/vi/NAVtTCCilC0/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: '8e6xZvxKe04',
+          src: 'https://img.youtube.com/vi/8e6xZvxKe04/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'DeEZG0dFQOc',
+          src: 'https://img.youtube.com/vi/DeEZG0dFQOc/hqdefault.jpg'
+        },
+        {
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'i4V0qCLZ4RQ',
+          src: 'https://img.youtube.com/vi/i4V0qCLZ4RQ/hqdefault.jpg'
+        },
+        
+        {
+          src: 'https://img.youtube.com/vi/EAl4KTafmEY/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'EAl4KTafmEY'
+        },
+        {
+          src: 'https://img.youtube.com/vi/i4V0qCLZ4RQ/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'i4V0qCLZ4RQ'
+        },
+        {
+          src: 'https://img.youtube.com/vi/DeEZG0dFQOc/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'DeEZG0dFQOc'
+        },
+        {
+          src: 'https://img.youtube.com/vi/StGwjiCbg_Y/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'StGwjiCbg_Y'
+        },
+        {
+          src: 'https://img.youtube.com/vi/fEHfU3PImF0/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'fEHfU3PImF0'
+        },
+        {
+          src: 'https://img.youtube.com/vi/J4SRYv2T6k8/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'J4SRYv2T6k8'
+        },
+        {
+          src: 'https://img.youtube.com/vi/sKWPq4iRGRY/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Events',
+          type: 'video',
+          videoId: 'sKWPq4iRGRY'
+        },
+      
+        // Video gallery for Helping Hands
+        {
+          src: 'https://img.youtube.com/vi/TUCE9e2eFBQ/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Helping Hand',
           type: 'video',
-          videoId: 'zdVITP31l10'
+          videoId: 'TUCE9e2eFBQ'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-70.jpg',
+          src: 'https://img.youtube.com/vi/EKIhsAMvrBk/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Helping Hand',
           type: 'video',
-          videoId: 'wzIgSGv3WhI'
+          videoId: 'EKIhsAMvrBk'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-71.jpg',
-          title: 'Ramagya School Gallery',
-          category: 'Helping Hand',
-          type: 'video',
-          videoId: 'R9-p_6xV86A'
-        },
-        {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-72.jpg',
+          src: 'https://img.youtube.com/vi/4xbFf25pguo/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Helping Hand',
           type: 'video',
           videoId: '4xbFf25pguo'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-73.jpg',
-          title: 'Ramagya School Gallery',
-          category: 'Helping Hand',
-          type: 'video',
-          videoId: '2rjRszdO2P0'
-        },
-        {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-74.jpg',
+          src: 'https://img.youtube.com/vi/FxT3xJFYpDg/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Helping Hand',
           type: 'video',
           videoId: 'FxT3xJFYpDg'
         },
         {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-75.jpg',
+          src: 'https://img.youtube.com/vi/zdVITP31l10/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Helping Hand',
+          type: 'video',
+          videoId: 'zdVITP31l10'
+        },
+        {
+          src: 'https://img.youtube.com/vi/wzIgSGv3WhI/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Helping Hand',
+          type: 'video',
+          videoId: 'wzIgSGv3WhI'
+        },
+        {
+          src: 'https://img.youtube.com/vi/R9-p_6xV86A/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Helping Hand',
+          type: 'video',
+          videoId: 'R9-p_6xV86A'
+        },
+        {
+          src: 'https://img.youtube.com/vi/4xbFf25pguo/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Helping Hand',
+          type: 'video',
+          videoId: '4xbFf25pguo'
+        },
+        {
+          src: 'https://img.youtube.com/vi/2rjRszdO2P0/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Helping Hand',
+          type: 'video',
+          videoId: '2rjRszdO2P0'
+        },
+        {
+          src: 'https://img.youtube.com/vi/FxT3xJFYpDg/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Helping Hand',
+          type: 'video',
+          videoId: 'FxT3xJFYpDg'
+        },
+        {
+          src: 'https://img.youtube.com/vi/xkDrHZcrhfg/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Helping Hand',
           type: 'video',
           videoId: 'xkDrHZcrhfg'
-        },
-        {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-76.jpg',
-          title: 'Ramagya School Gallery',
-          category: 'Helping Hand',
-          type: 'video',
-          videoId: 'de_BXRJQF4o'
-        },
-        {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-77.jpg',
-          title: 'Ramagya School Gallery',
-          category: 'Helping Hand',
-          type: 'video',
-          videoId: 'T9A332dY1oo'
-        },
-        {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-78.jpg',
-          title: 'Ramagya School Gallery',
-          category: 'Helping Hand',
-          type: 'video',
-          videoId: 'VS4iqGTQTd0'
-        },
-        {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-79.jpg',
-          title: 'Ramagya School Gallery',
-          category: 'Helping Hand',
-          type: 'video',
-          videoId: 'h90p1IQbZrQ'
-        },
-        {
-          src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-80.jpg',
-          title: 'Ramagya School Gallery',
-          category: 'Helping Hand',
-          type: 'video',
-          videoId: 'T8DsS-rDr0k'
         }
+      
    
   ];
 
@@ -1589,7 +1188,7 @@ const NoidaGalleryInternalPage = () => {
                     // <div className="video-container">
                     //   <Image
                     //     src={item.src}
-                    //     alt="Video Thumbnail"
+                    //     alt="Video src"
                     //     width={350}
                     //     height={300}
                     //   />

@@ -123,10 +123,10 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="https://greaternoida.ramagyaschool.com/" target="_blank">Gr. Noida</a>
+                <a className="dropdown-item" href="https://ramagyaschool.com/greater-noida" target="_blank">Gr. Noida</a>
               </li>
               <li>
-                <a className="dropdown-item" href="https://dadri.ramagyaschool.com/" target="_blank">Dadri</a>
+                <a className="dropdown-item" href="https://ramagyaschool.com/dadri" target="_blank">Dadri</a>
               </li>
             </ul>
           </div>
@@ -235,11 +235,11 @@ const Header = () => {
                         Sister Concerns
                       </a>
                     </li> */}
-                    {/* <li>
-                      <a className="dropdown-item" href="testimonials">
+                    <li>
+                      <a className="dropdown-item" href="partnership">
                         Partnership
                       </a>
-                    </li> */}
+                    </li>
                   </ul>
                 </li>
                 {/* What we do */}
@@ -320,6 +320,12 @@ const Header = () => {
                     </li>
                   </ul>
                 </li> */}
+                 {/* Careers menu */}
+                 {/* <li className="nav-item">
+                  <a className="nav-link" aria-current="page" href="#">
+                    Partnership
+                  </a>
+                </li> */}
                   {/*News Feed */}
                   <li className="nav-item dropdown dropend">
                   <a
@@ -379,23 +385,23 @@ const Header = () => {
                     Schools
                   </a>
                   <ul className="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a className="dropdown-item" href="https://noida.ramagyaschool.com/" target='_blank'>
+                  <li>
+                      <a className="dropdown-item" href="https://ramagyaschool.com/noida" target='_blank'>
                         Noida
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="https://noidaextension.ramagyaschool.com/" target='_blank'>
+                      <a className="dropdown-item" href="https://ramagyaschool.com/noida-extension" target='_blank'>
                        Noida Ext.
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="https://greaternoida.ramagyaschool.com/" target='_blank'>
+                      <a className="dropdown-item" href="https://ramagyaschool.com/greater-noida" target='_blank'>
                         Gr. Noida
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="https://dadri.ramagyaschool.com/" target='_blank'>
+                      <a className="dropdown-item" href="https://ramagyaschool.com/dadri" target='_blank'>
                         Dadri
                       </a>
                     </li>

@@ -22,7 +22,7 @@ const NoidaAwardsHomePage = () => {
     <>
         <Container className="container">
         <div className="text-center mb-4">
-          <h3 className='main-heading-internal-pages'>AWARDS</h3>
+          <h3 className='main-heading-internal-pages wow animate__animated animate__fadeInUp' style={{ animationDelay: '0.1s'}}>AWARDS</h3>
         </div>
           <div className="d-flex flex-wrap justify-content-between">
           <div className='row'>

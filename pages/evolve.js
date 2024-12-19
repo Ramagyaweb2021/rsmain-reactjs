@@ -3,8 +3,8 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Header from '/pages/components/Header';
 import 'animate.css';
-import HomeSectionFooter from './components/HomeSectionFooter';
-import Image from 'next/image';
+import FooterNoida from './components/FooterNoida';
+// import Image from 'next/image';
 import ExploreScrollspyInternalMenu from './components/ExploreScrollspyInternalMenu';
 import EvolveTabination from './components/EvolveTabination';
 
@@ -107,7 +107,7 @@ const Evolve = () => {
 
       <EvolveTabination/>
   
-      <HomeSectionFooter />
+      <FooterNoida />
     </>
   );
 };

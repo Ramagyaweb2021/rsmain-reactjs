@@ -31,7 +31,7 @@ function AllVerticalScrollspyMenu() {
               <Nav.Link href="/noida-extension" className={`mx-3 ${router.pathname === '/noida-extension' ? 'active' : ''}`}>
                 NOIDA EXTENSION
               </Nav.Link>
-              <Nav.Link href="/gnoida" className={`mx-3 ${router.pathname === '/gnoida' ? 'active' : ''}`}>
+              <Nav.Link href="/greater-noida" className={`mx-3 ${router.pathname === '/greater-noida' ? 'active' : ''}`}>
                 GREATER NOIDA
               </Nav.Link>
               <Nav.Link href="/dadri" className={`mx-3 ${router.pathname === '/dadri' ? 'active' : ''}`}>

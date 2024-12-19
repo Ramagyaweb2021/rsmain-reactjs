@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Header from './components/Header'; // Adjust this path if needed
 import 'animate.css';
-import HomeSectionFooter from './components/HomeSectionFooter';
+import FooterNoida from './components/FooterNoida';
 import WhoWeAreScrollspyMenu from './components/WhoWeAreScrollspyMenu';
 
 // Dynamically import WOW.js to avoid server-side issues
@@ -184,7 +184,7 @@ const VissionAndValue = () => {
                 </div> */}
       </div>
       </section>
-      <HomeSectionFooter />
+      <FooterNoida />
     </>
   );
 };

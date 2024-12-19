@@ -1339,17 +1339,18 @@ ul {
 }
 .footer-bottom {
   margin-top: 35px;
-  border-top: 1px solid #002c392e;
+  border-top: 1px solid #002c390f;
   color: var(--color-set-green);
   padding-top: 20px;
   color: rgb(255 255 255 / 0.7);
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #f8f9fa;
+  background-color: #f8f9fa96 !important;
   /* padding: 3px 0; */
-  box-shadow: 0 -2px 5px rgba(13, 110, 253, 0.25);
+  box-shadow: 0 -2px 5px rgb(13 110 253 / 0%);
   z-index: 1000;
+  left: 0;
 }
 .footer-bottom a {
   text-decoration: none;
@@ -1357,6 +1358,21 @@ ul {
 }
 .footer-bottom a:hover {
   color: var(--color-set-green);
+}
+.footer-bottom-internal {
+  margin-top: 35px;
+  border-top: 1px solid #002c390f;
+  color: var(--color-set-green);
+  padding-top: 20px;
+  color: rgb(255 255 255 / 0.7);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa96 !important;
+  /* padding: 3px 0; */
+  box-shadow: 0 -2px 5px rgb(13 110 253 / 0%);
+  z-index: 1000;
+  left: 0;
 }
 .btn-warning {
   border-radius: 30px;
@@ -2142,7 +2158,7 @@ video.main-video {
 }
 .banner-section-admission{
   background-repeat: no-repeat;
-  background-image: url(/images/admission/admission.webp);
+  background-image: url(/images/who-we-are/overview.webp);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -2153,6 +2169,48 @@ video.main-video {
   color: #fff;
   margin-top: 0;
 }
+.main-banner-noida-extension{
+  background-repeat: no-repeat;
+  background-image: url(https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/bg/rs-noida-extension-main-banner.webp);
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  padding: 15px 60px;
+  z-index: 1;
+  color: #fff;
+  margin-top: 0;
+}
+.main-banner-greater-noida {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  url(https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/rs-gnoida-main-banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  min-height: 650px;
+  width: 100%;
+  padding: 15px 60px;
+  z-index: 1;
+  color: #fff;
+  margin-top: 0;
+}
+.main-banner-dadri {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  url(https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/rs-dadri-main-banner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  min-height: 650px;
+  width: 100%;
+  padding: 15px 60px;
+  z-index: 1;
+  color: #fff;
+  margin-top: 0;
+}
+
 .banner-text {
   position: relative;
   padding-top: 250px;
@@ -2294,6 +2352,18 @@ video.main-video {
   color: #fff;
   margin-top: 0;
 }
+.partership-section {
+  background-image: url(/images/main-home.webp);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  /* min-height: 650px; */
+  width: 100%;
+  padding: 100px 100px;
+  /* color: #fff; */
+}
 .bg-poineer{
     background-repeat: no-repeat;
     background-image: url(/images/poineer-in-sports/bg-banner-1.webp);
@@ -2321,7 +2391,7 @@ video.main-video {
   margin-top: 0;
 }
 .card-body-our-leaders{
-  background-color: #E7EAEB;
+  background-color: #E7EAEB33;
   border-radius: 1px;
   padding: 20px;
 }
@@ -2515,8 +2585,9 @@ ul.custom-bullets li::before {
 
 .bg-light {
   background-color: #f8f9fa !important;
-  border-radius: 10px;
+  border-radius: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 111;
 }
 .result-box {
   padding: 20px;
@@ -2567,9 +2638,9 @@ hr {
   animation: smoothScroll 1s forwards;
   animation: smoothScroll 0.6s ease-out forwards;
 }
-.sticky-top{
-  top: 155px;
-}
+/* .sticky-top{
+  top: 139px;
+} */
 .nav-pills .nav-link.active {
   background-color: #f8f9fa;
   border-radius: 0;
@@ -2704,13 +2775,114 @@ hr {
   right: 0px;
   top: 0;
 }
-/* .home-footer{
-  background-color: #E7EAEB;
+#principals-note{
+  background-color: #E7EAEB33;
+}
+/* Sidebar menu css */
+.sidebar {
+  width: 100%;
+  background-color: var(--color-set-white);
+  padding: 16px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* z-index: 1000; */
+  transition: all 0.5s ease;
+}
+
+.toggle-menu-btn {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.nav-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.nav-menu.open {
+  max-height: 1000px; /* Large enough to fit the expanded content */
+}
+
+.nav-menu a {
+  display: block;
+  margin-bottom: 15px;
+  color: var(--color-set-green);
+  text-decoration: none;
+  border-bottom: 1px solid #cccccc52;
+}
+
+.nav-menu a.active {
+  background-color: var(--color-set-yellow);
+  color: var(--color-set-green);
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 0;
+}
+.title-100 {
+  color: #0F3E46;
+  border-bottom: 2px solid #f7d00f;
+  display: inline-block;
+  width: auto;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  padding: 10px 0 0;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: var(--font-family-text);
+}
+.sec-title3 .title.black-color {
+  color: #0F3E46;
+  border-bottom: 3px solid #f7d00f;
+  display: inline-block;
+  width: auto;
+  margin: auto;
+  padding: 0;
+  font-size: 20px;
+}
+.bold-text {
+  font-size: 15px;
+  color: #214F5E;
+  font-weight: 600;
+  /* font-family: 'Hind Guntur', sans-serif; */
+  padding: 0;
+}
+.sidebar .nav-menu {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.sidebar .nav-menu.closed {
+  max-height: 0;
+}
+
+.sidebar .nav-menu.open {
+  max-height: 1080px; /* Adjust based on content height */
+}
+
+.toggle-menu-btn {
+  display: none; /* Hide toggle button on larger screens */
+}
+
+/* @media (max-width: 768px) {
+  .toggle-menu-btn {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+  }
 } */
-
-
-
-
-
-
-
+.btn-link{
+  color:  var(--color-set-green);
+  font-weight: 500;
+  text-decoration:none;
+}
+.btn-link:hover{
+  color:  var(--color-set-yellow);
+  font-weight: 500;
+}
