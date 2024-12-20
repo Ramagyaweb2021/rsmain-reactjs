@@ -150,7 +150,7 @@ const ExploreTabination = () => {
                                 height={80}
                                 src="/images/explore/primary/learning-domain/4.webp"
                               />
-                              <p className='mt-2'>Students</p>
+                              <p className='mt-2'>Craft</p>
                             </div>
                           </div>
                         </div>

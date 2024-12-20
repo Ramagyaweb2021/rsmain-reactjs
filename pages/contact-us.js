@@ -15,7 +15,7 @@ const ContactUs = () => {
   const locations = [
     {
       title: "Ramagya School",
-      subtitle: "Noida",
+      subtitle: "Ramagya School - Noida",
       address: "E-7, E Block, Sector 50, Noida, Uttar Pradesh 201301",
       phone: "+91-8010 333 555",
       emails: [
@@ -28,7 +28,7 @@ const ContactUs = () => {
     },
     {
       title: "Ramagya School",
-      subtitle: "Noida Extension",
+      subtitle: "Ramagya School - Noida Extension",
       address:
         "Plot No. A-229 Knowledge Park 5 Noida Extension & Greater Noida, Uttar Pradesh 201307",
       phone: "+91-8010 770 770",
@@ -43,7 +43,7 @@ const ContactUs = () => {
     },
     {
       title: "Ramagya School",
-      subtitle: "Greater Noida",
+      subtitle: "Ramagya School - Greater Noida",
       address: "NS-26, Delta-2, Greater Noida, Uttar Pradesh 201310",
       phone: "+91-7065 078 637, +91-9599 191 929",
       emails: [
@@ -56,7 +56,7 @@ const ContactUs = () => {
     },
     {
       title: "Ramagya School",
-      subtitle: "Dadri",
+      subtitle: "Ramagya School - Dadri",
       address: "Bishara Road, Dadri, Uttar Pradesh 203207",
       phone: "+91-9971 232 922, +91-7065 078 636",
       emails: [
@@ -112,7 +112,7 @@ const ContactUs = () => {
           <div className="row g-1">
             {/* Use map to dynamically generate cards */}
             {locations.map((location, index) => (
-              <div className="col-md-6 col-lg-3 g-3" key={index}>
+              <div className="col-md-6 col-lg-6 g-3" key={index}>
                 <div className="card shadow-sm border-0 h-100 p-3">
                   <div className="card-body-contact-us">
                     {/* <h5 className="card-title fw-bold mb-4">{location.title}</h5> */}
@@ -129,14 +129,14 @@ const ContactUs = () => {
                       </a>
                     </p>
                     <p>
-                      <i className="bi bi-envelope-fill"></i>{' '}
+                      {/* <i className="bi bi-envelope-fill"></i>{' '} */}
                       {location.emails.map((email, idx) => (
                         <span key={idx}>
                           <a
                             href={`mailto:${email}`}
                             className="text-decoration-none"
                           >
-                            {email}
+                            <i className="bi bi-envelope-fill"></i>{' '} {email}
                           </a>
                           <br />
                         </span>

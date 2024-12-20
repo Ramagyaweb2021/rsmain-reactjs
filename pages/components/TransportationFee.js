@@ -9,7 +9,33 @@ const TransportationFee = () => {
         <h4 className="fw-bold mt-2" style={{textAlign:"center"}}>TRANSPORTATION FEE FOR RAMAGYA SCHOOL NOIDA</h4>
         <p className="text-muted">(Subject to change in case of any Hike in Fuel Price)</p>
       </div>
-
+      <table className="table table-hover text-center">
+            <thead className="table-light">
+              <tr>
+                <th scope="col">DISTANCE</th>
+                <th scope="col">MONTHLY FEE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0-5KM</td>
+                <td>4260 /-</td>
+              </tr>
+              <tr>
+                <td>5-10KM</td>
+                <td>4650 /-</td>
+              </tr>
+              <tr>
+                <td>10-15KM</td>
+                <td>5250 /-</td>
+              </tr>
+              <tr>
+                <td>15-20KM</td>
+                <td>5700 /-</td>
+              </tr>
+            </tbody>
+          </table>
+{/* 
       <div className="row justify-content-center">
         <div className="col-md-4 text-center1">
           <h6 className="fw-bold">DISTANCE</h6>
@@ -25,7 +51,7 @@ const TransportationFee = () => {
           <p>5250 /-</p>
           <p>5700 /-</p>
         </div>
-      </div>
+      </div> */}
 
       <div className="text-center mt-4"><hr/>
         <h5 className="fw-bold" style={{textAlign:"center"}}>Discount For Special Group</h5>

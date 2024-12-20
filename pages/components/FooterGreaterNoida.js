@@ -17,18 +17,18 @@ const FooterGreaterNoida = () => {
             <div className="col-md-3 col-sm-6 col-xs-12">
               {/* <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={250} height={52}/> */}
               <p className="footer-heading">Address</p>
-              <p>NS-26, Delta-2, Greater Noida, <br></br>Uttar Pradesh 201310  
+              <p><i className="bi bi-geo-alt-fill"></i> NS-26, Delta-2, Greater Noida, <br></br>Uttar Pradesh 201310  
                 </p>
                 <p className="footer-heading">Email id</p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:admissions.greaternoida@ramagyaschool.com">admissions.greaternoida@ramagyaschool.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:principal.greaternoida@ramagyaschool.com">principal.greaternoida@ramagyaschool.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:recruitment@ramagyagroup.com">recruitment@ramagyagroup.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:pc@ramagyagroup.com">pc@ramagyagroup.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:sports@ramagyagroup.com">sports@ramagyagroup.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:admissions.greaternoida@ramagyaschool.com"><i className="bi bi-envelope-fill"></i> admissions.greaternoida@ramagyaschool.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:principal.greaternoida@ramagyaschool.com"><i className="bi bi-envelope-fill"></i> principal.greaternoida@ramagyaschool.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:recruitment@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> recruitment@ramagyagroup.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:pc@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> pc@ramagyagroup.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:sports@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> sports@ramagyagroup.com</a></p>
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">For Enquiries</p>
-                <p>Contact No. <a href="tel:+917065078637">+91-7065 078 637</a></p>
+                <p>Contact No. <a href="tel:+917065078637"><i className="bi bi-telephone-fill"></i> +91-7065 078 637</a></p>
                 <p className="footer-heading">Social</p>
                 {/* <hr/> */}
                   <div className="social-icons">
