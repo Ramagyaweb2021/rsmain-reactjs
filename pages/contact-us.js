@@ -116,9 +116,9 @@ const ContactUs = () => {
                 <div className="card shadow-sm border-0 h-100 p-3">
                   <div className="card-body-contact-us">
                     {/* <h5 className="card-title fw-bold mb-4">{location.title}</h5> */}
-                    <center><h5 className="title-100 mb-2 text-uppercase">
+                   <h5 className="title-100 mb-2 text-uppercase">
                       {location.subtitle}
-                    </h5></center>
+                    </h5>
                     <p className="card-text">
                       <i className="bi bi-geo-alt-fill"></i> {location.address}
                     </p>
