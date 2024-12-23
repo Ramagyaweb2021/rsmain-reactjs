@@ -116,7 +116,7 @@ const ContactUs = () => {
                 <div className="card shadow-sm border-0 h-100 p-3">
                   <div className="card-body-contact-us">
                     {/* <h5 className="card-title fw-bold mb-4">{location.title}</h5> */}
-                   <h5 className="title-100 mb-2 text-uppercase">
+                    <h5 className="title-100 mb-2 text-uppercase">
                       {location.subtitle}
                     </h5>
                     <p className="card-text">
@@ -150,7 +150,7 @@ const ContactUs = () => {
         </div>
       </section>
       <section className='container location-map my-5'>
-        <LocationMap/>
+        <LocationMap />
       </section>
       <FooterNoida />
     </>

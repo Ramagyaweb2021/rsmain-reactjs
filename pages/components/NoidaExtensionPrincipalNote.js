@@ -26,7 +26,7 @@ const NoidaExtensionPrincipalNote = () => {
                   <p className="text-muted mb-1">
                     Principal | Ramagya School, Noida Extension
                   </p>
-                  <h5 className="fw-bold">Ms. Priyanka Singh</h5>
+                  <h5 className="fw-bold">Ms. Awani Singh</h5>
                   <p>
                     I am deeply honored to address you as the Principal of Ramagya School, Noida Extension. For over two decades, Ramagya School has been a beacon of education excellence in Delhi/NCR, and it is with great pride that I take on the responsibility of carrying forward this esteemed legacy.
                   </p>

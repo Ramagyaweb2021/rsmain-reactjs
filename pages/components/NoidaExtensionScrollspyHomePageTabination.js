@@ -97,9 +97,9 @@ const NoidaExtensionScrollspyHomePageTabination = () => {
       {/* <div data-bs-spy="scroll" data-bs-target="#tabNavbar" data-bs-offset="120"> */}
         {/* Infographics Section */}
         <section id="infographics" className="bg-image-section my-5 py-5">
-          <div className="text-center mb-4">
+          {/* <div className="text-center mb-4">
             <h3 className="main-heading-internal-pages wow animate__animated animate__fadeInUp mt-5" style={{ animationDelay: '0.1s'}}>INFOGRAPHICS</h3>
-          </div>
+          </div> */}
           <NoidaHomePageInfographics />
         </section>
 

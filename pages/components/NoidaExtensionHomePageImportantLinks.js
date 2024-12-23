@@ -7,7 +7,7 @@ const NoidaExtensionHomePageImportantLinks = () => {
     {
       img: "/images/noida/important-link/icon-1.webp",
       text: "Admission",
-      link: "https://forms.edunexttechnologies.com/forms/ramagyanoidaextension/registration/",
+      link: "/noida-extension/pre-admission",
     },
     {
       img: "/images/noida/important-link/icon-2.webp",
@@ -22,7 +22,7 @@ const NoidaExtensionHomePageImportantLinks = () => {
     {
       img: "/images/noida/important-link/icon-4.webp",
       text: "Pay Fees",
-      link: "https://ramagyanext.edunexttechnologies.com/DirectStudentOnlineFee",
+      link: "noida-extension/pay-school-fees",
     },
     // {
     //   img: "/images/noida/important-link/icon-5.webp",
@@ -31,8 +31,8 @@ const NoidaExtensionHomePageImportantLinks = () => {
     // },
     {
       img: "/images/noida/important-link/icon-6.webp",
-      text: "Parents’ Speak",
-      link: "testimonials",
+      text: "Parent's",
+      link: "noida-extension/parents",
     },
   ];
 

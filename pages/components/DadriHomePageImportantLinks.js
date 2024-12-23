@@ -22,7 +22,7 @@ const DadriHomePageImportantLinks = () => {
     {
       img: "/images/noida/important-link/icon-4.webp",
       text: "Pay Fees",
-      link: "https://ramagyadadri.edunexttechnologies.com/DirectStudentOnlineFee",
+      link: "/dadri/pay-school-fees",
     },
     // {
     //   img: "/images/noida/important-link/icon-5.webp",
@@ -31,8 +31,8 @@ const DadriHomePageImportantLinks = () => {
     // },
     {
       img: "/images/noida/important-link/icon-6.webp",
-      text: "Parents’ Speak",
-      link: "testimonials",
+      text: "Parent's",
+      link: "/dadri/parents",
     },
   ];
 

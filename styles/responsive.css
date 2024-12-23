@@ -15,7 +15,8 @@ body {
     margin: 0 auto; */
   }
   .card-gallery img {
-    height: 170px;
+    height: auto;
+    /* height: 170px; */
 }
   .main-video {
     /* margin-top: -88px; */
@@ -178,7 +179,8 @@ body {
       height: auto !important;
   }
   .card-gallery img {
-      height: 170px;
+    height: auto;
+      /* height: 170px; */
   }
   .feature-image {
       object-fit: cover;
@@ -1003,7 +1005,8 @@ body {
   padding: 0;
 }
 .card-gallery img {
-  height: 130px;
+  height: auto;
+  /* height: 130px; */
 }
 /* .scroll-sticky {
   position: relative !important;
