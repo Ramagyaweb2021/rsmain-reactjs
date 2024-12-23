@@ -10,6 +10,7 @@ import WhoWeAreScrollspyMenu from './components/WhoWeAreScrollspyMenu';
 import Founder from './components/Founder';
 // import Leadership from './components/Leadership';
 import FooterNoida from './components/FooterNoida';
+import AdvisoryBoard from './components/AdvisoryBoard';
 
 
 // Dynamically import WOW.js to avoid server-side issues
@@ -82,6 +83,7 @@ const People = () => {
         </div>
       </section> */}
       <Founder/>
+      <AdvisoryBoard/>
       {/* <Leadership/> */}
       <FooterNoida />
     </>

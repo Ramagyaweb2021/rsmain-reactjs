@@ -6,7 +6,7 @@ const leadershipData = [
     name: "Enquire Now",
     image: "/images/noida/admission/enquire-now.webp",
     button: "Enquire Now",
-    Link: "https://ramagyaschool.com/landing/",
+    Link: "https://ramagyaschool.com/noida/",
   },
   {
     name: "Admission 2024-25",

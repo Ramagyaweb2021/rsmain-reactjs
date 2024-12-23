@@ -157,7 +157,7 @@ const PostAdmission = () => {
                 <Image src="/images/noida/admission/further-info.webp" alt="further-info" width={120} height={140} />
                 <p>
                   <a
-                    href="https://ramagyaschool.com/noida/ramagya-school-edunext-app"
+                    href="/noida/parent-portal-guide"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn learn-more-button"

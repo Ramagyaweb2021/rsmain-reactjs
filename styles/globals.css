@@ -2156,6 +2156,58 @@ video.main-video {
   color: #fff;
   margin-top: 0;
 }
+.banner-section-experiment{
+  background-repeat: no-repeat;
+  background-image: url(/images/explore/experiment-banner.webp);
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  padding: 15px 60px;
+  z-index: 1;
+  color: #fff;
+  margin-top: 0;
+}
+.banner-section-innovate{
+  background-repeat: no-repeat;
+  background-image: url(/images/explore/innovate-banner.webp);
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  padding: 15px 60px;
+  z-index: 1;
+  color: #fff;
+  margin-top: 0;
+}
+.banner-section-lead{
+  background-repeat: no-repeat;
+  background-image: url(/images/explore/lead-banner.webp);
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  padding: 15px 60px;
+  z-index: 1;
+  color: #fff;
+  margin-top: 0;
+}
+.banner-section-evolve{
+  background-repeat: no-repeat;
+  background-image: url(/images/explore/evolve.webp);
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  padding: 15px 60px;
+  z-index: 1;
+  color: #fff;
+  margin-top: 0;
+}
 .banner-section-admission{
   background-repeat: no-repeat;
   background-image: url(/images/who-we-are/overview.webp);

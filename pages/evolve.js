@@ -32,7 +32,7 @@ const Evolve = () => {
       </Head>
       <Header />
       {/* Main banner section of the page */}
-      <section className="section banner-sec banner-section-explore">
+      <section className="section banner-sec banner-section-evolve">
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12">

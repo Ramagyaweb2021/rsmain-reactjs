@@ -12,7 +12,7 @@ const NoidaParentsMenu = () => {
     {
       img: "/images/branch-parent-link-img/teacher-call-appointment.webp",
       text: "Teacher's Call Appointment form",
-      link: "https://script.google.com/a/macros/ramagyagroup.com/s/AKfycbz7D1NDSiklPX1REBEPrDyIboRRvL1A4xMO59ryDjQZ0fdvf4iCo4IXWoUJg7HupaID/exec",
+      link: "https://script.google.com/a/macros/ramagyagroup.com/s/AKfycbzP6oytnCHJm8InKsFZxK_u29cuH693Vcg1xpOHEDPt-Yg0aEyVALedf9RRhLdz6ILGnw/exec",
     },
     {
       img: "/images/branch-parent-link-img/book-an-appointment.webp",

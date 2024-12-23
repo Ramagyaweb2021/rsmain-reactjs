@@ -51,14 +51,14 @@ function NoidaParentsSidebarMenu() {
       <nav className={`nav-menu ${isMenuOpen ? 'open' : 'closed'} py-0`}>
         {/* <h3>Parent&#39;s Quick Links</h3> */}
       <Link
-          href="https://script.google.com/Link/macros/ramagyagroup.com/s/LinkKfycbz7D1NDSiklPX1REBEPrDyIboRRvL1A4xMO59ryDjQZ0fdvf4iCo4IXWoUJg7HupaID/exec"
+          href="https://script.google.com/a/macros/ramagyagroup.com/s/AKfycbz7D1NDSiklPX1REBEPrDyIboRRvL1A4xMO59ryDjQZ0fdvf4iCo4IXWoUJg7HupaID/exec"
           target="_blank"
           rel="noopener noreferrer"
           >
           Principal&#39;s Office Helpdesk
         </Link>
         <Link
-           href="https://script.google.com/Link/macros/ramagyagroup.com/s/LinkKfycbz7D1NDSiklPX1REBEPrDyIboRRvL1A4xMO59ryDjQZ0fdvf4iCo4IXWoUJg7HupaID/exec"
+           href="https://script.google.com/a/macros/ramagyagroup.com/s/AKfycbzP6oytnCHJm8InKsFZxK_u29cuH693Vcg1xpOHEDPt-Yg0aEyVALedf9RRhLdz6ILGnw/exec"
           target="_blank"
           rel="noopener noreferrer"
         >

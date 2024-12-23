@@ -222,7 +222,7 @@ const ScholarshipProgramme = () => {
         </div>
       </section>
        {/* Appointment section */}
-       <section className="container about-us my-5">
+       {/* <section className="container about-us my-5">
         <div className='row'>
           <div className="col-md-12">
             <div className="text-left mb-5">
@@ -242,7 +242,7 @@ const ScholarshipProgramme = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                {/* <Image src="/images/noida/admission/book-appointment.webp" alt="book-appointment" width={120} height={140} /> */}
+                <Image src="/images/rs-noida-branch.webp" alt="book-appointment" width={120} height={140} />
                  <h5>Ramagya School</h5>
                  <h2 className='mt-50'>NOIDA</h2>
                 <p>
@@ -261,7 +261,7 @@ const ScholarshipProgramme = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                {/* <Image src="/images/noida/admission/book-appointment.webp" alt="book-appointment" width={120} height={140} /> */}
+                <Image src="/images/rs-noida-ext-branch.webp" alt="book-appointment" width={120} height={140} />
                  <h5>Ramagya School</h5>
                  <h2 className='mt-50'>NOIDA EXT.</h2>
                 <p>
@@ -280,7 +280,7 @@ const ScholarshipProgramme = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                {/* <Image src="/images/noida/admission/book-appointment.webp" alt="book-appointment" width={120} height={140} /> */}
+                <Image src="/images/rs-gnoida-branch.webp" alt="book-appointment" width={120} height={140} />
                  <h5>Ramagya School</h5>
                  <h2 className='mt-50'>GREATER NOIDA</h2>
                 <p>
@@ -299,7 +299,7 @@ const ScholarshipProgramme = () => {
           <div className="col-md-3 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
-                {/* <Image src="/images/noida/admission/book-appointment.webp" alt="book-appointment" width={120} height={140} /> */}
+                <Image src="/images/rs-dadri-branch.webp" alt="book-appointment" width={120} height={140} />
                  <h5>Ramagya School</h5>
                  <h2 className='mt-50'>DADRI</h2>
                 <p>
@@ -317,7 +317,7 @@ const ScholarshipProgramme = () => {
           </div>
        
         </div>
-      </section>
+      </section> */}
       <FooterNoida />
     </>
   );
