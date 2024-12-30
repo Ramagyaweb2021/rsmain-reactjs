@@ -54,14 +54,16 @@ const TransportationFee = () => {
       </div> */}
 
       <div className="text-center mt-4"><hr/>
-        <h5 className="fw-bold" style={{textAlign:"center"}}>Discount For Special Group</h5>
+      <h5 className="fw-bold" style={{textAlign:"center"}}>Sibling Concession-</h5>
+       <p>For sibling concession- Please contact admissions department +91 - 8010 333 555</p>
+        {/* <h5 className="fw-bold" style={{textAlign:"center"}}>Discount For Special Group</h5>
         <ul className="list-unstyled">
           <li>· Discounts for Army Officials.</li>
           <li>· Discounts for Widow Mothers.</li>
         </ul>
         <p className="text-muted" style={{ fontSize: '0.9rem' }}>
           *Increase in the composite Fees would be as per the Government norms
-        </p>
+        </p> */}
       </div>
     </div>
   );

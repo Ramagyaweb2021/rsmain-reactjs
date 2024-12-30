@@ -51,8 +51,20 @@ const TransportationFeeNoidaExtension = () => {
           <p>3900 /-</p>
         </div>
       </div> */}
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="text-center">
+          <h5 class="fw-bold">Discount For Special Group</h5>
+          <ul class="custom-bullets list-unstyled">
+            <li>Discounts for Army Officials.</li>
+            <li>Discounts for Widow Mothers.</li>
+            {/* <li>Discounts for Divorcee Women.</li>
+            <li>Discounts for Widow Mothers.</li> */}
+          </ul>
+          <p>*Increase in the composite Fees would be as per the Government norms</p>
+        </div>
+      </div>
 
-      <div className="text-center mt-4"><hr/>
+      {/* <div className="text-center mt-4"><hr/>
         <h5 className="fw-bold" style={{textAlign:"center"}}>Discount For Special Group</h5>
         <ul className="list-unstyled">
           <li>· Discounts for Army Officials.</li>
@@ -61,7 +73,7 @@ const TransportationFeeNoidaExtension = () => {
         <p className="text-muted" style={{ fontSize: '0.9rem' }}>
           *Increase in the composite Fees would be as per the Government norms
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
