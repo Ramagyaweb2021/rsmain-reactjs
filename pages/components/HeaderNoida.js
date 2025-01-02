@@ -318,7 +318,7 @@ const Header = () => {
                     </li>
                     <li>
                       <a className="dropdown-item" href="/noida/recommend-a-student">
-                         Recomment a Student
+                         Recommend a Student
                       </a>
                     </li>
                   </ul>
