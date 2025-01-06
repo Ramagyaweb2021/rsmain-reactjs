@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import ModalVideo from 'react-modal-video';
+import 'react-modal-video/css/modal-video.css';
 import Image from 'next/image';
+//import dynamic from 'next/dynamic';
+
+//const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const NoidaGalleryInternalPage = () => {
   useEffect(() => {
@@ -15,19 +18,24 @@ const NoidaGalleryInternalPage = () => {
       },
       { threshold: 0.2 }
     );
-
+  
     const elements = document.querySelectorAll('.animate-on-scroll');
     elements.forEach((el) => observer.observe(el));
-
+  
     return () => observer.disconnect();
   }, []);
-
+  
   const [activeTab, setActiveTab] = useState('All');
   const [activeGallery, setActiveGallery] = useState('Images');
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const imageTabs = ['All', 'School Events', 'Sports', 'Science Lab'];
+  const videoTabs = ['All', 'Celeb Bites'];
+
   const items = [
+    // Image items
     {
       "src": "/images/gallery/img/1.webp",
       "title": "Ramagya School Gallery",
@@ -112,18 +120,32 @@ const NoidaGalleryInternalPage = () => {
 
   const filteredItems = items.filter((item) => {
     const matchesTab = activeTab === 'All' || item.category === activeTab;
-    const matchesGallery =
-      activeGallery === 'Images' ? item.type === 'image' : item.type === 'video';
+    const matchesGallery = activeGallery === 'Images' ? item.type === 'image' : item.type === 'video';
     return matchesTab && matchesGallery;
   });
 
+  // useEffect(() => {
+  //   const wow = new WOW.WOW({ live: false });
+  //   wow.init();
+  // }, []);
+
   const openModal = (index) => {
+    const item = filteredItems[index];
     setCurrentIndex(index);
-    setIsModalOpen(true);
+    item.type === 'video' ? setIsVideoModalOpen(true) : setIsImageModalOpen(true);
   };
 
   const closeModal = () => {
-    setIsModalOpen(false);
+    setIsVideoModalOpen(false);
+    setIsImageModalOpen(false);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % filteredItems.length);
+  };
+
+  const handlePrevious = () => {
+    setCurrentIndex((prev) => (prev - 1 + filteredItems.length) % filteredItems.length);
   };
 
   return (
@@ -141,61 +163,48 @@ const NoidaGalleryInternalPage = () => {
           </div>
         </div>
 
+        {/* Gallery Selector */}
         <div className="d-flex justify-content-center mb-3">
           <button
-            className={`btn mx-2 ${
-              activeGallery === 'Images'
-                ? 'btn-warning-gallery'
-                : 'btn-outline-warning'
-            }`}
+            className={`btn mx-2 ${activeGallery === 'Images' ? 'btn-warning-gallery' : 'btn-outline-warning'}`}
             onClick={() => setActiveGallery('Images')}
           >
             Image Gallery
           </button>
           <button
-            className={`btn mx-2 ${
-              activeGallery === 'Videos'
-                ? 'btn-warning-gallery'
-                : 'btn-outline-warning'
-            }`}
+            className={`btn mx-2 ${activeGallery === 'Videos' ? 'btn-warning-gallery' : 'btn-outline-warning'}`}
             onClick={() => setActiveGallery('Videos')}
           >
             Video Gallery
           </button>
         </div>
 
+        {/* Tab Selector */}
+        {/* <div className="d-flex justify-content-center flex-wrap mb-4">
+          {(activeGallery === 'Images' ? imageTabs : videoTabs).map((tab) => (
+            <button
+              key={tab}
+              className={`btn mx-2 ${activeTab === tab ? 'btn-warning-gallery' : 'btn-outline-warning'}`}
+              onClick={() => setActiveTab(tab)}
+            >
+              {tab}
+            </button>
+          ))}
+        </div> */}
+
+        {/* Gallery Items */}
         <div className="row g-2">
           {filteredItems.length > 0 ? (
             filteredItems.map((item, index) => (
-              <div
-                key={index}
-                className="col-md-3 col-6"
-                onClick={() => openModal(index)}
-                style={{ cursor: 'pointer' }}
-              >
-                <div className="card-gallery">
+              <div key={index} className="col-md-3 col-6">
+                <div className="card-gallery" style={{ cursor: 'pointer' }} onClick={() => openModal(index)}>
                   {item.type === 'image' ? (
-                    <Image
-                      src={item.src}
-                      alt={item.title}
-                      width={350}
-                      height={300}
-                    />
+                    <Image src={item.src} alt={item.title} width={350} height={300} />
                   ) : (
                     <div className="image-container-testimonial">
-                      <Image
-                        src={item.src}
-                        alt={item.title}
-                        width={450}
-                        height={250}
-                      />
+                      <Image src={item.src} alt={item.title} width={450} height={250} />
                       <div className="play-button-overlay">
-                        <Image
-                          src="/images/youtube-play-icon.webp"
-                          alt="Play Button"
-                          width={96}
-                          height={96}
-                        />
+                        <Image src="/images/youtube-play-icon.webp" alt="Play Button" width={96} height={96} />
                       </div>
                     </div>
                   )}
@@ -207,41 +216,26 @@ const NoidaGalleryInternalPage = () => {
           )}
         </div>
         <div className="d-flex justify-content-center align-items-center mt-1">
-          <div className="learn-more-button">
-            <a href="gallery">View More</a>
+                  <div className="learn-more-button">
+                    <a href="gallery">View More</a>
+                  </div>
+                </div>
+      </div>
+
+      {/* Video Modal */}
+      <ModalVideo channel="youtube" isOpen={isVideoModalOpen} videoId={filteredItems[currentIndex]?.videoId} onClose={closeModal} />
+
+      {/* Image Modal */}
+      {isImageModalOpen && (
+        <div className="custom-modal-backdrop" style={{zIndex:"1111"}}>
+          <div className="custom-modal-content">
+            <button className="close-button" onClick={closeModal}>X</button>
+            <button className="prev-button" onClick={handlePrevious}></button>
+            <Image src={filteredItems[currentIndex]?.src} alt="Gallery Image" width={850} height={500} />
+            <button className="next-button" onClick={handleNext}></button>
           </div>
         </div>
-        {/* Modal */}
-        <Modal show={isModalOpen} onHide={closeModal} centered>
-          <Modal.Header closeButton style={{background:"#000"}}>
-            {/* <Modal.Title>
-              {filteredItems[currentIndex]?.title || 'Gallery Item'}
-            </Modal.Title> */}
-          </Modal.Header>
-          <Modal.Body>
-            {filteredItems[currentIndex]?.type === 'image' ? (
-              <Image
-                src={filteredItems[currentIndex]?.src}
-                alt={filteredItems[currentIndex]?.title}
-                width={1250}
-                height={500}
-              />
-            ) : (
-              <div className="video-container">
-                <iframe
-                  width="100%"
-                  height="400px"
-                  src={`https://www.youtube.com/embed/${filteredItems[currentIndex]?.videoId}`}
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  title="Video"
-                />
-              </div>
-            )}
-          </Modal.Body>
-        </Modal>
-      </div>
+      )}
     </div>
   );
 };

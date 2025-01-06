@@ -137,7 +137,7 @@ export default function Home() {
             "testimonials",
             "footer",
           ]}
-          navigation={true}
+          navigation={false}
           licenseKey="NU1M9-5PXTK-R7H4J-MIJMJ-KELSL"
           responsiveWidth={1000}
           onLeave={onLeave}

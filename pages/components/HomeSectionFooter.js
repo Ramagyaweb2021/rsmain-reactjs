@@ -133,7 +133,7 @@ const HomeSectionFooter = () => {
                 <p><Link href="https://ramagyagroup.com/current-opening" target='_blank'>Careers</Link></p>
                 <p><Link href="contact-us">Contact Us</Link></p>
                 <p><Link href="results" target='_blank'>Results</Link></p>
-                <p><Link href="https://blogs.ramagyaschool.com">Blog</Link></p>
+                <p><Link href="https://blogs.ramagyaschool.com" target='_blank'>Blog</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>
                 <p><Link href="#">Media Press</Link></p>

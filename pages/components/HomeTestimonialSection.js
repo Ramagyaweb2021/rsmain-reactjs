@@ -1,15 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
-//import dynamic from 'next/dynamic';
-//import 'animate.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; 
 import Image from 'next/image';
-import ModalVideo from 'react-modal-video';
-import 'react-modal-video/css/modal-video.css';
-
-// Dynamically import WOW.js to avoid server-side issues
-//const WOW = dynamic(() => import('wowjs'), { ssr: false });
+import { Modal } from 'react-bootstrap'; // Import React Bootstrap Modal
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is loaded
 
 const SampleNextArrow = ({ onClick }) => {
   return (
@@ -79,27 +74,25 @@ const HomeTestimonialSection = () => {
       },
       { threshold: 0.2 }
     );
-  
+
     const elements = document.querySelectorAll('.animate-on-scroll');
     elements.forEach((el) => observer.observe(el));
-  
+
     return () => observer.disconnect();
   }, []);
-  
-  // useEffect(() => {
-  //   const WOWJS = require('wowjs');
-  //   const wow = new WOWJS.WOW({ live: false });
-  //   wow.init();
-  // }, []);
 
   const sliderRef = useRef(null);
-  const [isOpen, setIsOpen] = useState(false);
-  const [videoId, setVideoId] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  const [videoUrl, setVideoUrl] = useState('');
 
   const openModal = (url) => {
-    const videoId = new URL(url).searchParams.get('v');
-    setVideoId(videoId);
-    setIsOpen(true);
+    setVideoUrl(url);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setVideoUrl('');
   };
 
   const settings = {
@@ -146,42 +139,62 @@ const HomeTestimonialSection = () => {
       content: 'Minister of Women and Child Development, and also Minister of Minority Affairs',
       value: 'RS Noida Branch',
       img: '/images/testimonial-thumb/smiriti.webp',
-      videoUrl: 'https://www.youtube.com/watch?v=1yWQuKlJqTc'
+      videoUrl: 'https://www.youtube.com/embed/1yWQuKlJqTc'
     },
     {
       title: 'Abhinav Bindra',
       content: 'Olympic Gold Medalist',
       value: 'RS Noida Extension',
       img: '/images/testimonial-thumb/abhinav-bindra.webp',
-      videoUrl: 'https://www.youtube.com/watch?v=Hmp_tCEB0Y4'
+      videoUrl: 'https://www.youtube.com/embed/Hmp_tCEB0Y4'
     },
     {
       title: 'Mr. Mahesh Shrinivas Bhupathi',
       content: 'International Tennis Player',
       value: 'RS Noida Branch',
       img: '/images/testimonial-thumb/mahesh-bhupati.webp',
-      videoUrl: 'https://www.youtube.com/watch?v=KSBSoF2qYqc'
+      videoUrl: 'https://www.youtube.com/embed/KSBSoF2qYqc'
     },
     {
       title: 'Dav Whatmore',
       content: 'Australian Cricketer',
       value: 'RS Noida Branch',
       img: '/images/testimonial-thumb/dav-whatmore.webp',
-      videoUrl: 'https://www.youtube.com/watch?v=L9kJnwDDF34'
+      videoUrl: 'https://www.youtube.com/embed/L9kJnwDDF34'
     },
     {
       title: 'Viswanathan Anand',
       content: 'World Chess Champion',
       value: 'RS Noida Branch',
       img: '/images/testimonial-thumb/vishwanath-anand.webp',
-      videoUrl: 'https://www.youtube.com/watch?v=rYnH2LND6Lg'
+      videoUrl: 'https://www.youtube.com/embed/rYnH2LND6Lg'
     },
   ];
 
   return (
     <div className="learn">
       <div className="container my-custom-testimonials">
-        <ModalVideo channel="youtube" isOpen={isOpen} videoId={videoId} onClose={() => setIsOpen(false)} />
+        {/* Bootstrap Modal */}
+        <Modal show={showModal} onHide={closeModal} centered size="lg">
+          <Modal.Header closeButton style={{background:"#000"}}>
+            {/* <Modal.Title>Video Testimonial</Modal.Title> */}
+          </Modal.Header>
+          <Modal.Body>
+            {videoUrl && (
+              <div className="video-container" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+                <iframe
+                  src={videoUrl}
+                  title="Video Testimonial"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                ></iframe>
+              </div>
+            )}
+          </Modal.Body>
+        </Modal>
+
         <div className="row align-items-center">
           <div className="col-md-12 learn text-center text-md-center">
             <h1 className="main-heading scrollspy-p-0">
@@ -199,6 +212,7 @@ const HomeTestimonialSection = () => {
             </p>
           </div>
         </div>
+
         <div className="row" id="testimonial-slider">
           <Slider ref={sliderRef} {...settings}>
             {data.map((item, index) => (
