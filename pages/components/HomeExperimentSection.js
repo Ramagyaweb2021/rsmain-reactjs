@@ -13,9 +13,9 @@ const HomeExperimentSection = () => {
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 5000,
+    speed: 1000,
     autoplay: true,
-    autoplaySpeed: 5000, 
+    autoplaySpeed: 10000, 
     swipe: false,
     draggable: false,
     dotsClass: "slick-dots custom-dots",
@@ -30,9 +30,9 @@ const HomeExperimentSection = () => {
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 3000,
+    speed: 1000,
     autoplay: true,
-    autoplaySpeed: 5000, 
+    autoplaySpeed: 10000, 
     swipe: false,
     draggable: false,
     dotsClass: "slick-dots custom-dots",
@@ -46,9 +46,9 @@ const HomeExperimentSection = () => {
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 3000,
+    speed: 1000,
     autoplay: true,
-    autoplaySpeed: 5000, 
+    autoplaySpeed: 10000, 
     swipe: false,
     draggable: false,
     dotsClass: "slick-dots custom-dots",
@@ -64,7 +64,7 @@ const HomeExperimentSection = () => {
         if (prevCategory === 'category2') return 'category3';
         return 'category1';
       });
-    }, 5000); // Change category every 6 seconds (adjust the time as needed)
+    }, 10000); // Change category every 6 seconds (adjust the time as needed)
 
     return () => clearInterval(categoryInterval); // Clean up on component unmount
   }, []);
