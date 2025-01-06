@@ -2,11 +2,29 @@ import React, { useEffect, useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.css';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
+//import dynamic from 'next/dynamic';
 
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
+//const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const NoidaGalleryInternalPage = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+  
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    elements.forEach((el) => observer.observe(el));
+  
+    return () => observer.disconnect();
+  }, []);
+  
   const [activeTab, setActiveTab] = useState('All');
   const [activeGallery, setActiveGallery] = useState('Images');
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -138,7 +156,7 @@ const NoidaGalleryInternalPage = () => {
             <h1>
               GALLERY
               <span className="lineclass" />
-              <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+              <span className="sub-heading animate-on-scroll">
                 OUR CAPTURED MEMORY
               </span>
             </h1>

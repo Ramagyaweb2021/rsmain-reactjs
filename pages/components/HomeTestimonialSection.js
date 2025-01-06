@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-import dynamic from 'next/dynamic';
-import 'animate.css';
+//import dynamic from 'next/dynamic';
+//import 'animate.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; 
@@ -9,7 +9,7 @@ import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.css';
 
 // Dynamically import WOW.js to avoid server-side issues
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
+//const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const SampleNextArrow = ({ onClick }) => {
   return (
@@ -69,10 +69,28 @@ const SamplePrevArrow = ({ onClick }) => {
 
 const HomeTestimonialSection = () => {
   useEffect(() => {
-    const WOWJS = require('wowjs');
-    const wow = new WOWJS.WOW({ live: false });
-    wow.init();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+  
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    elements.forEach((el) => observer.observe(el));
+  
+    return () => observer.disconnect();
   }, []);
+  
+  // useEffect(() => {
+  //   const WOWJS = require('wowjs');
+  //   const wow = new WOWJS.WOW({ live: false });
+  //   wow.init();
+  // }, []);
 
   const sliderRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -169,7 +187,7 @@ const HomeTestimonialSection = () => {
             <h1 className="main-heading scrollspy-p-0">
               TESTIMONIALS
               <span className="lineclass" />
-              <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+              <span className="sub-heading animate-on-scroll">
                 VOICES THAT INSPIRE OUR JOURNEY
               </span>
             </h1>

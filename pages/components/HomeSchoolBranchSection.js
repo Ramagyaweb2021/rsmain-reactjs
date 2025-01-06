@@ -1,20 +1,38 @@
 import React from 'react';
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import Image from 'next/image';
 import Link from 'next/link';
-import dynamic from 'next/dynamic'; // Import dynamic from Next.js
-import 'animate.css'; // Import animate.css for animations
+//import dynamic from 'next/dynamic'; // Import dynamic from Next.js
+//import 'animate.css'; // Import animate.css for animations
 // Dynamically import WOW.js for animations// Dynamically import WOW.js to avoid server-side issues
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
+// const WOW = dynamic(() => import('wowjs'), { ssr: false });
 const HomeSchoolBranchSection = () => {
-  useEffect(() => {
-    // Initialize WOW.js on the client side
-    const WOWJS = require('wowjs');
-    const wow = new WOWJS.WOW({
-      live: false // Disable live for better performance
-    });
-    wow.init();
-  }, []);
+  //useEffect(() => {
+     // Initialize WOW.js only on the client side
+   //   const WOWJS = require('wowjs');
+   //   const wow = new WOWJS.WOW({
+   //     live: false
+   //   });
+   //   wow.init();
+   // }, []); 
+   //Use IntersectionObserver for Animation Triggers
+   useEffect(() => {
+     const observer = new IntersectionObserver(
+       (entries) => {
+         entries.forEach((entry) => {
+           if (entry.isIntersecting) {
+             entry.target.classList.add('animate__animated', 'animate__zoomIn');
+           }
+         });
+       },
+       { threshold: 0.2 }
+     );
+   
+     const elements = document.querySelectorAll('.animate-on-scroll');
+     elements.forEach((el) => observer.observe(el));
+   
+     return () => observer.disconnect();
+   }, []);
   
   return (
     <>
@@ -26,8 +44,7 @@ const HomeSchoolBranchSection = () => {
             OUR CAMPUSES
             <span className="lineclass" />
             <span
-              className="sub-heading wow animate__animated animate__zoomIn sub-heading"
-              style={{ animationDelay: '0.3s' }}
+              className="sub-heading animate-on-scroll"
             >
                Explore Our campuses
               {/* Explore Our Vibrant campuses

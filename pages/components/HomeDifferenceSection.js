@@ -2,25 +2,44 @@ import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import dynamic from 'next/dynamic';
-import 'animate.css';
+//import dynamic from 'next/dynamic';
+//import 'animate.css';
 import Image from 'next/image'
 // Dynamically import WOW.js to avoid server-side issues
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
+//const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const HomeDifferenceSection = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  useEffect(() => {
+  //useEffect(() => {
     // Initialize WOW.js only on the client side
-    const WOWJS = require('wowjs');
-    const wow = new WOWJS.WOW({
-      live: false
-    });
-    wow.init();
-  }, []); // Empty dependency array ensures this runs once on mount
+  //   const WOWJS = require('wowjs');
+  //   const wow = new WOWJS.WOW({
+  //     live: false
+  //   });
+  //   wow.init();
+  // }, []); 
+  // IntersectionObserver
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+  
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    elements.forEach((el) => observer.observe(el));
+  
+    return () => observer.disconnect();
+  }, []);
+  
   return (
     <>
   
@@ -33,7 +52,7 @@ const HomeDifferenceSection = () => {
         <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
         <h1 className="main-heading">THE DIFFERENCE  WE MAKE
           <span className="lineclass" />
-          <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+          <span className="sub-heading animate-on-scroll">
               Don’t Just Educate!
               {/* Transform Holistically! */}
           </span>

@@ -1,15 +1,41 @@
 import React, { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
-import "animate.css";
+//import dynamic from "next/dynamic";
+//import "animate.css";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Dynamically import WOW.js to avoid server-side issues
-const WOW = dynamic(() => import("wowjs"), { ssr: false });
+//const WOW = dynamic(() => import("wowjs"), { ssr: false });
 
 const HomeLeadSection = () => {
+   //useEffect(() => {
+      // Initialize WOW.js only on the client side
+    //   const WOWJS = require('wowjs');
+    //   const wow = new WOWJS.WOW({
+    //     live: false
+    //   });
+    //   wow.init();
+    // }, []); 
+    //Use IntersectionObserver for Animation Triggers
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate__animated', 'animate__zoomIn');
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+    
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      elements.forEach((el) => observer.observe(el));
+    
+      return () => observer.disconnect();
+    }, []);
   // Set default active category to "Achievements"
   const [activeCategory, setActiveCategory] = useState("Achievements");
 
@@ -127,8 +153,7 @@ const HomeLeadSection = () => {
               LEAD
               <span className="lineclass" />
               <span
-                className="sub-heading wow animate__animated animate__zoomIn"
-                style={{ animationDelay: "0.3s" }}
+                className="sub-heading animate-on-scroll"
               >
                  EMPOWERING JOURNEYS, INSPIRING FUTURES
               </span>

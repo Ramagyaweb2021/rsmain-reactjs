@@ -7,9 +7,9 @@ const ThankYouPage = () => {
       <Head>
         <title>Thank You | Ramagya School</title>
         <meta name="description" content="Thank You" />
-        <link rel="canonical" href="https://ramagyaschool.com/thank-you" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida-extension/thank-you" />
         {/* Meta tag for redirection after 2 seconds */}
-        <meta httpEquiv="refresh" content="2;url=https://ramagyaschool.com" />
+        <meta httpEquiv="refresh" content="2;url=https://ramagyaschool.com/noida-extension" />
       </Head>
 
       {/* Google Analytics Tracking */}
@@ -27,7 +27,7 @@ const ThankYouPage = () => {
       />
 
       {/* Facebook Pixel Code */}
-      <Script
+      {/* <Script
         id="facebook-pixel"
         dangerouslySetInnerHTML={{
           __html: `
@@ -44,10 +44,10 @@ const ThankYouPage = () => {
             fbq('track', 'Lead', { currency: 'INR' });
           `,
         }}
-      />
+      /> */}
 
       {/* NoScript Fallback for Facebook Pixel */}
-      <div
+      {/* <div
         dangerouslySetInnerHTML={{
           __html: `
             <noscript>
@@ -55,7 +55,7 @@ const ThankYouPage = () => {
             </noscript>
           `,
         }}
-      />
+      /> */}
 
       {/* Thank You Page Content */}
       <div className="vh-100 d-flex justify-content-center align-items-center">
@@ -88,7 +88,7 @@ const ThankYouPage = () => {
                 Ramagya School
               </p>
               <a
-                href="https://qr1.be/ZJ68"
+                href="https://qr1.be/624V"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline-danger"

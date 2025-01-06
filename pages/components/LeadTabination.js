@@ -44,7 +44,7 @@ const LeadTabination = () => {
                  <p className='my-4' style={{ textAlign: "center" }}>
                     Through this collaboration, Ramagya School is proud to equip students with the tools, insights, and support needed to pursue their academic dreams on an international stage.</p>
                 </Tab>
-                <Tab eventKey="alumini" title="Alumini">
+                <Tab eventKey="alumni" title="Alumni">
                   
                   {/* <section section className="explore-section my-5">
                     <div className="container">

@@ -1,19 +1,37 @@
 import React, { useEffect } from 'react';
-import dynamic from 'next/dynamic';
-import 'animate.css';
+//import dynamic from 'next/dynamic';
+//import 'animate.css';
 
 // Dynamically import WOW.js to avoid server-side issues
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
+//const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const HomeExploreSection = () => {
-  useEffect(() => {
-    // Initialize WOW.js only on the client side
-    const WOWJS = require('wowjs');
-    const wow = new WOWJS.WOW({
-      live: false
-    });
-    wow.init();
-  }, []); // Empty dependency array ensures this runs once on mount
+ //useEffect(() => {
+      // Initialize WOW.js only on the client side
+    //   const WOWJS = require('wowjs');
+    //   const wow = new WOWJS.WOW({
+    //     live: false
+    //   });
+    //   wow.init();
+    // }, []); 
+    //Use IntersectionObserver for Animation Triggers
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate__animated', 'animate__zoomIn');
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+    
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      elements.forEach((el) => observer.observe(el));
+    
+      return () => observer.disconnect();
+    }, []);
   return (
     <>
       
@@ -25,7 +43,7 @@ const HomeExploreSection = () => {
                   EXPLORE
                   <span className="lineclass" />
                   {/* <span className="sub-heading"> */}
-                  <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                  <span className="sub-heading animate-on-scroll">
                     OUR APPROACH & CURRICULUM
                   </span>
                 </h1>

@@ -1,36 +1,62 @@
 import { useEffect } from 'react';
-// import Head from 'next/head'
-// import Script from 'next/script'
-// import App from 'next/app';
+import Script from 'next/script';
+import { useRouter } from 'next/router';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import '../styles/globals.css'; // or wherever your global CSS is located
-import '../styles/scrollspy.css'; // or wherever your scrollspy CSS is located
-import '../styles/responsive.css'; // or wherever your global CSS is located
-//import '../styles/styleinternalpages.css'; // or wherever your internal pages CSS is located
-//import '../styles/_custom.scss'; // or wherever your custom SCSS is located
+import '../styles/globals.css';
+import '../styles/scrollspy.css';
+import '../styles/responsive.css';
+
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  // Google Analytics setup
   useEffect(() => {
-    // Dynamically import bootstrap JS for client-side rendering
+    const handleRouteChange = (url) => {
+      if (typeof window.gtag === 'function') {
+        window.gtag('config', 'AW-649958479', {
+          page_path: url,
+        });
+      }
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
+  // Dynamically load Bootstrap and jQuery
+  useEffect(() => {
     if (typeof window !== 'undefined') {
       require('bootstrap/dist/js/bootstrap.bundle.min.js');
       require('jquery/dist/jquery.min.js');
     }
-    // const disableMiddleClickScroll = (event) => {
-    //   if (event.button === 1) { 
-    //     event.preventDefault(); 
-    //   }
-    // };
-     // Attach the event listener for the middle mouse button
-    //  window.addEventListener('mousedown', disableMiddleClickScroll);
-
-     // Clean up the event listener on unmount
-    //  return () => {
-    //    window.removeEventListener('mousedown', disableMiddleClickScroll);
-    //  };
   }, []);
- return <Component {...pageProps} />;
+
+  return (
+    <>
+      {/* Google Analytics Script */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=AW-649958479"
+      ></Script>
+      <Script
+        id="google-analytics"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-649958479', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+      {/* Render the main page component */}
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;

@@ -62,11 +62,11 @@ const PreAdmission = () => {
 
       {/* Pre admission section */}
       <section className="container learn pre-admission-section my-5">
-        <h1 className="main-heading wow animate__animated animate__fadeInUp mt-5" style={{ animationDelay: '0.3s'}}>
-               PRE-ADMISSION 
-            </h1>
-            <p>Parents and guardians desirous of admitting their wards to Ramagya School should familiarize themselves with the school by filling the Inquiry Form. It is requested to fill in the undisguised details in the form that would help the school to create a suitable environment for the child, once admitted.</p>
-            <Image src="/images/noida/admission/pre-admission-step.webp" alt="pre-admission-step" width={1256} height={296} />
+        <h1 className="main-heading wow animate__animated animate__fadeInUp mt-5" style={{ animationDelay: '0.3s' }}>
+          PRE-ADMISSION
+        </h1>
+        <p>Parents and guardians desirous of admitting their wards to Ramagya School should familiarize themselves with the school by filling the Inquiry Form. It is requested to fill in the undisguised details in the form that would help the school to create a suitable environment for the child, once admitted.</p>
+        <Image src="/images/noida/admission/pre-admission-step.webp" alt="pre-admission-step" width={1256} height={296} />
       </section>
       {/* Pre admission step section */}
       {/* <section className="container pre-admission-step-section text-center my-5 wow animate__animated animate__fadeInUp" style={{ animationDelay: '0.3s' }}>
@@ -190,13 +190,13 @@ const PreAdmission = () => {
               <p><Image src="/images/doc.webp" width={10} height={13} alt="doc" /> Archetypes of applicant’s school work i.e. exercise books, portfolios, etc.</p>
               <p><Image src="/images/doc.webp" width={10} height={13} alt="doc" /> Primary level applicants (up to Grade 5) should bear at least one book that they prefer reading</p>
               <p><b>Assessment Measures</b></p>
-             
+
               <p><b>For Pre-primary School -</b> Applicants will be examined by the Primary Head. During this interactive session, the applicant may be asked to mount on a few simple activities.</p>
               <p><b>For Primary School -</b> Applicants for class 1st to 5th will undergo the Interaction session and a written test. Testing is done for Basic English and Mathematics and Hindi.</p>
               <p><b>For Grades 6 to 8 -</b> Applicants will undergo the Interaction session and a written test. Assessment will be primarily based on Basic English, Integrated Science, Mathematics, and Hindi.</p>
               <p><b>For Grade 9 - </b> Students will also be assessed for Integrated Science (Physics, Chemistry, and Biology).</p>
               <p><b>For Grade 10 - </b> Students are only taken if they are transferring from a similar school and their admission is based on reports from their existing school and interaction and test.</p>
-              
+
             </div>
           </div>
           <div className="col-lg-4">
@@ -236,10 +236,10 @@ const PreAdmission = () => {
         </div>
         <div className="row justify-content-center">
           <h2
-          className="main-heading-internal-pages wow animate__animated animate__fadeInDown"
-          style={{ animationDelay: '0.2s', textAlign: "center" }}
+            className="main-heading-internal-pages wow animate__animated animate__fadeInDown"
+            style={{ animationDelay: '0.2s', textAlign: "center" }}
           >
-          Facilities
+            Facilities
           </h2>
           <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
@@ -281,7 +281,7 @@ const PreAdmission = () => {
               </div>
             </div>
           </div>
-           <div className="col-md-2 col-6 mb-4">
+          <div className="col-md-2 col-6 mb-4">
             <div className="card text-center h-100 border-0">
               <div className="card-value-body">
                 <Image src="/images/admission/facility/cctv-camera.webp" alt="facility" width={95} height={80} />
@@ -386,91 +386,91 @@ const PreAdmission = () => {
             </div>
           </div>
         </div>
-      </section>  
+      </section>
       {/* Services section */}
       <section className="container ramagya-at-a-glance-section my-5">
-      <div className="text-center mb-4">
-        <h3 className="main-heading-internal-pages wow animate__animated animate__fadeInDown" style={{ animationDelay: '0.2s'}}>Services</h3>
-      </div>
+        <div className="text-center mb-4">
+          <h3 className="main-heading-internal-pages wow animate__animated animate__fadeInDown" style={{ animationDelay: '0.2s' }}>Services</h3>
+        </div>
 
-    <div className="row justify-content-center g-1">
-      <div className="col-md-2 col-6">
-        <div className="card-ramagya-at-glance border-0 position-relative">
-          <Image 
-            src="/images/admission/services/1.webp" 
-            alt="Services"
-            width={228} 
-            height={290} 
-            objectFit="cover"
-            className="rounded img-fluid"
-          />
-          <div className="overlay-text-services position-absolute start-50 top-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-1">
-            <p className="text-white">Pre School</p>
+        <div className="row justify-content-center g-1">
+          <div className="col-md-2 col-6">
+            <div className="card-ramagya-at-glance border-0 position-relative">
+              <Image
+                src="/images/admission/services/1.webp"
+                alt="Services"
+                width={228}
+                height={290}
+                objectFit="cover"
+                className="rounded img-fluid"
+              />
+              <div className="overlay-text-services position-absolute start-50 top-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-1">
+                <p className="text-white">Pre School</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="col-md-2 col-6">
-        <div className="card-ramagya-at-glance border-0 position-relative">
-          <Image 
-            src="/images/admission/services/2.webp" 
-            alt="Services"
-            width={228} 
-            height={290} 
-            objectFit="cover"
-            className="rounded img-fluid"
-          />
-          <div className="overlay-text-services position-absolute start-50 top-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-1">
-            <p className="text-white">Full Time Daycare (9:00 – 7:00 PM)</p>
+          <div className="col-md-2 col-6">
+            <div className="card-ramagya-at-glance border-0 position-relative">
+              <Image
+                src="/images/admission/services/2.webp"
+                alt="Services"
+                width={228}
+                height={290}
+                objectFit="cover"
+                className="rounded img-fluid"
+              />
+              <div className="overlay-text-services position-absolute start-50 top-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-1">
+                <p className="text-white">Full Time Daycare (9:00 – 7:00 PM)</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="col-md-2 col-6">
-        <div className="card-ramagya-at-glance border-0 position-relative">
-          <Image 
-            src="/images/admission/services/3.webp" 
-            alt="Services"
-            width={228} 
-            height={290} 
-            objectFit="cover"
-            className="rounded img-fluid"
-          />
-          <div className="overlay-text-services position-absolute start-50 top-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-1">
-            <p className="text-white">Half Time Daycare</p>
+          <div className="col-md-2 col-6">
+            <div className="card-ramagya-at-glance border-0 position-relative">
+              <Image
+                src="/images/admission/services/3.webp"
+                alt="Services"
+                width={228}
+                height={290}
+                objectFit="cover"
+                className="rounded img-fluid"
+              />
+              <div className="overlay-text-services position-absolute start-50 top-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-1">
+                <p className="text-white">Half Time Daycare</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="col-md-2 col-6">
-        <div className="card-ramagya-at-glance border-0 position-relative">
-          <Image 
-            src="/images/admission/services/4.webp" 
-            alt="Services"
-            width={228} 
-            height={290} 
-            objectFit="cover"
-            className="rounded img-fluid"
-          />
-          <div className="overlay-text-services position-absolute start-50 top-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-1">
-            <p className="text-white">Assisted Daycare (with nanny)</p>
+          <div className="col-md-2 col-6">
+            <div className="card-ramagya-at-glance border-0 position-relative">
+              <Image
+                src="/images/admission/services/4.webp"
+                alt="Services"
+                width={228}
+                height={290}
+                objectFit="cover"
+                className="rounded img-fluid"
+              />
+              <div className="overlay-text-services position-absolute start-50 top-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-1">
+                <p className="text-white">Assisted Daycare (with nanny)</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="col-md-2 col-6">
-        <div className="card-ramagya-at-glance border-0 position-relative">
-          <Image 
-            src="/images/admission/services/5.webp" 
-            alt="Services"
-            width={228} 
-            height={290} 
-            objectFit="cover"
-            className="rounded img-fluid"
-          />
-          <div className="overlay-text-services position-absolute start-50 top-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-1">
-            <p className="text-white">Flexible Daycare</p>
+          <div className="col-md-2 col-6">
+            <div className="card-ramagya-at-glance border-0 position-relative">
+              <Image
+                src="/images/admission/services/5.webp"
+                alt="Services"
+                width={228}
+                height={290}
+                objectFit="cover"
+                className="rounded img-fluid"
+              />
+              <div className="overlay-text-services position-absolute start-50 top-50 translate-middle text-center d-flex flex-column align-items-center justify-content-center p-1">
+                <p className="text-white">Flexible Daycare</p>
+              </div>
+            </div>
           </div>
+
         </div>
-      </div>
-   
-    </div>
       </section>
       <FooterNoida />
 

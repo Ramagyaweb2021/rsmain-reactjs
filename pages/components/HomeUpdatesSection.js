@@ -1,26 +1,45 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
-import 'animate.css';
+//import dynamic from 'next/dynamic';
+//import 'animate.css';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Slider from "react-slick"; // Import Slick Slider
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
+//const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const HomeUpdatesSection = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  // useEffect(() => {
+  //   const WOWJS = require('wowjs');
+  //   const wow = new WOWJS.WOW({ live: false });
+  //   wow.init();
+  // }, []);
+
   useEffect(() => {
-    const WOWJS = require('wowjs');
-    const wow = new WOWJS.WOW({ live: false });
-    wow.init();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+  
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    elements.forEach((el) => observer.observe(el));
+  
+    return () => observer.disconnect();
   }, []);
+  
 
   // Slick slider settings with autoplay
   const settings = {
@@ -152,7 +171,7 @@ const HomeUpdatesSection = () => {
               <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <h1 className="main-heading"> SCHOOL UPDATES
                   <span className="lineclass" />
-                  <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                  <span className="sub-heading animate-on-scroll">
                     STAY INFORMED
                   </span>
                 </h1>

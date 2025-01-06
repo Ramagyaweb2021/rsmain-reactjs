@@ -4,6 +4,7 @@ import Head from 'next/head';
 import ReactFullpage from "@fullpage/react-fullpage";
 import styles from "../styles/Home.module.css";
 import Header from "/pages/components/Header";
+import HeaderMainWebsite from "/pages/components/HeaderMainWebsite";
 import HomeVideoSection from './components/HomeVideoSection';
 import HomeSchoolBranchSection from './components/HomeSchoolBranchSection';
 import HomeExploreSection from "./components/HomeExploreSection";
@@ -19,7 +20,6 @@ import HomeTestimonialSection from "./components/HomeTestimonialSection";
 import HomeSectionFooter from "./components/HomeSectionFooter";
 //import OfferPopup from "./components/OfferPopup";
 import 'animate.css';
-// import FooterBottom from "./components/FooterBottom";
 
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
@@ -32,7 +32,7 @@ const ScrollspyMenu = ({ sections, activeSection }) => {
             key={index}
             className={activeSection === section ? "active" : ""}
             style={{
-              animationDelay: `${index * 0.5}s`, // Apply dynamic delay based on index
+              animationDelay: `${index * 0.2}s`, // Apply dynamic delay based on index
             }}
           >
             <a href={`#${section}`}>
@@ -86,8 +86,8 @@ export default function Home() {
     }
   };
 
-  const showMainMenu = ["explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
-  const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials"].includes(activeSection);
+  const showMainMenu = ["branch", "explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
+  const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials", "footer"].includes(activeSection);
 
   // const showMainMenu = ["branch", "explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);
   // const showAdditionalMenu = ["difference", "gallery", "awards", "school-updates", "testimonials"].includes(activeSection);
@@ -101,14 +101,19 @@ export default function Home() {
         <link rel="canonical" href="https://ramagyaschool.com/" />
       </Head>
 
-      <Header />
-      {/* <OfferPopup /> */}
+        {/* Only show Header when showMainMenu is false */}
+        {!showMainMenu && <Header />}
+
+        {/* Only show HeaderMainWebsite when Header is false */}
+        {(showMainMenu || showAdditionalMenu) && <HeaderMainWebsite />}
+
 
       {(showMainMenu || showAdditionalMenu) && (
         <ScrollspyMenu
-          sections={showMainMenu 
-            ? ["", "explore", "experiment", "innovate", "evolve", "lead"] 
-            : ["difference", "gallery", "awards", "school-updates", "testimonials"]
+          sections={
+            showMainMenu
+              ? ["", "explore", "experiment", "innovate", "evolve", "lead"]
+              : ["difference", "gallery", "awards", "school-updates", "testimonials"]
           }
           activeSection={activeSection}
         />
@@ -118,22 +123,30 @@ export default function Home() {
         <ReactFullpage
           debug={false}
           anchors={[
-            "slider", "branch", "explore", "experiment", "innovate",
-            "evolve", "lead", "difference", "gallery", "awards", 
-            "school-updates", "testimonials", "footer"
+            "slider",
+            "branch",
+            "explore",
+            "experiment",
+            "innovate",
+            "evolve",
+            "lead",
+            "difference",
+            "gallery",
+            "awards",
+            "school-updates",
+            "testimonials",
+            "footer",
           ]}
           navigation={false}
           licenseKey="NU1M9-5PXTK-R7H4J-MIJMJ-KELSL"
           responsiveWidth={1000}
           onLeave={onLeave}
           afterLoad={afterLoad}
-          scrollBar={true}  // Make sure to disable custom scrollbar
-          scrollingSpeed={700}  // Adjust scrolling speed to avoid skipping sections
-          //scrollingSpeed={900}  // Adjust scrolling speed to avoid skipping sections
-          //scrollOverflow={true} // Enable scrolling overflow
-          //autoScrolling={true}  // Auto scroll sections
-          fitToSection={true}  // Ensure the scroll stops on each section
-          normalScrollElements=".normal-scroll"  // Allow normal scrolling on specific sections if needed
+          scrollBar={false}
+          scrollingSpeed={700}
+          scrollOverflow={true}
+          autoScrolling={true}
+          fitToSection={true}
           render={() => (
             <ReactFullpage.Wrapper>
               <div className="section">
@@ -175,19 +188,16 @@ export default function Home() {
               <div className="section footer">
                 <HomeSectionFooter />
               </div>
-              {/* <FooterBottom/> */}
             </ReactFullpage.Wrapper>
           )}
         />
       ) : (
-        // Render alternative content when fullpage.js is disabled
         <div>
           <HomeVideoSection />
           <HomeSchoolBranchSection />
           <HomeExploreSection />
           <HomeExperimentSection />
           <HomeInnovateSection />
-          {/* <innovateformobile/> */}
           <HomeEvolveSection />
           <HomeLeadSection />
           <HomeDifferenceSection />
@@ -196,7 +206,6 @@ export default function Home() {
           <HomeUpdatesSection />
           <HomeTestimonialSection />
           <HomeSectionFooter />
-          {/* <FooterBottom/> */}
         </div>
       )}
     </div>

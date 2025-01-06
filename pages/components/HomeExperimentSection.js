@@ -69,11 +69,38 @@ const HomeExperimentSection = () => {
     return () => clearInterval(categoryInterval); // Clean up on component unmount
   }, []);
 
+   //useEffect(() => {
+        // Initialize WOW.js only on the client side
+      //   const WOWJS = require('wowjs');
+      //   const wow = new WOWJS.WOW({
+      //     live: false
+      //   });
+      //   wow.init();
+      // }, []); 
+      //Use IntersectionObserver for Animation Triggers
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated', 'animate__zoomIn');
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+      
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        elements.forEach((el) => observer.observe(el));
+      
+        return () => observer.disconnect();
+      }, []);
+
   return (
     <div className="learn">
       <div className="container my-custom-experiment">
         <h1 className='scrollspy-p-0'>EXPERIMENT<span className="lineclass" />
-          <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+          <span className="sub-heading animate-on-scroll">
             WORKSHOPS, PROGRAMS & EXPERIENCES
           </span>
         </h1>

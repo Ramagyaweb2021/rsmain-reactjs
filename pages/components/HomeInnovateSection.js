@@ -1,7 +1,34 @@
-import React from 'react'
+// import React from 'react'
+import React, { useEffect} from 'react';
 import Image from 'next/image';
 // import Link from 'next/link';
 const HomeInnovateSection = () => {
+   //useEffect(() => {
+      // Initialize WOW.js only on the client side
+    //   const WOWJS = require('wowjs');
+    //   const wow = new WOWJS.WOW({
+    //     live: false
+    //   });
+    //   wow.init();
+    // }, []); 
+    //Use IntersectionObserver for Animation Triggers
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate__animated', 'animate__zoomIn');
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+    
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      elements.forEach((el) => observer.observe(el));
+    
+      return () => observer.disconnect();
+    }, []);
   return (
     <>
        <div className="learn">
@@ -13,7 +40,7 @@ const HomeInnovateSection = () => {
                 <h1 className="scrollspy-p-0">
                   INNOVATE
                   <span className="lineclass" />
-                   <span className="sub-heading wow animate__animated animate__zoomIn" style={{ animationDelay: '0.3s' }}>
+                   <span className="sub-heading animate-on-scroll">
                     NURTURING THE FUTURE GENERATION
                   </span>
                 </h1>
