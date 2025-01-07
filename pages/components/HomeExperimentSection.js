@@ -136,8 +136,8 @@ const HomeExperimentSection = () => {
                       <Image
                         src="/images/slider/experiment/big-slider-1.webp"
                         alt="big-slider-1"
-                        width={287}
-                        height={200}
+                        width={630}
+                        height={155}
                         className="card-img-top"
                       />
                       </div>
@@ -326,19 +326,19 @@ const HomeExperimentSection = () => {
                       className={`btn1 ${activeCategory === 'category1' ? 'active' : ''}`}
                       onClick={() => setActiveCategory('category1')}
                     >
-                      Hands-On. Minds-On. Limitless Learning
+                      Hands-On. Minds-On. <br></br>Limitless Learning
                     </li>
                     <li
                       className={`btn1 ${activeCategory === 'category2' ? 'active' : ''}`}
                       onClick={() => setActiveCategory('category2')}
                     >
-                      Where Imagination Takes Center Stage
+                      Where Imagination <br></br>Takes Center Stage
                     </li>
                     <li
                       className={`btn1 ${activeCategory === 'category3' ? 'active' : ''}`}
                       onClick={() => setActiveCategory('category3')}
                     >
-                      Shaping Minds & Inspiring Creativity
+                      Shaping Minds <br></br> & Inspiring Creativity
                     </li>
                   </ol>
                 </div>

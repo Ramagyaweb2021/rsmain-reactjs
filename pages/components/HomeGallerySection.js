@@ -211,8 +211,8 @@ const NoidaGalleryInternalPage = () => {
             <a href="gallery">View More</a>
           </div>
         </div>
-        {/* Modal */}
-        <Modal show={isModalOpen} onHide={closeModal} centered>
+      {/* Modal */}
+      <Modal show={isModalOpen} onHide={closeModal} centered size="lg">
           <Modal.Header closeButton style={{background:"#000"}}>
             {/* <Modal.Title>
               {filteredItems[currentIndex]?.title || 'Gallery Item'}
@@ -226,7 +226,8 @@ const NoidaGalleryInternalPage = () => {
                 width={1250}
                 height={500}
               />
-            ) : (
+            ) 
+            : (
               <div className="video-container">
                 <iframe
                   width="100%"

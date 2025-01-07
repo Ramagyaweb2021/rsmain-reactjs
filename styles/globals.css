@@ -1765,13 +1765,13 @@ title_3 trans {
 }
 .explore ol.carousel-catg li {
   color: var(--color-set-white);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   list-style-type: none;
   cursor: pointer;
   position: relative;
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   line-height: normal;
 }
 .explore ol.carousel-catg li::before {
