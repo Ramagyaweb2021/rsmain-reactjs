@@ -4,7 +4,7 @@ import 'animate.css';
 // import Image from "next/image";
 // import NoidaEmpoweredMindsSlider from "./NoidaEmpoweredMindsSlider";
 import NoidaExtensionSchoolUpdates from "./NoidaExtensionSchoolUpdates";
-import NoidaAwardsHomePage from "./NoidaAwardsHomePage";
+import NoidaExtensionAwardsHomePage from "./NoidaExtensionAwardsHomePage";
 import NoidaHomePageInfographics from "./NoidaHomePageInfographics";
 import NoidaExtensionHomePageImportantLinks from "./NoidaExtensionHomePageImportantLinks";
 import NoidaExtensionPrincipalNote from "./NoidaExtensionPrincipalNote";
@@ -123,7 +123,7 @@ const NoidaExtensionScrollspyHomePageTabination = () => {
 
         {/* Awards Section */}
         <section id="awards" className="my-5 py-5">
-          <NoidaAwardsHomePage />
+          <NoidaExtensionAwardsHomePage />
         </section>
 
         {/* Important Links Section */}

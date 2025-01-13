@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 import 'animate.css';
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
-const NoidaAwardsHomePage = () => {
+const NoidaExtensionAwardsHomePage = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -26,17 +26,17 @@ const NoidaAwardsHomePage = () => {
         </div>
           <div className="d-flex flex-wrap justify-content-between">
           <div className='row'>
-            <div className='col-lg-3 col-6 image-resize'>
-              <Image src="/images/awards/bharat-ranking-noida.webp" width={300} height={300} alt="Achievement" className="mb-3" />
+          <div className='col-lg-3 col-6 image-resize'>
+              <Image src="/images/awards/bharat-ranking-noida-ext.webp" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="/images/awards/home-2.webp" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/ramagya-extension-times-school-survey-2024.webp" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="/images/awards/home-1.webp" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/3.webp" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
             <div className='col-lg-3 col-6 image-resize'>
-              <Image src="/images/awards/home-4.webp" width={300} height={300} alt="Achievement" className="mb-3" />
+              <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/awards/4.webp" width={300} height={300} alt="Achievement" className="mb-3" />
             </div>
           </div>
         </div>
@@ -51,4 +51,4 @@ const NoidaAwardsHomePage = () => {
   )
 }
 
-export default NoidaAwardsHomePage
+export default NoidaExtensionAwardsHomePage

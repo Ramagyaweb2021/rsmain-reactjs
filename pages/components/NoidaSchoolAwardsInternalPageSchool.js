@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 export const NoidaSchoolAwardsInternalPageSchool = () => {
   const awards = [
+    { name: 'Times', img: '/images/awards/bharat-ranking-noida.webp' },
     { name: 'Times', img: '/images/awards/home-1.webp' },
     { name: 'Award 1', img: '/images/awards/home-2.webp' },
     { name: 'Award 2', img: '/images/awards/home-3.webp' },

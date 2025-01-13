@@ -2,14 +2,14 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import { NoidaFamousPersonalityTestimonial } from './NoidaFamousPersonalityTestimonial';
+import { NoidaExtensionFamousPersonalityTestimonial } from './NoidaExtensionFamousPersonalityTestimonial';
 import { NoidaExpertTeacherTestimonial } from './NoidaExpertTeacherTestimonial';
 import { NoidaSportsLeagueTestimonial } from './NoidaSportsLeagueTestimonial';
-import { NoidaParentTestimonial } from './NoidaParentTestimonial';
+import { NoidaExtensionParentTestimonial } from './NoidaExtensionParentTestimonial';
 import { NoidaStudentTestimonial } from './NoidaStudentTestimonial';
 import TestimonialsVerticalButton from './TestimonialsVerticalButton';
 
-const NoidaInternalPageTestimonials = () => {
+const NoidaExtensionInternalPageTestimonials = () => {
   return (
     <>
       <div className="explore-tabination-internal-page-section">
@@ -25,7 +25,7 @@ const NoidaInternalPageTestimonials = () => {
                 fill
               >
                 <Tab eventKey="home" title="Famous Personalities" aria-controls="home-tab">
-                  <NoidaFamousPersonalityTestimonial/>
+                  <NoidaExtensionFamousPersonalityTestimonial/>
                 </Tab>
                 <Tab eventKey="profile" title="Experts & Teachers" aria-controls="profile-tab">
                   <NoidaExpertTeacherTestimonial/>
@@ -34,7 +34,7 @@ const NoidaInternalPageTestimonials = () => {
                   <NoidaSportsLeagueTestimonial/>
                 </Tab>
                 <Tab eventKey="parents" title="Parents" aria-controls="parents-tab">
-                  <NoidaParentTestimonial/>
+                  <NoidaExtensionParentTestimonial/>
                 </Tab>
                 <Tab eventKey="students" title="Students" aria-controls="students-tab">
                   <NoidaStudentTestimonial/>
@@ -48,4 +48,4 @@ const NoidaInternalPageTestimonials = () => {
   );
 };
 
-export default NoidaInternalPageTestimonials;
+export default NoidaExtensionInternalPageTestimonials;

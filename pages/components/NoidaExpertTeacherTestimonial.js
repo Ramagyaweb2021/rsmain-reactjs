@@ -9,6 +9,12 @@ export const NoidaExpertTeacherTestimonial = () => {
 
   const testimonials = [
     {
+      name: 'Colonel V N Thapar',
+      subject: 'Father of Captain Vijayant Thapar',
+      img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/expert-ext-1.webp',
+      videoLink: 'https://www.youtube.com/watch?v=7vbK2bTay3A',
+    },
+    {
       name: 'Seema Nanda',
       subject: 'Headmistress',
       img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/seema-nanda.webp',
