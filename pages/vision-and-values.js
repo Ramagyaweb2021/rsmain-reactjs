@@ -118,7 +118,7 @@ const VissionAndValue = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-             {/* <Image src="/images/vision-mission/1.webp" alt="core value" width={50} height={50} /> */}
+             <Image src="/images/vision-mission/1.webp" alt="core value" width={50} height={50} />
               <h5>Integrity</h5>
               <p>
                 Upholding honesty, ethics, and moral principles in all endeavors, fostering trust and credibility within our community.
@@ -129,7 +129,7 @@ const VissionAndValue = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-            {/* <Image src="/images/vision-mission/2.webp" alt="core value" width={50} height={50} /> */}
+            <Image src="/images/vision-mission/2.webp" alt="core value" width={50} height={50} />
               <h5>Respect & Compassion</h5>
               <p>
                 Valuing diversity, treating others with empathy, kindness, and understanding, creating an inclusive and supportive environment for all.
@@ -141,7 +141,7 @@ const VissionAndValue = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-            {/* <Image src="/images/vision-mission/3.webp" alt="Our Vision" width={50} height={50} /> */}
+            <Image src="/images/vision-mission/3.webp" alt="Our Vision" width={50} height={50} />
               <h5>Resilience & Perseverance</h5>
               <p>
                 Encouraging determination, grit, and adaptability in the face of challenges, fostering a mindset of resilience to overcome obstacles.
@@ -153,7 +153,7 @@ const VissionAndValue = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-            {/* <Image src="/images/vision-mission/4.webp" alt="Our Vision" width={50} height={50} /> */}
+            <Image src="/images/vision-mission/4.webp" alt="Our Vision" width={50} height={50} />
               <h5>Inclusivity</h5>
               <p>
               Embracing diversity and promoting equal opportunities for all individuals regardless of background, culture, or beliefs, celebrating the uniqueness of each person.
@@ -166,7 +166,7 @@ const VissionAndValue = () => {
         <div className="col-md-4 mb-4">
           <div className="card text-center h-100 border-0">
             <div className="card-value-body">
-            {/* <Image src="/images/vision-mission/5.webp" alt="Our Vision" width={50} height={50} /> */}
+            <Image src="/images/vision-mission/5.webp" alt="Our Vision" width={50} height={50} />
               <h5>Adherence & Allegiance to Indian Values & Traditions</h5>
               <p>
               Preserving the rich heritage, customs, and cultural values, instilling a sense of pride and identity in students while embracing modernity.
