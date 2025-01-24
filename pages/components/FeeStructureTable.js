@@ -1,13 +1,13 @@
 import React from 'react'
-import Image from 'next/image'
+//import Image from 'next/image'
 const FeeStructureTable = () => {
   return (
     <>
-        <div className="container my-5">
+      <div className="container my-5">
         <div className="fee-structure-container p-4 border rounded">
           {/* Header Section */}
           <div className="text-center mb-4">
-            <h2 className="fw-bold" style={{textAlign:"center"}}>
+            <h2 className="fw-bold" style={{ textAlign: "center" }}>
               {/* <Image
               src="/images/admission/transport-1.webp"
               alt="Sample Image 3"
@@ -27,7 +27,7 @@ const FeeStructureTable = () => {
             <div className="col-3 text-end">
               <p><b>63,000 /-</b></p>
             </div>
-            <hr/>
+            <hr />
             <div className="col-9">
               <p>Caution Money - Payable at the time of admission (Refundable at the time of leaving school)</p>
             </div>
@@ -36,9 +36,49 @@ const FeeStructureTable = () => {
             </div>
           </div>
 
-          {/* Fee Structure Table */}
+          {/* Fee Structure Table - 2023-2024 */}
           <table className="table table-hover text-center">
-            <thead>
+          <thead>
+            <tr className="table-light">
+              <th>Classes</th>
+              <th>Annual Fee</th>
+              <th>Quarterly Fee</th>
+              <th>Monthly Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Toddlers</td>
+              <td>159048</td>
+              <td>39762</td>
+              <td>13254</td>
+            </tr>
+            <tr>
+              <td>Nur - II</td>
+              <td>192168</td>
+              <td>48042</td>
+              <td>16014</td>
+            </tr>
+            <tr>
+              <td>III - V</td>
+              <td>197496</td>
+              <td>49374</td>
+              <td>16458</td>
+            </tr>
+            <tr>
+              <td>VI - VIII</td>
+              <td>206772</td>
+              <td>51693</td>
+              <td>17231</td>
+            </tr>
+            <tr>
+              <td>IX - XII</td>
+              <td>231840</td>
+              <td>57960</td>
+              <td>19320</td>
+            </tr>
+          </tbody>
+            {/* <thead>
               <tr className="table-light">
                 <th>CLASSES</th>
                 <th>ANNUAL FEE</th>
@@ -49,7 +89,7 @@ const FeeStructureTable = () => {
             <tbody>
               <tr>
                 <td>TODDLERS</td>
-                <td>144,000 /-</td>
+                <td>159048 /-</td>
                 <td>36,000 /-</td>
                 <td>12,000 /-</td>
               </tr>
@@ -77,7 +117,7 @@ const FeeStructureTable = () => {
                 <td>52,500 /-</td>
                 <td>17,500 /-</td>
               </tr>
-            </tbody>
+            </tbody> */}
           </table>
 
           {/* Note Section */}
