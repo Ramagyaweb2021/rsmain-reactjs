@@ -181,7 +181,7 @@ const MentalHealthClub = () => {
             <p style={{textAlign:"center"}}>At Ramagya School Noida, mental health is not just a program - it’s a way of life. Through these transformative initiatives, we aim to shape confident, compassionate, and resilient individuals ready to lead fulfilling lives and make a difference in the world.</p>
           </div>
 
-          <div className="row g-0 align-items-center">
+          {/* <div className="row g-0 align-items-center">
               <div className="col-md-3 col-12 card-body-our-leaders">
                 <Image
                   alt="Managing Director"
@@ -203,12 +203,10 @@ const MentalHealthClub = () => {
                     <p>Highlighting the significance of mental well-being, Mr. Gupta added, “Good mental health is integral to achieving material stability and personal success. By fostering mental equilibrium through these practices, we aim to help our students navigate challenges with resilience and confidence.”
 
                   </p>
-                  {/* <button className="btn btn-link p-0" style={{ color: "#002C39" }}>
-                    Read More
-                  </button> */}
+               
                 </div>
               </div>
-            </div>
+            </div> */}
 
         </div>
                       

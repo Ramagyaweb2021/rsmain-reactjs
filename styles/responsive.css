@@ -578,7 +578,7 @@ body {
   top: 99px;
 }
 #infographics{
-  margin-top: -35px !important;
+  margin-top: -1px !important;
 }
 /* #principals-note{
   margin-top: -35px !important;
@@ -986,7 +986,7 @@ body {
 /* Sticky Logo */
 .sticky-logo {
   width: auto;
-  height: auto;
+  /* height: auto; */
   margin-top: 5px;
   margin-bottom: 20px;
   position: absolute;

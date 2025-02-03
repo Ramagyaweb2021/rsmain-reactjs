@@ -16,23 +16,23 @@ const HomeSchoolBranchSection = () => {
    //   wow.init();
    // }, []); 
    //Use IntersectionObserver for Animation Triggers
-   useEffect(() => {
-     const observer = new IntersectionObserver(
-       (entries) => {
-         entries.forEach((entry) => {
-           if (entry.isIntersecting) {
-             entry.target.classList.add('animate__animated', 'animate__zoomIn');
-           }
-         });
-       },
-       { threshold: 0.2 }
-     );
+  //  useEffect(() => {
+  //    const observer = new IntersectionObserver(
+  //      (entries) => {
+  //        entries.forEach((entry) => {
+  //          if (entry.isIntersecting) {
+  //            entry.target.classList.add('animate__animated', 'animate__zoomIn');
+  //          }
+  //        });
+  //      },
+  //      { threshold: 0.2 }
+  //    );
    
-     const elements = document.querySelectorAll('.animate-on-scroll');
-     elements.forEach((el) => observer.observe(el));
+  //    const elements = document.querySelectorAll('.animate-on-scroll');
+  //    elements.forEach((el) => observer.observe(el));
    
-     return () => observer.disconnect();
-   }, []);
+  //    return () => observer.disconnect();
+  //  }, []);
   
   return (
     <>

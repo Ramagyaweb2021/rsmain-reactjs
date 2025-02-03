@@ -38,46 +38,48 @@ const FeeStructureTable = () => {
 
           {/* Fee Structure Table - 2023-2024 */}
           <table className="table table-hover text-center">
-          <thead>
-            <tr className="table-light">
-              <th>Classes</th>
-              <th>Annual Fee</th>
-              <th>Quarterly Fee</th>
-              <th>Monthly Fee</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Toddlers</td>
-              <td>159048</td>
-              <td>39762</td>
-              <td>13254</td>
-            </tr>
-            <tr>
-              <td>Nur - II</td>
-              <td>192168</td>
-              <td>48042</td>
-              <td>16014</td>
-            </tr>
-            <tr>
-              <td>III - V</td>
-              <td>197496</td>
-              <td>49374</td>
-              <td>16458</td>
-            </tr>
-            <tr>
-              <td>VI - VIII</td>
-              <td>206772</td>
-              <td>51693</td>
-              <td>17231</td>
-            </tr>
-            <tr>
-              <td>IX - XII</td>
-              <td>231840</td>
-              <td>57960</td>
-              <td>19320</td>
-            </tr>
-          </tbody>
+            <thead>
+              <tr className="table-light">
+                <th>Classes</th>
+                <th>Monthly Fee</th>
+                <th>Quarterly Fee</th>
+                <th>Annual Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Toddlers</td>
+                <td>13254</td>
+                <td>39762</td>
+                <td>159048</td>
+              </tr>
+              <tr>
+                <td>Nur - II</td>
+                <td>16014</td>
+                <td>48042</td>
+                <td>192168</td>
+              </tr>
+              <tr>
+                <td>III - V</td>
+                <td>16458</td>
+                <td>49374</td>
+                <td>197496</td>
+              </tr>
+              <tr>
+                <td>VI - VIII</td>
+                <td>17231</td>
+                <td>51693</td>
+                <td>206772</td>
+              </tr>
+              <tr>
+                <td>IX - XII</td>
+                <td>19320</td>
+                <td>57960</td>
+                <td>231840</td>
+              </tr>
+            </tbody>
+
+
             {/* <thead>
               <tr className="table-light">
                 <th>CLASSES</th>

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
-import 'animate.css';
+//import dynamic from 'next/dynamic';
+//import 'animate.css';
 import Image from 'next/image';
 import Enquirypopup from './Enquirypopup';
 import Typebot from '../components/Typebot';
 // import Link from 'next/link';
 
-const WOW = dynamic(() => import('wowjs'), { ssr: false });
+//const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -52,13 +52,13 @@ const Header = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const WOWJS = require('wowjs');
-    const wow = new WOWJS.WOW({
-      live: false,
-    });
-    wow.init();
-  }, []);
+  // useEffect(() => {
+  //   const WOWJS = require('wowjs');
+  //   const wow = new WOWJS.WOW({
+  //     live: false,
+  //   });
+  //   wow.init();
+  // }, []);
 
   const handleDropdownToggle = () => {
     setDropdownOpen((prevState) => !prevState); // Toggle dropdown state
@@ -70,7 +70,20 @@ const Header = () => {
         <div className="container-fluid">
           {/* Logo */}
           <a className="navbar-brand" href="./">
-            <img
+          <Image
+            src={
+              isSticky
+                ? '/images/main-webiste-logo/logo-2.webp'
+                : '/images/main-webiste-logo/logo-1.webp'
+            }
+            alt="Ramagya school noida logo"
+            className={isSticky ? 'sticky-logo' : 'logo'}
+            width={280}  // Adjust width as needed
+            height={56}  // Adjust height as needed
+            priority
+          />
+
+            {/* <Image
               src={
                 isSticky
                   ? '/images/main-webiste-logo/logo-2.webp'
@@ -78,7 +91,7 @@ const Header = () => {
               }
               alt="Ramagya school noida logo"
               className={isSticky ? 'sticky-logo' : 'logo'}
-            />
+            /> */}
           </a>
 
           {/* Dropdown Menu */}
@@ -102,13 +115,21 @@ const Header = () => {
               type="button"
               onClick={handleDropdownToggle} 
             > */}
-              <Image
+             <Image 
+                src="/images/fi_check-circle.webp" 
+                alt="Apply Now" 
+                width={20} 
+                height={20} 
+                priority 
+              />
+              {/* <Image
                 src="/images/fi_check-circle.webp"
                 alt="Apply Now"
                 width={20}
                 height={20}
-              />{' '}
-              APPLY NOW
+                priority 
+              />{' '} */}
+              &nbsp;APPLY NOW
             </button>
             <ul className={`dropdown-menu ${dropdownOpen && isMobile ? 'show' : ''}`}>
             {/* <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}> */}
@@ -164,7 +185,7 @@ const Header = () => {
         <div className="offcanvas offcanvas-top text-bg-dark" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div className="offcanvas-header">
            <a className="navbar-brand" href="./">
-             <img src="/images/main-webiste-logo/logo-1.webp" alt="Ramagya school noida" />
+             <Image src="/images/main-webiste-logo/logo-1.webp" alt="Ramagya school"  width={280} height={56} priority />
             </a>
             {/* <a href="#" onClick={() => console.log('Close button clicked')}>
               <Image
@@ -418,8 +439,8 @@ const Header = () => {
         </div>
       </nav>
 
-      <Enquirypopup />
-      <Typebot />
+      {/* <Enquirypopup /> */}
+      {/* <Typebot /> */}
     </>
   );
 };

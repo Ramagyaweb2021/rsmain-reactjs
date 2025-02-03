@@ -73,7 +73,7 @@ const Header = () => {
         <div className="container-fluid">
           {/* Logo */}
           <a className="navbar-brand" href="./">
-            <img
+          <Image
               src={
                 isSticky
                   ? '/images/main-webiste-logo/logo-2.webp'
@@ -81,7 +81,20 @@ const Header = () => {
               }
               alt="Ramagya school noida logo"
               className={isSticky ? 'sticky-logo' : 'logo'}
+              width={280}  // Adjust width as needed
+              height={56}  // Adjust height as needed
+              priority
             />
+
+            {/* <Image
+              src={
+                isSticky
+                  ? '/images/main-webiste-logo/logo-2.webp'
+                  : '/images/main-webiste-logo/logo-1.webp'
+              }
+              alt="Ramagya school noida logo"
+              className={isSticky ? 'sticky-logo' : 'logo'}
+            /> */}
           </a>
 
           {/* Dropdown Menu */}
@@ -108,9 +121,10 @@ const Header = () => {
               <Image
                 src="/images/fi_check-circle.webp"
                 alt="Apply Now"
-                width={20}
-                height={20}
-              />{' '}
+                width={20}  // Adjust width as needed
+                height={20}  // Adjust height as needed
+                priority
+              />
               APPLY NOW
             </button>
             <ul className={`dropdown-menu ${dropdownOpen && isMobile ? 'show' : ''}`}>
@@ -167,7 +181,7 @@ const Header = () => {
         <div className="offcanvas offcanvas-top text-bg-dark" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div className="offcanvas-header">
            <a className="navbar-brand" href="./">
-             <img src="/images/main-webiste-logo/logo-1.webp" alt="Ramagya school noida" />
+             <Image src="/images/main-webiste-logo/logo-1.webp" width={280} height={56} priority alt="Ramagya school noida" />
             </a>
             {/* <a href="#" onClick={() => console.log('Close button clicked')}>
               <Image
@@ -298,7 +312,7 @@ const Header = () => {
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
                       <a className="dropdown-item" href="/noida/pre-admission">
-                        Pre Admission
+                        Admission Procedure
                       </a>
                     </li>
                     <li>
@@ -313,14 +327,14 @@ const Header = () => {
                     </li>
                     <li>
                       <a className="dropdown-item" href="/noida/scholarship-programme">
-                        Scholarship
+                        Scholarship Programme
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a className="dropdown-item" href="/noida/recommend-a-student">
                          Recommend a Student
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
                 {/*Partneship */}

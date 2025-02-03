@@ -9,31 +9,31 @@ const events = [
     title: "SCIENCE LABS",
     description:
       "Hands-on exploration and experimentation, allowing students to apply theoretical concepts and ignite curiosity through practical learning experiences.",
-    image: "/images/experiment/internal-category-1/science-lab.webp",
+    image: "/images/experiment/internal-category-1/11.webp",
   },
   {
     title: "JODO GYAN",
     description:
       "Enhancing number sense and problem-solving through hands-on, innovative learning methods, building a solid math foundation.",
-    image: "/images/experiment/internal-category-1/jadu-gyan.webp",
+    image: "/images/experiment/internal-category-1/22.webp",
   },
   {
     title: "CLUBS",
     description:
       "Clubs foster creativity, collaboration and life skills, while sharpens improvisation, confidence and communication.",
-    image: "/images/experiment/internal-category-1/club.webp",
+    image: "/images/experiment/internal-category-1/33.webp",
   },
   {
     title: "COMPUTER LABS",
     description:
       "Equipped with advanced technology, students experiment with coding, programming, and digital tools, fostering technological fluency.",
-    image: "/images/experiment/internal-category-1/computer-lab.webp",
+    image: "/images/experiment/internal-category-1/44.webp",
   },
   {
-    title: "STEAM",
+    title: "STREAM",
     description:
       "Hands-on experiments and STEAM projects boost critical thinking, while the Computer Lab enhances coding skills and technological fluency.",
-    image: "/images/experiment/internal-category-1/steam.webp",
+    image: "/images/experiment/internal-category-1/55.webp",
   },
 ];
 

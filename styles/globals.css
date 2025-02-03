@@ -1,7 +1,11 @@
+/* :root {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
+} */
 :root {
   --font-family-heading: "Oswald", sans-serif;
-  /* --font-family-text: "Raleway", sans-serif; */
   --font-family-text: "Montserrat", serif;
+    /* --font-family-text: "Raleway", sans-serif; */
   --color-set-green: #002c39;
   --color-set-yellow: #ffdf8b;
   --color-set-white: #ffffff;
@@ -18,7 +22,7 @@ html, body {
   font-size: 13px;
   line-height: 1.5;
   font-weight: 500;
-  background-color: #fff;
+  background-color: #fff; 
   color: var(--color-set-grey);
   -webkit-tap-highlight-color: transparent;
   scrollbar-width: none; /* Firefox */
@@ -45,40 +49,7 @@ p{
 ::-webkit-scrollbar {
   display: none;
 }
-/* html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-body {
-  font-family: var(--font-family-text);
-  font-size: 16px;
-  margin: 0;
-  line-height: 1.5;
-  font-weight: 500;
-  background-color: #fff;
-  -webkit-tap-highlight-color: #fff0;
-  scrollbar-width: thin;
-  color: var(--color-set-grey);
-}
-::-webkit-scrollbar {
-  display: none;
-}
-html {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch; 
-  scroll-behavior: smooth;
-  overscroll-behavior: none;
-  scroll-snap-type: y mandatory;
-}
-body, * {
-  outline: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+
 .container-fluid {
   padding: 0;
   margin: 0;
@@ -272,6 +243,7 @@ a:hover {
   color: #fff;
   border: 1px solid var(--color-set-white);
   padding: 7px;
+  font-family: var(--font-family-text);
 }
 /* .dropdown-basic:hover {
   border: 1px dashed #fff0;
@@ -1251,6 +1223,7 @@ ul {
   font-weight: 500;
   margin: 0;
   border-radius: 0;
+  font-family: var(--font-family-text);
 }
 .btn-outline-warning:hover {
   background-color: var(--color-set-white);
@@ -1773,6 +1746,7 @@ title_3 trans {
   padding-left: 20px;
   margin-bottom: 15px;
   line-height: normal;
+  font-family: var(--font-family-text);
 }
 .explore ol.carousel-catg li::before {
   content: "";
@@ -1944,6 +1918,7 @@ p.tabination-text {
   line-height: 19.5px;
   text-align: center;
   border-radius: 0;
+  font-family: var(--font-family-text);
 }
 .approach,
 .approach-1 {
@@ -2936,5 +2911,9 @@ hr {
 }
 .btn-link:hover{
   color:  var(--color-set-yellow);
+  font-weight: 500;
+}
+.modal-title h3{
+  font-family: var(--font-family-heading);
   font-weight: 500;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import Image from "next/image";
 
 const ResultsBranchWise = () => {
   // Data for branches with categories
@@ -254,9 +255,12 @@ const ResultsBranchWise = () => {
                                 className="col-6 col-sm-3 item"
                               >
                                 <div className="box">
-                                  <img
+                                  <Image
                                     className="rounded-thumbnail"
                                     src={topper}
+                                      width={271}
+                                      height={259}
+                                      priority
                                     alt={`Topper ${index + 1}`}
                                   />
                                 </div>

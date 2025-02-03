@@ -70,7 +70,20 @@ const HeaderMainWebsite = () => {
         <div className="container-fluid">
           {/* Logo */}
           <a className="navbar-brand" href="./">
-            <img
+          <Image
+            src={
+              isSticky
+                ? '/images/main-webiste-logo/logo-1.webp'
+                : '/images/main-webiste-logo/logo-2.webp'
+            }
+            alt="Ramagya school noida logo"
+            className={isSticky ? 'sticky-logo' : 'logo'}
+            width={280}  // Adjust width as needed
+            height={56}  // Adjust height as needed
+            priority
+          />
+
+            {/* <img
               src={
                 isSticky
                   ? '/images/main-webiste-logo/logo-1.webp'
@@ -78,7 +91,7 @@ const HeaderMainWebsite = () => {
               }
               alt="Ramagya school noida logo"
               className={isSticky ? 'sticky-logo' : 'logo'}
-            />
+            /> */}
           </a>
 
           {/* Dropdown Menu */}
@@ -107,8 +120,8 @@ const HeaderMainWebsite = () => {
                 alt="Apply Now"
                 width={20}
                 height={20}
-              />{' '}
-              APPLY NOW
+              />
+              &nbsp;APPLY NOW
             </button>
             <ul className={`dropdown-menu ${dropdownOpen && isMobile ? 'show' : ''}`}>
             {/* <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}> */}
@@ -164,7 +177,7 @@ const HeaderMainWebsite = () => {
         <div className="offcanvas offcanvas-top text-bg-dark" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div className="offcanvas-header">
            <a className="navbar-brand" href="./">
-             <img src="/images/main-webiste-logo/logo-1.webp" alt="Ramagya school noida" />
+              <Image src="/images/main-webiste-logo/logo-1.webp" alt="Ramagya school"  width={280} height={56} priority />
             </a>
             {/* <a href="#" onClick={() => console.log('Close button clicked')}>
               <Image

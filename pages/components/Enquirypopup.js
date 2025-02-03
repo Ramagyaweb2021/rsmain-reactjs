@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Image from 'next/image';
-import Link from 'next/link';
+//import Link from 'next/link';
 // import { useEffect } from 'react';
 // import $ from 'jquery';
 function MyVerticallyCenteredModal(props) {
@@ -25,7 +25,7 @@ function MyVerticallyCenteredModal(props) {
           <Container>
             <Row>
               <Col xs={12} md={12}>
-                <iframe src="https://forms.edunexttechnologies.com/forms/ramagya/main-branch/" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://forms.edunexttechnologies.com/forms/ramagya/main-branch/" width="100%" height="400"></iframe>
               </Col>
             </Row>
           </Container>

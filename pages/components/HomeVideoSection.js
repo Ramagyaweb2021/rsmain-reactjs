@@ -40,6 +40,7 @@ const HomeVideoSection = () => {
             alt="Ramagya school"
             width={30}
             height={30}
+            priority
           />
          </div>
         </div>

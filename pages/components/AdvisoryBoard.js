@@ -1,7 +1,6 @@
 // Add this code in your Next.js component file, e.g., components/AdvisoryBoard.js
-
 import React from "react";
-
+import Image from "next/image";
 const AdvisoryBoard = () => {
   const members = [
     {
@@ -123,11 +122,14 @@ const AdvisoryBoard = () => {
           <div className="col-md-4 col-lg-3 mb-4" key={index}>
             <div className="card h-100 text-center">
               <div className="card-value-body">
-              <img
+              <Image
                 src={member.image}
                 alt={member.name}
-                className="img-fluid rounded-circle mb-3"
-                style={{ width: "100px", height: "100px" }}
+                className="img-fluid-1 rounded-circle mb-3"
+                width={100}
+                height={100}
+                priority
+                // style={{ width: "100px", height: "100px" }}
               />
                 <h6 className="advisory-name">{member.name}</h6>
                 {/* <hr/> */}
