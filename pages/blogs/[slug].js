@@ -1,124 +1,73 @@
-import { getAllPostSlugs, getPostBySlug } from "./BlogsDetailPageAPI";
-import Head from "next/head";
-import Image from "next/image";
-import HeaderBlog from "../components/HeaderBlog"; // Adjust this path if needed
-import FooterBlog from "../components/FooterBlog";
+import React from 'react';
+import Image from 'next/image';
 
-// Function to decode HTML entities (only for client-side)
-const decodeHtmlEntities = (str) => {
-  if (typeof window !== 'undefined') {
-    const doc = new DOMParser().parseFromString(str, 'text/html');
-    return doc.body.textContent || "";
-  }
-  return str; // If on the server-side, return the string as-is
-};
-
-// Function to trim the description to a specific length
-const getMetaDescription = (description) => {
-  const maxLength = 160; // Limit to 160 characters
-  if (description && description.length > maxLength) {
-    return description.substring(0, maxLength) + '.'; // Truncate and add ellipsis
-  }
-  return description;
-};
-
-// Fetch all blog slugs for generating static paths
+// Fetch individual post based on slug
 export async function getStaticPaths() {
   try {
-    const slugs = await getAllPostSlugs(); // Fetch all slugs
+    const res = await fetch("https://blogs.ramagyaschool.com/wp-json/wp/v2/posts");
+    const posts = await res.json();
 
-    const paths = slugs.map((slug) => ({
-      params: { slug },
+    // Generate paths for all blog posts based on their slugs
+    const paths = posts.map((post) => ({
+      params: { slug: encodeURIComponent(post.slug) }, // URL encode the slug
     }));
 
-    return { paths, fallback: false }; // `false` ensures all paths are pre-built
+    //console.log("Generated paths:", paths); // Debug log to check paths
+
+    return {
+      paths,
+      fallback: false, // Show 404 for any paths that don't exist
+    };
   } catch (error) {
-    console.error("Error fetching slugs:", error);
-    return { paths: [], fallback: false }; // Ensure fallback is handled
+    console.error("Error fetching posts:", error);
+    return { paths: [], fallback: false };
   }
 }
 
-// Fetch the data for a specific post based on its slug
 export async function getStaticProps({ params }) {
-  try {
-    const post = await getPostBySlug(params.slug); // Fetch post based on slug
+  const { slug } = params;
 
-    if (!post) {
-      return { notFound: true }; // Return 404 if no post is found
+  try {
+    // Fetch the post data based on the slug
+    const res = await fetch(`https://blogs.ramagyaschool.com/wp-json/wp/v2/posts?slug=${slug}&_embed`);
+    const post = await res.json();
+
+    if (!post.length) {
+      return { notFound: true }; // Return a 404 if no post is found
     }
 
     return {
-      props: { post },
-      revalidate: 10, // Incremental Static Regeneration
+      props: {
+        post: post[0], // We expect only one post to match the slug
+      },
     };
   } catch (error) {
-    console.error("Error fetching post:", error); // Log error details
-    return {
-      notFound: true, // Return 404 on error
-    };
+    console.error("Error fetching post:", error);
+    return { notFound: true }; // Return 404 in case of error
   }
 }
 
-const BlogDetail = ({ post }) => {
-  if (!post) {
-    return null; // Instead of rendering <p>Post not found.</p>, return null to render nothing
-  }
+const Post = ({ post }) => {
+  if (!post) return <p>Post not found</p>;
 
-  const yoastData = post.yoast_head_json || {};
-  const canonicalUrl = yoastData.canonical || `https://ramagyaschool.com/blogs/${post.slug}`;
-  const decodedTitle = decodeHtmlEntities(post.title);
-  const rawDescription = decodeHtmlEntities(post.excerpt || yoastData.description || "Default description");
-  const metaDescription = getMetaDescription(rawDescription); // Apply the meta description limit
+  // Featured Image URL
+  const featuredImageUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
 
   return (
-    <>
-      <Head>
-        <meta name="description" content={metaDescription} />
-        <title>{decodedTitle}</title>
-        <meta property="og:title" content={yoastData.og_title || post.title || "Default OG Title"} />
-        <meta property="og:url" content={yoastData.og_url || canonicalUrl} />
-        <meta name="twitter:card" content={yoastData.twitter_card} />
-        <link rel="canonical" href={canonicalUrl} />
-      </Head>
-      <HeaderBlog />
-      {/* Main banner section of the page */}
-      <section className="section banner-sec banner-section-contact">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="banner-text">
-                <h1 className="wow animate__animated animate__fadeInDown" style={{ animationDelay: '0.2s' }}>
-                  Blogs!
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="container my-5">
-        <div className="row">
-          <div className="col-md-12">
-            <a href="https://ramagyaschool.com/blogs/" className="learn-more-button">&nbsp;Back</a>
-            <h1>{decodedTitle}</h1>
-            {post.featured_media_url && (
-              <Image
-                src={post.featured_media_url}
-                alt={post.title || "Featured Media"}
-                className="mb-3"
-                width={1250} // Replace with the desired width
-                height={500} // Replace with the desired height
-              />
-            )}
-
-            <div dangerouslySetInnerHTML={{ __html: post.content }} />
-            <small>Published on: {new Date(post.date).toLocaleDateString()}</small>
-          </div>
-        </div>
-      </div>
-      <FooterBlog />
-    </>
+    <div>
+      <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+      {featuredImageUrl && (
+        <Image
+          src={featuredImageUrl}
+          alt={post.title.rendered}
+          width={500}
+          height={200}
+          layout="responsive" // Ensures the image scales properly
+        />
+      )}
+      <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} /> {/* Full post content */}
+    </div>
   );
 };
 
-export default BlogDetail;
+export default Post;

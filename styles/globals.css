@@ -1221,7 +1221,7 @@ ul {
   font-size: 15px;
   transition: background-color 0.3s, color 0.3s;
   font-weight: 500;
-  margin: 0;
+  margin: 5px;
   border-radius: 0;
   font-family: var(--font-family-text);
 }
