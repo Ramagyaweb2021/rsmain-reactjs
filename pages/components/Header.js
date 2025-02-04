@@ -439,8 +439,8 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* <Enquirypopup /> */}
-      {/* <Typebot /> */}
+      <Enquirypopup />
+      <Typebot />
     </>
   );
 };
