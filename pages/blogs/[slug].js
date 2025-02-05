@@ -1,73 +1,92 @@
-import React from 'react';
+//import { useEffect, useState } from 'react';
+import Head from 'next/head';
+import HeaderBlog from '../components/HeaderBlog';
+import FooterBlog from '../components/FooterBlog';
 import Image from 'next/image';
 
-// Fetch individual post based on slug
-export async function getStaticPaths() {
-  try {
-    const res = await fetch("https://blogs.ramagyaschool.com/wp-json/wp/v2/posts");
-    const posts = await res.json();
-
-    // Generate paths for all blog posts based on their slugs
-    const paths = posts.map((post) => ({
-      params: { slug: encodeURIComponent(post.slug) }, // URL encode the slug
-    }));
-
-    //console.log("Generated paths:", paths); // Debug log to check paths
-
-    return {
-      paths,
-      fallback: false, // Show 404 for any paths that don't exist
-    };
-  } catch (error) {
-    console.error("Error fetching posts:", error);
-    return { paths: [], fallback: false };
-  }
-}
-
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const { slug } = params;
 
   try {
-    // Fetch the post data based on the slug
+    // Fetch post by slug
     const res = await fetch(`https://blogs.ramagyaschool.com/wp-json/wp/v2/posts?slug=${slug}&_embed`);
-    const post = await res.json();
 
-    if (!post.length) {
-      return { notFound: true }; // Return a 404 if no post is found
+    if (!res.ok) {
+      return {
+        notFound: true, // Will trigger a 404 if post not found
+      };
     }
 
+    const post = await res.json();
+    if (post.length === 0) {
+      return {
+        notFound: true, // Trigger 404 if no post matches the slug
+      };
+    }
+
+    const formattedPost = post[0]; // Get the first post from the array
     return {
       props: {
-        post: post[0], // We expect only one post to match the slug
+        post: formattedPost,
       },
     };
   } catch (error) {
-    console.error("Error fetching post:", error);
-    return { notFound: true }; // Return 404 in case of error
+    console.error('Error fetching post:', error);
+    return {
+      notFound: true, // Trigger 404 on error
+    };
   }
 }
 
-const Post = ({ post }) => {
-  if (!post) return <p>Post not found</p>;
+const BlogPost = ({ post }) => {
+  if (!post) {
+    return <p>Post not found.</p>;
+  }
 
-  // Featured Image URL
-  const featuredImageUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+  // Extract Yoast SEO metadata
+  const seo = post.yoast_head_json || {};
+  const title = seo.title || post.title.rendered;
+  const description = seo.description || post.excerpt.rendered.replace(/<[^>]*>/g, ""); // Remove HTML tags
+  const featuredImageUrl = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+
+  // Concatenate a valid title string for the <title> tag
+  //const pageTitle = `${post.title.rendered} - Ramagya School Blog`;
 
   return (
     <div>
-      <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-      {featuredImageUrl && (
-        <Image
-          src={featuredImageUrl}
-          alt={post.title.rendered}
-          width={500}
-          height={200}
-          layout="responsive" // Ensures the image scales properly
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta property="og:title" content={seo.og_title || title} />
+        <meta property="og:description" content={seo.og_description || description} />
+        <meta property="og:image" content={seo.og_image?.[0]?.url || featuredImageUrl} />
+        <meta property="og:url" content={`https://ramagyaschool.com/blogs/${post.slug}`} />
+        <link rel="canonical" href={`https://ramagyaschool.com/blogs/${post.slug}`} />
+        {/* <title>{pageTitle}</title>
+        <meta name="description" content={description} />
+        <meta property="og:image" content={featuredImageUrl || "https://ramagyaschool.com/images/main-webiste-logo/logo-2.webp"} />
+        <meta property="og:description" content={description} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:url" content={`https://ramagyaschool.com/blogs/${post.slug}`} />
+        <meta property="og:site_name" content="Ramagya School - Blog, Reviews and Latest Updates" />
+        <meta name="twitter:image" content={featuredImageUrl || "https://ramagyaschool.com/images/main-webiste-logo/logo-2.webp"} />
+        <link rel="canonical" href={`https://ramagyaschool.com/blogs/${post.slug}`} /> */}
+      </Head>
+      <HeaderBlog />
+      <div className="container mt-100">
+        <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+        {featuredImageUrl && (
+          <Image src={featuredImageUrl} alt={post.title.rendered} width={750} height={350} className="img-fluid mb-4" priority />
+        )}
+        <div
+          dangerouslySetInnerHTML={{
+            __html: post.content.rendered, // Render the post content
+          }}
         />
-      )}
-      <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} /> {/* Full post content */}
+      </div>
+      <FooterBlog />
     </div>
   );
 };
 
-export default Post;
+export default BlogPost;

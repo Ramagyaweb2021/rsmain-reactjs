@@ -2917,3 +2917,9 @@ hr {
   font-family: var(--font-family-heading);
   font-weight: 500;
 }
+.blog-loading{
+  font-size: 25px;
+  font-weight: 500;
+  font-family: var(--font-family-heading);
+  color: var(--color-set-green);
+}

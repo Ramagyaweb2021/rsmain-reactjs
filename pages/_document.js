@@ -16,7 +16,6 @@ export default function Document() {
         <meta name="googlebot" content="index, follow" />
         <meta name="bingbot" content="index, follow" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://ramagyaschool.com/images/main-webiste-logo/logo-2.webp" />
         <meta property="og:locale" content="en_US" />
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />

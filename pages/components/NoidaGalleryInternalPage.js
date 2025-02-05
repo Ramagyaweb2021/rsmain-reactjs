@@ -1618,6 +1618,34 @@ const NoidaGalleryInternalPage = () => {
         
         // ********************************************Video gallery for Wellness & Support
         {
+          src: 'https://img.youtube.com/vi/tnVWxicccK4/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Wellness & Support',
+          type: 'video',
+          videoId: 'tnVWxicccK4'
+        },
+        {
+          src: 'https://img.youtube.com/vi/crUUplFUh2k/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Wellness & Support',
+          type: 'video',
+          videoId: 'crUUplFUh2k'
+        },
+        {
+          src: 'https://img.youtube.com/vi/oBqzCjDguFo/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Wellness & Support',
+          type: 'video',
+          videoId: 'oBqzCjDguFo'
+        },
+        {
+          src: 'https://img.youtube.com/vi/pPqCR32_nk4/hqdefault.jpg',
+          title: 'Ramagya School Gallery',
+          category: 'Wellness & Support',
+          type: 'video',
+          videoId: 'pPqCR32_nk4'
+        },
+        {
           src: 'https://img.youtube.com/vi/CEbwZBE0LOU/hqdefault.jpg',
           title: 'Ramagya School Gallery',
           category: 'Wellness & Support',

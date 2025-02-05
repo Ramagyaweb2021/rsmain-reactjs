@@ -74,7 +74,7 @@ const Header = () => {
               src={
                 isSticky
                   ? '/images/main-webiste-logo/logo-2.webp'
-                  : '/images/main-webiste-logo/logo-1.webp'
+                  : '/images/main-webiste-logo/logo-2.webp'
               }
               width={280}
               height={56}
