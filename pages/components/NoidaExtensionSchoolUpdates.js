@@ -54,64 +54,64 @@ const NoidaExtensionSchoolUpdates = () => {
   // Data for slides (to be mapped in the sliders)
   const schoolAchievementsSlides = [
     {
-      imgSrc: "/images/noida-extension/school-updates/achievements-1.webp",
-      title: "Achievements Ramagya School Shines Bright with the Brand Brilliance Award for Excellence in the Net Zero Energy School category",
-      text: `We have been honored with the prestigious Brand Brilliance Award for Excellence in the Net Zero Energy School category by Apartment Times. This award recognizes the school’s commitment to sustainability, innovation, and creating a positive impact in education.  The award was received by our esteemed…`
+      imgSrc: "/images/noida-extension/school-updates/achievements.webp",
+      title: "Ms. Awani Singh Honored with the prestigious Principal with Exceptional Visionary Leadership award",
+      text: `Our Principal, Ms. Awani Singh, recently participated as an expert panelist in a thought-provoking discussion on The Future of Personalized Learning: How Technology is Transforming Classrooms. Joining renowned educators, she shared her visionary insights on the evolving landscape of education and the role of technology in shaping future classrooms.`
     },
-    {
-      imgSrc: "/images/noida-extension/school-updates/achievements-2.webp",
-      title: "Honored with the Educational Excellence Award at the 19th Indian School Awards.",
-      text: `Ramagya School is honored to receive the prestigious Educational Excellence Award at the 19th Edition of the Indian School Awards, held in Delhi on September 28, 2024. This accolade was presented to our esteemed Principal, Ms. Priyanka Singh, recognizing her visionary leadership and our commitment…`
-    }
+    // {
+    //   imgSrc: "/images/noida-extension/school-updates/achievements-2.webp",
+    //   title: "Honored with the Educational Excellence Award at the 19th Indian School Awards.",
+    //   text: `Ramagya School is honored to receive the prestigious Educational Excellence Award at the 19th Edition of the Indian School Awards, held in Delhi on September 28, 2024. This accolade was presented to our esteemed Principal, Ms. Priyanka Singh, recognizing her visionary leadership and our commitment…`
+    // }
     // Add more slides as needed
   ];
 
   const mediaPressSlides = [
     {
-      imgSrc: "/images/noida-extension/school-updates/media-press-1.webp",
-      title: "Adisruti Founder’s Day Event Shines in APN News, Edukoda and Skill Outlook",
-      text: `We recently celebrated our Founder’s Day, known as “Adisruti,” with remarkable enthusiasm and elegance. This significant event, honoring the visionary leadership of our esteemed founder, was prominently featured in APN News, Edukoda, and Skill Outlook.  The celebration was marked by a series of inspiring performances,…  `
+      imgSrc: "/images/noida-extension/school-updates/media-press.webp",
+      title: "Ramagya School Noida Extension Shines in OUTLOOK as India’s #4 K1-K12 School by Bharat Schools Ranking 2024-25",
+      text: `Ramagya School, Noida Extension, proudly stands among the best, earning a prestigious feature in OUTLOOK for its landmark achievement as India’s #4 Ranked (City Rank) in the Pan India K1-K12 School, awarded by Bharat Schools Ranking 2024-25. This recognition underscores our steadfast dedication to delivering an unparalleled educational journey, blending academic excellence, innovation, and character building`
     }
     // Add more slides as needed
   ];
 
   const schoolEventsSlides = [
     {
-      imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-events-1.webp",
-      title: "INSIGHTS INTO EDUCATION: RJ GINNIE’S VISIT TO RAMAGYA SCHOOL NOIDA EXTENSION",
-      text: `Join us at Ramagya School for an enriching experience unlike any other, as we welcome the esteemed RJ Ginnie from Radio City 91.1 FM! Ramagya School is dedicated to promoting holistic development and giving students the chance to interact with motivating people who have insightful things to say about learning and personal development. We’re excited to have RJ Ginnie, a well-known radio personality recognized for her insightful conversation and captivating storytelling, as our guest today.`
+      imgSrc: "/images/noida-extension/school-updates/event.webp",
+      title: "A Joyous Celebration of Basant Panchami and Goddess Saraswati",
+      text: `Basant Panchami was celebrated with great enthusiasm at the school, marking the arrival of spring and the worship of Goddess Saraswati, the symbol of wisdom and knowledge. Students and faculty participated in a variety of cultural and religious activities, including a special Saraswati Vandana, singing devotional songs, and offering prayers for wisdom and success. Traditional sweets were shared, and the atmosphere was filled with joy and celebration. `
     },
-    {
-      imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-events-2.webp",
-      title: "EMBRACING EXCELLENCE: RAMAGYA SCHOOL, NOIDA EXTENSION GRADUATION DAY",
-      text: `Join us in celebrating a milestone moment at Ramagya School, Noida Extension, a day that commemorates the achievements of our graduating students. Witness the culmination of years of dedication, perseverance, and growth as our students embark on the next chapter of their academic journey. With cherished memories, our graduation ceremony promises to be an unforgettable tribute to the remarkable accomplishments of our graduates. A day filled with pride, inspiration, and the promise of a bright future!`
-    },
+    // {
+    //   imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-events-2.webp",
+    //   title: "EMBRACING EXCELLENCE: RAMAGYA SCHOOL, NOIDA EXTENSION GRADUATION DAY",
+    //   text: `Join us in celebrating a milestone moment at Ramagya School, Noida Extension, a day that commemorates the achievements of our graduating students. Witness the culmination of years of dedication, perseverance, and growth as our students embark on the next chapter of their academic journey. With cherished memories, our graduation ceremony promises to be an unforgettable tribute to the remarkable accomplishments of our graduates. A day filled with pride, inspiration, and the promise of a bright future!`
+    // },
     ,
-    {
-      imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-events-3.webp",
-      title: "CELEBRATE VICTORIES: SPORTS DAY HIGHLIGHTS | RAMAGYA SCHOOL, NOIDA EXTENSION",
-      text: `Step into the arena of triumph with the vibrant snapshots from our Sports Day celebration at Ramagya School, Noida Extension. Witness the fervor of teamwork, resilience, and athletic prowess as our students showcase their sporting spirit in a day filled with cheers, victories, and unforgettable memories. Proud to celebrate the spirit of sportsmanship and achievement that defines our school community`
-    },
+    // {
+    //   imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-events-3.webp",
+    //   title: "CELEBRATE VICTORIES: SPORTS DAY HIGHLIGHTS | RAMAGYA SCHOOL, NOIDA EXTENSION",
+    //   text: `Step into the arena of triumph with the vibrant snapshots from our Sports Day celebration at Ramagya School, Noida Extension. Witness the fervor of teamwork, resilience, and athletic prowess as our students showcase their sporting spirit in a day filled with cheers, victories, and unforgettable memories. Proud to celebrate the spirit of sportsmanship and achievement that defines our school community`
+    // },
     // Add more slides as needed
   ];
 
   const workshopActivitySlides = [
     {
-      imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-workshop-1.webp",
+      imgSrc: "/images/noida-extension/school-updates/workshop.webp",
       title: "CHAMPIONING HUMAN RIGHTS: SPECIAL ASSEMBLY AT RAMAGYA SCHOOL",
       text: `Join us for an inspiring journey of empowerment and advocacy at Ramagya School, Noida Extension, with our Human Rights Assembly! Led by our passionate grade 6 to 8 students, this dynamic assembly brings together insightful street plays, impactful discussions, and a commitment to positive global change. Experience the power of voices raised in support of human rights as we empower our students to become advocates for a better world. Watch and be a part of something meaningful!`
     },
-    {
-      imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-workshop-2.webp",
-      title: "RAMAGYA SCHOOL NOIDA EXTENSION: CLASS PRESENTATION HIGHLIGHTS",
-      text: `Experience the brilliance of our students at Ramagya School Noida Extension as they showcase their understanding in class presentations! From exploration of Community Helpers to insights into Unity in Diversity, our learners captivate with knowledge and creativity. Dive into the highlights of our recent presentation event and witness the future leaders in action.`
-    },
-    ,
-    {
-      imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-workshop-3.webp",
-      title: "EXPLORING EMOTIONS: LEARNING BY DOING PLAY THERAPY",
-      text: `With the help of Ramagya School’s “Learning by Doing – Play Therapy” activities, you may fully dive into the intriguing world of emotions. These interactive lessons, which are intended to develop social skills and emotional intelligence, provide a secure and supportive space for kids to explore and communicate their emotions. `
-    },
+    // {
+    //   imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-workshop-2.webp",
+    //   title: "RAMAGYA SCHOOL NOIDA EXTENSION: CLASS PRESENTATION HIGHLIGHTS",
+    //   text: `Experience the brilliance of our students at Ramagya School Noida Extension as they showcase their understanding in class presentations! From exploration of Community Helpers to insights into Unity in Diversity, our learners captivate with knowledge and creativity. Dive into the highlights of our recent presentation event and witness the future leaders in action.`
+    // },
+    
+    // {
+    //   imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-workshop-3.webp",
+    //   title: "EXPLORING EMOTIONS: LEARNING BY DOING PLAY THERAPY",
+    //   text: `With the help of Ramagya School’s “Learning by Doing – Play Therapy” activities, you may fully dive into the intriguing world of emotions. These interactive lessons, which are intended to develop social skills and emotional intelligence, provide a secure and supportive space for kids to explore and communicate their emotions. `
+    // },
     // Add more slides as needed
   ];
   return (
@@ -139,7 +139,7 @@ const NoidaExtensionSchoolUpdates = () => {
                           <div key={index} className="row-school-updates align-items-center">
                             <div className="col-lg-5 col-md-5 col-12 image-resize">
                              <a href="https://ramagyaschoolblog.com/category/achievements-noida-extension/" target='_blank'>
-                              <Image src={slide.imgSrc} alt="School Achievements" width={430} height={306} />
+                              <Image src={slide.imgSrc} alt="School Achievements" width={430} height={306} priority  />
                               </a>
                             </div>
                             <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
@@ -169,7 +169,7 @@ const NoidaExtensionSchoolUpdates = () => {
                           <div key={index} className="row-school-updates align-items-center">
                             <div className="col-lg-5 col-md-5 col-12 image-resize">
                             <a href="https://ramagyaschoolblog.com/category/noida-ext-media-press/" target='_blank'>
-                              <Image src={slide.imgSrc} alt="Media Press" width={430} height={306} />
+                              <Image src={slide.imgSrc} alt="Media Press" width={430} height={306} priority />
                               </a>
                             </div>
                             <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
@@ -198,7 +198,7 @@ const NoidaExtensionSchoolUpdates = () => {
                           <div key={index} className="row-school-updates align-items-center">
                             <div className="col-lg-5 col-md-5 col-12 image-resize">
                              <a href="https://ramagyaschoolblog.com/category/noida-ext-events/" target='_blank'>
-                              <Image src={slide.imgSrc} alt="School Events" width={430} height={306} />
+                              <Image src={slide.imgSrc} alt="School Events" width={430} height={306} priority />
                               </a>
                             </div>
                             <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
@@ -227,7 +227,7 @@ const NoidaExtensionSchoolUpdates = () => {
                           <div key={index} className="row-school-updates align-items-center">
                             <div className="col-lg-5 col-md-5 col-12 image-resize">
                              <a href="https://ramagyaschoolblog.com/category/workshop/" target='_blank'>
-                              <Image src={slide.imgSrc} alt="Workshop/Activity" width={430} height={306} />
+                              <Image src={slide.imgSrc} alt="Workshop/Activity" width={430} height={306} priority />
                               </a>
                             </div>
                             <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
