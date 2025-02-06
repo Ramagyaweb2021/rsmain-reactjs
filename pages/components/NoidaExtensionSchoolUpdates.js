@@ -98,8 +98,8 @@ const NoidaExtensionSchoolUpdates = () => {
   const workshopActivitySlides = [
     {
       imgSrc: "/images/noida-extension/school-updates/workshop.webp",
-      title: "CHAMPIONING HUMAN RIGHTS: SPECIAL ASSEMBLY AT RAMAGYA SCHOOL",
-      text: `Join us for an inspiring journey of empowerment and advocacy at Ramagya School, Noida Extension, with our Human Rights Assembly! Led by our passionate grade 6 to 8 students, this dynamic assembly brings together insightful street plays, impactful discussions, and a commitment to positive global change. Experience the power of voices raised in support of human rights as we empower our students to become advocates for a better world. Watch and be a part of something meaningful!`
+      title: "Empowering Educators: ‘Understanding Self and Team’ Workshop",
+      text: `We recently hosted a transformative “Understanding Self and Team” workshop for our dedicated teachers, aimed at fostering self-awareness and collaboration—essential components of a thriving educational environment. The session was led by Ms. Akanksha Arora, a seasoned Leadership & Teacher Trainer, and former Educator Innovation Lead at Microsoft.`
     },
     // {
     //   imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-workshop-2.webp",
