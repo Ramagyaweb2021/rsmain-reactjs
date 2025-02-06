@@ -97,7 +97,7 @@ const NoidaExtensionSchoolUpdates = () => {
 
   const workshopActivitySlides = [
     {
-      imgSrc: "/images/noida-extension/school-updates/workshop.webp",
+      imgSrc: "/images/noida-extension/school-updates/workshopL.webp",
       title: "Empowering Educators: ‘Understanding Self and Team’ Workshop",
       text: `We recently hosted a transformative “Understanding Self and Team” workshop for our dedicated teachers, aimed at fostering self-awareness and collaboration—essential components of a thriving educational environment. The session was led by Ms. Akanksha Arora, a seasoned Leadership & Teacher Trainer, and former Educator Innovation Lead at Microsoft.`
     },
