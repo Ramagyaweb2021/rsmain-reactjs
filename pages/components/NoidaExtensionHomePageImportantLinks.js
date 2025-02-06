@@ -24,16 +24,18 @@ const NoidaExtensionHomePageImportantLinks = () => {
       text: "Pay Fees",
       link: "noida-extension/pay-school-fees",
     },
-    // {
-    //   img: "/images/noida/important-link/icon-5.webp",
-    //   text: "School Life",
-    //   link: "#",
-    // },
     {
       img: "/images/noida/important-link/icon-6.webp",
       text: "Parent's",
       link: "noida-extension/parents",
     },
+    {
+      img: "/images/noida/important-link/icon-7.webp",
+      text: "Careers",
+      link: "https://ramagyagroup.com/current-opening",
+      target: "_blank",
+      rel: "noopener noreferrer"
+    }    
   ];
 
   return (
