@@ -146,7 +146,7 @@ export default function Blog({ posts }) {
                   )}
                   <h2 dangerouslySetInnerHTML={{ __html: post.title.rendered }} className="h5 mb-2" />
                   <p className="text-muted small">Date: {post.formattedDate}</p>
-                  <a href={`/blogs/${post.slug}`} target='_blank' className="btn custom-btn">
+                  <a href={`/blogs/${post.slug}`} className="btn custom-btn">
                     Read More
                   </a>
                 </div>

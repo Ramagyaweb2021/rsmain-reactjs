@@ -69,12 +69,12 @@ const Header = () => {
       <nav id="navbar" className="navbar fixed-top">
         <div className="container-fluid">
           {/* Logo */}
-          <a className="navbar-brand" href="https://ramagyaschool.com/blogs">
+          <a className="navbar-brand" href="./">
             <Image
               src={
                 isSticky
                   ? '/images/main-webiste-logo/logo-2.webp'
-                  : '/images/main-webiste-logo/logo-2.webp'
+                  : '/images/main-webiste-logo/logo-1.webp'
               }
               width={280}
               height={56}
@@ -116,26 +116,26 @@ const Header = () => {
             <ul className={`dropdown-menu ${dropdownOpen && isMobile ? 'show' : ''}`}>
             {/* <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}> */}
               <li>
-                <a className="dropdown-item" href="https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/" target="_blank">
+                <a className="dropdown-item" href="https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/" target="_blank" rel="noopener noreferrer">
                   Noida
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="https://forms.edunexttechnologies.com/forms/ramagyanoidaextension/registration/" target="_blank">
+                <a className="dropdown-item" href="https://forms.edunexttechnologies.com/forms/ramagyanoidaextension/registration/" target="_blank" rel="noopener noreferrer">
                   Noida Ext.
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="https://ramagyaschool.com/greater-noida" target="_blank">Gr. Noida</a>
+                <a className="dropdown-item" href="https://ramagyaschool.com/greater-noida" target="_blank" rel="noopener noreferrer">Gr. Noida</a>
               </li>
               <li>
-                <a className="dropdown-item" href="https://ramagyaschool.com/dadri" target="_blank">Dadri</a>
+                <a className="dropdown-item" href="https://ramagyaschool.com/dadri" target="_blank" rel="noopener noreferrer">Dadri</a>
               </li>
             </ul>
           </div>
 
           {/* Hamburger menu */}
-          {/* <div
+          <div
             className="hamburger"
             id="nav-icon1"
             data-bs-toggle="offcanvas"
@@ -157,11 +157,11 @@ const Header = () => {
             <span />
             <span />
             <span />
-          </div> */}
+          </div>
         </div>
 
         {/* Offcanvas */}
-        {/* <div className="offcanvas offcanvas-top text-bg-dark" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div className="offcanvas offcanvas-top text-bg-dark" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div className="offcanvas-header">
            <a className="navbar-brand" href="./">
              <img src="/images/main-webiste-logo/logo-1.webp" alt="Ramagya school noida" />
@@ -180,32 +180,32 @@ const Header = () => {
           <ul className="navbar-nav justify-content-center flex-grow-0 pe-3">
                 
                  <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="https://ramagyaschool.com/noida" target='_blank'>
+                  <a className="nav-link" aria-current="page" href="https://ramagyaschool.com/noida" target="_blank" rel="noopener noreferrer">
                   Noida
                   </a>
                 </li>
                
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="https://ramagyaschool.com/noida-extension" target='_blank'>
+                  <a className="nav-link" aria-current="page" href="https://ramagyaschool.com/noida-extension" target="_blank" rel="noopener noreferrer">
                   Noida Ext.
                   </a>
                 </li>
                
                  <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="https://ramagyaschool.com/greater-noida" target='_blank'>
+                  <a className="nav-link" aria-current="page" href="https://ramagyaschool.com/greater-noida" target="_blank" rel="noopener noreferrer">
                   Gr. Noida
                   </a>
                 </li>
               
                <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="https://ramagyaschool.com/dadri" target='_blank'>
+                  <a className="nav-link" aria-current="page" href="https://ramagyaschool.com/dadri" target="_blank" rel="noopener noreferrer">
                   Dadri
                   </a>
                 </li>
                
               </ul>
           </div>
-        </div> */}
+        </div>
       </nav>
 
       <Enquirypopup />

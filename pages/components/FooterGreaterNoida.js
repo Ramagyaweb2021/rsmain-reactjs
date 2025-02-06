@@ -130,9 +130,9 @@ const FooterGreaterNoida = () => {
                 <p><Link href="scholarship-programme">Scholarship</Link></p>
                 <p><Link href="recommend-a-student">Recommend a Student</Link></p> */}
                 <p className="footer-heading">Other Links</p>
-                <p><Link href="https://ramagyagroup.com/current-opening" target='_blank'>Careers</Link></p>
+                <p> <Link href="https://ramagyagroup.com/current-opening" target="_blank" rel="noopener noreferrer">Careers</Link></p>
                 <p><Link href="/contact-us">Contact Us</Link></p>
-                <p><Link href="https://blogs.ramagyaschool.com" target='_blank'>Blog</Link></p>
+                <p><Link href="/blogs">Blog</Link></p>
                 <p><Link href="/greater-noida/pre-admission"> Admission</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>

@@ -73,7 +73,20 @@ const BlogPost = ({ post }) => {
         <link rel="canonical" href={`https://ramagyaschool.com/blogs/${post.slug}`} /> */}
       </Head>
       <HeaderBlog />
-      <div className="container mt-100">
+      <section className="section banner-sec banner-section-contact">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="banner-text">
+                <h1 className="wow animate__animated animate__fadeInDown" style={{ animationDelay: '0.2s' }}>
+                  Blogs!
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="container mt-1">
         <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
         {featuredImageUrl && (
           <Image src={featuredImageUrl} alt={post.title.rendered} width={750} height={350} className="img-fluid mb-4" priority />
