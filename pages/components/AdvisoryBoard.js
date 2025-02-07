@@ -4,6 +4,12 @@ import Image from "next/image";
 const AdvisoryBoard = () => {
   const members = [
     {
+      name: "MS. Ashok Dhyan Chand",
+      designation: "Son of hockey legend Major Dhyan Chand Olympic bronze medallist three-time Asian Games silver medalist",
+      details: "Arjuna Award (1974) and the Major Dhyan Chand Lifetime Achievement Award (2024)",
+      image: "/images/advisory-board/ashok-dhyan-chand.png",
+    },
+    {
       name: "DR MAN HEE LEE",
       designation: "Founding Chairman & President – Heavenly Culture, World Peace, Restoration of Light (HWPL)",
       details: "Director – World Alliance of Religions’ Peace (WARP) Office",
