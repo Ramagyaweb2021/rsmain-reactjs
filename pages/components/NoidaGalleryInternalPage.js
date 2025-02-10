@@ -1900,8 +1900,337 @@ const NoidaGalleryInternalPage = () => {
       type: 'video',
       videoId: 'RHTBiEtHBKM'
     },
-
+  // ******************************************Video gallery for Co-Curricular Activities
+  {
+    src: 'https://img.youtube.com/vi/sDM-bdEyt3k/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'sDM-bdEyt3k'
+  },
+  {
+    src: 'https://img.youtube.com/vi/3Tb_o8OYEMo/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: '3Tb_o8OYEMo'
+  },
+  {
+    src: 'https://img.youtube.com/vi/k_9Q3AC5Kb4/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'k_9Q3AC5Kb4'
+  },
+  {
+    src: 'https://img.youtube.com/vi/U0dF0KPs_KU/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'U0dF0KPs_KU'
+  },
+  {
+    src: 'https://img.youtube.com/vi/JQyPJZGtm6A/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'JQyPJZGtm6A'
+  },
+  {
+    src: 'https://img.youtube.com/vi/EXWYynt6bno/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'EXWYynt6bno'
+  },
+  {
+    src: 'https://img.youtube.com/vi/lsyZMyaieYc/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'lsyZMyaieYc'
+  },
+  {
+    src: 'https://img.youtube.com/vi/wKE5flQlzzw/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'wKE5flQlzzw'
+  },
+  {
+    src: 'https://img.youtube.com/vi/0dUZrLgeNhs/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: '0dUZrLgeNhs'
+  },
+  {
+    src: 'https://img.youtube.com/vi/QvIma5GHyZI/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'QvIma5GHyZI'
+  },
+  {
+    src: 'https://img.youtube.com/vi/0u9JBVRzb5k/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: '0u9JBVRzb5k'
+  },
+  {
+    src: 'https://img.youtube.com/vi/4pdHOMwN454/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: '4pdHOMwN454'
+  },
+  {
+    src: 'https://img.youtube.com/vi/waZ5zHxwI34/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'waZ5zHxwI34'
+  },
+  {
+    src: 'https://img.youtube.com/vi/tinXvBchsyw/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'tinXvBchsyw'
+  },
+  {
+    src: 'https://img.youtube.com/vi/JUCYvZTaaUY/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'JUCYvZTaaUY'
+  },
+  {
+    src: 'https://img.youtube.com/vi/hXtvYmfLjDQ/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'hXtvYmfLjDQ'
+  },
+  {
+    src: 'https://img.youtube.com/vi/24sYu5v_Tqw/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: '24sYu5v_Tqw'
+  },
+  {
+    src: 'https://img.youtube.com/vi/F71n4RhhJlc/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'F71n4RhhJlc'
+  },
+  {
+    src: 'https://img.youtube.com/vi/ksbfbzYE3Dw/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'ksbfbzYE3Dw'
+  },
+  {
+    src: 'https://img.youtube.com/vi/R1flAof4wBQ/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'R1flAof4wBQ'
+  },
+  {
+    src: 'https://img.youtube.com/vi/oBqzCjDguFo/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'oBqzCjDguFo'
+  },
+  {
+    src: 'https://img.youtube.com/vi/aRs40l6Mr7M/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'aRs40l6Mr7M'
+  },
+  {
+    src: 'https://img.youtube.com/vi/vylzcz0TQ9Y/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'vylzcz0TQ9Y'
+  },
+  {
+    src: 'https://img.youtube.com/vi/qVloUnCgkFI/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'qVloUnCgkFI'
+  },
+  {
+    src: 'https://img.youtube.com/vi/t6VVC_P8KFs/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 't6VVC_P8KFs'
+  },
+  {
+    src: 'https://img.youtube.com/vi/E02ZfXrsO9A/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'E02ZfXrsO9A'
+  },
+  {
+    src: 'https://img.youtube.com/vi/bOSV9sBJG4A/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'bOSV9sBJG4A'
+  },
+  {
+    src: 'https://img.youtube.com/vi/2CY8P2PHvsg/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: '2CY8P2PHvsg'
+  },
+  {
+    src: 'https://img.youtube.com/vi/ZTHz4TAqz2Q/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'ZTHz4TAqz2Q'
+  },
+  {
+    src: 'https://img.youtube.com/vi/mQ0k51xN23s/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'mQ0k51xN23s'
+  },
+  {
+    src: 'https://img.youtube.com/vi/W7D-Nus_0OQ/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'W7D-Nus_0OQ'
+  },
+  {
+    src: 'https://img.youtube.com/vi/h2lFo9VaNI4/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'h2lFo9VaNI4'
+  },
+  {
+    src: 'https://img.youtube.com/vi/ppJkLsv3wyE/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'ppJkLsv3wyE'
+  },
+  {
+    src: 'https://img.youtube.com/vi/F5pDg8XiCBI/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'F5pDg8XiCBI'
+  },
+  {
+    src: 'https://img.youtube.com/vi/aOYilcFWmAc/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'aOYilcFWmAc'
+  },
+  {
+    src: 'https://img.youtube.com/vi/eWJIDs0lz5c/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'eWJIDs0lz5c'
+  },
+  {
+    src: 'https://img.youtube.com/vi/BHBXlSyZpws/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'BHBXlSyZpws'
+  },
+  {
+    src: 'https://img.youtube.com/vi/JrcZXApLnnI/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'JrcZXApLnnI'
+  },
+  {
+    src: 'https://img.youtube.com/vi/keVqoVj_ESM/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'keVqoVj_ESM'
+  },
+  {
+    src: 'https://img.youtube.com/vi/FT55hFX7yJI/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'FT55hFX7yJI'
+  },
+  {
+    src: 'https://img.youtube.com/vi/EcCdFTVOxV8/hqdefault.jpg',
+    title: 'Ramagya School Gallery',
+    category: 'Co-Curricular Activities',
+    type: 'video',
+    videoId: 'EcCdFTVOxV8'
+  },
     // ****************************************** Video gallery for Parents
+    {
+      src: 'https://img.youtube.com/vi/vsnZDGKP878/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Parent Testimonials',
+      type: 'video',
+      videoId: 'vsnZDGKP878'
+    },
+    {
+      src: 'https://img.youtube.com/vi/1xlLX0Lxx9M/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Parent Testimonials',
+      type: 'video',
+      videoId: '1xlLX0Lxx9M'
+    },
+    {
+      src: 'https://img.youtube.com/vi/P4zJy_1ibkw/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Parent Testimonials',
+      type: 'video',
+      videoId: 'P4zJy_1ibkw'
+    },
+    {
+      src: 'https://img.youtube.com/vi/xeh7QeUFQF0/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Parent Testimonials',
+      type: 'video',
+      videoId: 'xeh7QeUFQF0'
+    },
+    {
+      src: 'https://img.youtube.com/vi/BYcX6eJjCgQ/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Parent Testimonials',
+      type: 'video',
+      videoId: 'BYcX6eJjCgQ'
+    },
+    {
+      src: 'https://img.youtube.com/vi/vTJeQtq1vcc/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Parent Testimonials',
+      type: 'video',
+      videoId: 'vTJeQtq1vcc'
+    },
     {
       src: 'https://img.youtube.com/vi/dX4E-tRVlh8/hqdefault.jpg',
       title: 'Ramagya School Gallery',
@@ -2246,7 +2575,7 @@ const NoidaGalleryInternalPage = () => {
         <div className="row g-2">
           {filteredItems.length > 0 ? (
             filteredItems.map((item, index) => (
-              <div key={index} className="col-md-4 col-6">
+              <div key={index} className="col-md-3 col-6">
                 <div
                   className="card-gallery"
                   style={{ cursor: 'pointer' }}

@@ -4,10 +4,16 @@ import Image from "next/image";
 const AdvisoryBoard = () => {
   const members = [
     {
-      name: "MS. Ashok Dhyan Chand",
+      name: "Mr. Ashok Dhyan Chand",
       designation: "Son of hockey legend Major Dhyan Chand Olympic bronze medallist three-time Asian Games silver medalist",
       details: "Arjuna Award (1974) and the Major Dhyan Chand Lifetime Achievement Award (2024)",
       image: "/images/advisory-board/ashok-dhyan-chand.png",
+    },
+    {
+      name: "Dr. Sanjay Bharadwaj",
+      designation: "Dronacharya Awardee (2019) Founder of the LB Shastri Cricket Academy, Coached India’s U-15 World Cup-winning team (1996) and Delhi’s senior team (2010-11)",
+      details: " Ph.D. in Physical Education and a BCCI Level 3 Certification.",
+      image: "/images/advisory-board/sanjay-bhardwaj.png",
     },
     {
       name: "DR MAN HEE LEE",
