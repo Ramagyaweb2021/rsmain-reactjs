@@ -77,7 +77,7 @@ const Overview = () => {
               <h3>About Us</h3>
               <p>
                   With a rich history spanning over two decades, Ramagya School has established itself as an institution that embodies the perfect blend of knowledge and values, excelling in academics, fostering co-curricular excellence, and achieving greatness in the realm of sports. Ramagya School, located in Noida&apos;s vibrant Sector-50, boasts a sprawling campus spanning more than 3 acres. It proudly holds the distinction of being voted as one of the top 3 Senior Secondary schools in the National Capital Region (NCR) by a Times of India survey. Additionally, it has earned a coveted spot among the 30 great Indian Schools recognized by Forbes India magazine.
-                  Ramagya School is affiliated with both CBSE and CIE boards, offering a well-rounded education to its students. The school&#39;s impressive scholastic and co-scholastic achievements owe much to its diverse faculty, each possessing over 15 years of valuable academic teaching experience. As part of our commitment to academic excellence, our teachers regularly participate in international and national seminars and conferences, thereby expanding their horizons on both the national and international educational fronts.
+                  Ramagya School is affiliated with CBSE board, offering a well-rounded education to its students. The school&#39;s impressive scholastic and co-scholastic achievements owe much to its diverse faculty, each possessing over 15 years of valuable academic teaching experience. As part of our commitment to academic excellence, our teachers regularly participate in international and national seminars and conferences, thereby expanding their horizons on both the national and international educational fronts.
               </p>
               <div className="d-flex justify-content-left align-items-left mt-1">
                 <div className="learn-more-button">
@@ -100,7 +100,7 @@ const Overview = () => {
              <Image src="/images/who-we-are/mission.webp" alt="Our Mission" width={50} height={50} />
               <h5>Our Mission</h5>
               <p>
-                Ramagya Senior Secondary School (affiliated to CBSE & CIE), located in Sector- 50, Noida (near Noida City Centre Metro Station) was founded in April 2005 and has carved a niche for itself as a prime educational institute in the field of education. Ra = light, Ma = Me, Gya = Inner voice came into existence for the amalgamation of contemporary education with traditional values.
+                Ramagya Senior Secondary School (affiliated to CBSE), located in Sector- 50, Noida (near Noida City Centre Metro Station) was founded in April 2005 and has carved a niche for itself as a prime educational institute in the field of education. Ra = light, Ma = Me, Gya = Inner voice came into existence for the amalgamation of contemporary education with traditional values.
               </p>
             </div>
           </div>
