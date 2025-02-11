@@ -77,9 +77,9 @@ const NoidaExtensionSchoolUpdates = () => {
 
   const schoolEventsSlides = [
     {
-      imgSrc: "/images/noida-extension/school-updates/event.webp",
-      title: "A Joyous Celebration of Basant Panchami and Goddess Saraswati",
-      text: `Basant Panchami was celebrated with great enthusiasm at the school, marking the arrival of spring and the worship of Goddess Saraswati, the symbol of wisdom and knowledge. Students and faculty participated in a variety of cultural and religious activities, including a special Saraswati Vandana, singing devotional songs, and offering prayers for wisdom and success. Traditional sweets were shared, and the atmosphere was filled with joy and celebration. `
+      imgSrc: "/images/noida-extension/school-updates/event-1.webp",
+      title: "Inter House Football Tournament",
+      text: `The Inter-House Football Competition for Grades 3 to 9 was a highly successful event that showcased the outstanding talent and teamwork of our students. Over the course of the competition, players demonstrated remarkable skills, determination, and sportsmanship. Every match was filled with intensity, with each team giving their best to secure victory. The Explorers emerged as the winning house, but every participant contributed to the success of the event. This competition was not only about the game, but also about fostering a spirit of collaboration, perseverance, and friendly competition.  `
     },
     // {
     //   imgSrc: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/blog/ext-events-2.webp",

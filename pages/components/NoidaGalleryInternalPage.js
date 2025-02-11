@@ -2252,7 +2252,77 @@ const NoidaGalleryInternalPage = () => {
       type: 'video',
       videoId: 'a-nRhn2vCrk'
     },
-
+     // ******************************************Video gallery for Skill Boosting Sessions
+    {
+      src: 'https://img.youtube.com/vi/f7NbaMVJh2Y/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'f7NbaMVJh2Y'
+    },
+    {
+      src: 'https://img.youtube.com/vi/FxT3xJFYpDg/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'FxT3xJFYpDg'
+    },
+    {
+      src: 'https://img.youtube.com/vi/4xbFf25pguo/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: '4xbFf25pguo'
+    },
+    {
+      src: 'https://img.youtube.com/vi/wzIgSGv3WhI/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'wzIgSGv3WhI'
+    },
+    {
+      src: 'https://img.youtube.com/vi/EKIhsAMvrBk/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'EKIhsAMvrBk'
+    },
+    {
+      src: 'https://img.youtube.com/vi/TUCE9e2eFBQ/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'TUCE9e2eFBQ'
+    },
+    {
+      src: 'https://img.youtube.com/vi/WMaMyzm31O0/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'WMaMyzm31O0'
+    },
+    {
+      src: 'https://img.youtube.com/vi/YsPCjwg5Ikk/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'YsPCjwg5Ikk'
+    },
+    {
+      src: 'https://img.youtube.com/vi/zdVITP31l10/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'zdVITP31l10'
+    },
+    {
+      src: 'https://img.youtube.com/vi/3KFjiioMzNU/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: '3KFjiioMzNU'
+    },
     // ************************************************Video gallery for Students
     {
       src: 'https://img.youtube.com/vi/A2p1Tl4zJxs/hqdefault.jpg',
@@ -2575,7 +2645,7 @@ const NoidaGalleryInternalPage = () => {
         <div className="row g-2">
           {filteredItems.length > 0 ? (
             filteredItems.map((item, index) => (
-              <div key={index} className="col-md-3 col-6">
+              <div key={index} className="col-md-2 col-6">
                 <div
                   className="card-gallery"
                   style={{ cursor: 'pointer' }}

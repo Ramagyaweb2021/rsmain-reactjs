@@ -18,7 +18,7 @@ import HomeUpdatesSection from "./components/HomeUpdatesSection";
 import HomeAwardsSection from "./components/HomeAwardsSection";
 import HomeTestimonialSection from "./components/HomeTestimonialSection";
 import HomeSectionFooter from "./components/HomeSectionFooter";
-//import OfferPopup from "./components/OfferPopup";
+import OfferPopupMainNoida from "./components/OfferPopupMainNoida";
 //import 'animate.css';
 
 //const WOW = dynamic(() => import('wowjs'), { ssr: false });
@@ -100,7 +100,7 @@ export default function Home() {
         <meta name="keywords" content="Best School in Noida, Schools in Noida, Noida Extension, Greater Noida and Dadri, CBSE Schools in Noida, Noida Extension, Greater Noida and Dadri" />
         <link rel="canonical" href="https://ramagyaschool.com/" />
       </Head>
-
+      <OfferPopupMainNoida/>
         {/* Only show Header when showMainMenu is false */}
         {!showMainMenu && <Header />}
 

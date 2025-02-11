@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Modal} from 'react-bootstrap';
 // import Image from 'next/image';
 // import Link from 'next/link';
-const OfferPopup = () => {
+const OfferPopupMainNoida = () => {
     const [show, setShow] = useState(false);
 
     useEffect(() => {
@@ -20,7 +20,7 @@ const OfferPopup = () => {
     return (
         <Modal show={show} onHide={handleClose} centered className="custom-modal" style={{backgroundColor:"transparent", zIndex:"1111"}}>
             <Modal.Header closeButton style={{backgroundColor:"#fff"}}>
-                <Modal.Title style={{color:"#274C77", fontWeight:"600", fontSize:"25px", textAlign:"center"}}>ADMISSION OPEN FOR 2025-2026!</Modal.Title>
+                <Modal.Title style={{color:"#274C77", fontWeight:"600", fontSize:"25px", textAlign:"center"}}>ENQUIRE NOW!</Modal.Title>
                 {/* <Image src="/images/close.webp" alt="Close" width={64} height={64}  className="btn-close btn-close-yellow"/> */}
             </Modal.Header>
             <Modal.Body style={{backgroundColor:"#fff"}}>
@@ -39,4 +39,4 @@ const OfferPopup = () => {
     );
 };
 
-export default OfferPopup;
+export default OfferPopupMainNoida;

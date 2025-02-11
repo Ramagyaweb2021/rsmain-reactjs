@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Image from 'next/image';
-//import Link from 'next/link';
+// import Link from 'next/link';
 // import { useEffect } from 'react';
 // import $ from 'jquery';
 function MyVerticallyCenteredModal(props) {
