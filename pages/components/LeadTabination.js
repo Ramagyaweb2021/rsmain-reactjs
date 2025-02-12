@@ -8,6 +8,7 @@ import Image from 'next/image'
 import AluminiInternalpageSlider from './AluminiInternalpageSlider';
 import LeadAchievementsInternalPage from './LeadAchievementsInternalPage';
 import LeadCareerAvenuesJatinChawlaInternalPage from './LeadCareerAvenuesJatinChawlaInternalPage';
+import InternalPageLeadSection from './InternalPageLeadSection';
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
@@ -46,54 +47,7 @@ const LeadTabination = () => {
                 </Tab>
                 <Tab eventKey="alumni" title="Alumni">
                   
-                  {/* <section section className="explore-section my-5">
-                    <div className="container">
-                      <div className='row justify-content-center my-3'>
-                        <div className='col-md-12'>
-                          <div className='about-content learn'>
-                          <h1>
-                             RAMAGYA ALUMNI REUNITE
-                              <span className="lineclass" />
-                              <span
-                                className="wow animate__ animate__zoomIn animated"
-                                style={{ animationDelay: "0.3s", visibility: "visible" }}
-                              >
-                                Rediscover, Reconnect and Relive Memories
-                              </span>
-                            </h1>
-
-                      
-
-                            <p className='my-4' style={{ textAlign: "center" }}>
-                            Univariety is more than a simple platform; it is an energetic community for Ramagya alumni across the globe to come together. At its core, Univariety acts as a digital ecosystem tailored specifically for Ramagya alumni needs and ensures a seamless experience for connecting, engaging, and expanding each other&#39;s skill sets.</p>
-
-                            <p>Univariety was designed with camaraderie and collaboration in mind, offering alumni an online meeting place to reunite old friendships, forge new bonds, and stay involved with their alma mater. No matter when or how long ago you graduated, Univariety welcomes all alumni - newcomers alike! - as we discover all that unites us all as we embark on exciting journeys together!</p>
-
-
-                          </div>
-                        </div>
-                      </div>
-
-                   
-                    </div>
-                    <div className="container">
-                      <div className='row justify-content-center my-3'>
-                        <div className='col-md-4 col-6'>
-                         <Image src="/images/lead/alumini/1.webp" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
-                        </div>
-                        <div className='col-md-4 col-6'>
-                         <Image src="/images/lead/alumini/1.webp" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
-                        </div>
-                        <div className='col-md-4 col-12 mt-1'>
-                         <Image src="/images/lead/alumini/1.webp" className="card-img-top img-fluid" alt="alumini" width={500} height={296} />
-                        </div>
-                      </div>
-
-                   
-                    </div>
-                    <AluminiInternalpageSlider/>
-                    
-                  </section> */}
+                  <InternalPageLeadSection/>
                 </Tab>
                
               </Tabs>

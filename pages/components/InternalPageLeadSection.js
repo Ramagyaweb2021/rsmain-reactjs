@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 // Dynamically import WOW.js to avoid server-side issues
 //const WOW = dynamic(() => import("wowjs"), { ssr: false });
 
-const HomeLeadSection = () => {
+const InternalPageLeadSection = () => {
    //useEffect(() => {
       // Initialize WOW.js only on the client side
     //   const WOWJS = require('wowjs');
@@ -210,7 +210,7 @@ const HomeLeadSection = () => {
 
   return (
     <div className="learn">
-      <div className="container my-custom-evolve">
+      <div className="container my-custom-evolve-1">
         <div className="row">
           <div className="col-sm-12 position-r">
             <h1>
@@ -273,11 +273,11 @@ const HomeLeadSection = () => {
               ))}
             </Slider>
               {/* Learb more button */}
-              <div className="d-flex justify-content-center align-items-center mt-1">
+              {/* <div className="d-flex justify-content-center align-items-center mt-1">
                   <div className="learn-more-button">
                     <a href="lead">Learn More</a>
                   </div>
-                </div>
+                </div> */}
           </div>
         </div>
       </div>
@@ -285,4 +285,4 @@ const HomeLeadSection = () => {
   );
 };
 
-export default HomeLeadSection;
+export default InternalPageLeadSection;
