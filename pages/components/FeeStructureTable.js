@@ -15,7 +15,7 @@ const FeeStructureTable = () => {
               height={50}
               className="card-img-top"
               /> */}
-              FEE STRUCTURE OF RAMAGYA SCHOOL NOIDA (2025-26)
+              FEE STRUCTURE OF RAMAGYA SCHOOL NOIDA (2024-25)
             </h2>
           </div>
 
