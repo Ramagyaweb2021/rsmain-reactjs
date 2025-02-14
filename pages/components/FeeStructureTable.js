@@ -36,9 +36,10 @@ const FeeStructureTable = () => {
             </div>
           </div>
 
-          {/* Fee Structure Table - 2023-2024 */}
+          {/* Fee Structure Table - 2025-2026 */}
           <table className="table table-hover text-center">
-            <thead>
+            {/* Fee Structure new */}
+            {/* <thead>
               <tr className="table-light">
                 <th>Classes</th>
                 <th>Monthly Fee</th>
@@ -77,9 +78,49 @@ const FeeStructureTable = () => {
                 <td>57960</td>
                 <td>231840</td>
               </tr>
+            </tbody> */}
+
+            {/* Old Fee Structure  */}
+            <thead>
+              <tr className="table-light">
+                <th>CLASSES</th>
+                <th>MONTHLY FEE</th>
+                <th>QUARTERLY FEE</th>
+                <th>ANNUAL FEE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TODDLERS</td>
+                <td>12,000 /-</td>
+                <td>36,000 /-</td>
+                <td>159,048 /-</td>
+              </tr>
+              <tr>
+                <td>NUR TO II</td>
+                <td>14,500 /-</td>
+                <td>43,500 /-</td>
+                <td>174,000 /-</td>
+              </tr>
+              <tr>
+                <td>III TO V</td>
+                <td>14,900 /-</td>
+                <td>44,700 /-</td>
+                <td>178,800 /-</td>
+              </tr>
+              <tr>
+                <td>VI TO VIII</td>
+                <td>15,600 /-</td>
+                <td>46,800 /-</td>
+                <td>187,200 /-</td>
+              </tr>
+              <tr>
+                <td>IX TO XII</td>
+                <td>17,500 /-</td>
+                <td>52,500 /-</td>
+                <td>210,000 /-</td>
+              </tr>
             </tbody>
-
-
             {/* <thead>
               <tr className="table-light">
                 <th>CLASSES</th>

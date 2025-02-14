@@ -18,7 +18,7 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: var(--font-family-text);
+  /* font-family: var(--font-family-text); */
   font-size: 13px;
   line-height: 1.5;
   font-weight: 500;
@@ -270,9 +270,9 @@ a:hover {
 .modal-header {
   border-bottom: var(--bs-modal-header-border-width) solid #fff0;
 }
-.modal-title {
-  font-family: var(--font-family-heading);
-}
+/* .modal-title {
+  font-family: var(--font-family-text);
+} */
 .nav-link {
   text-decoration: none;
   color: var(--color-set-white);

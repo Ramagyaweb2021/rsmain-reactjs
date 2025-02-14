@@ -55,11 +55,16 @@ export default function App() {
           </Link>
        </div> */}
       {/* Enquiry buttion */}
-      <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
+      <div className="btn-float-enquire">
         <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral btn-flash-1' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>
           <Image src="/images/enquiry-widget.webp" alt="Ramagya school enquire button" width={80} height={80} />
         </Button>
       </div>
+      {/* <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
+        <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral btn-flash-1' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>
+          <Image src="/images/enquiry-widget.webp" alt="Ramagya school enquire button" width={80} height={80} />
+        </Button>
+      </div> */}
 
       {/* <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
         <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>
