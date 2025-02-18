@@ -2253,6 +2253,48 @@ const NoidaGalleryInternalPage = () => {
       videoId: 'a-nRhn2vCrk'
     },
      // ******************************************Video gallery for Skill Boosting Sessions
+     {
+      src: 'https://img.youtube.com/vi/E69Rd1AFpsA/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'E69Rd1AFpsA'
+    },
+     {
+      src: 'https://img.youtube.com/vi/hXtvYmfLjDQ/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'hXtvYmfLjDQ'
+    },
+     {
+      src: 'https://img.youtube.com/vi/sbfyEHivBiU/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'sbfyEHivBiU'
+    },
+     {
+      src: 'https://img.youtube.com/vi/BCBygAMh6Tg/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'BCBygAMh6Tg'
+    },
+     {
+      src: 'https://img.youtube.com/vi/asSGPkIfv0U/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'asSGPkIfv0U'
+    },
+     {
+      src: 'https://img.youtube.com/vi/quvyHwx6WAg/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Skill Boosting Sessions',
+      type: 'video',
+      videoId: 'quvyHwx6WAg'
+    },
     {
       src: 'https://img.youtube.com/vi/f7NbaMVJh2Y/hqdefault.jpg',
       title: 'Ramagya School Gallery',
@@ -2323,7 +2365,50 @@ const NoidaGalleryInternalPage = () => {
       type: 'video',
       videoId: '3KFjiioMzNU'
     },
+     // ******************************************Video gallery for Reading Fiesta
+     {
+      src: 'https://img.youtube.com/vi/QGEJCtmoz7c/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Reading Fiesta',
+      type: 'video',
+      videoId: 'QGEJCtmoz7c'
+    },
+       {
+      src: 'https://img.youtube.com/vi/lsyZMyaieYc/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Reading Fiesta',
+      type: 'video',
+      videoId: 'lsyZMyaieYc'
+    },
+     {
+      src: 'https://img.youtube.com/vi/cv2ZmeJB_UM/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Reading Fiesta',
+      type: 'video',
+      videoId: 'cv2ZmeJB_UM'
+    },
     // ************************************************Video gallery for Students
+    {
+      src: 'https://img.youtube.com/vi/MTgSVFkHS6Q/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Student testimonials',
+      type: 'video',
+      videoId: 'MTgSVFkHS6Q'
+    },
+    {
+      src: 'https://img.youtube.com/vi/kt9qFRRIQsY/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Student testimonials',
+      type: 'video',
+      videoId: 'kt9qFRRIQsY'
+    },
+    {
+      src: 'https://img.youtube.com/vi/74A7901Oe84/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Student testimonials',
+      type: 'video',
+      videoId: '74A7901Oe84'
+    },
     {
       src: 'https://img.youtube.com/vi/A2p1Tl4zJxs/hqdefault.jpg',
       title: 'Ramagya School Gallery',
@@ -2495,7 +2580,14 @@ const NoidaGalleryInternalPage = () => {
       type: 'video',
       videoId: 'sKWPq4iRGRY'
     },
-
+    // *********************************************Video gallery for Evolve Video
+    {
+      src: 'https://img.youtube.com/vi/uH-Q0PPe-ew/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: 'uH-Q0PPe-ew'
+    },
     // *********************************************Video gallery for Helping Hands
     {
       src: 'https://img.youtube.com/vi/TUCE9e2eFBQ/hqdefault.jpg',
