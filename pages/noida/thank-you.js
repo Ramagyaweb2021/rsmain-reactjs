@@ -1,20 +1,43 @@
-import Head from 'next/head';
-import Script from 'next/script';
-
+/* eslint-disable @next/next/no-img-element */
+import Head from "next/head";
+import Script from "next/script";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+// import Image from "next/image";
 const ThankYouPage = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setTimeout(() => {
+        router.push("https://ramagyaschool.com");
+      }, 2000);
+    }
+  }, [router]);
+  
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     router.push("https://ramagyaschool.com");
+  //   }, 2000);
+  // }, []);
+
   return (
     <>
       <Head>
         <title>Thank You | Ramagya School</title>
         <meta name="description" content="Thank You" />
-        <link rel="canonical" href="https://ramagyaschool.com/noida/thank-you" />
-        {/* Meta tag for redirection after 2 seconds */}
-        <meta httpEquiv="refresh" content="2;url=https://ramagyaschool.com/noida/" />
+        <link rel="canonical" href="https://ramagyaschool.com/thank-you" />
       </Head>
 
-      {/* Google Analytics Tracking */}
+      {/* Google Analytics (gtag.js) */}
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-649958479"
+      />
       <Script
         id="google-analytics"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -28,6 +51,7 @@ const ThankYouPage = () => {
 
       {/* Facebook Pixel Code */}
       <Script
+        strategy="afterInteractive"
         id="facebook-pixel"
         dangerouslySetInnerHTML={{
           __html: `
@@ -47,15 +71,15 @@ const ThankYouPage = () => {
       />
 
       {/* NoScript Fallback for Facebook Pixel */}
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `
-            <noscript>
-              <img height="1" width="1" src="https://www.facebook.com/tr?id=1804643723325480&ev=PageView&noscript=1" alt="Facebook Pixel"/>
-            </noscript>
-          `,
-        }}
-      />
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: "none" }}
+          src="https://www.facebook.com/tr?id=1804643723325480&ev=PageView&noscript=1"
+          alt="Facebook Pixel"
+        />
+      </noscript>
 
       {/* Thank You Page Content */}
       <div className="vh-100 d-flex justify-content-center align-items-center">
@@ -63,14 +87,17 @@ const ThankYouPage = () => {
           <div className="border border-3 border-danger" />
           <div className="card bg-white shadow p-5">
             <div className="mb-4 text-center">
-              <svg
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="text-danger"
                 width={75}
                 height={75}
                 fill="currentColor"
                 viewBox="0 0 16 16"
+                role="img"
+                aria-label="Success Checkmark"
               >
+
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                 <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
               </svg>
@@ -79,9 +106,9 @@ const ThankYouPage = () => {
               <h1>Thank You!</h1>
               <p>
                 Dear Parents, Thank you for your enquiry regarding the admission
-                of your ward, test, for class Toddlers. We appreciate your interest
-                in our school. Your enquiry number is &amp; Admission form link has
-                been sent to your registered email id.
+                of your ward for class Toddlers. We appreciate your interest
+                in our school. Your enquiry number &amp; admission form link has
+                been sent to your registered email ID.
                 <br />
                 Regards,
                 <br />

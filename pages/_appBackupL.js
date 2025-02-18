@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { useEffect } from 'react';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
@@ -41,7 +40,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className={`${montserrat.variable} ${oswald.variable}`}>
-      {/* ✅ Google Analytics Script */}
+      {/* Google Analytics Script */}
       <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-649958479" />
       <Script
         id="google-analytics"
@@ -56,32 +55,6 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
-      {/* ✅ Facebook Pixel Script */}
-      <Script
-        id="facebook-pixel"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window,document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1804643723325480');
-            fbq('track', 'PageView');
-          `,
-        }}
-      />
-
-      {/* Facebook Pixel noscript */}
-      <noscript>
-        <img height="1" width="1"
-          src="https://www.facebook.com/tr?id=1804643723325480&ev=PageView&noscript=1" alt='facebook pixel' />
-      </noscript>
-      
       {/* Render the main page component */}
       <Component {...pageProps} />
     </div>
