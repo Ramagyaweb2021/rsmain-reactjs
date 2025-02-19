@@ -146,7 +146,7 @@ const NoidaBookAppointerment = () => {
             <br />
             <hr />
             <h3 className="title-100">
-              Connect with Ms. Hema Tiwari Relationship Manager{" "}
+              Connect with Ms. Shikha Jain Relationship Manager{" "}
             </h3>
             <p>
               Looking forward to having direct communication with the Relationship Manager
@@ -157,7 +157,7 @@ const NoidaBookAppointerment = () => {
             </p>
             <p>
               <b>
-                The availability of the Relationship Manager Ms. Hema Tiwari is subject to
+                The availability of the Relationship Manager Ms. Shikha Jain is subject to
                 availability. Kindly try again if the slot is not available.
               </b>
             </p>
@@ -172,7 +172,7 @@ const NoidaBookAppointerment = () => {
             </div>
             <br />
             <hr />
-            <h3 className="title-100">Connect with Ms. Bidisha Admission Counsellor </h3>
+            <h3 className="title-100">Connect with Ms. Shikha Jain Admission Counsellor </h3>
             <p>
               Looking forward to having direct communication with the Admission Counsellor
               regarding your child?
@@ -182,7 +182,7 @@ const NoidaBookAppointerment = () => {
             </p>
             <p>
               <b>
-                The availability of the Admission Counsellor Ms. Bidisha is subject to
+                The availability of the Admission Counsellor Ms. Shikha Jain is subject to
                 availability. Kindly try again if the slot is not available.
               </b>
             </p>

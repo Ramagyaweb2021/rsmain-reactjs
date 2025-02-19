@@ -10,7 +10,7 @@ const ThankYouPage = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       setTimeout(() => {
-        router.push("https://ramagyaschool.com");
+        router.push("https://ramagyaschool.com/greater-noida");
       }, 2000);
     }
   }, [router]);
@@ -27,7 +27,7 @@ const ThankYouPage = () => {
       <Head>
         <title>Thank You | Ramagya School</title>
         <meta name="description" content="Thank You" />
-        <link rel="canonical" href="https://ramagyaschool.com/thank-you" />
+        <link rel="canonical" href="https://ramagyaschool.com/greater-noida/thank-you" />
       </Head>
 
       {/* Google Analytics (gtag.js) */}
