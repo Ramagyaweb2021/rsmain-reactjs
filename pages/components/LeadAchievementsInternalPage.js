@@ -80,7 +80,7 @@ const LeadAchievementsInternalPage = () => {
       </div>
 
       {/* Category Buttons */}
-      <div className="row">
+      {/* <div className="row">
         <div className="col-md-12 d-flex justify-content-center my-3">
           {categoryData.map((categoryItem) => (
             <button
@@ -96,7 +96,7 @@ const LeadAchievementsInternalPage = () => {
             </button>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Cards for Active Category */}
       {activeCategory === 'SPORTS' ? (

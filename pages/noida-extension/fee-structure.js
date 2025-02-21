@@ -96,7 +96,7 @@ const FeeStructure = () => {
                 <p>All cheques/ drafts to be made in favour of </p>
                 <p><b>‘Ramagya School’</b></p>
                 <p><b>Plot No. A-229 Knowledge Park 5 Noida Extension Greater Noida – 201301 Uttar Pradesh</b></p>
-                <p> For any further query related to fee contact at <b> +91 8750 130 111 or</b> mail us at <b>accounts.extn@ramagyaschool.com</b></p>
+                <p> For any further query related to fee contact at <b> +91 9355 379 582 or</b> mail us at <b>accounts.extn@ramagyaschool.com</b></p>
 
                 <p><b>Pay Fee Online</b></p>
                 <p>The School has a programme of Bursary support to make the admission at Ramagya School possible for promising candidates whose families are unable to afford the fees.

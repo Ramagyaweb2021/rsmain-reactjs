@@ -4,8 +4,8 @@ import Script from 'next/script';
 import { useRouter } from 'next/router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css';
-import '../styles/scrollspy.css';
-import '../styles/responsive.css';
+//import '../styles/scrollspy.css';
+//import '../styles/responsive.css';
 
 // ✅ Import Google Fonts properly
 import {Oswald, Montserrat } from 'next/font/google';
