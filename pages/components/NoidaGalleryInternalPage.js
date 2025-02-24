@@ -572,6 +572,13 @@ const NoidaGalleryInternalPage = () => {
 
     // ********************************************************************Video gallery for Celeb Buzz
     {
+      src: 'https://img.youtube.com/vi/TuudIIr9ZF8/hqdefault.jpg',
+      title: 'Nikhil Naz',
+      category: 'Celeb Buzz',
+      type: 'video',
+      videoId: 'TuudIIr9ZF8'
+    },
+    {
       src: 'https://img.youtube.com/vi/V-1lie-TRYw/hqdefault.jpg',
       title: 'Nikhil Naz',
       category: 'Celeb Buzz',
@@ -776,6 +783,20 @@ const NoidaGalleryInternalPage = () => {
       videoId: 'Qt9mXpaNvj0'
     },
     // ********** ********** ********** ********** ********** Video gallery for Academia **********
+    {
+      src: 'https://img.youtube.com/vi/jMLgItJz8kA/hqdefault.jpg',
+      title: 'title',
+      category: 'Academia',
+      type: 'video',
+      videoId: 'jMLgItJz8kA'
+    },
+    {
+      src: 'https://img.youtube.com/vi/1YZ1YBE__dM/hqdefault.jpg',
+      title: 'title',
+      category: 'Academia',
+      type: 'video',
+      videoId: '1YZ1YBE__dM'
+    },
     {
       src: 'https://img.youtube.com/vi/uH-Q0PPe-ew/hqdefault.jpg',
       title: 'title',
@@ -1105,7 +1126,14 @@ const NoidaGalleryInternalPage = () => {
       type: 'video',
       videoId: 'tCd3irE7pk8'
     },
-    //********** ********** ********** **********Video gallery for feed corner
+    //********** ********** ********** **********Video gallery for Feedback Corner
+    {
+      src: 'https://img.youtube.com/vi/XSdBz8zP5Oo/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Feedback Corner',
+      type: 'video',
+      videoId: 'XSdBz8zP5Oo'
+    },
     {
       src: 'https://img.youtube.com/vi/YCDEIq4f--g/hqdefault.jpg',
       title: 'Ramagya School Gallery',
@@ -1221,6 +1249,41 @@ const NoidaGalleryInternalPage = () => {
       videoId: 'pjNDUbWuzbM'
     },
     //********** ********** ********** **********Video gallery for Beyond Academics
+    {
+      src: 'https://img.youtube.com/vi/hk_ceaFOzSY/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Beyond Academics',
+      type: 'video',
+      videoId: 'hk_ceaFOzSY'
+    },
+    {
+      src: 'https://img.youtube.com/vi/XILCe4xVSJw/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Beyond Academics',
+      type: 'video',
+      videoId: 'XILCe4xVSJw'
+    },
+    {
+      src: 'https://img.youtube.com/vi/LGbvPVr-4uI/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Beyond Academics',
+      type: 'video',
+      videoId: 'LGbvPVr-4uI'
+    },
+    {
+      src: 'https://img.youtube.com/vi/CqD472fHN7o/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Beyond Academics',
+      type: 'video',
+      videoId: 'CqD472fHN7o'
+    },
+    {
+      src: 'https://img.youtube.com/vi/moyzFhr_5Uk/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Beyond Academics',
+      type: 'video',
+      videoId: 'moyzFhr_5Uk'
+    },
     {
       src: 'https://img.youtube.com/vi/D5Sarp-kYAw/hqdefault.jpg',
       title: 'Ramagya School Gallery',
@@ -1618,6 +1681,34 @@ const NoidaGalleryInternalPage = () => {
 
     // ********************************************Video gallery for Wellness & Support
     {
+      src: 'https://img.youtube.com/vi/hk_ceaFOzSY/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Wellness & Support',
+      type: 'video',
+      videoId: 'hk_ceaFOzSY'
+    },
+    {
+      src: 'https://img.youtube.com/vi/DpLCRyOa1NY/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Wellness & Support',
+      type: 'video',
+      videoId: 'DpLCRyOa1NY'
+    },
+    {
+      src: 'https://img.youtube.com/vi/YRiDASLBgXA/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Wellness & Support',
+      type: 'video',
+      videoId: 'YRiDASLBgXA'
+    },
+    {
+      src: 'https://img.youtube.com/vi/pPqCR32_nk4/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Wellness & Support',
+      type: 'video',
+      videoId: 'pPqCR32_nk4'
+    },
+    {
       src: 'https://img.youtube.com/vi/tnVWxicccK4/hqdefault.jpg',
       title: 'Ramagya School Gallery',
       category: 'Wellness & Support',
@@ -1681,6 +1772,34 @@ const NoidaGalleryInternalPage = () => {
       videoId: 'GNnCr1FyEsE'
     },
     // ******************************************Video gallery for Athletic Center
+    {
+      src: 'https://img.youtube.com/vi/63UJtqfwNfY/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Athletic Center',
+      type: 'video',
+      videoId: '63UJtqfwNfY'
+    },
+    {
+      src: 'https://img.youtube.com/vi/O7VxT_3RIWA/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Athletic Center',
+      type: 'video',
+      videoId: 'O7VxT_3RIWA'
+    },
+    {
+      src: 'https://img.youtube.com/vi/TSCp6Mkl8gc/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Athletic Center',
+      type: 'video',
+      videoId: 'TSCp6Mkl8gc'
+    },
+    {
+      src: 'https://img.youtube.com/vi/RVLJALhxDk8/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Athletic Center',
+      type: 'video',
+      videoId: 'RVLJALhxDk8'
+    },
     {
       src: 'https://img.youtube.com/vi/kwYavFDgETw/hqdefault.jpg',
       title: 'Ramagya School Gallery',
@@ -2582,6 +2701,13 @@ const NoidaGalleryInternalPage = () => {
     },
     // *********************************************Video gallery for Evolve Video
     {
+      src: 'https://img.youtube.com/vi/LDU4HW21z4Q/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: 'LDU4HW21z4Q'
+    },
+    {
       src: 'https://img.youtube.com/vi/uH-Q0PPe-ew/hqdefault.jpg',
       title: 'Ramagya School Gallery',
       category: 'Evolve Video',
@@ -2737,7 +2863,7 @@ const NoidaGalleryInternalPage = () => {
         <div className="row g-2">
           {filteredItems.length > 0 ? (
             filteredItems.map((item, index) => (
-              <div key={index} className="col-md-2 col-6">
+              <div key={index} className="col-md-3 col-6">
                 <div
                   className="card-gallery"
                   style={{ cursor: 'pointer' }}
