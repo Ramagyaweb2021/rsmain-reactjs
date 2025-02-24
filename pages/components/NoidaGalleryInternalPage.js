@@ -579,6 +579,13 @@ const NoidaGalleryInternalPage = () => {
       videoId: 'TuudIIr9ZF8'
     },
     {
+      src: 'https://img.youtube.com/vi/mtATDSNgu6w/hqdefault.jpg',
+      title: 'Nikhil Naz',
+      category: 'Celeb Buzz',
+      type: 'video',
+      videoId: 'mtATDSNgu6w'
+    },
+    {
       src: 'https://img.youtube.com/vi/V-1lie-TRYw/hqdefault.jpg',
       title: 'Nikhil Naz',
       category: 'Celeb Buzz',
@@ -2863,7 +2870,7 @@ const NoidaGalleryInternalPage = () => {
         <div className="row g-2">
           {filteredItems.length > 0 ? (
             filteredItems.map((item, index) => (
-              <div key={index} className="col-md-3 col-6">
+              <div key={index} className="col-md-2 col-6">
                 <div
                   className="card-gallery"
                   style={{ cursor: 'pointer' }}
