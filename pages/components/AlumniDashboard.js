@@ -5,8 +5,8 @@ const AlumniDashboard = () => {
 
   const alumniData = [
     { id: 1, name: "John Doe", category: "View", details: "Alumni from IIT Delhi", image: "/images/lead/view.webp" },
-    // { id: 2, name: "Jane Smith", category: "Watch", details: "Alumni from Harvard University", image: "/images/lead/view.webp" },
-    // { id: 3, name: "Mike Johnson", category: "Ask", details: "Alumni from Stanford", image: "/images/lead/view.webp" },
+    { id: 2, name: "Jane Smith", category: "Watch", details: "Alumni from Harvard University", image: "/images/lead/watch.webp" },
+    { id: 3, name: "Mike Johnson", category: "Ask", details: "Alumni from Stanford", image: "/images/lead/ask.webp" },
   ];
 
   // Show only selected category alumni

@@ -113,9 +113,9 @@ const AluminGuidance = () => {
               </div>
             </section>
    
-   {/* <section className='container bg-color-ffffff alumni dashboard'>
+   <section className='container bg-color-ffffff alumni dashboard'>
      <AlumniDashboard/>
-   </section> */}
+   </section>
 
       <FooterNoida />
     </>

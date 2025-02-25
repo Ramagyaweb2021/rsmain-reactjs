@@ -3232,7 +3232,8 @@ hr {
     padding: 0; */
   }
   .slide-content .image-wrapper img{
-    height: 155px;
+    height: 145px;
+    /* height: 155px; */
     /* height: 115px; */
   }
   .image-wrapper,

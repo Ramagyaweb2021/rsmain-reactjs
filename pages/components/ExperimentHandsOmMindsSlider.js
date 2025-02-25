@@ -132,9 +132,9 @@ const ExperimentHandsOmMindsSlider = () => {
                 <Image
                   src={event.image}
                   alt={event.title}
-                  width={461}
-                  height={242}
-                  layout="responsive"
+                  width={630}
+                  height={300}
+                  // layout="responsive"
                 />
               </div>
 
