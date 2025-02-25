@@ -3647,10 +3647,12 @@ hr {
   .learn #approach-mobile a {
       background-color: var(--color-set-green);
       color: var(--color-set-yellow);
+      font-weight: 600;
   }
   .learn #approach-1-mobile a {
       background-color: var(--color-set-yellow);
       color: var(--color-set-green);
+      font-weight: 600;
   }
   /* .footer p {
     font-size: 14px !important;

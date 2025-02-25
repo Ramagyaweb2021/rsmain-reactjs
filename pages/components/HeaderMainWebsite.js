@@ -47,7 +47,7 @@ const HeaderMainWebsite = () => {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
+      // window.removeEventListener('resize', handleResize);
       // window.removeEventListener('scroll', handleScroll);
     };
   }, []);
