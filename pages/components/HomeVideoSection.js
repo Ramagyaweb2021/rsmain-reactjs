@@ -41,6 +41,7 @@ const HomeVideoSection = () => {
             width={30}
             height={30}
             priority
+            style={{ width: "auto", height: "auto" }}
           />
          </div>
         </div>

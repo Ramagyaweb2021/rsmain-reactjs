@@ -89,7 +89,7 @@ const AluminGuidance = () => {
       
       <section className="container-fluid bg-gray-EFEFEF alumni-section py-5">
       <div className="text-center mb-4">
-        <h2 className="main-heading">Global Citizens & Diverse Career Paths</h2>
+        <h2 className="alumni-main-section-heading">Global Citizens & Diverse Career Paths</h2>
         <p className="">
            Ramagya School students are making a mark in different career fields across the world. We are proud to see how successful they are today!
         </p>
@@ -113,9 +113,9 @@ const AluminGuidance = () => {
               </div>
             </section>
    
-   <section className='container bg-color-ffffff alumni dashboard'>
+   {/* <section className='container bg-color-ffffff alumni dashboard'>
      <AlumniDashboard/>
-   </section>
+   </section> */}
 
       <FooterNoida />
     </>

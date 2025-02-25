@@ -142,7 +142,19 @@ const Header = () => {
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar"
           >
-            <a href="#" onClick={() => console.log('hamiocn1 clicked')}>
+             <a href="#">
+                <strong
+                  className={`hamiocn1 ${isSticky ? '' : 'animate__animated animate__fadeInUp'}`}
+                  style={{ display: isSticky ? 'none' : 'inline-block' }}
+                />
+              </a>
+              <a href="#">
+                <strong
+                  className={`hamiocn2 ${isSticky ? 'animate__animated animate__fadeInUp' : ''}`}
+                  style={{ display: isSticky ? 'inline-block' : 'none' }}
+                />
+              </a>
+            {/* <a href="#" onClick={() => console.log('hamiocn1 clicked')}>
               <strong
                 className={`hamiocn1 ${isSticky ? '' : 'animate__animated animate__fadeInUp'}`}
                 style={{ display: isSticky ? 'none' : 'inline-block' }}
@@ -153,7 +165,7 @@ const Header = () => {
                 className={`hamiocn2 ${isSticky ? 'animate__animated animate__fadeInUp' : ''}`}
                 style={{ display: isSticky ? 'inline-block' : 'none' }}
               />
-            </a>
+            </a> */}
             <span />
             <span />
             <span />
@@ -164,7 +176,8 @@ const Header = () => {
         <div className="offcanvas offcanvas-top text-bg-dark" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div className="offcanvas-header">
            <a className="navbar-brand" href="./">
-             <img src="/images/main-webiste-logo/logo-1.webp" alt="Ramagya school noida" />
+             <Image src="/images/main-webiste-logo/logo-1.webp" width={280}
+              height={56} alt="Ramagya school noida" />
             </a>
            
             <Image

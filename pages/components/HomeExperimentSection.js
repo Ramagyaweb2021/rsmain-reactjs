@@ -135,11 +135,19 @@ const HomeExperimentSection = () => {
                       <div className="col-12 col-md-4 col-lg-4 d-none d-md-block image-wrapper g-1">
                       <Image
                         src="/images/slider/experiment/big-slider-1.webp"
+                        alt="Experiment Slider"
+                        width={800}
+                        height={400}
+                        style={{ width: "630", height: "155" }} 
+                      />
+
+                      {/* <Image
+                        src="/images/slider/experiment/big-slider-1.webp"
                         alt="big-slider-1"
                         width={630}
                         height={155}
                         className="card-img-top"
-                      />
+                      /> */}
                       </div>
                       <div className="col-6 col-md-2 col-lg-2 text-wrapper g-1">
                       <div className="box">

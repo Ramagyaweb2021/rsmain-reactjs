@@ -89,14 +89,14 @@ const InternalPageLeadSection = () => {
               ))}
             </Slider>
 
-            {/* <div className="d-flex justify-content-center align-items-center mt-2 gap-3">
+            <div className="d-flex justify-content-center align-items-center mt-2 gap-3">
               <div className="learn-more-button">
                 <a href="alumni-guidance">Alumni Guidance</a>
               </div>
               <div className="learn-more-button">
                 <a href="success-stories">Success Stories</a>
               </div>
-            </div> */}
+            </div>
             
           </div>
         </div>

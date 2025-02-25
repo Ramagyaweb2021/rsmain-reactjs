@@ -2,7 +2,7 @@ import HeaderBlog from '../components/HeaderBlog';
 import FooterBlog from '../components/FooterBlog';
 import Head from 'next/head';
 import Image from 'next/image';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 export async function getStaticProps() {
   try {
@@ -14,14 +14,11 @@ export async function getStaticProps() {
 
     const posts = await res.json();
 
-    const formattedPosts = posts.map((post) => {
-      const formattedDate = new Date(post.date).toLocaleDateString('en-US');
-      return {
-        ...post,
-        formattedDate,
-        slug: post.slug,
-      };
-    });
+    const formattedPosts = posts.map((post) => ({
+      ...post,
+      formattedDate: new Date(post.date).toLocaleDateString('en-US'),
+      slug: post.slug,
+    }));
 
     return {
       props: {
@@ -45,25 +42,22 @@ export default function Blog({ posts }) {
   const [page, setPage] = useState(2); // Start from the second page
   const loaderRef = useRef(null); // Ref for the loader element
 
-  const loadMorePosts = async () => {
+  // Use useCallback to ensure function reference stability
+  const loadMorePosts = useCallback(async () => {
     setLoading(true);
     try {
       const res = await fetch(`https://blogs.ramagyaschool.com/wp-json/wp/v2/posts?_embed&page=${page}`);
       const newPosts = await res.json();
 
-      // Check if newPosts is an array before calling map()
       if (Array.isArray(newPosts)) {
-        const formattedPosts = newPosts.map((post) => {
-          const formattedDate = new Date(post.date).toLocaleDateString('en-US');
-          return {
-            ...post,
-            formattedDate,
-            slug: post.slug,
-          };
-        });
+        const formattedPosts = newPosts.map((post) => ({
+          ...post,
+          formattedDate: new Date(post.date).toLocaleDateString('en-US'),
+          slug: post.slug,
+        }));
 
         setBlogPosts((prevPosts) => [...prevPosts, ...formattedPosts]);
-        setPage((prevPage) => prevPage + 1); // Increment the page number
+        setPage((prevPage) => prevPage + 1);
       } else {
         console.error("Invalid data format:", newPosts);
       }
@@ -72,29 +66,31 @@ export default function Blog({ posts }) {
     } finally {
       setLoading(false);
     }
-  };
+  }, [page]); // `page` is included as a dependency
 
   // Intersection Observer to detect when the loader is in view
   useEffect(() => {
+    const loaderElement = loaderRef.current; // Store reference in a variable
+
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting && !loading) {
           loadMorePosts();
         }
       },
-      { threshold: 1.0 } // Trigger when the loader is fully visible
+      { threshold: 1.0 }
     );
 
-    if (loaderRef.current) {
-      observer.observe(loaderRef.current);
+    if (loaderElement) {
+      observer.observe(loaderElement);
     }
 
     return () => {
-      if (loaderRef.current) {
-        observer.unobserve(loaderRef.current);
+      if (loaderElement) {
+        observer.unobserve(loaderElement);
       }
     };
-  }, [loading]);
+  }, [loading, loadMorePosts]); // Now includes stable `loadMorePosts`
 
   if (!blogPosts || blogPosts.length === 0) {
     return <p>No blog posts found.</p>;

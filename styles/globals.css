@@ -2529,7 +2529,8 @@ ul.custom-bullets li::before {
 }
 .bg-image-section{
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffffc2;
+  background-color: #ffffff57;
+  /* background-color: #ffffffc2; */
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -3002,6 +3003,18 @@ hr {
   padding: 10px;
   font-weight: 600;
   font-size: 15px;
+}
+.alumni-main-section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 48.76px;
+    text-align: center;
+    color: #000;
+    font-family: var(--font-family-heading);
+    position: relative;
+    margin-top: 35px;
+    /* padding-bottom: 20px;
+    margin-bottom: 20px; */
 }
 /* .text-start-alumni p {
   white-space: pre-line;
@@ -3802,7 +3815,7 @@ hr {
     padding-top: 2.5em;
   }
   .my-custom-explore{
-    padding-top: 4.5em;
+    padding-top: 4.5em !important;
     background-image: url(/images/explore-bg.webp);
     background-color: #ffffff61;
     background-blend-mode: overlay;
@@ -3811,13 +3824,13 @@ hr {
     background-size: cover;
   }
   .my-custom-experiment{
-    padding-top: 4.5em;
+    padding-top: 4.5em !important;
   }
   .my-custom-innovate {
-    padding-top: 4.5em;
+    padding-top: 4.5em !important;
 }
 .my-custom-evolve {
-    padding-top: 4.5em;
+    padding-top: 4.5em !important;
     background-image: url(/images/explore-bg.webp);
     background-color: #ffffff61;
     background-blend-mode: overlay;
@@ -3829,13 +3842,13 @@ hr {
     padding-top: 4.5em;
 }
 .my-custom-gallery {
-    padding-top: 4.5em;
+    padding-top: 4.5em !important;
 }
 .my-custom-awards{
     padding-top: 4.5em;
 }
 .my-custom-school-updates{
-    padding-top: 4.5em;
+    padding-top: 4.5em !important;
 }
 
   .banner-sec{
@@ -4015,7 +4028,7 @@ hr {
 }
 .fixed-nav {
   position: fixed;
-  top: 55px;
+  top: 55px !important;
 }
 .btn-outline-warning{
   margin: 5px;

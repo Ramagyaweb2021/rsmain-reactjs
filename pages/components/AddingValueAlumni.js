@@ -12,7 +12,7 @@ const AlumniTabs = () => {
     <div className="container my-5">
       {/* Section Title */}
       <div className="text-center mb-4">
-        <h2 className="main-heading">Adding value to our Alumni</h2>
+        <h2 className="alumni-main-section-heading">Adding value to our Alumni</h2>
         <p className="">
             We believe in nurturing our students even after they graduate from school. Here’s how we do it!
         </p>
@@ -51,9 +51,9 @@ const AlumniTabs = () => {
             ],
           },
           {
-            id: "learning-development",
+            id: "learning-&-development",
             title: "Learning & Development",
-            image: "/images/lead/alumni-guidance/networking.webp",
+            image: "/images/lead/alumni-guidance/learning.webp",
             points: [
               "Get invited to learning webinars & workshops at no cost",
               "Opportunity to upskill in various areas",

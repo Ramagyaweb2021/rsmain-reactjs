@@ -6,7 +6,7 @@ import FooterNoidaExtension from './components/FooterNoidaExtension';
 import AllVerticalScrollspyMenu from './components/AllVerticalScrollspyMenu';
 import HeaderNoidaExtension from './components/HeaderNoidaExtension';
 import NoidaExtensionScrollspyHomePageTabination from './components/NoidaExtensionScrollspyHomePageTabination';
-import OfferPopupNoidaExt from './components/OfferPopupNoidaExt';
+// import OfferPopupNoidaExt from './components/OfferPopupNoidaExt';
 // import OfferPopup from './components/OfferPopup';
 
 // Dynamically import WOW.js to avoid server-side issues
@@ -35,7 +35,7 @@ const NoidaExtension = () => {
         <link rel="canonical" href="https://ramagyaschool.com/noida-extension" />
       </Head>
       <HeaderNoidaExtension/>
-      <OfferPopupNoidaExt/>
+      {/* <OfferPopupNoidaExt/> */}
       {/* <OfferPopup/> */}
 
       {/* Main banner section of the page */}

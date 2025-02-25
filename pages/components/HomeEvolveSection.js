@@ -116,7 +116,7 @@ const HomeEvolveSection = () => {
                               ></iframe>
                             </div>
                           ) : (
-                            <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/video-images/rsa-school.webp" alt="Video Placeholder" width={848} height={318} />
+                            <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/video-images/rsa-school.webp" alt="Video Placeholder" width="848" height="318" style={{ width: "848", height: "348" }} />
                           )}
                         </div>
                       </div>

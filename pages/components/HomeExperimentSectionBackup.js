@@ -77,7 +77,7 @@ function SingleRowSlider() {
     afterChange: handleRightToLeftAfterChange, // Handle slide change
   };
   const handleRtlAfterChange = (index) => {
-    console.log(`Right to Left Slider changed to slide ${index}`);
+    //console.log(`Right to Left Slider changed to slide ${index}`);
   };
   
   // Settings for the third slider (RTL)

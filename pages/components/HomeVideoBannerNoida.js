@@ -39,6 +39,7 @@ const HomeVideoBannerNoida = () => {
             alt="Ramagya school"
             width={30}
             height={30}
+            style={{ width: "auto", height: "auto" }}
           />
          </div>
         </div>

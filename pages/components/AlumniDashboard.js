@@ -5,8 +5,8 @@ const AlumniDashboard = () => {
 
   const alumniData = [
     { id: 1, name: "John Doe", category: "View", details: "Alumni from IIT Delhi", image: "/images/lead/view.webp" },
-    { id: 2, name: "Jane Smith", category: "Watch", details: "Alumni from Harvard University", image: "/images/lead/view.webp" },
-    { id: 3, name: "Mike Johnson", category: "Ask", details: "Alumni from Stanford", image: "/images/lead/view.webp" },
+    // { id: 2, name: "Jane Smith", category: "Watch", details: "Alumni from Harvard University", image: "/images/lead/view.webp" },
+    // { id: 3, name: "Mike Johnson", category: "Ask", details: "Alumni from Stanford", image: "/images/lead/view.webp" },
   ];
 
   // Show only selected category alumni
@@ -16,7 +16,7 @@ const AlumniDashboard = () => {
     <div className="container mt-1 py-5">
       {/* Title Section */}
       <div className="text-center mb-4">
-        <h2 className="main-heading">Your Child Gets These Benefits</h2>
+        <h2 className="alumni-main-section-heading">Your Child Gets These Benefits</h2>
         <p>A platform for students to connect with their Alumni of different batches and branches from around the world.</p>
 
         {/* Category Buttons */}

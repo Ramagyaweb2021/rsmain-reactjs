@@ -157,7 +157,19 @@ const HeaderDadri = () => {
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar"
           >
-            <a href="#" onClick={() => console.log('hamiocn1 clicked')}>
+             <a href="#">
+                <strong
+                  className={`hamiocn1 ${isSticky ? '' : 'animate__animated animate__fadeInUp'}`}
+                  style={{ display: isSticky ? 'none' : 'inline-block' }}
+                />
+              </a>
+              <a href="#">
+                <strong
+                  className={`hamiocn2 ${isSticky ? 'animate__animated animate__fadeInUp' : ''}`}
+                  style={{ display: isSticky ? 'inline-block' : 'none' }}
+                />
+              </a>
+            {/* <a href="#" onClick={() => console.log('hamiocn1 clicked')}>
               <strong
                 className={`hamiocn1 ${isSticky ? '' : 'animate__animated animate__fadeInUp'}`}
                 style={{ display: isSticky ? 'none' : 'inline-block' }}
@@ -168,7 +180,7 @@ const HeaderDadri = () => {
                 className={`hamiocn2 ${isSticky ? 'animate__animated animate__fadeInUp' : ''}`}
                 style={{ display: isSticky ? 'inline-block' : 'none' }}
               />
-            </a>
+            </a> */}
 
             {/* <strong className={`hamiocn1 ${isSticky ? '' : 'animate__animated animate__fadeInUp'}`} style={{ display: isSticky ? 'none' : 'inline-block' }} />
             <strong className={`hamiocn2 ${isSticky ? 'animate__animated animate__fadeInUp' : ''}`} style={{ display: isSticky ? 'inline-block' : 'none' }} /> */}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Image from 'next/image';
 import Tab from 'react-bootstrap/Tab';
@@ -76,7 +76,7 @@ const HomeUpdatesSection = () => {
                       <div key={index} className="row-school-updates align-items-center">
                         <div className="col-lg-5 col-md-5 col-12 image-resize">
                           <a href="https://ramagyaschoolblog.com/category/achievements/" target='_blank'>
-                            <Image src={slide.imgSrc} alt="School Achievements" width={430} height={306} priority />
+                            <Image src={slide.imgSrc} alt="School Achievements" width={430} height={306}  priority />
                           </a>
                         </div>
                         <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
@@ -98,7 +98,7 @@ const HomeUpdatesSection = () => {
                       <div key={index} className="row-school-updates align-items-center">
                         <div className="col-lg-5 col-md-5 col-12 image-resize">
                           <a href="https://ramagyaschoolblog.com/category/media-press/" target='_blank'>
-                            <Image src={slide.imgSrc} alt="Media Press" width={430} height={306} priority />
+                            <Image src={slide.imgSrc} alt="Media Press" width={430} height={306} priority  />
                           </a>
                         </div>
                         <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
@@ -120,7 +120,7 @@ const HomeUpdatesSection = () => {
                       <div key={index} className="row-school-updates align-items-center">
                         <div className="col-lg-5 col-md-5 col-12 image-resize">
                         <a href="https://ramagyaschoolblog.com/category/events/" target='_blank'>
-                            <Image src={slide.imgSrc} alt="School Events" width={430} height={306} priority />
+                            <Image src={slide.imgSrc} alt="School Events" width={430} height={306}  priority />
                           </a>
                         </div>
                         <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">
@@ -142,7 +142,7 @@ const HomeUpdatesSection = () => {
                       <div key={index} className="row-school-updates align-items-center">
                         <div className="col-lg-5 col-md-5 col-12 image-resize">
                         <a href="https://ramagyaschoolblog.com/category/workshop/" target='_blank'>
-                          <Image src={slide.imgSrc} alt="Workshop/Activity" width={430} height={306} priority />
+                          <Image src={slide.imgSrc} alt="Workshop/Activity" width={430} height={306} priority  />
                           </a>
                         </div>
                         <div className="col-lg-7 col-md-7 col-12 d-none d-md-block">

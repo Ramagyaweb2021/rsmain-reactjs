@@ -2,18 +2,16 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const AlumniNetwork = () => {
-  const [alumniData, setAlumniData] = useState(null); // ✅ Store API data as an object
+  const [alumniData, setAlumniData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const API_URL = "https://ags.univariety.com/common/v1/schoolapi/insights";
-  const API_KEY = process.env.NEXT_PUBLIC_ALUMNI_API_KEY; // Secure API Key
+  const API_KEY = "VRvgV1oM2NlXhB3h"; // 🔥 Direct API Key
 
   useEffect(() => {
     const fetchAlumni = async () => {
       try {
-        if (!API_KEY) throw new Error("API Key is missing!");
-
         const response = await axios.get(API_URL, {
           headers: {
             "api-key": API_KEY,
@@ -21,10 +19,8 @@ const AlumniNetwork = () => {
           }
         });
 
-        console.log("✅ API Response:", response.data);
-        setAlumniData(response.data?.data || {}); // ✅ Store API data properly
+        setAlumniData(response.data?.data || {});
       } catch (error) {
-        console.error("❌ Error fetching alumni data:", error.response?.data || error.message);
         setError("Failed to load alumni data. Please try again later.");
       } finally {
         setLoading(false);
@@ -39,7 +35,6 @@ const AlumniNetwork = () => {
 
   return (
     <div className="container">
-      {/* ✅ Heading & Paragraph Before the Data */}
       <div className="text-center mb-4">
         <h2 className="main-heading">Profile of Members in the Ramagya School Alumni Network</h2>
         <p className="text-muted">
@@ -47,14 +42,11 @@ const AlumniNetwork = () => {
         </p>
       </div>
 
-      {/* ✅ Display API Data in Cards */}
       <div className="row justify-content-center">
         {[
-          { title: "Alumni", value: alumniData.alumniCount },
-          { title: "Prestigious Alumni", value: alumniData.prestigiousCount },
-          { title: "Scholarships Won", value: alumniData.scholarshipWon },
-          // { title: "Total Offers", value: alumniData.totalOffers },
-          // { title: "Offers Per Student", value: alumniData.offerPerStudent }
+          { title: "Alumni", value: alumniData.alumniCount || "N/A" },
+          { title: "Prestigious Alumni", value: alumniData.prestigiousCount || "N/A" },
+          { title: "Scholarships Won", value: alumniData.scholarshipWon || "N/A" }
         ].map((item, index) => (
           <div key={index} className="col-md-4 mb-3">
             <div className="card shadow-sm border-0 text-center p-3" style={{ borderRadius: "10px" }}>
