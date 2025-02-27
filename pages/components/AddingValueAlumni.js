@@ -114,7 +114,7 @@ const AlumniTabs = () => {
                     <li key={i}>{point}</li>
                   ))}
                 </ul>
-                <Link href="https://ags.univariety.com/management/ramagyaschool/login" target="_blank" rel="noopener noreferrer" class="btn custom-btn py-2 mt-20">Sign Up</Link>
+                <Link href="https://ags.univariety.com/user/ramagyaschool/login" target="_blank" rel="noopener noreferrer" class="btn custom-btn py-2 mt-20">Sign Up</Link>
               </div>
             </div>
           </div>

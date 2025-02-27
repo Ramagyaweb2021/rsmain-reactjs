@@ -17,7 +17,7 @@ const NoidaExtensionHomePageImportantLinks = () => {
     {
       img: "/images/noida/important-link/icon-3.webp",
       text: "Download Prospectus",
-      link: "https://drive.google.com/file/d/1c_1BY2md36rW-Q3b30JgPs1h36sWSqAW/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1VE6DsV4ZRI9ZMfUrwFhkPVvBpXpdSE9M/view",
     },
     {
       img: "/images/noida/important-link/icon-4.webp",
