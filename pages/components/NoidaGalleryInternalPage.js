@@ -2316,6 +2316,13 @@ const NoidaGalleryInternalPage = () => {
     },
     // ****************************************** Video gallery for Parents
     {
+      src: 'https://img.youtube.com/vi/ZvIkb5QWUzI/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Parent Testimonials',
+      type: 'video',
+      videoId: 'ZvIkb5QWUzI'
+    },
+    {
       src: 'https://img.youtube.com/vi/vsnZDGKP878/hqdefault.jpg',
       title: 'Ramagya School Gallery',
       category: 'Parent Testimonials',

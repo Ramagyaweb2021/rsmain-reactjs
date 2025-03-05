@@ -12,13 +12,13 @@ const leadershipData = [
     name: "Admission 2024-25",
     image: "/images/noida/admission/admission-1.webp",
     button: "Admission 2024-25",
-    Link: "https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/",
+    Link: "https://ramagyanoida.simplyadmission.com/clp/admission",
   },
   {
     name: "Admission 2025-26",
     image: "/images/noida/admission/admission-2.webp",
     button: "Admission 2025-26",
-    Link: "https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/",
+    Link: "https://ramagyanoida.simplyadmission.com/clp/admission",
   },
   // Other entries...
 ];

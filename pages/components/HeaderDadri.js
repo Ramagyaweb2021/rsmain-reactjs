@@ -126,12 +126,12 @@ const HeaderDadri = () => {
                 height={20}
                 priority
               />
-              &nbsp;APPLY NOW
+              &nbsp; APPLY NOW
             </button>
             <ul className={`dropdown-menu ${dropdownOpen && isMobile ? 'show' : ''}`}>
             {/* <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}> */}
               <li>
-                <a className="dropdown-item" href="https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/" target="_blank">
+                <a className="dropdown-item" href="https://ramagyanoida.simplyadmission.com/clp/admission" target="_blank">
                   Noida
                 </a>
               </li>
@@ -194,9 +194,8 @@ const HeaderDadri = () => {
         <div className="offcanvas offcanvas-top text-bg-dark" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div className="offcanvas-header">
            <a className="navbar-brand" href="./"> 
-              &nbsp;APPLY NOW
-             <Image src="/images/main-webiste-logo/logo-1.webp"  width={280}
-                height={256} priority alt="Ramagya school noida" />
+           {/* &nbsp;APPLY NOW */}
+             <Image src="/images/main-webiste-logo/logo-1.webp" width={280} height={56} priority alt="Ramagya school dadri" />
             </a>
             {/* <Link href="#" onClick={() => console.log('Close button clicked')}>
               <Image

@@ -66,8 +66,7 @@ const AluminGuidance = () => {
         height="480px"
         loading="lazy"
         description="Profile of Members in the Ramagya School Alumni Network"
-        // style="border: none; vertical-align: top"
-    ></iframe>
+       ></iframe>
        {/* <section className="container-fluid bg-image-section alumni-section ">
         <div className='row'>
           <div className="col-md-12">

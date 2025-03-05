@@ -66,7 +66,7 @@ const AlumniStudentSuccessStories = () => {
       <Slider {...sliderSettings}>
         {alumni.map((item, index) => (
           <div key={item.id || index} className="col-md-4 mx-0">
-            <div className="card shadow-sm border-0 text-center p-1" style={{ maxWidth: "380px", borderRadius: "10px" }}>
+            <div className="card shadow-sm border-1 text-center p-1" style={{ maxWidth: "380px", borderRadius: "10px" }}>
               <div className="mx-auto rounded-circle overflow-hidden" style={{ width: "100px", height: "100px" }}>
                 <Image
                   src={item.image_path || "/default-profile.png"} // ✅ Fallback for missing images

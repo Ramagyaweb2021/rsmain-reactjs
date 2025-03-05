@@ -90,7 +90,7 @@ const HomeEvolveSection = () => {
                               </div>
                               <div className="line_box">
                                 <div className="line" />
-                                <Image src="/images/play-button-1.webp" onClick={() => setVideoSrc(video.src)} className="play-button1" alt="play-button" width={35} height={35}/>
+                                <Image src="/images/play-button-evolve.png" onClick={() => setVideoSrc(video.src)} className="play-button1" alt="play-button" width={35} height={35}/>
                                  {/* <p>Play Video</p> */}
                               </div>
                             </div>

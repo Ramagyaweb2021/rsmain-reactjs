@@ -72,7 +72,7 @@ const InternalPageLeadSection = () => {
             <Slider {...settings}>
               {achievements.map((item, index) => (
                 <div key={index} className="col-md-4 mx-0">
-                  <div className="card shadow-sm border-0 text-center p-1" style={{ maxWidth: "380px", borderRadius: "10px" }}>
+                  <div className="card shadow-sm border-1 text-center p-1" style={{ maxWidth: "380px", borderRadius: "10px" }}>
                     <div className="mx-auto rounded-circle overflow-hidden" style={{ width: "100px", height: "100px" }}>
                       <Image src={item.img} alt={item.name} width={100} height={100} className="img-fluid" id="alumni-profile-img" />
                     </div>

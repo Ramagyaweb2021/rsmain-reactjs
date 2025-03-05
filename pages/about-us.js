@@ -92,7 +92,7 @@ const AboutUs = () => {
                 </p>
                 <p style={{ textAlign: "left" }}>We cultivate an environment where learning transcends the classroom, empowering students to become resilient, compassionate leaders ready to navigate the challenges of tomorrow. Through our holistic approach and commitment to educational innovation, we continue to inspire and shape the future of education. </p>
 
-                <h2 className='main-heading-internal-pages'>Key Features</h2>
+                {/* <h2 className='main-heading-internal-pages'>Key Features</h2>
                 <ul className='custom-bullets'>
                   <li>Double-glazed windows have been used in the façade, providing excellent insulation from outside temperatures.</li>
                   <li>230mm thick walls provide high thermal mass while keeping the interiors insulated.</li>
@@ -108,7 +108,7 @@ const AboutUs = () => {
                   A gymnasium for children to stay fit and a swimming pool makes school a more conducive environment for overall growth.</li>
                   <li>The school has been designed so that it can be converted into a commercial office space once the institution&#39;s purpose has been achieved</li>
                   <li>Use locally sourced materials to reduce carbon footprint while creating employment for people near the project site.</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
