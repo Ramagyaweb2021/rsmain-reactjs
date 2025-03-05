@@ -364,7 +364,7 @@ a:hover {
   position: fixed;
   right: 0;
   bottom: 25%;
-  z-index: 9999;
+  z-index: 111;
 }
 .modal-content {
   background-color: #fff;
