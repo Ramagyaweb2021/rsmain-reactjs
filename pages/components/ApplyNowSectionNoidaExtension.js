@@ -2,18 +2,18 @@ import React from 'react';
 import Image from 'next/image';
 
 const leadershipData = [
-  {
-    name: "Enquire Now",
-    image: "/images/noida/admission/enquire-now.webp",
-    button: "Enquire Now",
-    Link: "https://ramagyaschool.com/noida-extension/",
-  },
-  {
-    name: "Admission 2024-25",
-    image: "/images/noida/admission/admission-1.webp",
-    button: "Admission 2024-25",
-    Link: "https://forms.edunexttechnologies.com/forms/ramagyanoidaextension/registration/",
-  },
+  // {
+  //   name: "Enquire Now",
+  //   image: "/images/noida/admission/enquire-now.webp",
+  //   button: "Enquire Now",
+  //   Link: "https://ramagyaschool.com/noida-extension/",
+  // },
+  // {
+  //   name: "Admission 2024-25",
+  //   image: "/images/noida/admission/admission-1.webp",
+  //   button: "Admission 2024-25",
+  //   Link: "https://forms.edunexttechnologies.com/forms/ramagyanoidaextension/registration/",
+  // },
   {
     name: "Admission 2025-26",
     image: "/images/noida/admission/admission-2.webp",

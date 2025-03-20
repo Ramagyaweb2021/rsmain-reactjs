@@ -156,7 +156,7 @@ const PreAdmission = () => {
                 <Image src="/images/noida/admission/prospectus.webp" alt="prospectus" width={120} height={140} />
                 <p>
                   <a
-                    href="https://ramagyaschool.com/noida/assets/pdf/Ramagya-School-Brochure.pdf"
+                    href="https://drive.google.com/file/d/1LhGZxY_CVnN_w20iQQ7UD1aaQCelFUAY/view"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn learn-more-button"
