@@ -249,7 +249,7 @@ const PoineerInSports = () => {
           loading="lazy"
           width={430}
           height={200}
-          src="/images/dummy-image.webp"
+          src="/images/poineer-in-sports/tannis.webp"
           />
         </div>
         <div className="col-md-8 order-md-1">
