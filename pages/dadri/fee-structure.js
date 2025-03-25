@@ -111,8 +111,21 @@ const FeeStructure = () => {
           </div>
         </div>
       </section>
-      <FeeStructureTableDadri/>
-      <TransportationFeeDadri/>
+      <h3 style={{textAlign:"center", padding:"20px"}}>
+      <strong>
+        For detailed information on the&nbsp;
+        <span style={{ backgroundColor: "#ffdf8b" }}>
+          FEE STRUCTURE OF RAMAGYA SCHOOL DADRI (2025-26),
+        </span><br/><br/>
+         please contact us at&nbsp;
+         <a href="tel:8010466466" style={{ color: "red", fontWeight: "bold", textDecoration: "none" }}>
+          8010-466-466
+        </a>.
+        {/* <span style={{ color: "red", fontWeight: "bold" }}> 8010-466-466</span> */}
+      </strong>
+    </h3>
+      {/* <FeeStructureTableDadri/> */}
+      {/* <TransportationFeeDadri/> */}
       <FooterDadri />
     </>
   );
