@@ -6,7 +6,7 @@ const TransportationFeeGreaterNoida = () => {
     <div className="container my-5 p-4 border rounded" style={{ maxWidth: '1250px', backgroundColor: '#fff' }}>
       <div className="text-center mb-3">
         {/* <i className="bi bi-bus-front" style={{ fontSize: '2rem' }}></i> */}
-        <h4 className="fw-bold mt-2" style={{textAlign:"center"}}>TRANSPORTATION FEE FOR RAMAGYA SCHOOL NOIDA EXTENSION</h4>
+        <h4 className="fw-bold mt-2" style={{textAlign:"center"}}>TRANSPORTATION FEE FOR RAMAGYA SCHOOL GREATER NOIDA</h4>
         <p className="text-muted">(Subject to change in case of any Hike in Fuel Price)</p>
       </div>
       <table class="table table-hover text-center">

@@ -91,7 +91,7 @@ const FeeStructure = () => {
           </div> */}
           <div className="col-lg-8 col-12 mx-auto d-flex align-items-center">
             <div className='fee-procedure-detail'>
-              <h3 className='main-heading-internal-pages'>NOIDA GREATER</h3>
+              <h3 className='main-heading-internal-pages'>GREATER NOIDA</h3>
                 <p><b>The Procedure of Remitting Payments</b></p>
                 <p>All cheques/ drafts to be made in favour of </p>
                 <p><b>‘Ramagya School’</b></p>
