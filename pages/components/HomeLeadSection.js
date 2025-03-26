@@ -82,7 +82,7 @@ const HomeLeadSection = () => {
                       <p className="d-flex align-items-center"><i className="bi bi-building fs-5 me-2"></i> {item.batch}</p>
                       <p className="d-flex align-items-center"><i className="bi bi-mortarboard fs-5 me-2"></i> {item.degree}</p>
                       <p className="d-flex align-items-center"><i className="bi bi-award fs-5 me-2"></i> {item.education}</p>
-                      <p className="d-flex align-items-center"><i className="bi bi-briefcase fs-5 me-2"></i> {item.role}</p>
+                      <p className="d-flex align-items-left" style={{textAlign:"left"}}><i className="bi bi-briefcase fs-5 me-2"></i> {item.role}</p>
                     </div>
                   </div>
                 </div>
