@@ -92,7 +92,8 @@ const AboutUs = () => {
                 </p>
                 <p style={{ textAlign: "left" }}>We cultivate an environment where learning transcends the classroom, empowering students to become resilient, compassionate leaders ready to navigate the challenges of tomorrow. Through our holistic approach and commitment to educational innovation, we continue to inspire and shape the future of education. </p>
 
-                <h2 className='main-heading-internal-pages'>Who are the Ramagyans? - A Ramagyan is a child who:</h2>
+                <h2 className='main-heading-internal-pages'>Who are the Ramagyans?</h2>
+                <h5>- A Ramagyan is a child who:</h5><br/>
                 <ul className='custom-bullets'>
                     <li>Knows how to be emotionally stable.</li>
                     <li>Knows how to thrive in every sphere of life, excelling academically, artistically, and socially.</li>
