@@ -92,6 +92,27 @@ const AboutUs = () => {
                 </p>
                 <p style={{ textAlign: "left" }}>We cultivate an environment where learning transcends the classroom, empowering students to become resilient, compassionate leaders ready to navigate the challenges of tomorrow. Through our holistic approach and commitment to educational innovation, we continue to inspire and shape the future of education. </p>
 
+                <h2 className='main-heading-internal-pages'>Who are the Ramagyans? - A Ramagyan is a child who:</h2>
+                <ul className='custom-bullets'>
+                    <li>Knows how to be emotionally stable.</li>
+                    <li>Knows how to thrive in every sphere of life, excelling academically, artistically, and socially.</li>
+                    <li>Knows how to be culturally rooted and yet globally aware.</li>
+                    <li>Knows how to transform challenges into opportunities, developing resilience and problem-solving skills.</li>
+                    <li>Knows how to care for the emotions of others, fostering empathy and emotional intelligence.</li>
+                    <li>Knows how to maintain a holistic lifestyle, balancing academics, extracurriculars, and well-being.</li>
+                    <li>Knows how to excel in academics, arts, and social spheres, showcasing a well-rounded personality.</li>
+                    <li>Knows how to stay balanced and live mindfully, adopting healthy habits and life skills.</li>
+                    <li>Knows how to understand their purpose in life, developing leadership, responsibility, and vision.</li>
+                    <li>Knows the perfect balance of tradition and progress.</li>
+                    <li>Knows how to gracefully handle stress with poise.</li>
+                    <li>Knows how to be deeply aware of themselves and the world.</li>
+                    <li>Knows how to exude confidence.</li>
+                    <li>Knows how to be culturally wise and have international exposure.</li>
+                    <li>Knows how to care for the emotions of others.</li>
+                    <li>Knows how to maintain healthy outlets for their own emotions.</li>
+                </ul>
+
+
                 {/* <h2 className='main-heading-internal-pages'>Key Features</h2>
                 <ul className='custom-bullets'>
                   <li>Double-glazed windows have been used in the façade, providing excellent insulation from outside temperatures.</li>
