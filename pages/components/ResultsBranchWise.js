@@ -12,174 +12,154 @@ const ResultsBranchWise = () => {
       title: "Noida",
       categories: [
         {
-          heading: "IIT - JEE TOPPERS",
+          heading: "IIT JEE Mains & Advanced",
           subtitle: "ACHIEVEMENT OF TODAY IS A STEPPING STONE FOR THE FUTURE!",
           toppers: [
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-1.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-2.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-3.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-4.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/abhishek.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/shashank.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/pratul.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/ayush.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/animesh.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/RS--JEE-TOPPERS-2889.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/RS--JEE-TOPPERS-3418.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/RS--JEE-TOPPERS-8863.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/iit/1.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/iit/2.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/iit/3.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/iit/4.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/iit/5.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/iit/6.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/iit/7.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/iit/8.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/iit/9.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/iit/10.webp",
           ],
         },
         {
-          heading: "CLASS X TOPPERS",
-          subtitle: "CELEBRATING ACADEMIC EXCELLENCE!",
+          heading: "ACADEMIC RESULTS – CLASS 12",
+          subtitle: "LEADERS OF TOMORROW!",
           toppers: [
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-1.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-3.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-4.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-5.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/hiya.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/divyansh.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/atharv.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/sarthak.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/amit.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/sidak.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/anika.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/aditya.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/samiksha-jain.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/manasa.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/1.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/2.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/3.webp",
 
           ],
         },
         {
-          heading: "CLASS XII TOPPERS",
-          subtitle: "LEADERS OF TOMORROW!",
+          heading: "ACADEMIC RESULTS – CLASS 10",
+          subtitle: "CELEBRATING ACADEMIC EXCELLENCE!",
           toppers: [
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/2024-1.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/2024-2.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/2024-3.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/samiksha.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/manasa.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/tanisha.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/aditya.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/harshita.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/geetika.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/mihika.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/sanjana.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/vishwas.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/riya.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/sharon.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/1.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/3.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/4.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/5.webp",
+            // "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/6.webp",
+            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/7.webp",
           ],
         },
       ],
     },
-    {
-      key: "noida-extension",
-      title: "Noida Extension",
-      categories: [
-        {
-          heading: "IIT - JEE TOPPERS",
-          subtitle: "ACHIEVEMENT OF TODAY IS A STEPPING STONE FOR THE FUTURE!",
-          toppers: [
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-1.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-2.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-3.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-4.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/abhishek.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/shashank.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/pratul.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/ayush.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/animesh.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/RS--JEE-TOPPERS-2889.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/RS--JEE-TOPPERS-3418.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/RS--JEE-TOPPERS-8863.webp",
-          ],
-        },
-        {
-          heading: "CLASS X TOPPERS",
-          subtitle: "CELEBRATING ACADEMIC EXCELLENCE!",
-          toppers: [
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-1.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-3.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-4.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-5.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/hiya.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/divyansh.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/atharv.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/sarthak.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/amit.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/sidak.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/anika.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/aditya.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/samiksha-jain.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/manasa.webp",
-          ],
-        },
+    // {
+    //   key: "noida-extension",
+    //   title: "Noida Extension",
+    //   categories: [
+    //     {
+    //       heading: "IIT - JEE TOPPERS",
+    //       subtitle: "ACHIEVEMENT OF TODAY IS A STEPPING STONE FOR THE FUTURE!",
+    //       toppers: [
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-1.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-2.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-3.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/topper-4.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/abhishek.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/shashank.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/pratul.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/ayush.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/animesh.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/RS--JEE-TOPPERS-2889.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/RS--JEE-TOPPERS-3418.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/jee/RS--JEE-TOPPERS-8863.webp",
+    //       ],
+    //     },
+    //     {
+    //       heading: "CLASS X TOPPERS",
+    //       subtitle: "CELEBRATING ACADEMIC EXCELLENCE!",
+    //       toppers: [
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-1.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-3.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-4.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/2024-5.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/hiya.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/divyansh.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/atharv.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/sarthak.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/amit.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/sidak.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/anika.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/aditya.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/samiksha-jain.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-x-toppers/manasa.webp",
+    //       ],
+    //     },
         
-        {
-          heading: "CLASS XII TOPPERS",
-          subtitle: "LEADERS OF TOMORROW!",
-          toppers: [
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/2024-1.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/2024-2.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/2024-3.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/samiksha.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/manasa.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/tanisha.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/aditya.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/harshita.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/geetika.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/mihika.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/sanjana.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/vishwas.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/riya.webp",
-            "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/sharon.webp",
-          ],
-        },
+    //     {
+    //       heading: "CLASS XII TOPPERS",
+    //       subtitle: "LEADERS OF TOMORROW!",
+    //       toppers: [
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/2024-1.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/2024-2.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/2024-3.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/samiksha.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/manasa.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/tanisha.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/aditya.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/harshita.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/geetika.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/mihika.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/sanjana.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/vishwas.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/riya.webp",
+    //         "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/noida-results/class-xii-toppers/sharon.webp",
+    //       ],
+    //     },
         
-      ],
-    },
-    {
-      key: "greater-noida",
-      title: "Greater Noida",
-      categories: [
-        {
-          heading: "IIT - JEE TOPPERS",
-          subtitle: "ACHIEVEMENT OF TODAY IS A STEPPING STONE FOR THE FUTURE!",
-          toppers: [
-            "/images/results/gr-noida/iit-toppers/1.webp",
-            "/images/results/gr-noida/iit-toppers/2.webp",
-            "/images/results/gr-noida/iit-toppers/3.webp",
-          ],
-        },
-        {
-          heading: "CLASS X TOPPERS",
-          subtitle: "CELEBRATING ACADEMIC EXCELLENCE!",
-          toppers: [
-            "/images/results/gr-noida/class-x-toppers/1.jpg",
-            "/images/results/gr-noida/class-x-toppers/2.jpg",
-            "/images/results/gr-noida/class-x-toppers/3.jpg",
-          ],
-        },
+    //   ],
+    // },
+    // {
+    //   key: "greater-noida",
+    //   title: "Greater Noida",
+    //   categories: [
+    //     {
+    //       heading: "IIT - JEE TOPPERS",
+    //       subtitle: "ACHIEVEMENT OF TODAY IS A STEPPING STONE FOR THE FUTURE!",
+    //       toppers: [
+    //         "/images/results/gr-noida/iit-toppers/1.webp",
+    //         "/images/results/gr-noida/iit-toppers/2.webp",
+    //         "/images/results/gr-noida/iit-toppers/3.webp",
+    //       ],
+    //     },
+    //     {
+    //       heading: "CLASS X TOPPERS",
+    //       subtitle: "CELEBRATING ACADEMIC EXCELLENCE!",
+    //       toppers: [
+    //         "/images/results/gr-noida/class-x-toppers/1.jpg",
+    //         "/images/results/gr-noida/class-x-toppers/2.jpg",
+    //         "/images/results/gr-noida/class-x-toppers/3.jpg",
+    //       ],
+    //     },
         
-        {
-          heading: "CLASS XII TOPPERS",
-          subtitle: "LEADERS OF TOMORROW!",
-          toppers: [
-            "/images/results/gr-noida/class-xii-toppers/1.jpg",
-            "/images/results/gr-noida/class-xii-toppers/2.jpg",
-            "/images/results/gr-noida/class-xii-toppers/3.jpg",
+    //     {
+    //       heading: "CLASS XII TOPPERS",
+    //       subtitle: "LEADERS OF TOMORROW!",
+    //       toppers: [
+    //         "/images/results/gr-noida/class-xii-toppers/1.jpg",
+    //         "/images/results/gr-noida/class-xii-toppers/2.jpg",
+    //         "/images/results/gr-noida/class-xii-toppers/3.jpg",
             
-          ],
-        },
+    //       ],
+    //     },
         
-      ],
-    },
+    //   ],
+    // },
     {
       key: "dadri",
       title: "Dadri",
       categories: [
         {
-          heading: "IIT - JEE TOPPERS",
+          heading: "IIT JEE Mains & Advanced",
           subtitle: "ACHIEVEMENT OF TODAY IS A STEPPING STONE FOR THE FUTURE!",
           toppers: [
             "/images/results/gr-noida/iit-toppers/1.webp",
@@ -242,24 +222,25 @@ const ResultsBranchWise = () => {
                         <div key={`${branch.key}-category-${categoryIndex}`}>
                           <br/>
                           <div className="sec-title3 text-center mb-45">
-                            <div className="sub-title">{category.subtitle}</div>
+                            {/* <div className="sub-title">{category.subtitle}</div> */}
                             <h2 className="title black-color">
                               {category.heading}
                             </h2>
-                            <hr></hr><br/>
+                            <hr></hr>
                           </div>
-                          <div className="row">
+                          <div className="row g-3 py-5">
                             {category.toppers.map((topper, index) => (
                               <div
                                 key={`${branch.key}-category-${categoryIndex}-topper-${index}`}
-                                className="col-6 col-sm-3 item"
+                                className="col-6 col-md-3 mb-3 item"
                               >
-                                <div className="box">
+                                {/* <div className="box"> */}
+                                <div className="box" style={{borderRight:"1px solid #67676712"}}>
                                   <Image
                                     className="rounded-thumbnail"
                                     src={topper}
-                                      width={271}
-                                      height={259}
+                                      width={280}
+                                      height={230}
                                       priority
                                     alt={`Topper ${index + 1}`}
                                   />
