@@ -1,166 +1,136 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
 const AllSisterConcern = () => {
-  const [activeTab, setActiveTab] = useState('chairman');
+  const [activeTab, setActiveTab] = useState('rsa');
+  const tabRef = useRef(null);
 
   const verticalData = {
-    chairman: {
-      name: 'Ramagya Sports Academy',
+    rsa: {
       title: 'Ramagya Sports Academy',
       quote: 'You see things; and you say, "Why?" But I dream things that never were; and I say, "Why not?"',
-      thumbnailUrl: '/images/sister-concern/1.webp', // Thumbnail image
-      imageUrl: '/images/people/sanjay-gupta-full.webp', // Large image
+      thumbnailUrl: '/images/sister-concern/1.webp',
+      imageUrl: '/images/people/sanjay-gupta-full.webp',
+      link: '/ramagya-sports-academy',
     },
-    director: {
-      name: 'Ramagya Institutes of Professional Studies',
+    rips: {
       title: 'Ramagya Institutes of Professional Studies',
-      quote: '"Wisdom is knowing what to do next, skill is knowing how to do it and virtue is doing it.”" – David S Jordon',
-      thumbnailUrl: '/images/sister-concern/2.webp', // Thumbnail image
-      imageUrl: '/images/people/rajni-gupta-full.webp', // Large image
+      quote: '"Wisdom is knowing what to do next, skill is knowing how to do it and virtue is doing it.” - David S Jordon',
+      thumbnailUrl: '/images/sister-concern/2.webp',
+      imageUrl: '/images/people/rajni-gupta-full.webp',
+      link: '/ramagya-institutes',
     },
-    managingDirector: {
-      name: 'Ramagya Arts Academy',
+    raa: {
       title: 'Ramagya Arts Academy',
       quote: '“There is only one corner of the universe you can be certain of improving, and that’s your own self.”',
-      thumbnailUrl: '/images/sister-concern/3.webp', // Thumbnail image
-      imageUrl: '/images/people/utkarsh-gupta-full.webp', // Large image
+      thumbnailUrl: '/images/sister-concern/3.webp',
+      imageUrl: '/images/people/utkarsh-gupta-full.webp',
+      link: '/ramagya-arts-academy',
+    },
+    rf: {
+      title: 'Ramagya Foundation',
+      quote: '“There is only one corner of the universe you can be certain of improving, and that’s your own self.”',
+      thumbnailUrl: '/images/sister-concern/3.webp',
+      imageUrl: '/images/people/utkarsh-gupta-full.webp',
+      link: '/ramagya-foundation',
+    },
+    n: {
+      title: 'Nishabd',
+      quote: '“There is only one corner of the universe you can be certain of improving, and that’s your own self.”',
+      thumbnailUrl: '/images/sister-concern/3.webp',
+      imageUrl: '/images/people/utkarsh-gupta-full.webp',
+      link: '/nishabd',
+    },
+    rm: {
+      title: 'Ramagya Mart',
+      quote: '“There is only one corner of the universe you can be certain of improving, and that’s your own self.”',
+      thumbnailUrl: '/images/sister-concern/3.webp',
+      imageUrl: '/images/people/utkarsh-gupta-full.webp',
+      link: '/ramagya-mart',
+    },
+    cp: {
+      title: 'Citizen Post',
+      quote: '“There is only one corner of the universe you can be certain of improving, and that’s your own self.”',
+      thumbnailUrl: '/images/sister-concern/3.webp',
+      imageUrl: '/images/people/utkarsh-gupta-full.webp',
+      link: '/citizen-post',
+    },
+    ph: {
+      title: 'Play House',
+      quote: '“There is only one corner of the universe you can be certain of improving, and that’s your own self.”',
+      thumbnailUrl: '/images/sister-concern/3.webp',
+      imageUrl: '/images/people/utkarsh-gupta-full.webp',
+      link: '/play-house',
     },
   };
 
+
+
+  useEffect(() => {
+    const tabContainer = tabRef.current;
+    if (tabContainer) {
+      const handleWheelScroll = (event) => {
+        event.preventDefault();
+        tabContainer.scrollLeft += event.deltaY > 0 ? 50 : -50;
+      };
+      tabContainer.addEventListener('wheel', handleWheelScroll);
+      return () => tabContainer.removeEventListener('wheel', handleWheelScroll);
+    }
+  }, []);
+
   return (
     <section className="container my-5">
+      {/* Scrollable Tabs */}
       <div className="row justify-content-center">
-        <div className="col-md-12 text-center">
-          <ul className="nav nav-tabs justify-content-center">
-            <li className="nav-item">
-              <button
-                className={`nav-link ${activeTab === 'chairman' ? 'active' : ''}`}
-                onClick={() => setActiveTab('chairman')}
-              >
-                <Image
-                  src={verticalData.chairman.thumbnailUrl}
-                  alt={verticalData.chairman.name}
-                  width={25}
-                  height={25}
-                  className="rounded-circle1 me-2"
-                />
-                {verticalData.chairman.title}
-              </button>
-            </li>
-            <li className="nav-item">
-              <button
-                className={`nav-link ${activeTab === 'director' ? 'active' : ''}`}
-                onClick={() => setActiveTab('director')}
-              >
-                <Image
-                  src={verticalData.director.thumbnailUrl}
-                  alt={verticalData.director.name}
-                  width={25}
-                  height={25}
-                  className="rounded-circle1 me-2"
-                />
-                {verticalData.director.title}
-              </button>
-            </li>
-            <li className="nav-item">
-              <button
-                className={`nav-link ${activeTab === 'managingDirector' ? 'active' : ''}`}
-                onClick={() => setActiveTab('managingDirector')}
-              >
-                <Image
-                  src={verticalData.managingDirector.thumbnailUrl}
-                  alt={verticalData.managingDirector.name}
-                  width={25}
-                  height={25}
-                  className="rounded-circle1 me-2"
-                />
-                {verticalData.managingDirector.title}
-              </button>
-            </li>
+        <div className="col-md-12">
+          <ul
+            ref={tabRef}
+            className="nav nav-tabs d-flex flex-nowrap overflow-auto w-100"
+            style={{ whiteSpace: 'nowrap', cursor: 'grab', scrollbarWidth: 'none'}}
+          >
+            {Object.keys(verticalData).map((key) => (
+              <li className="nav-item flex-shrink-0" style={{ minWidth: '180px', border:'1px solid #ffdf8b'}} key={key}>
+                <button
+                  className={`nav-link text-center w-100 ${activeTab === key ? 'active' : ''}`}
+                  onClick={() => setActiveTab(key)}
+                  style={{ padding: '15px', fontWeight: '600'}}
+                >
+                  <Image
+                    src={verticalData[key].thumbnailUrl}
+                    alt={verticalData[key].title}
+                    width={30}
+                    height={30}
+                    className="rounded-circle me-2"
+                  />
+                  {verticalData[key].title}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
 
-      <div className="row justify-content-center mt-4">
-        <div className="col-md-12 text-left">
-          {activeTab === 'chairman' && (
-           <div className='row'>
-              <div className="col-md-12">
-                <div className="profile position-relative">
-                  <Image src={verticalData.chairman.imageUrl} alt={verticalData.chairman.name} width={1250} height={574} className="rounded-rectangle" />
-                {/* Overlay content */}
-                <div className="overlay-content">
-                  <h5 className="mt-3">{verticalData.chairman.title}</h5>
-                  <h6>{verticalData.chairman.name}</h6>
-                  <p className="fst-italic">{verticalData.chairman.quote}</p>
-                  <a href='https://www.forbesindia.com/article/brand-connect/dr-sanjay-gupta-chairman-ramagya-group-a-benevolent-visionary/62865/1' target='_blank'><Image src={verticalData.chairman.logo} alt="Forbes Logo" width={150} height={70} /></a>
-                  <p>{verticalData.chairman.description}</p>
-                  {/* <div className="d-flex justify-content-center align-items-center mt-1">
-                    <div className="learn-more-button">
-                    <a href="#">Know More</a>
-                    </div>
-                  </div> */}
-                </div>
-              </div>
-            
-              </div>
-            
-           </div>
-           
-          )}
-          {activeTab === 'director' && (
-            <div className="profile position-relative">
-              <div className='row'>
-              <div className="col-md-12">
-                <div className="profile position-relative">
-                <Image src={verticalData.director.imageUrl} alt={verticalData.director.name} width={1250} height={574} className="rounded-rectangle" />
-                {/* Overlay content */}
-                <div className="overlay-content">
-                  <h5 className="mt-3">{verticalData.director.title}</h5>
-                  <h6>{verticalData.director.name}</h6>
-                  <p className="fst-italic">{verticalData.director.quote}</p>
-                  <a href='https://www.shethepeople.tv/blog/survival-rajni-gupta-changemaker/' target='_blank'><Image src={verticalData.director.logo} alt="Forbes Logo" width={250} height={70} /></a>
-                  <p className="mt-3">{verticalData.director.description}</p>
-                  {/* <div className="d-flex justify-content-center align-items-center mt-1">
-                    <div className="learn-more-button">
-                    <a href="#">Know More</a>
-                    </div>
-                  </div> */}
-                </div>
-              </div>
-            
-              </div>
-           
-           </div>
+      {/* Vertical Details */}
+      <div className="row justify-content-center align-items-center mt-4">
+        <div className="col-md-12 d-flex flex-column align-items-center">
+          <div className="row d-flex align-items-center">
+            <div className="col-md-6 text-center">
+              <Image
+                src={verticalData[activeTab].imageUrl}
+                alt={verticalData[activeTab].title}
+                width={500}
+                height={300}
+                className="rounded"
+              />
             </div>
-          )}
-          {activeTab === 'managingDirector' && (
-            <div className="profile position-relative">
-              <div className='row'>
-              <div className="col-md-12">
-                <div className="profile position-relative">
-                <Image src={verticalData.managingDirector.imageUrl} alt={verticalData.managingDirector.name} width={1250} height={574} className="rounded-rectangle" />
-                {/* Overlay content */}
-                <div className="overlay-content">
-                  <h5 className="mt-3">{verticalData.managingDirector.title}</h5>
-                  <h6>{verticalData.managingDirector.name}</h6>
-                  <p className="fst-italic">{verticalData.managingDirector.quote}</p>
-                  <a href='https://www.forbesindia.com/article/brand-connect/utkarsh-gupta-youthful-dynamism/57561/1' target='_blank'><Image src={verticalData.managingDirector.logo} alt="Forbes Logo" width={150} height={70} /></a>
-                  <p className="mt-3">{verticalData.managingDirector.description}</p>
-                  {/* <div className="d-flex justify-content-center align-items-center mt-1">
-                    <div className="learn-more-button">
-                    <a href="#">Know More</a>
-                    </div>
-                  </div> */}
-                </div>
-              </div>
-            
-              </div>
-           
-           </div>
+            <div className="col-md-6 text-left">
+              <h2 className="fw-bold mb-3">{verticalData[activeTab].title}</h2>
+              <p className="fst-italic">{verticalData[activeTab].quote}</p>
+              <a href={verticalData[activeTab].link} className="btn btn-primary mt-2">
+                View More
+              </a>
             </div>
-          )}
+          </div>
         </div>
       </div>
     </section>

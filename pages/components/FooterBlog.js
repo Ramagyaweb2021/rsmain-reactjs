@@ -3,6 +3,8 @@ import React from 'react';
 import "bootstrap-icons/font/bootstrap-icons.css";
 // import { Row, Col, Form} from 'react-bootstrap';
 import Link from 'next/link';
+import BackToTop from './BacktoTopButton';
+import FloatingWidgetNoida from './FloatingWidgetNoida';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 const FooterNoida = () => {
@@ -19,7 +21,8 @@ const FooterNoida = () => {
            </div>
       
           </div>
-       
+        <FloatingWidgetNoida/>
+        <BackToTop/> 
     </>
   )
 }

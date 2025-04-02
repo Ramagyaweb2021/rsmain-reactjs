@@ -3,11 +3,17 @@ import React from 'react';
 import "bootstrap-icons/font/bootstrap-icons.css";
 // import { Row, Col, Form} from 'react-bootstrap';
 import Link from 'next/link';
+import BackToTop from './BacktoTopButton';
+import FloatingWidgetNoida from './FloatingWidgetNoida';
+import Enquirypopup from './Enquirypopup';
+import Typebot from './Typebot';
+// import FloatingWidget from './FloatingWidget';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 const FooterNoida = () => {
   return (
     <>
+      {/* <FloatingWidget/> */}
        {/* Footer Section */}
        <div className="internal-footer">
         <div className="container-fluid my-custom-footer">
@@ -132,8 +138,9 @@ const FooterNoida = () => {
                 <p className="footer-heading">Other Links</p>
                 <p> <Link href="https://ramagyagroup.com/current-opening" target="_blank" rel="noopener noreferrer">Careers</Link></p>
                 <p><Link href="/contact-us">Contact Us</Link></p>
-                <p><Link href="/blogs">Blog</Link></p>
                 <p><Link href="/noida/pre-admission"> Admission</Link></p>
+                <p><Link href="/results"> Results</Link></p>
+                <p><Link href="/blogs">Blog</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>
                 <p><Link href="#">Media Press</Link></p>
@@ -141,6 +148,10 @@ const FooterNoida = () => {
                 <p><Link href="#">Awards</Link></p> */}
               </div>
            </div>
+         <FloatingWidgetNoida/>
+         <Enquirypopup />
+         <Typebot/>  
+         <BackToTop/>
            <hr/><br/>
            <row className="footer-bottom-internal">
               <col-md-12 className="text-center">

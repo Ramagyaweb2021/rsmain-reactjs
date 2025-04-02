@@ -56,9 +56,26 @@ export default function App() {
        </div> */}
       {/* Enquiry buttion */}
       <div className="btn-float-enquire">
-        <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral btn-flash-1' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>
+      <Button
+            variant="primary-1"
+            className="btn btn-default btn-circle btn-lg"
+            onClick={() => setModalShow(true)}
+            style={{ marginTop: "1px" }}
+          >
+             {/* <Image
+              alt="Enquire Now"
+              src="/images/fi_check-circle.webp"
+              width={20}
+              height={20}
+              decoding="async"
+              fetchpriority="high"
+          />&nbsp; */}
+            <span className='enquire-lebel text-white'>ENQUIRE NOW</span>
+            {/* <Image src="/images/enquiry-widget.webp" alt="Enquire Now" width={80} height={80} /> */}
+          </Button>
+        {/* <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral btn-flash-1' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>
           <Image src="/images/enquiry-widget.webp" alt="Ramagya school enquire button" width={80} height={80} />
-        </Button>
+        </Button> */}
       </div>
       {/* <div className="btn-float-enquire animate__animated animate__zoomIn animate__infinite animate__slow" style={{ animationDelay: '2s' }}>
         <Button variant="primary-1" className='btn btn-default btn-circle btn-lg btn-lateral btn-flash-1' onClick={() => setModalShow(true)} style={{ marginTop: "1px" }}>

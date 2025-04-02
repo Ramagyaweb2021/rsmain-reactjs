@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import HeaderNoidaExtension from '/pages/components/HeaderNoidaExtension';
 import 'animate.css';
-import FooterNoida from '../components/FooterNoida';
+import FooterNoidaExtension from '../components/FooterNoidaExtension';
 import NoidaExtensionParentsScrollspyMenu from '../components/NoidaExtensionParentsScrollspyMenu';
 // import Image from 'next/image';
 
@@ -237,7 +237,7 @@ const ParentTeacherMeeting = () => {
         </div>
       </section>
     
-      <FooterNoida />
+      <FooterNoidaExtension />
     </>
   );
 };

@@ -3,6 +3,10 @@ import React from 'react';
 import "bootstrap-icons/font/bootstrap-icons.css";
 // import { Row, Col, Form} from 'react-bootstrap';
 import Link from 'next/link';
+import FloatingWidgetNoidaExtension from './FloatingWidgetNoidaExtension';
+import EnquirypopupNoidaExtension from './EnquirypopupNoidaExtension';
+import Typebot from './Typebot';
+import BackToTop from './BacktoTopButton';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 const FooterNoidaExtension = () => {
@@ -133,8 +137,9 @@ const FooterNoidaExtension = () => {
                 <p className="footer-heading">Other Links</p>
                 <p> <Link href="https://ramagyagroup.com/current-opening" target="_blank" rel="noopener noreferrer">Careers</Link></p>
                 <p><Link href="/contact-us">Contact Us</Link></p>
-                <p><Link href="/blogs">Blog</Link></p>
                 <p><Link href="/noida-extension/pre-admission"> Admission</Link></p>
+                <p><Link href="/results"> Results</Link></p>
+                <p><Link href="/blogs">Blog</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>
                 <p><Link href="#">Media Press</Link></p>
@@ -143,6 +148,10 @@ const FooterNoidaExtension = () => {
               </div>
            </div>
            <hr/><br/>
+           <FloatingWidgetNoidaExtension/>
+           <EnquirypopupNoidaExtension/>
+           <Typebot/>
+           <BackToTop/>
            <row className="footer-bottom-internal">
               <col-md-12 className="text-center">
                 <p style={{textAlign:"center"}}>Copyright 2025. Sai Chhaya Educational And Welfare Society | Designed & Marketed by <a href="#">Ramagya Digital</a></p>

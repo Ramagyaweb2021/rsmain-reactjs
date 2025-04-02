@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import 'animate.css';
 import Image from 'next/image';
-import EnquirypopupNoidaExtension from './EnquirypopupNoidaExtension';
-import Typebot from '../components/Typebot';
+// import EnquirypopupNoidaExtension from './EnquirypopupNoidaExtension';
+// import Typebot from '../components/Typebot';
 // import Link from 'next/link';
 
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
@@ -436,8 +436,8 @@ const Header = () => {
         </div>
       </nav>
 
-      <EnquirypopupNoidaExtension />
-      <Typebot />
+      {/* <EnquirypopupNoidaExtension />
+      <Typebot /> */}
     </>
   );
 };

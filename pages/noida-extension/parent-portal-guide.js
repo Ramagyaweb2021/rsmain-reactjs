@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import HeaderNoida from '/pages/components/HeaderNoida';
 import 'animate.css';
-import FooterNoida from '../components/FooterNoida';
+import FooterNoidaExtension from '../components/FooterNoidaExtension';
 import NoidaExtensionParentsScrollspyMenu from '../components/NoidaExtensionParentsScrollspyMenu';
 // import Image from 'next/image';
 
@@ -300,7 +300,7 @@ const ParentPortalGuide = () => {
         </div>
       </section>
     
-      <FooterNoida />
+      <FooterNoidaExtension />
     </>
   );
 };

@@ -7,7 +7,7 @@ import Header from './components/Header'; // Adjust this path if needed
 import 'animate.css';
 import FooterNoida from './components/FooterNoida';
 import NoidaInternalPageTestimonials from './components/NoidaInternalPageTestimonials';
-import TestimonialGalleryAwardsSchoolUpdatesScrollSpyMenu from './components/TestimonialGalleryAwardsSchoolUpdatesScrollSpyMenu';
+import ResultAwardsTestimonialsGalleryPageScrollSpyMenu from './components/ResultAwardsTestimonialsGalleryPageScrollSpyMenu';
 
 
 // Dynamically import WOW.js to avoid server-side issues
@@ -54,7 +54,7 @@ const Testimonials = () => {
           </div>
         </div>
       </section>
-      <TestimonialGalleryAwardsSchoolUpdatesScrollSpyMenu/>
+      <ResultAwardsTestimonialsGalleryPageScrollSpyMenu/>
       <NoidaInternalPageTestimonials/>
       <FooterNoida />
     </>

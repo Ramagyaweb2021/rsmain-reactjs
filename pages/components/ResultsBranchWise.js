@@ -223,9 +223,9 @@ const ResultsBranchWise = () => {
                           <br/>
                           <div className="sec-title3 text-center mb-45">
                             {/* <div className="sub-title">{category.subtitle}</div> */}
-                            <h2 className="title black-color">
+                            <h3 className="text-center fw-bold">
                               {category.heading}
-                            </h2>
+                            </h3>
                             <hr></hr>
                           </div>
                           <div className="row g-3 py-5">

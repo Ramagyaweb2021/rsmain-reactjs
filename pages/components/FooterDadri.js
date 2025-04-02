@@ -3,6 +3,7 @@ import React from 'react';
 import "bootstrap-icons/font/bootstrap-icons.css";
 // import { Row, Col, Form} from 'react-bootstrap';
 import Link from 'next/link';
+import BackToTop from './BacktoTopButton';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 const FooterDadri = () => {
@@ -132,8 +133,9 @@ const FooterDadri = () => {
                 <p className="footer-heading">Other Links</p>
                 <p> <Link href="https://ramagyagroup.com/current-opening" target="_blank" rel="noopener noreferrer">Careers</Link></p>
                 <p><Link href="/contact-us">Contact Us</Link></p>
-                <p><Link href="/blogs">Blog</Link></p>
                 <p><Link href="/dadri/pre-admission"> Admission</Link></p>
+                <p><Link href="/results"> Results</Link></p>
+                <p><Link href="/blogs">Blog</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>
                 <p><Link href="#">Media Press</Link></p>
@@ -141,6 +143,7 @@ const FooterDadri = () => {
                 <p><Link href="#">Awards</Link></p> */}
               </div>
            </div>
+           <BackToTop/>
            <hr/><br/>
            <row className="footer-bottom-internal">
               <col-md-12 className="text-center">

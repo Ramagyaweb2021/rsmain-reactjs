@@ -115,7 +115,7 @@ const ThankYouPage = () => {
                 Ramagya School
               </p>
               <a
-                href="https://qr1.be/ZJ68"
+                href="https://qr1.be/624V"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline-danger"

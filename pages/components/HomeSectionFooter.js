@@ -3,12 +3,14 @@ import React from 'react';
 import "bootstrap-icons/font/bootstrap-icons.css";
 // import { Row, Col, Form} from 'react-bootstrap';
 import Link from 'next/link';
+// import FloatingWidget from './FloatingWidget';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 const HomeSectionFooter = () => {
   return (
     <>
        {/* Footer Section */}
+       {/* <FloatingWidget/> */}
        <div className="home-footer">
         <div className="container-fluid my-custom-footer">
           {/* <div className='fp-tableFooter' style={{backgroundColor:"rgb(233 236 239 / 26%)", padding:"50px"}}>
@@ -132,9 +134,9 @@ const HomeSectionFooter = () => {
                 <p className="footer-heading">Other Links</p>
                 <p> <Link href="https://ramagyagroup.com/current-opening" target="_blank" rel="noopener noreferrer">Careers</Link></p>
                 <p><Link href="contact-us">Contact Us</Link></p>
+                <p><Link href="/noida/pre-admission"> Admission</Link></p>
                 <p><Link href="results">Results</Link></p>
                 <p><Link href="/blogs">Blog</Link></p>
-                <p><Link href="/noida/pre-admission"> Admission</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>
                 <p><Link href="#">Media Press</Link></p>
@@ -142,6 +144,7 @@ const HomeSectionFooter = () => {
                 <p><Link href="#">Awards</Link></p> */}
               </div>
            </div>
+           {/* <FloatingWidget/> */}
            {/* <hr/> */}
            <row className="footer-bottom">
                   <col-md-12 className="text-center">
@@ -152,6 +155,9 @@ const HomeSectionFooter = () => {
            </div>
       
           </div>
+
+         
+
        
     </>
   )

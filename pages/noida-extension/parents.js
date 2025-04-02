@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import 'animate.css';
-import FooterNoida from '../components/FooterNoida';
+import FooterNoidaExtension from '../components/FooterNoidaExtension';
 import AllVerticalScrollspyMenu from '../components/AllVerticalScrollspyMenu';
 import HeaderNoidaExtension from '../components/HeaderNoidaExtension';
 import NoidaExtensionParentsMenu from '../components/NoidaExtensionParentsMenu';
@@ -55,7 +55,7 @@ const AboutUs = () => {
       </section>
       <AllVerticalScrollspyMenu/>
       <NoidaExtensionParentsMenu/>
-      <FooterNoida/>
+      <FooterNoidaExtension/>
     </>
   );
 };

@@ -48,7 +48,7 @@ const People = () => {
                   className="wow animate__animated animate__fadeInDown"
                   style={{ animationDelay: '0.2s' }}
                 >
-                  Our Verticals!
+                  EXPLORE RAMAGYA!
                 </h1>
               </div>
             </div>
@@ -68,7 +68,7 @@ const People = () => {
                   className="main-heading-internal-pages wow animate__animated animate__fadeInDown"
                   style={{ animationDelay: '0.2s', textAlign: "center" }}
                 >
-                  OUR MISSION
+                  EXPLORE RAMAGYA
                 </h2>
                
                 <p style={{ textAlign: "left" }}>

@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import HeaderNoidaExtension from '/pages/components/HeaderNoidaExtension';
 import 'animate.css';
-import FooterNoida from '../components/FooterNoida';
+import FooterNoidaExtension from '../components/FooterNoidaExtension';
 import NoidaExtensionAdmissionScrollspyMenu from '../components/NoidaExtensionAdmissionScrollspyMenu';
 import PostAdmissionDeviderSection from '../components/PostAdmissionDeviderSection';
 
@@ -189,7 +189,7 @@ const PostAdmission = () => {
         </div>
         </section>
         
-        <FooterNoida />
+        <FooterNoidaExtension />
 
     </>
   );

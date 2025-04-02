@@ -4,6 +4,7 @@ import 'animate.css';
 import Image from 'next/image';
 import Enquirypopup from './Enquirypopup';
 import Typebot from '../components/Typebot';
+import FloatingWidgetNoida from './FloatingWidgetNoida';
 // import Link from 'next/link';
 
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
@@ -442,7 +443,7 @@ const HeaderMainWebsite = () => {
           </div>
         </div>
       </nav>
-
+      <FloatingWidgetNoida/>
       <Enquirypopup />
       <Typebot />
     </>
