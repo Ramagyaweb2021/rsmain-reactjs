@@ -3756,6 +3756,9 @@ hr {
   .sticky-top {
     top: 99px;
   }
+  .btn-float-enquire{
+    z-index: 111;
+  }
   #infographics {
     margin-top: -1px !important;
   }
