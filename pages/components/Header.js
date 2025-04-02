@@ -452,7 +452,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-        {/* <FloatingWidgetNoida/> */}
+        <FloatingWidgetNoida/>
         <Enquirypopup />
         <Typebot />
     </>

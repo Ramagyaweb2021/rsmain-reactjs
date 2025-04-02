@@ -148,7 +148,7 @@ const FooterNoidaExtension = () => {
               </div>
            </div>
            <hr/><br/>
-           {/* <FloatingWidgetNoidaExtension/> */}
+           <FloatingWidgetNoidaExtension/>
            <EnquirypopupNoidaExtension/>
            <Typebot/>
            <BackToTop/>

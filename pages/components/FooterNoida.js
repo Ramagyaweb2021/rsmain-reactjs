@@ -148,7 +148,7 @@ const FooterNoida = () => {
                 <p><Link href="#">Awards</Link></p> */}
               </div>
            </div>
-         {/* <FloatingWidgetNoida/> */}
+         <FloatingWidgetNoida/>
          <Enquirypopup />
          <Typebot/>  
          <BackToTop/>

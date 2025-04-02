@@ -443,7 +443,7 @@ const HeaderMainWebsite = () => {
           </div>
         </div>
       </nav>
-      {/* <FloatingWidgetNoida/> */}
+      <FloatingWidgetNoida/>
       <Enquirypopup />
       <Typebot />
     </>

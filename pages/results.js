@@ -114,8 +114,8 @@ const Results = () => {
             <div className="row">
               <div className="col-sm-12">
                 <div className="filter-text text-center">
-                <h2>Filter Results by Branch</h2>
-                 <p>Choose a branch below to view the results specific to that location.</p>
+                <h2 className='fw-100'>Select a branch</h2>
+                 {/* <p>Select a branch below to view the results specific to that location.</p> */}
 
                   <select
                       value={selectedBranch}
