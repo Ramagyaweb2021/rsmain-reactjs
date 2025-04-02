@@ -41,7 +41,7 @@ const BookList = () => {
                   className="wow animate__animated animate__fadeInDown"
                   style={{ animationDelay: '0.2s' }}
                 >
-                 Books List!
+                 Book List!
                 </h1>
               </div>
             </div>
