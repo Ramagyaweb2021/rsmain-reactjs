@@ -94,9 +94,9 @@ const ScholarshipProgramme = () => {
       <div className="p-3 border rounded mb-3">
       <h6 className="fw-bold">Criteria</h6>
       <ul className="list-unstyled">
-      <li>1. 25% discount in tuition fee for students scoring between 95% to 97.9%</li>
-      <li>2. 50% discount in tuition fee for students scoring between 97% to 98.5%</li>
-      <li>3. 100% discount in tuition fee for students scoring above 98.6%</li>
+      <li>1. 25% discount in tuition fee will be given to the students who have secured between 95.6 % to 97.5%.</li>
+      <li>2. 50% discount in tuition fee will be given to the students who have secured between 97.6 % to 98.5%.</li>
+      <li>3. 100% discount in tuition fee will be given to the students who have secured 98.6% and above.</li>
       </ul>
       </div>
       </div>

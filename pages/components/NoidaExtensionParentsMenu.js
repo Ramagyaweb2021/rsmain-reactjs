@@ -53,6 +53,7 @@ const NoidaExtensionParentsMenu = () => {
       img: "/images/branch-parent-link-img/tc.webp",
       text: "Transfer Certificate (TC)",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSetRHj5jncfezq6SDYOSPXcp6vVnLaH6TzaoEgEq440F_gX9w/viewform",
+      // link: "https://docs.google.com/forms/d/e/1FAIpQLSetRHj5jncfezq6SDYOSPXcp6vVnLaH6TzaoEgEq440F_gX9w/viewform",
     },
     // {
     //   img: "/images/branch-parent-link-img/fee-rules-and-cancellation-policy.webp",
