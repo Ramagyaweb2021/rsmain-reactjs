@@ -134,7 +134,7 @@ const FloatingWidgetNoida = () => {
           {/* <a href="https://in.linkedin.com/school/ramagya-school/" target="_blank" rel="noopener noreferrer" className="social-btn linkedin" data-label="LinkedIn">
             <FaLinkedinIn />
           </a> */}
-          <a href="https://wa.me/+918010770770" target="_blank" rel="noopener noreferrer" className="social-btn whatsapp" data-label="WhatsApp">
+          <a href="https://api.whatsapp.com/send?phone=918010770770&text=Hi" target="_blank" rel="noopener noreferrer" className="social-btn whatsapp" data-label="WhatsApp">
             <FaWhatsapp />
           </a>
 
