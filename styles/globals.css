@@ -2575,12 +2575,15 @@ ul.custom-bullets li::before {
 .pre-admission-section p {
   padding: 0;
 }
+.pre-admission-section img{
+  height: auto;
+}
 .bg-gray {
   background-color: #e7eaeb;
 }
 .bg-image-section {
   background-image: url(/images/explore-bg.webp);
-  background-color: #ffffff57;
+  background-color: #ffffffc2;
   /* background-color: #ffffffc2; */
   background-blend-mode: overlay;
   background-repeat: no-repeat;
