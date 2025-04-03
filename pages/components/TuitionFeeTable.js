@@ -36,10 +36,10 @@ const TuitionFeeTable = () => {
       title: 'Any CBSE Cluster Competition in recognized game.',
       type: 'INTERNATIONAL INDIVIDUAL / TEAM',
       levels: [
-        { medal: 'Gold', fee: '100%' },
-        { medal: 'Silver', fee: '100%' },
-        { medal: 'Bronze', fee: '100%' },
-        { medal: 'Participated', fee: '100%' },
+        { medal: 'Gold', fee: '75%' },
+        { medal: 'Silver', fee: '70%' },
+        { medal: 'Bronze', fee: '50%' },
+        { medal: 'Participated', fee: 'NA' },
       ],
     },
   ];

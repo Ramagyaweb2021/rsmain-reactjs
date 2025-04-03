@@ -83,7 +83,8 @@ const ScholarshipProgramme = () => {
       </div>
       </div>  
       {/* Section for Classes XI and XII */}
-      <div className="row my-5">
+      <div className="row my-2">
+      <h6 className="fw-bold text-center">Academic Scholarship is only for students of X to be given in Class XI and  XI to be given in class XII students.</h6>
       <div className="col-md-4 custom-column">
       <div className="p-0 border rounded mb-3">
       <Image src="/images/noida/admission/schorlaship-1.webp" alt="Scholarship Image" className="img-fluid rounded" width={364} height={364} />
