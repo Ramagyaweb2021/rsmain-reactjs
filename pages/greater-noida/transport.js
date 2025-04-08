@@ -4,7 +4,7 @@ import Head from 'next/head';
 import HeaderNoidaExtension from '/pages/components/HeaderNoidaExtension';
 import 'animate.css';
 import FooterNoida from '../components/FooterNoida';
-import NoidaExtensionParentsScrollspyMenu from '../components/NoidaExtensionParentsScrollspyMenu';
+import GreterNoidaParentsScrollspyMenu from '../components/GreterNoidaParentsScrollspyMenu';
 // import Image from 'next/image';
 
 // Dynamically import WOW.js to avoid server-side issues
@@ -51,7 +51,7 @@ const Transport = () => {
         <div className="container">
           <div className='row'>
             <div className="col-md-3 col-12">
-               <NoidaExtensionParentsScrollspyMenu />
+               <GreterNoidaParentsScrollspyMenu />
             </div>
             <div className="col-md-9 col-12">
             <div className="about-intro">
