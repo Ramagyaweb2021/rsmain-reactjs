@@ -247,6 +247,11 @@ const HeaderDadri = () => {
                       </a>
                     </li>
                     <li>
+                      <a className="dropdown-item" href="/brand-story">
+                       Brand Story 
+                      </a>
+                    </li>
+                    <li>
                       <a className="dropdown-item" href="/people">
                         People
                       </a>

@@ -114,12 +114,13 @@ const FooterNoidaExtension = () => {
                 <p className="footer-heading">who we are</p>
                 <p><Link href="/overview">Overview</Link></p>
                 <p><Link href="/about-us">About Us</Link></p>
-                <p><Link href="/about-us">Our vision and values</Link></p>
+                <p><Link href="/vision-and-values">Our Values</Link></p>
+                <p><Link href="/brand-story">Brand Story</Link></p>
                 <p><Link href="/people">People</Link></p>
                 <p><Link href="/ramagya-foundation">Ramagya Foundation</Link></p>
                 <p><Link href="/testimonials">Testimonials</Link></p>
                 <p><Link href="https://ramagyagroup.com/" target='_blank'>Sister Concerns</Link></p>
-               
+                <p><Link href="/partnership">Partnership</Link></p>
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
               <p className="footer-heading">what we do</p>
@@ -139,6 +140,7 @@ const FooterNoidaExtension = () => {
                 <p><Link href="/contact-us">Contact Us</Link></p>
                 <p><Link href="/noida-extension/pre-admission"> Admission</Link></p>
                 <p><Link href="/results"> Results</Link></p>
+                <p><Link href="/noida-extension/parents">Parent&apos;s</Link></p>
                 <p><Link href="/blogs">Blog</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>

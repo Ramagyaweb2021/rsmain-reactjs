@@ -34,16 +34,19 @@ function WhoWeAreScrollspyMenu() {
               <Nav.Link href="/vision-and-values" className={`mx-1 ${router.pathname === '/vision-and-values' ? 'active' : ''}`}>
                 Our Values
               </Nav.Link>
+              <Nav.Link href="/brand-story" className={`mx-1 ${router.pathname === '/brand-story' ? 'active' : ''}`}>
+                Brand Story
+              </Nav.Link>
               <Nav.Link href="/people" className={`mx-1 ${router.pathname === '/people' ? 'active' : ''}`}>
                 People
               </Nav.Link>
-              <Nav.Link href="/ramagya-foundation" className={`mx-1 ${router.pathname === '/ramagya-foundation' ? 'active' : ''}`}>
+              {/* <Nav.Link href="/ramagya-foundation" className={`mx-1 ${router.pathname === '/ramagya-foundation' ? 'active' : ''}`}>
                 Ramagya Foundation
-              </Nav.Link>
+              </Nav.Link> */}
               {/* <Nav.Link href="/testimonials" className={`mx-1 ${router.pathname === '/testimonials' ? 'active' : ''}`}>
                 TESTIMONIALS
-              </Nav.Link>
-              <Nav.Link href="/partnership" className={`mx-1 ${router.pathname === '/Partnership' ? 'active' : ''}`}>
+              </Nav.Link> */}
+              {/* <Nav.Link href="/partnership" className={`mx-1 ${router.pathname === '/Partnership' ? 'active' : ''}`}>
                 Partnership
               </Nav.Link> */}
             </Nav>

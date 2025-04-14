@@ -111,7 +111,8 @@ const HomeSectionFooter = () => {
                 <p className="footer-heading">who we are</p>
                 <p><Link href="overview">Overview</Link></p>
                 <p><Link href="about-us">About Us</Link></p>
-                <p><Link href="about-us">Our vision and values</Link></p>
+                <p><Link href="vision-and-values">Our Values</Link></p>
+                <p><Link href="brand-story">Brand Story</Link></p>
                 <p><Link href="people">People</Link></p>
                 <p><Link href="ramagya-foundation">Ramagya Foundation</Link></p>
                 <p><Link href="testimonials">Testimonials</Link></p>
@@ -134,7 +135,7 @@ const HomeSectionFooter = () => {
                 <p className="footer-heading">Other Links</p>
                 <p> <Link href="https://ramagyagroup.com/current-opening" target="_blank" rel="noopener noreferrer">Careers</Link></p>
                 <p><Link href="contact-us">Contact Us</Link></p>
-                <p><Link href="/noida/pre-admission"> Admission</Link></p>
+                {/* <p><Link href="/noida/pre-admission"> Admission</Link></p> */}
                 <p><Link href="results">Results</Link></p>
                 <p><Link href="/blogs">Blog</Link></p>
                 {/* <p className="footer-heading">News Feed</p>
