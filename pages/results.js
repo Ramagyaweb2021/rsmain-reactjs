@@ -59,7 +59,7 @@ const Results = () => {
       default:
         return <div>Select a branch to view results.</div>;
     }
-  };  
+  };
 
   // const renderBranchResults = () => {
   //   switch (selectedBranch) {
@@ -114,30 +114,30 @@ const Results = () => {
 
       {/* Branch Filter Section */}
       <section className="section filter-sec py-5">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12">
-                <div className="filter-text text-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="filter-text text-center">
                 <h2 className='fw-100'>Select a branch</h2>
-                 {/* <p>Select a branch below to view the results specific to that location.</p> */}
+                {/* <p>Select a branch below to view the results specific to that location.</p> */}
 
-                  <select
-                      value={selectedBranch}
-                      onChange={(e) => setSelectedBranch(e.target.value)}
-                      className="form-control branch-selector"
-                    >
-                      <option value="noida">Noida</option>
-                      <option value="noida-extension">Noida Extension</option>
-                      <option value="greater-noida">Greater Noida</option>
-                      <option value="dadri">Dadri</option>
-                    </select>
+                <select
+                  value={selectedBranch}
+                  onChange={(e) => setSelectedBranch(e.target.value)}
+                  className="form-control branch-selector"
+                >
+                  <option value="noida">Noida</option>
+                  <option value="noida-extension">Noida Extension</option>
+                  <option value="greater-noida">Greater Noida</option>
+                  <option value="dadri">Dadri</option>
+                </select>
 
 
-                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
 
       {/* Render results based on selected branch */}

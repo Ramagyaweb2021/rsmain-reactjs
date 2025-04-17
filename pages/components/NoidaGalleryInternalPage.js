@@ -791,6 +791,20 @@ const NoidaGalleryInternalPage = () => {
     },
     // ********** ********** ********** ********** ********** Video gallery for Academia **********
     {
+      src: 'https://img.youtube.com/vi/kN_jQJdwI9Q/hqdefault.jpg',
+      title: 'title',
+      category: 'Academia',
+      type: 'video',
+      videoId: 'kN_jQJdwI9Q'
+    },
+    {
+      src: 'https://img.youtube.com/vi/iF_JhMghGrs/hqdefault.jpg',
+      title: 'title',
+      category: 'Academia',
+      type: 'video',
+      videoId: 'iF_JhMghGrs'
+    },
+    {
       src: 'https://img.youtube.com/vi/jMLgItJz8kA/hqdefault.jpg',
       title: 'title',
       category: 'Academia',
@@ -911,6 +925,41 @@ const NoidaGalleryInternalPage = () => {
       videoId: 'gG-Tdkc24AM'
     },
     // ********** ********** ********** ********** ********** Video gallery for sports galore **********
+    {
+      title: 'Ramagya School Gallery',
+      category: 'Sports Galore',
+      type: 'video',
+      videoId: 'Ou21CxeNAOc',
+      src: 'https://img.youtube.com/vi/Ou21CxeNAOc/hqdefault.jpg'
+    },
+    {
+      title: 'Ramagya School Gallery',
+      category: 'Sports Galore',
+      type: 'video',
+      videoId: 'kci02FLSBuE',
+      src: 'https://img.youtube.com/vi/kci02FLSBuE/hqdefault.jpg'
+    },
+    {
+      title: 'Ramagya School Gallery',
+      category: 'Sports Galore',
+      type: 'video',
+      videoId: 'Xc7_6D51nI4',
+      src: 'https://img.youtube.com/vi/Xc7_6D51nI4/hqdefault.jpg'
+    },
+    {
+      title: 'Ramagya School Gallery',
+      category: 'Sports Galore',
+      type: 'video',
+      videoId: 'TSCp6Mkl8gc',
+      src: 'https://img.youtube.com/vi/TSCp6Mkl8gc/hqdefault.jpg'
+    },
+    {
+      title: 'Ramagya School Gallery',
+      category: 'Sports Galore',
+      type: 'video',
+      videoId: '0akzy6gggbw',
+      src: 'https://img.youtube.com/vi/0akzy6gggbw/hqdefault.jpg'
+    },
     {
       title: 'Ramagya School Gallery',
       category: 'Sports Galore',
@@ -2565,6 +2614,13 @@ const NoidaGalleryInternalPage = () => {
     },
 
     // ******************************************Video gallery for Events spot lights
+    {
+      title: 'Ramagya School Gallery',
+      category: 'Event Spotlight',
+      type: 'video',
+      videoId: 'exnomE7y258',
+      src: 'https://img.youtube.com/vi/exnomE7y258/hqdefault.jpg'
+    },
     {
       title: 'Ramagya School Gallery',
       category: 'Event Spotlight',
