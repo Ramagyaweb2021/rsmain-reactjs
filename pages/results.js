@@ -5,10 +5,12 @@ import Header from './components/Header'; // Adjust this path if needed
 import 'animate.css';
 import FooterNoida from './components/FooterNoida';
 import ResultAwardsTestimonialsGalleryPageScrollSpyMenu from './components/ResultAwardsTestimonialsGalleryPageScrollSpyMenu';
-import NoidaIITAcademicsThumbnailResults from './components/NoidaIITAcademicsThumbnailResults';
+import NoidaIITThumbnailResults from './components/NoidaIITThumbnailResults';
+import NoidaAcademicsThumbnailResults from './components/NoidaAcademicsThumbnailResults';
 import NoidaTableResultData from './components/NoidaTableResultData';
 import NoidaStupendousResults from './components/NoidaStupendousResults';
-import DadriIITAcademicsThumbnailResults from './components/DadriIITAcademicsThumbnailResults';
+import DadriIITThumbnailResults from './components/DadriIITThumbnailResults';
+import DadriAcademicsThumbnailResults from './components/DadriAcademicsThumbnailResults';
 import DadriTableResultData from './components/DadriTableResultData';
 
 // Dynamically import WOW.js to avoid server-side issues
@@ -31,7 +33,8 @@ const Results = () => {
       case 'noida':
         return (
           <>
-            <NoidaIITAcademicsThumbnailResults />  {/* Noida specific result */}
+            <NoidaIITThumbnailResults />  {/* Noida specific result */}
+            <NoidaAcademicsThumbnailResults />  {/* Noida specific result */}
             <NoidaTableResultData />          {/* Noida specific result */}
             <NoidaStupendousResults />       {/* common result */}
           </>
@@ -39,7 +42,8 @@ const Results = () => {
       case 'dadri':
         return (
           <>
-            <DadriIITAcademicsThumbnailResults />  {/* Dadri specific result */}
+            <DadriIITThumbnailResults />  {/* Dadri specific result */}
+            <DadriAcademicsThumbnailResults />  {/* Dadri specific result */}
             <DadriTableResultData />       {/* Dadri specific result */}
             <NoidaStupendousResults /> {/* common result */}
           </>
