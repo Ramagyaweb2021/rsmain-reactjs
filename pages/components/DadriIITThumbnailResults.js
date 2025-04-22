@@ -10,7 +10,7 @@ const DadriIITThumbnailResults = () => {
   // Data for categories
   const categories = [
     {
-      heading: "IIT JEE Mains & Advanced",
+      heading: "IIT JEE Mains",
       subtitle: "ACHIEVEMENT OF TODAY IS A STEPPING STONE FOR THE FUTURE!",
       toppers: {
         "2023-24": [

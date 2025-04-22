@@ -17,6 +17,7 @@ const NoidaIITThumbnailResults = () => {
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/1.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/2.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/3.webp",
+          // "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/4.webp",
         ],
         "2024-25": [],
       },
