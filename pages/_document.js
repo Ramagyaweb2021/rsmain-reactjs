@@ -18,6 +18,7 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+        <meta name="google-site-verification" content="T5OHMTGEQ05217-UzXKJxsH5Nnu74qErslvwNhd_otc" />
         {/* <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
         <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" /> */}
         <link rel="shortcut icon" type="image/x-icon" href="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/favicon.webp" />
