@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ramagyaschool.com/sitemap.xml

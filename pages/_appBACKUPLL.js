@@ -104,7 +104,7 @@ function MyApp({ Component, pageProps }) {
                   fbq('init', '${FACEBOOK_PIXEL_ID}');
                   fbq('track', 'PageView');
                 } else {
-                   //console.error("❌ Facebook Pixel ID is missing or invalid!");
+                  console.error("❌ Facebook Pixel ID is missing or invalid!");
                 }
               `,
             }}

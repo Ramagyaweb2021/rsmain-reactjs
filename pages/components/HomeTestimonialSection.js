@@ -169,6 +169,13 @@ const HomeTestimonialSection = () => {
       img: '/images/testimonial-thumb/vishwanath-anand.webp',
       videoUrl: 'https://www.youtube.com/embed/rYnH2LND6Lg'
     },
+    {
+      title: 'Mr. Chetan Bhagat',
+      content: 'World Chess Champion',
+      value: 'RS Noida Branch',
+      img: '/images/testimonial-thumb/chetan.webp',
+      videoUrl: 'https://www.youtube.com/embed/WrQHBzo0ww4'
+    },
   ];
 
   return (
