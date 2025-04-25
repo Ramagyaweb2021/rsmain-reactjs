@@ -9,6 +9,12 @@ export const NoidaFamousPersonalityTestimonial = () => {
 
   const testimonials = [
     {
+      name: 'Mr. Ashok Dhyan Chand',
+      subject: 'Indian former hockey player',
+      img: 'https://img.youtube.com/vi/TuudIIr9ZF8/hqdefault.jpg',
+      videoLink: 'https://www.youtube.com/watch?v=TuudIIr9ZF8',
+    },
+    {
       name: 'Shiv Aroor',
       subject: 'Journalist, Author and News Anchor at India Today',
       img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/shive-aroor.webp',
@@ -28,13 +34,13 @@ export const NoidaFamousPersonalityTestimonial = () => {
     },
     {
       name: 'Hon\'ble Smt. Smriti Zubin Irani',
-      subject: 'Minister of Women and Child Development, and also Minister of Minority Affairs',
+      subject: 'Former Union Minister of Women and Child Development and Minister for Minority Affairs',
       img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/smiriti.webp',
       videoLink: 'https://www.youtube.com/watch?v=XzhWSqIlts8',
     },
     {
       name: 'Hon\'ble Smt. Smriti Zubin Irani',
-      subject: 'Minister of Women and Child Development, and also Minister of Minority Affairs',
+      subject: 'Former Union Minister of Women and Child Development and Minister for Minority Affairs',
       img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/smiriti.webp',
       videoLink: 'https://www.youtube.com/watch?v=1yWQuKlJqTc',
     },
@@ -166,13 +172,15 @@ export const NoidaFamousPersonalityTestimonial = () => {
                       alt="play-button"
                       width={96}
                       height={96}
+                      className='youtube-play-button'
                     />
                   </button>
                 </div>
               </div>
               <div className="testimonial-content">
                 <h6 className="testimonial-name-heading text-center">{testimonial.name}</h6>
-                {/* <p style={{ textAlign: 'center' }}>{testimonial.subject}</p> */}
+                {/* <hr/> */}
+                <p style={{ textAlign: 'center' }}>{testimonial.subject}</p>
               </div>
             </div>
           </div>

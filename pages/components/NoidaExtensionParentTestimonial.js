@@ -205,6 +205,7 @@ export const NoidaExtensionParentTestimonial = () => {
                       alt="play-button"
                       width={96}
                       height={96}
+                      className='youtube-play-button'
                     />
                   </button>
                 </div>

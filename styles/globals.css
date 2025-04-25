@@ -73,7 +73,7 @@ img {
   border: 0 none;
   max-width: 100%;
   /* object-fit: cover; */
-  /* border-radius: 5px; */
+  border-radius: 2px;
 }
 h1,
 h2,
@@ -2106,6 +2106,9 @@ video.main-video {
 }
 /* width: 100%; */
 .image-container-testimonial img {
+  height: 220px; 
+}
+.youtube-play-button{
   height: auto !important;
 }
 .internal-evolve-items {
@@ -3295,6 +3298,9 @@ hr {
   padding-top: 100px;
   padding-bottom: 120px;
 }
+/* .testimonial-item{
+  min-height: 100px !important;
+} */
 /* Floating Widget Fixed at Bottom Left */
 
 /* .text-start-alumni p {
@@ -4126,6 +4132,7 @@ hr {
     margin-left: 5px;
   }
   .image-container-testimonial img {
+    /* height: 140px; */
     height: auto;
   }
   .mobile-gutter {

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect } from "react";
 import Script from "next/script";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.css";
@@ -48,8 +49,54 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
+  // ✅ Schema Based on Route
+  const getSchema = () => {
+    let name = "Ramagya School";
+    let description = "Ramagya School, one of the Top 10 CBSE schools in Noida, is where your child’s journey to success begins. Apply in best school in noida today for best start";
+
+    if (router.pathname.startsWith("/noida")) {
+      name = "Ramagya School Noida Sector 50";
+      description = "Ramagya School Noida, ranked among the top CBSE schools in Noida Sec 50. Offering academic excellence, modern infrastructure. Enroll today!";
+    } else if (router.pathname.startsWith("/noida-extension")) {
+      name = "Ramagya School Noida Extension";
+      description = "Ramagya School Top Best School in Noida Extension - offering world-class education, modern infrastructure. Best School in Noida Extension";
+    } else if (router.pathname.startsWith("/greater-noida")) {
+      name = "Ramagya School Greater Noida";
+      description = "Ramagya School Top School in Greater Noida, offering academic excellence, modern facilities and holistic student development and best environment.";
+    } else if (router.pathname.startsWith("/dadri")) {
+      name = "Ramagya School Dadri";
+      description = "Ramagya School Top Best CBSC School in Dadri - Top CBSE school in Dadri offering quality education, modern facilities with best study environment";
+    }
+
+    return {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      name,
+      image:
+        "https://ramagyaschool.com/_next/image?url=%2Fimages%2Fmain-webiste-logo%2Flogo-1.webp&w=384&q=75",
+      description,
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        bestRating: "5",
+        worstRating: "1",
+        ratingCount: "6926",
+      },
+    };
+  };
+
   return (
     <>
+      {/* ✅ Structured Data Schema */}
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getSchema()),
+          }}
+        />
+      </Head>
+
       {/* ✅ Apply Google Fonts as CSS Variables */}
       <style jsx global>{`
         :root {
@@ -58,7 +105,7 @@ function MyApp({ Component, pageProps }) {
         }
       `}</style>
 
-      {/* ✅ Google Analytics Script (Using ENV Variable) */}
+      {/* ✅ Google Analytics Script */}
       {GOOGLE_ANALYTICS_ID && (
         <>
           <Script
@@ -83,7 +130,7 @@ function MyApp({ Component, pageProps }) {
         </>
       )}
 
-      {/* ✅ Facebook Pixel Script (Using ENV Variable) */}
+      {/* ✅ Facebook Pixel Script */}
       {FACEBOOK_PIXEL_ID && (
         <>
           <Script
@@ -103,8 +150,6 @@ function MyApp({ Component, pageProps }) {
                 if ('${FACEBOOK_PIXEL_ID}' !== 'undefined') {
                   fbq('init', '${FACEBOOK_PIXEL_ID}');
                   fbq('track', 'PageView');
-                } else {
-                   //console.error("❌ Facebook Pixel ID is missing or invalid!");
                 }
               `,
             }}
@@ -124,7 +169,7 @@ function MyApp({ Component, pageProps }) {
         </noscript>
       )}
 
-      {/* ✅ Render the Main Page Component */}
+      {/* ✅ Render Page Component */}
       <Component {...pageProps} />
     </>
   );

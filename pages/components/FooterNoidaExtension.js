@@ -28,8 +28,8 @@ const FooterNoidaExtension = () => {
                 <p style={{textTransform:"lowercase"}}><a href="mailto:info.ext@ramagyaschool.com">info.ext@ramagyaschool.com</a></p>
                 <p style={{textTransform:"lowercase"}}><a href="mailto:principal.ext@ramagyaschool.com">principal.ext@ramagyaschool.com</a></p>
                 <p style={{textTransform:"lowercase"}}><a href="mailto:recruitment@ramagyagroup.com">recruitment@ramagyagroup.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:pc@ramagyagroup.com">pc@ramagyagroup.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:sports@ramagyagroup.com">sports@ramagyagroup.com</a></p>
+                {/* <p style={{textTransform:"lowercase"}}><a href="mailto:pc@ramagyagroup.com">pc@ramagyagroup.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:sports@ramagyagroup.com">sports@ramagyagroup.com</a></p> */}
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">For Enquiries</p>

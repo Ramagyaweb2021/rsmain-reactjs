@@ -25,8 +25,8 @@ const HomeSectionFooter = () => {
                 <p style={{textTransform:"lowercase"}}><a href="mailto:admissions@ramagyaschool.com"><i className="bi bi-envelope-fill"></i> admissions@ramagyaschool.com</a></p>
                 <p style={{textTransform:"lowercase"}}><a href="mailto:principal@ramagyaschool.com"><i className="bi bi-envelope-fill"></i> principal@ramagyaschool.com</a></p>
                 <p style={{textTransform:"lowercase"}}><a href="mailto:recruitment@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> recruitment@ramagyagroup.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:pc@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> pc@ramagyagroup.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:sports@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> sports@ramagyagroup.com</a></p>
+                {/* <p style={{textTransform:"lowercase"}}><a href="mailto:pc@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> pc@ramagyagroup.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:sports@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> sports@ramagyagroup.com</a></p> */}
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">For Enquiries</p>

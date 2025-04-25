@@ -136,7 +136,7 @@ const HomeTestimonialSection = () => {
   const data = [
     {
       title: 'Honble Smt. Smriti Zubin Irani',
-      content: 'Minister of Women and Child Development, and also Minister of Minority Affairs',
+      content: 'Former Union Minister of Women and Child Development and Minister for Minority Affairs',
       value: 'RS Noida Branch',
       img: '/images/testimonial-thumb/smiriti.webp',
       videoUrl: 'https://www.youtube.com/embed/1yWQuKlJqTc'
@@ -171,10 +171,17 @@ const HomeTestimonialSection = () => {
     },
     {
       title: 'Mr. Chetan Bhagat',
-      content: 'World Chess Champion',
+      content: 'Author, Screen Writer, Columnist & Motivational Speaker',
       value: 'RS Noida Branch',
       img: '/images/testimonial-thumb/chetan.webp',
       videoUrl: 'https://www.youtube.com/embed/WrQHBzo0ww4'
+    },
+    {
+      title: 'Mr. Ashok Dhyan Chand',
+      content: 'Indian former hockey player',
+      value: 'RS Noida Branch',
+      img: '/images/testimonial-thumb/ashok.webp',
+      videoUrl: 'https://www.youtube.com/embed/TuudIIr9ZF8'
     },
   ];
 
@@ -228,17 +235,19 @@ const HomeTestimonialSection = () => {
                 <div className="image-container-testimonial">
                   <Image src={item.img} alt={item.title} className="slider-image" width={310} height={265} />
                   <div className="play-button-overlay" onClick={() => openModal(item.videoUrl)}>
-                    <Image src="/images/youtube-play-icon.webp" className="play-button" alt="play-button" width={96} height={96}/>
+                    <Image src="/images/youtube-play-icon.webp" className="youtube-play-button play-button" alt="play-button" width={96} height={96}/>
                   </div>
                 </div>
                 <div className="testimonial-content">
                   <h3>{item.title}</h3>
+                  <hr/>
+                  <p style={{padding:"0 9px"}}>{item.content}</p>
                 </div>
               </div>
             ))}
           </Slider>
         </div>
-        <div className="d-flex justify-content-center align-items-center mt-15">
+        <div className="d-flex justify-content-center align-items-center mt-5 mb-5">
           <div className="learn-more-button">
             <a href="testimonials">View More</a>
           </div>

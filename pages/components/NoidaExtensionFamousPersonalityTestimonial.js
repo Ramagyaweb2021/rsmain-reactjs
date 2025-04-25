@@ -196,13 +196,14 @@ export const NoidaExtensionFamousPersonalityTestimonial = () => {
                       alt="play-button"
                       width={96}
                       height={96}
+                      className='youtube-play-button'
                     />
                   </button>
                 </div>
               </div>
               <div className="testimonial-content">
                 <h6 className="testimonial-name-heading text-center">{testimonial.name}</h6>
-                {/* <p style={{ textAlign: 'center' }}>{testimonial.subject}</p> */}
+                <p style={{ textAlign: 'center' }}>{testimonial.subject}</p>
               </div>
             </div>
           </div>
