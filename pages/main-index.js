@@ -149,9 +149,9 @@ export default function Home() {
           fitToSection={true}
           render={() => (
             <ReactFullpage.Wrapper>
-              <div className="section">
+              {/* <div className="section">
                 <HomeVideoSection />
-              </div>
+              </div> */}
               <div className="section">
                 <HomeSchoolBranchSection />
               </div>

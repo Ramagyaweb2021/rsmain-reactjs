@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useMemo } from "react";
 import videojs from "video.js";
 import "video.js/dist/video-js.css"; // Import Video.js styles
 
@@ -8,35 +8,33 @@ export default function HomePage() {
   const videoRef = useRef(null);
   const playerRef = useRef(null);
 
-  const videoJsOptions = {
+  // Memoize the options to prevent unnecessary re-renders
+  const videoJsOptions = useMemo(() => ({
     controls: true,
     responsive: true,
     fluid: true,
-    autoplay: true,  // Auto-play the video
-    loop: true,      // Loop the video
-    poster: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/videos/your-poster-image.jpg", // Add the poster image URL here
+    autoplay: true,
+    loop: true,
+    poster: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/videos/your-poster-image.jpg",
     sources: [
       {
         src: "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/videos/rs-main-latest.mp4",
         type: "video/mp4",
       },
     ],
-  };
+  }), []);
 
   useEffect(() => {
-    console.log("Initializing Video.js player");
-
-    // Initialize Video.js player
+    // Initialize Video.js player if not already initialized
     if (videoRef.current && !playerRef.current) {
       playerRef.current = videojs(videoRef.current, videoJsOptions);
 
-      // Listen for the 'ready' event to ensure the player is fully initialized
-      playerRef.current.on('ready', () => {
-        console.log('Video.js player is ready');
+      playerRef.current.ready(() => {
+        console.log("Video.js player is ready");
       });
     }
 
-    // Clean up when the component unmounts
+    // Cleanup on unmount
     return () => {
       if (playerRef.current) {
         console.log("Disposing of Video.js player");
@@ -55,7 +53,8 @@ export default function HomePage() {
         <video
           ref={videoRef}
           className="video-js vjs-default-skin"
-          style={{ width: "100%", height: "500px" }} // Set a fixed height for testing
+          style={{ width: "100%", height: "500px" }}
+          playsInline
         />
       </div>
 

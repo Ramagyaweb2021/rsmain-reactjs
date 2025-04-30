@@ -38,12 +38,12 @@ export const NoidaFamousPersonalityTestimonial = () => {
       img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/smiriti.webp',
       videoLink: 'https://www.youtube.com/watch?v=XzhWSqIlts8',
     },
-    {
-      name: 'Hon\'ble Smt. Smriti Zubin Irani',
-      subject: 'Former Union Minister of Women and Child Development and Minister for Minority Affairs',
-      img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/smiriti.webp',
-      videoLink: 'https://www.youtube.com/watch?v=1yWQuKlJqTc',
-    },
+    // {
+    //   name: 'Hon\'ble Smt. Smriti Zubin Irani',
+    //   subject: 'Former Union Minister of Women and Child Development and Minister for Minority Affairs',
+    //   img: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/smiriti.webp',
+    //   videoLink: 'https://www.youtube.com/watch?v=1yWQuKlJqTc',
+    // },
     {
       name: 'Balkrishna Shetty',
       subject: 'International Muay Thai Jujitsu And MMA Fighter',

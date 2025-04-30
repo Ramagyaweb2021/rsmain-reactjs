@@ -3,7 +3,7 @@ import HomeVideoSectionTesting from "./components/HomeVideoSectionTesting";
 const video = () => {
   return (
     <div>
-      <HomeVideoSectionTesting/>
+      <HomeVideoSectionTesting />
     </div>
   )
 }
