@@ -31,10 +31,27 @@ const Overview = () => {
   return (
     <>
       <Head>
-        <title>Partnership | Ramagya School</title>
-        <meta name="description" content="partnership" />
-        <meta name="keywords" content="partnership" />
+        {/* Primary SEO */}
+        <title>Ramagya School Partnership - Collaborate for Educational Excellence</title>
+        <meta
+        name="description"
+        content="Partnership opportunities with Ramagya School, Join us in enhancing educational outcomes, innovation, and community development through strategic collaborations."
+        />
         <link rel="canonical" href="https://ramagyaschool.com/partnership" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Ramagya School Partnership - Collaborate for Educational Excellence" />
+        <meta property="og:description" content="Partnership opportunities with Ramagya School, Join us in enhancing educational outcomes, innovation, and community development through strategic collaborations." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/partnership" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ramagya School Partnership - Collaborate for Educational Excellence" />
+        <meta name="twitter:description" content="Partnership opportunities with Ramagya School, Join us in enhancing educational outcomes, innovation, and community development through strategic collaborations." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

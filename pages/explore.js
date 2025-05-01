@@ -25,10 +25,27 @@ const Explore = () => {
   return (
     <>
       <Head>
-      <title>Explore | Ramagya School</title>
-      <meta name="description" content="Explore" />
-      <meta name="keywords" content="Explore" />
-      <link rel="canonical" href="https://ramagyaschool.com/explore" />
+      {/* Primary SEO */}
+        <title>Explore Ramagya School Noida - School with Modern Facilities</title>
+        <meta
+        name="description"
+        content="Explore Ramagya School, one of the best CBSE schools in Noida. Experience modern facilities, an innovative curriculum, and a focus on holistic student growth."
+        />
+        <link rel="canonical" href="https://ramagyaschool.com/explore" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Explore Ramagya School Noida - School with Modern Facilities" />
+        <meta property="og:description" content="Explore Ramagya School, one of the best CBSE schools in Noida. Experience modern facilities, an innovative curriculum, and a focus on holistic student growth." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/explore" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Explore Ramagya School Noida - School with Modern Facilities" />
+        <meta name="twitter:description" content="Explore Ramagya School, one of the best CBSE schools in Noida. Experience modern facilities, an innovative curriculum, and a focus on holistic student growth." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
       {/* Main banner section of the page */}

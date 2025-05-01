@@ -25,10 +25,27 @@ const Experiment = () => {
   return (
     <>
       <Head>
-      <title>Experiment | Ramagya School</title>
-      <meta name="description" content="EXPERIMENT" />
-      <meta name="keywords" content="EXPERIMENT" />
-      <link rel="canonical" href="https://ramagyaschool.com/experiment" />
+      {/* Primary SEO */}
+        <title>Educational Experiments Innovative Learning at Ramagya School</title>
+        <meta
+        name="description"
+        content="Discover the innovative experiments and hands-on learning approach at Ramagya School, Fostering creativity and critical thinking through practical education."
+        />
+        <link rel="canonical" href="https://ramagyaschool.com/experiments" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Educational Experiments Innovative Learning at Ramagya School" />
+        <meta property="og:description" content="Discover the innovative experiments and hands-on learning approach at Ramagya School, Fostering creativity and critical thinking through practical education." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/experiments" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Educational Experiments Innovative Learning at Ramagya School" />
+        <meta name="twitter:description" content="Discover the innovative experiments and hands-on learning approach at Ramagya School, Fostering creativity and critical thinking through practical education." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
       {/* Main banner section of the page */}

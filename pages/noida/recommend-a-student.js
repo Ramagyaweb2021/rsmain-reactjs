@@ -24,10 +24,26 @@ const RecommendAStudent = () => {
   return (
     <>
       <Head>
-      <title>RECOMMEND A STUDENT | Ramagya School</title>
-      <meta name="description" content="RECOMMEND A STUDENT" />
-      <meta name="keywords" content="RECOMMEND A STUDENT" />
-      <link rel="canonical" href="https://ramagyaschool.com/recommend-a-student" />
+      {/* Primary SEO */}
+      <title>Recommend a Student Ramagya School Sec 50 Noida</title>
+      <meta
+        name="description"
+        content="Refer a student to Ramagya School Sector 50 Noida and be part of our growth story. Join our referral program and help others access quality education."
+      />
+      <link rel="canonical" href="https://ramagyaschool.com/noida/recommend-a-student" />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:title" content="Recommend a Student Ramagya School Sec 50 Noida" />
+      <meta property="og:description" content="Refer a student to Ramagya School Sector 50 Noida and be part of our growth story. Join our referral program and help others access quality education." />
+      <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+      <meta property="og:url" content="https://ramagyaschool.com/noida/recommend-a-student" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Recommend a Student Ramagya School Sec 50 Noida" />
+      <meta name="twitter:description" content="Refer a student to Ramagya School Sector 50 Noida and be part of our growth story. Join our referral program and help others access quality education." />
+      <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

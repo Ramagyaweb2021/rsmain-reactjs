@@ -28,10 +28,30 @@ const GreaterNoida = () => {
   return (
     <>
       <Head>
-        <title>Greater Noida | Ramagya School</title>
-        <meta name="description" content="Greater Noida" />
-        <meta name="keywords" content="Greater Noida" />
+       {/* Primary SEO */}
+        <title>Ramagya School - Top CBSE Affiliated School in Greater Noida</title>
+        <meta
+          name="description"
+          content="Ramagya School Top CBSE Affiliated School in Greater Noida, offering academic excellence, modern facilities and holistic student development and best environment."
+        />
+        <meta
+          name="keywords"
+          content="Top CBSE Affiliated School in Greater Noida, CBSE Affiliated School in Greater Noida, School in Greater Noida, CBSE School in Greater Noida, best School in Greater Noida, top School in Greater Noida, Top CBSE School in Greater Noida"
+        />
         <link rel="canonical" href="https://ramagyaschool.com/greater-noida" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Ramagya School - Top CBSE Affiliated School in Greater Noida" />
+        <meta property="og:description" content="Ramagya School Top CBSE Affiliated School in Greater Noida, offering academic excellence, modern facilities and holistic student development and best environment." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/greater-noida" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ramagya School - Top CBSE Affiliated School in Greater Noida" />
+        <meta name="twitter:description" content="Ramagya School Top CBSE Affiliated School in Greater Noida, offering academic excellence, modern facilities and holistic student development and best environment." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderGreaterNoida/>
       {/* <OfferPopup/> */}

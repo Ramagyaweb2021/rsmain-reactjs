@@ -95,10 +95,30 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Top Schools in Noida | Delhi NCR | Ramagya School</title>
-        <meta name="description" content="Ramagya School is among best CBSE schools in Noida, Noida Extension, Greater Noida and Dadri." />
-        <meta name="keywords" content="Best School in Noida, Schools in Noida, Noida Extension, Greater Noida and Dadri, CBSE Schools in Noida, Noida Extension, Greater Noida and Dadri" />
+        {/* Primary SEO */}
+        <title>Top School in Noida | Best CBSE School Noida - Ramagya School</title>
+        <meta
+          name="description"
+          content="Ramagya School, one of the Top 10 CBSE schools in Noida, is where your child’s journey to success begins. Apply in best school in Noida today for best start"
+        />
+        <meta
+          name="keywords"
+          content="top 10 CBSE school in Noida, top school in Noida, school in Noida, best school in Noida, best CBSE school in Noida, CBSE school in Noida, Ramagya School"
+        />
         <link rel="canonical" href="https://ramagyaschool.com/" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Top School in Noida | Best CBSE School Noida - Ramagya School" />
+        <meta property="og:description" content="Ramagya School, one of the Top 10 CBSE schools in Noida, is where your child’s journey to success begins. Apply in best school in Noida today for best start" />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Top School in Noida | Best CBSE School Noida - Ramagya School" />
+        <meta name="twitter:description" content="Ramagya School, one of the Top 10 CBSE schools in Noida, is where your child’s journey to success begins. Apply in best school in Noida today for best start" />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
       </Head>
       {/* <OfferPopupMainNoida/> */}
         {/* Only show Header when showMainMenu is false */}

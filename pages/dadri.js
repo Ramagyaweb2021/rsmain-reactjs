@@ -28,10 +28,26 @@ const Dadri = () => {
   return (
     <>
       <Head>
-        <title>Dadri | Ramagya School</title>
-        <meta name="description" content="Greater Noida" />
-        <meta name="keywords" content="Greater Noida" />
+       {/* Primary SEO */}
+        <title> Ramagya School - Top Best CBSE Affiliated CBSE School in Dadri</title>
+        <meta
+          name="description"
+          content="Ramagya School Top Best CBSE Affiliated School in Dadri - Top CBSE school in Dadri offering quality education, modern facilities with best study environment"
+        />
         <link rel="canonical" href="https://ramagyaschool.com/dadri" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content=" Ramagya School - Top Best CBSE Affiliated CBSE School in Dadri" />
+        <meta property="og:description" content="Ramagya School Top Best CBSE Affiliated School in Dadri - Top CBSE school in Dadri offering quality education, modern facilities with best study environment" />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content=" Ramagya School - Top Best CBSE Affiliated CBSE School in Dadri" />
+        <meta name="twitter:description" content="Ramagya School Top Best CBSE Affiliated School in Dadri - Top CBSE school in Dadri offering quality education, modern facilities with best study environment" />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderDadri/>
       {/* <OfferPopup/> */}

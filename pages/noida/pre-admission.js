@@ -33,10 +33,26 @@ const PreAdmission = () => {
   return (
     <>
       <Head>
-        <title>Pre Admission | Ramagya School</title>
-        <meta name="description" content="Pre Admission" />
-        <meta name="keywords" content="Pre Admission" />
-        <link rel="canonical" href="https://ramagyaschool.com/noida/pre-admission" />
+        {/* Primary SEO */}
+        <title>Pre-Admission Process - Ramagya School Noida Sec 50</title>
+        <meta
+          name="description"
+          content="Start your child’s journey at Ramagya School Noida Sec 50. Learn about our pre-admission process, eligibility, and steps to enroll in Best CBSE schools in Noida."
+        />
+        <link rel="canonical" href="https://ramagyaschool.com/pre-admission" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Pre-Admission Process - Ramagya School Noida Sec 50" />
+        <meta property="og:description" content="Start your child’s journey at Ramagya School Noida Sec 50. Learn about our pre-admission process, eligibility, and steps to enroll in Best CBSE schools in Noida." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/pre-admission" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Pre-Admission Process - Ramagya School Noida Sec 50" />
+        <meta name="twitter:description" content="Start your child’s journey at Ramagya School Noida Sec 50. Learn about our pre-admission process, eligibility, and steps to enroll in Best CBSE schools in Noida." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
       </Head>
       <HeaderNoida />
 

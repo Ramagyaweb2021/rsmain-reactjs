@@ -33,10 +33,32 @@ const PostAdmission = () => {
   return (
     <>
       <Head>
-        <title>Post Admission | Ramagya School</title>
-        <meta name="description" content="Post Admission" />
-        <meta name="keywords" content="Post Admission" />
+        {/* Primary Meta Tags */}
+        <title>Post-Admission at Ramagya School Dadri Branch</title>
+        <meta
+          name="description"
+          content="Post-admission details for Ramagya School Dadri. Learn about onboarding, documents and next steps after admission to this top CBSE school in Dadri location."
+        />
         <link rel="canonical" href="https://ramagyaschool.com/dadri/post-admission" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Post-Admission at Ramagya School Dadri Branch" />
+        <meta
+          property="og:description"
+          content="Post-admission details for Ramagya School Dadri. Learn about onboarding, documents and next steps after admission to this top CBSE school in Dadri location."
+        />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri/post-admission" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Post-Admission at Ramagya School Dadri Branch" />
+        <meta
+          name="twitter:description"
+          content="Post-admission details for Ramagya School Dadri. Learn about onboarding, documents and next steps after admission to this top CBSE school in Dadri location."
+        />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
       </Head>
       <HeaderDadri />
 

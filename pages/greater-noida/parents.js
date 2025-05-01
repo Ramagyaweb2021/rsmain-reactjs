@@ -28,10 +28,26 @@ const Parents = () => {
   return (
     <>
       <Head>
-        <title>Parents | Ramagya School</title>
-        <meta name="description" content="Parents" />
-        <meta name="keywords" content="Parents" />
+        {/* Primary SEO */}
+        <title>Parents Portal at Ramagya School Greater Noida – CBSE School</title>
+        <meta
+          name="description"
+          content="Access parent resources at Ramagya School Greater Noida. Stay updated with circulars, academic info and school communication at this top CBSE school."
+        />
         <link rel="canonical" href="https://ramagyaschool.com/greater-noida/parents" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Parents Portal at Ramagya School Greater Noida – CBSE School" />
+        <meta property="og:description" content="Access parent resources at Ramagya School Greater Noida. Stay updated with circulars, academic info and school communication at this top CBSE school." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/greater-noida/parents" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parents Portal at Ramagya School Greater Noida – CBSE School" />
+        <meta name="twitter:description" content="Access parent resources at Ramagya School Greater Noida. Stay updated with circulars, academic info and school communication at this top CBSE school." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderGreaterNoida/>
       {/* <OfferPopup/> */}

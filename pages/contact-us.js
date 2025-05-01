@@ -81,10 +81,27 @@ const ContactUs = () => {
   return (
     <>
       <Head>
-        <title>Contact Us | Ramagya School</title>
-        <meta name="description" content="Contact Us" />
-        <meta name="keywords" content="Contact Us" />
+        {/* Primary SEO */}
+        <title>Contact Ramagya School | Top CBSE Affiliated School Noida</title>
+        <meta
+          name="description"
+          content="Contact with Ramagya School, Top CBSE Affiliated school in noida Find contact details, location, and admission support to begin your child’s education"
+        />
         <link rel="canonical" href="https://ramagyaschool.com/contact-us" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Contact Ramagya School | Top CBSE Affiliated School Noida" />
+        <meta property="og:description" content="Contact with Ramagya School, Top CBSE Affiliated school in noida Find contact details, location, and admission support to begin your child’s education" />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/contact-us" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Ramagya School | Top CBSE Affiliated School Noida" />
+        <meta name="twitter:description" content="Contact with Ramagya School, Top CBSE Affiliated school in noida Find contact details, location, and admission support to begin your child’s education" />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

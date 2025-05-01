@@ -24,10 +24,26 @@ const ParentPortalGuide = () => {
   return (
     <>
       <Head>
-      <title>Parent Portal Guide | Ramagya School</title>
-      <meta name="description" content=">Parent Portal Guide" />
-      <meta name="keywords" content=">Parent Portal Guide" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/parent-portal-guide" />
+      {/* Primary SEO */}
+      <title>Parent Portal Guide Ramagya School Greater Noida</title>
+      <meta
+        name="description"
+        content="Learn how to use the Parent Portal at Ramagya School Greater Noida. Access student information, track progress and stay updated with Ramagya School"
+      />
+      <link rel="canonical" href="https://ramagyaschool.com/greater-noida/parent-portal-guide" />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:title" content="Parent Portal Guide Ramagya School Greater Noida" />
+      <meta property="og:description" content="Learn how to use the Parent Portal at Ramagya School Greater Noida. Access student information, track progress and stay updated with Ramagya School" />
+      <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+      <meta property="og:url" content="https://ramagyaschool.com/greater-noida/parent-portal-guide" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Parent Portal Guide Ramagya School Greater Noida" />
+      <meta name="twitter:description" content="Learn how to use the Parent Portal at Ramagya School Greater Noida. Access student information, track progress and stay updated with Ramagya School" />
+      <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderGreaterNoida />
       {/* Main banner section of the page */}

@@ -29,10 +29,27 @@ const BrandStory = () => {
   return (
     <>
       <Head>
-        <title>Brand Story | Ramagya School</title>
-        <meta name="description" content="BrandStory" />
-        <meta name="keywords" content="BrandStory" />
+        {/* Primary SEO */}
+        <title>Brand Story of Ramagya - A Legacy of Excellence in Education</title>
+        <meta
+        name="description"
+        content="Discover the inspiring journey of Ramagya School, committed to nurturing future leaders through quality education, innovation, and values."
+        />
         <link rel="canonical" href="https://ramagyaschool.com/brand-story" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Brand Story of Ramagya - A Legacy of Excellence in Education" />
+        <meta property="og:description" content="Discover the inspiring journey of Ramagya School, committed to nurturing future leaders through quality education, innovation, and values." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/brand-story" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Brand Story of Ramagya - A Legacy of Excellence in Education" />
+        <meta name="twitter:description" content="Discover the inspiring journey of Ramagya School, committed to nurturing future leaders through quality education, innovation, and values." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

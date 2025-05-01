@@ -25,10 +25,27 @@ const Innovate = () => {
   return (
     <>
       <Head>
-      <title>Innovate | Ramagya School</title>
-      <meta name="description" content="Innovate" />
-      <meta name="keywords" content="Innovate" />
-      <link rel="canonical" href="https://ramagyaschool.com/innovate" />
+        {/* Primary SEO */}
+        <title>Top Best Innovative Learning at Ramagya School</title>
+        <meta
+        name="description"
+        content="Explore how Ramagya School fosters innovation through creative teaching methods, modern technology, and a forward-thinking approach to education in school"
+        />
+        <link rel="canonical" href="https://ramagyaschool.com/innovate" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Top Best Innovative Learning at Ramagya School" />
+        <meta property="og:description" content="Explore how Ramagya School fosters innovation through creative teaching methods, modern technology, and a forward-thinking approach to education in school" />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/innovate" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Top Best Innovative Learning at Ramagya School" />
+        <meta name="twitter:description" content="Explore how Ramagya School fosters innovation through creative teaching methods, modern technology, and a forward-thinking approach to education in school" />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
       {/* Main banner section of the page */}

@@ -33,10 +33,26 @@ const PreAdmission = () => {
   return (
     <>
       <Head>
-        <title>Pre Admission | Ramagya School</title>
-        <meta name="description" content="Pre Admission" />
-        <meta name="keywords" content="Pre Admission" />
-        <link rel="canonical" href="https://ramagyaschool.com/noida-extension/pre-admission" />
+       {/* Primary SEO */}
+        <title>Pre-Admission at Ramagya School Greater Noida Branch</title>
+        <meta
+          name="description"
+          content="pre-admission process at Ramagya School Greater Noida. Learn about eligibility, required documents and how to apply to top CBSE schools in the region."
+        />
+        <link rel="canonical" href="https://ramagyaschool.com/greater-noida/pre-admission" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Pre-Admission at Ramagya School Greater Noida Branch" />
+        <meta property="og:description" content="pre-admission process at Ramagya School Greater Noida. Learn about eligibility, required documents and how to apply to top CBSE schools in the region." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/greater-noida/pre-admission" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Pre-Admission at Ramagya School Greater Noida Branch" />
+        <meta name="twitter:description" content="pre-admission process at Ramagya School Greater Noida. Learn about eligibility, required documents and how to apply to top CBSE schools in the region." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderGreaterNoida />
 

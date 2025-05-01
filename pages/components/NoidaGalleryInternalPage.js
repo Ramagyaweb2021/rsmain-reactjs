@@ -1168,13 +1168,13 @@ const NoidaGalleryInternalPage = () => {
       type: 'video',
       videoId: '5t3LvHYADj4'
     },
-    {
-      src: 'https://img.youtube.com/vi/efbxjrntRjs/hqdefault.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'efbxjrntRjs'
-    },
+    // {
+    //   src: 'https://img.youtube.com/vi/efbxjrntRjs/hqdefault.jpg',
+    //   title: 'Ramagya School Gallery',
+    //   category: 'Sports Galore',
+    //   type: 'video',
+    //   videoId: 'efbxjrntRjs'
+    // },
     {
       src: 'https://img.youtube.com/vi/xOJoQ3woW4g/hqdefault.jpg',
       title: 'Ramagya School Gallery',

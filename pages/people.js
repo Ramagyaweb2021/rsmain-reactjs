@@ -33,10 +33,27 @@ const People = () => {
   return (
     <>
       <Head>
-        <title>Founder | Ramagya School</title>
-        <meta name="description" content="AboutUs" />
-        <meta name="keywords" content="AboutUs" />
-        <link rel="canonical" href="https://ramagyaschool.com/about-us" />
+        {/* Primary SEO */}
+        <title>Meet the Team Member of Ramagya School Noida</title>
+        <meta
+        name="description"
+        content="Get to know the dedicated team behind Ramagya School, Our passionate educators and leadership are committed to shaping the future of every student."
+        />
+        <link rel="canonical" href="https://ramagyaschool.com/people" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Meet the Team Member of Ramagya School Noida" />
+        <meta property="og:description" content="Get to know the dedicated team behind Ramagya School, Our passionate educators and leadership are committed to shaping the future of every student." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/people" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Meet the Team Member of Ramagya School Noida" />
+        <meta name="twitter:description" content="Get to know the dedicated team behind Ramagya School, Our passionate educators and leadership are committed to shaping the future of every student." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

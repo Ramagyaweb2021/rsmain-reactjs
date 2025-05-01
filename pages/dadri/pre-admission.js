@@ -33,10 +33,32 @@ const PreAdmission = () => {
   return (
     <>
       <Head>
-        <title>Pre Admission | Ramagya School</title>
-        <meta name="description" content="Pre Admission" />
-        <meta name="keywords" content="Pre Admission" />
+        {/* Primary Meta Tags */}
+        <title>Pre-Admission at Ramagya School Dadri - Top Dadri CBSE School</title>
+        <meta
+        name="description"
+        content="Start your child’s journey at Ramagya School Dadri. Explore the pre-admission process, eligibility, and steps to apply at No. 1 CBSE schools in Dadri."
+        />
         <link rel="canonical" href="https://ramagyaschool.com/dadri/pre-admission" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Pre-Admission at Ramagya School Dadri - Top Dadri CBSE School" />
+        <meta
+        property="og:description"
+        content="Start your child’s journey at Ramagya School Dadri. Explore the pre-admission process, eligibility, and steps to apply at No. 1 CBSE schools in Dadri."
+        />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri/pre-admission" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Pre-Admission at Ramagya School Dadri - Top Dadri CBSE School" />
+        <meta
+        name="twitter:description"
+        content="Start your child’s journey at Ramagya School Dadri. Explore the pre-admission process, eligibility, and steps to apply at No. 1 CBSE schools in Dadri."
+        />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
       </Head>
       <HeaderDadri />
 

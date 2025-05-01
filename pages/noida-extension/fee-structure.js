@@ -26,10 +26,26 @@ const FeeStructure = () => {
   return (
     <>
       <Head>
-        <title>Fee Structure | Ramagya School</title>
-        <meta name="description" content="Fee Structure" />
-        <meta name="keywords" content="Fee Structure" />
-        <link rel="canonical" href="https://ramagyaschool.com/noida-extension/fee-structure" />
+        {/* Primary SEO */}
+          <title>Check Fee Structure of Ramagya School Noida Extension</title>
+          <meta
+            name="description"
+            content="Check the updated fee structure of Ramagya School Noida Extension. Transparent and affordable CBSE school fees designed to offer quality education and development"
+          />
+          <link rel="canonical" href="https://ramagyaschool.com/noida-extension/fee-structure" />
+
+          {/* Open Graph / Facebook */}
+          <meta property="og:title" content="Check Fee Structure of Ramagya School Noida Extension" />
+          <meta property="og:description" content="Check the updated fee structure of Ramagya School Noida Extension. Transparent and affordable CBSE school fees designed to offer quality education and development" />
+          <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+          <meta property="og:url" content="https://ramagyaschool.com/noida-extension/fee-structure" />
+
+          {/* Twitter Card */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Check Fee Structure of Ramagya School Noida Extension" />
+          <meta name="twitter:description" content="Check the updated fee structure of Ramagya School Noida Extension. Transparent and affordable CBSE school fees designed to offer quality education and development" />
+          <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoidaExtension />
       {/* Main banner section of the page */}

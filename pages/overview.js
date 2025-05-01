@@ -30,10 +30,31 @@ const Overview = () => {
   return (
     <>
       <Head>
-        <title>Overview | Ramagya School</title>
-        <meta name="description" content="Overview" />
-        <meta name="keywords" content="Overview" />
+        {/* Primary SEO */}
+        <title>Ramagya School Overview - Top Ranked CBSE Schools in Noida</title>
+        <meta
+        name="description"
+        content="Ramagya School Overview, one of the top-ranked CBSE schools in Noida, offering a world-class education and holistic development. Enroll your child today"
+        />
+        <meta
+        name="keywords"
+        content="Top Ranked CBSE Schools in Noida, Top Ranked CBSE Schools Noida, best rank CBSE school Noida, best rank CBSE school in noida"
+        />
         <link rel="canonical" href="https://ramagyaschool.com/overview" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Ramagya School Overview - Top Ranked CBSE Schools in Noida" />
+        <meta property="og:description" content="Ramagya School Overview, one of the top-ranked CBSE schools in Noida, offering a world-class education and holistic development. Enroll your child today" />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/overview" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ramagya School Overview - Top Ranked CBSE Schools in Noida" />
+        <meta name="twitter:description" content="Ramagya School Overview, one of the top-ranked CBSE schools in Noida, offering a world-class education and holistic development. Enroll your child today" />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

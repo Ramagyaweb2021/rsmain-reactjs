@@ -32,10 +32,27 @@ const RamagyaFoundation = () => {
   return (
     <>
       <Head>
-        <title>Ramagya Foundation| Ramagya School</title>
-        <meta name="description" content="Ramagya Foundation" />
-        <meta name="keywords" content="Ramagya Foundation" />
+        {/* Primary SEO */}
+        <title>Ramagya Foundation - Empowering Education and Social Impact</title>
+        <meta
+          name="description"
+          content="Ramagya Foundation, an initiative committed to making a positive social impact through education, community outreach, and holistic development."
+        />
         <link rel="canonical" href="https://ramagyaschool.com/ramagya-foundation" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Ramagya Foundation - Empowering Education and Social Impact" />
+        <meta property="og:description" content="Ramagya Foundation, an initiative committed to making a positive social impact through education, community outreach, and holistic development." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/ramagya-foundation" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ramagya Foundation - Empowering Education and Social Impact" />
+        <meta name="twitter:description" content="Ramagya Foundation, an initiative committed to making a positive social impact through education, community outreach, and holistic development." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

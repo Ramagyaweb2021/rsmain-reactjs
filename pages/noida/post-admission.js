@@ -32,10 +32,27 @@ const PostAdmission = () => {
   return (
     <>
       <Head>
-        <title>Post Admission | Ramagya School</title>
-        <meta name="description" content="Post Admission" />
-        <meta name="keywords" content="Post Admission" />
+        {/* Primary SEO */}
+        <title>Post-Admission Guidelines Ramagya School Sec 50 Noida</title>
+        <meta
+        name="description"
+        content="Post-admission steps at Ramagya School Noida. Find essential information on onboarding, documentation, and student orientation at Best Noida CBSE school."
+        />
         <link rel="canonical" href="https://ramagyaschool.com/noida/post-admission" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Post-Admission Guidelines Ramagya School Sec 50 Noida" />
+        <meta property="og:description" content="Post-admission steps at Ramagya School Noida. Find essential information on onboarding, documentation, and student orientation at Best Noida CBSE school." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/post-admission" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Post-Admission Guidelines Ramagya School Sec 50 Noida" />
+        <meta name="twitter:description" content="Post-admission steps at Ramagya School Noida. Find essential information on onboarding, documentation, and student orientation at Best Noida CBSE school." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
 

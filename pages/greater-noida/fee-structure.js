@@ -26,10 +26,26 @@ const FeeStructure = () => {
   return (
     <>
       <Head>
-        <title>Fee Structure | Ramagya School</title>
-        <meta name="description" content="Fee Structure" />
-        <meta name="keywords" content="Fee Structure" />
+       {/* Primary SEO */}
+        <title>Fee Structure of Ramagya School Greater Noida Branch</title>
+        <meta
+          name="description"
+          content="Check fee structure of Ramagya School Greater Noida Branch. Affordable & transparent CBSE school fees designed to quality education & all-round student growth"
+        />
         <link rel="canonical" href="https://ramagyaschool.com/greater-noida/fee-structure" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Fee Structure of Ramagya School Greater Noida Branch" />
+        <meta property="og:description" content="Check fee structure of Ramagya School Greater Noida Branch. Affordable & transparent CBSE school fees designed to quality education & all-round student growth" />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/greater-noida/fee-structure" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fee Structure of Ramagya School Greater Noida Branch" />
+        <meta name="twitter:description" content="Check fee structure of Ramagya School Greater Noida Branch. Affordable & transparent CBSE school fees designed to quality education & all-round student growth" />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderGreaterNoida />
       {/* Main banner section of the page */}

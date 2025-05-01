@@ -29,10 +29,30 @@ const NoidaExtension = () => {
   return (
     <>
       <Head>
-        <title>Noida Extension | Ramagya School</title>
-        <meta name="description" content="Noida Extension" />
-        <meta name="keywords" content="Noida Extension" />
+        {/* Primary SEO */}
+        <title>Top Best CBSE School in Noida Extension - Ramagya School</title>
+        <meta
+          name="description"
+          content="Ramagya School Top Best CBSE Affiliated  School in Noida Extension - offering world-class education, modern infrastructure. Best School in Noida Extension"
+        />
+        <meta
+          name="keywords"
+          content="Best CBSE School in Noida Extension, top School in Noida Extension, top CBSE school in Noida Extension, top CBSE Affiliated  school in Noida Extension,"
+        />
         <link rel="canonical" href="https://ramagyaschool.com/noida-extension" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Top Best CBSE School in Noida Extension - Ramagya School" />
+        <meta property="og:description" content="Ramagya School Top Best CBSE Affiliated  School in Noida Extension - offering world-class education, modern infrastructure. Best School in Noida Extension" />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/noida-extension" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Top Best CBSE School in Noida Extension - Ramagya School" />
+        <meta name="twitter:description" content="Ramagya School Top Best CBSE Affiliated  School in Noida Extension - offering world-class education, modern infrastructure. Best School in Noida Extension" />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoidaExtension/>
       {/* <OfferPopupNoidaExt/> */}

@@ -24,10 +24,27 @@ const Lead = () => {
   return (
     <>
       <Head>
-      <title>Lead | Ramagya School</title>
-      <meta name="description" content="Lead" />
-      <meta name="keywords" content="Lead" />
+      {/* Primary SEO */}
+      <title>Achievements at Ramagya School - Celebrating Student Success</title>
+      <meta
+        name="description"
+        content="Explore the remarkable achievements of Ramagya School students, from academic excellence to extracurricular victories. Stay updated for success and distinction."
+      />
       <link rel="canonical" href="https://ramagyaschool.com/lead" />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:title" content="Achievements at Ramagya School - Celebrating Student Success" />
+      <meta property="og:description" content="Explore the remarkable achievements of Ramagya School students, from academic excellence to extracurricular victories. Stay updated for success and distinction." />
+      <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+      <meta property="og:url" content="https://ramagyaschool.com/lead" />
+      {/* <meta property="og:type" content="website" /> */}
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Achievements at Ramagya School - Celebrating Student Success" />
+      <meta name="twitter:description" content="Explore the remarkable achievements of Ramagya School students, from academic excellence to extracurricular victories. Stay updated for success and distinction." />
+      <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
       {/* Main banner section of the page */}

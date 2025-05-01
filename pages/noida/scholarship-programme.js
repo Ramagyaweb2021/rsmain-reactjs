@@ -25,10 +25,26 @@ const ScholarshipProgramme = () => {
   return (
     <>
       <Head>
-      <title>Scholarship Programme | Ramagya School</title>
-      <meta name="description" content="Scholarship Programme" />
-      <meta name="keywords" content="Scholarship Programme" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/fee-structure" />
+      {/* Primary SEO */}
+      <title>Ramagya School Noida Sec 50 Scholarship Programme</title>
+      <meta
+        name="description"
+        content="Explore the scholarship programme at Ramagya School Noida Sec 50. Learn how deserving students can benefit from financial support and recognition."
+      />
+      <link rel="canonical" href="https://ramagyaschool.com/noida/scholarship-programme" />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:title" content="Ramagya School Noida Sec 50 Scholarship Programme" />
+      <meta property="og:description" content="Explore the scholarship programme at Ramagya School Noida Sec 50. Learn how deserving students can benefit from financial support and recognition." />
+      <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+      <meta property="og:url" content="https://ramagyaschool.com/noida/scholarship-programme" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Ramagya School Noida Sec 50 Scholarship Programme" />
+      <meta name="twitter:description" content="Explore the scholarship programme at Ramagya School Noida Sec 50. Learn how deserving students can benefit from financial support and recognition." />
+      <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

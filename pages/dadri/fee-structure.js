@@ -26,10 +26,31 @@ const FeeStructure = () => {
   return (
     <>
       <Head>
-        <title>Fee Structure | Ramagya School</title>
-        <meta name="description" content="Fee Structure" />
-        <meta name="keywords" content="Fee Structure" />
+      <title>Fee Structure of Ramagya School Dadri - CBSE School Fees</title>
+        <meta
+          name="description"
+          content="Latest fee structure of Ramagya School Dadri. Transparent, affordable CBSE school fees designed to support quality education and all-round development."
+        />
         <link rel="canonical" href="https://ramagyaschool.com/dadri/fee-structure" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Fee Structure of Ramagya School Dadri - CBSE School Fees" />
+        <meta
+          property="og:description"
+          content="Latest fee structure of Ramagya School Dadri. Transparent, affordable CBSE school fees designed to support quality education and all-round development."
+        />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri/fee-structure" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fee Structure of Ramagya School Dadri - CBSE School Fees" />
+        <meta
+          name="twitter:description"
+          content="Latest fee structure of Ramagya School Dadri. Transparent, affordable CBSE school fees designed to support quality education and all-round development."
+        />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
       </Head>
       <HeaderDadri />
       {/* Main banner section of the page */}

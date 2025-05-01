@@ -25,10 +25,27 @@ const Evolve = () => {
   return (
     <>
       <Head>
-      <title>Evolve | Ramagya School</title>
-      <meta name="description" content="Evolve" />
-      <meta name="keywords" content="Evolve" />
+     {/* Primary SEO */}
+      <title>Evolve with Ramagya School - Transformative Education Noida</title>
+      <meta
+        name="description"
+        content="Discover how Ramagya School empowers students to evolve through progressive teaching, personalized learning, and a commitment to lifelong success."
+      />
       <link rel="canonical" href="https://ramagyaschool.com/evolve" />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:title" content="Evolve with Ramagya School - Transformative Education Noida" />
+      <meta property="og:description" content="Discover how Ramagya School empowers students to evolve through progressive teaching, personalized learning, and a commitment to lifelong success." />
+      <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+      <meta property="og:url" content="https://ramagyaschool.com/evolve" />
+      {/* <meta property="og:type" content="website" /> */}
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Evolve with Ramagya School - Transformative Education Noida" />
+      <meta name="twitter:description" content="Discover how Ramagya School empowers students to evolve through progressive teaching, personalized learning, and a commitment to lifelong success." />
+      <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
       {/* Main banner section of the page */}

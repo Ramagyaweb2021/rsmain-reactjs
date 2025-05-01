@@ -29,10 +29,31 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>About Us | Ramagya School</title>
-        <meta name="description" content="AboutUs" />
-        <meta name="keywords" content="AboutUs" />
-        <link rel="canonical" href="https://ramagyaschool.com/about-us" />
+        {/* Primary SEO */}
+        <title>About Ramagya School - Best CBSE Affiliated School in Noida</title>
+        <meta
+        name="description"
+        content="Learn more about one of Best CBSE Affiliated CBSE schools in Noida, Ramagya School, committed to providing best quality education for student’s success."
+        />
+        <meta
+        name="keywords"
+        content="Best CBSE Affiliated School in Noida, CBSE Affiliated School in Noida, top CBSE Affiliated School in Noida, Best CBSE Affiliated School Noida"
+        />
+        <link rel="canonical" href="https://ramagyaschool.com/about" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="About Ramagya School - Best CBSE Affiliated School in Noida" />
+        <meta property="og:description" content="Learn more about one of Best CBSE Affiliated CBSE schools in Noida, Ramagya School, committed to providing best quality education for student’s success." />
+        <meta property="og:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <meta property="og:url" content="https://ramagyaschool.com/about" />
+        {/* <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Ramagya School - Best CBSE Affiliated School in Noida" />
+        <meta name="twitter:description" content="Learn more about one of Best CBSE Affiliated CBSE schools in Noida, Ramagya School, committed to providing best quality education for student’s success." />
+        <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+
       </Head>
       <Header />
 
