@@ -25,10 +25,25 @@ const BookList = () => {
   return (
     <>
       <Head>
-      <title>Books List | Ramagya School</title>
-      <meta name="description" content=">Books List" />
-      <meta name="keywords" content=">Books List" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida-extension/book-list" />
+        <title>Books List | Ramagya School</title>
+        <meta name="description" content="Explore the recommended books list for all classes at Ramagya School, Noida Extension. Download the academic book list for the current session." />
+        <meta name="keywords" content="Books List, Ramagya School, Noida Extension, School Books, Academic Session, Class-wise Book List" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida-extension/book-list" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Books List | Ramagya School Noida Extension" />
+        <meta property="og:description" content="View the list of recommended books for each class at Ramagya School, Noida Extension. Download the book list for the current academic session." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida-extension/book-list" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Books List | Ramagya School Noida Extension" />
+        <meta name="twitter:description" content="Discover the recommended books list for all classes at Ramagya School, Noida Extension. Download the academic book list for the current session." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+
       </Head>
       <HeaderNoidaExtension />
       {/* Main banner section of the page */}

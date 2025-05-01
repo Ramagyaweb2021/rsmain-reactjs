@@ -24,10 +24,25 @@ const FeesPayment = () => {
   return (
     <>
       <Head>
-      <title>Fees Payment | Ramagya School</title>
-      <meta name="description" content=">Fees Payment" />
-      <meta name="keywords" content=">Fees Payment" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/pay-school-fees" />
+        {/* Primary Meta Tags */}
+        <title>Fees Payment | Ramagya School</title>
+        <meta name="description" content="Make your fee payments easily and securely online at Ramagya School, Noida. Explore the available payment options and stay up to date with your child's fees." />
+        <meta name="keywords" content="Fees Payment, Ramagya School Noida, School Fee Payment, Online Fees, Pay School Fees, School Payment Options" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/pay-school-fees" />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:title" content="Fees Payment | Ramagya School Noida" />
+        <meta property="og:description" content="Easily make fee payments online for Ramagya School, Noida. Access multiple payment options and keep track of your child's school fees." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/pay-school-fees" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fees Payment | Ramagya School Noida" />
+        <meta name="twitter:description" content="Make your school fee payments online at Ramagya School, Noida, and explore easy payment methods to stay updated on your child's fees." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

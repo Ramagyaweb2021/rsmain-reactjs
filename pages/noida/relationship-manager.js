@@ -24,10 +24,24 @@ const RelationshipManagerAppointment = () => {
   return (
     <>
       <Head>
-      <title>Relationship Manager Appointment | Ramagya School</title>
-      <meta name="description" content="Relationship Manager Appointment" />
-      <meta name="keywords" content="Relationship Manager Appointment" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/relationship-manager" />
+        <title>Relationship Manager Appointment | Ramagya School</title>
+        <meta name="description" content="Book an appointment with the Relationship Manager at Ramagya School, Noida to discuss your child's progress, concerns, or any school-related matters." />
+        <meta name="keywords" content="Relationship Manager Appointment, Ramagya School Noida, Parent Appointment, School Meeting, Education Concerns, Parent-Teacher Discussion" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/relationship-manager" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Relationship Manager Appointment | Ramagya School" />
+        <meta property="og:description" content="Book an appointment with the Relationship Manager at Ramagya School, Noida to discuss your child's progress, concerns, or any school-related matters." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/relationship-manager" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Relationship Manager Appointment | Ramagya School" />
+        <meta name="twitter:description" content="Book an appointment with the Relationship Manager at Ramagya School, Noida to discuss your child's progress, concerns, or any school-related matters." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

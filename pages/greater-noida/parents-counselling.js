@@ -24,10 +24,24 @@ const ParentCounselling = () => {
   return (
     <>
       <Head>
-      <title>Parent Counselling | Ramagya School</title>
-      <meta name="description" content=">Parent Counselling" />
-      <meta name="keywords" content=">Parent Counselling" />
-      <link rel="canonical" href="https://ramagyaschool.com/greater-noida/parents-counselling" />
+        <title>Parent Counselling | Ramagya School</title>
+        <meta name="description" content="Parent Counselling at Ramagya School, Greater Noida. We offer guidance to parents to support their child's academic and emotional development." />
+        <meta name="keywords" content="Parent Counselling, Ramagya School Greater Noida, Parent Support, Child Development, School Counselling" />
+        <link rel="canonical" href="https://ramagyaschool.com/greater-noida/parents-counselling" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Parent Counselling | Ramagya School Greater Noida" />
+        <meta property="og:description" content="Parent Counselling at Ramagya School, Greater Noida. We offer guidance to parents to support their child's academic and emotional development." />
+        <meta property="og:url" content="https://ramagyaschool.com/greater-noida/parents-counselling" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parent Counselling | Ramagya School Greater Noida" />
+        <meta name="twitter:description" content="Get the best parent counselling services at Ramagya School, Greater Noida. We provide support for your child's development and academic journey." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderGreaterNoida />
       {/* Main banner section of the page */}

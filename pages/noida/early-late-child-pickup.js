@@ -24,10 +24,25 @@ const EarlyLateChildPickup = () => {
   return (
     <>
       <Head>
-      <title>Early Late Child Pickup | Ramagya School</title>
-      <meta name="description" content="Early Late Child Pickup" />
-      <meta name="keywords" content="Early Late Child Pickup" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/early-late-child-pickup" />
+        {/* Primary Meta Tags */}
+        <title>Early Late Child Pickup | Ramagya School</title>
+        <meta name="description" content="Find out more about the early and late child pickup services at Ramagya School, Noida. Ensure timely and safe transportation for your child." />
+        <meta name="keywords" content="Early Late Child Pickup, Ramagya School Noida, Child Pickup Services, School Pickup, Safe Transportation" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/early-late-child-pickup" />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:title" content="Early Late Child Pickup | Ramagya School Noida" />
+        <meta property="og:description" content="Find out more about the early and late child pickup services at Ramagya School, Noida. Ensure timely and safe transportation for your child." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/early-late-child-pickup" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Early Late Child Pickup | Ramagya School Noida" />
+        <meta name="twitter:description" content="Find out more about the early and late child pickup services at Ramagya School, Noida. Ensure timely and safe transportation for your child." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

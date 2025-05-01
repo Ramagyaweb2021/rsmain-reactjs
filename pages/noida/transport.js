@@ -24,10 +24,25 @@ const Transport = () => {
   return (
     <>
       <Head>
-      <title>Transport | Ramagya School</title>
-      <meta name="description" content=">Transport" />
-      <meta name="keywords" content=">Transport" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/parents-counselling" />
+        <title>Transport | Ramagya School</title>
+        <meta name="description" content="Discover safe and reliable school transport services offered by Ramagya School, Noida. View routes, safety measures, and transport policies." />
+        <meta name="keywords" content="School Transport, Ramagya School Noida, Bus Routes, Student Safety, Transport Services" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/transport" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Transport | Ramagya School Noida" />
+        <meta property="og:description" content="Explore safe and reliable transport services at Ramagya School, Noida. Learn about routes, safety protocols, and policies." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/transport" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Transport | Ramagya School Noida" />
+        <meta name="twitter:description" content="Check out the transport services offered at Ramagya School, Noida. View routes, safety measures, and transport policies." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

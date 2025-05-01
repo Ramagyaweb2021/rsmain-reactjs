@@ -29,9 +29,23 @@ const Parents = () => {
     <>
       <Head>
         <title>Parents | Ramagya School</title>
-        <meta name="description" content="Parents" />
-        <meta name="keywords" content="Parents" />
-        <link rel="canonical" href="https://ramagyaschool.com/dari/parents" />
+        <meta name="description" content="Explore resources and support for parents at Ramagya School Dadri. Get involved in your child's educational journey and stay connected with the school." />
+        <meta name="keywords" content="Parents, Ramagya School Dadri, Parent Support, School Community, Education Partnership, Parent Involvement" />
+        <link rel="canonical" href="https://ramagyaschool.com/dadri/parents" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Parents | Ramagya School Dadri" />
+        <meta property="og:description" content="Discover helpful resources and support for parents at Ramagya School Dadri. Stay connected and engage in your child's education." />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri/parents" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parents | Ramagya School Dadri" />
+        <meta name="twitter:description" content="Get involved in your child's education at Ramagya School Dadri. Access resources and support designed for parents." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderDadri/>
       {/* <OfferPopup/> */}

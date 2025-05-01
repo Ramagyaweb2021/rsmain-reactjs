@@ -89,9 +89,23 @@ const Results = () => {
     <>
       <Head>
         <title>Results | Ramagya School</title>
-        <meta name="description" content="Results" />
-        <meta name="keywords" content="Results" />
+        <meta name="description" content="View the academic and extracurricular results of students at Ramagya School, Noida. Discover the success stories and achievements of our students." />
+        <meta name="keywords" content="Results, Ramagya School, Academic Results, School Achievements, Student Success, Extracurricular Results" />
         <link rel="canonical" href="https://ramagyaschool.com/results" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Results | Ramagya School" />
+        <meta property="og:description" content="Explore the results page of Ramagya School, featuring the academic and extracurricular achievements of our students." />
+        <meta property="og:url" content="https://ramagyaschool.com/results" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Results | Ramagya School" />
+        <meta name="twitter:description" content="Explore the results of Ramagya School's students, showcasing their academic and extracurricular achievements." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

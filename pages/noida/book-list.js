@@ -25,10 +25,25 @@ const BookList = () => {
   return (
     <>
       <Head>
-      <title>Books List | Ramagya School</title>
-      <meta name="description" content=">Books List" />
-      <meta name="keywords" content=">Books List" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/book-list" />
+        {/* Primary Meta Tags */}
+        <title>Books List | Ramagya School</title>
+        <meta name="description" content="Check the class-wise recommended books list for Ramagya School, Noida. Download the academic book list for the current session." />
+        <meta name="keywords" content="Books List, Ramagya School Noida, School Books, Academic Book List, Class-wise Books" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/book-list" />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:title" content="Books List | Ramagya School Noida" />
+        <meta property="og:description" content="Check the class-wise recommended books list for Ramagya School, Noida. Download the academic book list for the current session." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/book-list" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Books List | Ramagya School Noida" />
+        <meta name="twitter:description" content="Check the class-wise recommended books list for Ramagya School, Noida. Download the academic book list for the current session." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

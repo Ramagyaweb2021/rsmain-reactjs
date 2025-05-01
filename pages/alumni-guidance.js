@@ -33,9 +33,24 @@ const AluminGuidance = () => {
     <>
       <Head>
         <title>Alumni Guidance | Ramagya School</title>
-        <meta name="description" content="AluminGuidance" />
-        <meta name="keywords" content="AluminGuidance" />
-        <link rel="canonical" href="https://ramagyaschool.com/alumni-guudance" />
+        <meta name="description" content="Alumni Guidance at Ramagya School to help students connect with alumni for career advice and mentorship." />
+        <meta name="keywords" content="Alumni Guidance, Ramagya School Alumni, Career Guidance, Mentorship, Alumni Network" />
+        <link rel="canonical" href="https://ramagyaschool.com/alumni-guidance" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Alumni Guidance | Ramagya School" />
+        <meta property="og:description" content="Explore Alumni Guidance services at Ramagya School to receive mentorship and career advice from our alumni network." />
+        <meta property="og:url" content="https://ramagyaschool.com/alumni-guidance" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Alumni Guidance | Ramagya School" />
+        <meta name="twitter:description" content="Connect with Ramagya School alumni for career guidance and mentorship through our alumni network." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+
       </Head>
       <Header />
 

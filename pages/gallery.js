@@ -30,9 +30,23 @@ const Testimonials = () => {
     <>
       <Head>
         <title>Gallery | Ramagya School</title>
-        <meta name="description" content="Gallery" />
-        <meta name="keywords" content="Gallery" />
+        <meta name="description" content="Explore the gallery of Ramagya School showcasing events, activities, and achievements of our students and faculty." />
+        <meta name="keywords" content="Gallery, Ramagya School, School Events, Student Activities, School Achievements" />
         <link rel="canonical" href="https://ramagyaschool.com/gallery" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Gallery | Ramagya School" />
+        <meta property="og:description" content="Browse the gallery to view various events, activities, and achievements at Ramagya School." />
+        <meta property="og:url" content="https://ramagyaschool.com/gallery" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Gallery | Ramagya School" />
+        <meta name="twitter:description" content="View the gallery of Ramagya School highlighting student achievements, school events, and activities." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

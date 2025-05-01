@@ -24,10 +24,25 @@ const ParentTeacherMeeting = () => {
   return (
     <>
       <Head>
-      <title>Parents Teachers Meeting | Ramagya School</title>
-      <meta name="description" content=">Parents Teachers Meeting" />
-      <meta name="keywords" content=">Parents Teachers Meeting" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/parents-teacher-meeting" />
+        <title>Parent’s Feedback | Ramagya School</title>
+        <meta name="description" content="Read valuable feedback from parents at Ramagya School, Noida Extension. Learn how we are continuously improving based on parent insights." />
+        <meta name="keywords" content="Parent Feedback, Ramagya School Noida Extension, School Parent Reviews, Parent Insights, School Improvement" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida-extension/parents-feedback" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Parent’s Feedback | Ramagya School Noida Extension" />
+        <meta property="og:description" content="Read valuable feedback from parents at Ramagya School, Noida Extension. Learn how we are continuously improving based on parent insights." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida-extension/parents-feedback" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parent’s Feedback | Ramagya School Noida Extension" />
+        <meta name="twitter:description" content="Read valuable feedback from parents at Ramagya School, Noida Extension. Learn how we are continuously improving based on parent insights." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+
       </Head>
       <HeaderNoidaExtension />
       {/* Main banner section of the page */}

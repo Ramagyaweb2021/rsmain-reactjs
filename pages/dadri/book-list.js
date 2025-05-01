@@ -26,9 +26,23 @@ const BookList = () => {
     <>
       <Head>
       <title>Books List | Ramagya School</title>
-      <meta name="description" content=">Books List" />
-      <meta name="keywords" content=">Books List" />
+      <meta name="description" content="Books List for Ramagya School Dadri." />
+      <meta name="keywords" content="Books List, Ramagya School Dadri, School Books, Book List for Students" />
       <link rel="canonical" href="https://ramagyaschool.com/dadri/book-list" />
+
+      {/* Open Graph */}
+      <meta property="og:title" content="Books List | Ramagya School Dadri" />
+      <meta property="og:description" content="Discover the list of books for Ramagya School Dadri students. Stay updated with the required textbooks and study materials." />
+      <meta property="og:url" content="https://ramagyaschool.com/dadri/book-list" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Books List | Ramagya School Dadri" />
+      <meta name="twitter:description" content="Check out the books list for Ramagya School Dadri. Find all the necessary textbooks and materials for your child." />
+      <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderDadri />
       {/* Main banner section of the page */}

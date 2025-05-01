@@ -29,6 +29,31 @@ const nextConfig = {
       },
     ],
   },
+
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/alumni-guudance',       
+  //       destination: '/alumni-guidance', 
+  //       permanent: true,          
+  //     },
+  //     {
+  //       source: '/greater-noida/brand-story',       
+  //       destination: '/brand-story', 
+  //       permanent: true,          
+  //     },
+  //     {
+  //       source: '/recommend-a-student',       
+  //       destination: '/noida/recommend-a-student', 
+  //       permanent: true,          
+  //     },
+  //     {
+  //       source: '/parents',       
+  //       destination: '/dadri/parents', 
+  //       permanent: true,          
+  //     },
+  //   ];
+  // },
 };
 
 export default nextConfig;

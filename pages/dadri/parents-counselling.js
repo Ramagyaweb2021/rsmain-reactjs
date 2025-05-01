@@ -24,10 +24,24 @@ const ParentCounselling = () => {
   return (
     <>
       <Head>
-      <title>Parent Counselling | Ramagya School</title>
-      <meta name="description" content=">Parent Counselling" />
-      <meta name="keywords" content=">Parent Counselling" />
-      <link rel="canonical" href="https://ramagyaschool.com/dadri/parents-counselling" />
+        <title>Parent Counselling | Ramagya School</title>
+        <meta name="description" content="Learn about the parent counselling services offered at Ramagya School Dadri. Get guidance on child development and academic progress." />
+        <meta name="keywords" content="Parent Counselling, Ramagya School Dadri, School Counselling, Parent Support, Child Development, Education Counselling" />
+        <link rel="canonical" href="https://ramagyaschool.com/dadri/parents-counselling" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Parent Counselling | Ramagya School Dadri" />
+        <meta property="og:description" content="Explore the parent counselling services at Ramagya School Dadri. Receive expert guidance on supporting your child's education and development." />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri/parents-counselling" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parent Counselling | Ramagya School Dadri" />
+        <meta name="twitter:description" content="Discover the parent counselling services at Ramagya School Dadri to help guide your child's academic and emotional growth." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderDadri />
       {/* Main banner section of the page */}

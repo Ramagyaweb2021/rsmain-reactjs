@@ -32,10 +32,55 @@ const PostAdmission = () => {
   return (
     <>
       <Head>
-        <title>Post Admission | Ramagya School</title>
-        <meta name="description" content="Post Admission" />
-        <meta name="keywords" content="Post Admission" />
-        <link rel="canonical" href="https://ramagyaschool.com/noida-extension/post-admission" />
+        {/* Primary Meta Tags */}
+        <title>Fees Payment | Ramagya School</title>
+        <meta
+        name="description"
+        content="Fees Payment"
+        />
+        <meta
+        name="keywords"
+        content="Fees Payment"
+        />
+        <link
+        rel="canonical"
+        href="https://ramagyaschool.com/greater-noida/pay-school-fees"
+        />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta
+        property="og:title"
+        content="Fees Payment | Ramagya School"
+        />
+        <meta
+        property="og:description"
+        content="Make your fees payment conveniently at Ramagya School, Noida Extension."
+        />
+        <meta
+        property="og:url"
+        content="https://ramagyaschool.com/greater-noida/pay-school-fees"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+        property="og:image"
+        content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp"
+        />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+        name="twitter:title"
+        content="Fees Payment | Ramagya School"
+        />
+        <meta
+        name="twitter:description"
+        content="Make your fees payment conveniently at Ramagya School, Noida Extension."
+        />
+        <meta
+        name="twitter:image"
+        content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp"
+        />
+
       </Head>
       <HeaderGreaterNoida />
 

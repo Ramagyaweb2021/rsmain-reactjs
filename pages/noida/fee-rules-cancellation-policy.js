@@ -24,10 +24,25 @@ const FeeRulesCancellationPolicy = () => {
   return (
     <>
       <Head>
-      <title>Fee Rules And Cancellation Policy | Ramagya School</title>
-      <meta name="description" content=">Fee Rules And Cancellation Policy" />
-      <meta name="keywords" content=">Fee Rules And Cancellation Policy" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/fee-rules-cancellation-policy" />
+        {/* Primary Meta Tags */}
+        <title>Fee Rules And Cancellation Policy | Ramagya School</title>
+        <meta name="description" content="Learn about the fee rules and cancellation policy at Ramagya School, Noida. Understand the payment structure, deadlines, and terms for fee cancellation." />
+        <meta name="keywords" content="Fee Rules, Cancellation Policy, Ramagya School Noida, Fee Payment, School Fees, Cancellation Terms" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/fee-rules-cancellation-policy" />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:title" content="Fee Rules And Cancellation Policy | Ramagya School Noida" />
+        <meta property="og:description" content="Learn about the fee rules and cancellation policy at Ramagya School, Noida. Understand the payment structure, deadlines, and terms for fee cancellation." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/fee-rules-cancellation-policy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fee Rules And Cancellation Policy | Ramagya School Noida" />
+        <meta name="twitter:description" content="Learn about the fee rules and cancellation policy at Ramagya School, Noida. Understand the payment structure, deadlines, and terms for fee cancellation." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

@@ -24,10 +24,25 @@ const ParentPortalGuide = () => {
   return (
     <>
       <Head>
-      <title>Parent Portal Guide | Ramagya School</title>
-      <meta name="description" content=">Parent Portal Guide" />
-      <meta name="keywords" content=">Parent Portal Guide" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/parent-portal-guide" />
+        {/* Primary Meta Tags */}
+        <title>Parent Portal Guide | Ramagya School</title>
+        <meta name="description" content="Get the detailed guide for the Parent Portal at Ramagya School, Noida. Learn how to navigate the portal, access your child’s information, and stay updated on school activities." />
+        <meta name="keywords" content="Parent Portal Guide, Ramagya School Noida, Parent Portal, School Portal, Parent Access, Parent Dashboard" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/parent-portal-guide" />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:title" content="Parent Portal Guide | Ramagya School Noida" />
+        <meta property="og:description" content="Explore the Parent Portal Guide at Ramagya School, Noida. Learn to access school updates, your child's progress, and more through the portal." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/parent-portal-guide" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parent Portal Guide | Ramagya School Noida" />
+        <meta name="twitter:description" content="Access the Parent Portal Guide for Ramagya School, Noida. Stay informed about your child's academic journey and school activities." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

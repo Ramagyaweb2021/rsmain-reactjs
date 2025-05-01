@@ -30,9 +30,23 @@ const LifeSkills = () => {
     <>
       <Head>
         <title>Life Skills | Ramagya School</title>
-        <meta name="description" content="Life Skills" />
-        <meta name="keywords" content="Life Skills" />
+        <meta name="description" content="Explore the life skills programs at Ramagya School, designed to empower students with essential skills for personal growth and success." />
+        <meta name="keywords" content="Life Skills, Ramagya School, Personal Growth, Student Development, Life Skills Education" />
         <link rel="canonical" href="https://ramagyaschool.com/life-skills" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Life Skills | Ramagya School" />
+        <meta property="og:description" content="Discover the life skills programs at Ramagya School aimed at developing essential personal and interpersonal skills for students." />
+        <meta property="og:url" content="https://ramagyaschool.com/life-skills" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Life Skills | Ramagya School" />
+        <meta name="twitter:description" content="Learn about life skills programs at Ramagya School that focus on personal development and essential life competencies." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

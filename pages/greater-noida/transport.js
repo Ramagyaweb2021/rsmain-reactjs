@@ -24,10 +24,55 @@ const Transport = () => {
   return (
     <>
       <Head>
-      <title>Transport | Ramagya School</title>
-      <meta name="description" content=">Transport" />
-      <meta name="keywords" content=">Transport" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/parents-counselling" />
+        {/* Primary Meta Tags */}
+        <title>Transport | Ramagya School</title>
+        <meta
+        name="description"
+        content="Transport services offered by Ramagya School, Greater Noida, providing safe and reliable transportation for students."
+        />
+        <meta
+        name="keywords"
+        content="Transport, Ramagya School Greater Noida, School Transport, Student Transport Services"
+        />
+        <link
+        rel="canonical"
+        href="https://ramagyaschool.com/greater-noida/parents-counselling"
+        />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta
+        property="og:title"
+        content="Transport | Ramagya School Greater Noida"
+        />
+        <meta
+        property="og:description"
+        content="Explore the transport services at Ramagya School, Greater Noida, ensuring safe and convenient transportation for students."
+        />
+        <meta
+        property="og:url"
+        content="https://ramagyaschool.com/greater-noida/parents-counselling"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+        property="og:image"
+        content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp"
+        />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+        name="twitter:title"
+        content="Transport | Ramagya School Greater Noida"
+        />
+        <meta
+        name="twitter:description"
+        content="Learn about the transport services at Ramagya School, Greater Noida, providing secure transportation for students."
+        />
+        <meta
+        name="twitter:image"
+        content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp"
+        />
+
       </Head>
       <HeaderNoidaExtension />
       {/* Main banner section of the page */}

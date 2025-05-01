@@ -28,10 +28,25 @@ const AboutUs = () => {
   return (
     <>
       <Head>
+        {/* Primary Meta Tags */}
         <title>Parents | Ramagya School</title>
-        <meta name="description" content="Parents" />
-        <meta name="keywords" content="Parents" />
+        <meta name="description" content="Explore the dedicated resources and information for parents at Ramagya School, Noida. Stay updated on parent-teacher interactions, meetings, and academic support." />
+        <meta name="keywords" content="Parents, Ramagya School Noida, Parent Resources, Parent Meetings, School Support, Parent-Teacher Interaction, Parent Engagement" />
         <link rel="canonical" href="https://ramagyaschool.com/noida/parents" />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:title" content="Parents | Ramagya School Noida" />
+        <meta property="og:description" content="Explore the resources and information for parents at Ramagya School, Noida to stay informed about your child's education and school activities." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/parents" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parents | Ramagya School Noida" />
+        <meta name="twitter:description" content="Stay informed and engaged as a parent at Ramagya School, Noida. Access resources, support, and school activities to help your child's academic journey." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida/>
       {/* <OfferPopup/> */}

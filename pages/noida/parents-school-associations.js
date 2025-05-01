@@ -24,10 +24,25 @@ const ParentSchoolAssociations = () => {
   return (
     <>
       <Head>
-      <title>Parent School Association | Ramagya School</title>
-      <meta name="description" content=">Parent School Association" />
-      <meta name="keywords" content=">Parent School Association" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/parents-school-associations" />
+        {/* Primary Meta Tags */}
+        <title>Parent School Association | Ramagya School</title>
+        <meta name="description" content="Learn about the Parent School Association at Ramagya School, Noida. Get involved in supporting school activities and enhancing the student experience." />
+        <meta name="keywords" content="Parent School Association, Ramagya School Noida, School Activities, Parent Involvement, Parent Support" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/parents-school-associations" />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:title" content="Parent School Association | Ramagya School Noida" />
+        <meta property="og:description" content="Learn about the Parent School Association at Ramagya School, Noida. Get involved in supporting school activities and enhancing the student experience." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/parents-school-associations" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parent School Association | Ramagya School Noida" />
+        <meta name="twitter:description" content="Learn about the Parent School Association at Ramagya School, Noida. Get involved in supporting school activities and enhancing the student experience." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

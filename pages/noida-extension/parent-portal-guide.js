@@ -24,10 +24,25 @@ const ParentPortalGuide = () => {
   return (
     <>
       <Head>
-      <title>Parent Portal Guide | Ramagya School</title>
-      <meta name="description" content=">Parent Portal Guide" />
-      <meta name="keywords" content=">Parent Portal Guide" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/parent-portal-guide" />
+        <title>Parent Portal Guide | Ramagya School</title>
+        <meta name="description" content="Access the complete guide to using the Parent Portal at Ramagya School, Noida Extension. Learn how to track your child's progress, attendance, and school updates." />
+        <meta name="keywords" content="Parent Portal Guide, Ramagya School Noida Extension, School Parent Login, Track Student Progress, Parent Dashboard" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida-extension/parent-portal-guide" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Parent Portal Guide | Ramagya School Noida Extension" />
+        <meta property="og:description" content="Access the complete guide to using the Parent Portal at Ramagya School, Noida Extension. Learn how to track your child's progress, attendance, and school updates." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida-extension/parent-portal-guide" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parent Portal Guide | Ramagya School Noida Extension" />
+        <meta name="twitter:description" content="Access the complete guide to using the Parent Portal at Ramagya School, Noida Extension. Learn how to track your child's progress, attendance, and school updates." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

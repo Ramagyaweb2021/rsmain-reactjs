@@ -24,10 +24,24 @@ const UnivarietyLogin = () => {
   return (
     <>
       <Head>
-      <title>Univariety Login | Ramagya School</title>
-      <meta name="description" content=">Univariety Login" />
-      <meta name="keywords" content=">Univariety Login" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/univariety-login" />
+        <title>Univariety Login | Ramagya School</title>
+        <meta name="description" content="Univariety Login page for Ramagya School students and parents. Access your account to explore career guidance resources." />
+        <meta name="keywords" content="Univariety, Ramagya School, Login, Career Guidance, Student Portal" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/univariety-login" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Univariety Login | Ramagya School Noida" />
+        <meta property="og:description" content="Access your Univariety account for Ramagya School students and parents. Explore career guidance and other educational resources." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/univariety-login" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Univariety Login | Ramagya School Noida" />
+        <meta name="twitter:description" content="Log in to your Univariety account for Ramagya School students and parents to explore career guidance resources." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

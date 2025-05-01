@@ -24,10 +24,54 @@ const FeesPayment = () => {
   return (
     <>
       <Head>
-      <title>Fees Payment | Ramagya School</title>
-      <meta name="description" content=">Fees Payment" />
-      <meta name="keywords" content=">Fees Payment" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida-extension/pay-school-fees" />
+        {/* Primary Meta Tags */}
+        <title>Fees Payment | Ramagya School</title>
+        <meta
+        name="description"
+        content="Securely pay school fees online at Ramagya School, Noida Extension. Quick, easy, and hassle-free fee payment process for parents."
+        />
+        <meta
+        name="keywords"
+        content="Fees Payment, Ramagya School Noida Extension, Online School Fees, Pay Fees Online, School Fee Portal"
+        />
+        <link
+        rel="canonical"
+        href="https://ramagyaschool.com/greater-noida/pay-school-fees"
+        />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta
+        property="og:title"
+        content="Fees Payment | Ramagya School Noida Extension"
+        />
+        <meta
+        property="og:description"
+        content="Pay your school fees online at Ramagya School, Noida Extension. A seamless and secure process for all parents."
+        />
+        <meta
+        property="og:url"
+        content="https://ramagyaschool.com/greater-noida/pay-school-fees"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+        property="og:image"
+        content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp"
+        />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+        name="twitter:title"
+        content="Fees Payment | Ramagya School Noida Extension"
+        />
+        <meta
+        name="twitter:description"
+        content="Pay your school fees online at Ramagya School, Noida Extension with ease and security."
+        />
+        <meta
+        name="twitter:image"
+        content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp"
+        />
       </Head>
       <HeaderGreaterNoida />
       {/* Main banner section of the page */}

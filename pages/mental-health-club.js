@@ -29,10 +29,24 @@ const MentalHealthClub = () => {
   return (
     <>
       <Head>
-        <title>Mental Health Club | Ramagya School</title>
-        <meta name="description" content="Mental Health Club" />
-        <meta name="keywords" content="Mental Health Club" />
-        <link rel="canonical" href="https://ramagyaschool.com/mental-health-club" />
+      <title>Mental Health Club | Ramagya School</title>
+      <meta name="description" content="Join the Mental Health Club at Ramagya School to learn about mental well-being, coping strategies, and support systems for students." />
+      <meta name="keywords" content="Mental Health Club, Ramagya School, Mental Health, Student Well-being, Mental Wellness Programs" />
+      <link rel="canonical" href="https://ramagyaschool.com/mental-health-club" />
+
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="Mental Health Club | Ramagya School" />
+      <meta property="og:description" content="Explore the Mental Health Club at Ramagya School, where students learn valuable skills for managing mental well-being and stress." />
+      <meta property="og:url" content="https://ramagyaschool.com/mental-health-club" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+      {/* Twitter Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Mental Health Club | Ramagya School" />
+      <meta name="twitter:description" content="Join Ramagya School's Mental Health Club to enhance your knowledge of mental health and wellness." />
+      <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

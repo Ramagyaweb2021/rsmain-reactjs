@@ -24,10 +24,25 @@ const ParentCounselling = () => {
   return (
     <>
       <Head>
-      <title>Parent Counselling | Ramagya School</title>
-      <meta name="description" content=">Parent Counselling" />
-      <meta name="keywords" content=">Parent Counselling" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/parents-counselling" />
+        <title>Parent Counselling | Ramagya School</title>
+        <meta name="description" content="Explore the Parent Counselling services at Ramagya School, Noida Extension. Get expert guidance to support your child's academic and personal growth." />
+        <meta name="keywords" content="Parent Counselling, Ramagya School Noida Extension, Parent Support, Student Development, School Counselling Services" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida-extension/parents-counselling" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Parent Counselling | Ramagya School Noida Extension" />
+        <meta property="og:description" content="Explore the Parent Counselling services at Ramagya School, Noida Extension. Get expert guidance to support your child's academic and personal growth." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida-extension/parents-counselling" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parent Counselling | Ramagya School Noida Extension" />
+        <meta name="twitter:description" content="Explore the Parent Counselling services at Ramagya School, Noida Extension. Get expert guidance to support your child's academic and personal growth." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+
       </Head>
       <HeaderNoidaExtension />
       {/* Main banner section of the page */}

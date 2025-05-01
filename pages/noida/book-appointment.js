@@ -24,10 +24,26 @@ const NoidaBookAppointerment = () => {
   return (
     <>
       <Head>
-      <title>Book an Appointment | Ramagya School</title>
-      <meta name="description" content="Book an Appointment" />
-      <meta name="keywords" content="Book an Appointment" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/book-appointment" />
+        {/* Primary Meta Tags */}
+        <title>Book an Appointment | Ramagya School</title>
+        <meta name="description" content="Schedule an appointment with Ramagya School, Noida. Meet with our staff to discuss your child's academic progress, concerns, or any other school-related matters." />
+        <meta name="keywords" content="Book Appointment, Ramagya School Noida, Parent Meeting, Schedule Appointment, School Appointment Booking" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/book-appointment" />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:title" content="Book an Appointment | Ramagya School Noida" />
+        <meta property="og:description" content="Schedule an appointment with Ramagya School Noida. Meet with our staff to discuss your child's academic progress, concerns, or any other school-related matters." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/book-appointment" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Book an Appointment | Ramagya School Noida" />
+        <meta name="twitter:description" content="Schedule an appointment with Ramagya School Noida. Meet with our staff to discuss your child's academic progress, concerns, or any other school-related matters." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

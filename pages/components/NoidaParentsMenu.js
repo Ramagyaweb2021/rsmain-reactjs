@@ -96,7 +96,7 @@ const NoidaParentsMenu = () => {
     },
     {
       img: "/images/branch-parent-link-img/earlylate-child-pickup-system.webp",
-      text: "Early Late Child",
+      text: "Early Late Child Pickup",
       link: "/noida/early-late-child-pickup",
     },
     {

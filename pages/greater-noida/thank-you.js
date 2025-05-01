@@ -25,9 +25,51 @@ const ThankYouPage = () => {
   return (
     <>
       <Head>
+        {/* Primary Meta Tags */}
         <title>Thank You | Ramagya School</title>
-        <meta name="description" content="Thank You" />
-        <link rel="canonical" href="https://ramagyaschool.com/greater-noida/thank-you" />
+        <meta
+        name="description"
+        content="Thank You"
+        />
+        <link
+        rel="canonical"
+        href="https://ramagyaschool.com/greater-noida/thank-you"
+        />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta
+        property="og:title"
+        content="Thank You | Ramagya School"
+        />
+        <meta
+        property="og:description"
+        content="Thank you for visiting Ramagya School, Greater Noida. We appreciate your engagement."
+        />
+        <meta
+        property="og:url"
+        content="https://ramagyaschool.com/greater-noida/thank-you"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+        property="og:image"
+        content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp"
+        />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+        name="twitter:title"
+        content="Thank You | Ramagya School"
+        />
+        <meta
+        name="twitter:description"
+        content="Thank you for visiting Ramagya School, Greater Noida. We appreciate your engagement."
+        />
+        <meta
+        name="twitter:image"
+        content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp"
+        />
+
       </Head>
 
       {/* Google Analytics (gtag.js) */}

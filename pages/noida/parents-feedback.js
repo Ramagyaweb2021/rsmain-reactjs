@@ -24,10 +24,25 @@ const Transport = () => {
   return (
     <>
       <Head>
-      <title>Parent’s Feedback | Ramagya School</title>
-      <meta name="description" content=">Parent’s Feedback" />
-      <meta name="keywords" content=">Parent’s Feedback" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/parents-feedback" />
+        {/* Primary Meta Tags */}
+        <title>Parent’s Feedback | Ramagya School</title>
+        <meta name="description" content="Share your thoughts and feedback as a parent at Ramagya School, Noida. Help us improve and ensure the best experience for your child." />
+        <meta name="keywords" content="Parent’s Feedback, Ramagya School Noida, Parent Feedback, School Improvement, Parent Communication" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/parents-feedback" />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:title" content="Parent’s Feedback | Ramagya School Noida" />
+        <meta property="og:description" content="Share your thoughts and feedback as a parent at Ramagya School, Noida. Help us improve and ensure the best experience for your child." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/parents-feedback" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parent’s Feedback | Ramagya School Noida" />
+        <meta name="twitter:description" content="Share your thoughts and feedback as a parent at Ramagya School, Noida. Help us improve and ensure the best experience for your child." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

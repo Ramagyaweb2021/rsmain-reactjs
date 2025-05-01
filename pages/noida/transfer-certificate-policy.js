@@ -24,10 +24,24 @@ const TransferCertificatePolicy = () => {
   return (
     <>
       <Head>
-      <title>Transfer Certificate Policy | Ramagya School</title>
-      <meta name="description" content=">Transfer Certificate Policy" />
-      <meta name="keywords" content=">Transfer Certificate Policy" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/transfer-certificate-policy" />
+        <title>Transfer Certificate Policy | Ramagya School</title>
+        <meta name="description" content="Learn about the Transfer Certificate Policy at Ramagya School, Noida. Understand the procedure for obtaining a transfer certificate." />
+        <meta name="keywords" content="Transfer Certificate Policy, Ramagya School Noida, Transfer Certificate, School Transfer Procedure" />
+        <link rel="canonical" href="https://ramagyaschool.com/noida/transfer-certificate-policy" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Transfer Certificate Policy | Ramagya School Noida" />
+        <meta property="og:description" content="Understand the Transfer Certificate Policy at Ramagya School, Noida. Get details on the procedure for issuing a transfer certificate." />
+        <meta property="og:url" content="https://ramagyaschool.com/noida/transfer-certificate-policy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Transfer Certificate Policy | Ramagya School Noida" />
+        <meta name="twitter:description" content="Learn about the Transfer Certificate Policy at Ramagya School, Noida. Understand the procedure for obtaining a transfer certificate." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderNoida />
       {/* Main banner section of the page */}

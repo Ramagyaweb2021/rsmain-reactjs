@@ -24,10 +24,24 @@ const ParentSchoolAssociations = () => {
   return (
     <>
       <Head>
-      <title>Parent School Association | Ramagya School</title>
-      <meta name="description" content=">Parent School Association" />
-      <meta name="keywords" content=">Parent School Association" />
-      <link rel="canonical" href="https://ramagyaschool.com/dadri/parents-school-associations/" />
+        <title>Parent School Association | Ramagya School</title>
+        <meta name="description" content="Learn about the Parent School Association at Ramagya School Dadri. Get involved in the community and collaborate with school staff for the betterment of your child's education." />
+        <meta name="keywords" content="Parent School Association, Ramagya School Dadri, School Community, Parent Involvement, Parent Support, Education Partnership" />
+        <link rel="canonical" href="https://ramagyaschool.com/dadri/parents-school-associations/" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Parent School Association | Ramagya School Dadri" />
+        <meta property="og:description" content="Join the Parent School Association at Ramagya School Dadri and be a part of your child's educational journey. Collaborate with the school to enhance the learning experience." />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri/parents-school-associations/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parent School Association | Ramagya School Dadri" />
+        <meta name="twitter:description" content="Explore the Parent School Association at Ramagya School Dadri. Support and collaborate with the school for the benefit of your child's education." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderDadri />
       {/* Main banner section of the page */}

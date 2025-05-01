@@ -24,10 +24,24 @@ const Transport = () => {
   return (
     <>
       <Head>
-      <title>Transport | Ramagya School</title>
-      <meta name="description" content=">Transport" />
-      <meta name="keywords" content=">Transport" />
-      <link rel="canonical" href="https://ramagyaschool.com/dadri/parents-counselling" />
+        <title>Transport | Ramagya School</title>
+        <meta name="description" content="Learn about the transport facilities available at Ramagya School Dadri. Safe, reliable transportation options for students." />
+        <meta name="keywords" content="Transport, Ramagya School Dadri, School Transport, Student Transport, Safe School Transportation" />
+        <link rel="canonical" href="https://ramagyaschool.com/dadri/transport" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Transport | Ramagya School Dadri" />
+        <meta property="og:description" content="Explore the transport facilities at Ramagya School Dadri. Safe, secure, and convenient transportation options for students." />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri/transport" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Transport | Ramagya School Dadri" />
+        <meta name="twitter:description" content="Discover safe and reliable transport options at Ramagya School Dadri, designed to ensure the well-being of students." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderDadri />
       {/* Main banner section of the page */}

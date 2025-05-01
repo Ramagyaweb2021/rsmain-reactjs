@@ -32,9 +32,23 @@ const People = () => {
     <>
       <Head>
         <title>EXPLORE RAMAGYA | Ramagya School</title>
-        <meta name="description" content="EXPLORE RAMAGYA" />
-        <meta name="keywords" content="EXPLORE RAMAGYA" />
+        <meta name="description" content="Explore Ramagya School and discover the programs, facilities, and opportunities we offer to help students achieve academic excellence." />
+        <meta name="keywords" content="Explore Ramagya, Ramagya School, School Programs, Academic Excellence, Student Opportunities" />
         <link rel="canonical" href="https://ramagyaschool.com/explore-ramagya" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="EXPLORE RAMAGYA | Ramagya School" />
+        <meta property="og:description" content="Explore Ramagya School to learn about our educational programs, campus facilities, and student opportunities for success." />
+        <meta property="og:url" content="https://ramagyaschool.com/explore-ramagya" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="EXPLORE RAMAGYA | Ramagya School" />
+        <meta name="twitter:description" content="Discover the programs, facilities, and opportunities available at Ramagya School for student success." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

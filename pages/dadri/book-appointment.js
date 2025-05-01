@@ -24,10 +24,28 @@ const NoidaBookAppointerment = () => {
   return (
     <>
       <Head>
-      <title>Book an Appointment | Ramagya School</title>
-      <meta name="description" content="Book an Appointment" />
-      <meta name="keywords" content="Book an Appointment" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida-extension/book-appointment" />
+        <title>Book an Appointment | Ramagya School</title>
+        <meta name="description" content="Schedule an appointment with Ramagya School, Dadri. Meet with our staff to discuss your child's academic progress or any school-related matters." />
+        <meta name="keywords" content="Book Appointment, Ramagya School Dadri, Parent Meeting, Schedule Appointment, School Appointment Booking" />
+        <link rel="canonical" href="https://ramagyaschool.com/dadri/book-appointment" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Book an Appointment | Ramagya School Dadri" /> 
+        <meta
+        property="og:description"
+        content="Schedule an appointment with Ramagya School, Dadri. Meet with our staff to discuss your child's academic progress or any school-related matters."
+        />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri/book-appointment" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Book an Appointment | Ramagya School Dadri" />
+        <meta
+        name="twitter:description"
+        content="Schedule an appointment with Ramagya School, Dadri to discuss your child's academic progress and other school-related matters."
+        />
       </Head>
       <HeaderNoidaExtension />
       {/* Main banner section of the page */}

@@ -29,10 +29,24 @@ const Baalsaathi = () => {
   return (
     <>
       <Head>
-        <title>Baal Saathee (Mental Health) | Ramagya School</title>
-        <meta name="description" content="Baal Saathee (Mental Health)" />
-        <meta name="keywords" content="Baal Saathee (Mental Health)" />
-        <link rel="canonical" href="https://ramagyaschool.com/baalsaathi" />
+      <title>Baal Saathee (Mental Health) | Ramagya School</title>
+      <meta name="description" content="Baal Saathee (Mental Health) program at Ramagya School focuses on mental health awareness, support, and resources for students." />
+      <meta name="keywords" content="Baal Saathee, Mental Health, Ramagya School, Student Mental Health, Mental Health Awareness" />
+      <link rel="canonical" href="https://ramagyaschool.com/baalsaathi" />
+
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="Baal Saathee (Mental Health) | Ramagya School" />
+      <meta property="og:description" content="Learn about Baal Saathee (Mental Health) program at Ramagya School, dedicated to supporting students' mental well-being." />
+      <meta property="og:url" content="https://ramagyaschool.com/baalsaathi" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+      {/* Twitter Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Baal Saathee (Mental Health) | Ramagya School" />
+      <meta name="twitter:description" content="Discover Baal Saathee (Mental Health) at Ramagya School, where we promote mental well-being and provide support for students." />
+      <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <Header />
 

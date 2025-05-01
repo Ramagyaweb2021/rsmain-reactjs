@@ -26,8 +26,22 @@ const ThankYouPage = () => {
     <>
       <Head>
         <title>Thank You | Ramagya School</title>
-        <meta name="description" content="Thank You" />
+        <meta name="description" content="Thank you for visiting Ramagya School Dadri. We appreciate your interest and look forward to connecting with you soon." />
         <link rel="canonical" href="https://ramagyaschool.com/dadri/thank-you" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Thank You | Ramagya School Dadri" />
+        <meta property="og:description" content="Thank you for your interest in Ramagya School Dadri. We appreciate your visit and are here to assist you with any further information." />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri/thank-you" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Thank You | Ramagya School Dadri" />
+        <meta name="twitter:description" content="Thank you for visiting Ramagya School Dadri. We are happy to assist with any further queries." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
 
       {/* Google Analytics (gtag.js) */}

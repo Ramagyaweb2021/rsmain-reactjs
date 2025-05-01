@@ -24,10 +24,24 @@ const FeesPayment = () => {
   return (
     <>
       <Head>
-      <title>Fees Payment | Ramagya School</title>
-      <meta name="description" content=">Fees Payment" />
-      <meta name="keywords" content=">Fees Payment" />
-      <link rel="canonical" href="https://ramagyaschool.com/dadri/pay-school-fees" />
+        <title>Fees Payment | Ramagya School</title>
+        <meta name="description" content="Pay your school fees online at Ramagya School Dadri. Convenient and secure payment options for parents to manage school fee payments." />
+        <meta name="keywords" content="Fees Payment, Ramagya School Dadri, School Fees, Online Fee Payment, Pay School Fees, Parent Payment Portal" />
+        <link rel="canonical" href="https://ramagyaschool.com/dadri/pay-school-fees" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Fees Payment | Ramagya School Dadri" />
+        <meta property="og:description" content="Easily pay your school fees online at Ramagya School Dadri. Secure and convenient payment methods for parents." />
+        <meta property="og:url" content="https://ramagyaschool.com/dadri/pay-school-fees" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fees Payment | Ramagya School Dadri" />
+        <meta name="twitter:description" content="Pay your school fees online easily and securely at Ramagya School Dadri. Convenient options for parents." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderDadri />
       {/* Main banner section of the page */}

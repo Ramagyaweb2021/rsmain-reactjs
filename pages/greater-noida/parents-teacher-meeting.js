@@ -24,10 +24,28 @@ const ParentTeacherMeeting = () => {
   return (
     <>
       <Head>
-      <title>Parents Teachers Meeting | Ramagya School</title>
-      <meta name="description" content=">Parents Teachers Meeting" />
-      <meta name="keywords" content=">Parents Teachers Meeting" />
-      <link rel="canonical" href="https://ramagyaschool.com/noida/parents-teacher-meeting" />
+        <title>Parents Teachers Meeting | Ramagya School</title>
+        <meta name="description"
+        content="Stay informed about Parents Teachers Meeting at Ramagya School, Greater Noida. Collaborate with teachers to support your child’s academic progress." />
+        <meta name="keywords"
+        content="Parents Teachers Meeting, Ramagya School Greater Noida, Parent Teacher Interaction, School Meetings, Academic Review" />
+        <link rel="canonical" href="https://ramagyaschool.com/greater-noida/parents-teacher-meeting" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Parents Teachers Meeting | Ramagya School Greater Noida" />
+        <meta property="og:description"
+        content="Join the Parents Teachers Meeting at Ramagya School, Greater Noida to discuss your child's academic progress and development." />
+        <meta property="og:url" content="https://ramagyaschool.com/greater-noida/parents-teacher-meeting" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+         {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Parents Teachers Meeting | Ramagya School Greater Noida" />
+        <meta name="twitter:description"
+        content="Attend the Parents Teachers Meeting at Ramagya School, Greater Noida to engage in your child's learning journey." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <HeaderGreaterNoida />
       {/* Main banner section of the page */}

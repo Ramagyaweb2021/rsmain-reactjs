@@ -29,10 +29,24 @@ const PoineerInSports = () => {
   return (
     <>
       <Head>
-        <title>Poineer In Sports | Ramagya School</title>
-        <meta name="description" content="Poineer In Sports" />
-        <meta name="keywords" content="Poineer In Sports" />
-        <link rel="canonical" href="https://ramagyaschool.com/poineer-in-sports" />
+        <title>Pioneer In Sports | Ramagya School</title>
+        <meta name="description" content="Explore how Ramagya School excels in sports, fostering talent and promoting physical fitness among students." />
+        <meta name="keywords" content="Pioneer In Sports, Ramagya School, School Sports, Physical Fitness, Sports Excellence, Student Athletes" />
+        <link rel="canonical" href="https://ramagyaschool.com/pioneer-in-sports" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Pioneer In Sports | Ramagya School" />
+        <meta property="og:description" content="Learn how Ramagya School stands as a pioneer in sports education, providing opportunities for students to excel in various athletic disciplines." />
+        <meta property="og:url" content="https://ramagyaschool.com/pioneer-in-sports" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Pioneer In Sports | Ramagya School" />
+        <meta name="twitter:description" content="Discover how Ramagya School pioneers in sports, helping students thrive in physical activities and sportsmanship." />
+        <meta name="twitter:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
+
       </Head>
       <Header />
 
