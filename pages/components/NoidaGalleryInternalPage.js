@@ -1313,6 +1313,20 @@ const NoidaGalleryInternalPage = () => {
     },
     //********** ********** ********** **********Video gallery for Beyond Academics
     {
+      src: 'https://img.youtube.com/vi/iF_JhMghGrs/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Beyond Academics',
+      type: 'video',
+      videoId: 'iF_JhMghGrs'
+    },
+    {
+      src: 'https://img.youtube.com/vi/aD23d8kxgOQ/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Beyond Academics',
+      type: 'video',
+      videoId: 'aD23d8kxgOQ'
+    },
+    {
       src: 'https://img.youtube.com/vi/hk_ceaFOzSY/hqdefault.jpg',
       title: 'Ramagya School Gallery',
       category: 'Beyond Academics',
@@ -1835,6 +1849,13 @@ const NoidaGalleryInternalPage = () => {
       videoId: 'GNnCr1FyEsE'
     },
     // ******************************************Video gallery for Athletic Center
+    {
+      src: 'https://img.youtube.com/vi/zXriKE22mq8/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Athletic Center',
+      type: 'video',
+      videoId: 'zXriKE22mq8'
+    },
     {
       src: 'https://img.youtube.com/vi/63UJtqfwNfY/hqdefault.jpg',
       title: 'Ramagya School Gallery',
@@ -2555,6 +2576,13 @@ const NoidaGalleryInternalPage = () => {
       videoId: '3KFjiioMzNU'
     },
     // ******************************************Video gallery for Reading Fiesta
+    {
+      src: 'https://img.youtube.com/vi/u1rSvgKeiDk/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Reading Fiesta',
+      type: 'video',
+      videoId: 'u1rSvgKeiDk'
+    },
     {
       src: 'https://img.youtube.com/vi/QGEJCtmoz7c/hqdefault.jpg',
       title: 'Ramagya School Gallery',

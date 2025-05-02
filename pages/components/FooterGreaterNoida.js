@@ -138,7 +138,12 @@ const FooterGreaterNoida = () => {
                 <p><Link href="/greater-noida/pre-admission"> Admission</Link></p>
                 <p><Link href="/results"> Results</Link></p>
                 <p><Link href="/greater-noida/parents">Parent&apos;s</Link></p>
-                <p><Link href="/blogs">Blog</Link></p>
+                <p>
+                  <a href="https://blogs.ramagyaschool.com/" target="_blank" rel="noopener noreferrer">
+                    Blog
+                  </a>
+                </p>
+                {/* <p><Link href="/blogs">Blog</Link></p> */}
                 {/* <p className="footer-heading">News Feed</p>
                 <p><Link href="#">Achievements</Link></p>
                 <p><Link href="#">Media Press</Link></p>
