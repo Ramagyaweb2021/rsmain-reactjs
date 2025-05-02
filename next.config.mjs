@@ -30,30 +30,30 @@ const nextConfig = {
     ],
   },
 
-  // async redirects() {
-  //   return [
-  //     {
-  //       source: '/alumni-guudance',       
-  //       destination: '/alumni-guidance', 
-  //       permanent: true,          
-  //     },
-  //     {
-  //       source: '/greater-noida/brand-story',       
-  //       destination: '/brand-story', 
-  //       permanent: true,          
-  //     },
-  //     {
-  //       source: '/recommend-a-student',       
-  //       destination: '/noida/recommend-a-student', 
-  //       permanent: true,          
-  //     },
-  //     {
-  //       source: '/parents',       
-  //       destination: '/dadri/parents', 
-  //       permanent: true,          
-  //     },
-  //   ];
-  // },
+  async redirects() {
+    return [
+      {
+        source: '/blogs/:path*',  // matches /blogs and everything under it
+        destination: 'https://blog.ramagyaschool.com/:path*',
+        permanent: true,
+      },
+      // {
+      //   source: '/greater-noida/brand-story',       
+      //   destination: '/brand-story', 
+      //   permanent: true,          
+      // },
+      // {
+      //   source: '/recommend-a-student',       
+      //   destination: '/noida/recommend-a-student', 
+      //   permanent: true,          
+      // },
+      // {
+      //   source: '/parents',       
+      //   destination: '/dadri/parents', 
+      //   permanent: true,          
+      // },
+    ];
+  },
 };
 
 export default nextConfig;
