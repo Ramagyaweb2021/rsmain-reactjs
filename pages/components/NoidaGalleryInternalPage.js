@@ -62,6 +62,36 @@ const NoidaGalleryInternalPage = () => {
     },
     // **********Image gallery for education hub
     {
+      "src": "/images/gallery/education-hub/gallery-1.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Education Hub",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/education-hub/gallery-2.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Education Hub",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/education-hub/gallery-3.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Education Hub",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/education-hub/gallery-4.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Education Hub",
+      "type": "image"
+    },
+     {
+      "src": "/images/gallery/education-hub/gallery-5.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Education Hub",
+      "type": "image"
+    },    
+    {
       "src": "/images/gallery/education-hub/1.webp",
       "title": "Ramagya School Gallery",
       "category": "Education Hub",
@@ -255,6 +285,42 @@ const NoidaGalleryInternalPage = () => {
       "type": "image"
     },
     // **************************Images gallery for Extracurricular
+    {
+      "src": "/images/gallery/extracurricular/gallery-1.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Extracurricular",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/extracurricular/gallery-2.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Extracurricular",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/extracurricular/gallery-3.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Extracurricular",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/extracurricular/gallery-4.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Extracurricular",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/extracurricular/gallery-5.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Extracurricular",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/extracurricular/gallery-6.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Extracurricular",
+      "type": "image"
+    },
     {
       "src": "/images/gallery/extracurricular/1.webp",
       "title": "Ramagya School Gallery",
@@ -455,6 +521,72 @@ const NoidaGalleryInternalPage = () => {
       "type": "image"
     },
     // ***********************Image gallery for Sports Gallore
+    {
+      "src": "/images/gallery/sports-gallore/gallery-1.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/sports-gallore/gallery-2.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/sports-gallore/gallery-3.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/sports-gallore/gallery-4.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/sports-gallore/gallery-5.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/sports-gallore/gallery-6.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/sports-gallore/gallery-7.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/sports-gallore/gallery-8.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/sports-gallore/gallery-9.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/sports-gallore/gallery-10.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
+    {
+      "src": "/images/gallery/sports-gallore/gallery-11.webp",
+      "title": "Ramagya School Gallery",
+      "category": "Sports Galore",
+      "type": "image"
+    },
     {
       "src": "/images/gallery/sports-gallore/1.webp",
       "title": "Ramagya School Gallery",
@@ -2968,7 +3100,7 @@ const NoidaGalleryInternalPage = () => {
         <div className="row g-2">
           {filteredItems.length > 0 ? (
             filteredItems.map((item, index) => (
-              <div key={index} className="col-md-2 col-6">
+              <div key={index} className="col-md-3 col-6">
                 <div
                   className="card-gallery"
                   style={{ cursor: 'pointer' }}

@@ -34,7 +34,7 @@ const nextConfig = {
     return [
       {
         source: '/blogs/:path*',  // matches /blogs and everything under it
-        destination: 'https://blog.ramagyaschool.com/:path*',
+        destination: 'https://blogs.ramagyaschool.com/:path*',
         permanent: true,
       },
       // {
