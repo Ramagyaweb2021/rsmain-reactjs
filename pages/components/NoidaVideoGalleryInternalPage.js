@@ -21,8 +21,8 @@ const NoidaVideoGalleryInternalPage = () => {
   ];
 
   const items = [
-     // ********************************************************************Video gallery for Celeb Buzz
-     {
+    // ********************************************************************Video gallery for Celeb Buzz
+    {
       src: 'https://img.youtube.com/vi/3-LtaS6Gt0g/hqdefault.jpg',
       title: 'Rajdeep Sardesai',
       category: 'Celeb Buzz',
@@ -583,13 +583,13 @@ const NoidaVideoGalleryInternalPage = () => {
       videoId: 'mx4OZNJTZEg',
       src: 'https://img.youtube.com/vi/mx4OZNJTZEg/hqdefault.jpg'
     },
-    {
-      title: 'Ramagya School Gallery',
-      category: 'Sports Galore',
-      type: 'video',
-      videoId: 'X65h8NLrn8g',
-      src: 'https://img.youtube.com/vi/X65h8NLrn8g/hqdefault.jpg'
-    },
+    // {
+    //   title: 'Ramagya School Gallery',
+    //   category: 'Sports Galore',
+    //   type: 'video',
+    //   videoId: 'X65h8NLrn8g',
+    //   src: 'https://img.youtube.com/vi/X65h8NLrn8g/hqdefault.jpg'
+    // },
     {
       title: 'Ramagya School Gallery',
       category: 'Sports Galore',
@@ -2421,9 +2421,20 @@ const NoidaVideoGalleryInternalPage = () => {
     // Add more video objects here as needed
   ];
 
-  const filteredItems = items.filter(item =>
-    activeTab === 'All' || item.category === activeTab
-  );
+  const getFilteredItems = () => {
+    if (activeTab === 'All') {
+      // Separate out Evolve Videos and then add the rest
+      const evolveVideos = items.filter(item => item.category === 'Evolve Video');
+      const otherVideos = items.filter(item => item.category !== 'Evolve Video');
+      
+      // First show Evolve videos followed by the rest
+      return [...evolveVideos, ...otherVideos];
+    }
+
+    return items.filter(item => item.category === activeTab); // For other tabs, no special sorting
+  };
+
+  const filteredItems = getFilteredItems();
 
   useEffect(() => {
     const WOWJS = require('wowjs');
@@ -2444,17 +2455,13 @@ const NoidaVideoGalleryInternalPage = () => {
     <>
       <div className="container my-5">
 
-        {/* Page Navigation Buttons */}
+        {/* Navigation Buttons */}
         <div className="d-flex justify-content-center mb-4">
-          <Link href="/gallery" className="btn mx-2 btn-outline-warning">
-            Image Gallery
-          </Link>
-          <Link href="/video-gallery" className="btn mx-2 btn-warning-gallery">
-            Video Gallery
-          </Link>
+          <Link href="/gallery" className="btn mx-2 btn-outline-warning">Image Gallery</Link>
+          <Link href="/video-gallery" className="btn mx-2 btn-warning-gallery">Video Gallery</Link>
         </div>
 
-        {/* Video Category Tabs */}
+        {/* Tabs */}
         <div className="d-flex justify-content-center flex-wrap mb-4">
           {videoTabs.map(tab => (
             <button
@@ -2472,26 +2479,12 @@ const NoidaVideoGalleryInternalPage = () => {
           {filteredItems.length > 0 ? (
             filteredItems.map((item, index) => (
               <div key={index} className="col-md-3 col-6">
-                <div
-                  className="card-gallery"
-                  style={{ cursor: 'pointer' }}
-                  onClick={() => openModal(index)}
-                >
+                <div className="card-gallery" style={{ cursor: 'pointer' }} onClick={() => openModal(index)}>
                   <div className="image-container-testimonial">
-                    <Image
-                      src={item.src}
-                      alt={item.title}
-                      width={450}
-                      height={250}
-                    />
+                    <Image src={item.src} alt={item.title} width={450} height={250} />
                     <div className="play-button-overlay">
                       <button className="play-button">
-                        <Image
-                          src="/images/youtube-play-icon.webp"
-                          alt="play-button"
-                          width={96}
-                          height={96}
-                        />
+                        <Image src="/images/youtube-play-icon.webp" alt="play-button" width={96} height={96} />
                       </button>
                     </div>
                   </div>
