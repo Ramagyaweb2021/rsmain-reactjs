@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const NoidaGalleryInternalPage = () => {
   useEffect(() => {
@@ -81,33 +82,89 @@ const NoidaGalleryInternalPage = () => {
       "type": "image"
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/shive-aroore.webp',
-      title: 'Shive Aroore Testimonial',
-      category: 'Celeb Bites',
+      src: 'https://img.youtube.com/vi/3-LtaS6Gt0g/hqdefault.jpg',
+      title: 'Rajdeep Sardesai',
+      category: 'Celeb Buzz',
+      type: 'video',
+      videoId: '3-LtaS6Gt0g'
+    },
+    {
+      src: 'https://img.youtube.com/vi/TuudIIr9ZF8/hqdefault.jpg',
+      title: 'Rajdeep Sardesai',
+      category: 'Celeb Buzz',
+      type: 'video',
+      videoId: 'TuudIIr9ZF8'
+    },
+    {
+      src: 'https://img.youtube.com/vi/tm0yBtH04ao/hqdefault.jpg',
+      title: 'Rajdeep Sardesai',
+      category: 'Celeb Buzz',
       type: 'video',
       videoId: 'tm0yBtH04ao'
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-92.jpg',
-      title: 'Sports Event',
-      category: 'Celeb Bites',
+      src: 'https://img.youtube.com/vi/cwrBuQjYpOI/hqdefault.jpg',
+      title: 'Rajdeep Sardesai',
+      category: 'Celeb Buzz',
       type: 'video',
       videoId: 'cwrBuQjYpOI'
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-90.jpg',
-      title: 'Testimonial Video 1',
-      category: 'Celeb Bites',
+      src: 'https://img.youtube.com/vi/7BH1btgK_SI/hqdefault.jpg',
+      title: 'Rajdeep Sardesai',
+      category: 'Celeb Buzz',
       type: 'video',
-      videoId: 'YCDEIq4f--g'
+      videoId: '7BH1btgK_SI'
     },
     {
-      src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-93.jpg',
-      title: 'Testimonial Video 2',
-      category: 'Celeb Bites',
+      src: 'https://img.youtube.com/vi/8xfmljcYBZ0/hqdefault.jpg',
+      title: 'Rajdeep Sardesai',
+      category: 'Celeb Buzz',
+      type: 'video',
+      videoId: '8xfmljcYBZ0'
+    },
+    {
+      src: 'https://img.youtube.com/vi/PARbI2ne94c/hqdefault.jpg',
+      title: 'Rajdeep Sardesai',
+      category: 'Celeb Buzz',
       type: 'video',
       videoId: 'PARbI2ne94c'
     },
+    {
+      src: 'https://img.youtube.com/vi/WrQHBzo0ww4/hqdefault.jpg',
+      title: 'Rajdeep Sardesai',
+      category: 'Celeb Buzz',
+      type: 'video',
+      videoId: 'WrQHBzo0ww4'
+    },
+    // {
+    //   src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/shive-aroore.webp',
+    //   title: 'Shive Aroore Testimonial',
+    //   category: 'Celeb Bites',
+    //   type: 'video',
+    //   videoId: 'tm0yBtH04ao'
+    // },
+    // {
+    //   src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-92.jpg',
+    //   title: 'Sports Event',
+    //   category: 'Celeb Bites',
+    //   type: 'video',
+    //   videoId: 'cwrBuQjYpOI'
+    // },
+    // {
+    //   src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-90.jpg',
+    //   title: 'Testimonial Video 1',
+    //   category: 'Celeb Bites',
+    //   type: 'video',
+    //   videoId: 'YCDEIq4f--g'
+    // },
+    // {
+    //   src: 'https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/testimonial/thumbnail/sg-93.jpg',
+    //   title: 'Testimonial Video 2',
+    //   category: 'Celeb Bites',
+    //   type: 'video',
+    //   videoId: 'PARbI2ne94c'
+    // },
   ];
 
   const filteredItems = items.filter((item) => {
@@ -207,10 +264,23 @@ const NoidaGalleryInternalPage = () => {
           )}
         </div>
         <div className="d-flex justify-content-center align-items-center mt-1">
+            {activeGallery === 'Images' && (
+              <div className="learn-more-button">
+                <Link href="/gallery">View More</Link>
+              </div>
+            )}
+            {activeGallery === 'Videos' && (
+              <div className="learn-more-button">
+                <Link href="/video-gallery">View More</Link>
+              </div>
+            )}
+          </div>
+
+        {/* <div className="d-flex justify-content-center align-items-center mt-1">
           <div className="learn-more-button">
             <a href="gallery">View More</a>
           </div>
-        </div>
+        </div> */}
       {/* Modal */}
       <Modal show={isModalOpen} onHide={closeModal} centered size="lg">
           <Modal.Header closeButton style={{background:"#000"}}>

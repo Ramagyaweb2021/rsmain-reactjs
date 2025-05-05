@@ -7,12 +7,12 @@ import Header from './components/Header'; // Adjust this path if needed
 import 'animate.css';
 import FooterNoida from './components/FooterNoida';
 import ResultAwardsTestimonialsGalleryPageScrollSpyMenu from './components/ResultAwardsTestimonialsGalleryPageScrollSpyMenu';
-import NoidaGalleryInternalPage from './components/NoidaGalleryInternalPage';
+import NoidaVideoGalleryInternalPage from './components/NoidaVideoGalleryInternalPage';
 
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
 
-const Gallery = () => {
+const VideoGallery = () => {
   useEffect(() => {
     // Initialize WOW.js on the client side
     const WOWJS = require('wowjs');
@@ -29,15 +29,15 @@ const Gallery = () => {
   return (
     <>
       <Head>
-        <title>Gallery | Ramagya School</title>
+        <title>Video Gallery | Ramagya School</title>
         <meta name="description" content="Explore the gallery of Ramagya School showcasing events, activities, and achievements of our students and faculty." />
         <meta name="keywords" content="Gallery, Ramagya School, School Events, Student Activities, School Achievements" />
-        <link rel="canonical" href="https://ramagyaschool.com/gallery" />
+        <link rel="canonical" href="https://ramagyaschool.com/video-gallery" />
 
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Gallery | Ramagya School" />
         <meta property="og:description" content="Browse the gallery to view various events, activities, and achievements at Ramagya School." />
-        <meta property="og:url" content="https://ramagyaschool.com/gallery" />
+        <meta property="og:url" content="https://ramagyaschool.com/video-gallery" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://ramagyaschool.com/images/main-website-logo/logo-2.webp" />
 
@@ -60,7 +60,7 @@ const Gallery = () => {
                   className="wow animate__animated animate__fadeInDown"
                   style={{ animationDelay: '0.2s' }}
                 >
-                  Gallery!
+                  Video Gallery!
                 </h1>
               </div>
             </div>
@@ -68,10 +68,10 @@ const Gallery = () => {
         </div>
       </section>
       <ResultAwardsTestimonialsGalleryPageScrollSpyMenu/>
-       <NoidaGalleryInternalPage/>
+       <NoidaVideoGalleryInternalPage/>
       <FooterNoida />
     </>
   );
 };
 
-export default Gallery;
+export default VideoGallery;

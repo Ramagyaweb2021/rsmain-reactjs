@@ -216,7 +216,7 @@ const NoidaBookAppointerment = () => {
                 Book Now
               </a>
             </div>
-            <br />
+            {/* <br />
             <hr />
             <h3 className="title-100">Connect with Ms. Shikha Jain Admission Counsellor </h3>
             <p>
@@ -240,7 +240,7 @@ const NoidaBookAppointerment = () => {
               >
                 Book Now
               </a>
-            </div>
+            </div> */}
             <br />
             <hr />
             <h3 className="title-100">
