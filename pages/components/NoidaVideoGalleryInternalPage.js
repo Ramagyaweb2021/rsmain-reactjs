@@ -2257,6 +2257,76 @@ const NoidaVideoGalleryInternalPage = () => {
     },
     // *********************************************Video gallery for Evolve Video
     {
+      src: 'https://img.youtube.com/vi/VyfJG7YuEjg/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: 'VyfJG7YuEjg'
+    },
+    {
+      src: 'https://img.youtube.com/vi/2e2DOFmZ_9k/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: '2e2DOFmZ_9k'
+    },
+    {
+      src: 'https://img.youtube.com/vi/0akzy6gggbw/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: '0akzy6gggbw'
+    },
+    {
+      src: 'https://img.youtube.com/vi/Ou21CxeNAOc/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: 'Ou21CxeNAOc'
+    },
+    {
+      src: 'https://img.youtube.com/vi/kci02FLSBuE/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: 'kci02FLSBuE'
+    },
+    {
+      src: 'https://img.youtube.com/vi/kdcpUpweYks/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: 'kdcpUpweYks'
+    },
+    {
+      src: 'https://img.youtube.com/vi/RVLJALhxDk8/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: 'RVLJALhxDk8'
+    },
+    {
+      src: 'https://img.youtube.com/vi/Xc7_6D51nI4/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: 'Xc7_6D51nI4'
+    },
+    {
+      src: 'https://img.youtube.com/vi/TSCp6Mkl8gc/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: 'TSCp6Mkl8gc'
+    },
+    {
+      src: 'https://img.youtube.com/vi/RVLJALhxDk8/hqdefault.jpg',
+      title: 'Ramagya School Gallery',
+      category: 'Evolve Video',
+      type: 'video',
+      videoId: 'RVLJALhxDk8'
+    },
+    {
       src: 'https://img.youtube.com/vi/LDU4HW21z4Q/hqdefault.jpg',
       title: 'Ramagya School Gallery',
       category: 'Evolve Video',
