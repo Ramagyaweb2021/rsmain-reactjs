@@ -216,31 +216,29 @@ const NoidaBookAppointerment = () => {
                 Book Now
               </a>
             </div>
-            {/* <br />
+            <br />
             <hr />
-            <h3 className="title-100">Connect with Ms. Shikha Jain Admission Counsellor </h3>
+            <h3 className="title-100">Connect With Ms. Shefali Admissions Head</h3>
             <p>
-              Looking forward to having direct communication with the Admission Counsellor
-              regarding your child?
+            Looking forward to having direct communication with the Admissions Head regarding your child?
             </p>
             <p>
-              Now book a slot and get all your child-related queries resolved in a go!
+            Now book a slot and get all your child-related queries resolved in a go!
             </p>
             <p>
               <b>
-                The availability of the Admission Counsellor Ms. Shikha Jain is subject to
-                availability. Kindly try again if the slot is not available.
+              The availability of the Admissions Head Ms. Shefali is subject to availability. Kindly try again if the slot is not available.
               </b>
             </p>
             <div className="btn-part">
               <a
                 className="btn custom-btn"
-                href="https://calendly.com/admissions-appointmentext/30min"
+                href="https://calendly.com/interaction-ext/30min"
                 target={0}
               >
                 Book Now
               </a>
-            </div> */}
+            </div>
             <br />
             <hr />
             <h3 className="title-100">
