@@ -22,8 +22,8 @@ const ContactUs = () => {
         "admissions@ramagyaschool.com",
         "principal@ramagyaschool.com",
         "recruitment@ramagyagroup.com",
-        "pr@ramagyagroup.com",
-        "sports@ramagyagroup.com",
+        // "pr@ramagyagroup.com",
+        // "sports@ramagyagroup.com",
       ],
     },
     {
@@ -37,8 +37,8 @@ const ContactUs = () => {
         "admissions.noidaext@ramagyaschool.com",
         "principal.ext@ramagyaschool.com",
         "recruitment@ramagyagroup.com",
-        "pr@ramagyagroup.com",
-        "sports@ramagyagroup.com",
+        // "pr@ramagyagroup.com",
+        // "sports@ramagyagroup.com",
       ],
     },
     {
@@ -50,8 +50,8 @@ const ContactUs = () => {
         "admissions.greaternoida@ramagyaschool.com",
         "principal.greaternoida@ramagyaschool.com",
         "recruitment@ramagyagroup.com",
-        "pr@ramagyagroup.com",
-        "sports@ramagyagroup.com",
+        // "pr@ramagyagroup.com",
+        // "sports@ramagyagroup.com",
       ],
     },
     {
@@ -63,8 +63,8 @@ const ContactUs = () => {
         "admissions.dadri@ramagyaschool.com",
         "principal.dadri@ramagyaschool.com",
         "recruitment@ramagyagroup.com",
-        "pr@ramagyagroup.com",
-        "sports@ramagyagroup.com",
+        // "pr@ramagyagroup.com",
+        // "sports@ramagyagroup.com",
       ],
     },
   ];

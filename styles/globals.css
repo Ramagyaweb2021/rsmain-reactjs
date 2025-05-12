@@ -380,6 +380,8 @@ a:hover {
 .enquire-lebel{
   font-weight: 700;
   font-family: var(--font-family-text);
+  white-space: nowrap;
+    display: inline-block;
 }
 .modal-content {
   background-color: #fff;

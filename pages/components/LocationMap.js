@@ -27,7 +27,7 @@ const LocationMap = () => {
       name: 'Greater Noida',
       key: 'gr-noida',
       mapLink:
-        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112137.1660648993!2d77.38040246359844!3d28.561160170907144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea6c1c6e153d%3A0x28d0f1f6940cdb66!2sRAMAGYA%20WORLD%20SCHOOL!5e0!3m2!1sen!2sin!4v1681474175304!5m2!1sen!2sin',
+        'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d112179.14361474628!2d77.493035!3d28.521733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea8ca4bde643%3A0x1f87693104dcda1b!2sRamagya%20World%20School!5e0!3m2!1sen!2sus!4v1747031910014!5m2!1sen!2sus"',
     },
     {
       name: 'Dadri',
