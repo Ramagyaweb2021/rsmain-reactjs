@@ -53,7 +53,71 @@ const Noida = () => {
         <meta name="twitter:title" content="Ramagya School Top Best CBSE Affiliated School Noida Sec 50" />
         <meta name="twitter:description" content="Ramagya School Noida, ranked among the top CBSE Affiliated schools in Noida Sec 50. Offering academic excellence, modern infrastructure. Enroll today!" />
         <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Ramagya School Noida",
+            "alternateName": "Ramagya School Noida Sector 50",
+            "logo": "https://ramagyaschool.com/_next/image?url=%2Fimages%2Fmain-webiste-logo%2Flogo-1.webp&w=384&q=75",
+            "image": "https://ramagyaschool.com/_next/image?url=%2Fimages%2Fmain-webiste-logo%2Flogo-1.webp&w=384&q=75",
+            "@id": "https://ramagyaschool.com/",
+            "url": "https://ramagyaschool.com/noida",
+            "telephone": "+91-8010333555",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "E-7, E Block, Sector 50",
+              "addressLocality": "Noida",
+              "addressRegion": "Uttar Pradesh",
+              "postalCode": "201301",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 28.593349,
+              "longitude": 77.315857
+            },
+            "priceRange": "$$",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday"
+                ],
+                "opens": "09:00",
+                "closes": "16:00"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/RamagyaSchoolNoida/",
+              "https://x.com/ramagya_school",
+              "https://www.instagram.com/ramagya.school/",
+              "https://www.youtube.com/c/RamagyaSchoolNoida50",
+              "https://in.linkedin.com/school/ramagya-school/"
+            ]
+          })}}
+        />
 
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ramagyaschool.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Ramagya School Noida Sec 50", "item": "https://ramagyaschool.com/noida" },
+              { "@type": "ListItem", "position": 3, "name": "Ramagya School Greater Noida", "item": "https://ramagyaschool.com/greater-noida" },
+              { "@type": "ListItem", "position": 4, "name": "Ramagya School Dadri", "item": "https://ramagyaschool.com/dadri" },
+              { "@type": "ListItem", "position": 5, "name": "Ramagya School Noida Extension", "item": "https://ramagyaschool.com/noida-extension" }
+            ]
+          })}}
+        />
       </Head>
       <HeaderNoida/>
       {/* <OfferPopupMainNoida/> */}
