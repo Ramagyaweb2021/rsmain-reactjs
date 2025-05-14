@@ -2,7 +2,7 @@ import React from 'react';
 
 const resultsData = [
   {
-    title: "CBSE – X Class - 2024",
+    title: "CBSE – X Class",
     highestScore: "99%",
     highestScoreWidth: "99%",
     passResults: "100%",
@@ -11,7 +11,7 @@ const resultsData = [
     scoringAbove90Width: "48%",
   },
   {
-    title: "CBSE – XII Class - 2024",
+    title: "CBSE – XII Class",
     highestScore: "95%",
     highestScoreWidth: "95%",
     passResults: "100%",
@@ -31,7 +31,7 @@ const NoidaStupendousResults = () => {
               <br />
               <h2 className="title-100">STUPENDOUS ACADEMIC RESULTS YET ANOTHER YEAR!</h2>
               <p>
-                School feels extremely proud to announce the CBSE (Class XII & X) results - 2024 and that we achieved a 100% pass result. Our
+                School feels extremely proud to announce the CBSE (Class XII & X) results and that we achieved a 100% pass result. Our
                 students achieve more than they may have thought possible and their academic results reflect our shared commitment to excellence in this
                 area.
               </p>

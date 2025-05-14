@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Image from "next/image";
 
 const DadriAcademicsThumbnailResults = () => {
-  const [activeYear, setActiveYear] = useState("2024-25");
+  const [activeYear, setActiveYear] = useState("2023-24");
 
   const years = ["2023-24", "2024-25"];
 
@@ -17,12 +17,9 @@ const DadriAcademicsThumbnailResults = () => {
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r12th/1.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r12th/2.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r12th/3.webp",
+         
         ],
-        "2024-25": [
-          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r12th/2024-2025/1.webp",
-          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r12th/2024-2025/2.webp",
-          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r12th/2024-2025/3.webp",
-        ],
+        "2024-25": [],
       },
     },
     {
@@ -33,12 +30,16 @@ const DadriAcademicsThumbnailResults = () => {
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/1.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/2.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/3.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/4.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/5.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/6.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/7.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/8.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/9.webp",
+       
+         
         ],
-        "2024-25": [
-          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/2024-2025/1.webp",
-          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/2024-2025/2.webp",
-          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/dadri/r10th/2024-2025/3.webp",
-        ],
+        "2024-25": [],
       },
     },
   ];
@@ -53,6 +54,7 @@ const DadriAcademicsThumbnailResults = () => {
                 key={year}
                 className={`btn mx-2 ${activeYear === year ? "btn-warning" : "btn-outline-warning"}`}
                 onClick={() => setActiveYear(year)}
+                disabled={year === "2024-25"}
               >
                 {year}
               </button>
@@ -70,21 +72,27 @@ const DadriAcademicsThumbnailResults = () => {
                     </div>
                     <div className="row py-1">
                       {(category.toppers[activeYear] || []).map((topper, index) => (
-                        <div
-                          key={`category-${categoryIndex}-topper-${index}`}
-                          className="col-6 col-md-4 mb-3 item"
-                        >
-                          <div
-                            className="box"
-                            style={{
-                              borderRight: "1px solid #67676712",
+                        <div key={`category-${categoryIndex}-topper-${index}`} className="col-6 col-md-4 mb-3 item">
+                          <div className="box" style={{ 
+                              borderRight: "1px solid #67676712", 
                               backgroundColor: "#f8f9fa",
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                              height: "100%",
-                            }}
-                          >
+                              display: "flex", 
+                              justifyContent: "center", 
+                              alignItems: "center", 
+                              height: "100%" 
+                            }}>
+                              <Image
+                                className="rounded-thumbnail"
+                                src={topper}
+                                width={280}
+                                height={230}
+                                priority
+                                alt={`Topper ${index + 1}`}
+                                style={{width:"100%", height:"auto"}}
+                              />
+                            </div>
+
+                          {/* <div className="box" style={{ borderRight: "1px solid #67676712" }}>
                             <Image
                               className="rounded-thumbnail"
                               src={topper}
@@ -92,9 +100,8 @@ const DadriAcademicsThumbnailResults = () => {
                               height={230}
                               priority
                               alt={`Topper ${index + 1}`}
-                              style={{ width: "100%", height: "auto" }}
                             />
-                          </div>
+                          </div> */}
                         </div>
                       ))}
                     </div>

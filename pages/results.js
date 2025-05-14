@@ -134,7 +134,6 @@ const Results = () => {
               <div className="filter-text text-center">
                 <h2 className='fw-100'>Select a branch</h2>
                 {/* <p>Select a branch below to view the results specific to that location.</p> */}
-
                 <select
                   value={selectedBranch}
                   onChange={(e) => setSelectedBranch(e.target.value)}

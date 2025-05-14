@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const NoidaTableResultData = () => {
-  const [activeYear, setActiveYear] = useState("2023-24");
+  const [activeYear, setActiveYear] = useState("2024-25");
 
   const years = ["2023-24", "2024-25"];
 
@@ -30,6 +30,20 @@ const NoidaTableResultData = () => {
         { subject: "Science", name: "Sanchit Raj", marks: "100" },
       ],
     },
+    "2024-25": {
+      schoolToppers12: [
+        { rank: "I", name: "Sanjana Swain", marks: "95%" },
+      ],
+      schoolToppers10: [
+        { rank: "I", name: "Sanjana Swain", marks: "95%" },
+      ],
+      subjectToppers12: [
+        { rank: "I", name: "Sanjana Swain", marks: "95%" },
+      ],
+      subjectToppers10: [
+        { rank: "I", name: "Sanjana Swain", marks: "95%" },
+      ], // Added this
+    },
   };
 
   return (
@@ -40,9 +54,10 @@ const NoidaTableResultData = () => {
         {years.map((year) => (
           <button
             key={year}
-            className={`btn mx-2 ${activeYear === year ? "btn-warning" : "btn-outline-warning"}`}
+            className={`btn mx-2 ${
+              activeYear === year ? "btn-warning" : "btn-outline-warning"
+            }`}
             onClick={() => setActiveYear(year)}
-            disabled={year === "2024-25"} // Disable the button for 2024-25
           >
             {year}
           </button>
@@ -60,7 +75,7 @@ const NoidaTableResultData = () => {
             </tr>
           </thead>
           <tbody>
-            {data[activeYear]?.schoolToppers12?.map((item, idx) => (
+            {data[activeYear].schoolToppers12.map((item, idx) => (
               <tr key={idx}>
                 <td>{item.rank}</td>
                 <td>{item.name}</td>
@@ -82,7 +97,7 @@ const NoidaTableResultData = () => {
             </tr>
           </thead>
           <tbody>
-            {data[activeYear]?.schoolToppers10?.map((item, idx) => (
+            {data[activeYear].schoolToppers10.map((item, idx) => (
               <tr key={idx}>
                 <td>{item.rank}</td>
                 <td>{item.name}</td>
@@ -106,7 +121,7 @@ const NoidaTableResultData = () => {
             </tr>
           </thead>
           <tbody>
-            {data[activeYear]?.subjectToppers12?.map((item, idx) => (
+            {data[activeYear].subjectToppers12.map((item, idx) => (
               <tr key={idx}>
                 <td>{item.subject}</td>
                 <td>{item.name}</td>
@@ -128,7 +143,7 @@ const NoidaTableResultData = () => {
             </tr>
           </thead>
           <tbody>
-            {data[activeYear]?.subjectToppers10?.map((item, idx) => (
+            {data[activeYear].subjectToppers10.map((item, idx) => (
               <tr key={idx}>
                 <td>{item.subject}</td>
                 <td>{item.name}</td>
