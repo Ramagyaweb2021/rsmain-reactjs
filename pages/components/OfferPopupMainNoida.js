@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Modal} from 'react-bootstrap';
-// import Image from 'next/image';
-// import Link from 'next/link';
+import Image from 'next/image';
+import Link from 'next/link';
 const OfferPopupMainNoida = () => {
     const [show, setShow] = useState(false);
 
@@ -16,26 +16,18 @@ const OfferPopupMainNoida = () => {
     }, []);
 
     const handleClose = () => setShow(false);
-
-    return (
-        <Modal show={show} onHide={handleClose} centered className="custom-modal" style={{backgroundColor:"transparent", zIndex:"1111"}}>
-            <Modal.Header closeButton style={{backgroundColor:"#fff"}}>
-                <Modal.Title style={{color:"#274C77", fontWeight:"600", fontSize:"25px", textAlign:"center"}}>ENQUIRE NOW!</Modal.Title>
-                {/* <Image src="/images/close.webp" alt="Close" width={64} height={64}  className="btn-close btn-close-yellow"/> */}
-            </Modal.Header>
-            <Modal.Body style={{backgroundColor:"#fff"}}>
-            <iframe src="https://forms.edunexttechnologies.com/forms/ramagya/main-branch/" width="100%" height="400"></iframe>
-               {/* <Link href='#'><Image src='https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/website-popup/rs-noida-website-scholarship-popup.webp' alt="" width={800} height={400} className="no-padding" /></Link> */}
-            </Modal.Body>
-            {/* <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Take the Offer
-                </Button>
-            </Modal.Footer> */}
-        </Modal>
+        return (
+            <Modal show={show} onHide={handleClose} centered className="custom-modal" style={{ backgroundColor: "transparent", zIndex: "1111" }}>
+                <Modal.Header style={{ backgroundColor: "#fff" }}>
+                    <Modal.Title style={{ color: "#274C77", fontWeight: "500", fontSize: "25px", textAlign: "center" }}>Ramagya&apos;s Summer Camp</Modal.Title>
+                    <button type="button" className="btn-close" aria-label="Close" onClick={handleClose}></button>
+                </Modal.Header>
+                <Modal.Body style={{ backgroundColor: "#fff" }}>
+                    <Link href='https://bit.ly/rsnoidasummercamp' target="_blank" rel="noopener noreferrer">
+                        <Image src='/images/summer-camp.jpeg' alt="" width={800} height={400} className="no-padding" />
+                    </Link>
+                </Modal.Body>
+            </Modal>
     );
 };
 

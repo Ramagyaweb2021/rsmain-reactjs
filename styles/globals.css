@@ -1442,8 +1442,8 @@ ul {
   margin: 0 auto;
 }
 .custom-modal .modal-content {
-  width: 500px;
-  /* width: 800px; */
+  /* width: 500px; */
+  width: 800px;
 }
 .btn-close {
   width: 35px;
