@@ -177,7 +177,7 @@ const HomeInnovateSection = () => {
                     
                     <div className="col-6 col-md-3 d-flex align-items-stretch g-0">
                     <div className="col-12 p-3">
-                        <h5 className="feature-title">STEAM</h5>
+                        <h5 className="feature-title">STREAM</h5>
                         <p className="feature-description">
                           Cultivates entrepreneurial skills and innovative thinking, preparing students to transform ideas into reality for future industries.
                         </p>

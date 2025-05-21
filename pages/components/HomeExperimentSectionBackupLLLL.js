@@ -457,7 +457,7 @@ const HomeExperimentSection = () => {
                       <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                        <Image
                           src="/images/slider/experiment/steam.webp"
-                          alt="steam"
+                          alt="stream"
                           width={287}
                           height={200}
                           className="card-img-top"
@@ -467,7 +467,7 @@ const HomeExperimentSection = () => {
                        <div className="box">
                           <div className="flex">
                           <h6 className="colr1">STREAM</h6>
-                          <p>Hands-on experiments and STEAM projects boost critical thinking, while the Computer Lab enhances.</p>
+                          <p>Hands-on experiments and STREAM projects boost critical thinking, while the Computer Lab enhances.</p>
                           </div>
                         </div>
                       </div>

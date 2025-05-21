@@ -44,7 +44,7 @@ const MobileSectionComponent = () => {
     },
     {
       title: 'STEM',
-      description: 'Hands-on experiments and STEAM projects boost critical thinking, while the Computer Lab enhances coding skills and technological fluency.',
+      description: 'Hands-on experiments and STREAM projects boost critical thinking, while the Computer Lab enhances coding skills and technological fluency.',
       imgSrc: '/images/experiments/jadu-gyan.webp', // Replace with actual path
     },
   ];

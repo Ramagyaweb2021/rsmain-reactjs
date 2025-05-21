@@ -108,7 +108,7 @@ const Innovate = () => {
 
         <p>
           Showcasing cutting-edge programs designed to ignite creativity, critical thinking, and problem-solving skills in students.
-          <b>Mindbox,</b> a program that integrates STEAM subjects with hands-on activities and projects, encouraging students to solve real-world problems and think creatively.<br></br>
+          <b>Mindbox,</b> a program that integrates STREAM subjects with hands-on activities and projects, encouraging students to solve real-world problems and think creatively.<br></br>
           <b> Robotics & Design Lab </b> features robotics kits, 3D printers, and CAD software, offering students practical experience in robotics and design. Guided by experts, students work on real-world projects, preparing them for future STEM careers.<br></br>
           <b>STREAM</b> Innovation and Creation program enables students to turn ideas into reality through interdisciplinary projects. This initiative fosters entrepreneurial skills and innovative thinking, equipping students for future industries.<br></br>
           <b>Design Thinking</b> program teaches students to approach problems creatively and systematically. By exploring real-world issues through cultural and sensory perspectives, students develop effective, innovative solutions.

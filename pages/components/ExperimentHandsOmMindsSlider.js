@@ -32,7 +32,7 @@ const events = [
   {
     title: "STREAM",
     description:
-      "Hands-on experiments and STEAM projects boost critical thinking, while the Computer Lab enhances coding skills and technological fluency.",
+      "Hands-on experiments and STREAM projects boost critical thinking, while the Computer Lab enhances coding skills and technological fluency.",
     image: "/images/experiment/internal-category-1/55.webp",
   },
 ];
