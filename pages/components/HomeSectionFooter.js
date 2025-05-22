@@ -32,9 +32,9 @@ const HomeSectionFooter = () => {
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">For Enquiries</p>
                 <p>Contact No. <a href="tel:+918010333555"><i className="bi bi-telephone-fill"></i> +91-8010 333 555</a></p>
-                <p className="footer-heading">Social</p>
+                {/* <p className="footer-heading">Social</p> */}
                 {/* <hr/> */}
-                  <div className="social-icons">
+                  {/* <div className="social-icons">
                    <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", gap: "15px" }}>
                     <li>
                       <a
@@ -98,7 +98,7 @@ const HomeSectionFooter = () => {
                     </li>
                   </ul>
                  
-                </div>
+                </div> */}
                 <br></br>
                 {/* <hr/> */}
                 <p className="footer-heading">Our Schools</p>
