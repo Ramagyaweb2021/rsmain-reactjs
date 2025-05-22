@@ -434,13 +434,23 @@ const HomeExperimentSection = () => {
                      <div className="row slide-content">
                       <div className="col-6 col-md-6 col-lg-6 image-wrapper g-1">
                       <div>
-                      <Image
+                        <Image 
+                          src="/images/slider/experiment/character-enhancement.webp"
+                          alt="film-making"
+                          width={630}
+                          height={155}
+                          className="card-img-top"
+                          loading="lazy"
+                          sizes="(max-width: 768px) 100vw, 630px"
+                        />
+
+                      {/* <Image
                         src="/images/slider/experiment/character-enhancement.webp"
                         alt="character-enhancement"
-                        width={460}
+                        width={307}
                         height={155}
                         className="card-img-top"
-                      />
+                      /> */}
                       </div>
                       </div>
                       <div className="col-6 col-md-6 col-lg-6 text-wrapper g-1">

@@ -7,6 +7,7 @@ import BackToTop from './BacktoTopButton';
 import FloatingWidgetNoida from './FloatingWidgetNoida';
 import Enquirypopup from './Enquirypopup';
 import Typebot from './Typebot';
+import BottomBarNoida from './BottomBarNoida';
 // import FloatingWidget from './FloatingWidget';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faWhatsapp} from '@fortawesome/free-brands-svg-icons';
@@ -170,11 +171,12 @@ const FooterNoida = () => {
          <FloatingWidgetNoida/>
          <Enquirypopup />
          <Typebot/>  
+         <BottomBarNoida/>
          <BackToTop/>
            <hr/><br/>
            <row className="footer-bottom-internal">
               <col-md-12 className="text-center">
-                <p style={{textAlign:"center"}}>Copyright 2025. Sai Chhaya Educational And Welfare Society | Designed & Marketed by <a href="#">Ramagya Digital</a></p>
+                <p style={{textAlign:"center", fontSize:"12px"}}>Copyright 2025. Sai Chhaya Educational & Welfare Society | Designed & Marketed by <a href="#">Ramagya Digital</a></p>
               </col-md-12>
         </row>
            </div>

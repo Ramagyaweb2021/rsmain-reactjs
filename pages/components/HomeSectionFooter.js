@@ -3,6 +3,7 @@ import React from 'react';
 import "bootstrap-icons/font/bootstrap-icons.css";
 // import { Row, Col, Form} from 'react-bootstrap';
 import Link from 'next/link';
+import BottomBarNoida from './BottomBarNoida';
 // import FloatingWidget from './FloatingWidget';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faWhatsapp} from '@fortawesome/free-brands-svg-icons';
@@ -162,19 +163,17 @@ const HomeSectionFooter = () => {
            </div>
            {/* <FloatingWidget/> */}
            {/* <hr/> */}
+           <BottomBarNoida/>
            <row className="footer-bottom">
                   <col-md-12 className="text-center">
-                  <p style={{textAlign:"center"}}>Copyright 2025. Sai Chhaya Educational And Welfare Society | Designed & Marketed by Ramagya Digital</p>
+                  <p style={{textAlign:"center", fontSize:"12px"}}>Copyright 2025. Sai Chhaya Educational & Welfare Society | Designed & Marketed by Ramagya Digital</p>
                   </col-md-12>
               </row>
               
            </div>
       
           </div>
-
-         
-
-       
+  
     </>
   )
 }

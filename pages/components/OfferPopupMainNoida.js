@@ -24,7 +24,16 @@ const OfferPopupMainNoida = () => {
                 </Modal.Header>
                 <Modal.Body style={{ backgroundColor: "#fff" }}>
                     <Link href='https://bit.ly/rsnoidasummercamp' target="_blank" rel="noopener noreferrer">
-                        <Image src='/images/summer-camp.jpeg' alt="" width={800} height={400} className="no-padding" />
+                    <Image 
+                        src="/images/summer-camp.jpeg" 
+                        alt="Summer Camp" 
+                        width={800} 
+                        height={400} 
+                        loading="lazy" 
+                        fetchPriority="low" 
+                        />
+
+                        {/* <Image src='/images/summer-camp.jpeg' alt="" width={800} height={400} className="no-padding" /> */}
                     </Link>
                 </Modal.Body>
             </Modal>

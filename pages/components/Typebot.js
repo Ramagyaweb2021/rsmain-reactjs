@@ -18,7 +18,7 @@ const Typebot = () => {
         },
         theme: {
           button: {
-            backgroundColor: '#02837a',
+            backgroundColor: '#002C39',
             customIconSrc:
               'https://storage.ai6i.com/typebot/public/workspaces/clweoxl0e0005si8l899oscgj/xbots/clzfyw74e001gfpe2y0ceedj1/hostAvatar?v=1722800938744',
           },

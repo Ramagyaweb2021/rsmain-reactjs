@@ -3300,6 +3300,58 @@ hr {
   padding-top: 100px;
   padding-bottom: 120px;
 }
+/* Bottom bar section css */
+.fixed-btns-appbar {
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    border-bottom: .7rem solid var(--theme-primary-dark);
+    box-shadow: inset 0 -12px 14px .3px rgba(0, 0, 0, .3);
+}
+
+/* .fixed-btns-appbar {
+    pointer-events: none;
+} */
+.fixed-btns-appbar>div {
+    position: relative;
+    background: url(https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/bottombar/rectangle2.png) no-repeat bottom;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 4rem 5px;
+    margin-bottom: 0;
+}
+.fixed-btns-appbar li:first-child {
+    padding-right: .8rem;
+}
+.fixed-btns-appbar li {
+    border-color: var(--theme-warning) !important;
+}
+.ps-3 {
+    padding-left: 1rem !important;
+}
+.border-end {
+    border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+.fixed-btns-appbar a {
+    color: rgba(255, 255, 255, .932);
+}
+.fixed-btns-appbar img {
+    height: 1.8rem;
+    object-fit: contain;
+}
+.fixed-btns-appbar li:nth-child(2) {
+    padding: 0;
+}
+.fixed-btns-appbar li:nth-child(3) {
+    padding-left: .4rem;
+}
+
 /* .testimonial-item{
   min-height: 100px !important;
 } */
@@ -3919,6 +3971,9 @@ hr {
   .btn-float-enquire{
     z-index: 111;
   }
+  .home-branch-images{
+    height: 90px;
+  }
   #infographics {
     margin-top: -1px !important;
   }
@@ -4302,8 +4357,12 @@ hr {
   .footer-bottom {
     position: relative;
   }
+  /* .footer-bottom p{
+    font-size: 12px;
+  } */
   .my-custom-footer {
-    padding: 25px !important;
+    padding: 35px 0 40px 10px !important;
+    /* padding: 25px !important; */
   }
   .learn h1,
   .explore h1,

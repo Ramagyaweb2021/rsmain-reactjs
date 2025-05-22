@@ -8,6 +8,7 @@ import HeaderNoida from './components/HeaderNoida';
 import NoidaScrollspyHomePageTabination from './components/NoidaScrollspyHomePageTabination';
 // import Script from 'next/script';
 import OfferPopupMainNoida from './components/OfferPopupMainNoida';
+// import BottomBarNoida from './components/BottomBarNoida';
 
 // Dynamically import WOW.js to avoid server-side issues
 const WOW = dynamic(() => import('wowjs'), { ssr: false });
@@ -161,6 +162,7 @@ const Noida = () => {
         </section> */}
       <AllVerticalScrollspyMenu/>
       <NoidaScrollspyHomePageTabination/>
+      {/* <BottomBarNoida/> */}
       <FooterNoida/>
     </>
   );

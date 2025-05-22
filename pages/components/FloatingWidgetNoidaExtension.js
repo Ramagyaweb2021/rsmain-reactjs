@@ -10,7 +10,7 @@ const FloatingWidgetNoida = () => {
         .floating-widget {
           position: fixed;
           bottom: 20px;
-          left: 20px;
+          left: 5px;
           z-index: 9999;
           display: flex;
           flex-direction: column;
@@ -108,7 +108,7 @@ const FloatingWidgetNoida = () => {
       <div className="floating-widget">
         <div className="toggle-container" onClick={() => setIsOpen(!isOpen)}>
           <button className="toggle-btn">{isOpen ? '×' : <FaHeadphones />}</button>
-          <span className="toggle-label">Quick Contact</span>
+          {/* <span className="toggle-label">Quick Contact</span> */}
         </div>
 
         {isOpen && ( // Render only when open
