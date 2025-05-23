@@ -131,7 +131,7 @@ const HeaderDadri = () => {
             <ul className={`dropdown-menu ${dropdownOpen && isMobile ? 'show' : ''}`}>
             {/* <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}> */}
               <li>
-                <a className="dropdown-item" href="https://ramagyanoida.simplyadmission.com/clp/admission" target="_blank">
+                <a className="dropdown-item" href="https://forms.edunexttechnologies.com/forms/ramagyanoida/Registration-new/" target="_blank">
                   Noida
                 </a>
               </li>

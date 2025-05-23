@@ -1,6 +1,6 @@
 import React from 'react';
 // import Image from 'next/image';
-import "bootstrap-icons/font/bootstrap-icons.css";
+// import "bootstrap-icons/font/bootstrap-icons.css";
 // import { Row, Col, Form} from 'react-bootstrap';
 import Link from 'next/link';
 import BottomBarNoida from './BottomBarNoida';
@@ -20,18 +20,18 @@ const HomeSectionFooter = () => {
             <div className="col-md-3 col-sm-6 col-xs-12">
               {/* <Image src="https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/icons/logo.webp" alt="Ramagya school noida logo" width={250} height={52}/> */}
               <p className="footer-heading">Address</p>
-              <p><i className="bi bi-geo-alt-fill"></i> E-7, E Block, Sector 50, Noida, Uttar Pradesh 201301  
+              <p> E-7, E Block, Sector 50, Noida, Uttar Pradesh 201301  
                 </p>
                 <p className="footer-heading">Email id</p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:admissions@ramagyaschool.com"><i className="bi bi-envelope-fill"></i> admissions@ramagyaschool.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:principal@ramagyaschool.com"><i className="bi bi-envelope-fill"></i> principal@ramagyaschool.com</a></p>
-                <p style={{textTransform:"lowercase"}}><a href="mailto:recruitment@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> recruitment@ramagyagroup.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:admissions@ramagyaschool.com"> admissions@ramagyaschool.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:principal@ramagyaschool.com"> principal@ramagyaschool.com</a></p>
+                <p style={{textTransform:"lowercase"}}><a href="mailto:recruitment@ramagyagroup.com"> recruitment@ramagyagroup.com</a></p>
                 {/* <p style={{textTransform:"lowercase"}}><a href="mailto:pc@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> pc@ramagyagroup.com</a></p>
                 <p style={{textTransform:"lowercase"}}><a href="mailto:sports@ramagyagroup.com"><i className="bi bi-envelope-fill"></i> sports@ramagyagroup.com</a></p> */}
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12">
                 <p className="footer-heading">For Enquiries</p>
-                <p>Contact No. <a href="tel:+918010333555"><i className="bi bi-telephone-fill"></i> +91-8010 333 555</a></p>
+                <p>Contact No. <a href="tel:+918010333555"> +91-8010 333 555</a></p>
                 {/* <p className="footer-heading">Social</p> */}
                 {/* <hr/> */}
                   {/* <div className="social-icons">
