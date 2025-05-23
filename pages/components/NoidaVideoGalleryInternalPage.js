@@ -777,13 +777,13 @@ const NoidaVideoGalleryInternalPage = () => {
       type: 'video',
       videoId: 'aD23d8kxgOQ'
     },
-    {
-      src: 'https://img.youtube.com/vi/hk_ceaFOzSY/hqdefault.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Beyond Academics',
-      type: 'video',
-      videoId: 'hk_ceaFOzSY'
-    },
+    // {
+    //   src: 'https://img.youtube.com/vi/hk_ceaFOzSY/hqdefault.jpg',
+    //   title: 'Ramagya School Gallery',
+    //   category: 'Beyond Academics',
+    //   type: 'video',
+    //   videoId: 'hk_ceaFOzSY'
+    // },
     {
       src: 'https://img.youtube.com/vi/XILCe4xVSJw/hqdefault.jpg',
       title: 'Ramagya School Gallery',
@@ -1257,13 +1257,13 @@ const NoidaVideoGalleryInternalPage = () => {
       type: 'video',
       videoId: 'oBqzCjDguFo'
     },
-    {
-      src: 'https://img.youtube.com/vi/pPqCR32_nk4/hqdefault.jpg',
-      title: 'Ramagya School Gallery',
-      category: 'Wellness & Support',
-      type: 'video',
-      videoId: 'pPqCR32_nk4'
-    },
+    // {
+    //   src: 'https://img.youtube.com/vi/pPqCR32_nk4/hqdefault.jpg',
+    //   title: 'Ramagya School Gallery',
+    //   category: 'Wellness & Support',
+    //   type: 'video',
+    //   videoId: 'pPqCR32_nk4'
+    // },
     {
       src: 'https://img.youtube.com/vi/CEbwZBE0LOU/hqdefault.jpg',
       title: 'Ramagya School Gallery',
