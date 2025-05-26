@@ -22,10 +22,22 @@ const NoidaIITThumbnailResults = () => {
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/2024-2025/1.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/2024-2025/2.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/2024-2025/3.webp",
-          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/2024-2025/4.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/2024-2025/4.webp",     
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/1.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/2024-2025/5.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/2024-2025/6.webp",
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/2024-2025/7.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/2.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/3.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/4.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/5.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/6.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/7.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/8.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/9.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/10.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/11.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r12th/12th-class-toppers/12.webp",
         ],
       },
     },
@@ -42,7 +54,26 @@ const NoidaIITThumbnailResults = () => {
           "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/7.webp",
         ],
         "2024-25": [
-          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/1.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/1.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/2.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/3.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/4.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/5.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/6.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/7.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/8.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/9.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/10.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/11.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/12.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/13.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/14.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/15.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/16.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/17.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/18.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/19.webp",
+          "https://rsschoolportalassets.blr1.cdn.digitaloceanspaces.com/images/results/noida/r10th/2024-2025/20.webp",
         ],
       },
     },
@@ -71,9 +102,9 @@ const NoidaIITThumbnailResults = () => {
               <div className="container">
                 {categories.map((category, categoryIndex) => {
                   // Skip rendering if it's Class 10 and the active year is 2024-25
-                  if (category.heading === "ACADEMIC RESULTS – CLASS 10" && activeYear === "2024-25") {
-                    return null;
-                  }
+                  // if (category.heading === "ACADEMIC RESULTS – CLASS 10" && activeYear === "2024-25") {
+                  //   return null;
+                  // }
 
                   return (
                     <div key={`category-${categoryIndex}`}>
