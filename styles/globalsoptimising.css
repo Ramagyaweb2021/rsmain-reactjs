@@ -413,14 +413,14 @@ span.highlight-lg::after {
   background-size: cover;
   z-index: -1;
 } */
-.btn-npf {
+/* .btn-npf {
   width: 60%;
   color: #fff;
   background-image: linear-gradient(to right, #204e5c, var(--color-set-yellow));
 }
 .btn-npf:hover {
   background-image: linear-gradient(to right, #ffffff00, #ffd4006b);
-}
+} */
 .explore-menu {
   background-color: var(--color-set-green);
   position: static;
@@ -430,7 +430,7 @@ span.highlight-lg::after {
   /* margin-top: -48px; */
   z-index: 999;
 }
-.menu-visible {
+/* .menu-visible {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
@@ -438,7 +438,7 @@ span.highlight-lg::after {
 .menu-hidden {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-}
+} */
 
 /* .container, .row, .col-12 {
   margin: 0;
@@ -449,7 +449,7 @@ span.highlight-lg::after {
   font-family: var(--font-family-heading);
   letter-spacing: 0.5px;
 }
-.justify-content-center.fixed-top {
+/* .justify-content-center.fixed-top {
   background-color: var(--color-set-green) !important;
   border-bottom: 1px solid var(--color-set-green);
   border-top: 1px solid var(--color-set-green);
@@ -460,7 +460,7 @@ span.highlight-lg::after {
 .position-r {
   position: relative;
   overflow: hidden;
-}
+} */
 .learn h1,
 .explore h1,
 .innovate h1 {
@@ -531,7 +531,7 @@ span.highlight-lg::after {
   font-family: var(--font-family-text);
   font-size: 13px;
 }
-.explore-content {
+/* .explore-content {
   background-color: #e9f5f8;
   width: 65%;
   text-align: center;
@@ -560,7 +560,7 @@ span.highlight-lg::after {
 }
 .explore-content:hover p {
   color: #333;
-}
+} */
 .text-theme-color {
   color: var(--color-set-green) !important;
   font-size: 13px;
@@ -569,7 +569,7 @@ span.highlight-lg::after {
   color: var(--color-set-green);
   margin-top: 20px;
 }
-.learn-inner-links {
+/* .learn-inner-links {
   text-align: center;
 }
 ul {
@@ -627,7 +627,7 @@ ul {
   text-transform: uppercase;
   display: block;
   margin: 0 auto;
-}
+} */
 .learn .approach {
   padding-right: 0;
 }
@@ -700,7 +700,6 @@ ul {
   z-index: 1;
   font-size: 14px;
   font-weight: 500;
-  /* font-weight: 600; */
   line-height: 19.5px;
   text-align: center;
   text-transform: capitalize;
@@ -745,6 +744,7 @@ ul {
 .d-flex {
   display: flex !important;
 }
+/*************************************************************** yaha se css filter karna hai - MONDAY */
 .service_box.type_seven .content .left {
   padding-top: 1px;
   padding-right: 0;
