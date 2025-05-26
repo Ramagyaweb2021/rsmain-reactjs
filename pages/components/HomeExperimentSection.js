@@ -183,7 +183,7 @@ const HomeExperimentSection = () => {
                     <div className="col-6 col-md-2 col-lg-2 image-wrapper g-1">
                    <div>
                    <Image
-                        src="/images/slider/experiment/dance.webp"
+                        src="/images/slider/experiment/dance-latest.webp"
                         alt="dance"
                         width={460}
                         height={155}
