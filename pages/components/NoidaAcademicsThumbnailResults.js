@@ -81,7 +81,7 @@ const NoidaIITThumbnailResults = () => {
 
   return (
     <>
-      <div className="explore-tabination-internal-page-section">
+      <div className="explore-tabination-internal-page-section bg-color-gray">
         <Container className="explore-tabination-container my-5">
           <div className="d-flex justify-content-center my-3">
             {years.map((year) => (
@@ -110,7 +110,7 @@ const NoidaIITThumbnailResults = () => {
                     <div key={`category-${categoryIndex}`}>
                       <br />
                       <div className="sec-title3 text-center mb-45">
-                        <h3 className="text-center fw-bold">{category.heading}</h3>
+                        <h3 className="text-center fw-bold">🏆 {category.heading}</h3>
                         <hr />
                       </div>
                       <div className="row py-1">

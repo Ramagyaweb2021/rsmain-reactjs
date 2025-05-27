@@ -3461,6 +3461,42 @@ hr {
   .social-btn:hover::after {
     opacity: 1;
   }
+  /* Table css for result page */
+  .table th,
+    .table td {
+      vertical-align: middle;
+    }
+
+    .table thead th {
+      background-color: var(--color-set-green);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .table-hover tbody tr:hover {
+      background-color: #ffffff;
+    }
+
+    .badge.bg-success {
+      font-size: 0.9rem;
+      padding: 0.5em 0.75em;
+      border-radius: 8px;
+    }
+
+    .accordion-button:not(.collapsed) {
+      box-shadow: 0px -4px 0 0rem var(--color-set-yellow);
+      color: var(--bs-accordion-active-color);
+      background-color: var(--color-set-white);
+    }
+    .accordion-button:focus{
+          box-shadow: 0px -4px 0 0rem var(--color-set-yellow);
+          /* border-bottom: 2px solid var(--color-set-yellow); */
+    }
+    /* .bg-color-gray{
+      background:#dbe1e71a;
+      padding: 20px 0 20px 0;
+    } */
+
 /* .testimonial-item{
   min-height: 100px !important;
 } */

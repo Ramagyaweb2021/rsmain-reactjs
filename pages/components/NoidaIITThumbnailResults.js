@@ -60,7 +60,7 @@ const NoidaIITThumbnailResults = () => {
                 <>
                   <div className="sec-title3 text-center my-1 mt-3 mb-45">
                     <h3 className="text-center fw-bold">
-                      IIT JEE Mains & Advanced
+                      🏆 IIT JEE Mains
                     </h3>
                     {/* <p>ACHIEVEMENT OF TODAY IS A STEPPING STONE FOR THE FUTURE!</p> */}
                     <hr />
@@ -97,7 +97,7 @@ const NoidaIITThumbnailResults = () => {
                 <>
                       {/* IIT JEE Advanced */}
                       <div className="sec-title3 text-center my-1 mt-3 mb-45">
-                    <h3 className="text-center fw-bold">IIT JEE Advanced</h3>
+                    <h3 className="text-center fw-bold">🏆 IIT JEE Advanced</h3>
                     {/* <p>PERSISTENCE AND HARD WORK LEAD TO GREATNESS!</p> */}
                     <hr />
                   </div>
@@ -130,7 +130,7 @@ const NoidaIITThumbnailResults = () => {
                   </div>
                   {/* IIT JEE Mains */}
                   <div className="sec-title3 text-center my-1 mt-3 mb-45">
-                    <h3 className="text-center fw-bold">IIT JEE Mains</h3>
+                    <h3 className="text-center fw-bold">🏆 IIT JEE Mains</h3>
                     {/* <p>ACHIEVEMENT OF TODAY IS A STEPPING STONE FOR THE FUTURE!</p> */}
                     <hr />
                   </div>
