@@ -33,8 +33,16 @@ const BookList = () => {
                       <i className="bi bi-eye"></i>
                     </a> */}
                     <a href={pdfUrl} className="text-danger fs-5" target="_blank" rel="noopener noreferrer" download>
-                      <i className="bi bi-download"></i>
-                    </a>
+                      <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          
+                            <path d="M12 8C10.9 8 10 8.9 10 10V54C10 55.1 10.9 56 12 56H48C49.1 56 50 55.1 50 54V10C50 8.9 49.1 8 48 8H12Z" fill="#002c39" stroke="#002c39" stroke-width="2"/>
+                            <path d="M50 10V54H52C53.1 54 54 53.1 54 52V12C54 10.9 53.1 10 52 10H50Z" fill="#ffdf8b" stroke="#002c39" stroke-width="2"/>
+                            
+                          
+                            <path d="M32 22V40" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M24 32L32 40L40 32" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          </a>
                   </div>
                 </li>
               ))}
