@@ -151,7 +151,7 @@ const FooterNoida = () => {
                 </p>
                 <p>
                 <a
-                  href="https://drive.google.com/file/d/1lfATOrH9DYh3MfLTOXAo-wkeE4T-PVx0/view?usp=sharing"
+                  href="https://summercampnoida.ramagyaschool.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-3 bg-gradient-to-r from-[#EDD157] to-[#f4e27c] text-[#043B4A] font-bold text-lg rounded-full shadow-md hover:shadow-lg hover:from-[#f4e27c] hover:to-[#EDD157] transition-all duration-300 ease-in-out"
