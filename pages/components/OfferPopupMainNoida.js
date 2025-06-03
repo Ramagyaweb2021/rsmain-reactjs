@@ -23,7 +23,7 @@ const OfferPopupMainNoida = () => {
                     <button type="button" className="btn-close" aria-label="Close" onClick={handleClose}></button>
                 </Modal.Header>
                 <Modal.Body style={{ backgroundColor: "#fff" }}>
-                    <Link href='https://bit.ly/rsnoidasummercamp' target="_blank" rel="noopener noreferrer">
+                    <Link href='https://summercampnoida.ramagyaschool.com/' target="_blank" rel="noopener noreferrer">
                     <Image 
                         src="/images/summer-camp.jpeg" 
                         alt="Summer Camp" 
