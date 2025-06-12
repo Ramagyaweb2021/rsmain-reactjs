@@ -18,7 +18,7 @@ import HomeUpdatesSection from "./components/HomeUpdatesSection";
 import HomeAwardsSection from "./components/HomeAwardsSection";
 import HomeTestimonialSection from "./components/HomeTestimonialSection";
 import HomeSectionFooter from "./components/HomeSectionFooter";
-import OfferPopupMainNoida from "./components/OfferPopupMainNoida";
+// import OfferPopupMainNoida from "./components/OfferPopupMainNoida";
 //import 'animate.css';
 
 //const WOW = dynamic(() => import('wowjs'), { ssr: false });
@@ -120,7 +120,7 @@ export default function Home() {
         <meta name="twitter:description" content="Ramagya School, one of the Top 10 CBSE schools in Noida, is where your child’s journey to success begins. Apply in best school in Noida today for best start" />
         <meta name="twitter:image" content="/images/main-webiste-logo/logo-2.webp" />
       </Head>
-      <OfferPopupMainNoida/>
+      {/* <OfferPopupMainNoida/> */}
         {/* Only show Header when showMainMenu is false */}
         {!showMainMenu && <Header />}
 
