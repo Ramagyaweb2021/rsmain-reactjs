@@ -1,27 +1,27 @@
-import { useEffect, useState } from "react";
-//import dynamic from 'next/dynamic';
+// ... dynamic components 
+import dynamic from 'next/dynamic';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import ReactFullpage from "@fullpage/react-fullpage";
-import styles from "../styles/Home.module.css";
-import Header from "/pages/components/Header";
-import HeaderMainWebsite from "/pages/components/HeaderMainWebsite";
-import HomeVideoSection from './components/HomeVideoSection';
-import HomeSchoolBranchSection from './components/HomeSchoolBranchSection';
-import HomeExploreSection from "./components/HomeExploreSection";
-import HomeExperimentSection from "./components/HomeExperimentSection";
-import HomeInnovateSection from "./components/HomeInnovateSection";
-import HomeEvolveSection from "./components/HomeEvolveSection";
-import HomeLeadSection from "./components/HomeLeadSection";
-import HomeGallerySection from "./components/HomeGallerySection";
-import HomeDifferenceSection from "./components/HomeDifferenceSection";
-import HomeUpdatesSection from "./components/HomeUpdatesSection";
-import HomeAwardsSection from "./components/HomeAwardsSection";
-import HomeTestimonialSection from "./components/HomeTestimonialSection";
-import HomeSectionFooter from "./components/HomeSectionFooter";
-// import OfferPopupMainNoida from "./components/OfferPopupMainNoida";
-//import 'animate.css';
+import ReactFullpage from '@fullpage/react-fullpage';
+import styles from '../styles/Home.module.css';
 
-//const WOW = dynamic(() => import('wowjs'), { ssr: false });
+import Header from '/pages/components/Header';
+import HeaderMainWebsite from '/pages/components/HeaderMainWebsite';
+
+// Client-only sections (SSR disabled)
+const HomeVideoSection = dynamic(() => import('./components/HomeVideoSection'), { ssr: false });
+const HomeSchoolBranchSection = dynamic(() => import('./components/HomeSchoolBranchSection'), { ssr: false });
+const HomeExploreSection = dynamic(() => import('./components/HomeExploreSection'), { ssr: false });
+const HomeExperimentSection = dynamic(() => import('./components/HomeExperimentSection'), { ssr: false });
+const HomeInnovateSection = dynamic(() => import('./components/HomeInnovateSection'), { ssr: false });
+const HomeEvolveSection = dynamic(() => import('./components/HomeEvolveSection'), { ssr: false });
+const HomeLeadSection = dynamic(() => import('./components/HomeLeadSection'), { ssr: false });
+const HomeDifferenceSection = dynamic(() => import('./components/HomeDifferenceSection'), { ssr: false });
+const HomeGallerySection = dynamic(() => import('./components/HomeGallerySection'), { ssr: false });
+const HomeAwardsSection = dynamic(() => import('./components/HomeAwardsSection'), { ssr: false });
+const HomeUpdatesSection = dynamic(() => import('./components/HomeUpdatesSection'), { ssr: false });
+const HomeTestimonialSection = dynamic(() => import('./components/HomeTestimonialSection'), { ssr: false });
+const HomeSectionFooter = dynamic(() => import('./components/HomeSectionFooter'), { ssr: false });
 
 const ScrollspyMenu = ({ sections, activeSection }) => {
   return (
@@ -68,22 +68,12 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // useEffect(() => {
-  //   const WOWJS = require('wowjs');
-  //   const wow = new WOWJS.WOW({ live: false });
-  //   wow.init();
-  // }, []);
-
   const onLeave = (origin, destination, direction) => {
     setActiveSection(destination.anchor);
   };
 
   const afterLoad = (origin, destination, direction) => {
     setActiveSection(destination.anchor);
-    // const currentSection = destination.item;
-    // if (currentSection) {
-    //   currentSection.classList.add('animate__animated', 'animate__none');
-    // }
   };
 
   const showMainMenu = ["branch", "explore", "experiment", "innovate", "evolve", "lead"].includes(activeSection);

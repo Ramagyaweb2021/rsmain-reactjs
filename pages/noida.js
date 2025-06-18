@@ -1,13 +1,25 @@
+// Dynamic components
 import React, { useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import 'animate.css';
-import FooterNoida from './components/FooterNoida';
-import AllVerticalScrollspyMenu from './components/AllVerticalScrollspyMenu';
-import HeaderNoida from './components/HeaderNoida';
-import NoidaScrollspyHomePageTabination from './components/NoidaScrollspyHomePageTabination';
+
+// Dynamic imports (no SSR required for client-only components)
+const FooterNoida = dynamic(() => import('./components/FooterNoida'), { ssr: false });
+const AllVerticalScrollspyMenu = dynamic(() => import('./components/AllVerticalScrollspyMenu'), { ssr: false });
+const HeaderNoida = dynamic(() => import('./components/HeaderNoida'), { ssr: false });
+const NoidaScrollspyHomePageTabination = dynamic(() => import('./components/NoidaScrollspyHomePageTabination'), { ssr: false });
+// Static components 
+// import React, { useEffect } from 'react';
+// import dynamic from 'next/dynamic';
+// import Head from 'next/head';
+// import 'animate.css';
+// import FooterNoida from './components/FooterNoida';
+// import AllVerticalScrollspyMenu from './components/AllVerticalScrollspyMenu';
+// import HeaderNoida from './components/HeaderNoida';
+// import NoidaScrollspyHomePageTabination from './components/NoidaScrollspyHomePageTabination';
 // import Script from 'next/script';
-// import OfferPopupMainNoida from './components/OfferPopupMainNoida';
+//import OfferPopupMainNoida from './components/OfferPopupMainNoida';
 // import BottomBarNoida from './components/BottomBarNoida';
 
 // Dynamically import WOW.js to avoid server-side issues

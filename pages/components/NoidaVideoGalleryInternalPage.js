@@ -23,19 +23,27 @@ const NoidaVideoGalleryInternalPage = () => {
   const items = [
     // ********************************************************************Video gallery for Celeb Buzz
     {
-      src: 'https://img.youtube.com/vi/3-LtaS6Gt0g/hqdefault.jpg',
+      src: 'https://img.youtube.com/vi/Di4KXHrgl98/hqdefault.jpg',
       title: 'Rajdeep Sardesai',
       category: 'Celeb Buzz',
       type: 'video',
-      videoId: '3-LtaS6Gt0g'
+      videoId: 'Di4KXHrgl98'
     },
-    {
+     {
       src: 'https://img.youtube.com/vi/TuudIIr9ZF8/hqdefault.jpg',
       title: 'Nikhil Naz',
       category: 'Celeb Buzz',
       type: 'video',
       videoId: 'TuudIIr9ZF8'
     },
+    {
+      src: 'https://img.youtube.com/vi/3-LtaS6Gt0g/hqdefault.jpg',
+      title: 'Rajdeep Sardesai',
+      category: 'Celeb Buzz',
+      type: 'video',
+      videoId: '3-LtaS6Gt0g'
+    },
+   
     {
       src: 'https://img.youtube.com/vi/mtATDSNgu6w/hqdefault.jpg',
       title: 'Nikhil Naz',
